@@ -40,7 +40,10 @@ IAST from SOURCE; Devanagari ALWAYS transliterated at build from IAST — no
 hand/machine Deva bytes, ever) → CARD (entries.json: brief=C1 essence,
 what=ARGMAP/L2 sense, how=practice lines the text itself gives, sign=the
 text's own claimed effects/essence, feel=optional micro-line; source_path +
-source_ref on every entry) → BOOK (book.json sections/glyph/dividers +
+source_ref on every entry. **CONTENT SOURCING LAW: blocks are extract-and-place
+from the named layer — never agent-written; only clarity-edits (shorten, plain,
+flow) are allowed after placing; no layer source = block stays off the page
+(fail closed).** See visuals/prints/EDITIONS.md Part 6 for the block→layer map.) → BOOK (book.json sections/glyph/dividers +
 front.html/back.html) → TEXT-GATE (every shipped verse id must carry
 deterministic_gate PASS in its text's GATE.json, or a recorded owner
 adjudication — BLOCKED fails closed) → PRINT-GATE (kdp_preflight + page
