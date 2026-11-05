@@ -1,0 +1,27 @@
+{
+  "goal": "translation-work text -> print-ready paperbacks + quote cards + social cards, gates enforced",
+  "mode": "build-only (never edits upstream text; never uploads without owner go)",
+  "upstream": "prx0r/translation-work (local ~/repos/translation-work)",
+  "renderer": "~/visuals/prints (bookkit engine + kdp_preflight) — wrapped, never forked",
+  "lanes": {
+    "practical-prayers": { "stage": "parity-baseline", "entries": 44, "pages": 108 },
+    "tantric-prayer":    { "stage": "parity-baseline", "entries": 43, "pages": 108 },
+    "ipvv":              { "stage": "queued", "bundles": 49, "gate": "proofs running" },
+    "tantrasara":        { "stage": "queued", "units": 22, "gate": "GOLD cadence" },
+    "stotra-anthology":  { "stage": "queued", "texts": ["sivastotravali", "vbt", "bhairavastava"] }
+  },
+  "products": {
+    "paperback":  "A5 custom, <=108pp (ceiling 110), preflight PASS",
+    "postcard":   "GLOBAL-POST-GLOS-6X4 6x4in@300dpi front+back",
+    "social":     "1080x1080 + 1080x1350, quote + canonical ref"
+  },
+  "milestones": [
+    { "id": "scaffold",            "status": "done" },
+    { "id": "parity-lanes",        "status": "todo" },
+    { "id": "quote-loop",          "status": "todo" },
+    { "id": "ipvv-lane",           "status": "todo" },
+    { "id": "text-gate-wiring",    "status": "todo" },
+    { "id": "kdp-pack",            "status": "todo" },
+    { "id": "ship-external-book",  "status": "todo" }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "outputs": ["paperback-preview", "postcards"],
+  "gate_note": "pre-GATE corpus; witness-verified by hand (git d14af53, 6ba1dca)",
+  "adjudications": []
+}
