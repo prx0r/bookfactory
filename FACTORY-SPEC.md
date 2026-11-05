@@ -1,5 +1,7 @@
 # FACTORY-SPEC — book factory (saved 2026-11-05, owner-ordered)
 
+> **Implementation update:** the publication gate is fail-closed and the quote loop produces watermarked previews only. The two existing PDFs currently fail actual PDF font-size and margin checks. See [PIPELINE.md](PIPELINE.md) for current commands, evidence, limitations and remaining work; the spec below describes the destination, not a claim that all gates are complete.
+
 The book factory renders translated works from frozen translation layers into
 print-ready paperbacks, quote postcards and social cards. It changes no
 authorial text, translation, gate decision, or owner ruling. The existing

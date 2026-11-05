@@ -1,5 +1,6 @@
 {
   "outputs": ["paperback-preview", "postcards"],
-  "gate_note": "pre-GATE corpus; witness-verified by hand (git d14af53, 6ba1dca)",
+  "gate_note": "Witness-verification is recorded in git d14af53 and 6ba1dca; per-entry approval and rights bindings remain unestablished.",
+  "max_pages": 110,
   "adjudications": []
 }

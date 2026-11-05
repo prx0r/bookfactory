@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/prx0r/bookfactory/schemas/asset-1.0.json",
+  "title": "Reusable visual asset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "asset_id", "file", "origin", "rights", "allowed_uses", "alt"],
+  "properties": {
+    "version": {"const": "1.0"},
+    "asset_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "file": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256", "media_type"],
+      "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "media_type": {"enum": ["image/png", "image/jpeg"]}}
+    },
+    "origin": {
+      "type": "object", "additionalProperties": false, "required": ["repository", "commit", "project_ref"],
+      "properties": {"repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"}, "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"}, "project_ref": {"type": "string", "minLength": 1}}
+    },
+    "rights": {
+      "type": "object", "additionalProperties": false, "required": ["commercial_use", "holder", "evidence"],
+      "properties": {"commercial_use": {"enum": ["allowed", "prohibited", "unknown"]}, "holder": {"type": "string"}, "evidence": {"type": "string"}}
+    },
+    "allowed_uses": {"type": "array", "uniqueItems": true, "items": {"enum": ["book-interior", "postcard", "social", "video"]}},
+    "alt": {"type": "string", "minLength": 1}
+  }
+}
