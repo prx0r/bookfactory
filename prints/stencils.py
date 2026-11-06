@@ -86,9 +86,11 @@ def activity_glyph(key, size=20):
         "sleep": '<path d="M64 22 A34 34 0 1 0 64 78 A26 26 0 1 1 64 22 Z"/>',
         # sangha: triśūla — the three Aghora energies
         "sangha": '<line x1="50" y1="86" x2="50" y2="34"/><path d="M30 42 L30 16 L50 34 L70 16 L70 42"/><circle cx="50" cy="86" r="0"/>',
+        # anytime: the clock with no hands — every hour, no hour
+        "anytime": '<circle cx="50" cy="50" r="32"/><line x1="50" y1="18" x2="50" y2="27"/><line x1="82" y1="50" x2="73" y2="50"/><line x1="50" y1="82" x2="50" y2="73"/><line x1="18" y1="50" x2="27" y2="50"/>',
     }
     return _svg(G[key], size)
 
 
 ACTIVITY_KEYS = ["wake", "bath", "social", "work", "food", "wait",
-                 "negative", "sick", "positive", "sleep", "sangha"]
+                 "sick", "sleep", "anytime"]

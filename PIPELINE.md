@@ -143,42 +143,32 @@ fields only. Both are declared `planned` with per-work coverage in
 
 ## Current blockers and next work
 
-- The checked-in 108-page Practical Prayers proof contains text down to 6.08pt
-  and text beyond margins on pages 19, 39 and 102. Tantric Prayer contains
-  text down to 5.78pt and margin overflows on pages 69 and 83. The old
-  preflight silently accepted these. Both old proofs are blocked. The shared
-  book CSS now allows long lines to wrap, and entry Sanskrit display
-  transliterates from IAST; rebuild **both books in Chrome**, then inspect
-  every page with the new gate and verify pagination and content. Those source
-  changes alone are not evidence that the existing PDFs are fixed. User design
-  choices, legibility and page budget still need a review.
-- The actual source for Śivastotrāvalī in `translation-work/sivastotravali/`
-  records GRETIL/Bailly as CC BY-NC-SA. The age of a Sanskrit work does not by
-  itself clear the specific edition, translation, transcription, illustrations
-  or commentary for a commercial product. Resolve rights separately per source.
-- The legacy prayer entries are curated in `prints/`, not a complete,
-  immutable L2/L3-to-entry mapping with decision and rights records. Build
-  that mapping per verse without guessing, preserve the exact provenance and
-  record owner adjudications against the exact revision. Implement full-book
-  source/text/rights gate verification before adding a production release path.
-- Card/social layout still needs a full no-clipping and text-coverage proof for
-  both renderers, and a physical product proof before sale. The explanatory
-  back of a fresh layer-only card stays empty until cited L2/ARGMAP/C1 practice
-  content is explicitly selected and reviewed; do not synthesize instructions
-  or promised effects from a bare quote.
-- A5 no-bleed black-ink white-paper is the existing profile. The prayer-book
-  **110-page ceiling is a project cost target**, not KDP's universal page
-  limit. Current KDP US regular-trim black-ink pricing is fixed through 110
-  pages; Australia is fixed through 108. Check the current marketplace table
-  and KDP calculator when publishing. A full-wrap cover is a separate file;
-  use the current KDP Cover Calculator and previewer for spine/bleed. KDP Select
-  is an e-book exclusivity decision, not a paperback formatting setting.
-- The owner's edition ladder in `prints/EDITIONS.md` is
-  English (translation), Study (Sanskrit plus English), and Complete (Study
-  plus essays, glossary and notes). These are planned products; the current
-  factory does not yet construct those three editions. Apply a page ceiling
-  only when a particular project declares one; long Study/Complete editions
-  should be honestly sized, not cut to fit the prayer books' budget.
+**Status 2026-11-06 (restructure landed, build green):**
+
+- Both books restructured to thesis law: **PP 36 (9x4, mood sections out,
+  Anytime in with oṃ namaḥ śivāya + 3 Bahurūpa hymns), TP 36 (9 rasas,
+  Sangha dissolved, aghora at the fear door, bha-3 + 3 dhyana retired).**
+- Layout rebuilt on the merged engine: line-budget-aware Devanagari sizing,
+  tightened type geometry. **PP 90pp / TP 93pp — both preflight PASS**
+  (A5, fonts embedded, >=7pt, margins clean, zero continuation sheets).
+  Previews: `prints/<book>/<book>-preview.pdf`.
+- **Stage: both lanes at `build`; `stage --to build` is blocked by the
+  per-entry handoff gate** — the honest remaining work before any ship:
+  1. Per-entry source/gate/review records (entries carry source_path+ref,
+     but no per-entry binding of passage, gate decision, review signoff).
+  2. **Rights resolution per source** — `translation-work/sivastotravali`
+     records GRETIL/Bailly as CC BY-NC-SA: the age of a Sanskrit work does
+     not clear the specific edition/transcription for a commercial product.
+     Resolve per source before sale (front-matter attributed quotes are fine).
+  3. New proofs after any content change (Chrome render + preflight), then
+     KDP Cover Calculator for covers, KDP previewer at upload.
+- Cards/social layout still needs its no-clipping proof for the 36-entry
+  books; the explanatory back of a fresh layer-only card stays empty until
+  cited content is selected (no synthesis).
+- Audio (thesis products): chant = kashaudio clips bound per entry
+  (PP:8/8 source works rendered there; TP: shivastotravali+krama) +
+  Swamiji archival for aghora/bahurupa; audiobook readout = entries.json
+  fields only. Manifests not built yet.
 
 KDP sources: [paperback submission requirements](https://kdp.amazon.com/en_US/help/topic/G201857950),
 [print options](https://kdp.amazon.com/en_US/help/topic/G201834180),

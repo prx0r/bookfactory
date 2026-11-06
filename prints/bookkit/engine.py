@@ -36,7 +36,7 @@ CSS = """
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#efece5;color:var(--ink);}
 body{font-family:'Cormorant',Georgia,serif;font-size:15pt;line-height:1.5;}
-.page{background:#fff;width:148mm;min-height:210mm;margin:0 auto 10mm;padding:20mm 18mm;
+.page{background:#fff;width:148mm;min-height:210mm;margin:0 auto 10mm;padding:12mm 18mm;
   box-shadow:0 2px 14px rgba(0,0,0,.12);position:relative;page-break-after:always;overflow-wrap:anywhere;}
 .spread{display:flex;gap:8mm;justify-content:center;flex-wrap:wrap;margin:0 auto 10mm;}
 .spread .page{margin:0;}
@@ -50,24 +50,24 @@ body{font-family:'Cormorant',Georgia,serif;font-size:15pt;line-height:1.5;}
 .epi.center{align-items:center;text-align:center;}
 .epi .lines{font-size:14pt;line-height:1.7;}
 .epi .src{font-size:9.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);margin-top:8mm;}
-h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08em;text-transform:uppercase;margin:6mm 0 3mm;color:var(--ink);}
-.epi h2.blk+p,.epi p{font-size:11.5pt;line-height:1.5;margin:0 0 3mm;}
-.epi .sr{display:block;font-size:10pt;color:#76736e;line-height:1.45;margin-top:.8mm;}
+h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08em;text-transform:uppercase;margin:4mm 0 2mm;color:var(--ink);}
+.epi h2.blk+p,.epi p{font-size:11pt;line-height:1.36;margin:0 0 2mm;}
+.epi .sr{display:block;font-size:9.5pt;color:#76736e;line-height:1.38;margin-top:.6mm;}
 .opening-image{display:flex;align-items:center;justify-content:center;}
 .opening-image img{display:block;max-width:100%;max-height:165mm;object-fit:contain;}
 .opening-image .draft-mark{position:absolute;top:8mm;right:10mm;font:8pt sans-serif;color:#a22;}
-.epi table{border-collapse:collapse;font-size:12pt;width:100%;}
-.epi th{text-align:left;font-size:9.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);border-bottom:1px solid var(--ink);padding:2mm 2mm 2mm 0;font-weight:400;}
-.epi td{padding:1.8mm 2mm 1.8mm 0;border-bottom:1px solid var(--hair);}
+.epi table{border-collapse:collapse;font-size:10pt;width:100%;}
+.epi th{text-align:left;font-size:9pt;line-height:1.25;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);border-bottom:1px solid var(--ink);padding:2mm 2mm 2mm 0;font-weight:400;}
+.epi td{line-height:1.25;padding:.45mm 2mm .45mm 0;border-bottom:1px solid var(--hair);}
 .epi td.s{font-style:italic;color:var(--grey);}
 .bib ul{list-style:none;padding:0;margin:4mm 0 0;}
-.bib li{margin:0 0 1.5mm;font-size:9.5pt;line-height:1.35;}
+.bib li{margin:0 0 .5mm;font-size:8.5pt;line-height:1.18;}
 .bib li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);word-break:break-all;}
-.toc h2,.sec-div h2,.bib h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13pt;color:var(--grey);}
+.toc h2,.sec-div h2,.bib h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12pt;color:var(--grey);margin:0 0 2mm;}
 .toc ol{list-style:none;padding:0;margin:5mm 0 0;column-count:2;column-gap:7mm;}
 .toc li,.toc .sec{break-inside:avoid;-webkit-column-break-inside:avoid;}
-.toc .sec{margin-top:3.5mm;font-size:9.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);line-height:1.2;}
-.toc li{margin:.5mm 0;font-size:11pt;line-height:1.35;}
+.toc .sec{margin-top:2.5mm;font-size:9.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);line-height:1.2;}
+.toc li{margin:.3mm 0;font-size:10pt;line-height:1.25;}
 .toc .n{color:var(--grey);display:inline-block;width:7mm;}
 .sec-div{display:flex;flex-direction:column;justify-content:center;text-align:center;}
 .sec-div .glyph{line-height:0;margin-bottom:5mm;}
@@ -78,20 +78,20 @@ h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08
 .sec-div .rule{width:30mm;height:1px;background:var(--ink);margin:7mm auto 0;}
 .sec-div .doc{font-size:11pt;line-height:1.5;color:#241f19;max-width:108mm;margin:7mm auto 0;font-style:italic;}
 .src{font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
-.prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:17pt;margin:2mm 0 4mm;text-align:center;}
-.prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:6mm 0 0;}
-.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.5;margin-top:3mm;}
-.prayer .en{margin:8mm 0 0;text-align:center;line-height:1.65;color:#241f19;}
+.prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:15pt;margin:1mm 0 2mm;text-align:center;}
+.prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:3mm 0 0;}
+.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.35;margin-top:1.5mm;}
+.prayer .en{margin:4mm 0 0;text-align:center;line-height:1.3;color:#241f19;}
 .prayer .en .ln{display:block;}
 .guide .label{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);margin-bottom:3mm;}
 .guide h3{text-align:left;font-size:19pt;margin:0 0 3mm;}
 .guide .src{text-align:left;margin-bottom:4mm;}
-.guide .brief{font-style:italic;color:var(--grey);font-size:11.5pt;line-height:1.45;padding-bottom:3mm;margin-bottom:4mm;border-bottom:1px solid var(--hair);}
-.guide .blk{margin-bottom:3mm;}
+.guide .brief{font-style:italic;color:var(--grey);font-size:11.5pt;line-height:1.4;padding-bottom:2mm;margin-bottom:3mm;border-bottom:1px solid var(--hair);}
+.guide .blk{margin-bottom:1.5mm;}
 .guide .bl{font-size:8.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:1mm;}
-.guide .body{font-size:11pt;line-height:1.5;color:#241f19;}
+.guide .body{font-size:11pt;line-height:1.3;color:#241f19;}
 .guide .body p{margin:0;}
-.guide .foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:3mm;font-size:9pt;color:var(--grey);}
+.guide .foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:1.5mm;font-size:8.5pt;color:var(--grey);}
 .guide .foot a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);}
 .pnum{position:absolute;bottom:10mm;left:0;right:0;text-align:center;font-size:9pt;color:var(--grey);letter-spacing:.1em;}
 @media print{html,body{background:#fff}.page{margin:0;box-shadow:none;width:auto;min-height:auto}.spread{display:block;margin:0}@page{size:A5;margin:0}}
@@ -152,20 +152,41 @@ def load_entries(d, entries):
     return out
 
 
+def _dev_units(s):
+    """Visual-width units: akshara=1, matra/virama/sign=0.25, space/newline=0."""
+    u = 0.0
+    for ch in s:
+        o = ord(ch)
+        if ch in " \n/|":
+            continue
+        if 0x0900 <= o <= 0x0903 or 0x093A <= o <= 0x094D \
+                or 0x0951 <= o <= 0x0954 or 0x0962 <= o <= 0x0963 \
+                or 0x0981 <= o <= 0x0981:
+            u += 0.25
+        else:
+            u += 1.0
+    return u
+
+
 def dev_size(e):
-    L = len(e.get("devanagari", ""))
-    if L <= 90: return "40pt", "2.0"
-    if L <= 150: return "32pt", "1.9"
-    if L <= 240: return "25pt", "1.8"
-    if L <= 340: return "20pt", "1.75"
-    return "16pt", "1.7"
+    """Largest tier whose estimated wrapped block fits the prayer-sheet
+    Devanagari budget (~250pt) — raw char counts lie (matras, line breaks)."""
+    import math
+    dev = e.get("devanagari", "")
+    segs = [seg for seg in dev.split("\n") if seg.strip()] or [dev]
+    for size, lh in ((40, 1.55), (32, 1.5), (25, 1.45), (20, 1.4), (16, 1.35)):
+        cpl = max(6, int(317 / (0.65 * size)))   # 112mm text column, ~.65em/akshara
+        lines = sum(max(1, math.ceil(_dev_units(seg) / cpl)) for seg in segs)
+        if lines * size * lh <= 250:
+            return f"{size}pt", str(lh)
+    return "16pt", "1.35"
 
 
 def en_size(e):
     L = sum(len(x) for x in e["en"].split("\n"))
-    if L <= 140: return "15pt"
-    if L <= 240: return "13.5pt"
-    return "12.5pt"
+    if L <= 140: return "13pt"
+    if L <= 240: return "12pt"
+    return "11pt"
 
 
 def build(d):
@@ -273,7 +294,7 @@ def build(d):
     for p, refs in blist:
         bib.append(f'<li><b>{esc(p.replace("sources/","").replace("-"," "))}</b><br>'
                    f'<a href="{esc(p)}">{esc(p)}</a><br>'
-                   f'<span style="color:#76736e;font-size:9.5pt">{esc(", ".join(refs))}</span></li>')
+                   f'<span style="color:#76736e;font-size:8pt">{esc(", ".join(refs))}</span></li>')
     bib.append("</ul></section>")
     pages.append("".join(bib))
 

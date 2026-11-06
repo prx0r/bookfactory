@@ -120,19 +120,16 @@ class GateOnRealBooksTests(unittest.TestCase):
             problems = check.check_thesis(book)
             self.assertEqual(problems, [], f'{book}: {problems}')
 
-    def test_structure_mismatch_is_reported(self):
-        # PP book on disk is still 11x4=44 — thesis says 9x4=36. Gate must say so.
-        import os
+    def test_structure_matches_thesis_after_restructure(self):
         book = ROOT / 'prints' / 'practical-prayers'
         if not (book / 'entries.json').is_file():
             self.skipTest('prints checkout unavailable')
         entries = json.loads((book / 'entries.json').read_text(encoding='utf-8'))
         book_data = json.loads((book / 'book.json').read_text(encoding='utf-8'))
         errors = check.check_structure_against_thesis(real_thesis('practical-prayers'), entries, book_data)
-        # either restructure landed (no errors) or gate reports 44 vs 36
-        if len(entries) != 36:
-            self.assertTrue(any('total_entries' in e for e in errors), errors)
-            self.assertTrue(any('section mismatch' in e for e in errors), errors)
+        # restructure landed 2026-11-06: book IS the thesis (9x4=36)
+        self.assertEqual(errors, [], errors)
+        self.assertEqual(len(entries), 36)
 
 
 if __name__ == '__main__':

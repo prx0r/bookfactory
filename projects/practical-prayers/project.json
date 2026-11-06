@@ -1,5 +1,5 @@
 {
-  "stage": "content",
+  "stage": "formatting",
   "outputs": [
     "paperback-preview",
     "postcards"

@@ -5,14 +5,14 @@
   "renderer": "in-repo: prints/bookkit + prints/postcards (migrated from prx0r/visuals 2026-11-06)",
   "lanes": {
     "practical-prayers": {
-      "stage": "content (44->36 restructure per decisions.jsonl; PDF build last)",
-      "entries": 44,
-      "pages": 108
+      "stage": "build (36 entries, 90pp, preflight PASS; per-entry handoff open)",
+      "entries": 36,
+      "pages": 90
     },
     "tantric-prayer": {
-      "stage": "content (43->36 restructure per decisions.jsonl; PDF build last)",
-      "entries": 43,
-      "pages": 108
+      "stage": "build (36 entries, 93pp, preflight PASS; per-entry handoff open)",
+      "entries": 36,
+      "pages": 93
     },
     "ipvv": {
       "stage": "queued",
@@ -81,7 +81,11 @@
     },
     {
       "id": "pp-tp-restructure-36",
-      "status": "in-progress"
+      "status": "done"
+    },
+    {
+      "id": "pp-tp-36-build-green",
+      "status": "done"
     }
   ]
 }

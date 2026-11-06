@@ -8,7 +8,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#efece5;color:var(--ink);}
 body{font-family:'Cormorant',Georgia,serif;font-size:15pt;line-height:1.5;}
-.page{background:#fff;width:148mm;min-height:210mm;margin:0 auto 10mm;padding:20mm 18mm;
+.page{background:#fff;width:148mm;min-height:210mm;margin:0 auto 10mm;padding:12mm 18mm;
   box-shadow:0 2px 14px rgba(0,0,0,.12);position:relative;page-break-after:always;overflow-wrap:anywhere;}
 .spread{display:flex;gap:8mm;justify-content:center;flex-wrap:wrap;margin:0 auto 10mm;}
 .spread .page{margin:0;}
@@ -22,24 +22,24 @@ body{font-family:'Cormorant',Georgia,serif;font-size:15pt;line-height:1.5;}
 .epi.center{align-items:center;text-align:center;}
 .epi .lines{font-size:14pt;line-height:1.7;}
 .epi .src{font-size:9.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);margin-top:8mm;}
-h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08em;text-transform:uppercase;margin:6mm 0 3mm;color:var(--ink);}
-.epi h2.blk+p,.epi p{font-size:11.5pt;line-height:1.5;margin:0 0 3mm;}
-.epi .sr{display:block;font-size:10pt;color:#76736e;line-height:1.45;margin-top:.8mm;}
+h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08em;text-transform:uppercase;margin:4mm 0 2mm;color:var(--ink);}
+.epi h2.blk+p,.epi p{font-size:11pt;line-height:1.36;margin:0 0 2mm;}
+.epi .sr{display:block;font-size:9.5pt;color:#76736e;line-height:1.38;margin-top:.6mm;}
 .opening-image{display:flex;align-items:center;justify-content:center;}
 .opening-image img{display:block;max-width:100%;max-height:165mm;object-fit:contain;}
 .opening-image .draft-mark{position:absolute;top:8mm;right:10mm;font:8pt sans-serif;color:#a22;}
-.epi table{border-collapse:collapse;font-size:12pt;width:100%;}
-.epi th{text-align:left;font-size:9.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);border-bottom:1px solid var(--ink);padding:2mm 2mm 2mm 0;font-weight:400;}
-.epi td{padding:1.8mm 2mm 1.8mm 0;border-bottom:1px solid var(--hair);}
+.epi table{border-collapse:collapse;font-size:10pt;width:100%;}
+.epi th{text-align:left;font-size:9pt;line-height:1.25;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);border-bottom:1px solid var(--ink);padding:2mm 2mm 2mm 0;font-weight:400;}
+.epi td{line-height:1.25;padding:.45mm 2mm .45mm 0;border-bottom:1px solid var(--hair);}
 .epi td.s{font-style:italic;color:var(--grey);}
 .bib ul{list-style:none;padding:0;margin:4mm 0 0;}
-.bib li{margin:0 0 1.5mm;font-size:9.5pt;line-height:1.35;}
+.bib li{margin:0 0 .5mm;font-size:8.5pt;line-height:1.18;}
 .bib li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);word-break:break-all;}
-.toc h2,.sec-div h2,.bib h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13pt;color:var(--grey);}
+.toc h2,.sec-div h2,.bib h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12pt;color:var(--grey);margin:0 0 2mm;}
 .toc ol{list-style:none;padding:0;margin:5mm 0 0;column-count:2;column-gap:7mm;}
 .toc li,.toc .sec{break-inside:avoid;-webkit-column-break-inside:avoid;}
-.toc .sec{margin-top:3.5mm;font-size:9.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);line-height:1.2;}
-.toc li{margin:.5mm 0;font-size:11pt;line-height:1.35;}
+.toc .sec{margin-top:2.5mm;font-size:9.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);line-height:1.2;}
+.toc li{margin:.3mm 0;font-size:10pt;line-height:1.25;}
 .toc .n{color:var(--grey);display:inline-block;width:7mm;}
 .sec-div{display:flex;flex-direction:column;justify-content:center;text-align:center;}
 .sec-div .glyph{line-height:0;margin-bottom:5mm;}
@@ -50,20 +50,20 @@ h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08
 .sec-div .rule{width:30mm;height:1px;background:var(--ink);margin:7mm auto 0;}
 .sec-div .doc{font-size:11pt;line-height:1.5;color:#241f19;max-width:108mm;margin:7mm auto 0;font-style:italic;}
 .src{font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
-.prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:17pt;margin:2mm 0 4mm;text-align:center;}
-.prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:6mm 0 0;}
-.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.5;margin-top:3mm;}
-.prayer .en{margin:8mm 0 0;text-align:center;line-height:1.65;color:#241f19;}
+.prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:15pt;margin:1mm 0 2mm;text-align:center;}
+.prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:3mm 0 0;}
+.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.35;margin-top:1.5mm;}
+.prayer .en{margin:4mm 0 0;text-align:center;line-height:1.3;color:#241f19;}
 .prayer .en .ln{display:block;}
 .guide .label{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);margin-bottom:3mm;}
 .guide h3{text-align:left;font-size:19pt;margin:0 0 3mm;}
 .guide .src{text-align:left;margin-bottom:4mm;}
-.guide .brief{font-style:italic;color:var(--grey);font-size:11.5pt;line-height:1.45;padding-bottom:3mm;margin-bottom:4mm;border-bottom:1px solid var(--hair);}
-.guide .blk{margin-bottom:3mm;}
+.guide .brief{font-style:italic;color:var(--grey);font-size:11.5pt;line-height:1.4;padding-bottom:2mm;margin-bottom:3mm;border-bottom:1px solid var(--hair);}
+.guide .blk{margin-bottom:1.5mm;}
 .guide .bl{font-size:8.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:1mm;}
-.guide .body{font-size:11pt;line-height:1.5;color:#241f19;}
+.guide .body{font-size:11pt;line-height:1.3;color:#241f19;}
 .guide .body p{margin:0;}
-.guide .foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:3mm;font-size:9pt;color:var(--grey);}
+.guide .foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:1.5mm;font-size:8.5pt;color:var(--grey);}
 .guide .foot a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);}
 .pnum{position:absolute;bottom:10mm;left:0;right:0;text-align:center;font-size:9pt;color:var(--grey);letter-spacing:.1em;}
 @media print{html,body{background:#fff}.page{margin:0;box-shadow:none;width:auto;min-height:auto}.spread{display:block;margin:0}@page{size:A5;margin:0}}
@@ -88,10 +88,10 @@ wonder (camatkāra) in nine costumes. So this book never argues with a feeling. 
 it its Sanskrit name, its literal sense, its conventional term and its sthāyibhāva —
 and then says a verse at it. The prayer does not banish the emotion; it re-tastes it,
 which is what recognition feels like when it wears that emotion's face.</p>
-<p>Every verse comes from our own Kashmir Śaiva corpus: thirty-three from Utpaladeva's
+<p>Every verse comes from our own Kashmir Śaiva corpus: thirty-two from Utpaladeva's
 <i>Śivastotrāvalī</i>, one each from Kṣemarāja's <i>Ghatakarpara</i>, Abhinavagupta's
 <i>Kramastotra</i> — in Swami Lakshmanjoo's own recitation list — and Abhinavagupta's
-<i>Gītārthasaṅgraha</i>. Translations are ours, checked line by line against the corpus
+<i>Gītārthasaṅgraha</i> — plus the Yajurvedic Aghora chant Swamiji opened every<br>Sangha with, keeping watch at the fear door. Translations are ours, checked line by line against the corpus
 witnesses; each guide links to its source. Theory quotations are short and attributed;
 their references are flagged for verification against print editions.</p>
 <p>Where <i>Practical Prayers</i> gave you a verse for the sink and the desk, these give
@@ -120,7 +120,7 @@ sādhāraṇīkaraṇa — and the savour is recognition wearing that emotion's 
 Abhinavabhāratī — where he added the ninth, śānta. Each rasa carries its <b>sthāyibhāva</b>,
 the permanent emotion beneath it. Four prayers per rasa; each section's divider gives the
 literal sense, the conventional term, the sthāyin and the doctrine.</p>
-<table><tr><th>Rasa &amp; its literal sense</th><th>Conventional</th><th>The door</th><th>Sthāyin</th></tr><tr><td>Śṛṅgāra<br><span style='font-size:9.5pt;color:#76736e'>amorous sentiment, love; the beauty that adorns</span></td><td><b>the Erotic</b></td><td class='s'>love, longing</td><td class='s'>rati</td></tr><tr><td>Hāsya<br><span style='font-size:9.5pt;color:#76736e'>laughable, comic; mockery — that which slays</span></td><td><b>the Comic</b></td><td class='s'>mirth, laughter</td><td class='s'>hāsa</td></tr><tr><td>Karuṇā<br><span style='font-size:9.5pt;color:#76736e'>compassion, mercy; the pitiable, what moves to pity</span></td><td><b>the Pathetic</b></td><td class='s'>grief, compassion</td><td class='s'>śoka</td></tr><tr><td>Raudra<br><span style='font-size:9.5pt;color:#76736e'>furious, stormy — the mood of Rudra</span></td><td><b>the Furious</b></td><td class='s'>fury, rage</td><td class='s'>krodha</td></tr><tr><td>Vīra<br><span style='font-size:9.5pt;color:#76736e'>heroic, manly valour; mighty effort</span></td><td><b>the Heroic</b></td><td class='s'>valour, energy</td><td class='s'>utsāha</td></tr><tr><td>Bhayānaka<br><span style='font-size:9.5pt;color:#76736e'>causing fear: terrible, dreadful</span></td><td><b>the Horrible</b></td><td class='s'>fear, terror</td><td class='s'>bhaya</td></tr><tr><td>Bībhatsa<br><span style='font-size:9.5pt;color:#76736e'>loathsome, revolting; that which excites disgust</span></td><td><b>the Disgusting</b></td><td class='s'>disgust, loathing</td><td class='s'>jugupsā</td></tr><tr><td>Adbhuta<br><span style='font-size:9.5pt;color:#76736e'>the un-become: astonishing, marvellous, unprecedented</span></td><td><b>the Marvellous</b></td><td class='s'>wonder, awe</td><td class='s'>vismaya</td></tr><tr><td>Śānta<br><span style='font-size:9.5pt;color:#76736e'>pacified, allayed, put to rest" — the ninth, added by Abhinavagupta</span></td><td><b>the Peaceful</b></td><td class='s'>peace (his ninth)</td><td class='s'>śānti</td></tr></table>
+<table><tr><th>Rasa &amp; its literal sense</th><th>Conventional</th><th>The door</th><th>Sthāyin</th></tr><tr><td>Śṛṅgāra<br><span style='font-size:8pt;color:#76736e'>amorous sentiment, love; the beauty that adorns</span></td><td><b>the Erotic</b></td><td class='s'>love, longing</td><td class='s'>rati</td></tr><tr><td>Hāsya<br><span style='font-size:8pt;color:#76736e'>laughable, comic; mockery — that which slays</span></td><td><b>the Comic</b></td><td class='s'>mirth, laughter</td><td class='s'>hāsa</td></tr><tr><td>Karuṇā<br><span style='font-size:8pt;color:#76736e'>compassion, mercy; the pitiable, what moves to pity</span></td><td><b>the Pathetic</b></td><td class='s'>grief, compassion</td><td class='s'>śoka</td></tr><tr><td>Raudra<br><span style='font-size:8pt;color:#76736e'>furious, stormy — the mood of Rudra</span></td><td><b>the Furious</b></td><td class='s'>fury, rage</td><td class='s'>krodha</td></tr><tr><td>Vīra<br><span style='font-size:8pt;color:#76736e'>heroic, manly valour; mighty effort</span></td><td><b>the Heroic</b></td><td class='s'>valour, energy</td><td class='s'>utsāha</td></tr><tr><td>Bhayānaka<br><span style='font-size:8pt;color:#76736e'>causing fear: terrible, dreadful</span></td><td><b>the Horrible</b></td><td class='s'>fear, terror</td><td class='s'>bhaya</td></tr><tr><td>Bībhatsa<br><span style='font-size:8pt;color:#76736e'>loathsome, revolting; that which excites disgust</span></td><td><b>the Disgusting</b></td><td class='s'>disgust, loathing</td><td class='s'>jugupsā</td></tr><tr><td>Adbhuta<br><span style='font-size:8pt;color:#76736e'>the un-become: astonishing, marvellous, unprecedented</span></td><td><b>the Marvellous</b></td><td class='s'>wonder, awe</td><td class='s'>vismaya</td></tr><tr><td>Śānta<br><span style='font-size:8pt;color:#76736e'>pacified, allayed, put to rest" — the ninth, added by Abhinavagupta</span></td><td><b>the Peaceful</b></td><td class='s'>peace (his ninth)</td><td class='s'>śānti</td></tr></table>
 <div class="src">Nāṭyaśāstra · Abhinavabhāratī · Monier-Williams glosses · thirty-six prayers inside</div></section>
 <section class="page epi">
 <h2 class="blk">How to use a doorway</h2>
@@ -179,14 +179,14 @@ the arrival was never caused by the doing.</span></p>
 <p><b>Māyā</b> — not the world's denial but its manufacture, seen from below.
 <span class="sr">Why: "the world, both real and unreal" (Mahopadeśaviṃśatikā 11) — real as his expression,
 unreal only from the underside. Emotions belong to the making, not the mistake.</span></p>
-<div class="src">Tantric Prayer · the key</div></section><section class="page toc"><h2>Contents</h2><ol><div class="sec">I &nbsp; Śṛṅgāra <span style="opacity:.6">the Erotic — desire &amp; longing</span></div><li><span class="n">·</span>The Un-Drunk One&#x27;s Thirst</li><li><span class="n">·</span>The Wine of Non-Difference</li><li><span class="n">·</span>What Delight, Beloved</li><li><span class="n">·</span>The Moon That Carries the Nectar</li><div class="sec">II &nbsp; Hāsya <span style="opacity:.6">the Comic — mirth &amp; laughter</span></div><li><span class="n">·</span>Laughing, Dancing, Eating It All</li><li><span class="n">·</span>The Essence of Laughter</li><li><span class="n">·</span>His Laughing-Play</li><li><span class="n">·</span>Angry, Then Laughing, Then Śiva</li><div class="sec">III &nbsp; Karuṇā <span style="opacity:.6">the Pathetic — grief &amp; compassion</span></div><li><span class="n">·</span>The Seed of Sorrow</li><li><span class="n">·</span>The Flood Over Joy and Sorrow</li><li><span class="n">·</span>Sorrow Mixed with Ghee</li><li><span class="n">·</span>The Banner Against Suffering</li><div class="sec">IV &nbsp; Raudra <span style="opacity:.6">the Furious — anger &amp; rage</span></div><li><span class="n">·</span>The Axe of &#x27;All Is His&#x27;</li><li><span class="n">·</span>Let the Anger Ripen</li><li><span class="n">·</span>Devotion Conquers the Darkness</li><li><span class="n">·</span>Your Wrath Purifies</li><div class="sec">V &nbsp; Vīra <span style="opacity:.6">the Heroic — valour &amp; energy</span></div><li><span class="n">·</span>Victory — the World Depends on Him</li><li><span class="n">·</span>May I Become the Grass</li><li><span class="n">·</span>The Sound That Never Leaves the Mouth</li><li><span class="n">·</span>Praised Because You Worship</li><div class="sec">VI &nbsp; Bhayānaka <span style="opacity:.6">the Horrible — fear &amp; anxiety</span></div><li><span class="n">·</span>When Will I Suddenly Recognise You</li><li><span class="n">·</span>The Full Confession</li><li><span class="n">·</span>Between His Feet</li><li><span class="n">·</span>The Scorching Dissolved</li><div class="sec">VII &nbsp; Bībhatsa <span style="opacity:.6">the Disgusting — disgust &amp; self-loathing</span></div><li><span class="n">·</span>The Smear That Is Forgetting</li><li><span class="n">·</span>The Impure Mind, Confessed</li><li><span class="n">·</span>The Doubt-Enemy Shattered</li><li><span class="n">·</span>Strike the Dividing-Piece</li><div class="sec">VIII &nbsp; Adbhuta <span style="opacity:.6">the Marvellous — wonder &amp; awe</span></div><li><span class="n">·</span>The Wonder of the Word at Tongue-Tip</li><li><span class="n">·</span>The Wonderful Deceiver</li><li><span class="n">·</span>The Wheel of Diverse States</li><li><span class="n">·</span>Worship Without Begging</li><div class="sec">IX &nbsp; Śānta <span style="opacity:.6">the Peaceful — Abhinavagupta&#x27;s ninth</span></div><li><span class="n">·</span>The Rasa Beyond the World</li><li><span class="n">·</span>All Time in the Worship-Union</li><li><span class="n">·</span>For Peace, Not for Pleasure</li><li><span class="n">·</span>Cries Like Bamboo-Drops</li><div class="sec">A &nbsp; Chanted at the Sangha <span style="opacity:.6">Swamiji&#x27;s hymns of protection</span></div><li><span class="n">·</span>The Aghora Mantra</li><li><span class="n">·</span>The Secret Remedy</li><li><span class="n">·</span>No Mantra Greater</li><li><span class="n">·</span>Svacchanda, Fifteen-Eyed</li><li><span class="n">·</span>Eighteen Arms</li><li><span class="n">·</span>The Supreme Aghorī Power</li><li><span class="n">·</span>Bahurūpa Gāyatrī</li></ol></section><section class="page sec-div"><div class="glyph"><svg viewBox="0 0 100 100" width="22mm" height="22mm" xmlns="http://www.w3.org/2000/svg" ><g fill="none" stroke="#17140f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="30"/><path d="M 50.0 6.0 Q 61.8 21.8 78.3 16.3 Q 59.7 21.8 50.0 6.0 Z" stroke-width="2.4" opacity="1"/><path d="M 78.3 16.3 Q 77.9 35.0 93.3 42.4 Q 76.7 35.0 78.3 16.3 Z" stroke-width="1.1" opacity="0.45"/><path d="M 93.3 42.4 Q 80.8 55.2 88.1 72.0 Q 81.2 55.2 93.3 42.4 Z" stroke-width="1.1" opacity="0.45"/><path d="M 88.1 72.0 Q 69.4 73.0 65.0 91.3 Q 71.1 73.0 88.1 72.0 Z" stroke-width="1.1" opacity="0.45"/><path d="M 65.0 91.3 Q 48.9 80.0 35.0 91.3 Q 51.1 80.0 65.0 91.3 Z" stroke-width="1.1" opacity="0.45"/><path d="M 35.0 91.3 Q 28.9 73.0 11.9 72.0 Q 30.6 73.0 35.0 91.3 Z" stroke-width="1.1" opacity="0.45"/><path d="M 11.9 72.0 Q 18.8 55.2 6.7 42.4 Q 19.2 55.2 11.9 72.0 Z" stroke-width="1.1" opacity="0.45"/><path d="M 6.7 42.4 Q 23.3 35.0 21.7 16.3 Q 22.1 35.0 6.7 42.4 Z" stroke-width="1.1" opacity="0.45"/><path d="M 21.7 16.3 Q 40.3 21.8 50.0 6.0 Q 38.2 21.8 21.7 16.3 Z" stroke-width="1.1" opacity="0.45"/><line x1="50.0" y1="20.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="69.3" y1="27.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="79.5" y1="44.8" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="76.0" y1="65.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="60.3" y1="78.2" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="39.7" y1="78.2" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="24.0" y1="65.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="20.5" y1="44.8" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="30.7" y1="27.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><circle cx="50" cy="50" r="6" fill="#17140f" stroke="none"/></g></svg></div><div class="num">I</div>
+<div class="src">Tantric Prayer · the key</div></section><section class="page toc"><h2>Contents</h2><ol><div class="sec">I &nbsp; Śṛṅgāra <span style="opacity:.6">the Erotic — desire &amp; longing</span></div><li><span class="n">·</span>The Un-Drunk One&#x27;s Thirst</li><li><span class="n">·</span>The Wine of Non-Difference</li><li><span class="n">·</span>What Delight, Beloved</li><li><span class="n">·</span>The Moon That Carries the Nectar</li><div class="sec">II &nbsp; Hāsya <span style="opacity:.6">the Comic — mirth &amp; laughter</span></div><li><span class="n">·</span>Laughing, Dancing, Eating It All</li><li><span class="n">·</span>The Essence of Laughter</li><li><span class="n">·</span>His Laughing-Play</li><li><span class="n">·</span>Angry, Then Laughing, Then Śiva</li><div class="sec">III &nbsp; Karuṇā <span style="opacity:.6">the Pathetic — grief &amp; compassion</span></div><li><span class="n">·</span>The Seed of Sorrow</li><li><span class="n">·</span>The Flood Over Joy and Sorrow</li><li><span class="n">·</span>Sorrow Mixed with Ghee</li><li><span class="n">·</span>The Banner Against Suffering</li><div class="sec">IV &nbsp; Raudra <span style="opacity:.6">the Furious — anger &amp; rage</span></div><li><span class="n">·</span>The Axe of &#x27;All Is His&#x27;</li><li><span class="n">·</span>Let the Anger Ripen</li><li><span class="n">·</span>Devotion Conquers the Darkness</li><li><span class="n">·</span>Your Wrath Purifies</li><div class="sec">V &nbsp; Vīra <span style="opacity:.6">the Heroic — valour &amp; energy</span></div><li><span class="n">·</span>Victory — the World Depends on Him</li><li><span class="n">·</span>May I Become the Grass</li><li><span class="n">·</span>The Sound That Never Leaves the Mouth</li><li><span class="n">·</span>Praised Because You Worship</li><div class="sec">VI &nbsp; Bhayānaka <span style="opacity:.6">the Horrible — fear &amp; anxiety</span></div><li><span class="n">·</span>When Will I Suddenly Recognise You</li><li><span class="n">·</span>The Full Confession</li><li><span class="n">·</span>The Aghora Mantra</li><li><span class="n">·</span>The Scorching Dissolved</li><div class="sec">VII &nbsp; Bībhatsa <span style="opacity:.6">the Disgusting — disgust &amp; self-loathing</span></div><li><span class="n">·</span>The Smear That Is Forgetting</li><li><span class="n">·</span>The Impure Mind, Confessed</li><li><span class="n">·</span>The Doubt-Enemy Shattered</li><li><span class="n">·</span>Strike the Dividing-Piece</li><div class="sec">VIII &nbsp; Adbhuta <span style="opacity:.6">the Marvellous — wonder &amp; awe</span></div><li><span class="n">·</span>The Wonder of the Word at Tongue-Tip</li><li><span class="n">·</span>The Wonderful Deceiver</li><li><span class="n">·</span>The Wheel of Diverse States</li><li><span class="n">·</span>Worship Without Begging</li><div class="sec">IX &nbsp; Śānta <span style="opacity:.6">the Peaceful — Abhinavagupta&#x27;s ninth</span></div><li><span class="n">·</span>The Rasa Beyond the World</li><li><span class="n">·</span>All Time in the Worship-Union</li><li><span class="n">·</span>For Peace, Not for Pleasure</li><li><span class="n">·</span>Cries Like Bamboo-Drops</li></ol></section><section class="page sec-div"><div class="glyph"><svg viewBox="0 0 100 100" width="22mm" height="22mm" xmlns="http://www.w3.org/2000/svg" ><g fill="none" stroke="#17140f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="30"/><path d="M 50.0 6.0 Q 61.8 21.8 78.3 16.3 Q 59.7 21.8 50.0 6.0 Z" stroke-width="2.4" opacity="1"/><path d="M 78.3 16.3 Q 77.9 35.0 93.3 42.4 Q 76.7 35.0 78.3 16.3 Z" stroke-width="1.1" opacity="0.45"/><path d="M 93.3 42.4 Q 80.8 55.2 88.1 72.0 Q 81.2 55.2 93.3 42.4 Z" stroke-width="1.1" opacity="0.45"/><path d="M 88.1 72.0 Q 69.4 73.0 65.0 91.3 Q 71.1 73.0 88.1 72.0 Z" stroke-width="1.1" opacity="0.45"/><path d="M 65.0 91.3 Q 48.9 80.0 35.0 91.3 Q 51.1 80.0 65.0 91.3 Z" stroke-width="1.1" opacity="0.45"/><path d="M 35.0 91.3 Q 28.9 73.0 11.9 72.0 Q 30.6 73.0 35.0 91.3 Z" stroke-width="1.1" opacity="0.45"/><path d="M 11.9 72.0 Q 18.8 55.2 6.7 42.4 Q 19.2 55.2 11.9 72.0 Z" stroke-width="1.1" opacity="0.45"/><path d="M 6.7 42.4 Q 23.3 35.0 21.7 16.3 Q 22.1 35.0 6.7 42.4 Z" stroke-width="1.1" opacity="0.45"/><path d="M 21.7 16.3 Q 40.3 21.8 50.0 6.0 Q 38.2 21.8 21.7 16.3 Z" stroke-width="1.1" opacity="0.45"/><line x1="50.0" y1="20.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="69.3" y1="27.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="79.5" y1="44.8" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="76.0" y1="65.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="60.3" y1="78.2" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="39.7" y1="78.2" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="24.0" y1="65.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="20.5" y1="44.8" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><line x1="30.7" y1="27.0" x2="50" y2="50" stroke-width="1.1" opacity="0.45"/><circle cx="50" cy="50" r="6" fill="#17140f" stroke="none"/></g></svg></div><div class="num">I</div>
 <h2>Śṛṅgāra</h2><div class="sub">the Erotic — desire &amp; longing</div><div class="gloss">śṛṅgāra — &quot;amorous sentiment, love; the beauty that adorns&quot; (Monier-Williams)</div><div class="rule"></div><div class="doc">sthāyin: rati — the beloved becomes the light of consciousness; separation is its fuel (Abhinavabhāratī)</div></section><div class="spread">
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 1.11</div>
 <h3>The Un-Drunk One&#x27;s Thirst</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">भवद्भक्त्यमृतास्वादाद् बोधस्य स्यात् परापि या / दशा सा मां प्रति स्वामिन् नासवस्येव शुक्तता</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">भवद्भक्त्यमृतास्वादाद् बोधस्य स्यात् परापि या / दशा सा मां प्रति स्वामिन् नासवस्येव शुक्तता</div>
 <div class="iast">bhavadbhaktyamṛtāsvādād bodhasya syāt parāpi yā / daśā sā māṃ prati svāmin nāsavasyeva śuktatā</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">may the higher knowledge come from tasting the nectar of your devotion —</span><span class="ln">that state, lord, turn toward me,</span><span class="ln">keen as the not-yet-drunk one&#x27;s thirst for the first drink.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">may the higher knowledge come from tasting the nectar of your devotion —</span><span class="ln">that state, lord, turn toward me,</span><span class="ln">keen as the not-yet-drunk one&#x27;s thirst for the first drink.</span></div>
 <div class="pnum">1</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -205,9 +205,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 4.18</div>
 <h3>The Wine of Non-Difference</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">क्षणम् अपीह न तावकदासतां प्रति भवेयम् अहं किल भाजनम् / भवदभेदरसासवम् आदराद् अविरतं रसयेयम् अहं न चेत्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">क्षणम् अपीह न तावकदासतां प्रति भवेयम् अहं किल भाजनम् / भवदभेदरसासवम् आदराद् अविरतं रसयेयम् अहं न चेत्</div>
 <div class="iast">kṣaṇam apīha na tāvakadāsatāṃ prati bhaveyam ahaṃ kila bhājanam / bhavadabhedarasāsavam ādarād avirataṃ rasayeyam ahaṃ na cet</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">let me not spend one moment here as anything</span><span class="ln">other than your servant&#x27;s vessel — one who reverently,</span><span class="ln">unceasingly drinks the rasa-wine of your non-difference.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">let me not spend one moment here as anything</span><span class="ln">other than your servant&#x27;s vessel — one who reverently,</span><span class="ln">unceasingly drinks the rasa-wine of your non-difference.</span></div>
 <div class="pnum">2</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -226,9 +226,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Kṣemarāja, Ghatakarpara (pot-sherds) v.5</div>
 <h3>What Delight, Beloved</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">अम्बुदैः शिखिगणो विनाद्यते का रतिः प्रिय मया विनाद्य ते</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">अम्बुदैः शिखिगणो विनाद्यते का रतिः प्रिय मया विनाद्य ते</div>
 <div class="iast">ambudaiḥ śikhigaṇo vinādyate kā ratiḥ priya mayā vinādya te</div>
-<div class="en" style="font-size:15pt"><span class="ln">by clouds the peacock-flock is sounded —</span><span class="ln">what delight, beloved, without me today?</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">by clouds the peacock-flock is sounded —</span><span class="ln">what delight, beloved, without me today?</span></div>
 <div class="pnum">3</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -247,9 +247,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 3.5</div>
 <h3>The Moon That Carries the Nectar</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">प्रकाशां शीतलाम् एकां शुद्धां शशिकलाम् इव / दृशं वितर मे नाथ काम् अप्य् अमृतवाहिनीम्</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">प्रकाशां शीतलाम् एकां शुद्धां शशिकलाम् इव / दृशं वितर मे नाथ काम् अप्य् अमृतवाहिनीम्</div>
 <div class="iast">prakāśāṃ śītalām ekāṃ śuddhāṃ śaśikalām iva / dṛśaṃ vitara me nātha kām apy amṛtavāhinīm</div>
-<div class="en" style="font-size:15pt"><span class="ln">give me one glance of yours — light, cool, pure,</span><span class="ln">like the moon&#x27;s crescent, carrying nectar —</span><span class="ln">o lord, for my desire itself.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">give me one glance of yours — light, cool, pure,</span><span class="ln">like the moon&#x27;s crescent, carrying nectar —</span><span class="ln">o lord, for my desire itself.</span></div>
 <div class="pnum">4</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -269,9 +269,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 5.18</div>
 <h3>Laughing, Dancing, Eating It All</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">हस्यते नृत्यते यत्र रागद्वेषादि भुज्यते / पीयते भक्तिपीयूषरसस् तत् प्राप्नुयां पदम्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">हस्यते नृत्यते यत्र रागद्वेषादि भुज्यते / पीयते भक्तिपीयूषरसस् तत् प्राप्नुयां पदम्</div>
 <div class="iast">hasyate nṛtyate yatra rāgadveṣādi bhujyate / pīyate bhaktipīyūṣarasas tat prāpnuyāṃ padam</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">where he laughs and dances, where desire and hatred themselves are eaten,</span><span class="ln">where the nectar-rasa of devotion is drunk —</span><span class="ln">may i attain that state.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">where he laughs and dances, where desire and hatred themselves are eaten,</span><span class="ln">where the nectar-rasa of devotion is drunk —</span><span class="ln">may i attain that state.</span></div>
 <div class="pnum">5</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -290,9 +290,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 2.18</div>
 <h3>The Essence of Laughter</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">उपहासैकसारे ऽस्मिन्न् एतावति जगत्त्रये / तुभ्यम् एवाद्वितीयाय नमो नित्यसुखासिने</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">उपहासैकसारे ऽस्मिन्न् एतावति जगत्त्रये / तुभ्यम् एवाद्वितीयाय नमो नित्यसुखासिने</div>
 <div class="iast">upahāsaikasāre &#x27;sminn etāvati jagattraye / tubhyam evādvitīyāya namo nityasukhāsine</div>
-<div class="en" style="font-size:15pt"><span class="ln">in this three-world joke whose essence is laughter —</span><span class="ln">to you alone, the non-dual, the one seated in eternal joy:</span><span class="ln">namas.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">in this three-world joke whose essence is laughter —</span><span class="ln">to you alone, the non-dual, the one seated in eternal joy:</span><span class="ln">namas.</span></div>
 <div class="pnum">6</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -311,9 +311,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 3.15</div>
 <h3>His Laughing-Play</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">जयन्ति ते जगद्वन्द्या दासास् ते जगतां विभो / संसारार्णव एवैष येषां क्रीडामहासरः</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">जयन्ति ते जगद्वन्द्या दासास् ते जगतां विभो / संसारार्णव एवैष येषां क्रीडामहासरः</div>
 <div class="iast">jayanti te jagadvandyā dāsās te jagatāṃ vibho / saṃsārārṇava evaiṣa yeṣāṃ krīḍāmahāsaraḥ</div>
-<div class="en" style="font-size:15pt"><span class="ln">victorious are your servants, lord of the worlds —</span><span class="ln">for whom this ocean of saṃsāra</span><span class="ln">is a laughing-play.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">victorious are your servants, lord of the worlds —</span><span class="ln">for whom this ocean of saṃsāra</span><span class="ln">is a laughing-play.</span></div>
 <div class="pnum">7</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -332,9 +332,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 16.7</div>
 <h3>Angry, Then Laughing, Then Śiva</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">भक्तिक्षीवो ऽपि कुप्येयं भवायानुशयीय च / तथा हसेयं उद्यां च रटेयं च शिवेत्य् अलम्</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">भक्तिक्षीवो ऽपि कुप्येयं भवायानुशयीय च / तथा हसेयं उद्यां च रटेयं च शिवेत्य् अलम्</div>
 <div class="iast">bhaktikṣīvo &#x27;pi kupyeyaṃ bhavāyānuśayīya ca / tathā haseyaṃ udyāṃ ca raṭeyaṃ ca śivety alam</div>
-<div class="en" style="font-size:15pt"><span class="ln">let me be drunk on devotion — and angry with the world,</span><span class="ln">and pitying it — then laugh, and rise up, and shout:</span><span class="ln">śiva! — enough.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">let me be drunk on devotion — and angry with the world,</span><span class="ln">and pitying it — then laugh, and rise up, and shout:</span><span class="ln">śiva! — enough.</span></div>
 <div class="pnum">8</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -354,9 +354,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 1.26</div>
 <h3>The Seed of Sorrow</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">चित्रं निसर्गतो नाथ दुःखबीजम् इदं मनः / त्वद्भक्तिरससंसिक्तम् निःश्रेयसमहाफलम्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">चित्रं निसर्गतो नाथ दुःखबीजम् इदं मनः / त्वद्भक्तिरससंसिक्तम् निःश्रेयसमहाफलम्</div>
 <div class="iast">citraṃ nisargato nātha duḥkhabījam idaṃ manaḥ / tvadbhaktirasasaṃsiktam niḥśreyasamahāphalam</div>
-<div class="en" style="font-size:15pt"><span class="ln">strange, lord: this mind is by nature the seed of sorrow —</span><span class="ln">yet watered with the rasa of your devotion</span><span class="ln">it ripens into the highest fruit.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">strange, lord: this mind is by nature the seed of sorrow —</span><span class="ln">yet watered with the rasa of your devotion</span><span class="ln">it ripens into the highest fruit.</span></div>
 <div class="pnum">9</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -375,9 +375,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 3.9</div>
 <h3>The Flood Over Joy and Sorrow</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">हर्षाणाम् अथ शोकानां सर्वेषां प्लावकः समम् / भवद्ध्यानामृतापूरो निम्नाणिम्नभुवाम् इव</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">हर्षाणाम् अथ शोकानां सर्वेषां प्लावकः समम् / भवद्ध्यानामृतापूरो निम्नाणिम्नभुवाम् इव</div>
 <div class="iast">harṣāṇām atha śokānāṃ sarveṣāṃ plāvakaḥ samam / bhavaddhyānāmṛtāpūro nimnāṇimnabhuvām iva</div>
-<div class="en" style="font-size:15pt"><span class="ln">the flood of nectar from meditating you overflows</span><span class="ln">joy and sorrow alike — like waters filling</span><span class="ln">all the low and lower lands.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">the flood of nectar from meditating you overflows</span><span class="ln">joy and sorrow alike — like waters filling</span><span class="ln">all the low and lower lands.</span></div>
 <div class="pnum">10</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -396,9 +396,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 10.16</div>
 <h3>Sorrow Mixed with Ghee</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">देव दुःखान्य् अशेषाणि यानि संसारिणाम् अपि / घृत्याख्यभवदीयात्मयुतान्य् आयान्ति सह्यताम्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">देव दुःखान्य् अशेषाणि यानि संसारिणाम् अपि / घृत्याख्यभवदीयात्मयुतान्य् आयान्ति सह्यताम्</div>
 <div class="iast">deva duḥkhāny aśeṣāṇi yāni saṃsāriṇām api / ghṛtyākhyabhavadīyātmayutāny āyānti sahyatām</div>
-<div class="en" style="font-size:15pt"><span class="ln">lord, the countless sorrows even of the world-dweller —</span><span class="ln">mixed with your own self they become ghee:</span><span class="ln">they come to be bearable.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">lord, the countless sorrows even of the world-dweller —</span><span class="ln">mixed with your own self they become ghee:</span><span class="ln">they come to be bearable.</span></div>
 <div class="pnum">11</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -417,9 +417,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 11.14</div>
 <h3>The Banner Against Suffering</h3>
-<div class="dev" style="font-size:25pt;line-height:1.8">हे नाथ प्रणतार्तिनाशनपटो श्रेयोनिधे धूर्जटे दुःखैकायतनस्य जन्ममरणत्रस्तस्य मे साम्प्रतम् / तच् चेष्टस्व यथा मनोज्ञविषयास्वादप्रदा उत्तमा जीवन्न् एव समश्नुवे ऽहम् अचलाः सिद्धीस् त्वदर्चापरः</div>
+<div class="dev" style="font-size:20pt;line-height:1.4">हे नाथ प्रणतार्तिनाशनपटो श्रेयोनिधे धूर्जटे दुःखैकायतनस्य जन्ममरणत्रस्तस्य मे साम्प्रतम् / तच् चेष्टस्व यथा मनोज्ञविषयास्वादप्रदा उत्तमा जीवन्न् एव समश्नुवे ऽहम् अचलाः सिद्धीस् त्वदर्चापरः</div>
 <div class="iast">he nātha praṇatārtināśanapaṭo śreyonidhe dhūrjaṭe duḥkhaikāyatanasya janmamaraṇatrastasya me sāmpratam / tac ceṣṭasva yathā manojñaviṣayāsvādapradā uttamā jīvann eva samaśnuve &#x27;ham acalāḥ siddhīs tvadarcāparaḥ</div>
-<div class="en" style="font-size:12.5pt"><span class="ln">o lord, the banner that destroys the suffering of the bowing —</span><span class="ln">treasure of good, dhūrjaṭa: for me whose only home is sorrow,</span><span class="ln">afraid of birth and death — so act for me, that while yet living</span><span class="ln">i may enjoy the sweet taste of the good sense-objects,</span><span class="ln">unshakeable, the powers in service of your worship.</span></div>
+<div class="en" style="font-size:11pt"><span class="ln">o lord, the banner that destroys the suffering of the bowing —</span><span class="ln">treasure of good, dhūrjaṭa: for me whose only home is sorrow,</span><span class="ln">afraid of birth and death — so act for me, that while yet living</span><span class="ln">i may enjoy the sweet taste of the good sense-objects,</span><span class="ln">unshakeable, the powers in service of your worship.</span></div>
 <div class="pnum">12</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -439,9 +439,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 7.2</div>
 <h3>The Axe of &#x27;All Is His&#x27;</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">एतन् मम न त्व् इदम् इति रागद्वेषादिनिगडदृढमूले / नाथ भवन्मयतैक्यप्रत्ययपरशुः पतत्वन्तः</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">एतन् मम न त्व् इदम् इति रागद्वेषादिनिगडदृढमूले / नाथ भवन्मयतैक्यप्रत्ययपरशुः पतत्वन्तः</div>
 <div class="iast">etan mama na tv idam iti rāgadveṣādinigaḍadṛḍhamūle / nātha bhavanmayataikyapratyayaparaśuḥ patatvantaḥ</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">&#x27;this is mine, this is not yours&#x27; — the roots of attachment and aversion, hard-shackled;</span><span class="ln">o lord, let the axe of the one conviction &#x27;all is your-become&#x27; fall on them in me.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">&#x27;this is mine, this is not yours&#x27; — the roots of attachment and aversion, hard-shackled;</span><span class="ln">o lord, let the axe of the one conviction &#x27;all is your-become&#x27; fall on them in me.</span></div>
 <div class="pnum">13</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -460,9 +460,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 16.15</div>
 <h3>Let the Anger Ripen</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">मानावमानरागादिनिष्पाकविमलं मनः / यस्यासौ भक्तिमांल् लोकतुल्यशीलः कथं भवेत्</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">मानावमानरागादिनिष्पाकविमलं मनः / यस्यासौ भक्तिमांल् लोकतुल्यशीलः कथं भवेत्</div>
 <div class="iast">mānāvamānarāgādiniṣpākavimalaṃ manaḥ / yasyāsau bhaktimāṃl lokatulyaśīlaḥ kathaṃ bhavet</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">the mind purified by the complete ripening of</span><span class="ln">honour and dishonour, rāga and the rest —</span><span class="ln">such a devotee: how could he have ordinary-world conduct?</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">the mind purified by the complete ripening of</span><span class="ln">honour and dishonour, rāga and the rest —</span><span class="ln">such a devotee: how could he have ordinary-world conduct?</span></div>
 <div class="pnum">14</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -481,9 +481,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 16.16</div>
 <h3>Devotion Conquers the Darkness</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">रागद्वेषन्धकारो ऽपि येषां भक्तित्विषा जितः / तेषां महीयसाम् अग्रे कतमे ज्ञानशालिनः</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">रागद्वेषन्धकारो ऽपि येषां भक्तित्विषा जितः / तेषां महीयसाम् अग्रे कतमे ज्ञानशालिनः</div>
 <div class="iast">rāgadveṣandhakāro &#x27;pi yeṣāṃ bhaktitviṣā jitaḥ / teṣāṃ mahīyasām agre katame jñānaśālinaḥ</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">in whose case even the darkness of attachment and aversion</span><span class="ln">has been conquered by the brilliance of devotion —</span><span class="ln">what to speak of the learned, among such exalted ones?</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">in whose case even the darkness of attachment and aversion</span><span class="ln">has been conquered by the brilliance of devotion —</span><span class="ln">what to speak of the learned, among such exalted ones?</span></div>
 <div class="pnum">15</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -502,9 +502,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 10.20</div>
 <h3>Your Wrath Purifies</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">वन्द्यास् ते ऽपि महीयांसः प्रलयोपगता अपि / त्वत्कोपपावकस्पर्शपूता ये परमेश्वर</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">वन्द्यास् ते ऽपि महीयांसः प्रलयोपगता अपि / त्वत्कोपपावकस्पर्शपूता ये परमेश्वर</div>
 <div class="iast">vandyās te &#x27;pi mahīyāṃsaḥ pralayopagatā api / tvatkopapāvakasparśapūtā ye parameśvara</div>
-<div class="en" style="font-size:15pt"><span class="ln">also worthy of praise, O supreme, are those</span><span class="ln">made pure by the touch of your wrath&#x27;s fire</span><span class="ln">even when you have destroyed them.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">also worthy of praise, O supreme, are those</span><span class="ln">made pure by the touch of your wrath&#x27;s fire</span><span class="ln">even when you have destroyed them.</span></div>
 <div class="pnum">16</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -524,9 +524,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 2.29</div>
 <h3>Victory — the World Depends on Him</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">जय देव नमो नमो ऽस्तु ते सकलं विश्वम् इदं तवाश्रितम् / जगतां परमेश्वरो भवान् परमेकः शरणागतो ऽस्मि ते</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">जय देव नमो नमो ऽस्तु ते सकलं विश्वम् इदं तवाश्रितम् / जगतां परमेश्वरो भवान् परमेकः शरणागतो ऽस्मि ते</div>
 <div class="iast">jaya deva namo namo &#x27;stu te sakalaṃ viśvam idaṃ tavāśritam / jagatāṃ parameśvaro bhavān paramekaḥ śaraṇāgato &#x27;smi te</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">victory, lord — namas, namas to you:</span><span class="ln">this entire universe depends on you;</span><span class="ln">you are the supreme lord of the worlds, the one —</span><span class="ln">in you alone i take refuge.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">victory, lord — namas, namas to you:</span><span class="ln">this entire universe depends on you;</span><span class="ln">you are the supreme lord of the worlds, the one —</span><span class="ln">in you alone i take refuge.</span></div>
 <div class="pnum">17</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -545,9 +545,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 5.15</div>
 <h3>May I Become the Grass</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">अन्तर्भक्तिचमत्कारचर्वणामीलितेक्षणः / नमो मह्यं शिवायेति पूजयम् स्यां तृणान्य् अपि</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">अन्तर्भक्तिचमत्कारचर्वणामीलितेक्षणः / नमो मह्यं शिवायेति पूजयम् स्यां तृणान्य् अपि</div>
 <div class="iast">antarbhakticamatkāracarvaṇāmīlitekṣaṇaḥ / namo mahyaṃ śivāyeti pūjayam syāṃ tṛṇāny api</div>
-<div class="en" style="font-size:15pt"><span class="ln">when, eyes closed in the tasting of inner devotion-wonder,</span><span class="ln">i worship &#x27;namas to śiva&#x27; —</span><span class="ln">may i become even the grass [in that place].</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">when, eyes closed in the tasting of inner devotion-wonder,</span><span class="ln">i worship &#x27;namas to śiva&#x27; —</span><span class="ln">may i become even the grass [in that place].</span></div>
 <div class="pnum">18</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -566,9 +566,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 4.14</div>
 <h3>The Sound That Never Leaves the Mouth</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">ते जयन्ति मुखमण्डले भ्रमन् अस्ति येषु नियतं शिवध्वनिः / यः शाशीव प्रसृतो ऽमृताशयात् स्वादु संस्रवति चामृतं परम्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">ते जयन्ति मुखमण्डले भ्रमन् अस्ति येषु नियतं शिवध्वनिः / यः शाशीव प्रसृतो ऽमृताशयात् स्वादु संस्रवति चामृतं परम्</div>
 <div class="iast">te jayanti mukhamaṇḍale bhraman asti yeṣu niyataṃ śivadhvaniḥ / yaḥ śāśīva prasṛto &#x27;mṛtāśayāt svādu saṃsravati cāmṛtaṃ param</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">victorious those on whose mouth&#x27;s circle</span><span class="ln">the sound of śiva constantly roams —</span><span class="ln">ever-streaming from the immortal reservoir,</span><span class="ln">the supreme nectar dripping sweet.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">victorious those on whose mouth&#x27;s circle</span><span class="ln">the sound of śiva constantly roams —</span><span class="ln">ever-streaming from the immortal reservoir,</span><span class="ln">the supreme nectar dripping sweet.</span></div>
 <div class="pnum">19</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -587,9 +587,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 4.1</div>
 <h3>Praised Because You Worship</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">चपलम् असि यद् अपि मानस तत्रापि श्लाघ्यसे यतो भजसे / शरणानाम् अपि शरणं त्रिभुवनगुरुम् अम्बिकाकान्तम्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">चपलम् असि यद् अपि मानस तत्रापि श्लाघ्यसे यतो भजसे / शरणानाम् अपि शरणं त्रिभुवनगुरुम् अम्बिकाकान्तम्</div>
 <div class="iast">capalam asi yad api mānasa tatrāpi ślāghyase yato bhajase / śaraṇānām api śaraṇaṃ tribhuvanagurum ambikākāntam</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">o mind, though you are flickering, yet you are praised —</span><span class="ln">because you worship:</span><span class="ln">you take refuge in the refuge of the refuges,</span><span class="ln">the teacher of the three worlds, the beloved of ambikā.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">o mind, though you are flickering, yet you are praised —</span><span class="ln">because you worship:</span><span class="ln">you take refuge in the refuge of the refuges,</span><span class="ln">the teacher of the three worlds, the beloved of ambikā.</span></div>
 <div class="pnum">20</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -609,9 +609,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 9.6</div>
 <h3>When Will I Suddenly Recognise You</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">ईश्वरम् अभयम् उदारं पूर्णम् अकारणम् अपह्नुतात्मानं / सहसाभिज्ञाय कदा स्वामिजनं लज्जयिष्यामि</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">ईश्वरम् अभयम् उदारं पूर्णम् अकारणम् अपह्नुतात्मानं / सहसाभिज्ञाय कदा स्वामिजनं लज्जयिष्यामि</div>
 <div class="iast">īśvaram abhayam udāraṃ pūrṇam akāraṇam apahnutātmānaṃ / sahasābhijñāya kadā svāmijanaṃ lajjayiṣyāmi</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">the lord — fearless, generous, full, causeless,</span><span class="ln">beyond denial of self — when will i suddenly recognise him —</span><span class="ln">and put the master&#x27;s own folk to shame?</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">the lord — fearless, generous, full, causeless,</span><span class="ln">beyond denial of self — when will i suddenly recognise him —</span><span class="ln">and put the master&#x27;s own folk to shame?</span></div>
 <div class="pnum">21</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -630,9 +630,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 11.8</div>
 <h3>The Full Confession</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">मूढो ऽस्मि दुःखकलितो ऽस्मि जरादिदोषभीतो ऽस्मि शक्तिरहितो ऽस्मि तवाश्रितो ऽस्मि / शम्भो तथा कलय शीघ्रम् उपैमि येन सर्वोत्तमां धुरम् अपोज्झितदुःखमार्गः</div>
+<div class="dev" style="font-size:25pt;line-height:1.45">मूढो ऽस्मि दुःखकलितो ऽस्मि जरादिदोषभीतो ऽस्मि शक्तिरहितो ऽस्मि तवाश्रितो ऽस्मि / शम्भो तथा कलय शीघ्रम् उपैमि येन सर्वोत्तमां धुरम् अपोज्झितदुःखमार्गः</div>
 <div class="iast">mūḍho &#x27;smi duḥkhakalito &#x27;smi jarādidoṣabhīto &#x27;smi śaktirahito &#x27;smi tavāśrito &#x27;smi / śambho tathā kalaya śīghram upaimi yena sarvottamāṃ dhuram apojjhitaduḥkhamārgaḥ</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">i am dull, i am weighed with sorrow, i am afraid of old age&#x27;s flaws,</span><span class="ln">i am without power — i have taken refuge in you, o śambhu;</span><span class="ln">so calculate what&#x27;s left.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">i am dull, i am weighed with sorrow, i am afraid of old age&#x27;s flaws,</span><span class="ln">i am without power — i have taken refuge in you, o śambhu;</span><span class="ln">so calculate what&#x27;s left.</span></div>
 <div class="pnum">22</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -649,32 +649,32 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <div class="pnum">22 · guide</div></section>
 </div><div class="spread">
 <section class="page prayer">
-<div class="src">Utpaladeva, Śivastotrāvalī 12.8</div>
-<h3>Between His Feet</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">भवन्भवदीयपादयोर् निवसन्न् अन्तर एव निर्भयः / भवभूमिषु तासु तास्व् अहं प्रभुम् अर्चेयम् अनर्गलक्रियः</div>
-<div class="iast">bhavanbhavadīyapādayor nivasann antara eva nirbhayaḥ / bhavabhūmiṣu tāsu tāsv ahaṃ prabhum arceyam anargalakriyaḥ</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">residing even between your feet and your devotees&#x27; —</span><span class="ln">i am without fear; in those various planes of being</span><span class="ln">i would worship the lord, unobstructed in action.</span></div>
+<div class="src">Yajurveda · chanted by Swami Lakshmanjoo at every Weekly Sangha</div>
+<h3>The Aghora Mantra</h3>
+<div class="dev" style="font-size:32pt;line-height:1.5">अघोरेभ्यो ऽथ घोरेभ्यो घोरघोरतरीभ्यश्च । सर्वतः शर्व सर्वेभ्यो नमस्ते रुद्ररूपेभ्यः ॥</div>
+<div class="iast">aghorebhyo &#x27;tha ghorebhyo ghoraghoratarībhyaśca | sarvataḥ śarva sarvebhyo namaste rudrarūpebhyaḥ ||</div>
+<div class="en" style="font-size:13pt"><span class="ln">salutations to aghora, to ghora, to ghoraghora-tarī — to sarva in all directions, to all the rudra-forms: namas.</span></div>
 <div class="pnum">23</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
-<h3>Between His Feet</h3>
-<div class="src">Utpaladeva, Śivastotrāvalī 12.8 · 12.8</div>
-<div class="brief">Fearlessness by geography: living in the gap between his feet.</div>
+<h3>The Aghora Mantra</h3>
+<div class="src">Yajurveda · chanted by Swami Lakshmanjoo at every Weekly Sangha · Secret Supreme ch.13 · letter 1989</div>
+<div class="brief">The Sangha&#x27;s opening chant. Swamiji&#x27;s directive after his 1989 vision: spread this message all over the world.</div>
 <div class="body">
-<div class="blk"><span class="bl">What is it</span><p>Nivasann antara eva nirbhayaḥ — dwelling in the in-between (between his feet and his people), fearlessness arises not from courage but from LOCATION. The verse gives fear a map: there is a narrow country, foot-adjacent and community-adjacent, where bhaya simply has no border. Fear lives at other addresses.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>When fear arrives: find the location instead of fighting the feeling. Imagine the small warm space between his feet; move in.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>terror contracts to a point at the chest and stays there without spreading — fear held, not released.</p></div>
-<div class="blk"><span class="bl">What to feel / visualise</span><p>the fear stays outside the border like weather reported from another city.</p></div>
+<div class="blk"><span class="bl">What is it</span><p>The verse salutes the three energies of Rudra as his forms. Per Swamiji&#x27;s Tantrāloka 3.257-259 teaching: Aghorā carries you to God-consciousness at once, even without your wish (cit-śakti); Ghorā makes the desirer wait — &#x27;don&#x27;t hurry, just we will see the time&#x27; (icchā-śakti); Ghoratarī carries the careless downward (jñāna-śakti). The protection invoked is real but conditional: Svacchandanātha&#x27;s eighteen arms are the eighteen tattvas, outgrowths of the five śaktis, made for the protection of the individual — but protection requires the yamas and niyamas, the supreme of which is īśvara-praṇidhāna: if you love Lord Śiva and are devoted to Him, it is not possible for Him to neglect you.</p></div>
+<div class="blk"><span class="bl">How to perform it</span><p>Chant it where Swamiji put it: at the opening of any practice — this is the beginning of the Weekly Sangha. Three to nine rounds, aloud. When to: first thing in the morning, or at any moment of fear — you are addressing the three energies directly. Effect, per the tradition he taught: protection through the eighteen arms and purification of the three channels, body, speech and mind. His own instruction for its spread: &#x27;You should spread this message all over the world.&#x27;</p></div>
+<div class="blk"><span class="bl">How to know it's working</span><p>the flinch arrives half a second late or not at all: what repulsed you now reads as his body in another mood.</p></div>
+
 </div>
-<div class="foot">Source: <a href="sources/sivastotravali_corpus.json">sivastotravali_corpus.json · 12.8</a></div>
+<div class="foot">Source: <a href="sources/efficacy-aghora.pdf">efficacy-aghora.pdf · Secret Supreme ch.13 · letter 1989</a></div>
 <div class="pnum">23 · guide</div></section>
 </div><div class="spread">
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 9.18</div>
 <h3>The Scorching Dissolved</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">लब्धाणिमादिसिद्धिर् विगलितसकलोपतापसन्त्रासः / त्वद्भक्तिरसायनपानक्रिढानिष्टः कदासीय</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">लब्धाणिमादिसिद्धिर् विगलितसकलोपतापसन्त्रासः / त्वद्भक्तिरसायनपानक्रिढानिष्टः कदासीय</div>
 <div class="iast">labdhāṇimādisiddhir vigalitasakalopatāpasantrāsaḥ / tvadbhaktirasāyanapānakriḍhāniṣṭaḥ kadāsīya</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">when will i come to dwell in the drinking-and-playing</span><span class="ln">of your devotion-nectar — with the eight powers attained,</span><span class="ln">and all fear of troubles dissolved?</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">when will i come to dwell in the drinking-and-playing</span><span class="ln">of your devotion-nectar — with the eight powers attained,</span><span class="ln">and all fear of troubles dissolved?</span></div>
 <div class="pnum">24</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -694,9 +694,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 13.2</div>
 <h3>The Smear That Is Forgetting</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">अन्तर् अप्य् अतितराम् अणीयसी या त्वदप्रथनकालिकास्ति मे / ताम् अपीश परिमृज्य सर्वतः स्वं स्वरूपम् अमलं प्रकाशय</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">अन्तर् अप्य् अतितराम् अणीयसी या त्वदप्रथनकालिकास्ति मे / ताम् अपीश परिमृज्य सर्वतः स्वं स्वरूपम् अमलं प्रकाशय</div>
 <div class="iast">antar apy atitarām aṇīyasī yā tvadaprathanakālikāsti me / tām apīśa parimṛjya sarvataḥ svaṃ svarūpam amalaṃ prakāśaya</div>
-<div class="en" style="font-size:15pt"><span class="ln">even within, the tiniest smear that is my non-contemplation of you —</span><span class="ln">wiping that, o lord, from everywhere,</span><span class="ln">[show] your own form.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">even within, the tiniest smear that is my non-contemplation of you —</span><span class="ln">wiping that, o lord, from everywhere,</span><span class="ln">[show] your own form.</span></div>
 <div class="pnum">25</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -715,9 +715,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 15.14</div>
 <h3>The Impure Mind, Confessed</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">मनसि मलिने मदीयेमग्ना त्वद्भक्तिमणिलता कष्टम् / न निजान् अपि तनुते तानपौरुषेयान् स्वसम्पदुल्लासान्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">मनसि मलिने मदीयेमग्ना त्वद्भक्तिमणिलता कष्टम् / न निजान् अपि तनुते तानपौरुषेयान् स्वसम्पदुल्लासान्</div>
 <div class="iast">manasi maline madīyemagnā tvadbhaktimaṇilatā kaṣṭam / na nijān api tanute tānapauruṣeyān svasampadullāsān</div>
-<div class="en" style="font-size:15pt"><span class="ln">in my mind, absolutely impure, my own devotion-vine drowned —</span><span class="ln">hard: it ripens not even its own,</span><span class="ln">the unearned blossoms of its fortune.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">in my mind, absolutely impure, my own devotion-vine drowned —</span><span class="ln">hard: it ripens not even its own,</span><span class="ln">the unearned blossoms of its fortune.</span></div>
 <div class="pnum">26</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -736,9 +736,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 18.19</div>
 <h3>The Doubt-Enemy Shattered</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">खरनिषेधखदामृतपूरणोच्छलितधौतविकल्पमलस्य मे / दलितदुर्जयसंशयवैरिणस् त्वदवलोकनम् अस्तु निरन्तरम्</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">खरनिषेधखदामृतपूरणोच्छलितधौतविकल्पमलस्य मे / दलितदुर्जयसंशयवैरिणस् त्वदवलोकनम् अस्तु निरन्तरम्</div>
 <div class="iast">kharaniṣedhakhadāmṛtapūraṇocchalitadhautavikalpamalasya me / dalitadurjayasaṃśayavairiṇas tvadavalokanam astu nirantaram</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">the thought-stain in my mind, scoured by the deathless nectar&#x27;s flood</span><span class="ln">poured over the trough of refuse — with the invincible doubt-enemy crushed:</span><span class="ln">let beholding you be unceasing.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">the thought-stain in my mind, scoured by the deathless nectar&#x27;s flood</span><span class="ln">poured over the trough of refuse — with the invincible doubt-enemy crushed:</span><span class="ln">let beholding you be unceasing.</span></div>
 <div class="pnum">27</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -757,9 +757,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Abhinavagupta, Kramastotra 19.19</div>
 <h3>Strike the Dividing-Piece</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">विलीने शङ्कौघे सपदि परिपूर्णे च विभवे । संहाराख्या मम हृदि भिदांशं प्रहरतु</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">विलीने शङ्कौघे सपदि परिपूर्णे च विभवे । संहाराख्या मम हृदि भिदांशं प्रहरतु</div>
 <div class="iast">vilīne śaṅkaughe sapadi paripūrṇe ca vibhave | saṃhārākhyā mama hṛdi bhidāṃśaṃ praharatu</div>
-<div class="en" style="font-size:15pt"><span class="ln">in the melted doubt-heap, at once in full glory —</span><span class="ln">o lord named dissolution, strike the split portion of my heart.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">in the melted doubt-heap, at once in full glory —</span><span class="ln">o lord named dissolution, strike the split portion of my heart.</span></div>
 <div class="pnum">28</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -779,9 +779,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 1.20</div>
 <h3>The Wonder of the Word at Tongue-Tip</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">शिव इत्य् एकशब्दस्य जिह्वाग्रे तिष्ठतः सदा / समस्तविषयास्वादो भक्तेष्व् एवास्ति को ऽप्य् अहो</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">शिव इत्य् एकशब्दस्य जिह्वाग्रे तिष्ठतः सदा / समस्तविषयास्वादो भक्तेष्व् एवास्ति को ऽप्य् अहो</div>
 <div class="iast">śiva ity ekaśabdasya jihvāgre tiṣṭhataḥ sadā / samastaviṣayāsvādo bhakteṣv evāsti ko &#x27;py aho</div>
-<div class="en" style="font-size:15pt"><span class="ln">when the single word śiva stands ever at the tongue&#x27;s tip —</span><span class="ln">the taste of all sense-objects exists in the devotee alone.</span><span class="ln">what a wonder!</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">when the single word śiva stands ever at the tongue&#x27;s tip —</span><span class="ln">the taste of all sense-objects exists in the devotee alone.</span><span class="ln">what a wonder!</span></div>
 <div class="pnum">29</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -800,9 +800,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 2.12</div>
 <h3>The Wonderful Deceiver</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">मायाविने विशुद्धाय गुह्याय प्रकटात्मने / सूक्ष्माय विश्वरूपाय नमश् चित्राय शम्भवे</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">मायाविने विशुद्धाय गुह्याय प्रकटात्मने / सूक्ष्माय विश्वरूपाय नमश् चित्राय शम्भवे</div>
 <div class="iast">māyāvine viśuddhāya guhyāya prakaṭātmane / sūkṣmāya viśvarūpāya namaś citrāya śambhave</div>
-<div class="en" style="font-size:15pt"><span class="ln">namas to the deceptive, the pure, the secret,</span><span class="ln">the manifest-self, the subtle, the all-form —</span><span class="ln">to the citra, to śambhu.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">namas to the deceptive, the pure, the secret,</span><span class="ln">the manifest-self, the subtle, the all-form —</span><span class="ln">to the citra, to śambhu.</span></div>
 <div class="pnum">30</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -821,9 +821,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Abhinavagupta, Gītārthasaṅgraha v.1</div>
 <h3>The Wheel of Diverse States</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">य एष विततस्फुरद्विविधभावचक्रात्मकः परस्परविभेदवान्विषयतामुपागच्छति यदेकमयभावनावशत एत्यभेदान्वयं स शंभुरशिवापहो जयति बोधभासां निधिः</div>
+<div class="dev" style="font-size:25pt;line-height:1.45">य एष विततस्फुरद्विविधभावचक्रात्मकः परस्परविभेदवान्विषयतामुपागच्छति यदेकमयभावनावशत एत्यभेदान्वयं स शंभुरशिवापहो जयति बोधभासां निधिः</div>
 <div class="iast">ya eṣa vitatasphuradvividhabhāvacakrātmakaḥ parasparavibhedavānviṣayatāmupāgacchati yadekamayabhāvanāvaśata etyabhedānvayaṃ sa śaṃbhuraśivāpaho jayati bodhabhāsāṃ nidhiḥ</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">he who, made of the widely flashing wheel of diverse states, comes to be the objects of experience — whose one, given to contemplation, is the bond of non-difference: he, śaṃbhu, averter of woe, triumphs — treasury of the lights of knowing.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">he who, made of the widely flashing wheel of diverse states, comes to be the objects of experience — whose one, given to contemplation, is the bond of non-difference: he, śaṃbhu, averter of woe, triumphs — treasury of the lights of knowing.</span></div>
 <div class="pnum">31</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -842,9 +842,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 17.24</div>
 <h3>Worship Without Begging</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">अहो भक्तिभरोदारचेतसां वरद त्वयि / स्लाघ्यः पूजाविधिः को ऽपि यो न याच्ञाकलंकितः</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">अहो भक्तिभरोदारचेतसां वरद त्वयि / स्लाघ्यः पूजाविधिः को ऽपि यो न याच्ञाकलंकितः</div>
 <div class="iast">aho bhaktibharodāracetasāṃ varada tvayi / slāghyaḥ pūjāvidhiḥ ko &#x27;pi yo na yācñākalaṃkitaḥ</div>
-<div class="en" style="font-size:15pt"><span class="ln">wonder! o boon-giver: among the full-hearted in devotion toward you,</span><span class="ln">is any mode of worship praised</span><span class="ln">that is not stained with begging?</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">wonder! o boon-giver: among the full-hearted in devotion toward you,</span><span class="ln">is any mode of worship praised</span><span class="ln">that is not stained with begging?</span></div>
 <div class="pnum">32</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -864,9 +864,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 1.21</div>
 <h3>The Rasa Beyond the World</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">शान्तकल्लोलशीताच्छस्वादुभक्तिसुधाम्बुधौ / अलौकिकरसास्वादे सुस्थैः को ऽनाम गण्यते</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">शान्तकल्लोलशीताच्छस्वादुभक्तिसुधाम्बुधौ / अलौकिकरसास्वादे सुस्थैः को ऽनाम गण्यते</div>
 <div class="iast">śāntakallolaśītācchasvādubhaktisudhāmbudhau / alaukikarasāsvāde susthaiḥ ko &#x27;nāma gaṇyate</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">diving in the ocean of devotion&#x27;s nectar — with peaceful waves,</span><span class="ln">cool and white and sweet — tasting the alaukika rasa:</span><span class="ln">who among the steady even counts a name there?</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">diving in the ocean of devotion&#x27;s nectar — with peaceful waves,</span><span class="ln">cool and white and sweet — tasting the alaukika rasa:</span><span class="ln">who among the steady even counts a name there?</span></div>
 <div class="pnum">33</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -885,9 +885,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 17.12</div>
 <h3>All Time in the Worship-Union</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">भवत्पूजामयासङ्गसम्भोगसुखिनो मम / प्रयातु कालः सकलो ऽप्य् अनन्तो ऽपीयदर्थये</div>
+<div class="dev" style="font-size:40pt;line-height:1.55">भवत्पूजामयासङ्गसम्भोगसुखिनो मम / प्रयातु कालः सकलो ऽप्य् अनन्तो ऽपीयदर्थये</div>
 <div class="iast">bhavatpūjāmayāsaṅgasambhogasukhino mama / prayātu kālaḥ sakalo &#x27;py ananto &#x27;pīyadarthaye</div>
-<div class="en" style="font-size:15pt"><span class="ln">may all my time — even the endless kind — pass</span><span class="ln">in the happiness of union with your worship;</span><span class="ln">that alone is what i crave.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">may all my time — even the endless kind — pass</span><span class="ln">in the happiness of union with your worship;</span><span class="ln">that alone is what i crave.</span></div>
 <div class="pnum">34</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -906,9 +906,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 18.15</div>
 <h3>For Peace, Not for Pleasure</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">शान्तये न सुखलिप्सुता मनाग् भक्तिसम्भृतमदेषु तैः प्रभोः / मोक्षमार्गणफलापि नार्थना स्मर्यते हृदयहारिणः पुरः</div>
+<div class="dev" style="font-size:32pt;line-height:1.5">शान्तये न सुखलिप्सुता मनाग् भक्तिसम्भृतमदेषु तैः प्रभोः / मोक्षमार्गणफलापि नार्थना स्मर्यते हृदयहारिणः पुरः</div>
 <div class="iast">śāntaye na sukhalipsutā manāg bhaktisambhṛtamadeṣu taiḥ prabhoḥ / mokṣamārgaṇaphalāpi nārthanā smaryate hṛdayahāriṇaḥ puraḥ</div>
-<div class="en" style="font-size:13.5pt"><span class="ln">for peace, not for pleasure-seeking — those intoxicated</span><span class="ln">with the fullness of your devotion, o lord;</span><span class="ln">even the fruit of searching for liberation they don&#x27;t crave —</span><span class="ln">before you, the heart-stealer.</span></div>
+<div class="en" style="font-size:12pt"><span class="ln">for peace, not for pleasure-seeking — those intoxicated</span><span class="ln">with the fullness of your devotion, o lord;</span><span class="ln">even the fruit of searching for liberation they don&#x27;t crave —</span><span class="ln">before you, the heart-stealer.</span></div>
 <div class="pnum">35</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -927,9 +927,9 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 <section class="page prayer">
 <div class="src">Utpaladeva, Śivastotrāvalī 11.9</div>
 <h3>Cries Like Bamboo-Drops</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">त्वत्कर्णदेशम धिशय्य महार्घभावम् आक्रन्दितानि मम तुच्छतराणि यान्ति / वंशान्तरालपतितानि जलैकदेशखण्डानि मौक्तिकमणित्वम् इवोद्वहन्ति</div>
+<div class="dev" style="font-size:25pt;line-height:1.45">त्वत्कर्णदेशम धिशय्य महार्घभावम् आक्रन्दितानि मम तुच्छतराणि यान्ति / वंशान्तरालपतितानि जलैकदेशखण्डानि मौक्तिकमणित्वम् इवोद्वहन्ति</div>
 <div class="iast">tvatkarṇadeśama dhiśayya mahārghabhāvam ākranditāni mama tucchatarāṇi yānti / vaṃśāntarālapatitāni jalaikadeśakhaṇḍāni mauktikamaṇitvam ivodvahanti</div>
-<div class="en" style="font-size:15pt"><span class="ln">laying my cries at your ear&#x27;s place, my dearest —</span><span class="ln">they grow small: like rain inside a bamboo-joint,</span><span class="ln">they rise as pearls.</span></div>
+<div class="en" style="font-size:13pt"><span class="ln">laying my cries at your ear&#x27;s place, my dearest —</span><span class="ln">they grow small: like rain inside a bamboo-joint,</span><span class="ln">they rise as pearls.</span></div>
 <div class="pnum">36</div></section>
 <section class="page guide">
 <div class="label">The Guide</div>
@@ -944,159 +944,11 @@ unreal only from the underside. Emotions belong to the making, not the mistake.<
 </div>
 <div class="foot">Source: <a href="sources/sivastotravali_corpus.json">sivastotravali_corpus.json · 11.9</a></div>
 <div class="pnum">36 · guide</div></section>
-</div><section class="page sec-div"><div class="glyph"><svg viewBox="0 0 100 100" width="22mm" height="22mm" xmlns="http://www.w3.org/2000/svg" ><g fill="none" stroke="#17140f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="30"/><path d="M 50.0 6.0 Q 61.8 21.8 78.3 16.3 Q 59.7 21.8 50.0 6.0 Z" stroke-width="2.4" opacity="1"/><path d="M 78.3 16.3 Q 77.9 35.0 93.3 42.4 Q 76.7 35.0 78.3 16.3 Z" stroke-width="2.4" opacity="1"/><path d="M 93.3 42.4 Q 80.8 55.2 88.1 72.0 Q 81.2 55.2 93.3 42.4 Z" stroke-width="2.4" opacity="1"/><path d="M 88.1 72.0 Q 69.4 73.0 65.0 91.3 Q 71.1 73.0 88.1 72.0 Z" stroke-width="2.4" opacity="1"/><path d="M 65.0 91.3 Q 48.9 80.0 35.0 91.3 Q 51.1 80.0 65.0 91.3 Z" stroke-width="2.4" opacity="1"/><path d="M 35.0 91.3 Q 28.9 73.0 11.9 72.0 Q 30.6 73.0 35.0 91.3 Z" stroke-width="2.4" opacity="1"/><path d="M 11.9 72.0 Q 18.8 55.2 6.7 42.4 Q 19.2 55.2 11.9 72.0 Z" stroke-width="2.4" opacity="1"/><path d="M 6.7 42.4 Q 23.3 35.0 21.7 16.3 Q 22.1 35.0 6.7 42.4 Z" stroke-width="2.4" opacity="1"/><path d="M 21.7 16.3 Q 40.3 21.8 50.0 6.0 Q 38.2 21.8 21.7 16.3 Z" stroke-width="2.4" opacity="1"/><line x1="50.0" y1="20.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="69.3" y1="27.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="79.5" y1="44.8" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="76.0" y1="65.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="60.3" y1="78.2" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="39.7" y1="78.2" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="24.0" y1="65.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="20.5" y1="44.8" x2="50" y2="50" stroke-width="2.4" opacity="1"/><line x1="30.7" y1="27.0" x2="50" y2="50" stroke-width="2.4" opacity="1"/><circle cx="50" cy="50" r="6" fill="#17140f" stroke="none"/></g></svg></div><div class="num">A</div>
-<h2>Chanted at the Sangha</h2><div class="sub">Swamiji&#x27;s hymns of protection</div><div class="rule"></div></section><div class="spread">
-<section class="page prayer">
-<div class="src">Yajurveda · chanted by Swami Lakshmanjoo at every Weekly Sangha</div>
-<h3>The Aghora Mantra</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">अघोरेभ्यो ऽथ घोरेभ्यो घोरघोरतरीभ्यश्च । सर्वतः शर्व सर्वेभ्यो नमस्ते रुद्ररूपेभ्यः ॥</div>
-<div class="iast">aghorebhyo &#x27;tha ghorebhyo ghoraghoratarībhyaśca | sarvataḥ śarva sarvebhyo namaste rudrarūpebhyaḥ ||</div>
-<div class="en" style="font-size:15pt"><span class="ln">salutations to aghora, to ghora, to ghoraghora-tarī — to sarva in all directions, to all the rudra-forms: namas.</span></div>
-<div class="pnum">37</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>The Aghora Mantra</h3>
-<div class="src">Yajurveda · chanted by Swami Lakshmanjoo at every Weekly Sangha · Secret Supreme ch.13 · letter 1989</div>
-<div class="brief">The Sangha&#x27;s opening chant. Swamiji&#x27;s directive after his 1989 vision: spread this message all over the world.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>The verse salutes the three energies of Rudra as his forms. Per Swamiji&#x27;s Tantrāloka 3.257-259 teaching: Aghorā carries you to God-consciousness at once, even without your wish (cit-śakti); Ghorā makes the desirer wait — &#x27;don&#x27;t hurry, just we will see the time&#x27; (icchā-śakti); Ghoratarī carries the careless downward (jñāna-śakti). The protection invoked is real but conditional: Svacchandanātha&#x27;s eighteen arms are the eighteen tattvas, outgrowths of the five śaktis, made for the protection of the individual — but protection requires the yamas and niyamas, the supreme of which is īśvara-praṇidhāna: if you love Lord Śiva and are devoted to Him, it is not possible for Him to neglect you.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>Chant it where Swamiji put it: at the opening of any practice — this is the beginning of the Weekly Sangha. Three to nine rounds, aloud. When to: first thing in the morning, or at any moment of fear — you are addressing the three energies directly. Effect, per the tradition he taught: protection through the eighteen arms and purification of the three channels, body, speech and mind. His own instruction for its spread: &#x27;You should spread this message all over the world.&#x27;</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>the flinch arrives half a second late or not at all: what repulsed you now reads as his body in another mood.</p></div>
-
-</div>
-<div class="foot">Source: <a href="sources/efficacy-aghora.pdf">efficacy-aghora.pdf · Secret Supreme ch.13 · letter 1989</a></div>
-<div class="pnum">37 · guide</div></section>
-</div><div class="spread">
-<section class="page prayer">
-<div class="src">Śrī Bahurūpa-Garbha Stotra, Bhairava&#x27;s answer (vv.5-7)</div>
-<h3>The Secret Remedy</h3>
-<div class="dev" style="font-size:20pt;line-height:1.75">शृणु देवी! परं गुह्यं रहस्यं परमाद्भुतम् । सर्व-पाप-प्रशमनं सर्व-दुःख-निवारणम् ॥ प्रायश्चित्तेषु सर्वेषु तीव्रेष्व् अपि विमोचनम् । सर्व-च्छिद्राप-हरणं सर्वार्ति-विनिवारकम् ॥ समयोलङ्घने घोरे जपादेव विमोचनम् । भोग-मोक्ष्ह-प्रदं देवी! सर्व-सिद्धि-फलप्रदम् ॥</div>
-<div class="iast">śṛṇu devī! paraṁ guhyaṁ rahasyaṁ paramādbhutam | sarva-pāpa-praśamanaṁ sarva-duḥkha-nivāraṇam || prāyaścitteṣu sarveṣu tīvreṣv api vimocanam | sarva-cchidrāpa-haraṇaṁ sarvārti-vinivārakam || samayolaṅghane ghore japādeva vimocanam | bhoga-mokṣha-pradaṁ devī! sarva-siddhi-phalapradam ||</div>
-<div class="en" style="font-size:12.5pt"><span class="ln">listen, goddess: the supreme secret, most wonderful — it pacifies all sins, removes all sorrows; releases even from intense atonement, removes every gap, uproots all affliction; in the breaking of the vows the remedy is the recitation alone — it grants enjoyment and liberation, goddess, the fruits of all accomplishments.</span></div>
-<div class="pnum">38</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>The Secret Remedy</h3>
-<div class="src">Śrī Bahurūpa-Garbha Stotra, Bhairava&#x27;s answer (vv.5-7) · vv.5-7 · Academy recitation PDF</div>
-<div class="brief">The Devī asks for the easy remedy; Bhairava answers: the recitation itself.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>The hymn&#x27;s frame: Bhairavī approaches Svacchanda Bhairava on Kailāśa and asks for the upāya for those who have broken the rules, however sincerely they try to atone. Bhairava&#x27;s answer is not a ritual but a text — japādeva vimocanam, liberation by the recitation itself. It purifies the three channels, closes the chidras (the flaws and gaps in conduct and rite), and grants both bhoga and mokṣa. The logic of a remedy-hymn: the mantra is the medicine, and the disease is as much guilt as transgression.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>Recite it at the beginning and end of any ritual — the hymn&#x27;s own instruction (yāgārambhe ca yāgānte). Also daily (nitya), on occasion (naimitika), when you want something (kāmya), for yourself or for someone else. Counting effects per the hymn: one hundred recitations purify even great sinners; fifty, inadvertent sins; twenty-five, minor sins — and a single recitation (of this hymn or of the Aghora japa) removes wrongs done by body, speech or mind, whether through inattention or knowingly.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>a stuck state — anxiety, craving, the low hum — is named as him and loses its stuckness; the secret shows as the shift.</p></div>
-<div class="blk"><span class="bl">What to feel / visualise</span><p>the ease is the point — sadupāyaṁ, the remedy without strain.</p></div>
-</div>
-<div class="foot">Source: <a href="sources/bahurupa-meaning.pdf">bahurupa-meaning.pdf · vv.5-7 · Academy recitation PDF</a></div>
-<div class="pnum">38 · guide</div></section>
-</div><div class="spread">
-<section class="page prayer">
-<div class="src">Śrī Bahurūpa-Garbha Stotra, the close (vv.13-15)</div>
-<h3>No Mantra Greater</h3>
-<div class="dev" style="font-size:20pt;line-height:1.75">विधिहीने प्रमादे च जप्तव्यं सर्व-कर्मसु । नातः परतरो मन्त्रो नातः परतरा स्तुतिः ॥ नातः परतरा काचित् सम्यक्-प्रत्यङ्गिरा प्रिये । इयं समय-विद्यानां राज-राजेश्वरी-श्वरि ॥ परमाप्यायनं देवि भैरवस्य प्रकीर्तितम् । प्रीणनं सर्व-देवानां सर्व-सौभाग्य-वर्धनम् ॥</div>
-<div class="iast">vidhihīne pramāde ca japtavyaṁ sarva-karmasu | nātaḥ parataro mantro nātaḥ paratarā stutiḥ || nātaḥ paratarā kācit samyak-pratyaṅgirā priye | iyaṁ samaya-vidyānāṁ rāja-rājeśvarī-śvari || paramāpyāyanaṁ devi bhairavasya prakīrtitam | prīṇanaṁ sarva-devānāṁ sarva-saubhāgya-vardhanam ||</div>
-<div class="en" style="font-size:12.5pt"><span class="ln">when the rule is missing, when there is negligence — it should be recited in every action. no mantra is greater than this, no praise higher; no counter-formula better than this, o beloved — this queen of the knowledge of the precepts, o sovereign among isvaras! this, o goddess, is the supreme nourishment of bhairava&#x27;s glorification — it satisfies all the gods and increases all good fortune.</span></div>
-<div class="pnum">39</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>No Mantra Greater</h3>
-<div class="src">Śrī Bahurūpa-Garbha Stotra, the close (vv.13-15) · vv.13-15 · viniyoga</div>
-<div class="brief">The hymn&#x27;s own claim: no mantra greater, no counter-formula better.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>Three closing claims: (1) it covers every action, including mistakes of omission and negligence (pramāda); (2) it is samyak-pratyaṅgirā — the perfect counter-charm against ritual flaw — the queen of samaya-vidyā, the knowledge of the precepts; (3) its effect is āpyāyana, nourishment — of Bhairava&#x27;s glorification, pleasing to all the gods, increasing saubhāgya, all good fortune. The hymn then gives its own viniyoga: Ṛṣi Vāmadeva, meter Anuṣṭupa, devatā Bahurūpabhaṭṭāraka, purpose — removal of sins of body, speech and mind, and attainment of the four goals: dharma, artha, kāma, mokṣa.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>Full practice in the tradition: dhyāna of Svacchanda (crystal-white upward face, yellow east, blue south, pomegranate-red north, moon-white west — the twelve-verse meditation), then this hymn, then the Gāyatrī — oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi, tanno &#x27;ghoraḥ pracodayāt, three times — then the mūla mantra. In this book&#x27;s simpler use: one round of these three verses at the close of any difficult day; the line to remember is &#x27;no mantra greater than this&#x27;.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>the tongue stops wanting to stop: the mantra runs during ordinary tasks, unsummoned — addiction-to-the-name.</p></div>
-
-</div>
-<div class="foot">Source: <a href="sources/bahurupa-recitation.pdf">bahurupa-recitation.pdf · vv.13-15 · viniyoga</a></div>
-<div class="pnum">39 · guide</div></section>
-</div><div class="spread">
-<section class="page prayer">
-<div class="src">Śrī Bahurūpa-Garbha Stotra — dhyāna v.1</div>
-<h3>Svacchanda, Fifteen-Eyed</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">त्रिपञ्च-नयनं देवं जटा-मुकुट-मण्डितम् । चन्द्रकोटि-प्रतीकाश्हं चन्द्रार्ध-कृइत-श्हेखरम्</div>
-<div class="iast">tripañca-nayanaṁ devaṁ jaṭā-mukuṭa-maṇḍitam | candrakoṭi-pratīkāśhaṁ candrārdha-kṛita-śhekharam</div>
-<div class="en" style="font-size:15pt"><span class="ln">meditate the deva of fifteen eyes, crowned with matted hair —</span><span class="ln">bright as a crore of moons,</span><span class="ln">with the crescent as his crest.</span></div>
-<div class="pnum">40</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>Svacchanda, Fifteen-Eyed</h3>
-<div class="src">Śrī Bahurūpa-Garbha Stotra — dhyāna v.1 · dhyāna v.1</div>
-<div class="brief">The dhyāna opens the hymn: eyes, hair, moonlight, crescent.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>Every pūjā begins with dhyāna — the form fixed before the words. Fifteen eyes (three on each of five faces), the matted crown, a body bright as a crore of moons, the crescent as crest: the geometry of Svacchanda made visual so the hymn that follows has somewhere to land.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>Hold the image for three breaths before the hymn. The count is itself a mandala: five faces × three eyes = the fifteen.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>the periphery reads as watching-with-kindness: directions, above and below feel occupied by him, not empty.</p></div>
-<div class="blk"><span class="bl">What to feel / visualise</span><p>the page you are about to read now has a face behind it.</p></div>
-</div>
-<div class="foot">Source: <a href="sources/bahurupa-recitation.pdf">bahurupa-recitation.pdf · dhyāna v.1</a></div>
-<div class="pnum">40 · guide</div></section>
-</div><div class="spread">
-<section class="page prayer">
-<div class="src">Śrī Bahurūpa-Garbha Stotra — dhyāna v.6</div>
-<h3>Eighteen Arms</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">सिंह-चर्म-परीधानं गज-चर्मोत्तरी-यकम् । अष्ह्टा-दश्ह-भुजं देवं नीलकण्ठं सुतेजसम्</div>
-<div class="iast">siṁha-carma-parīdhānaṁ gaja-carmottarī-yakam | aṣhṭā-daśha-bhujaṁ devaṁ nīlakaṇṭhaṁ sutejasam</div>
-<div class="en" style="font-size:15pt"><span class="ln">wearing lion-skin at the loins, elephant-hide above —</span><span class="ln">the eighteen-armed deva,</span><span class="ln">blue-throated, radiant.</span></div>
-<div class="pnum">41</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>Eighteen Arms</h3>
-<div class="src">Śrī Bahurūpa-Garbha Stotra — dhyāna v.6 · dhyāna v.6 · Swamiji letter 1989</div>
-<div class="brief">Eighteen arms = eighteen tattvas — Swamiji&#x27;s own gloss.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>In Swamiji&#x27;s1989 letter the eighteen arms are counted exactly: five prāṇas, five acts, five inner acts (abhāsanā to vilāpanā), plus mind, intellect and ahaṃkāra — the whole cosmology as a body standing guard over the individual. Lion below, elephant above: wild and royal, both worn as armour. The protection is structured, not generic.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>Name the three groups of five + the three as you hold the image: prāṇas, acts, inner acts — then mind, intellect, ego. The eighteen-armed form is the tattvas ACTUALLY standing around you. Feeling: guarded specificity, not vague light.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>the day&#x27;s open loops read as literally carried — the shoulder-tension drops because he has them.</p></div>
-
-</div>
-<div class="foot">Source: <a href="sources/bahurupa-recitation.pdf">bahurupa-recitation.pdf · dhyāna v.6 · Swamiji letter 1989</a></div>
-<div class="pnum">41 · guide</div></section>
-</div><div class="spread">
-<section class="page prayer">
-<div class="src">Śrī Bahurūpa-Garbha Stotra — dhyāna v.10</div>
-<h3>The Supreme Aghorī Power</h3>
-<div class="dev" style="font-size:32pt;line-height:1.9">ध्यायेद्वै यस्तु युक्तात्मा क्ष्हिप्रं सिद्ध्यति मानवः । या सा पूर्वं मया ख्याता अघोरी श्हक्तिर्-उत्तमा</div>
-<div class="iast">dhyāyedvai yastu yuktātmā kṣhipraṁ siddhyati mānavaḥ | yā sā pūrvaṁ mayā khyātā aghorī śhaktir-uttamā</div>
-<div class="en" style="font-size:15pt"><span class="ln">let the yoked one meditate thus — the human attains swiftly:</span><span class="ln">she whom i have declared before,</span><span class="ln">the supreme aghorī power.</span></div>
-<div class="pnum">42</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>The Supreme Aghorī Power</h3>
-<div class="src">Śrī Bahurūpa-Garbha Stotra — dhyāna v.10 · dhyāna v.10</div>
-<div class="brief">The dhyāna&#x27;s promise: the yoked one attains fast.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>The meditation closes by naming its engine: aghorī śakti uttamā — the supreme Aghorī power, the very śakti the Sangha&#x27;s Aghora mantra invokes. Speed follows from yoking (yuktātman), not from duration — kṣipraṁ siddhyati, swiftly the human attains. The hinge between dhyāna and hymn.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>Recite once as the transition: image stable, hymn ahead. The &#x27;yoked one&#x27; is simply you with the picture held. The power invoked is the same one the Weekly Sangha chants — your book&#x27;s appendix and the living practice now share one address.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>the thing you most avoid gets looked at directly and stays lit instead of gruesome: no-aversion showing.</p></div>
-
-</div>
-<div class="foot">Source: <a href="sources/bahurupa-recitation.pdf">bahurupa-recitation.pdf · dhyāna v.10</a></div>
-<div class="pnum">42 · guide</div></section>
-</div><div class="spread">
-<section class="page prayer">
-<div class="src">Śrī Bahurūpa-Garbha Stotra — the gāyatrī</div>
-<h3>Bahurūpa Gāyatrī</h3>
-<div class="dev" style="font-size:40pt;line-height:2.0">ओं बहुरुपाय विद्महे, कोटराक्षाय धीमहि । तन्नो ऽघोरः प्रचोदयात्</div>
-<div class="iast">oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi | tanno &#x27;ghoraḥ pracodayāt</div>
-<div class="en" style="font-size:15pt"><span class="ln">we meditate on the manifold-formed,</span><span class="ln">on the one of a hundred thousand eyes —</span><span class="ln">may the aghora impel our thought.</span></div>
-<div class="pnum">43</div></section>
-<section class="page guide">
-<div class="label">The Guide</div>
-<h3>Bahurūpa Gāyatrī</h3>
-<div class="src">Śrī Bahurūpa-Garbha Stotra — the gāyatrī · gāyatrī · viniyoga in recitation PDF</div>
-<div class="brief">The hymn&#x27;s Gāyatrī — three tenses of prayer in three lines.</div>
-<div class="body">
-<div class="blk"><span class="bl">What is it</span><p>The classical Gāyatrī frame bent onto Bahurūpabhaṭṭāraka: vidmahe (we know), dhīmahi (we dwell), pracodayāt (may he impel) — knowing, dwelling, directing. Bahurūpa = manifold-formed: forms plural, power one. Koṭarākṣa, hundred-thousand-eyed, answers the dhyāna&#x27;s fifteen eyes — the seeing multiplied.</p></div>
-<div class="blk"><span class="bl">How to perform it</span><p>The recitation order per the viniyoga: dhyāna → hymn → this gāyatrī three times → mūla mantra. Three rounds, seed-voice. &#x27;Pracodayāt&#x27; is the only request in the entire sequence — everything before it was arrangement.</p></div>
-<div class="blk"><span class="bl">How to know it's working</span><p>brow, chest and navel warm in sequence on the rounds — and the day bends toward him three times without effort.</p></div>
-
-</div>
-<div class="foot">Source: <a href="sources/bahurupa-recitation.pdf">bahurupa-recitation.pdf · gāyatrī · viniyoga in recitation PDF</a></div>
-<div class="pnum">43 · guide</div></section>
 </div><section class="page epi center"><div class="lines" style="font-family:'Tiro'">ॐ शान्तिः शान्तिः शान्तिः</div>
 <div class="src">Tantric Prayer</div></section><section class="page epi">
 <h2 class="blk">Colophon</h2>
 <p>The prayers here are our own translations of the Sanskrit, checked line by line against
-the witnesses in our Kashmir Śaiva corpus (translation-work) — thirty-three from Utpaladeva's
+the witnesses in our Kashmir Śaiva corpus (translation-work) — thirty-two from Utpaladeva's
 Śivastotrāvalī, plus Kṣemarāja's Ghatakarpara, Abhinavagupta's Kramastotra and
 Gītārthasaṅgraha. Each guide links its source file.</p>
 <p>The rasa theory is Abhinavagupta's own — Abhinavabhāratī and Tantrāloka, quoted briefly
@@ -1107,4 +959,4 @@ Bahurūpa-Garbha Stotra — is © the Hughes Family Trust, archived here and quo
 his own instruction to "spread this message all over the world."</p>
 <p>Set in Tiro Devanagari and Cormorant Garamond; A5; print-checked to the KDP paperback
 specification.</p>
-<div class="src">Tantric Prayer · built from translation-work</div></section><section class="page bib"><h2>Sources</h2><ul><li><b>sivastotravali_corpus.json</b><br><a href="sources/sivastotravali_corpus.json">sources/sivastotravali_corpus.json</a><br><span style="color:#76736e;font-size:9.5pt">1.11, 4.18, 3.5, 5.18, 2.18, 3.15, 16.7, 1.26, 3.9, 10.16, 11.14, 7.2, 16.15, 16.16, 10.20, 2.29, 5.15, 4.14, 4.1, 9.6, 11.8, 12.8, 9.18, 13.2, 15.14, 18.19, 1.20, 2.12, 17.24, 1.21, 17.12, 18.15, 11.9</span></li><li><b>L4 ghat p01 v05.DRAFT.json</b><br><a href="sources/L4-ghat-p01-v05.DRAFT.json">sources/L4-ghat-p01-v05.DRAFT.json</a><br><span style="color:#76736e;font-size:9.5pt">ghat-p01 v5</span></li><li><b>L4 kram p19.DRAFT.json</b><br><a href="sources/L4-kram-p19.DRAFT.json">sources/L4-kram-p19.DRAFT.json</a><br><span style="color:#76736e;font-size:9.5pt">kram-p19 v19</span></li><li><b>L4 gita a00 v01.DRAFT.json</b><br><a href="sources/L4-gita-a00-v01.DRAFT.json">sources/L4-gita-a00-v01.DRAFT.json</a><br><span style="color:#76736e;font-size:9.5pt">gita-a00 v1</span></li><li><b>efficacy aghora.pdf</b><br><a href="sources/efficacy-aghora.pdf">sources/efficacy-aghora.pdf</a><br><span style="color:#76736e;font-size:9.5pt">Secret Supreme ch.13 · letter 1989</span></li><li><b>bahurupa meaning.pdf</b><br><a href="sources/bahurupa-meaning.pdf">sources/bahurupa-meaning.pdf</a><br><span style="color:#76736e;font-size:9.5pt">vv.5-7 · Academy recitation PDF</span></li><li><b>bahurupa recitation.pdf</b><br><a href="sources/bahurupa-recitation.pdf">sources/bahurupa-recitation.pdf</a><br><span style="color:#76736e;font-size:9.5pt">vv.13-15 · viniyoga, dhyāna v.1, dhyāna v.6 · Swamiji letter 1989, dhyāna v.10, gāyatrī · viniyoga in recitation PDF</span></li></ul></section></body></html>
+<div class="src">Tantric Prayer · built from translation-work</div></section><section class="page bib"><h2>Sources</h2><ul><li><b>sivastotravali_corpus.json</b><br><a href="sources/sivastotravali_corpus.json">sources/sivastotravali_corpus.json</a><br><span style="color:#76736e;font-size:8pt">1.11, 4.18, 3.5, 5.18, 2.18, 3.15, 16.7, 1.26, 3.9, 10.16, 11.14, 7.2, 16.15, 16.16, 10.20, 2.29, 5.15, 4.14, 4.1, 9.6, 11.8, 9.18, 13.2, 15.14, 18.19, 1.20, 2.12, 17.24, 1.21, 17.12, 18.15, 11.9</span></li><li><b>L4 ghat p01 v05.DRAFT.json</b><br><a href="sources/L4-ghat-p01-v05.DRAFT.json">sources/L4-ghat-p01-v05.DRAFT.json</a><br><span style="color:#76736e;font-size:8pt">ghat-p01 v5</span></li><li><b>efficacy aghora.pdf</b><br><a href="sources/efficacy-aghora.pdf">sources/efficacy-aghora.pdf</a><br><span style="color:#76736e;font-size:8pt">Secret Supreme ch.13 · letter 1989</span></li><li><b>L4 kram p19.DRAFT.json</b><br><a href="sources/L4-kram-p19.DRAFT.json">sources/L4-kram-p19.DRAFT.json</a><br><span style="color:#76736e;font-size:8pt">kram-p19 v19</span></li><li><b>L4 gita a00 v01.DRAFT.json</b><br><a href="sources/L4-gita-a00-v01.DRAFT.json">sources/L4-gita-a00-v01.DRAFT.json</a><br><span style="color:#76736e;font-size:8pt">gita-a00 v1</span></li></ul></section></body></html>

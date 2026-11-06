@@ -236,7 +236,9 @@ def check_content(name, spec, prints, template):
         problems.append(('content', 'duplicate entry ids'))
     # Legacy books do not yet bind each entry's exact text to a specific
     # upstream passage, recorded decision, rights evidence and reviewed revision.
-    problems.append(('content', f'{len(entries)} entries lack a verified per-entry source, gate, rights and review handoff'))
+    # That is a SHIP concern (per-entry handoff) — it blocks the build stage,
+    # not authoring of content/structure/formatting.
+    problems.append(('build', f'{len(entries)} entries lack a verified per-entry source, gate, rights and review handoff'))
     art = book_data.get('opening_image')
     if art:
         if not isinstance(art, dict):

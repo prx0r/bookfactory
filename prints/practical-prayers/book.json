@@ -1,8 +1,8 @@
 {
  "meta": {
   "title": "Practical Prayers",
-  "subtitle": "Forty-four prayers for the moments of the day",
-  "blurb": "eleven moments · four prayers each",
+  "subtitle": "Thirty-six prayers for the moments of the day — and anytime",
+  "blurb": "eight moments and anytime · four prayers each",
   "epi_iast": "brahmārpaṇaṁ brahma havir brahmāgnau brahmaṇā hutam",
   "epi_en": "the offering is brahman, the oblation is brahman, poured by brahman into the fire of brahman",
   "epi_src": "Bhagavad Gītā 4.24 — the meal prayer"
@@ -51,28 +51,16 @@
    "sub": "illness · pain"
   },
   {
-   "id": "alone",
-   "numeral": "VIII",
-   "title": "Alone",
-   "sub": "solitude · loneliness"
-  },
-  {
-   "id": "flatness",
-   "numeral": "IX",
-   "title": "Flatness",
-   "sub": "boredom · blankness"
-  },
-  {
-   "id": "gratitude",
-   "numeral": "X",
-   "title": "Gratitude",
-   "sub": "thanksgiving & praise"
-  },
-  {
    "id": "sleep",
-   "numeral": "XI",
+   "numeral": "VIII",
    "title": "Evening / Sleep",
    "sub": "wind down · lights out"
+  },
+  {
+   "numeral": "IX",
+   "id": "anytime",
+   "title": "Anytime",
+   "sub": "no clock · pocket mantras"
   }
  ],
  "glyph": "activity"

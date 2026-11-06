@@ -57,17 +57,18 @@ class StageTests(unittest.TestCase):
         if not (PRINTS / 'practical-prayers' / 'entries.json').is_file():
             self.skipTest('prints checkout unavailable')
         grouped = check.run_lane('practical-prayers', PRINTS, ROOT.parent / 'translation-work')
-        # PP is 44 entries vs thesis 36 -> structure stage problem exists somewhere
-        allp = sum(grouped.values(), [])
-        self.assertTrue(any('total_entries' in p for p in allp), allp)
-        # build problems must be under 'build', never under 'content'
+        # restructure landed: structure stage is clean (thesis matches book)
+        self.assertEqual(grouped['structure'], [], grouped['structure'])
+        # content stage is clean (anatomy, sources)
+        self.assertEqual(grouped['content'], [], grouped['content'])
+        # build problems exist (stale/unbuilt PDF) and live under 'build', never under 'content'
         for p in grouped['content']:
             self.assertNotIn('PDF', p)
 
-    def test_project_stage_is_content_now(self):
+    def test_project_stage_is_formatting_now(self):
         for book in ('practical-prayers', 'tantric-prayer'):
             settings = json.loads((ROOT / 'projects' / book / 'project.json').read_text(encoding='utf-8'))
-            self.assertEqual(settings['stage'], 'content')
+            self.assertEqual(settings['stage'], 'formatting')
             self.assertLessEqual(settings['max_pages'], 110)
 
     def test_invalid_stage_fails_closed(self):

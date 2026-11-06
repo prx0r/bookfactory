@@ -186,16 +186,23 @@ Anytime:
 `wake · bath · social · work · food · wait · sick · sleep · anytime`.
 Decisions: drop alone/flatness/gratitude (mood = TP's rasa territory);
 Anytime gains oṃ namaḥ śivāya + bahurupa-core/close + bah-gayatri (from TP
-Sangha). Stage: content (44 -> 36 restructure is the live worklist).
+Sangha). Landed: 36 entries, stage build (handoff open).
 
 **Tantric Prayer** — 9 rasas x 4 = 36:
 `srgara · hasa · karuna · raudra · vira · bhayanaka · bibhatsa · adbhuta · santa`.
 Decisions: Sangha section out (practice-hymns aren't rasa verses); aghora
 replaces bha-3 in Bhayanaka (the operative fear-chant); 3 dhyana mantras
-retire. Stage: content (43 -> 36).
+retire. Landed: 36 entries, stage build (handoff open).
 
 Both: `<=110pp`, style `canonical`, template `prayer-book`, cross-book
 uniqueness enforced (verified: no shared ids/IAST today).
+
+**Landed 2026-11-06:** restructure executed (36/36), layout rebuilt to the
+line-budget Devanagari sizing — **PP 90pp / TP 93pp, preflight PASS, both
+lanes at `build` stage**. What still blocks `stage --to build` = ship:
+the per-entry handoff (source/gate/rights/review records) and per-source
+rights resolution (GRETIL/Bailly CC BY-NC-SA flag on the Śivastotrāvalī
+transcription). See PIPELINE.md blockers.
 
 ## 9. Command cheat sheet
 
