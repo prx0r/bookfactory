@@ -1,0 +1,91 @@
+{
+ "meta": {
+  "title": "Tantric Prayer",
+  "subtitle": "Thirty-Six Prayers for the Inner Weather",
+  "blurb": "the nine rasas · four prayers each · kashmir shaivism",
+  "epi_iast": "api labdhabhavadbhāvaḥ svātmollāsamayaṃ jagat / paśyan bhaktirasābhogair bhaveyam aviyojitaḥ",
+  "epi_en": "seeing the world as the delight of the self — may i never be parted from it, through the enjoyment of devotion's rasa.",
+  "epi_src": "Utpaladeva, Śivastotrāvalī 5.16"
+ },
+ "sections": [
+  {
+   "id": "srgara",
+   "numeral": "I",
+   "title": "Śṛṅgāra",
+   "sub": "the Erotic — desire & longing",
+   "gloss": "śṛṅgāra — \"amorous sentiment, love; the beauty that adorns\" (Monier-Williams)",
+   "doctrine": "sthāyin: rati — the beloved becomes the light of consciousness; separation is its fuel (Abhinavabhāratī)"
+  },
+  {
+   "id": "hasa",
+   "numeral": "II",
+   "title": "Hāsya",
+   "sub": "the Comic — mirth & laughter",
+   "gloss": "hāsya — \"laughable, comic; mockery — that which slays\" (from hās, to slay)",
+   "doctrine": "sthāyin: hāsa — the world-as-joke; laughter is the register of the play seen from inside"
+  },
+  {
+   "id": "karuna",
+   "numeral": "III",
+   "title": "Karuṇā",
+   "sub": "the Pathetic — grief & compassion",
+   "gloss": "karuṇā — \"compassion, mercy; the pitiable, what moves to pity\"",
+   "doctrine": "sthāyin: śoka — “all rasas are essentially pleasurable, even the painful” — grief is bliss in a minor key (Abhinavabhāratī)"
+  },
+  {
+   "id": "raudra",
+   "numeral": "IV",
+   "title": "Raudra",
+   "sub": "the Furious — anger & rage",
+   "gloss": "raudra — \"furious, stormy — the mood of Rudra\" (rudra: to roar)",
+   "doctrine": "sthāyin: krodha — anger exists because it is one with the wonder that is the experience of consciousness (Tantrāloka 15254)"
+  },
+  {
+   "id": "vira",
+   "numeral": "V",
+   "title": "Vīra",
+   "sub": "the Heroic — valour & energy",
+   "gloss": "vīra — \"heroic, manly valour; mighty effort\"",
+   "doctrine": "sthāyin: utsāha — enthusiasm is the energy of recognition, not of the task"
+  },
+  {
+   "id": "bhayanaka",
+   "numeral": "VI",
+   "title": "Bhayānaka",
+   "sub": "the Horrible — fear & anxiety",
+   "gloss": "bhayānaka — \"causing fear: terrible, dreadful\" (bhaya: fear)",
+   "doctrine": "sthāyin: bhaya — fear is real even when its object is a rope; use the realness, skip the object (Abhinavabhāratī, rope-snake)"
+  },
+  {
+   "id": "bibhatsa",
+   "numeral": "VII",
+   "title": "Bībhatsa",
+   "sub": "the Disgusting — disgust & self-loathing",
+   "gloss": "bībhatsa — \"loathsome, revolting; that which excites disgust\"",
+   "doctrine": "sthāyin: jugupsā — disgust points at the un-looked-at; the cure is darśana, seeing"
+  },
+  {
+   "id": "adbhuta",
+   "numeral": "VIII",
+   "title": "Adbhuta",
+   "sub": "the Marvellous — wonder & awe",
+   "gloss": "adbhuta — \"the un-become: astonishing, marvellous, unprecedented\" (a-dbhūta)",
+   "doctrine": "sthāyin: vismaya — wonder (camatkāra) is the primary characteristic of consciousness itself (Tantrāloka ad 1/53)"
+  },
+  {
+   "id": "santa",
+   "numeral": "IX",
+   "title": "Śānta",
+   "sub": "the Peaceful — Abhinavagupta's ninth",
+   "gloss": "śānta — \"pacified, allayed, put to rest\" — the ninth, added by Abhinavagupta",
+   "doctrine": "sthāyin: śānti — the ninth rasa, Abhinavagupta's own addition: the ocean in which the other eight swim"
+  },
+  {
+   "id": "sangha",
+   "numeral": "A",
+   "title": "Chanted at the Sangha",
+   "sub": "Swamiji's hymns of protection"
+  }
+ ],
+ "glyph": "rasa"
+}

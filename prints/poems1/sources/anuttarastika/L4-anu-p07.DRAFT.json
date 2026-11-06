@@ -1,0 +1,60 @@
+{
+ "craft_notes": "Sthāyin: śānta as will-born glory; bhakti as pratyabhijñā; vyabhicāri wonder (camatkāra) at one-yet-many. Sanskrit-first: sahaja/bhrānti opens kept (natural/delusion held per UNC); ekopy anekātmakam (ONE yet MANY-SELFed — non-cancelling kept, never resolved); You-capital kept (address IS the Lord). Abhinavagupta frame: ābhāsa shining-by-beholding (no arising needed — being-beheld suffices); will (icchā) as the sole birth. Rows: 9 (one/many pair — kept paired; resolving would cancel the verse), 7 (You addressed mid-verse — beholding MADE second-person), 1 (‘many-selfed’ closes — multiplicity last, uncancelled). Close: ‘one and yet many-selfed’. Rupture: ‘so in splendor’ (cosmogony turns to shining — birth-account becomes praise). Rejected: resolving one-yet-many — killed: non-cancelling IS the verse; lowercasing you — killed: address is the Lord; ‘through your gaze’ for beholding — killed: darśana-beholding kept plain. Read aloud: THINGS do NOT a-RISE … EVEN the un-TRUE par-TAKES of TRUTH … THIS-glo-ry OF-worlds is WILL-born OF-you … ONE and YET man-y-SELFED.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "anu-p07",
+  "song": "anu-p07",
+  "verse": 7,
+  "lines": [
+   "Things do not arise; by nature they shine through your beholding — even the untrue partakes of truth for a moment, through experience’s delusion.",
+   "This glory of worlds is will-born of You, with birth from nowhere else — so in splendor You shine through the worlds, one and yet many-selfed."
+  ],
+  "sanskrit_cite": "bhāvānāṃ na samudbhavo 'sti sahajas tvadbhāvitā bhānty amī niḥsatyā api satyatām anubhavabhrāntyā bhajanti kṣaṇam | tvatsaṅkalpaja eṣa viśvamahimā nāsty asya janmānyataḥ tasmāt tvaṃ vibhavena bhāsi bhuvaneṣv ekopy anekātmakaḥ",
+  "l0_ids": [
+   "anu-p07-p000",
+   "anu-p07-p001",
+   "anu-p07-p002",
+   "anu-p07-p003",
+   "anu-p07-p004",
+   "anu-p07-p005",
+   "anu-p07-p006",
+   "anu-p07-p007",
+   "anu-p07-p008",
+   "anu-p07-p009",
+   "anu-p07-p010",
+   "anu-p07-p011",
+   "anu-p07-p012",
+   "anu-p07-p013",
+   "anu-p07-p014",
+   "anu-p07-p015",
+   "anu-p07-p016",
+   "anu-p07-p017",
+   "anu-p07-p018",
+   "anu-p07-p019",
+   "anu-p07-p020",
+   "anu-p07-p021",
+   "anu-p07-p022",
+   "anu-p07-p023",
+   "anu-p07-p024"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "Do things arise, and whence the universe-glory? → No arising; things shine by contemplation; non-true borrows momentary truth; universe-glory is will-born; you shine one-yet-many.",
+  "c1_essence": [
+   "Of things no arising; naturally they shine by your contemplation, even the non-true borrowing momentary truth. This universe-glory is will-born from you, birth from elsewhere denied; hence you shine in worlds — one, yet many-selfed. Nonduality without cancelling multiplicity: one, yet many-selfed."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

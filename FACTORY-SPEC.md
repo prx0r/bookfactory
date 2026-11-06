@@ -1,11 +1,11 @@
 # FACTORY-SPEC — book factory (saved 2026-11-05, owner-ordered)
 
-> **Implementation update:** the publication gate is fail-closed and the quote loop produces watermarked previews only. The two existing PDFs currently fail actual PDF font-size and margin checks. See [PIPELINE.md](PIPELINE.md) for current commands, evidence, limitations and remaining work; the spec below describes the destination, not a claim that all gates are complete.
+> **Implementation update:** the publication gate is fail-closed, every book now carries a **thesis** (structure + products derived from it) and an append-only **decision log** where each construction change cites a thesis clause with a full justification (`factory.py decide`; enforced by `check.py` — see PIPELINE.md). The quote loop produces watermarked previews only. The two existing PDFs currently fail actual PDF font-size and margin checks. See [PIPELINE.md](PIPELINE.md) for current commands, evidence, limitations and remaining work; the spec below describes the destination, not a claim that all gates are complete.
 
 The book factory renders translated works from frozen translation layers into
 print-ready paperbacks, quote postcards and social cards. It changes no
 authorial text, translation, gate decision, or owner ruling. The existing
-Practical Prayers / Tantric Prayer builds (~/visuals/prints) are the parity
+Practical Prayers / Tantric Prayer builds (prints/, in-repo) are the parity
 baseline: they are what "correct" means until a lane proves otherwise.
 
 ## 0. Position in the larger system
@@ -45,7 +45,7 @@ text's own claimed effects/essence, feel=optional micro-line; source_path +
 source_ref on every entry. **CONTENT SOURCING LAW: blocks are extract-and-place
 from the named layer — never agent-written; only clarity-edits (shorten, plain,
 flow) are allowed after placing; no layer source = block stays off the page
-(fail closed).** See visuals/prints/EDITIONS.md Part 6 for the block→layer map.) → BOOK (book.json sections/glyph/dividers +
+(fail closed).** See prints/EDITIONS.md Part 6 for the block→layer map.) → BOOK (book.json sections/glyph/dividers +
 front.html/back.html) → TEXT-GATE (every shipped verse id must carry
 deterministic_gate PASS in its text's GATE.json, or a recorded owner
 adjudication — BLOCKED fails closed) → PRINT-GATE (kdp_preflight + page
@@ -87,7 +87,7 @@ stays off; free ISBN first; covers via KDP Cover Calculator at upload time.
 ## 6. Migration (strangler, no big bang)
 
 Parity first: PP (44 entries, 108pp) and TP (43, 108pp) are imported as
-lanes that reproduce byte-similar output from ~/visuals/prints — the engine
+lanes that reproduce byte-similar output from prints/ — the engine
 stays where it is, the factory wraps it. Then the queue, in owner order:
 ipvv (49 published bundles, proofs running — first external lane), tantrasara
 (22 units, GOLD cadence), sivastotravali/vbt/bhairavastava (stotra anthology

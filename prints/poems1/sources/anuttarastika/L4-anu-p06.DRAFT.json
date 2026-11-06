@@ -1,0 +1,59 @@
+{
+ "craft_notes": "Sthāyin: śānta as awakening (prabodha); vyabhicāri clarity (prasāda) of transcending. Sanskrit-first: peśala/bhava/madhyākāra opens kept (half-formed/mixed — obscurity marked, not smoothed); prabuddha bhava (AWAKE — BECOME: two imperatives, the verse's only act). Abhinavagupta frame: dream-delusion (svapna) as the accurate ontology of things — clever (peśala) modifies the delusion, not the dreamer. Rows: 9 (past-doubting/fearing/staining/scheming — transcend-list kept whole), 1 (‘become’ end-weighted — the second imperative closes; awakening lands as becoming), 8 (vowel fall: clever-scheming chatter → awake-become stillness). Close: ‘awake — become’. Rupture: the colon before ‘awake’ (delusion inventoried, then the act). Rejected: ‘clever-vs-cunning’ resolved — killed by UNC; ‘planning’ for scheming — killed: scheming schemes (kalpanā contrives); ‘wake up’ — killed: colloquial, prabodha is awakening. Read aloud: PAST non-BE-ing, BE-ing, DO-ing … WHAT-truth COULD they HAVE … PAST-doubt-ing, FEAR-ing, STAIN-ing … a-WAKE — be-COME.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "anu-p06",
+  "song": "anu-p06",
+  "verse": 6,
+  "lines": [
+   "Past non-being, being, doing — things, always, suddenly, in this becoming, half-formed and mixed in change: what truth could they have?",
+   "In the untrue, restless, teeming, clever dream-delusion — past doubting, fearing, staining, and reason’s scheming: awake — become."
+  ],
+  "sanskrit_cite": "pūrvābhāvabhavakriyā hi sahasā bhāvāḥ sadā 'smin bhave madhyākāravikārasaṃkaravatāṃ teṣāṃ kutaḥ satyatā | niḥsatye capale prapañcanicaye svapnabhrame peśale śaṅkātaṅkakalaṅkayuktikalanātītaḥ prabuddho bhava",
+  "l0_ids": [
+   "anu-p06-p000",
+   "anu-p06-p001",
+   "anu-p06-p002",
+   "anu-p06-p003",
+   "anu-p06-p004",
+   "anu-p06-p005",
+   "anu-p06-p006",
+   "anu-p06-p007",
+   "anu-p06-p008",
+   "anu-p06-p009",
+   "anu-p06-p010",
+   "anu-p06-p011",
+   "anu-p06-p012",
+   "anu-p06-p013",
+   "anu-p06-p014",
+   "anu-p06-p015",
+   "anu-p06-p016",
+   "anu-p06-p017",
+   "anu-p06-p018",
+   "anu-p06-p019",
+   "anu-p06-p020",
+   "anu-p06-p021",
+   "anu-p06-p022",
+   "anu-p06-p023"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "Whence the truth of things? → Things lack truth; the only response is awakening: transcend doubt, fear, stain, reasoning; awaken.",
+  "c1_essence": [
+   "Former non-being, being, action — things always, suddenly here, middle-formed and confused: whence their truth? In the non-true, unsteady, manifold, clever dream-delusion — transcend doubt, fear, stain, reasoning's contriving: awakened, become. Things lack truth; the only response is awakening."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

@@ -1,0 +1,54 @@
+{
+ "craft_notes": "Sthāyin: raudra-bībhatsa of hunger kept; vyabhicāri raudra at hunger surviving melt. Sanskrit-first: laṃpaṭarasā RAW per UNC (kept greed-juiced, never softened); saṃhāra-nāman (DISSOLUTION-NAMED — kept as address). Rows: 9 (doubt/conduct/glory/rule — four meltings, hunger survives all), 1 (‘split part’ closes — hṛd-bheda last: the heart's split struck). Close: ‘strike my heart’s split part’. Rupture: comma (melted stated, then the feast — all gone, then hunger). Rejected: softening greed — killed: raw kept (hunger survives BECAUSE raw); ‘feast unending’ reorder — killed: endless-feast-entire kept heaped. Read aloud: DOUBT-melt-ed, CON-duct-GONE, GLO-ry-GONE, RULE-gone — … TO-gulp THE-end-LESS-feast en-TIRE, GREED-juiced, O-dis-so-LU-tion-NAMED, STRIKE my-HEART's-split-PART.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "kram-p19-v19",
+  "song": "kram-p19",
+  "verse": 19,
+  "lines": [
+   "Doubt melted, conduct gone, glory gone, rule gone —",
+   "to gulp the endless feast entire, greed-juiced, O dissolution-named, strike my heart's split part."
+  ],
+  "sanskrit_cite": "vilīne śaṅkaughe sapadi paripūrṇe ca vibhave | saṃhārākhyā mama hṛdi bhidāṃśaṃ praharatu",
+  "l0_ids": [
+   "kram-p19-v19-p000",
+   "kram-p19-v19-p001",
+   "kram-p19-v19-p002",
+   "kram-p19-v19-p003",
+   "kram-p19-v19-p004",
+   "kram-p19-v19-p005",
+   "kram-p19-v19-p006",
+   "kram-p19-v19-p007",
+   "kram-p19-v19-p008",
+   "kram-p19-v19-p009",
+   "kram-p19-v19-p010",
+   "kram-p19-v19-p011",
+   "kram-p19-v19-p012",
+   "kram-p19-v19-p013",
+   "kram-p19-v19-p014",
+   "kram-p19-v19-p015",
+   "kram-p19-v19-p016",
+   "kram-p19-v19-p017",
+   "kram-p19-v19-p018",
+   "kram-p19-v19-p019",
+   "kram-p19-v19-p020"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What survives melting? → All melted but hunger: strike prayed.",
+  "c1_essence": [
+   "Melted all but hunger; strike prayed."
+  ],
+  "c1_rasa": "raudra-bībhatsa of hunger kept"
+ },
+ "status": "machine-proposed"
+}

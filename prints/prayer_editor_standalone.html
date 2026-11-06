@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Prayer Card Editor — Lakshmanjoo Editions</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0;}
+        body {font: 14px system-ui, -apple-system, sans-serif; 
+              background: #faf9f7; color: #17140f; 
+              min-height: 100vh; padding: 2rem;}
+        .container {max-width: 900px; margin: 0 auto; background: white; 
+                    padding: 2rem; border-radius: 8px; 
+                    box-shadow: 0 2px 18px rgba(0,0,0,.12);}
+        h1 {font-weight: 600; margin: 1rem 0 2rem; border-bottom: 2px solid #e0e0e0; padding-bottom: 0.5rem;}
+        .spec-bar {background: #f8f9fa; padding: 1rem; border-radius: 4px; margin: 1rem 0;}
+        .control {margin: 1rem 0;}
+        label {display: block; font-weight: 500; margin-bottom: 0.3rem;}
+        input[type=number], input[type=text] {width: 100%; padding: 0.5rem; 
+                                              border: 1px solid #ddd; border-radius: 4px; 
+                                              margin: 0.3rem 0;}
+        .preview {border: 1px solid #e0e0e0; padding: 2rem; min-height: 300px; 
+                  display: flex; align-items: center; justify-content: center; 
+                  background: #fff; margin: 1rem 0; position: relative;}
+        .dev-text {font-family: 'Tiro Devanagari Sanskrit', serif; 
+                   color: #17140f; line-height: 1.4; white-space: pre-wrap;}
+        .en-text {font-family: 'Cormorant Garamond', serif; 
+                  font-size: 1.2rem; color: #17140f; line-height: 1.4; white-space: pre-wrap;}
+        .ratio-info {position: absolute; bottom: 1rem; right: 1rem; 
+                      font-size: 0.8rem; color: #666;}
+        .btn {padding: 0.6rem 1.2rem; background: #0066cc; color: white; 
+              border: none; border-radius: 4px; cursor: pointer; margin: 0.2rem;
+              font-size: 0.9rem;}
+        .btn-secondary {background: #666; margin-left: 0.5rem;}
+        .status {color: #666; margin: 1rem 0; font-size: 0.9rem;}
+        .stanza {margin: 1rem 0; padding: 0.5rem; border: 1px solid #eee; 
+                 border-radius: 4; background: #fafaff;}
+        .stanza-dev {font-family: 'Tiro Devanagari Sanskrit', serif; 
+                     color: #17140f; margin: 0.2rem 0;}
+        .stanza-en {font-family: 'Cormorant Garamond', serif; 
+                    color: #17140f; margin: 0.2rem 0;}
+        .grid-control {display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prayer Card Editor — Lakshmanjoo Editions</h1>
+        
+        <div class="spec-bar">
+            <strong>Title:</strong> <input type="text" id="specTitle" value="Lakshmanjoo Prayer — Shivastotravali">
+            <strong>Source:</strong> <input type="text" id="specSource" value="mined from Lakshmanjoo Shivastotravali corpus">
+            <strong>ID:</strong> <input type="text" id="specId" value="lsj-prayer-001">
+        </div>
+        
+        <div class="control">
+            <label>Dev font size (pt)</label>
+            <input type="number" id="devSD" min="10" max="120" value="70" 
+                   oninput="updatePreview()"> <span id="devSDval">70</span> pts
+        </div>
+        
+        <div class="control">
+            <label>Eng font size (pt)</label>
+            <input type="number" id="enSE" min="10" max="120" value="52" 
+                   oninput="updatePreview()"> <span id="enSEval">52</span> pts
+        </div>
+        
+        <div class="grid-control">
+            <div>
+                <label>Stanzas</label>
+                <button class="btn" onclick="addStanza()">+ Add Stanza</button>
+                <span id="stanzaCount">1</span>
+            </div>
+            <div>
+                <button class="btn btn-secondary" onclick="removeStanzaLast()">- Remove Last</button>
+            </div>
+        </grid-control>
+        
+        <div id="stanzas">
+            <div class="stanza">
+                <h3>Stanza 1</h3>
+                <div class="stanza-dev" id="stanzaDev1">न ध्यायतो न जपतः स्याद् यस्याविधिपूर्वकम् / एवम् एव शिवभासस् तं नुमो भक्तिशालिनम</div>
+                <div class="stanza-en" id="stanzaEn1">I bow to that devotee who is glorified with the devotion of Lord Shiva and to whom the appearance of Lord Shiva takes place without conducting meditation or recitation of any kind.</div>
+            </div>
+        </div>
+        
+        <div class="preview">
+            <div id="previewDev" class="dev-text" style="font-size: 70pt;">न ध्यायतो न जपतः स्याद् यस्याविधिपूर्वकम् / एवम् एव शिवभासस् तं नुमो भक्तिशालिनम</div>
+            <div id="previewEn" class="en-text" style="font-size: 52pt; margin-top: 2rem;">I bow to that devotee who is glorified with the devotion of Lord Shiva and to whom the appearance of Lord Shiva takes place without conducting meditation or recitation of any kind.</div>
+            <div class="ratio-info">POSTCARD 4×6″ vertical — 1200×1800 px @ 300 DPI</div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 1rem 0;">
+            <button class="btn" onclick="addStanza()">+ Add Stanza</button>
+            <button class="btn btn-secondary" onclick="removeStanzaLast()">- Remove Last</button>
+        </div>
+        
+        <div id="status" class="status"></div>
+        
+        <script>
+            function updatePreview() {
+                const dev_sd = document.getElementById('devSD').value;
+                const en_se = document.getElementById('enSE').value;
+                document.getElementById('devSDval').textContent = dev_sd;
+                document.getElementById('enSEval').textContent = en_se;
+                document.getElementById('previewDev').style.fontSize = dev_sd + 'pt';
+                document.getElementById('previewEn').style.fontSize = en_se + 'pt';
+            }
+            
+            function addStanza() {
+                const container = document.getElementById('stanzas');
+                const count = container.children.length + 1;
+                const div = document.createElement('div');
+                div.className = 'stanza';
+                div.innerHTML = `
+                    <h3>Stanza ${count}</h3>
+                    <div class="stanza-dev" id="stanzaDev${count}">न ध्यायतो न जपतः स्याद् यस्याविधिपूर्वकम् / एवम् एव शिवभासस् तं नुमो भक्तिशालिनम</div>
+                    <div class="stanza-en" id="stanzaEn${count}">I bow to that devotee who is glorified with the devotion of Lord Shiva and to whom the appearance of Lord Shiva takes place.</div>
+                    <button class="btn btn-secondary" onclick="removeStanza(${count})">Remove</button>
+                `;
+                container.appendChild(div);
+            }
+            
+            function removeStanzaLast() {
+                const container = document.getElementById('stanzas');
+                if (container.children.length > 1) {
+                    container.removeChild(container.lastElementChild);
+                }
+            }
+            
+            function removeStanza(i) {
+                const container = document.getElementById('stanzas');
+                container.removeChild(container.children[i-1]);
+                // renumber
+                for (let i = 0; i < container.children.length; i++) {
+                    container.children[i].querySelector('h3').textContent = 'Stanza ' + (i+1);
+                    container.children[i].querySelector('#stanzaDev').id = 'stanzaDev' + (i+1);
+                    container.children[i].querySelector('#stanzaEn').id = 'stanzaEn' + (i+1);
+                    container.children[i].querySelector('button').onclick = function() { removeStanza(i+1); };
+                }
+            }
+            
+            function saveSpec() {
+                const spec = {
+                    id: document.getElementById('specId').value,
+                    title: document.getElementById('specTitle').value,
+                    source: document.getElementById('specSource').value,
+                    dev_sd: parseInt(document.getElementById('devSD').value),
+                    en_se: parseInt(document.getElementById('enSE').value),
+                    stanzas: []
+                };
+                
+                const count = document.getElementById('stanzaCount').textContent || 1;
+                for (let i = 0; i < count; i++) {
+                    const dev = document.getElementById('stanzaDev' + (i+1)).textContent.trim();
+                    const en = document.getElementById('stanzaEn' + (i+1)).textContent.trim();
+                    if (dev || en) {
+                        spec.stanzas.push({dev: dev.split('/'), en: en.split('. ')});
+                    }
+                }
+                
+                // Save to localStorage for now
+                localStorage.setItem('prayerSpec', JSON.stringify(spec));
+                document.getElementById('status').textContent = 'Spec saved to localStorage';
+            }
+            
+            function renderAndDownload() {
+                saveSpec();
+                document.getElementById('status').textContent = 'Rendering POSTCARD...';
+                
+                // Use the engine backend
+                fetch('/api/render', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        devanagari: document.getElementById('stanzaDev1').textContent,
+                        english: document.getElementById('stanzaEn1').textContent,
+                        dev_sd: parseInt(document.getElementById('devSD').value),
+                        en_se: parseInt(document.getElementById('enSE').value)
+                    })
+                })
+                .then(r => r.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'lsj-postcard-4x6.png';
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.getElementById('status').textContent = 'POSTCARD PNG downloaded!';
+                })
+                .catch(() => {
+                    // Fallback: just show a message
+                    document.getElementById('status').textContent = 'Render initiated - check console';
+                    console.log('Render would use engine backend');
+                });
+            }
+            
+            // Initial load
+            window.onload = function() {
+                updatePreview();
+                // Try to load saved spec
+                const saved = localStorage.getItem('prayerSpec');
+                if (saved) {
+                    const spec = JSON.parse(saved);
+                    if (spec.dev_sd) document.getElementById('devSD').value = spec.dev_sd;
+                    if (spec.en_se) document.getElementById('enSE').value = spec.en_se;
+                    document.getElementById('specTitle').value = spec.title || '';
+                    document.getElementById('specSource').value = spec.source || '';
+                    // Load stanzas
+                    if (spec.stanzas && spec.stanzas.length > 0) {
+                        // simple load
+                    }
+                }
+            }
+        </script>
+    </div>
+    
+    <script>
+        // Force fonts to load
+        WebFont.load({
+            google: {families: ['Cormorant Garamond']}
+        });
+        // Tiro Devanagari is already loaded from the system
+    </script>
+</body>
+</html>

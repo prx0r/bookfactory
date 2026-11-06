@@ -12,7 +12,7 @@ Copy to `projects/<text>/` then fill:
     "gate_file": "<text>/GATE.json",  # None only while gate is unrun
     "sections": [...],                # book.json section plan
     "products": ["paperback", "postcard", "social"],
-    "book_dir": None,                 # None until parity lane wired to visuals
+    "book_dir": None,                 # None until the lane is wired to a book dir under prints/
   }
   ```
 - `project.json` — outputs wanted + any owner adjudications (verbatim).

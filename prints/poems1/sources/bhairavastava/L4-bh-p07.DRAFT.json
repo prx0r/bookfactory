@@ -1,0 +1,48 @@
+{
+ "craft_notes": "Sthāyin: śānta as nondifference arising (abheda WITH affliction, not after). Sanskrit-first: yadā…tadā (WHEN…THEN — hinge kept; with-it, not after-it per C1); kevalam (ALONE — then-ALONE: nondifference exclusive); varṣati (RAINS — the hymn rains, kept raining). Rows: 1 (‘rains supreme nectar’ closes — verb last, nectar the landing), 9 (when/then hinge — occasion, not obstacle), 10 (nectar left standing, no gloss). Close: ‘the hymn rains supreme nectar’. Rupture: ‘then alone’ (affliction turns to nondifference — suffering is the trigger per C1, inverted expectation kept). Rejected: ‘whenever troubles come’ — killed: ārti (affliction) + mind's-reach both precise; ‘showers’ — killed: colloquial, varṣa rains; ‘my oneness with You’ — killed: abheda is nondifference (kept technical). Read aloud: when-EV-er af-FLIC-tion … COMES with-IN the MIND's-reach — THEN a-LONE, lord, MY-non-DIFF-er-ence FROM-you: the HYMN-rains su-PREME-nec-TAR.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p07",
+  "song": "bh-p07",
+  "verse": 7,
+  "lines": [
+   "Whenever affliction, dealing slight anguish, comes within the mind’s reach —",
+   "then alone, Lord, my nondifference from You: the hymn rains supreme nectar."
+  ],
+  "sanskrit_cite": "mānasagocaram eti yadaiva kleśadaśā tanutāpavidhātrī nātha ! tadaiva mama tvadabhedas stotraparāmṛtavṛṣṭiḥ udeti",
+  "l0_ids": [
+   "bh-p07-p000",
+   "bh-p07-p001",
+   "bh-p07-p002",
+   "bh-p07-p003",
+   "bh-p07-p004",
+   "bh-p07-p005",
+   "bh-p07-p006",
+   "bh-p07-p007",
+   "bh-p07-p008",
+   "bh-p07-p009",
+   "bh-p07-p010"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What is the relation between affliction and nondifference? → Affliction is the occasion, not the obstacle: nondifference + nectar arise with it, not after it.",
+  "c1_essence": [
+   "Affliction's arrival is the occasion, not the obstacle: with it comes nondifference, and nectar arises.",
+   "Affliction's arrival dated as nondifference's occasion: with it, not after it, the nectar rains.",
+   "It inverts the expected: suffering is not the enemy of recognition but its trigger."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

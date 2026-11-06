@@ -1,0 +1,63 @@
+{
+ "craft_notes": "Sthāyin: śānta as worship-difference dissolved; bhakti as pratyabhijñā; vyabhicāri wonder at Māyā-standing-as-other. Sanskrit-first: kva bhedaḥ (WHAT difference — question, never answer); aho (ALAS-gasp = camatkāra break before the conclusion); mā smara (do NOT — prohibition closes blunt). Rows: triple-question cascade (what/of-whom/by-whom/who — rows pile questions, never answers), 1 (‘do not’ end-weighted — vain thought cut last), 10 (Māyā left standing as-other — no gloss on the standing). Close: ‘do not’ (the cut). Rupture: ‘Alas’ (questions turn to gasp — wonder breaks the interrogation, then the conclusion). Rejected: answering any question — killed: the verse asks four, answers none; ornament — killed: plainness is the song here, gilding would reintroduce the very difference dissolved; ‘foolish thought’ for vain thought — killed: mithyā is vain/false, moralizing smuggles. Read aloud: WOR-ship, WOR-ship-per, WOR-shipped — WHAT-talk of DIFF-er-ence … TRANS-i-tion in-DEED — of WHOM, by WHOM … THIS-mā-YĀ … stands AS-o-ther, THOUGH-diff-er-ent. A-LAS … VAIN-thought — DO-not.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "anu-p03",
+  "song": "anu-p03",
+  "verse": 3,
+  "lines": [
+   "Worship, worshipper, worshipped — what talk of difference here, in the unsurpassed?",
+   "Transition indeed — of whom, by whom made, who walks the entry-course?",
+   "This Māyā — no different from consciousness-nonduality — stands as other, though different. Alas.",
+   "Everything is pure own-experience-nature. Vain thought — do not."
+  ],
+  "sanskrit_cite": "pūjapūjakapūjya bhedasaraṇiḥ keyam kathā anuttare saṃkrāmaḥ kila kasya kena vidadhe ko vā praveśakramaḥ māyeyam | na cidadvayāt paratayā bhinnā api aho vartate sarvam svānubhavasvabhāvavimalaṃ cintāṃ vṛthā mā kṛthāḥ",
+  "l0_ids": [
+   "anu-p03-p000",
+   "anu-p03-p001",
+   "anu-p03-p002",
+   "anu-p03-p003",
+   "anu-p03-p004",
+   "anu-p03-p005",
+   "anu-p03-p006",
+   "anu-p03-p007",
+   "anu-p03-p008",
+   "anu-p03-p009",
+   "anu-p03-p010",
+   "anu-p03-p011",
+   "anu-p03-p012",
+   "anu-p03-p013",
+   "anu-p03-p014",
+   "anu-p03-p015",
+   "anu-p03-p016",
+   "anu-p03-p017",
+   "anu-p03-p018",
+   "anu-p03-p019",
+   "anu-p03-p020",
+   "anu-p03-p021",
+   "anu-p03-p022",
+   "anu-p03-p023",
+   "anu-p03-p024"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "mAyeyam both readings live (this-MAyA vs MAyA-this-illusion); bhinnA api attachment open (MAyA vs illusion) — BOUNDARY",
+   "2026-11-04 no-share fix mirrored from data merge"
+  ]
+ },
+ "reads_against": {
+  "argmap": "What difference in the unsurpassed? → Worship-difference is Māyā: it stands as other without being different from consciousness-nonduality. All is pure own-experience-nature.",
+  "c1_essence": [
+   "Worship, worshipper, worshipped — what difference-course in the unsurpassed? Transition: of whom, by whom effected, who enters? Māyā, not different from consciousness-nonduality, stands as other — alas. All is pure own-experience-nature; vain thought, do not."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

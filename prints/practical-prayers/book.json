@@ -1,0 +1,79 @@
+{
+ "meta": {
+  "title": "Practical Prayers",
+  "subtitle": "Forty-four prayers for the moments of the day",
+  "blurb": "eleven moments · four prayers each",
+  "epi_iast": "brahmārpaṇaṁ brahma havir brahmāgnau brahmaṇā hutam",
+  "epi_en": "the offering is brahman, the oblation is brahman, poured by brahman into the fire of brahman",
+  "epi_src": "Bhagavad Gītā 4.24 — the meal prayer"
+ },
+ "sections": [
+  {
+   "id": "wake",
+   "numeral": "I",
+   "title": "Waking / Morning",
+   "sub": "on rising"
+  },
+  {
+   "id": "bath",
+   "numeral": "II",
+   "title": "Bathing",
+   "sub": "water & body"
+  },
+  {
+   "id": "social",
+   "numeral": "III",
+   "title": "Social",
+   "sub": "out among people"
+  },
+  {
+   "id": "work",
+   "numeral": "IV",
+   "title": "At Work",
+   "sub": "at the desk"
+  },
+  {
+   "id": "food",
+   "numeral": "V",
+   "title": "Food",
+   "sub": "before eating"
+  },
+  {
+   "id": "wait",
+   "numeral": "VI",
+   "title": "Waiting",
+   "sub": "in the in-between"
+  },
+  {
+   "id": "sick",
+   "numeral": "VII",
+   "title": "When You Are Sick",
+   "sub": "illness · pain"
+  },
+  {
+   "id": "alone",
+   "numeral": "VIII",
+   "title": "Alone",
+   "sub": "solitude · loneliness"
+  },
+  {
+   "id": "flatness",
+   "numeral": "IX",
+   "title": "Flatness",
+   "sub": "boredom · blankness"
+  },
+  {
+   "id": "gratitude",
+   "numeral": "X",
+   "title": "Gratitude",
+   "sub": "thanksgiving & praise"
+  },
+  {
+   "id": "sleep",
+   "numeral": "XI",
+   "title": "Evening / Sleep",
+   "sub": "wind down · lights out"
+  }
+ ],
+ "glyph": "activity"
+}

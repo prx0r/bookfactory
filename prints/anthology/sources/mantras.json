@@ -1,0 +1,154 @@
+{
+ "id": "mantras-v1",
+ "note": "Syllable flashes derive from measured phrase audio. timing even-split-approx unless noted. ḷ/ḹ inside the vowel series are synth approximations (renders lɪ/empty) — breathe there, verify by ear, never reference clips.",
+ "mantras": [
+  {
+   "id": "om-namah-shivaya",
+   "title": "oṃ namaḥ śivāya",
+   "audio": "audio/mantras/om-namah-shivaya.wav",
+   "voice": "edgesanskrit-v1",
+   "timing": "even-split-approx",
+   "classification": "mantra-decomposition/pedagogical (see trika practice file)",
+   "syllables": [
+    {
+     "t": "oṃ",
+     "node": "ma"
+    },
+    {
+     "t": "na",
+     "node": "na"
+    },
+    {
+     "t": "maḥ",
+     "node": "ma"
+    },
+    {
+     "t": "śi",
+     "node": "śa"
+    },
+    {
+     "t": "vā",
+     "node": "va"
+    },
+    {
+     "t": "yā",
+     "node": "ya"
+    }
+   ]
+  },
+  {
+   "id": "om",
+   "title": "oṃ namaḥ (seed)",
+   "audio": "audio/mantras/om.wav",
+   "voice": "edgesanskrit-v1",
+   "timing": "even-split-approx",
+   "syllables": [
+    {
+     "t": "oṃ",
+     "node": "ma"
+    },
+    {
+     "t": "na",
+     "node": "na"
+    },
+    {
+     "t": "maḥ",
+     "node": "ma"
+    }
+   ]
+  },
+  {
+   "id": "vowels-16",
+   "title": "16 vowels (Mātṛkā mouth)",
+   "audio": "audio/mantras/vowels.wav",
+   "voice": "edgesanskrit-v1",
+   "timing": "even-split-approx",
+   "warn": "ḷ renders lɪ, ॡ renders empty — approximations only",
+   "syllables": [
+    {
+     "t": "a",
+     "node": "a"
+    },
+    {
+     "t": "ā",
+     "node": "ā"
+    },
+    {
+     "t": "i",
+     "node": "i"
+    },
+    {
+     "t": "ī",
+     "node": "ī"
+    },
+    {
+     "t": "u",
+     "node": "u"
+    },
+    {
+     "t": "ū",
+     "node": "ū"
+    },
+    {
+     "t": "ṛ",
+     "node": "ṛ"
+    },
+    {
+     "t": "ṝ",
+     "node": "ṝ"
+    },
+    {
+     "t": "ḷ",
+     "node": "ḷ",
+     "approx": true
+    },
+    {
+     "t": "ḹ",
+     "node": "ḹ",
+     "approx": true
+    },
+    {
+     "t": "e",
+     "node": "e"
+    },
+    {
+     "t": "ai",
+     "node": "ai"
+    },
+    {
+     "t": "o",
+     "node": "o"
+    },
+    {
+     "t": "au",
+     "node": "au"
+    },
+    {
+     "t": "aṃ",
+     "node": "aṃ"
+    },
+    {
+     "t": "aḥ",
+     "node": "aḥ"
+    }
+   ]
+  },
+  {
+   "id": "soham",
+   "title": "so’haṃ (sa out, haṃ in)",
+   "audio": "audio/mantras/soham.wav",
+   "voice": "edgesanskrit-v1",
+   "timing": "even-split-approx",
+   "syllables": [
+    {
+     "t": "sa",
+     "node": "sa"
+    },
+    {
+     "t": "haṃ",
+     "node": "ha"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "craft_notes": "Sthāyin: śānta as Lordhood (viśveśvaratva); bhakti as worship; vyabhicāri wonder at all-opposites mirrored. Sanskrit-first: bhaja mood open per UNC (worship kept as act, mood unforced); compounds open kept (own-grasping-consciousness-rise carried whole — density IS the metaphysics). Abhinavagupta frame: mirror (darpaṇa) as the accurate instrument — opposites shine WITHOUT entering; knowing = glory = Lordhood (equation, not ascent). Rows: 9 (true/untrue, little/much, lasting/lasting-not, Māyā-stained/self-pure — all pairs kept; trimming would un-mirror the mirror), 1 (‘lordship of all’ closes — viśveśvaratva last, the equation's answer), 12 (śānta-fall: ‘three-’ … ‘all’ — whole-work close, wide and still). Close: ‘worship lordship of all’. Rupture: ‘know it:’ (all-shown turns to all-known — colon stages the equation). Rejected: trimming pairs — killed: all-pairs IS the mirror; resolving bhaja — killed by UNC; ‘serve the Lord of all’ — killed: bhaja + aiśvarya is worship-lordship, service weakens. Read aloud: WHAT is TRUE, WHAT un-TRUE … ALL-shines IN the MIR-ror OF-con-SCIOUS-ness … KNOW-it: GLO-ry MOUNT-ed ON your OWN ex-PER-i-ence — WOR-ship LORD-ship OF-all.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "anu-p08",
+  "song": "anu-p08",
+  "verse": 8,
+  "lines": [
+   "What is true, what untrue, little or much, lasting or lasting-not, Māyā-stained or self-pure — all shines in the mirror of consciousness.",
+   "All that — risen from self-grasping consciousness, natured as form and light — know it: glory mounted on your own experience — worship lordship of all."
+  ],
+  "sanskrit_cite": "yat satyaṃ yad asatyam alpabahulaṃ nityaṃ na nityaṃ ca yat yan māyāmalinaṃ yad ātmavimalaṃ ciddarpaṇe rājate | tat sarvaṃ svavimarśasaṃvidudayād rūpaprakāśātmakaṃ jñātvā svānubhavādhirūḍhamahimā viśveśvaratvaṃ bhaja",
+  "l0_ids": [
+   "anu-p08-p000",
+   "anu-p08-p001",
+   "anu-p08-p002",
+   "anu-p08-p003",
+   "anu-p08-p004",
+   "anu-p08-p005",
+   "anu-p08-p006",
+   "anu-p08-p007",
+   "anu-p08-p008",
+   "anu-p08-p009",
+   "anu-p08-p010",
+   "anu-p08-p011",
+   "anu-p08-p012",
+   "anu-p08-p013",
+   "anu-p08-p014",
+   "anu-p08-p015",
+   "anu-p08-p016",
+   "anu-p08-p017",
+   "anu-p08-p018",
+   "anu-p08-p019",
+   "anu-p08-p020",
+   "anu-p08-p021",
+   "anu-p08-p022"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What shines in the mirror, and what follows from knowing it? → All opposites shine in the consciousness-mirror; knowing that all is own-grasping-consciousness-rise = glory = Lordhood; worship.",
+  "c1_essence": [
+   "All opposites shine in the consciousness-mirror: true/untrue, little/much, eternal/non-eternal, Māyā-stained/self-pure. That all, from own-grasping-consciousness-rise, form-light-natured, having known — own-experience-risen glory: Lordhood — worship. Knowing that all opposites shine in the mirror from one's own grasping consciousness = glory = Lordhood; its last word is the imperative it opened with the stance for."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

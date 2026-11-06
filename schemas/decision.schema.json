@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/prx0r/bookfactory/schemas/decision-1.0.json",
+  "title": "Book construction decision",
+  "description": "One append-only content decision. Every justification must cite a thesis clause via thesis_ref; empty justifications fail closed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ts", "action", "target", "justification", "thesis_ref", "status", "decided_by"],
+  "properties": {
+    "ts": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}"},
+    "action": {
+      "enum": ["add-section", "remove-section", "add-entry", "remove-entry", "move-entry", "retire-entry", "replace-entry", "declare-structure"]
+    },
+    "target": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$", "minLength": 1},
+    "from": {"type": ["string", "null"]},
+    "to": {"type": ["string", "null"]},
+    "justification": {"type": "string", "minLength": 40, "description": "Why, in full — empty or thin justifications fail the gate."},
+    "thesis_ref": {"type": "string", "pattern": "^[a-zA-Z0-9_]+(/[0-9a-zA-Z_]+)*$", "description": "Path into thesis.json this decision serves, e.g. exclusion/0 or structure"},
+    "status": {"enum": ["live", "superseded"]},
+    "decided_by": {"type": "string", "minLength": 1}
+  }
+}

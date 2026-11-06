@@ -1,5 +1,9 @@
 {
-  "outputs": ["paperback-preview", "postcards"],
+  "stage": "content",
+  "outputs": [
+    "paperback-preview",
+    "postcards"
+  ],
   "gate_note": "Legacy hand-verification note is not per-entry approval; HANDOVER says this book still needs a witness verification pass.",
   "max_pages": 110,
   "adjudications": []

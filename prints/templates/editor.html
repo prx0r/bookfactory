@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Prayer Card Editor</title>
+    <style>
+        body { font: 14px system-ui, -apple-system, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; background: #faf9f7; color: #17140f; }
+        .container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 18px rgba(0,0,0,.12); }
+        h1 { font-weight: 600; margin-top: 0; }
+        .spec-selector { margin: 1rem 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .control { margin: 0.5rem 0; }
+        label { display: block; margin-bottom: 0.2rem; font-weight: 500; }
+        input[type=number], input[type=text] { width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
+        .preview { border: 1px solid #e0e0e0; padding: 1rem; min-height: 200px; display: flex; align-items: center; justify-content: center; background: #fff; }
+        .status { color: #666; font-size: 0.9rem; margin-top: 1rem; }
+        .btn { padding: 0.5rem 1rem; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer; margin: 0.2rem; }
+        .btn-secondary { background: #666; }
+        .ratio-info { font-size: 0.8rem; color: #666; margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prayer Card Editor</h1>
+        
+        <div class="spec-selector">
+            <label>Select spec:</label>
+            <select id="specSelect" onchange="loadSpec(this.value)">
+                {% for s in specs %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+                <option value="newprayer">Create new...</option>
+                {% endif %}
+            </select>
+        </div>
+        
+        <div class="grid">
+            <div class="control">
+                <label>Dev font size (pt)</label>
+                <input type="number" id="devSD" min="10" max="120" value="{{ spec.dev_sd or 70 }}">
+            </div>
+            <div class="control">
+                <label>Eng font size (pt)</label>
+                <input type="number" id="enSE" min="10" max="120" value="{{ spec.en_se or 52 }}">
+            </div>
+        </div>
+        
+        <div class="control">
+            <label>Number of stanzas</label>
+            <input type="number" id="stanzaCount" min="1" max="10" value="{{ spec|default({'stanzas': [[]]})[0]|length or 1 }}">
+        </div>
+        
+        <div id="stanzaEditor">
+            <!-- Stanza fields will be filled in by JS -->
+        </div>
+        
+        <button class="btn" onclick="saveSpec()">Save Spec</button>
+        <button class="btn btn-secondary" onclick="renderAndDownload()">Render & Download POSTCARD</button>
+        
+        <div class="ratio-info">Output: POSTCARD 4×6″ vertical (1200×1800 px @ 300 DPI)</div>
+        
+        <div id="status" class="status"></div>
+        
+        <script>
+            function loadSpec(name) {
+                fetch(`/api/spec?name=${name}`)
+                    .then(r => r.json())
+                    .then(data => {
+                        document.getElementById('devSD').value = data.dev_sd || 70;
+                        document.getElementById('enSE').value = data.en_se || 52;
+                        renderStanzas(data.stanzas || [{{dev: [], en: []}}]);
+                        document.getElementById('status').textContent = `Loaded: ${data.title || 'Spec'}`;
+                    });
+            }
+            
+            function renderStanzas(stanzas) {
+                const container = document.getElementById('stanzaEditor');
+                container.innerHTML = '';
+                stanzas.forEach((st, i) => {
+                    const div = document.createElement('div');
+                    div.className = 'control';
+                    div.innerHTML = `
+                        <h3>Stanza ${i+1}</h3>
+                        <div class="grid">
+                            <div>
+                                <label>Dev lines</label>
+                                <textarea id="dev${i}" rows="3" placeholder="Devanagari lines..."></textarea>
+                            </div>
+                            <div>
+                                <label>Eng lines</label>
+                                <textarea id="en${i}" rows="3" placeholder="English lines..."></textarea>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(div);
+                });
+            }
+            
+            function saveSpec() {
+                const devSD = document.getElementById('devSD').value;
+                const enSE = document.getElementById('enSE').value;
+                const stanzas = [];
+                
+                const count = Math.max(1, parseInt(document.getElementById('stanzaCount').value) || 1);
+                for (let i = 0; i < count; i++) {
+                    const dev = document.getElementById(`dev${i}`).value || '';
+                    const en = document.getElementById(`en${i}`).value || '';
+                    stanzas.push({ dev: dev.split('\n'), en: en.split('\n') });
+                }
+                
+                fetch('/api/update-sizes', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ dev_sd: devSD, en_se: enSE, stanzas: stanzas })
+                })
+                    .then(r => r.json())
+                    .then(data => {
+                        document.getElementById('status').textContent = data.status ? 'Saved OK' : 'Error: ' + (data.error || '');
+                        // Reload spec
+                        fetch(`/api/spec`)
+                            .then(r => r.json())
+                            .then(spec => {
+                                // Render preview
+                                renderPreview(spec);
+                            });
+                    })
+                    .catch(() => document.getElementById('status').textContent = 'Save failed');
+            }
+            
+            function renderPreview(spec) {
+                document.getElementById('status').textContent = 'Rendering...';
+                fetch('/render')
+                    .then(() => window.location.href = '/download')
+                    .catch(() => document.getElementById('status').textContent = 'Render started');
+            }
+            
+            function renderAndDownload() {
+                saveSpec();
+                setTimeout(() => window.location.href = '/download', 500);
+            }
+            
+            // Initial load
+            window.onload = () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const specName = urlParams.get('spec') || '{{ SPECS[0].name if SPECS else '' }}';
+                if (specName && specName !== 'newprayer') {
+                    loadSpec(specName);
+                } else {
+                    loadSpec();
+                }
+            };
+        </script>
+</body>
+</html>

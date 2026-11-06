@@ -1,0 +1,129 @@
+{
+ "id": "namah-shivaya",
+ "title": "oṃ namaḥ śivāya · feet → heart → everywhere",
+ "provenance": "pañcākṣara earth→ether reading; Mātṛkā = ascent story, Mālinī = infusion (heart silent-center)",
+ "feel_taxonomy": "heaviness, warmth, offering-release, luminosity, pervasion",
+ "variants": {
+  "matrika": [
+   {
+    "t": 0.0,
+    "do": "info",
+    "dev": "ॐ नमः शिवाय",
+    "iast": "Mātṛkā: na feet → ma heart → śa bone/i eye → va spread → ya skin"
+   },
+   {
+    "t": 0.1,
+    "do": "sweep",
+    "from": "feet",
+    "to": "heart",
+    "dur": 1.2,
+    "cue": "Attention climbs from the feet toward the heart",
+    "feel": "heaviness lifting to warmth"
+   },
+   {
+    "t": 0.3,
+    "do": "flash",
+    "node": "na",
+    "feel": "heaviness"
+   },
+   {
+    "t": 0.7,
+    "do": "flash",
+    "node": "ma",
+    "cue": "Arrive in the heart",
+    "feel": "warmth"
+   },
+   {
+    "t": 1.0,
+    "do": "flash",
+    "node": "aḥ",
+    "cue": "Offer it upward",
+    "feel": "offering-release"
+   },
+   {
+    "t": 1.2,
+    "do": "flash",
+    "node": "śa",
+    "feel": "luminosity"
+   },
+   {
+    "t": 1.4,
+    "do": "flash",
+    "node": "i"
+   },
+   {
+    "t": 1.6,
+    "do": "flash",
+    "node": "va",
+    "feel": "expansion"
+   },
+   {
+    "t": 1.8,
+    "do": "flash",
+    "node": "ā"
+   },
+   {
+    "t": 2.0,
+    "do": "flash",
+    "node": "ya",
+    "cue": "Dissolve outward through the skin",
+    "feel": "pervasion"
+   },
+   {
+    "t": 2.2,
+    "do": "flash",
+    "node": "a",
+    "feel": "stillness"
+   }
+  ],
+  "malini": [
+   {
+    "t": 0.0,
+    "do": "info",
+    "dev": "ॐ नमः शिवाय",
+    "iast": "Mālinī: na crown-flame → ma base → śa guhya → va throat → ya shoulder · heart silent-center"
+   },
+   {
+    "t": 0.2,
+    "do": "flash",
+    "node": "na",
+    "feel": "luminosity"
+   },
+   {
+    "t": 0.6,
+    "do": "flash",
+    "node": "ma",
+    "cue": "Drop to the base",
+    "feel": "heaviness"
+   },
+   {
+    "t": 1.0,
+    "do": "flash",
+    "node": "śa"
+   },
+   {
+    "t": 1.4,
+    "do": "flash",
+    "node": "va",
+    "feel": "expansion"
+   },
+   {
+    "t": 1.8,
+    "do": "flash",
+    "node": "ya"
+   },
+   {
+    "t": 2.2,
+    "do": "flash",
+    "node": "a",
+    "cue": "The heart holds it all without being named",
+    "feel": "stillness"
+   }
+  ]
+ },
+ "classification": {
+  "kind": "mantra-decomposition",
+  "status": "pedagogical",
+  "note": "A real mantra mapped through Mātṛkā/Mālinī loci as modern instructional design. NOT an attested Abhinavagupta ritual; feet→heart movement and extra flashed syllables are interpretive."
+ }
+}

@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "book": "tantric-prayer",
+  "title": "Tantric Prayer",
+  "template": "prayer-book",
+  "style": "canonical",
+  "claim": "Nine rasas, four prayers each — thirty-six verses for the weather inside you. This is the book for emotional states: the classical table fixed by Abhinavagupta in the Abhinavabhāratī, where he added the ninth, shanta. The claim is old and radical: an emotion is not an obstacle to practice — it is consciousness already tasting itself in that key. So this book never argues with a feeling; it gives it its Sanskrit name, its literal sense and its verse, and the prayer re-tastes the emotion instead of banishing it. The companion Practical Prayers covers the clock; this one covers what the clock does to you.",
+  "structure": {
+    "sections": 9,
+    "entries_per_section": 4,
+    "total_entries": 36,
+    "sections_plan": [
+      {
+        "id": "srgara",
+        "purpose": "the Erotic — desire and longing"
+      },
+      {
+        "id": "hasa",
+        "purpose": "the Comic — mirth, laughter, the lighter register"
+      },
+      {
+        "id": "karuna",
+        "purpose": "the Pathetic — grief, compassion, the tender wound"
+      },
+      {
+        "id": "raudra",
+        "purpose": "the Furious — anger and rage at full heat"
+      },
+      {
+        "id": "vira",
+        "purpose": "the Heroic — valour, energy, the raised spine"
+      },
+      {
+        "id": "bhayanaka",
+        "purpose": "the Horrible — fear and anxiety; holds the operative fear-chant (aghora), not only verses about fear"
+      },
+      {
+        "id": "bibhatsa",
+        "purpose": "the Disgusting — disgust and self-loathing"
+      },
+      {
+        "id": "adbhuta",
+        "purpose": "the Marvellous — wonder and awe"
+      },
+      {
+        "id": "santa",
+        "purpose": "the Peaceful — Abhinavagupta's ninth rasa"
+      }
+    ]
+  },
+  "inclusion": [
+    "a verse belongs in a rasa section only if that emotion is what the verse re-tastes — the feeling gives the section, never the other way",
+    "each rasa keeps exactly four entries; a practice-chant (like aghora in Bhayanaka) counts as one of the four",
+    "each entry carries source_path + source_ref to a file in this book's sources/ and four explainer blocks (what/how/sign, feel optional)",
+    "verses are from our own Kashmir Shaiva corpus in Swamiji's recitation orbit: 33+ from Utpaladeva's Shivastotravali plus Ghatakarpara, Kramastotra, Gitarthasangraha; translations ours, checked against corpus witnesses",
+    "every entry faces its explanation: brief (C1 essence), what (sense), how (the text's own practice), sign (the text's own claimed effect) — feel optional",
+    "content is extract-and-place from named sources and layers; clarity-edits only after placing; no source = block stays off the page (fail closed)",
+    "whole book must preflight under the template page ceiling with the template style before the build stage opens"
+  ],
+  "exclusion": [
+    "the Sangha section (Swamiji's chanted hymns) is out of the rasa book — practice-hymns are not rasa verses (owner ruling 2026-11-06); usable hymns move to Practical Prayers' Anytime or retire",
+    "no entry may also appear in Practical Prayers — one prayer, one book, never both",
+    "dhyana mantras are not rasa verses and too long for pocket use — the three Bahurupa dhyana mantras retire (owner ruling 2026-11-06)",
+    "Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation in front matter; theory quotes stay short and attributed",
+    "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
+    "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
+    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first"
+  ],
+  "products": {
+    "paperback": {
+      "status": "in-progress",
+      "spec": "A5 no-bleed, B&W, matte cover; 36 prayers = structure law from this thesis; page ceiling 110 (KDP flat tier); gate prints/kdp_preflight.py + check.py must pass before any upload"
+    },
+    "postcard": {
+      "status": "planned",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once in bookkit"
+    },
+    "social": {
+      "status": "planned",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "planned",
+      "spec": "Digital edition: per prayer — English readout of the verse + its guide blocks, read rasa by rasa; derived from entries.json fields (en/brief/what/how/sign), never from agent-written text"
+    },
+    "chant": {
+      "status": "planned",
+      "spec": "Digital edition pairs each prayer with its exact chant audio: aligned verse clips from prx0r/kashaudio (source works already rendered: shivastotravali with all 450 SING verses, kramastotra, stotras) where the work exists; Swamiji archival (sources/bahurupa-swamiji.m4a, PP sources/aghora-swamiji.mp3) for his hymns and the aghora chant; missing works (Ghatakarpara, Gitarthasangraha) queue to kashaudio render. Per-entry audio manifest binds verse id -> clip hash.",
+      "coverage": {
+        "kashaudio": "source works: shivastotravali (stotras 1-20, 450 SING verses), kramastotra, plus corpus texts as rendered",
+        "swamiji_archival": "aghora (fear-chant, from PP sources/aghora-swamiji.mp3)",
+        "needs_render": "L4-ghat (Ghatakarpara), L4-gita (Gitarthasangraha)",
+        "binding": "one clip per entry id; hash-pinned manifest ships with the digital edition"
+      }
+    }
+  }
+}

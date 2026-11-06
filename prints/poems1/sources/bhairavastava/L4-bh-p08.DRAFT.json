@@ -1,0 +1,46 @@
+{
+ "craft_notes": "Sthāyin: śānta as rites relativized (not despised — relativized); two-means-two-results. Sanskrit-first: śamaka (DISPELLERS — rites' true result kept: heat dispelled, honored); cintā (CONTEMPLATING — the superior means is mental, kept); dhārā (STREAM-course — kept stream, not flood). Rows: 1 (‘bliss-stream in the mind’ closes — contemplation's result lands last, outshining by position), 9 (vow/giving/bathing/austerity — each rite named once, none adorned), 5 (didactic tread: concession L1, elevation L2). Close: ‘pours a bliss-stream in the mind’. Rupture: ‘But’ (rites turn to scripture — relativization hinged on one word). Rejected: ‘empty rites’ — killed: rites truly dispel heat; ‘flood’ — killed: dhārā courses; ‘holy writ’ for scripture — killed: śāstra kept plain (contemporary diction). Read aloud: TRU-ly, ŚAṄ-ka-ra — VOW, GIV-ing, BATH-ing, aus-TER-i-ty: they dis-PEL be-COM-ing's-HEAT … BUT con-TEM-plat-ing YOUR-scrip-ture … POURS a BLISS-stream IN the MIND.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p08",
+  "song": "bh-p08",
+  "verse": 8,
+  "lines": [
+   "Truly, Śaṅkara — vow, giving, bathing, austerity: they dispel becoming’s heat.",
+   "But contemplating Your scripture as supreme nectar pours a bliss-stream in the mind."
+  ],
+  "sanskrit_cite": "śaṅkara satyam idam vratadānasnānatapaḥ bhavatāpavidāri tāvakaśāstra parāmṛtacintā cetasi nirvṛtidhārām syandati",
+  "l0_ids": [
+   "bh-p08-p000",
+   "bh-p08-p001",
+   "bh-p08-p002",
+   "bh-p08-p003",
+   "bh-p08-p004",
+   "bh-p08-p005",
+   "bh-p08-p006",
+   "bh-p08-p007",
+   "bh-p08-p008",
+   "bh-p08-p009"
+  ],
+  "essence_maps": [
+   0,
+   1
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What do rites and scripture each accomplish? → Two means, two results: rites dispel heat, contemplation streams bliss.",
+  "c1_essence": [
+   "Rites are relativized: vow, giving, bathing, austerity dispel becoming's heat — while scripture contemplated as nectar irrigates the mind with a bliss-stream.",
+   "Heat dispelled by rites; bliss streamed by contemplation. Two means, two results.",
+   "Rites are not despised; they are relativized, then the higher means offered."
+  ],
+  "c1_rasa": "śānta (tranquility)"
+ },
+ "status": "machine-proposed"
+}

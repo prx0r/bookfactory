@@ -1,0 +1,53 @@
+{
+ "craft_notes": "Sthāyin: ānanda as forgotten-treasure-found; bhakti as prāpti (finding); vyabhicāri harṣa of burden-lowering. Sanskrit-first: na…na…na (triple refusal — wealth/women/splendour, then pictured-light refused too); bhāraharaṇam iva (LIKE burden-lowering — iva simile kept as simile); smṛti (FOUND-treasure — the forgotten remembered). Rows: 9 (refusal catalogue — each pleasure named then refused; naming IS the finding), 10 (burden image left standing, no gloss), 1 (light-rise AFFIRMED last — the refused word returns; ring closes whether same-or-different, held open). Close: ‘the light-rise’. Rupture: ‘Joy —’ (refusals turn to naming — the dash after Joy holds the turn). Rejected: gilding — killed: bluntness is the music; ‘treasure-trove’ — killed: domesticates the finding; deciding same-vs-different light — killed: held open (the ring's ambiguity IS the verse). Read aloud: BLISS-here is NOT wealth-MIDD-le … NOR lamp-SUN-moon-MADE … JOY — DIFF-er-ence GA-thered, FREED in BLISS-ground, LIKE the LOW-er-ing OF a BUR-den — IS the for-GOTT-en TREA-sure FOUND.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "anu-p04",
+  "song": "anu-p04",
+  "verse": 4,
+  "lines": [
+   "Bliss here is not wealth-middle-intoxication, nor like enjoying women,",
+   "nor lamp-sun-moon-made splendour-multitudes — nor even the light-rise.",
+   "Joy — difference gathered, freed in bliss-ground, like the lowering of a burden —",
+   "is the forgotten treasure found of the all-nonduality state: the light-rise."
+  ],
+  "sanskrit_cite": "ānandaḥ atra na vittamadhya madavan naivāṅganāsaṅgavat dīpārkendukṛta prabhāprakaravan naiva | prakāśodayaḥ harṣaḥ saṃbhṛtabhedamuktisukhabhūr bhārāvatāropamaḥ sarvādvaitapadasya vismṛtanidheḥ prāptiḥ prakāśodayaḥ",
+  "l0_ids": [
+   "anu-p04-p000",
+   "anu-p04-p001",
+   "anu-p04-p002",
+   "anu-p04-p003",
+   "anu-p04-p004",
+   "anu-p04-p005",
+   "anu-p04-p006",
+   "anu-p04-p007",
+   "anu-p04-p008",
+   "anu-p04-p009",
+   "anu-p04-p010",
+   "anu-p04-p011",
+   "anu-p04-p012",
+   "anu-p04-p013",
+   "anu-p04-p014",
+   "anu-p04-p015"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "saMbhRta-compound kept whole (one-vs-several open); prakASodaya same-vs-different open (refused first, affirmed last — ring works either way) — BOUNDARY"
+  ]
+ },
+ "reads_against": {
+  "argmap": "What is bliss, and how is it found? → Bliss is neither pleasure nor splendour but joy like burden-lowering — the attainment of the forgotten treasure.",
+  "c1_essence": [
+   "Bliss is neither wealth-intoxication nor lamp-sun-moon splendour. Joy with gathered-difference-liberation-bliss-ground, like burden-lowering, is the attainment of the forgotten treasure of the all-nonduality state — the light-rise. Bliss = prakāśodaya: difference gathered, burden set down, treasure remembered."
+  ],
+  "c1_rasa": "ānanda (bliss) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

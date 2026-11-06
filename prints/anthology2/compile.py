@@ -1,0 +1,435 @@
+#!/usr/bin/env python3
+"""Compile Anuttara II — The Practitioner's Day (daily-practice volume)."""
+
+import json, html, pathlib, sys
+
+HERE = pathlib.Path(__file__).parent
+try:
+    from indic_transliteration import sanscript
+    from indic_transliteration.sanscript import transliterate as _tr
+except Exception:
+    _tr = None
+
+META = {
+    "title": "Anuttara II",
+    "subtitle": "The Practitioner's Day",
+    "blurb": "Prayers for dawn, food, ritual and sleep · Second volume",
+    "epigraph_iast": "evameva parā pūjā sarvāvasthāsu sarvadā",
+    "epigraph_en": "Just so is the highest worship — in every state, at all times.",
+    "epigraph_src": "Mahopadeśaviṃśatikā v.20",
+}
+
+SECTIONS = [
+    ("pratah", "I", "Prātaḥ", "Dawn"),
+    ("anna", "II", "Anna", "Food"),
+    ("puja", "III", "Pūjā", "Ritual"),
+    ("vartamana", "IV", "Vartamāna", "Through the Day"),
+    ("nidra", "V", "Nidrā", "Sleep"),
+    ("dasa", "VI", "Daśa", "The Daily Ten"),
+]
+
+ENTRIES = [
+# ---------------- I. PRATAH ----------------
+dict(id="mpa-1", section="pratah", title="Homage to the World-Formed",
+ source="Mahopadeśaviṃśatikā v.1",
+ iast="prapañcottīrṇarūpāya namaste viśvamūrtaye | sadādivyaprakāśāya svātmane'nantaśaktaye",
+ en="Homage to the form that has crossed beyond the manifest — to the self of the world's form; to the ever-divinely-shining, to the self that is unending power.",
+ brief="The first word of the day: bowing to what was here before you woke.",
+ logic="Mahopadeśaviṃśatikā opens not with a request but with a naming. Three appositions do the work: he has passed beyond the manifest yet IS the world's form; he always shines with divine light; he is your own self and consists of inexhaustible power. The logic is identity, not distance — you salute the world-form because you address what already shines.",
+ howto="Say it sitting up before your feet touch the floor. Three clauses, three slow bows of the head. Feel the room as svātmane'nantaśaktaye — not out there but as your own body's brightness. Don't visualise a figure; visualise light that has nowhere to go. One round, then stand.",
+ source_path="sources/mpa-p01.md", source_ref="v.1"),
+dict(id="deha-1", section="pratah", title="The Body-Temple Offering",
+ source="Dehastha v.1",
+ iast="deho devālayaḥ proktaḥ svātmā devaḥ sanātanaḥ | tyajedajñānanirmālyaṃ so'haṃ bhāvena pūjayet",
+ en="The body is declared God's temple, the own self the eternal God. Casting off the sweepings of ignorance, let him worship with the feeling: I-am-He.",
+ brief="The morning rite in one verse: the body is the shrine, so'ham is the worship.",
+ logic="Dehastha (the Indwelling) compresses a whole pūjā into four clauses. Temple, God, sweeping, worship: a temple needs cleaning before its God is honoured, and the 'sweepings of ignorance' are exactly the ordinary assumption that the body is mere matter. The worshipper and the worshipped collapse — so'ham bhāvena, with the feeling I-am-He.",
+ howto="Wake and stay horizontal. Sweep an imaginary hand from head to toe three times — that is casting off the sweepings. Then place attention at the heart and let so'haṃ, so'haṃ rest with the breath for twelve rounds. The feeling to aim for is warmth at the chest, not a thought: the body as lit, not the body as object. Then rise — and the day is the pūjā.",
+ source_path="sources/deha-p01.md", source_ref="v.1"),
+dict(id="mpa-10", section="pratah", title="The Three States as His Rays",
+ source="Mahopadeśaviṃśatikā v.10",
+ iast="jāgratasvapnasuṣuptyādyā dhārayaṃśca nijāḥ kalāḥ | svecchayā bhāsi naṭavan niṣkalo'si ca tattvataḥ",
+ en="Waking, dreaming, deep sleep and the rest — you hold them as your own portions. By your will you shine like an actor, yet you are partless in truth.",
+ brief="The three states are costumes; the one who shines is partless.",
+ logic="The verse splits experience from experiencer: the states are kalāḥ, portions or costumes — things held; the holding is by svecchā, your own will; and the actor is partless though he plays many parts. Play and partlessness are asserted in one breath, so no state can claim you.",
+ howto="Recite on waking, naming each state as you come out of it: 'that was a costume.' The actor-idea to hold is literal — you played sleep for seven hours. Feel the partlessness as the fact that nothing about you has edges. Keep it memorised: it is the fastest exit from a bad dream.",
+ source_path="sources/mpa-p01.md", source_ref="v.10"),
+dict(id="svab-4", section="pratah", title="Wake the Knowledge That Frees",
+ source="Svabodhasiddhi v.4",
+ iast="jayanty apārasaṃsārasārāsāravibhāgadāḥ | kaivalyajñānasaṃbodhahetavaś śambhavāṅghrayaḥ",
+ en="Victorious are Śambhu's feet — they that tell the endless wheel of becoming from its essence and its refuse, and are the cause of the waking knowledge that frees.",
+ brief="A dawn verse whose whole grammar is waking.",
+ logic="The verse stacks three functions on the feet: they discriminate (saṃsāra's sāra against asāra — essence against refuse), they cause the knowledge that awakens (saṃbodhi-hetu), and they are victorious. Liberation is not granted but caused — hetu, cause — through a knowledge that must wake, exactly like you.",
+ howto="Say it once after the body-temple verse. The word to weight is saṃbodha — waking. Picture a lamp being lit rather than a person bowing. A useful feel-test: does the line make the room sharper? Repeat it at any hour when you have been awake but not waking.",
+ source_path="sources/svab-p01.md", source_ref="v.4"),
+dict(id="param-35", section="pratah", title="Waking, Dreaming, and the Fourth",
+ source="Paramārthasāra v.35",
+ iast="jāgrad viśvaṃ bhedāt svapnas tejaḥ prakāśamāhātmyāt | prājñaḥ suptāvasthā jñānaghanatvāt tataḥ paraṃ turyam",
+ en="Waking is the universe, through difference; dreaming is splendour, through the greatness of light; the knower is the state of sleep, through the massing of knowing; beyond that, the fourth.",
+ brief="Abhinavagupta's census of the states — each credited with what it does best.",
+ logic="Each state is honoured for its real contribution instead of being ranked: waking gives the many (bhedāt), dream gives light (tejaḥ), sleep gives massed knowing (jñāna-ghana). Only then is turya named — beyond the three, not as a fourth state but as what was never covered by them. The census itself dismantles the hierarchy.",
+ howto="Use it as a morning inventory: touch each clause with a memory — this room, that dream, that blankness. Then stop at tataḥ paraṃ turyam and don't try to produce a fourth; the verse says beyond, not within. Feeling-tip: after the third clause leave a half-beat of silence — that gap is closer to turya than any image.",
+ source_path="sources/param-p04.md", source_ref="v.35"),
+
+# ---------------- II. ANNA ----------------
+dict(id="deha-5", section="anna", title="The Sense-Goddesses Offer Bhairava",
+ source="Dehastha v.5",
+ iast="ātmīyaviṣayabhogairindriyadevyaḥ sadā hṛdambhoje | abhipūjayanti yaṃ taṃ cinmayamānandabhairavaṃ vande",
+ en="With feasts of their own sense-objects, the sense-goddesses ever worship, in the heart-lotus, him — the consciousness-made bliss-Bhairava: I praise.",
+ brief="Every taste, sight and sound is already a pūjā happening inside you.",
+ logic="Dehastha inverts the usual charge against the senses: indriya-devyāḥ, the senses are goddesses, and their bhoga (enjoyment) of their own viṣaya (objects) is continuous worship of the Bhairava made of consciousness. Eating is therefore not the interruption of practice but its oldest form — the offering is already being made in the heart-lotus.",
+ howto="At the first bite, feel the heart-lotus (just behind the centre of the chest) as the altar and the flavour as the flower landing on it. Do this for three bites only — overdoing it kills the taste. The feeling to cultivate is gratitude with heat: the sense is honoured as a goddess, not supervised as a thief.",
+ source_path="sources/deha-p01.md", source_ref="v.5"),
+dict(id="vbt-72", section="anna", title="From Eating and Drinking",
+ source="Vijñāna Bhairava v.72",
+ iast="jagdhipānakṛtollāsarasānandavijṛmbhaṇāt | bhāvayed bharitāvasthāṃ mahānandas tato bhavet",
+ en="From the swell of joy made by eating and drinking — from the blooming of bliss-rasa — one should imagine the full state; great bliss then may arise.",
+ brief="Take the fullness of a meal and turn it into mahānanda.",
+ logic="The dhāraṇā uses a given fact — eating and drinking already produce rasa and ullāsa, savour and lift — and asks you to make that the object of bhāvanā: not the taste itself but the state of being filled (bharitāvasthā). The logic is alchemical: ordinary satiety is the raw material, great bliss the product, provided attention stays on fullness instead of sliding to the next want.",
+ howto="Practise at the meal itself, not before. Eat to comfortable fullness, then pause with eyes half-open. Take one more spoonful of air, hold, and imagine the fullness radiating from the belly upward — filling the chest, then the head. Release. Three rounds. Don't chase ecstasy: the graded signal is that thinking quiets while the body stays warm. If drowsiness comes, stand up — the verse asks for fullness with alertness.",
+ source_path="sources/vbt-p08.md", source_ref="v.72"),
+dict(id="vbt-74", section="anna", title="Wherever the Mind Is Content",
+ source="Vijñāna Bhairava v.74",
+ iast="yatra yatra manas tuṣṭir manas tatraiva dhārayet | tatra tatra parānandasvārūpaṃ sampravartate",
+ en="Wherever the mind is content, there precisely the mind should be held; there, there, the own-form of supreme bliss proceeds to arise.",
+ brief="Supreme bliss follows attention to contentment, not effort.",
+ logic="A conditional with a promise: where tuṣṭi (contentment) already exists — any place, object or moment — dhāraya, hold the mind there, and parānanda's own form arises. The verse locates bliss as already in motion (sampravartate) at the site of contentment; the practice is staying, not seeking.",
+ howto="Scan for the most content spot of your day — a chair, a stretch, the moment after work — and return to it deliberately. Hold with soft gaze 30–60 seconds, breathing shallow and slow. Feeling-tip: contentment has a body-map; find it (jaw, shoulders, belly) and rest attention there. The sign of success is that you stop cataloguing other wants. Twice daily: midday and after dinner.",
+ source_path="sources/vbt-p08.md", source_ref="v.74"),
+
+# ---------------- III. PUJA ----------------
+dict(id="mpa-13", section="puja", title="Whence Invocation for the Full?",
+ source="Mahopadeśaviṃśatikā v.13",
+ iast="pūrṇasyāvāhanaṃ kutra sarvādhārasya cāsanam | svacchasya pādyamarghyañca śuddhasyācamanaṃ kutaḥ",
+ en="For the full, whence invocation? For the all-supporting, whence a seat? For the clear, foot-water and welcome-water? For the pure, the sipping?",
+ brief="The litany begins: the rites cannot apply to what already contains them.",
+ logic="Verses 13–19 ask, item by item, how each rite of pūjā can be addressed to a fullness that lacks nothing: āvāhana (invocation) presumes absence, āsana (seat) presumes sitting elsewhere, pādyārghya (foot- and hand-water) presumes a journey, ācamana (sipping) presumes impurity. Each question is the recognition of a perfect absence of need. The litany is not scepticism — it clears the ground for the real worship of v.20.",
+ howto="Say it before any pūjā, or before you begin your own ritual of work. Let each 'whence?' land as a shrug, not an argument — the feeling is amusement, not doubt. Practise by remembering each rite as you name it: the water, the seat, the thread. Then go and do nothing for one beat — that beat IS the answer, and it makes any ritual you later perform unforced.",
+ source_path="sources/mpa-p02.md", source_ref="v.13"),
+dict(id="mpa-15", section="puja", title="Flowers for the Desireless",
+ source="Mahopadeśaviṃśatikā v.15",
+ iast="nirālambasyopavītaṃ puṣpaṃ nirvāsanasya ca | aghrāṇasya kuto dhūpaścakṣurhīnasya dīpakaḥ",
+ en="The sacred thread for the supportless, flowers for the desireless; incense for the noseless, lamp for the eyeless — of what use?",
+ brief="The offering-items are matched to what the Lord has none of — and the joke is the doctrine.",
+ logic="The litany names the objects of worship — upavīta (thread), puṣpa (flowers), dhūpa (incense), dīpaka (lamp) — each with a deity stripped of the faculty it serves: no support, no desire, no nose, no eye. The mismatch is the teaching: worship addresses not a being lacking things but the emptiness of lack itself. What looks like futility ('of what use?') is the precise applicability of each gift.",
+ howto="If you use an altar, offer each item while naming its mismatch: thread for the one who supports nothing — place it; flower for the one who desires nothing — let it fall. With no altar, do it in air with the hand: four gestures, four lines. The feeling to find is tenderness toward an absence rather than a presence — worshipping emptiness, not a shape.",
+ source_path="sources/mpa-p02.md", source_ref="v.15"),
+dict(id="mpa-17", section="puja", title="Waving-Lights for the Self-Shining",
+ source="Mahopadeśaviṃśatikā v.17",
+ iast="svayaṃ prakāśamānasya kuto nīrājanaṃ vibhoḥ | vedavācāmavedyasya kutaḥ stotraṃ vidhīyate",
+ en="Whence the waving of lights for the self-lit Lord? How is a hymn enjoined for him whom the Veda cannot say?",
+ brief="He lights himself — so the lamp is for you; he is unsayable — so the hymn is for you.",
+ logic="Two paradoxes: an offering of light presupposes darkness in the recipient, and speech presupposes an object speech can reach. The Lord is svayam-prakāśa (self-lit) and vedavācāmavedya (unknowable by the Veda's words). The litany's logic turns in every such verse: the rite's use falls on the offerer's lighting, not the Lord's.",
+ howto="Say this one at dusk, with a lamp or a screen-lit face. Watch what light does to the object it falls on — the verse makes you the lamp-bearer. Feeling-tip: the wave of light should move from your hand to your own chest, not outward to a statue; then you will notice the chest brightening on its own. For the hymn: hum, don't articulate — you have just honoured the Vedavācāmavedya.",
+ source_path="sources/mpa-p02.md", source_ref="v.17"),
+dict(id="deha-8", section="puja", title="Śāmbhavī's Flowers of I-Making",
+ source="Dehastha v.8",
+ iast="kurute bhairavapūjāmanaladalasthā'bhimānakusumairyā | nityamahaṅkṛtirūpāṃ vande tāṃ śāmbhavīmambām",
+ en="Who performs Bhairava's worship, standing in fire's petal, with flowers of I-making — ever of I-making form, her, the mother Śāmbhavī, I praise.",
+ brief="The real offering: flowers of 'I', made and placed by Śakti herself.",
+ logic="Dehastha's inner pūjā continues: Brāhmaṇī worships with flowers of resolve (v.7), Śāmbhavī with abhimāna-kusuma, flowers of I-making — the very sense of mine and I. Standing in the petal of fire, the Mother arranges a worship where the offering is the ahaṃkāra that is normally the problem. The rite converts the fault into the flower.",
+ howto="This is a contemplation, not a chant with a count. Sit and take your strongest 'I' of the day — pride, offence, fear — and see it as a flower being picked and placed. Literally imagine it: the thought becomes an object in the hand, laid at the heart's fire. Feeling-tip: the moment of placement should feel like relief, like putting down a bag. Three 'flowers' are enough; the fire (warmth at the solar plexus) confirms it.",
+ source_path="sources/deha-p01.md", source_ref="v.8"),
+dict(id="mpa-19", section="puja", title="Pardon for the Unseen",
+ source="Mahopadeśaviṃśatikā v.19",
+ iast="pūrṇasya dakṣiṇā kutra nityatṛptasya tarpaṇam | visarjanaṃ vyāpakasyā'pratyakṣasya kṣamāpaṇam",
+ en="Where is the fee for the full? Libation for the ever-content? Dismissal for the all-pervading? Pardon for the unseen?",
+ brief="The litany's last question — and the ritual closes with forgiveness.",
+ logic="The four closing rites of any pūjā: dakṣiṇā (fee to the priest), tarpaṇa (libation to ancestors), visarjana (formal dismissal of the invoked), kṣamāpaṇa (apology for ritual faults). All four presuppose want, debt, departure and fault in one who is full, content, all-pervading and unseen. The kṣamāpaṇam for the apratyakṣa flips apology into recognition: you apologise to what was never absent.",
+ howto="Use it as the close of any practice, and as a daily evening line. Weight the last word: kṣamāpaṇam — pardon. Bow once. The feeling to find is the end of accounting: no tally of errors, no debt. If guilt is present, name it as one of the litany's items — 'where is the pardon for the unseen?' — and notice that the guilt expects a god who could be offended; the verse denies that god exists, and the guilt dissolves with him.",
+ source_path="sources/mpa-p02.md", source_ref="v.19"),
+dict(id="mpa-20", section="puja", title="The Answer: Yoke the Mind",
+ source="Mahopadeśaviṃśatikā v.20",
+ iast="evameva parā pūjā sarvāvasthāsu sarvadā | aikyabuddhayā tu sarveśe mano deve niyojayet",
+ en="Just so is the highest worship — in every state, at all times: with a mind of oneness, one should yoke the mind to God as the Lord of all.",
+ brief="After seven questions, the Mahopadeśa gives the instruction.",
+ logic="The litany's payoff. Parā pūjā is neither abolished ritual nor no ritual: it is ritual re-specified — sarvāvasthāsu sarvadā (all states, all times) instead of the fixed occasion, and aikyabuddhi (oneness-mindedness) instead of the duality of giver and gift. The verb is niyojayet, yoke: the mind is a draught-animal that must be hitched, and the yoke is identity.",
+ howto="Memorise this one — it is the verse the other eight are for. Three yokes to practise: on waking (hitch the mind to 'his waking'), at any task (the doing is his), before sleep (the night is his). The feeling test for aikyabuddhi: the boundary of your skin thins. If it sharpens instead, you are thinking oneness, not yoking it — drop to the breath and restart.",
+ source_path="sources/mpa-p02.md", source_ref="v.20"),
+
+# ---------------- IV. VARTAMANA ----------------
+dict(id="svab-5", section="vartamana", title="The Senses Turn Back",
+ source="Svabodhasiddhi v.5",
+ iast="mano buddhir ahaṃ prāṇās tanmātrendriyajīvanam | yaṃ dṛṣṭvā vinivartante tam upāsyam upāsmahe",
+ en="Mind, thought, ego, breaths — the subtle elements, senses and life-principle — when they see the one worth worshipping, they turn back; that, we worship.",
+ brief="Not restraint but re-sighting: everything returns when it sees.",
+ logic="Svabodhasiddhi's list is the whole apparatus of going-out (manaḥ, buddhi, ahaṃkāra, prāṇas, tanmātras, indriyas, jīva), and the verb is vinivartante — they turn back of themselves, on dṛṣṭvā, seeing. The practice cannot be control (they are not restrained) but redirecting what they look at. The upāsyam/upāsmahe doublet: the seen is the object of worship and the seeing is the worship.",
+ howto="When you notice the mind scattering — mid-conversation, mid-screen — don't pull it back; give it something worth seeing. The chosen object: the breath's origin (just under the nostrils) or the pulse at the temple. Hold 5–8 seconds. Feeling-tip: 'seeing' here means interest, not staring; if the body leans slightly toward the object, you've got it. Three redirects per sitting, no more — exhaustion turns practice into force.",
+ source_path="sources/svab-p01.md", source_ref="v.5"),
+dict(id="svab-6", section="vartamana", title="The Knife That Cuts the Knot",
+ source="Svabodhasiddhi v.6",
+ iast="mamāham iti hṛdgranthicchedanaikakṛpāṇikām | spandāspandakṛtagrāsāṃ naumy ahaṃ śuddhasaṃvidam",
+ en="I bow — I — to pure awareness: the knife that alone cuts the heart's knot of 'mine' and 'I', the one that has swallowed both the throb and its stillness.",
+ brief="Even the bowing 'I' is offered to the knife.",
+ logic="The verse performs its own logic twice. The knot (granthi) is mamāham — 'mine' and 'I', two threads. The instrument is a kṛpāṇa, a knife, and only one does it: pure awareness. And the knower's own domain — spanda and aspanda, throb and stillness, i.e. all experience — has already been swallowed by that knife. 'I bow — I' stages the surrender: the pronoun survives long enough to do the bowing, then is cut too.",
+ howto="Recite with a hand flat over the sternum. Weight the first aham: feel where your 'I' sits in the body (throat? chest?), and on 'naumy ahaṃ' press gently and let that place soften. The image is a blade, but the feeling should be a release of grip, not a strike — knots untie. Use it whenever possessiveness or self-defence flares; it works fastest on small knots (a slighted email), slower on old ones.",
+ source_path="sources/svab-p01.md", source_ref="v.6"),
+dict(id="mpa-8", section="vartamana", title="Enough of Difference-Talk",
+ source="Mahopadeśaviṃśatikā v.8",
+ iast="alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt | sarvamekamidaṃ śāntamiti vaktuṃ ca lajjate",
+ en="Enough of difference-talk — chewing the sap of devotion to you: all this is one, at peace; and even to say so feels shy.",
+ brief="The verse stops out of modesty — and the shyness is the proof.",
+ logic="Bheda-anukathā, the narration of difference, is cut (alam) — not refuted but abandoned mid-chewing of bhakti-rasa, devotion's sap. What remains: sarvam ekam idam śāntam, one, at peace. The final clause — that even to say so feels shy — guards the verse from proclaiming non-duality as a thesis: the oneness is so ordinary that stating it embarrasses, like saying aloud that a family is at peace.",
+ howto="Use it when a disagreement has the mind re-telling separation stories (them, me, wrong, right). Stop talking — literally if possible — and say it once inwardly. Feeling-tip: shyness is a subtle heat in the face or a slight looking-away; let the body do that, it disarms argument. It also works before sleep as a day-closer: review nothing, just this.",
+ source_path="sources/mpa-p01.md", source_ref="v.8"),
+
+# ---------------- V. NIDRA ----------------
+dict(id="mpa-11", section="nidra", title="From Your Waking, His Waking",
+ source="Mahopadeśaviṃśatikā v.11",
+ iast="tvatprabodhāt prabodho'sya tvannidrāto layo'sya yat | atastvadātmakaṃ sarvaṃ viśva sadasadātmakam",
+ en="From your waking comes his waking; from your sleep comes his merging. Hence all is of your nature — the world, both real and unreal.",
+ brief="Your sleep does not stop the world — it feeds it.",
+ logic="The verse links two transfers: prabodha (waking) passes from you to him, laya (dissolution) passes from his sleep to the world. Because his waking enlivens the world and his sleep dissolves it, everything — real and unreal — is tvad-ātmaka, of your nature. Sleep is therefore not the end of practice but its most global act: when you sleep you participate in his laya, and the world is laid down with you.",
+ howto="Last line of the day. Lie down and take one awake minute: you are about to do what he does at night. Don't stay awake doing this — the point is to fall asleep inside the thought. Feeling-tip: as the eyes close, feel the day's edges (tasks, persons) get soft, 'unreal' — that softening is literally sadasadātmakam. If anxious at night, this verse dissolves the day rather than reviewing it.",
+ source_path="sources/mpa-p02.md", source_ref="v.11"),
+dict(id="vbt-75", section="nidra", title="In Sleep, When the Outer Range Perished",
+ source="Vijñāna Bhairava v.75",
+ iast="anāgatāyāṃ nidrāyām praṇaṣṭe bāhyagocare | sāvasthā manasā gamyā parā devī prakāśate",
+ en="In the not-yet-come sleep, when the outer range has perished — that state, to be gone to by mind, the supreme Goddess shines forth.",
+ brief="The instruction for the moment before sleep: go there by mind.",
+ logic="Three temporal conditions: anāgatāyām nidrāyām — sleep that has not yet arrived; praṇaṣṭe bāhyagocare — once the outer field of sights and sounds has died. In that gap, gamyā (to be gone to) by mind, parā devī, the supreme Goddess, prakāśate — shines, not is-made. The verse locates practice in the dying of the outer senses, where consciousness is neither awake nor asleep, and names what appears there as Śakti herself.",
+ howto="Practise at lights-out, lying on your back, one hand on the belly. Wait for the outer field to fade — sounds go dull, images slow. Then instead of following sleep passively, send the mind as an arrow to the heart-centre, once. Then release. The Goddess-feel is a hum or warmth behind the chest; if images swarm you have grasped — release the arrow and let the hum carry. No repetitions: this is a single-shot practice.",
+ source_path="sources/vbt-p08.md", source_ref="v.75"),
+dict(id="param-34", section="nidra", title="Creating, Keeping, Dissolving",
+ source="Paramārthasāra v.34",
+ iast="sṛṣṭisthitisaṃhārā jāgratsvapnau suṣuptam iti tasmin | bhānti turīye dhāmani tathāpi tair nāvṛtaṃ bhāti",
+ en="Creating, keeping, dissolving; waking, dreaming, deep sleep — these shine in him, in the fourth abode; and unveiled he shines, not covered by them.",
+ brief="The states are lights in a room; the room is not covered by them.",
+ logic="Abhinavagupta maps the macro (the three acts: creation, maintenance, dissolution) onto the micro (the three states), both placed tasmin, in turīya, the fourth abode. The load-bearing clause is tathāpi tair nāvṛtam — yet not veiled by them: turīya is not a fourth experience added to the series but what remains unveiled while the others shine. That is why it is called the fourth and not the first.",
+ howto="Recite as a sleep primer, slowly: the three acts — pause — the three states — pause — then hold nāvṛtam (unveiled) as the last word you hear. The feeling to cultivate: a screen behind the mind's pictures that stays clear while pictures change. Don't try to enter turya; the verse only points at what is not covered. Sleep then arrives without touching the unveiled.",
+ source_path="sources/param-p04.md", source_ref="v.34"),
+dict(id="vbt-80", section="nidra", title="Gaze Down, Mind Unsupported",
+ source="Vijñāna Bhairava v.80",
+ iast="sthūlarūpasya bhāvasya stabdhāṃ dṛṣṭiṃ nipātya ca | acireṇa nirādhāraṃ manaḥ kṛtvā śivaṃ vrajet",
+ en="Of the gross-formed state — fixing the gaze downward, and swiftly: making the mind unsupported, one may go to Śiva.",
+ brief="The last practice before sleep: eyes down, mind unsupported, go.",
+ logic="Vijñāna Bhairava's simplest night instruction. The bhāva is the gross (sthūla) — the day's residue, the body's weight; the gaze is set firm and lowered — not soft, but settled; and the mind is made nirādhāra, without support: no image, no thought to rest on. Three conditions, one result — śivaṃ vrajet, one may go to Śiva. 'Go' is not travel; it is sleep without a holder.",
+ howto="Lie down. Eyes half-open, lowered toward the pillow, then closed once the gaze has found its floor. Deliberately remove the mind's supports one by one: drop the plan for tomorrow (support removed), drop the commentary on the day (removed), drop even the wish to sleep (removed). What's left is a warm weight behind the sternum with no object — that is nirādhāra. Feeling-tip: if the mind grabs a support, don't fight it; note 'support', and set it down like an object.",
+ source_path="sources/vbt-p08.md", source_ref="v.80"),
+dict(id="pdva-10", section="nidra", title="I Am He — the Waking Light",
+ source="Paramārthadvādaśikā v.10",
+ iast="ye ye ke 'pi prakāśā mayi sati paramavyomni labdhāvakāśāḥ | kāśā hy eteṣu nitye mahimani mayi te nirvibhāgaṃ vibhānti | so 'haṃ nirvyājanityapratihatakalanānantasatyasvatantradhvastadvaitādvayāridvayamayatimirāpārabodhaprakāśaḥ",
+ en="Whatever lights there are — abiding in me, having found room in the highest sky — they shine in me, in eternal glory, undistinguished. I am He: unhypocritical, eternal, unbroken, infinite, true, free — the beginningless waking light that dispels the darkness made of the enemy-pair, one and not-one.",
+ brief="The last verse of the Paramārthadvādaśikā: a sleep-proclamation in one breath.",
+ logic="Three moves: (1) all lights depend on my space (mayi sati, labdhāvakāśāḥ) — without me they have no room; (2) in my eternal glory they shine undivided — no hierarchy of experiences; (3) so 'ham — the confession, heaped with attributes ending in prakāśa, light, modified by 'dispelling the darkness of the duality-pair'. The verse ends not in an image but in what does the seeing: light that was awake before dark and light were distinguished.",
+ howto="Only the last arm is for use: so'ham ... prakāśaḥ is too long to recite in bed — memorise the short form, 'so'haṃ — I am the waking light', and give it three rounds, one for each attribute-group (true, free, light). Feeling-tip: light WITHOUT source — no lamp, no sun, just visibility. As drowsiness comes, let the pronoun soften first and the light stay. This is the volume's last word because it is the only one that works while asleep.",
+ source_path="sources/pdva-p02.md", source_ref="v.10"),
+]
+
+# ---------------- VI. DASA — the daily ten ----------------
+REGIMEN = [
+ (1, "Before your feet touch the floor: sweep off the sweepings, twelve breaths of so'ham at the heart.", "Dehastha v.1", "sources/deha-p01.md"),
+ (2, "On waking, one bow: the states were his costumes; you are the partless actor.", "Mahopadeśaviṃśatikā v.10", "sources/mpa-p01.md"),
+ (3, "First look of the day: let the feet's discrimination wake you — name one thing sāra, one thing asāra.", "Svabodhasiddhi v.4", "sources/svab-p01.md"),
+ (4, "Before the first bite: three flavours, three flowers landing on the heart-lotus.", "Dehastha v.5", "sources/deha-p01.md"),
+ (5, "At the meal's fullness: three held breaths, fullness rising belly to head.", "Vijñāna Bhairava v.72", "sources/vbt-p08.md"),
+ (6, "Midday, at the first contentment: hold the mind there 30–60 seconds.", "Vijñāna Bhairava v.74", "sources/vbt-p08.md"),
+ (7, "When 'mine' or 'I' knots up: hand on sternum, one cut — I bow — I.", "Svabodhasiddhi v.6", "sources/svab-p01.md"),
+ (8, "Before any ritual work: let each 'whence?' land as a shrug.", "Mahopadeśaviṃśatikā v.13", "sources/mpa-p02.md"),
+ (9, "At dusk: wave the light from your hand to your own chest.", "Mahopadeśaviṃśatikā v.17", "sources/mpa-p02.md"),
+ (10, "Lights out: send the mind once to the heart, then release it.", "Vijñāna Bhairava v.75", "sources/vbt-p08.md"),
+]
+
+
+def deva(iast):
+    if _tr is None:
+        return ""
+    try:
+        out = _tr(iast, sanscript.IAST, sanscript.DEVANAGARI)
+    except Exception:
+        return ""
+    return out.replace("\U0000A8F3", "\u0902").replace("\U0000A8F2", "\u0901")
+
+
+def build_json():
+    data = {"meta": META,
+            "sections": [{"id": s[0], "numeral": s[1], "title": s[2], "subtitle": s[3],
+                          "entries": [e["id"] for e in ENTRIES if e["section"] == s[0]]}
+                         for s in SECTIONS],
+            "regimen": [{"n": n, "action": a, "source": s, "source_path": p} for n, a, s, p in REGIMEN],
+            "entries": [{**e, "devanagari": deva(e["iast"])} for e in ENTRIES]}
+    (HERE / "invocations.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    return data
+
+
+def esc(s):
+    return html.escape(s)
+
+
+def type_sizes(e):
+    L = max(len(e["iast"]), len(e["devanagari"]) * 0.9)
+    if L > 190:
+        d, en = "15pt", "13pt"
+    elif L > 150:
+        d, en = "16.5pt", "13.5pt"
+    elif L > 110:
+        d, en = "18pt", "14pt"
+    else:
+        d, en = "21pt", "15pt"
+    return d, en
+
+
+def build_html(data):
+    byid = {e["id"]: e for e in data["entries"]}
+
+    css = """
+@font-face{font-family:'Tiro';src:url('fonts/TiroDevanagariSanskrit-Regular.ttf');}
+@font-face{font-family:'Cormorant';src:url('fonts/CormorantGaramond[wght].ttf');font-weight:400 700;}
+:root{--ink:#17140f;--grey:#76736e;--hair:#d9d5cc;}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#efece5;color:var(--ink);}
+body{font-family:'Cormorant',Georgia,serif;font-size:15pt;line-height:1.5;}
+.page{background:#fff;width:148mm;min-height:210mm;margin:0 auto 10mm;padding:20mm 18mm;
+  box-shadow:0 2px 14px rgba(0,0,0,.12);position:relative;page-break-after:always;}
+.spread{display:flex;gap:8mm;justify-content:center;flex-wrap:wrap;margin:0 auto 10mm;}
+.spread .page{margin:0;}
+.cover{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.cover .om{font-family:'Tiro';font-size:64pt;line-height:1;margin-bottom:18mm;}
+.cover h1{font-family:'Cormorant';font-weight:600;font-size:34pt;letter-spacing:.06em;margin:0;text-transform:uppercase;}
+.cover .sub{font-size:16pt;font-style:italic;color:var(--grey);margin-top:4mm;}
+.cover .rule{width:40mm;height:1px;background:var(--ink);margin:10mm auto;}
+.cover .blurb{font-size:11pt;text-transform:uppercase;letter-spacing:.16em;color:var(--grey);}
+.toc h2,.sec-div h2,.reg h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13pt;color:var(--grey);}
+.toc ol{list-style:none;padding:0;margin:8mm 0 0;}
+.toc .sec{margin-top:6mm;font-size:10pt;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);}
+.toc li{margin:1.5mm 0;font-size:12pt;}
+.toc .n{color:var(--grey);display:inline-block;width:8mm;}
+.sec-div{display:flex;flex-direction:column;justify-content:center;text-align:center;}
+.sec-div .num{font-family:'Cormorant';font-size:11pt;letter-spacing:.3em;color:var(--grey);}
+.sec-div h2{font-size:26pt;letter-spacing:.08em;margin:4mm 0 0;color:var(--ink);}
+.sec-div .sub{font-style:italic;color:var(--grey);font-size:13pt;margin-top:3mm;}
+.sec-div .rule{width:30mm;height:1px;background:var(--ink);margin:8mm auto 0;}
+.src{font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
+.prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:17pt;margin:3mm 0 6mm;text-align:center;letter-spacing:.02em;}
+.prayer .dev{font-family:'Tiro';line-height:1.75;text-align:center;margin:6mm 0 3mm;white-space:pre-line;}
+.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:12pt;line-height:1.5;}
+.prayer .en{margin:7mm 0 0;line-height:1.55;}
+.guide .label{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);margin-bottom:3mm;}
+.guide h3{text-align:left;font-size:19pt;margin:0 0 2mm;}
+.guide .src{text-align:left;margin-bottom:4mm;}
+.guide .brief{font-style:italic;color:var(--grey);font-size:11.5pt;line-height:1.45;padding-bottom:3mm;margin-bottom:4mm;border-bottom:1px solid var(--hair);}
+.guide .blk{margin-bottom:4mm;}
+.guide .bl{font-size:8.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:1mm;}
+.guide .body{font-size:11.5pt;line-height:1.55;color:#241f19;}
+.guide .body p{margin:0;}
+.guide .src-foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:3mm;font-size:9.5pt;color:var(--grey);}
+.guide .src-foot a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);}
+.reg .intro{font-style:italic;color:var(--grey);font-size:12pt;margin:0 0 5mm;}
+.reg ol{list-style:none;padding:0;margin:0;}
+.reg li{display:flex;gap:3mm;margin:0 0 3.6mm;font-size:11pt;line-height:1.45;}
+.reg .n{font-family:'Cormorant';color:var(--grey);min-width:5mm;text-align:right;}
+.reg .ref{display:block;font-size:8.5pt;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);text-decoration:none;margin-top:.5mm;}
+.reg .ref:hover{color:var(--ink);}
+.bib h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13pt;color:var(--grey);}
+.bib ul{list-style:none;padding:0;margin:8mm 0 0;}
+.bib li{margin:0 0 5mm;font-size:11pt;line-height:1.5;}
+.bib li .t{font-size:10pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
+.bib li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);word-break:break-all;}
+.epi{display:flex;flex-direction:column;justify-content:center;text-align:center;}
+.epi .skt{font-family:'Tiro';font-size:15pt;line-height:2;margin-bottom:8mm;}
+.epi .en{font-style:italic;font-size:13pt;color:var(--grey);max-width:90mm;margin:0 auto;}
+.epi .src{font-size:9.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);margin-top:8mm;}
+.pnum{position:absolute;bottom:10mm;left:0;right:0;text-align:center;font-size:9pt;color:var(--grey);letter-spacing:.1em;}
+@media print{html,body{background:#fff}.page{margin:0;box-shadow:none;width:auto;min-height:auto}.spread{display:block;margin:0}@page{size:A5;margin:0}}
+"""
+
+    pages = []
+    pages.append(f"""<section class="page cover">
+<div class="om">ॐ</div>
+<h1>{esc(META['title'])}</h1>
+<div class="sub">{esc(META['subtitle'])}</div>
+<div class="rule"></div>
+<div class="blurb">{esc(META['blurb'])}</div>
+</section>""")
+
+    pages.append(f"""<section class="page epi"><div class="skt">{esc(deva(META['epigraph_iast']))}</div>
+<div class="en">{esc(META['epigraph_en'])}</div>
+<div class="src">{esc(META['epigraph_src'])}</div></section>""")
+
+    toc = ['<section class="page toc"><h2>Contents</h2><ol>']
+    n = 0
+    for sec in data["sections"]:
+        toc.append(f'<div class="sec">{esc(sec["numeral"])} &nbsp; {esc(sec["title"])} &nbsp; <span style="opacity:.6">{esc(sec["subtitle"])}</span></div>')
+        if sec["id"] == "dasa":
+            toc.append('<li><span class="n">—</span>The Daily Ten</li>')
+            continue
+        for eid in sec["entries"]:
+            n += 1
+            toc.append(f'<li><span class="n">{n}</span>{esc(byid[eid]["title"])}</li>')
+    toc.append("</ol></section>")
+    pages.append("".join(toc))
+
+    n = 0
+    for sec in data["sections"]:
+        pages.append(f"""<section class="page sec-div"><div class="num">{esc(sec['numeral'])}</div>
+<h2>{esc(sec['title'])}</h2><div class="sub">{esc(sec['subtitle'])}</div><div class="rule"></div></section>""")
+        if sec["id"] == "dasa":
+            items = "".join(
+                f'<li><span class="n">{r["n"]}</span><div>{esc(r["action"])}'
+                f'<a class="ref" href="{esc(r["source_path"])}">{esc(r["source"])}</a></div></li>'
+                for r in data["regimen"])
+            pages.append(f"""<section class="page reg">
+<div class="label">The Daily Ten</div>
+<h2 style="text-align:left;color:var(--ink);letter-spacing:.04em">Ten acts, every day</h2>
+<p class="intro">One verse, one act, one moment — dawn to lights-out. Each line links to the text it comes from.</p>
+<ol>{items}</ol>
+<div class="pnum">The Daily Ten</div></section>""")
+            continue
+        for eid in sec["entries"]:
+            n += 1
+            e = byid[eid]
+            dev_html = esc(e["devanagari"]).replace("\n", "<br>")
+            dsz, esz = type_sizes(e)
+            pages.append(f"""<div class="spread">
+<section class="page prayer">
+<div class="src">{esc(e['source'])}</div>
+<h3>{esc(e['title'])}</h3>
+<div class="dev" style="font-size:{dsz}">{dev_html}</div>
+<div class="iast">{esc(e['iast'])}</div>
+<div class="en" style="font-size:{esz}">{esc(e['en'])}</div>
+<div class="pnum">{n}</div></section>
+<section class="page guide">
+<div class="label">The Guide</div>
+<h3>{esc(e['title'])}</h3>
+<div class="src">{esc(e['source'])} · {esc(e['source_ref'])}</div>
+<div class="brief">{esc(e['brief'])}</div>
+<div class="body">
+<div class="blk"><span class="bl">The logic</span><p>{esc(e['logic'])}</p></div>
+<div class="blk"><span class="bl">How to perform it</span><p>{esc(e['howto'])}</p></div>
+</div>
+<div class="src-foot">Source: <a href="{esc(e['source_path'])}">{esc(e['source_path'].replace('sources/',''))} · {esc(e['source_ref'])}</a></div>
+<div class="pnum">{n} · guide</div></section>
+</div>""")
+
+    pages.append(f"""<section class="page epi"><div class="skt">ॐ शान्तिः शान्तिः शान्तिः</div>
+<div class="en">peace, peace, peace</div>
+<div class="src">Anuttara II</div></section>""")
+
+    seen, blist = set(), []
+    for e in data["entries"]:
+        p = e.get("source_path")
+        if p and p not in seen:
+            seen.add(p)
+            refs = [x["source_ref"] for x in data["entries"] if x.get("source_path") == p]
+            blist.append((p, refs))
+    bib = ['<section class="page bib"><h2>Sources</h2><ul>']
+    for p, refs in blist:
+        bib.append(f'<li><div class="t">{esc(p.replace("sources/","").replace("-"," "))}</div>'
+                   f'<a href="{esc(p)}">{esc(p)}</a><br>'
+                   f'<span style="color:#76736e">{esc(", ".join(refs))}</span></li>')
+    bib.append("</ul></section>")
+    pages.append("".join(bib))
+
+    doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{esc(META['title'])} — {esc(META['subtitle'])}</title>
+<style>{css}</style></head><body>{''.join(pages)}</body></html>"""
+    (HERE / "index.html").write_text(doc, encoding="utf-8")
+
+
+if __name__ == "__main__":
+    data = build_json()
+    build_html(data)
+    print(f"entries: {len(data['entries'])}  regimen: {len(data['regimen'])}  sections: {len(data['sections'])}")
+    for s in data["sections"]:
+        print(f"  {s['numeral']}. {s['title']:<12} {len(s['entries']) if s['entries'] else '(regimen)'}")

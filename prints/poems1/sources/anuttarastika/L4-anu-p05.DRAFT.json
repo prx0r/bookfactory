@@ -1,0 +1,62 @@
+{
+ "craft_notes": "Sthāyin: ānanda as delight in variety; bhakti as rati; vyabhicāri joy (harṣa) of seeing variety as one-self. Sanskrit-first: ekātmatā-compound open kept (one-self-nature, unresolved per craft); ramase (WHY-NOT-DELIGHT — question-mood, not command: the verse asks, never orders, per UNC). Abhinavagupta frame: variety (vicitra) unthreatening — the catalogue of feelings IS the universe bodied, no separate nature to fear. Rows: 9 (passion/aversion/pleasure/pain/rise-fall/I-sense/misery — catalogue kept whole; trimming would shrink the variety the verse blesses), 1 (‘contemplating it’ — dhyāna-full delight closes; seeing ends in beholding), 10 (sudden-seeing left as sudden — sahasā kept). Close: ‘full of contemplating it’. Rupture: ‘why not delight’ (seeing turns to delight — the question IS the turn). Rejected: imperative-only delight — killed by UNC (question holds both moods); resolving ekātmatā — killed; trimming feelings — killed: catalogue is the variety. Read aloud: PASS-ion, a-VER-sion, PLEA-sure, PAIN … ARE of NO-sep-ar-ate NA-ture … WHAT-ev-er FORM you SUDD-en-ly SEE — SEE it AS-con-SCIOUS-ness … WHY-not de-LIGHT.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "anu-p05",
+  "song": "anu-p05",
+  "verse": 5,
+  "lines": [
+   "Passion, aversion, pleasure, pain, rise and fall, I-sense, misery and the rest — these states, shining forth, bodied of the universe, are of no separate nature.",
+   "Whatever form you suddenly see — see it as consciousness of one self-nature: why not delight, full of contemplating it?"
+  ],
+  "sanskrit_cite": "rāgadveṣasukhāsukhodayalayāhaṅkāradainyādayo ye bhāvāḥ pravibhānti viśvavapuṣo bhinnasvabhāvā na te | vyaktiṃ paśyasi yasya yasya sahasā tattattadekātmatāsaṃvidrūpam avekṣya kiṃ na ramase tadbhāvanānirbharaḥ",
+  "l0_ids": [
+   "anu-p05-p000",
+   "anu-p05-p001",
+   "anu-p05-p002",
+   "anu-p05-p003",
+   "anu-p05-p004",
+   "anu-p05-p005",
+   "anu-p05-p006",
+   "anu-p05-p007",
+   "anu-p05-p008",
+   "anu-p05-p009",
+   "anu-p05-p010",
+   "anu-p05-p011",
+   "anu-p05-p012",
+   "anu-p05-p013",
+   "anu-p05-p014",
+   "anu-p05-p015",
+   "anu-p05-p016",
+   "anu-p05-p017",
+   "anu-p05-p018",
+   "anu-p05-p019",
+   "anu-p05-p020",
+   "anu-p05-p021",
+   "anu-p05-p022",
+   "anu-p05-p023",
+   "anu-p05-p024",
+   "anu-p05-p025",
+   "anu-p05-p026"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "Why not delight in variety? → Variety is one nature; regard it as consciousness-form, and delight is the only consistent response.",
+  "c1_essence": [
+   "Passions through misery — the whole catalogue of feeling-states, universe-bodied — are not different-natured. Whatever manifestation you suddenly see, regard as one-self-natured consciousness-form: why not delight, contemplation-full? Variety is one nature; the only consistent response to seeing it as consciousness-form is delight."
+  ],
+  "c1_rasa": "ānanda (bliss) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

@@ -70,8 +70,8 @@ class HandoffTests(unittest.TestCase):
         self.assertFalse(sentinel.exists())
 
     def test_queued_lane_cannot_pass(self):
-        errors=check.check_lane('demo',{'book_dir':None},self.root,self.root)
-        self.assertTrue(any('queued lane' in s for s in errors))
+        problems=check.check_content('demo',{'book_dir':None},self.root,None)
+        self.assertTrue(any('queued lane' in s for _,s in problems))
 
     def test_asset_import_binds_bytes_and_rights(self):
         from PIL import Image
@@ -102,19 +102,19 @@ class HandoffTests(unittest.TestCase):
             factory.import_asset(args)
 
     def test_handoff_detects_changed_source_or_output(self):
-        visuals=self.root/'visuals';visuals.mkdir()
-        for i in range(5): (visuals/f'render-{i}').write_text(str(i))
+        prints=self.root/'prints';prints.mkdir()
+        for i in range(5): (prints/f'render-{i}').write_text(str(i))
         output=self.root/'products';output.mkdir()
         for i in range(5): (output/f'out-{i}').write_text(str(i))
         c=factory.extract(self.root,'demo','demo-v01','l3','demo-p01')
         c.update({'outputs':[factory.record(output/f'out-{i}',output) for i in range(5)],
                   'renderer':{'commit':None,'input_files_dirty':None},
-                  'renderer_files':[factory.record(visuals/f'render-{i}',visuals) for i in range(5)],
+                  'renderer_files':[factory.record(prints/f'render-{i}',prints) for i in range(5)],
                   'factory_git':{'commit':None,'input_files_dirty':None},
                   'factory_files':[factory.record(ROOT/p,ROOT) for p in ('factory.py','schemas/quote-handoff.schema.json')],
                   'render_backend':'chrome','runtime':{'python':'3','indic_transliteration':'1','weasyprint':None},'note':'draft'})
         manifest=output/'manifest.json';manifest.write_text(json.dumps(c))
-        args=SimpleNamespace(manifest=manifest,visuals=visuals,translations=self.root)
+        args=SimpleNamespace(manifest=manifest,prints=prints,translations=self.root)
         factory.verify_handoff(args)
         (output/'out-0').write_text('tampered')
         with self.assertRaisesRegex(ValueError,'hash mismatch'): factory.verify_handoff(args)
@@ -123,8 +123,8 @@ class HandoffTests(unittest.TestCase):
 class ActualPreflightTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        path=ROOT.parent/'visuals/prints/kdp_preflight.py'
-        if not path.exists(): raise unittest.SkipTest('visuals checkout is unavailable')
+        path=ROOT/'prints/kdp_preflight.py'
+        if not path.exists(): raise unittest.SkipTest('prints checkout is unavailable')
         spec=importlib.util.spec_from_file_location('preflight',path)
         cls.preflight=importlib.util.module_from_spec(spec);spec.loader.exec_module(cls.preflight)
         try: import fitz
@@ -154,8 +154,8 @@ class ActualPreflightTests(unittest.TestCase):
 
 class VisualSourceTests(unittest.TestCase):
     def test_corpus_uses_the_declared_file(self):
-        path=ROOT.parent/'visuals/prints/bookkit/engine.py'
-        if not path.exists(): self.skipTest('visuals checkout is unavailable')
+        path=ROOT/'prints/bookkit/engine.py'
+        if not path.exists(): self.skipTest('prints checkout is unavailable')
         spec=importlib.util.spec_from_file_location('bookkit_engine',path)
         engine=importlib.util.module_from_spec(spec);spec.loader.exec_module(engine)
         engine.deva=lambda text:'DEVA:' + text

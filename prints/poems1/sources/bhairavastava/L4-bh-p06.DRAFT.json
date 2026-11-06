@@ -1,0 +1,44 @@
+{
+ "craft_notes": "Sthāyin: ānanda as entry (praveśa — ingress, NOT feeling); vyabhicāri wonder at things disclosed as-they-are. Sanskrit-first: prabuddha (DAWNED-awakened — perfect: already risen); amṛta-pūrṇa (NECtar-FULL — pūrṇa modifies the LORD, kept attached); praviśāmi (I ENTER — first person enters, not feels). Rows: 1 (‘enter bliss’ closes — entry, the verse's whole doctrine, last), 8 (vowel arc bright throughout: dawn-rays-reveal → brimming-full — ānanda does not fall, it fills; no dark close), 7 declined — no vocative; locative ‘In You’ carries address. Close: ‘I myself enter bliss’. Rupture: colon after ‘essence’ (disclosure turns to entry — seeing turns to entering). Rejected: ‘I feel bliss’ — killed: ingress ≠ feeling (C1 explicit); ‘full of nectar’ reordering — killed: pūrṇa belongs to the Lord; ‘true nature’ for ‘true essence’ — killed: tattva kept essence. Read aloud: TRUE a-WAK-en-ing HAS-dawned — its RAYS re-VEAL … IN-you — BRIMM-ing-FULL of su-PREME-nec-tar — i-my-SELF EN-ter BLISS.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p06",
+  "song": "bh-p06",
+  "verse": 6,
+  "lines": [
+   "True awakening has dawned — its rays reveal each thing’s true essence:",
+   "In You — brimming full of supreme nectar — I myself enter bliss."
+  ],
+  "sanskrit_cite": "proditasatyavibodhamarīciprekṣitaviśvapadārthasatattvaḥ bhāvaparāmṛtanirbharapūrṇe tvayi aham ātmani nirvṛtim emi",
+  "l0_ids": [
+   "bh-p06-p000",
+   "bh-p06-p001",
+   "bh-p06-p002",
+   "bh-p06-p003",
+   "bh-p06-p004",
+   "bh-p06-p005",
+   "bh-p06-p006"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What does true awakening disclose, and what is bliss? → Awakening discloses things as they are; bliss is entry into the Lord's fullness — ingress, not feeling.",
+  "c1_essence": [
+   "True awakening discloses things as they are: its rays reveal the true essence of world-objects.",
+   "In You, being-full, I the self enter bliss — ingress, not feeling.",
+   "Awakening discloses; entry is bliss; pūrṇa (full/complete) is the Lord's nature."
+  ],
+  "c1_rasa": "ānanda (bliss) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

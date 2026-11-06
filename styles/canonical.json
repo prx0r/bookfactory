@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "id": "canonical",
+  "name": "Canonical prayer-book style",
+  "description": "The house style both member books already wear. Style = presentation only; never content. Future: save additional style packs here (owner or reader) and set thesis.style — the pipeline, anatomy and gates stay identical, only the look changes.",
+  "type_stack": {
+    "devanagari": "Tiro Devanagari Sanskrit (OFL, fonts/ in book dir)",
+    "latin": "Cormorant Garamond variable (OFL, fonts/ in book dir)",
+    "note": "Devanagari always transliterated from IAST at build; never hand bytes"
+  },
+  "geometry": {
+    "trim": "A5 148x210mm no-bleed",
+    "margins": "20mm top/bottom, 18mm sides (>= KDP 0.375in gutter / 0.25in outside)",
+    "spread": "prayer page facing guide page"
+  },
+  "ground": "paper white (255,255,255); ink #17140f; grey #76736e; hairline #d9d5cc",
+  "guide_blocks": ["What is it", "How to perform it", "How to know it's working", "What to feel / visualise"],
+  "render": "chrome print-to-pdf of bookkit HTML (prints/bookkit/engine.py); gate prints/kdp_preflight.py",
+  "owner_can_save": true
+}

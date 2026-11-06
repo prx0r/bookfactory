@@ -1,0 +1,53 @@
+{
+ "craft_notes": "Sthāyin: ānanda as rejoicing consciousness (hṛṣṭi); vyabhicāri wonder at rarity fenced. Sanskrit-first: nṛtyati/gāyati (DANCES/SINGS — kept tripled with rejoices: joy in three verbs); samaya-vid (COVENANT-KNOWERS — fenced term kept fenced AND translated: fence is doctrine); durlabha (HARD-to-obtain — kept). Rows: 9 (dances/sings/rejoices triple — tripled joy), 7 (‘O Bhairava, Lord’ mid-verse — address INSIDE the dance, joy first), 1 (‘covenant’ closes — rarity fenced last). Close: ‘kept for knowers of the covenant’. Rupture: colon after ‘Lord’ (dancing turns to defining — joy, then what joy means: obtaining = vision per C1). Rejected: ‘my beloved’ — killed: priya kept plain; explaining samaya — killed: un-fencing would un-fence the doctrine; ‘rare’ alone — killed: ‘hard for others to obtain’ keeps the exclusivity structure. Read aloud: THIS-con-SCIOUS-ness OF-mine DAN-ces, SINGS, re-JOI-ces DEEP-ly — o-BHAI-ra-va, LORD: HAV-ing-WON-you, my-DEAR — a-SING-le BEAU-ti-ful VI-sion … KEPT for KNOW-ers OF the COV-e-nant.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p09",
+  "song": "bh-p09",
+  "verse": 9,
+  "lines": [
+   "This consciousness of mine dances, sings, rejoices deeply — O Bhairava, Lord:",
+   "having won You, my dear — a single beautiful vision, hard for others to obtain, kept for knowers of the covenant."
+  ],
+  "sanskrit_cite": "nṛtyati gāyati hṛṣyati gāḍham saṃvit iyam mama bhairavanātha tvāṃ priyam āpya sudarśanamekam durlabhamanyajanaiḥ samayajñam",
+  "l0_ids": [
+   "bh-p09-p000",
+   "bh-p09-p001",
+   "bh-p09-p002",
+   "bh-p09-p003",
+   "bh-p09-p004",
+   "bh-p09-p005",
+   "bh-p09-p006",
+   "bh-p09-p007",
+   "bh-p09-p008",
+   "bh-p09-p009",
+   "bh-p09-p010",
+   "bh-p09-p011",
+   "bh-p09-p012",
+   "bh-p09-p013"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "sudarśanam ekam as ‘a single beautiful vision’ (boundary open); samayajñam as qualifier (fence), with C1"
+  ]
+ },
+ "reads_against": {
+  "argmap": "What is obtaining, and who obtains? → Joy, then its cause: obtaining is vision, rare by structure and fenced to the initiated.",
+  "c1_essence": [
+   "Consciousness dances and sings; obtaining the Lord is defined as rare vision — fenced to the initiated.",
+   "Joy first, then its cause named: obtaining = vision, rare by structure.",
+   "It moves from rejoicing to the definition of obtaining as vision, fenced to the knower of the samaya."
+  ],
+  "c1_rasa": "ānanda (bliss) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

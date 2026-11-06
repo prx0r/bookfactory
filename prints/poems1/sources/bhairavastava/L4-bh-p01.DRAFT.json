@@ -1,0 +1,47 @@
+{
+ "craft_notes": "Sthāyin: śānta as veneration of all-pervading consciousness; FIRST VERSE — sets the house voice (doctrine first, then the name; owner verdict required). Sanskrit-first: sthāvara-jaṅgama (moving AND unmoving — the pair IS the pervasion, kept paired); namāmi (I BOW — the verse's only act, kept last). Abhinavagupta frame: veneration as mental absorption (manasā bhūtvā — mind-become-His), not offering; the name lived, not glossed (argmap INF). Rows: 9 (moving/unmoving catalogue — pair kept bare), 7 (Bhairava-vocative mid-verse — address AFTER establishment; order IS the recognition: what, then whom), 1 (‘I bow’ end-weighted). Close: ‘in my heart, I bow’. Rupture: em-dash after ‘is one’ (all-pervasion stated, then the person enters). Rejected: ‘I prostrate’ — killed: contemporary diction (license ledger); fronting the vocative — killed: name-after-pervasion is the recognition performed; ‘refuge of helpless ones’ plural — killed: anātha kept singular-abstract (‘the helpless’). Read aloud: per-VAD-ing EV-ery STATE of MOV-ing and un-MOV-ing, CON-scious-ness it-SELF is ONE … BHAI-ra-va, LORD … IN-my-HEART, i-BOW.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p01",
+  "song": "bh-p01",
+  "verse": 1,
+  "lines": [
+   "Pervading every state of moving and unmoving, consciousness itself is one — without end or beginning.",
+   "Bhairava, Lord, refuge of the helpless — with a mind become Yours, in my heart, I bow."
+  ],
+  "sanskrit_cite": "vyāptacarācarabhāvaviśeṣaṃ cinmayam ekam anantam anādim bhairavanātham anāthaśaraṇyaṃ tvanmayacittatayā hṛdi vande",
+  "l0_ids": [
+   "bh-p01-p000",
+   "bh-p01-p001",
+   "bh-p01-p002",
+   "bh-p01-p003",
+   "bh-p01-p004",
+   "bh-p01-p005",
+   "bh-p01-p006",
+   "bh-p01-p007",
+   "bh-p01-p008",
+   "bh-p01-p009"
+  ],
+  "essence_maps": [
+   0,
+   1
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What is the object of veneration, and how does veneration relate to it? → The Absolute is named in full, then venerated by absorption into it; the name is lived, not glossed. Veneration is not offering but becoming.",
+  "c1_essence": [
+   "Bhairava is established as all-pervading conscious reality: one, endless, beginningless — the Absolute that pervades moving and unmoving states.",
+   "The Lord is then venerated as refuge of the helpless by a mind become His — veneration as mental absorption, not ritual offering.",
+   "The nirukta of Bhairava (bearing/supporting, the Roar of AHAM, benefactor of the terrified) is here performed, not stated: the name is lived.",
+   "Total surrender is sized to its object — the all-pervading consciousness is venerated by absorption into it."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

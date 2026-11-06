@@ -1,0 +1,71 @@
+{
+ "craft_notes": "Sthāyin: total offering (sarvasva; FIRST VERSE — sets the house voice: intimate-address, plain diction, dash-hold, end-weight plea; owner verdict required). Abhinavagupta frame: sādhāraṇīkaraṇa generalized (‘my pride’ thins to ‘pride offered’ only where Sanskrit generalizes — manmāna kept ‘my pride’ where Sanskrit points); dhvani rank kept — the plea names nothing beyond the act, vyaṅgya (grace hoped, not stated) unstated. Rows firing: 1 (imperative bhava held line-final), 5 (śloka tread, bank: hymn tread for śloka-source), 7 (vocatives vibho/anāthanātha/karuṇāsindho each kept fresh), 9 (nātaḥ paraṃ/itaranāsti double-negation engine → ‘nothing beyond / nothing else’). Close: ‘be pleased’ (prasanno bhava; pleasure-reading per L3 note, grace open). Rejected: ‘laid down’ for offered — killed: slant on arpitam; merging vocative clusters — killed: row 7; ‘be gracious’ — killed: L3 note freezes pleasure. Read aloud: WHAT-ever I have TRU-ly DONE, o LORD: ONE-du-ty, NO-thing be-YOND — MY-pride OFF-ered … be PLEASED.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "pan-p01",
+  "song": "pan-p01",
+  "verse": 1,
+  "lines": [
+   "Whatever I have truly done, O Lord: one duty, nothing beyond —",
+   "my pride, offered at Your lotus feet, in devotion.",
+   "This is my all, nothing else I know; all else cast aside —",
+   "quickly, O protector of the helpless, ocean of compassion, be pleased."
+  ],
+  "sanskrit_cite": "yatsatyaṃ tu mayā kṛtaṃ mama vibho kṛtyaṃ tu nātaḥ paraṃ yanmanmānamaiśapādakamale bhaktyā mayaivārpitam | sarvasvamata evametaditarannāsyeva jānāmyatastyaktvā kṣipramanāthanātha karuṇāsindho prasanno bhava",
+  "l0_ids": [
+   "pan-p01-p000",
+   "pan-p01-p001",
+   "pan-p01-p002",
+   "pan-p01-p003",
+   "pan-p01-p004",
+   "pan-p01-p005",
+   "pan-p01-p006",
+   "pan-p01-p007",
+   "pan-p01-p008",
+   "pan-p01-p009",
+   "pan-p01-p010",
+   "pan-p01-p011",
+   "pan-p01-p012",
+   "pan-p01-p013",
+   "pan-p01-p014",
+   "pan-p01-p015",
+   "pan-p01-p016",
+   "pan-p01-p017",
+   "pan-p01-p018",
+   "pan-p01-p019",
+   "pan-p01-p020",
+   "pan-p01-p021",
+   "pan-p01-p022",
+   "pan-p01-p023",
+   "pan-p01-p024",
+   "pan-p01-p025",
+   "pan-p01-p026",
+   "pan-p01-p027",
+   "pan-p01-p028",
+   "pan-p01-p029",
+   "pan-p01-p030",
+   "pan-p01-p031",
+   "pan-p01-p032",
+   "pan-p01-p033"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "prasāda as ‘pleased’ (pleasure reading); grace reading open — see argmap"
+  ]
+ },
+ "reads_against": {
+  "argmap": "The whole duty is one act: pride offered on the Lord's feet; all else denied, and only immediate pleasure asked. → Total offering of pride; plea for immediate pleasure.",
+  "c1_essence": [
+   "The whole duty is one act: pride offered on the Lord's feet; all else denied, and only immediate pleasure asked."
+  ],
+  "c1_rasa": "śṛṅgāra/bhakti (devotion as love-in-separation from the Lord)"
+ },
+ "status": "machine-proposed"
+}

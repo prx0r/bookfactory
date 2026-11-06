@@ -1,0 +1,69 @@
+{
+ "craft_notes": "Sthāyin: śānta as anupāya (no method); FIRST VERSE — sets the house voice (denial-catalogue + question + two refusals + abide-command; owner verdict required). Sanskrit-first: suniścita/token opens kept per UNC (no resolution smuggled); anupāya named BY PERFORMANCE — the verse never says the word, it enacts it. Abhinavagupta frame: pratyabhijñā by refusal (recognition through what-is-not); the question (kiṃ suniścitam) is itself the method turning from hunt to hearing. Rows: 9 (no…no…no…no…no…no — sixfold denial anaphora IS the verse's engine), 1 (‘abiding as you are’ end-weighted — yathāvasthita closes; staying is the last word because staying is the doctrine), 7 declined — no vocative; the command speaks to the hearer direct. Close: ‘abiding as you are’. Rupture: ‘So what stands well decided?’ (catalogue turns to question — the hunt replaced). Rejected: labeling anupāya — killed: named-by-performance, never by label; resolving opens — killed by UNC; softening neither-nor — killed: refusals ARE the method; ‘rest as you are’ — killed: ‘abide’ keeps sthā- (standing, decid). Read aloud: NO-cross-ing HERE by ME-thod — NO-con-tem-PLA-tion, NO-rea-soned-TALK … NEI-ther re-NOUN-cer NOR pos-SESS-or — en-JOY HAP-pi-ness, ALL of IT, a-BID-ing AS you ARE.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "anu-p01",
+  "song": "anu-p01",
+  "verse": 1,
+  "lines": [
+   "No crossing here by method — no contemplation, no reasoned talk, no inquiry, no visualization, no fixing, no straining at mantra-practice.",
+   "So what stands well decided? Speak the highest truth — and hear it: neither renouncer nor possessor — enjoy happiness, all of it, abiding as you are."
+  ],
+  "sanskrit_cite": "saṃkrāmo 'tra na bhāvanā na ca kathāyuktir na carcā na ca dhyānaṃ vā na ca dhāraṇā na ca japābhyāsaprayāso na ca | tat kiṃ nāma suniścitaṃ vada paraṃ satyaṃ ca tac chrūyatām: na tyāgī na parigrahī — bhaja sukhaṃ sarvam yathāvasthitaḥ",
+  "l0_ids": [
+   "anu-p01-p000",
+   "anu-p01-p001",
+   "anu-p01-p002",
+   "anu-p01-p003",
+   "anu-p01-p004",
+   "anu-p01-p005",
+   "anu-p01-p006",
+   "anu-p01-p007",
+   "anu-p01-p008",
+   "anu-p01-p009",
+   "anu-p01-p010",
+   "anu-p01-p011",
+   "anu-p01-p012",
+   "anu-p01-p013",
+   "anu-p01-p014",
+   "anu-p01-p015",
+   "anu-p01-p016",
+   "anu-p01-p017",
+   "anu-p01-p018",
+   "anu-p01-p019",
+   "anu-p01-p020",
+   "anu-p01-p021",
+   "anu-p01-p022",
+   "anu-p01-p023",
+   "anu-p01-p024",
+   "anu-p01-p025",
+   "anu-p01-p026",
+   "anu-p01-p027",
+   "anu-p01-p028",
+   "anu-p01-p029",
+   "anu-p01-p030",
+   "anu-p01-p031",
+   "anu-p01-p032"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What is the method, if no method is enjoined? → No method is enjoined; staying is the method that is no method. Anupāya named by performance.",
+  "c1_essence": [
+   "No method is enjoined: contemplation, speech-connection, discussion, visualization, steadying, japa-practice-effort — all denied. The question replaces the hunt for method: what stands well-decided? Speak it, hear it. The answer is two refusals and one command: not renouncer, not possessor — enjoy happiness, wholly, as staying. Staying (yathāvasthita) is the method that is no method — anupāya named by performance, not by label."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

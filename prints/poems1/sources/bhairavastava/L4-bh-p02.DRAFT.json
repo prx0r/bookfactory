@@ -1,0 +1,53 @@
+{
+ "craft_notes": "Sthāyin: śānta as non-dual identity; two-step recognition (grace-showing → identity-declaring). Sanskrit-first: avaśeṣam (WITHOUT REMAINDER — kept; totality is the doctrine); tavaiva/tvayā (instrumental twice — means and end both Him). Rows: 3 (Yours/mine chiasmus — ‘become Yours…all is mine through You’: tvadīya/madīya interlock kept), 7 (Maheśa-vocative mid-L2 — identity declared TO him), 1 (‘through You’ closes — the hinge last). Close: ‘all is mine through You’. Rupture: ‘You, Maheśa, are ever my own self’ (showing turns to declaring — appearance, then ownership per C1). Rejected: ‘by Your grace’ smoothing — killed: grace-POWER (śakti) kept as power; ‘everything is mine’ — killed: dropping ‘through You’ drops non-duality's ground; ‘now I see’ for ‘appears to me’ — killed: bhāti (appears/shines) kept impersonal. Read aloud: ALL-this, be-COME-yours with-OUT re-MAIN-der … YOU, ma-HE-śa, are EV-er MY-own-SELF — MADE-of-you, ALL is MINE through-YOU.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p02",
+  "song": "bh-p02",
+  "verse": 2,
+  "lines": [
+   "All this, become Yours without remainder, now appears to me by the power of Your grace.",
+   "You, Maheśa, are ever my own self — made of You, all is mine through You."
+  ],
+  "sanskrit_cite": "tvanmayam etad aśeṣam idānīṃ bhāti mama tvadanugrahaśaktyā tvaṃ ca maheśa sadaiva mamātmā svātmamayaṃ mama tena samastam",
+  "l0_ids": [
+   "bh-p02-p000",
+   "bh-p02-p001",
+   "bh-p02-p002",
+   "bh-p02-p003",
+   "bh-p02-p004",
+   "bh-p02-p005",
+   "bh-p02-p006",
+   "bh-p02-p007",
+   "bh-p02-p008",
+   "bh-p02-p009",
+   "bh-p02-p010",
+   "bh-p02-p011",
+   "bh-p02-p012",
+   "bh-p02-p013"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "svātmamaya kept constitutive (‘made of You’), not identity — see NOTE boundary"
+  ]
+ },
+ "reads_against": {
+  "argmap": "How does the world appear as His, and how is identity declared? → Recognition is two-step, not one.",
+  "c1_essence": [
+   "Grace first discloses the world as His, without remainder, now — then identity is declared outright: Maheśa, always my self, and all mine through Him.",
+   "Appearance, then ownership: grace showing the world as His before identity claims it.",
+   "The non-dual recognition (pratyabhijñā) is here performed as a two-step: disclosure, then declaration."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

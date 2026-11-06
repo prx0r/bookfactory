@@ -1,0 +1,556 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Surrender — The Poems of Abhinavagupta, Volume I</title>
+<style>
+@font-face{font-family:'Tiro';src:url('fonts/TiroDevanagariSanskrit-Regular.ttf');}
+@font-face{font-family:'Cormorant';src:url('fonts/CormorantGaramond[wght].ttf');font-weight:400 700;}
+:root{--ink:#17140f;--grey:#76736e;--hair:#d9d5cc;}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#efece5;color:var(--ink);}
+body{font-family:'Cormorant',Georgia,serif;font-size:15pt;line-height:1.5;}
+.page{background:#fff;width:148mm;min-height:210mm;margin:0 auto 10mm;padding:20mm 18mm;
+  box-shadow:0 2px 14px rgba(0,0,0,.12);position:relative;page-break-after:always;}
+.spread{display:flex;gap:8mm;justify-content:center;flex-wrap:wrap;margin:0 auto 10mm;}
+.spread .page{margin:0;}
+.cover{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.cover .om{font-family:'Tiro';font-size:56pt;line-height:1;margin-bottom:14mm;}
+.cover h1{font-family:'Cormorant';font-weight:600;font-size:34pt;letter-spacing:.06em;margin:0;text-transform:uppercase;}
+.cover .sub{font-size:16pt;font-style:italic;color:var(--grey);margin-top:4mm;}
+.cover .rule{width:40mm;height:1px;background:var(--ink);margin:10mm auto;}
+.cover .blurb{font-size:11pt;text-transform:uppercase;letter-spacing:.14em;color:var(--grey);}
+.epi{display:flex;flex-direction:column;justify-content:center;text-align:center;}
+.epi .lines{font-size:15pt;line-height:1.8;font-style:italic;color:#241f19;}
+.epi .src{font-size:9.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);margin-top:10mm;}
+.toc h2,.sec-div h2,.bib h2{font-family:'Cormorant';font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13pt;color:var(--grey);line-height:1.3;}
+.toc ol{list-style:none;padding:0;margin:3mm 0 0;}
+.toc .sec{margin-top:2.5mm;font-size:9.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);line-height:1.2;}
+.toc li{margin:.2mm 0;font-size:11pt;line-height:1.25;}
+.toc .n{color:var(--grey);display:inline-block;width:8mm;}
+.sec-div{display:flex;flex-direction:column;justify-content:center;text-align:center;}
+.sec-div .num{font-family:'Cormorant';font-size:11pt;letter-spacing:.3em;color:var(--grey);}
+.sec-div h2{font-size:28pt;letter-spacing:.06em;margin:4mm 0 0;color:var(--ink);text-transform:none;font-weight:600;}
+.sec-div .sub{font-style:italic;color:var(--grey);font-size:13pt;margin-top:3mm;}
+.sec-div .note{font-size:11.5pt;color:#241f19;max-width:100mm;margin:6mm auto 0;line-height:1.5;}
+.sec-div .rule{width:30mm;height:1px;background:var(--ink);margin:8mm auto 0;}
+.src{font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
+.poem h3,.craft h3{font-family:'Cormorant';font-weight:600;font-size:17pt;margin:2mm 0 4mm;text-align:center;}
+.poem .dev{font-family:'Tiro';font-size:14.5pt;line-height:1.7;text-align:center;white-space:pre-line;}
+.poem .iast{font-style:italic;color:var(--grey);text-align:center;font-size:10.5pt;line-height:1.45;margin-top:2mm;}
+.poem .hero{margin:4mm auto 0;max-width:118mm;text-align:center;font-size:15pt;line-height:1.6;color:#241f19;}
+.poem .hero .ln{display:block;}
+.poem .plain{border-top:1px solid var(--hair);padding-top:3mm;}
+.poem .plain .lbl{font-size:8.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:1.5mm;}
+.poem .plain p{margin:0;font-size:11pt;line-height:1.45;color:var(--grey);}
+.craft .label{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);margin-bottom:3mm;}
+.craft h3{text-align:left;font-size:19pt;margin:0 0 4mm;}
+.craft .body{font-size:11.5pt;line-height:1.55;color:#241f19;}
+.craft .body p{margin:0 0 3mm;}
+.craft .blk{margin-bottom:3mm;}
+.craft .bl{font-size:8.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:1mm;}
+.craft .rasa{font-style:italic;color:var(--grey);font-size:10.5pt;margin-bottom:3mm;}
+.craft .foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:3mm;font-size:9pt;color:var(--grey);letter-spacing:.06em;}
+.craft .foot a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);}
+.craft .badge{display:inline-block;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--hair);padding:.6mm 2mm;margin-right:2mm;color:var(--grey);}
+.bib ul{list-style:none;padding:0;margin:6mm 0 0;}
+.bib li{margin:0 0 4mm;font-size:11pt;}
+.bib li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);}
+.pnum{position:absolute;bottom:10mm;left:0;right:0;text-align:center;font-size:9pt;color:var(--grey);letter-spacing:.1em;}
+@media print{html,body{background:#fff}.page{margin:0;box-shadow:none;width:auto;min-height:auto}.spread{display:block;margin:0}@page{size:A5;margin:0}}
+</style></head><body><section class="page cover">
+<div class="om">ॐ</div>
+<h1>The Surrender</h1>
+<div class="sub">The Poems of Abhinavagupta, Volume I</div>
+<div class="rule"></div>
+<div class="blurb">Bhairavastava · Pañcaślokī · Anuttarāṣṭikā</div>
+</section><section class="page epi"><div class="lines"><span class="ln">Enough of difference-talk — chewing the sap</span><span class="ln">of devotion to you: all this is one, at peace;</span><span class="ln">and even to say so feels shy.</span></div>
+<div class="src">Mahopadeśaviṃśatikā v.8 — house voice of the poems</div></section><section class="page toc"><h2>Contents</h2><ol><div class="sec">I &nbsp; Bhairavastava <span style="opacity:.6">The Bhairava Hymn — 10 verses</span></div><li><span class="n">1</span>Veneration</li><li><span class="n">2</span>Identity</li><li><span class="n">3</span>No fear-talk, suffering conceded</li><li><span class="n">4</span>The averted gaze, power-filled</li><li><span class="n">5</span>Darkness dispelled, fearlessness</li><li><span class="n">6</span>True awakening, bliss</li><li><span class="n">7</span>Affliction arrives, nondifference arises</li><li><span class="n">8</span>Rites relativized, scripture contemplated</li><li><span class="n">9</span>Rejoicing consciousness, obtaining</li><li><span class="n">10</span>Colophon and pacification</li><div class="sec">II &nbsp; Pañcaślokī <span style="opacity:.6">Five Verses of offering</span></div><li><span class="n">1</span>Offering</li><li><span class="n">2</span>Praise at the door</li><li><span class="n">3</span>Reproach</li><li><span class="n">4</span>The cloud lifts</li><li><span class="n">5</span>Forgetting, and the final plea</li><div class="sec">III &nbsp; Anuttarāṣṭikā <span style="opacity:.6">Eight Verses on the No-Method</span></div><li><span class="n">1</span>The frame: no method, just staying</li><li><span class="n">2</span>Saṃsāra is delusion</li><li><span class="n">3</span>Worship-difference is Māyā</li><li><span class="n">4</span>Bliss is the forgotten treasure</li><li><span class="n">5</span>Things are consciousness-form</li><li><span class="n">6</span>Things lack truth; awaken</li><li><span class="n">7</span>The universe-glory is will-born</li><li><span class="n">8</span>All shines in the consciousness-mirror; worship Lordhood</li></ol></section><section class="page sec-div"><div class="num">I</div>
+<h2>Bhairavastava</h2><div class="sub">The Bhairava Hymn — 10 verses</div>
+<div class="note">Abhinavagupta&#x27;s hymn of surrender: consciousness pervades, and the mind becomes it.</div><div class="rule"></div></section><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 1</div>
+<h3>Veneration</h3>
+<div class="dev" style="font-size:14.5pt">व्याप्तचराचरभावविशेषं चिन्मयम् एकम् अनन्तम् अनादिम् भैरवनाथम् अनाथशरण्यं त्वन्मयचित्ततया हृदि वन्दे</div>
+<div class="iast">vyāptacarācarabhāvaviśeṣaṃ cinmayam ekam anantam anādim bhairavanātham anāthaśaraṇyaṃ tvanmayacittatayā hṛdi vande</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">Pervading every state of moving and unmoving, consciousness itself is one — without end or beginning.</span><span class="ln">Bhairava, Lord, refuge of the helpless — with a mind become Yours, in my heart, I bow.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9pt">Bhairava — pervading the particular states of moving and unmoving things, consciousness-made, one, endless, beginningless — Bhairava-Lord, refuge of the helpless — by mind become Yours, in heart I venerate. The stotra opens with the Lord&#x27;s all-pervading nature and the devotee&#x27;s stance: total surrender of mind to Bhairava, who is the refuge of those without refuge. Veneration is not ritual but mental absorption — the mind becoming His.</p></div>
+<div class="pnum">1</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Veneration</h3>
+<div class="body" style="font-size:9.5pt;line-height:1.45">
+<p>Sthāyin: śānta as veneration of all-pervading consciousness; FIRST VERSE — sets the house voice (doctrine first, then the name; owner verdict required). Sanskrit-first: sthāvara-jaṅgama (moving AND unmoving — the pair IS the pervasion, kept paired); namāmi (I BOW — the verse&#x27;s only act, kept last). Abhinavagupta frame: veneration as mental absorption (manasā bhūtvā — mind-become-His), not offering; the name lived, not glossed (argmap INF). Rows: 9 (moving/unmoving catalogue — pair kept bare), 7 (Bhairava-vocative mid-verse — address AFTER establishment; order IS the recognition: what, then whom), 1 (‘I bow’ end-weighted). Close: ‘in my heart, I bow’. Rupture: em-dash after ‘is one’ (all-pervasion stated, then the person enters). Rejected: ‘I prostrate’ — killed: contemporary diction (license ledger); fronting the vocative — killed: name-after-pervasion is the recognition performed; ‘refuge of helpless ones’ plural — killed: anātha kept singular-abstract (‘the helpless’). Read aloud: per-VAD-ing EV-ery STATE of MOV-ing and un-MOV-ing, CON-scious-ness it-SELF is ONE … BHAI-ra-va, LORD … IN-my-HEART, i-BOW.</p>
+<div class="blk"><span class="bl">The logic</span><p>What is the object of veneration, and how does veneration relate to it? → The Absolute is named in full, then venerated by absorption into it; the name is lived, not glossed. Veneration is not offering but becoming.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p01.DRAFT.json">L4-bh-p01.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p01</a></div>
+<div class="pnum">1 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 2</div>
+<h3>Identity</h3>
+<div class="dev" style="font-size:14.5pt">त्वन्मयम् एतद् अशेषम् इदानीं भाति मम त्वदनुग्रहशक्त्या त्वं च महेश सदैव ममात्मा स्वात्ममयं मम तेन समस्तम्</div>
+<div class="iast">tvanmayam etad aśeṣam idānīṃ bhāti mama tvadanugrahaśaktyā tvaṃ ca maheśa sadaiva mamātmā svātmamayaṃ mama tena samastam</div>
+<div class="hero" style="font-size:15pt;line-height:1.6"><span class="ln">All this, become Yours without remainder, now appears to me by the power of Your grace.</span><span class="ln">You, Maheśa, are ever my own self — made of You, all is mine through You.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">All this, become of You, now appears to me by the power of Your grace. You, Maheśa, are always my self; by You all is mine. The Lord is not other than the self; grace first discloses the world as His, then identity is declared, and through Him, everything becomes mine.</p></div>
+<div class="pnum">2</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Identity</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as non-dual identity; two-step recognition (grace-showing → identity-declaring). Sanskrit-first: avaśeṣam (WITHOUT REMAINDER — kept; totality is the doctrine); tavaiva/tvayā (instrumental twice — means and end both Him). Rows: 3 (Yours/mine chiasmus — ‘become Yours…all is mine through You’: tvadīya/madīya interlock kept), 7 (Maheśa-vocative mid-L2 — identity declared TO him), 1 (‘through You’ closes — the hinge last). Close: ‘all is mine through You’. Rupture: ‘You, Maheśa, are ever my own self’ (showing turns to declaring — appearance, then ownership per C1). Rejected: ‘by Your grace’ smoothing — killed: grace-POWER (śakti) kept as power; ‘everything is mine’ — killed: dropping ‘through You’ drops non-duality&#x27;s ground; ‘now I see’ for ‘appears to me’ — killed: bhāti (appears/shines) kept impersonal. Read aloud: ALL-this, be-COME-yours with-OUT re-MAIN-der … YOU, ma-HE-śa, are EV-er MY-own-SELF — MADE-of-you, ALL is MINE through-YOU.</p>
+<div class="blk"><span class="bl">The logic</span><p>How does the world appear as His, and how is identity declared? → Recognition is two-step, not one.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p02.DRAFT.json">L4-bh-p02.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p02</a></div>
+<div class="pnum">2 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 3</div>
+<h3>No fear-talk, suffering conceded</h3>
+<div class="dev" style="font-size:14.5pt">स्वात्मनि विश्वगये त्वयि नाथे तेन न संसृतिभीतिकथास्ति सत्स्व् अपि दुर्धरदुःखविमोहत्रासविधायिषु कर्मगणेषु</div>
+<div class="iast">svātmani viśvagaye tvayi nāthe tena na saṃsṛtibhītikathāsti satsv api durdharaduḥkhavimohatrāsavidhāyiṣu karmagaṇeṣu</div>
+<div class="hero" style="font-size:15pt;line-height:1.6"><span class="ln">You, Lord, pervade my own self — so there is no talk of transmigration-fear.</span><span class="ln">Even while hard-to-bear suffering, delusion, and terror-causing karma-hosts stand.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">With You as Lord, all-pervading in own self — therefore no talk of transmigration-fear. Even though hard-to-bear suffering, delusion, terror-causing karma-hosts are present. The devotee denies fear-talk while conceding affliction: no fear is discussed, yet suffering is not denied.</p></div>
+<div class="pnum">3</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>No fear-talk, suffering conceded</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as no-fear-talk, suffering conceded (denial and concession in one breath). Sanskrit-first: vārtā (TALK/report — the verse denies the DISCOURSE of fear, not just the feeling); sati (STAND — suffering stands; fear does not). Rows: 9 (denial + concession held unreconciled — ‘no talk…Even while…’ never resolves, resolved WITHIN per C1), 1 (‘stand’ closes — sthā: what stands is named last), 7 (Lord-vocative L1 — pervasion stated TO him). Close: ‘karma-hosts stand’. Rupture: ‘Even while’ (denial turns to concession — the breath holds both). Rejected: ‘yet suffering remains’ — killed: duḥsaha (hard-to-BEAR) kept hard (Bar 6: never smooth); ‘no fear of rebirth’ — killed: saṃsāra-bhaya-vārtā is fear-talk; ‘hosts of karma’ reordering — killed: terror-causing kept fronted (bhayaṅkara modifies first). Read aloud: YOU, lord, per-VADE my OWN-self — SO there IS no TALK … EV-en WHILE hard-to-BEAR SUFF-er-ing … STAND.</p>
+<div class="blk"><span class="bl">The logic</span><p>How can fear be denied while suffering is conceded? → Fear-talk denied while suffering conceded: denial and concession in one breath, resolved within the verse.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with karuṇa (compassion)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p03.DRAFT.json">L4-bh-p03.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p03</a></div>
+<div class="pnum">3 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 4</div>
+<h3>The averted gaze, power-filled</h3>
+<div class="dev" style="font-size:14.5pt">अन्तक मां प्रति मा दृशम् एनां क्रोधकरालतमां विनिधेहि शङ्करसेवनचिन्तनधीरो भीषणभैरवशक्तिमयो ऽस्मि</div>
+<div class="iast">antaka māṃ prati mā dṛśam enāṃ krodhakarālatamāṃ vinidhehi śaṅkarasevanacintanadhīro bhīṣaṇabhairavaśaktimayo &#x27;smi</div>
+<div class="hero" style="font-size:15pt;line-height:1.6"><span class="ln">O Ender — turn from me this most wrathful and terrible gaze.</span><span class="ln">Steadfast in Śaṅkara’s service and contemplation, I am filled with dread Bhairava-power.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">O Ender, turn not toward me this most wrathful-terrible gaze. By Śaṅkara-service, contemplation-firm, I am terrifying-Bhairava-power-filled. Service and firm contemplation → Bhairava-power-filled → the gaze of death turned aside. The devotee becomes terrifying-Bhairava-power-filled through service and contemplation.</p></div>
+<div class="pnum">4</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>The averted gaze, power-filled</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: vīra as power-filled state (FIRST vīra in the work — color shift from śānta supplication to heroic testimony). Sanskrit-first: antaka (ENDer — death named to its face, kept); asmi (I AM — the ground is a state, not a plea); ghora-bhairava-tejas (dread-power, kept dread). Rows: 7 (‘O Ender’ opens — address before petition; death faced first), 1 (‘dread Bhairava-power’ closes — the state named last), 5 (prayer tread: plea L1, ground L2). Close: ‘filled with dread Bhairava-power’. Rupture: L2 (prayer turns to testimony — begging turns to possessing; argmap: power declared, not begged). Rejected: ‘awesome’ — killed: ghora is dread, awe admires; ‘fierce gaze’ — killed: raudra + bhīṣaṇa both present, both kept; ‘avert’ for ‘turn from me’ — killed: parāṅmukha kept bodily (turned-face). Read aloud: O-END-er — TURN-from-me THIS most-WRATH-ful AND-terr-i-BLE-gaze … STEAD-fast in ŚAṄ-ka-ra&#x27;s SER-vice … i-AM-filled WITH-dread BHAI-ra-va-POW-er.</p>
+<div class="blk"><span class="bl">The logic</span><p>How does the devotee turn aside death&#x27;s gaze? → Prayer first, then the ground: power declared as state, not begged. The devotee testifies to possessing power, grounded in service and contemplation.</p></div>
+<div class="rasa">rasa — vīra (heroism) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p04.DRAFT.json">L4-bh-p04.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p04</a></div>
+<div class="pnum">4 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 5</div>
+<h3>Darkness dispelled, fearlessness</h3>
+<div class="dev" style="font-size:14.5pt">इत्थम् उपोढभवन्मयसंविद्दीधितिदारितभूरितमिस्रः मृत्युयमान्तककर्मपिशाचैः नाथ ! नमोऽस्तु न जातु बिभेमि</div>
+<div class="iast">ittham upoḍhabhavanmayasaṃviddīdhitidāritabhūritamisraḥ mṛtyuyamāntakakarmapiśācaiḥ nātha ! namo&#x27;stu na jātu bibhemi</div>
+<div class="hero" style="font-size:15pt;line-height:1.6"><span class="ln">Thus — the great darkness, taken on with becoming, is dispelled by awareness’s rays:</span><span class="ln">Death, Yama, the Ender, karma-ghosts — Lord, salutation: never shall I fear.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:10.5pt">Thus — my great darkness dispelled by rays of world-awareness: death, Yama, ender, karma-ghosts — Lord, salutation; never I fear. Awareness itself has burned the darkness away; what remains before death&#x27;s ministers is salutation, not fear.</p></div>
+<div class="pnum">5</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Darkness dispelled, fearlessness</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as fearlessness (abhayam); accomplished-fact → catalogue → seal. Sanskrit-first: vidhūta (DISPELLED — perfect participle: already done before the terrors are named); namas (SALUTATION — the only act offered to terrors); na bhayaṃ (NEVER fear — absolute, future). Rows: 9 (Death/Yama/Ender/karma-ghosts — four terrors named, each answered by ONE salutation), 1 (‘never shall I fear’ closes — the seal absolute), 6 (salutation as seal-word — namas anchors). Close: ‘never shall I fear’. Rupture: colon after ‘rays’ (fact stated, then terrors faced — awareness first, salutation finishes per C1). Rejected: ‘darkness’ singular softening — killed: mahāmoha + bhava-grasp both kept; ‘I salute, fearing nothing’ — killed: splits the seal pair (namas + never-fear belong together); ‘gloom’ — killed: moha is delusion-darkness, gloom moods. Read aloud: THUS — the GREAT-dark-ness … IS-dis-PELLED by a-WARE-ness&#x27;s-RAYS … DEATH, YA-ma, the END-er, KAR-ma-ghosts — LORD, sal-u-TA-tion: NEV-er SHALL-i-FEAR.</p>
+<div class="blk"><span class="bl">The logic</span><p>How does fearlessness follow from awareness? → Awareness first, salutation finishes: absolute fearlessness. The dark that made terrors terrifying is already gone.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p05.DRAFT.json">L4-bh-p05.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p05</a></div>
+<div class="pnum">5 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 6</div>
+<h3>True awakening, bliss</h3>
+<div class="dev" style="font-size:14.5pt">प्रोदितसत्यविबोधमरीचिप्रेक्षितविश्वपदार्थसतत्त्वः भावपरामृतनिर्भरपूर्णे त्वयि अहम् आत्मनि निर्वृतिम् एमि</div>
+<div class="iast">proditasatyavibodhamarīciprekṣitaviśvapadārthasatattvaḥ bhāvaparāmṛtanirbharapūrṇe tvayi aham ātmani nirvṛtim emi</div>
+<div class="hero" style="font-size:15pt;line-height:1.6"><span class="ln">True awakening has dawned — its rays reveal each thing’s true essence:</span><span class="ln">In You — brimming full of supreme nectar — I myself enter bliss.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:10.5pt">The true essence of world-objects is seen by rays of arisen true awakening. In being-full, in you, I, self, bliss I enter. Bliss = entering the full being of the Lord, disclosed by awakening.</p></div>
+<div class="pnum">6</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>True awakening, bliss</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: ānanda as entry (praveśa — ingress, NOT feeling); vyabhicāri wonder at things disclosed as-they-are. Sanskrit-first: prabuddha (DAWNED-awakened — perfect: already risen); amṛta-pūrṇa (NECtar-FULL — pūrṇa modifies the LORD, kept attached); praviśāmi (I ENTER — first person enters, not feels). Rows: 1 (‘enter bliss’ closes — entry, the verse&#x27;s whole doctrine, last), 8 (vowel arc bright throughout: dawn-rays-reveal → brimming-full — ānanda does not fall, it fills; no dark close), 7 declined — no vocative; locative ‘In You’ carries address. Close: ‘I myself enter bliss’. Rupture: colon after ‘essence’ (disclosure turns to entry — seeing turns to entering). Rejected: ‘I feel bliss’ — killed: ingress ≠ feeling (C1 explicit); ‘full of nectar’ reordering — killed: pūrṇa belongs to the Lord; ‘true nature’ for ‘true essence’ — killed: tattva kept essence. Read aloud: TRUE a-WAK-en-ing HAS-dawned — its RAYS re-VEAL … IN-you — BRIMM-ing-FULL of su-PREME-nec-tar — i-my-SELF EN-ter BLISS.</p>
+<div class="blk"><span class="bl">The logic</span><p>What does true awakening disclose, and what is bliss? → Awakening discloses things as they are; bliss is entry into the Lord&#x27;s fullness — ingress, not feeling.</p></div>
+<div class="rasa">rasa — ānanda (bliss) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p06.DRAFT.json">L4-bh-p06.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p06</a></div>
+<div class="pnum">6 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 7</div>
+<h3>Affliction arrives, nondifference arises</h3>
+<div class="dev" style="font-size:14.5pt">मानसगोचरम् एति यदैव क्लेशदशा तनुतापविधात्री नाथ ! तदैव मम त्वदभेदस् स्तोत्रपरामृतवृष्टिः उदेति</div>
+<div class="iast">mānasagocaram eti yadaiva kleśadaśā tanutāpavidhātrī nātha ! tadaiva mama tvadabhedas stotraparāmṛtavṛṣṭiḥ udeti</div>
+<div class="hero" style="font-size:15pt;line-height:1.6"><span class="ln">Whenever affliction, dealing slight anguish, comes within the mind’s reach —</span><span class="ln">then alone, Lord, my nondifference from You: the hymn rains supreme nectar.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">When the affliction-state, producing slight anguish, comes into the mind&#x27;s range — Lord, then alone my with-You-nondifference; hymn-supreme-nectar-rain arises. Affliction&#x27;s arrival is the occasion, not the obstacle: with it comes nondifference, and the hymn rains.</p></div>
+<div class="pnum">7</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Affliction arrives, nondifference arises</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as nondifference arising (abheda WITH affliction, not after). Sanskrit-first: yadā…tadā (WHEN…THEN — hinge kept; with-it, not after-it per C1); kevalam (ALONE — then-ALONE: nondifference exclusive); varṣati (RAINS — the hymn rains, kept raining). Rows: 1 (‘rains supreme nectar’ closes — verb last, nectar the landing), 9 (when/then hinge — occasion, not obstacle), 10 (nectar left standing, no gloss). Close: ‘the hymn rains supreme nectar’. Rupture: ‘then alone’ (affliction turns to nondifference — suffering is the trigger per C1, inverted expectation kept). Rejected: ‘whenever troubles come’ — killed: ārti (affliction) + mind&#x27;s-reach both precise; ‘showers’ — killed: colloquial, varṣa rains; ‘my oneness with You’ — killed: abheda is nondifference (kept technical). Read aloud: when-EV-er af-FLIC-tion … COMES with-IN the MIND&#x27;s-reach — THEN a-LONE, lord, MY-non-DIFF-er-ence FROM-you: the HYMN-rains su-PREME-nec-TAR.</p>
+<div class="blk"><span class="bl">The logic</span><p>What is the relation between affliction and nondifference? → Affliction is the occasion, not the obstacle: nondifference + nectar arise with it, not after it.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p07.DRAFT.json">L4-bh-p07.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p07</a></div>
+<div class="pnum">7 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 8</div>
+<h3>Rites relativized, scripture contemplated</h3>
+<div class="dev" style="font-size:14.5pt">शङ्कर सत्यम् इदम् व्रतदानस्नानतपः भवतापविदारि तावकशास्त्र परामृतचिन्ता चेतसि निर्वृतिधाराम् स्यन्दति</div>
+<div class="iast">śaṅkara satyam idam vratadānasnānatapaḥ bhavatāpavidāri tāvakaśāstra parāmṛtacintā cetasi nirvṛtidhārām syandati</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">Truly, Śaṅkara — vow, giving, bathing, austerity: they dispel becoming’s heat.</span><span class="ln">But contemplating Your scripture as supreme nectar pours a bliss-stream in the mind.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:10.5pt">O Śaṅkara, truly — vow, giving, bathing, austerity dispel becoming&#x27;s heat. Rites are not despised but relativized. Your-scripture supreme-nectar-contemplation in mind, bliss-stream flows. Scripture-contemplation → bliss-stream in mind.</p></div>
+<div class="pnum">8</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Rites relativized, scripture contemplated</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as rites relativized (not despised — relativized); two-means-two-results. Sanskrit-first: śamaka (DISPELLERS — rites&#x27; true result kept: heat dispelled, honored); cintā (CONTEMPLATING — the superior means is mental, kept); dhārā (STREAM-course — kept stream, not flood). Rows: 1 (‘bliss-stream in the mind’ closes — contemplation&#x27;s result lands last, outshining by position), 9 (vow/giving/bathing/austerity — each rite named once, none adorned), 5 (didactic tread: concession L1, elevation L2). Close: ‘pours a bliss-stream in the mind’. Rupture: ‘But’ (rites turn to scripture — relativization hinged on one word). Rejected: ‘empty rites’ — killed: rites truly dispel heat; ‘flood’ — killed: dhārā courses; ‘holy writ’ for scripture — killed: śāstra kept plain (contemporary diction). Read aloud: TRU-ly, ŚAṄ-ka-ra — VOW, GIV-ing, BATH-ing, aus-TER-i-ty: they dis-PEL be-COM-ing&#x27;s-HEAT … BUT con-TEM-plat-ing YOUR-scrip-ture … POURS a BLISS-stream IN the MIND.</p>
+<div class="blk"><span class="bl">The logic</span><p>What do rites and scripture each accomplish? → Two means, two results: rites dispel heat, contemplation streams bliss.</p></div>
+<div class="rasa">rasa — śānta (tranquility)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p08.DRAFT.json">L4-bh-p08.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p08</a></div>
+<div class="pnum">8 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 9</div>
+<h3>Rejoicing consciousness, obtaining</h3>
+<div class="dev" style="font-size:14.5pt">नृत्यति गायति हृष्यति गाढम् संवित् इयम् मम भैरवनाथ त्वां प्रियम् आप्य सुदर्शनमेकम् दुर्लभमन्यजनैः समयज्ञम्</div>
+<div class="iast">nṛtyati gāyati hṛṣyati gāḍham saṃvit iyam mama bhairavanātha tvāṃ priyam āpya sudarśanamekam durlabhamanyajanaiḥ samayajñam</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">This consciousness of mine dances, sings, rejoices deeply — O Bhairava, Lord:</span><span class="ln">having won You, my dear — a single beautiful vision, hard for others to obtain, kept for knowers of the covenant.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:10.5pt">This consciousness of mine dances, sings, deeply rejoices — O Bhairava-Lord. You, dear, having-obtained, beautiful-vision alone, hard-to-get-by-others, samaya-knower. Obtaining the Lord = beautiful vision (rare, samaya-knowing), celebrated dancing.</p></div>
+<div class="pnum">9</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Rejoicing consciousness, obtaining</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: ānanda as rejoicing consciousness (hṛṣṭi); vyabhicāri wonder at rarity fenced. Sanskrit-first: nṛtyati/gāyati (DANCES/SINGS — kept tripled with rejoices: joy in three verbs); samaya-vid (COVENANT-KNOWERS — fenced term kept fenced AND translated: fence is doctrine); durlabha (HARD-to-obtain — kept). Rows: 9 (dances/sings/rejoices triple — tripled joy), 7 (‘O Bhairava, Lord’ mid-verse — address INSIDE the dance, joy first), 1 (‘covenant’ closes — rarity fenced last). Close: ‘kept for knowers of the covenant’. Rupture: colon after ‘Lord’ (dancing turns to defining — joy, then what joy means: obtaining = vision per C1). Rejected: ‘my beloved’ — killed: priya kept plain; explaining samaya — killed: un-fencing would un-fence the doctrine; ‘rare’ alone — killed: ‘hard for others to obtain’ keeps the exclusivity structure. Read aloud: THIS-con-SCIOUS-ness OF-mine DAN-ces, SINGS, re-JOI-ces DEEP-ly — o-BHAI-ra-va, LORD: HAV-ing-WON-you, my-DEAR — a-SING-le BEAU-ti-ful VI-sion … KEPT for KNOW-ers OF the COV-e-nant.</p>
+<div class="blk"><span class="bl">The logic</span><p>What is obtaining, and who obtains? → Joy, then its cause: obtaining is vision, rare by structure and fenced to the initiated.</p></div>
+<div class="rasa">rasa — ānanda (bliss) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p09.DRAFT.json">L4-bh-p09.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p09</a></div>
+<div class="pnum">9 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Bhairavastava · verse 10</div>
+<h3>Colophon and pacification</h3>
+<div class="dev" style="font-size:14.5pt">वसुरसपौषे कृष्णदशम्याम् अभिनवगुप्तः स्तवम् इमम् अकरोत् येन विभुः भवति जनस्य अरुसन्तापं शमयति झटिति दयालुः</div>
+<div class="iast">vasurasapauṣe kṛṣṇadaśamyām abhinavaguptaḥ stavam imam akarot yena vibhuḥ bhavati janasya arusantāpaṃ śamayati jhaṭiti dayāluḥ</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">In the Vasura year, in Pauṣa, on the dark tenth — Abhinavagupta composed this hymn —</span><span class="ln">by which the pervasive, compassionate Lord in a flash stills the people’s desert-heat of becoming.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:10.5pt">In the month of Pauṣa, on the dark tenth, Abhinavagupta made this hymn. By whom the Lord becomes, world&#x27;s great-heat pacifies instantly, compassionate. The dated, signed hymn is sent outward: the Lord pacifies world-heat instantly, compassionately.</p></div>
+<div class="pnum">10</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Colophon and pacification</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as pacification (praśama — the work&#x27;s seal turned outward); vyabhicāri compassion (karuṇā) for the people&#x27;s heat. Sanskrit-first: pauṣa/kṛṣṇadaśamī (dark-tenth kept — colophon dates kept honestly, L3-HANDCRAFT rule 5); śamayati (STILLS — same root as śānta: the last verb echoes the rasa); abhinavagupta-signed (signature kept — the hand named). Rows: 12 (śānta-fall for the WHOLE work: desert-heat → stills; the book ends cooling), 10 (Vasura/Pauṣa/dark-tenth left standing — date as image), 1 (‘becoming’ closes — bhava named at the very end: what the hymn pacifies, last). Close: ‘desert-heat of becoming’. Rupture: second dash (signature turns outward — heart to world per C1). Rejected: modernizing the date — killed: colophon honesty; ‘quenches’ — killed: śamayati stills/pacifies (rasa-echo kept); ‘the suffering world’ — killed: jana (people) kept plain. Read aloud: IN the va-SU-ra YEAR, in PAU-ṣa, ON the DARK-tenth — ab-hi-na-va-GUP-ta com-POSED this HYMN — BY-which … IN-a-FLASH STILLS the PEO-ple&#x27;s DES-ert-HEAT of be-COM-ing.</p>
+<div class="blk"><span class="bl">The logic</span><p>What does the dated, signed hymn accomplish? → Dated and signed: the hymn turns outward, private recognition cools the world.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with karuṇa (compassion)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/bhairavastava/L4-bh-p10.DRAFT.json">L4-bh-p10.DRAFT.json</a>
+ · L2: <a href="sources/bhairavastava-L2.md">bh-p10</a></div>
+<div class="pnum">10 · craft</div></section>
+</div><section class="page sec-div"><div class="num">II</div>
+<h2>Pañcaślokī</h2><div class="sub">Five Verses of offering</div>
+<div class="note">Abhinavagupta&#x27;s five-verse surrender: pride offered, speech offered, doubt lifted.</div><div class="rule"></div></section><div class="spread">
+<section class="page poem">
+<div class="src">Pañcaślokī · verse 1</div>
+<h3>Offering</h3>
+<div class="dev" style="font-size:14.5pt">यत्सत्यं तु मया कृतं मम विभो कृत्यं तु नातः परं यन्मन्मानमैशपादकमले भक्त्या मयैवार्पितम् । सर्वस्वमत एवमेतदितरन्नास्येव जानाम्यतस्त्यक्त्वा क्षिप्रमनाथनाथ करुणासिन्धो प्रसन्नो भव</div>
+<div class="iast">yatsatyaṃ tu mayā kṛtaṃ mama vibho kṛtyaṃ tu nātaḥ paraṃ yanmanmānamaiśapādakamale bhaktyā mayaivārpitam | sarvasvamata evametaditarannāsyeva jānāmyatastyaktvā kṣipramanāthanātha karuṇāsindho prasanno bhava</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">Whatever I have truly done, O Lord: one duty, nothing beyond —</span><span class="ln">my pride, offered at Your lotus feet, in devotion.</span><span class="ln">This is my all, nothing else I know; all else cast aside —</span><span class="ln">quickly, O protector of the helpless, ocean of compassion, be pleased.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Whatever I have truly done, O Lord — no duty of mine goes beyond this: my pride has been offered by me with devotion on the Lord&#x27;s lotus feet. This is my all; I know there is nothing other than this. Therefore, having cast all else aside — quickly, O protector of the helpless, O ocean of compassion — be pleased!</p></div>
+<div class="pnum">11</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Offering</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: total offering (sarvasva; FIRST VERSE — sets the house voice: intimate-address, plain diction, dash-hold, end-weight plea; owner verdict required). Abhinavagupta frame: sādhāraṇīkaraṇa generalized (‘my pride’ thins to ‘pride offered’ only where Sanskrit generalizes — manmāna kept ‘my pride’ where Sanskrit points); dhvani rank kept — the plea names nothing beyond the act, vyaṅgya (grace hoped, not stated) unstated. Rows firing: 1 (imperative bhava held line-final), 5 (śloka tread, bank: hymn tread for śloka-source), 7 (vocatives vibho/anāthanātha/karuṇāsindho each kept fresh), 9 (nātaḥ paraṃ/itaranāsti double-negation engine → ‘nothing beyond / nothing else’). Close: ‘be pleased’ (prasanno bhava; pleasure-reading per L3 note, grace open). Rejected: ‘laid down’ for offered — killed: slant on arpitam; merging vocative clusters — killed: row 7; ‘be gracious’ — killed: L3 note freezes pleasure. Read aloud: WHAT-ever I have TRU-ly DONE, o LORD: ONE-du-ty, NO-thing be-YOND — MY-pride OFF-ered … be PLEASED.</p>
+<div class="blk"><span class="bl">The logic</span><p>The whole duty is one act: pride offered on the Lord&#x27;s feet; all else denied, and only immediate pleasure asked. → Total offering of pride; plea for immediate pleasure.</p></div>
+<div class="rasa">rasa — śṛṅgāra/bhakti (devotion as love-in-separation from the Lord)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/pancashloki/L4-pan-p01.DRAFT.json">L4-pan-p01.DRAFT.json</a>
+ · L2: <a href="sources/pancashloki-L2.md">pan-p01</a></div>
+<div class="pnum">11 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Pañcaślokī · verse 2</div>
+<h3>Praise at the door</h3>
+<div class="dev" style="font-size:14.5pt">महेश त्वद्द्वारि स्फुरतु रुचिरा वागतितरां ममैषा निर्दोषं जय जय महेशेति सततम् । शिवा सैषा वाणी भवतु शिवदा मह्यमनिशं महेशनाथं मां शरणद सनाथं कुरु विभो</div>
+<div class="iast">maheśa tvaddvāri sphuratu rucirā vāgatitarāṃ mamaiṣā nirdoṣaṃ jaya jaya maheśeti satatam | śivā saiṣā vāṇī bhavatu śivadā mahyamaniśaṃ maheśanāthaṃ māṃ śaraṇada sanāthaṃ kuru vibho</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">O Maheśa — at Your door let my charming speech flash forth, faultless.</span><span class="ln">“Victory, victory to Maheśa” — unceasing.</span><span class="ln">Let this auspicious speech bring me bliss forever; O giver of refuge, make me — whose protector is Maheśa — protected, O Lord.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">O Maheśa, at Your door let this charming speech of mine flash forth exceedingly — &quot;Victory, victory to Maheśa!&quot; — faultless and unceasing. Let this very speech, auspicious, be bliss-giving for me forever. O Lord, O giver of refuge, make me — whose protector is Maheśa — possessed of a protector!</p></div>
+<div class="pnum">12</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Praise at the door</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: victory cry (jaya doubled). Abhinavagupta frame: anubhāva outward — the cry IS the visible sign of rati-sthāyin; refrain staging (bank: Gitagovinda dhruvapada — the cry isolated as its own line, verbatim, never reworded). Rows: 1 (imperatives sphuratu/bhavatu/kuru each end-weight their clause), 3 (protector-chiasmus maheśanāthaṃ→sanāthaṃ kept as vise-grip), 6 (jaya jaya anchor), 7 (vocatives line-initial/final), 9 (Maheśa chiming thrice), 4 (sphuratu rucirā shimmer → ‘flash forth, faultless’ f-echo, costs nothing). Close: ‘protected, O Lord’ (sanāthaṃ kuru + vibho gathered). Rejected: single Victory — killed: doubling IS the cry; ‘glory to Maheśa’ — killed: jaya=victory, anchor verbatim; ‘make me safe’ — killed: breaks the chiasmus. śivadā bliss-reading per L3 note, Śiva-giving open. Read aloud: o ma-HE-śa — AT your DOOR … ‘VIC-to-ry, VIC-to-ry to ma-HE-śa’ — un-CEAS-ing.</p>
+<div class="blk"><span class="bl">The logic</span><p>Speech becomes the offering: the word crying victory at the threshold is itself to become bliss-giving; having Maheśa as protector is to become being protected. → Speech becomes bliss-giving; request to be made protected.</p></div>
+<div class="rasa">rasa — bhakti (devotional praise)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/pancashloki/L4-pan-p02.DRAFT.json">L4-pan-p02.DRAFT.json</a>
+ · L2: <a href="sources/pancashloki-L2.md">pan-p02</a></div>
+<div class="pnum">12 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Pañcaślokī · verse 3</div>
+<h3>Reproach</h3>
+<div class="dev" style="font-size:14.5pt">ब्रूषे नोत्तमाङ्ग पश्यसि न मामेतादृशं दुःखितं विज्ञप्तिं बहुधा कृतां न शृणुषे नायासि मन्मानसे । संसारार्णवगर्तमध्यपतितं प्रायेण नालम्बसे वाक्चक्षुःश्रवणाङ्घ्रिणादिरहितं त्वामाह सत्यं श्रुतिः</div>
+<div class="iast">brūṣe nottamāṅga paśyasi na māmetādṛśaṃ duḥkhitaṃ vijñaptiṃ bahudhā kṛtāṃ na śṛṇuṣe nāyāsi manmānase | saṃsārārṇavagartamadhyapatitaṃ prāyeṇa nālambase vākcakṣuḥśravaṇāṅghriṇādirahitaṃ tvāmāha satyaṃ śrutiḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">You speak not, O Fair-limbed. You look not on wretched me.</span><span class="ln">You hear not my oft-made plea, nor come into my mind.</span><span class="ln">Fallen into the pit mid-ocean of becoming, mostly unsupported —</span><span class="ln">yet scripture truly declares You without speech, without sight, without hearing, without feet, and the rest.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">You speak not, O best-limbed one; You look not upon me, wretched as I am. My entreaty, made in many ways, You hear not; You come not into my mind. Fallen amid the pit of the ocean of transmigration, I am mostly left unsupported — yet scripture truly declares You devoid of speech, sight, hearing, feet and the like!</p></div>
+<div class="pnum">13</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Reproach</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: the charge (five refusals). Abhinavagupta frame: karuṇa-sthāyin carried by anubhāva-catalogue (the refusals listed ARE the feeling showing); śruti-turn rendered straight — sincere-vs-ironic held open per UNC (tipping either way kills a reading; vighna rule: importing irony the Sanskrit only suggests would wall the sahṛdaya from one whole rasa). Rows: 1 (āha placed late — ‘declares’ carries the turn), 7 (uttamāṅga kept after first verb, mirroring brūṣe nottamāṅga), 9 (na-anaphora → ‘not’-anaphora; doctrine-catalogue answers with ‘without’-anaphora — complaint-music converted into doctrine-music, which IS the verse’s move), 10 (śruti left standing, no gloss). Close: ‘and the rest’ — the ādi-catalogue refusing to close IS the doctrine. Rejected: ironic tip — killed by UNC; trimming refusals — killed: five ARE the charge; closing on ‘You’ — killed: weak landing, Sanskrit lands on śrutiḥ/āha. Read aloud: YOU-speak-NOT … YOU-look-NOT … YOU-hear-NOT — yet SCRIP-ture TRU-ly de-CLARES.</p>
+<div class="blk"><span class="bl">The logic</span><p>Five refusals charged — speak, see, hear, come, support — and scripture converts the charge into doctrine: the Lord is sense-free. → Complaint becomes doctrine: denial becomes declaration.</p></div>
+<div class="rasa">rasa — karuṇa (compassion-plea) shaded by adbhuta (wonder at doctrine)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/pancashloki/L4-pan-p03.DRAFT.json">L4-pan-p03.DRAFT.json</a>
+ · L2: <a href="sources/pancashloki-L2.md">pan-p03</a></div>
+<div class="pnum">13 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Pañcaślokī · verse 4</div>
+<h3>The cloud lifts</h3>
+<div class="dev" style="font-size:14.5pt">गुरोर्वाक्याद्युक्ति-प्रचय-रचन-उन्मार्जन-वशात्समाश्वासाच्छास्त्रं प्रति समुचितादपि कथितम् । विलीने शङ्काभ्रे हृदयगगनोद्भासिमहसः प्रभोः सूर्यस्येव स्पृशतु चरणान् ध्वान्तजयिनः</div>
+<div class="iast">gurorvākyādyukti-pracaya-racana-unmārjana-vaśātsamāśvāsācchāstraṃ prati samucitādapi kathitam | vilīne śaṅkābhre hṛdayagaganodbhāsimahasaḥ prabhoḥ sūryasyeva spṛśatu caraṇān dhvāntajayinaḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">By the guru’s word — whose force wipes clean the heaped fabric of reasonings —</span><span class="ln">and by assurance, fittingly told, regarding scripture:</span><span class="ln">when the doubt-cloud melts, let me touch the feet of the Lord,</span><span class="ln">whose splendor blazes in the heart’s sky like the sun that conquers darkness.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">From the guru&#x27;s word — by the force that wipes away the fabric of heaped-up reasonings — and from the assurance told, fittingly, out of regard for scripture: when the cloud of doubt has dissolved, let me touch the feet of the Lord, whose splendor shines in the sky of the heart — like the sun, the conqueror of darkness.</p></div>
+<div class="pnum">14</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>The cloud lifts</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: doubt dissolving (vilīne). Abhinavagupta frame: vyabhicāri-dissolution (śaṅkā melting) staged as the rupture — piled reasonings one breath, melted cloud the next; śānta-close enacted (row 12: falling cadence on ‘darkness’, long vowels, still image — the metaphysics of the ending, not decoration). Rows: 1 (spṛśatu late — ‘let me touch’ before the simile), 2 (yukti-pracaya-racana-unmārjana compound unpacked down the line-break; bank: Ingalls moon-drops unpacking), 8 (vowel arc melts→blazes), 12 (śānta-fall). Close: ‘the sun that conquers darkness’ — darkness last, conquered. Rejected: merging two sources — killed: UNC keeps guru-word and scripture two; cutting sun-simile — killed: vibhāva does the settling; ‘lifts’ for vilīne — killed: melts, not lifts. Read aloud: BY the GU-ru’s WORD … WHEN the DOUBT-cloud MELTS … LIKE the SUN that CON-quers DARK-ness.</p>
+<div class="blk"><span class="bl">The logic</span><p>Against the silence stand two testimonies — the guru&#x27;s word and fitting scriptural assurance — whose force wipes away piled-up reasonings; with doubt dissolved, the feet of the heart-sky Lord. → Two testimonies dissolve doubt; touch of feet follows.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/pancashloki/L4-pan-p04.DRAFT.json">L4-pan-p04.DRAFT.json</a>
+ · L2: <a href="sources/pancashloki-L2.md">pan-p04</a></div>
+<div class="pnum">14 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Pañcaślokī · verse 5</div>
+<h3>Forgetting, and the final plea</h3>
+<div class="dev" style="font-size:14.5pt">यातस्त्वत्सहवासतो बहुतरः कालो वतास्मिन् क्षणे किं किं वा न कृतं त्वया वरगुरूपासानिमित्तेन मे । वारं वारमहं पुनर्निरुपमां दिव्यं भुवं प्रासुवत्कायस्त्वां किल विस्मरामि यदतः स्थेयं न भूयस्त्वया</div>
+<div class="iast">yātastvatsahavāsato bahutaraḥ kālo vatāsmin kṣaṇe kiṃ kiṃ vā na kṛtaṃ tvayā varagurūpāsānimittena me | vāraṃ vāramahaṃ punarnirupamāṃ divyaṃ bhuvaṃ prāsuvatkāyastvāṃ kila vismarāmi yadataḥ stheyaṃ na bhūyastvayā</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">Much time with You has passed — alas, in this very moment!</span><span class="ln">What — what has not been done by You for me — for serving the excellent guru!</span><span class="ln">Again and again I — whose body has reached the peerless divine plane —</span><span class="ln">yet I forget You — so by You let there be no more staying away.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Much time dwelling with You has passed — alas, in this very moment! What, what has not been done by You for me, for the sake of serving the excellent guru! Again and again I, whose body has attained the incomparable divine plane — yet indeed I forget You. Therefore, by You let there be no further staying-away!</p></div>
+<div class="pnum">15</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Forgetting, and the final plea</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: confession (forgetting admitted). Abhinavagupta frame: karuṇa-sthāyin with śānta acceptance — the plea asks only absence-ended, not presence-described (deixis thinned exactly where Sanskrit thins: stheyaṃ na bhūyas = no-more-staying-away, no positive image imported). Rows: 1 (optative stheyam kept as plea — ‘let there be’ retained; close lands on ‘away’, absence itself ringing), 7 (tvayā instrumental force → ‘So by You:’ colon landing), 9 (kiṃ kiṃ + vāraṃ vāraṃ both kept doubled). Close: ‘no more staying away’ (absence-reading per L3 note; ‘presence’ close would flip the frozen reading). Rejected: undoubled ‘What has not been done’ — killed: kiṃ kiṃ doubles; softening ‘alas’ — killed: vata IS the admission-gasp; resolving prāsuvatkāyaḥ past L2 — killed: obscure kept neutral. Read aloud: MUCH-time WITH-you has PASSED — a-LAS … WHAT — WHAT has NOT been DONE … YET i for-GET you — NO-more STAY-ing a-WAY.</p>
+<div class="blk"><span class="bl">The logic</span><p>Long dwelling-with and total grace received, yet repeated forgetting; the only request is no more absence. → Confession and plea for presence.</p></div>
+<div class="rasa">rasa — karuṇa (compassion-plea) with śānta (tranquility of acceptance)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/pancashloki/L4-pan-p05.DRAFT.json">L4-pan-p05.DRAFT.json</a>
+ · L2: <a href="sources/pancashloki-L2.md">pan-p05</a></div>
+<div class="pnum">15 · craft</div></section>
+</div><section class="page sec-div"><div class="num">III</div>
+<h2>Anuttarāṣṭikā</h2><div class="sub">Eight Verses on the No-Method</div>
+<div class="note">Abhinavagupta&#x27;s eight verses: every method denied, recognition left standing.</div><div class="rule"></div></section><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 1</div>
+<h3>The frame: no method, just staying</h3>
+<div class="dev" style="font-size:14.5pt">संक्रामो ऽत्र न भावना न च कथायुक्तिर् न चर्चा न च ध्यानं वा न च धारणा न च जपाभ्यासप्रयासो न च । तत् किं नाम सुनिश्चितं वद परं सत्यं च तच् छ्रूयताम्: न त्यागी न परिग्रही — भज सुखं सर्वम् यथावस्थितः</div>
+<div class="iast">saṃkrāmo &#x27;tra na bhāvanā na ca kathāyuktir na carcā na ca dhyānaṃ vā na ca dhāraṇā na ca japābhyāsaprayāso na ca | tat kiṃ nāma suniścitaṃ vada paraṃ satyaṃ ca tac chrūyatām: na tyāgī na parigrahī — bhaja sukhaṃ sarvam yathāvasthitaḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">No crossing here by method — no contemplation, no reasoned talk, no inquiry, no visualization, no fixing, no straining at mantra-practice.</span><span class="ln">So what stands well decided? Speak the highest truth — and hear it: neither renouncer nor possessor — enjoy happiness, all of it, abiding as you are.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Transition here is no method at all — not contemplation, not speech-connection, not discussion, not visualization, not steadying, not japa-practice-effort. So what is well-decided? Speak the supreme truth, and hear it: not renouncer, not possessor — enjoy happiness, wholly, as staying.</p></div>
+<div class="pnum">16</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>The frame: no method, just staying</h3>
+<div class="body" style="font-size:9.5pt;line-height:1.45">
+<p>Sthāyin: śānta as anupāya (no method); FIRST VERSE — sets the house voice (denial-catalogue + question + two refusals + abide-command; owner verdict required). Sanskrit-first: suniścita/token opens kept per UNC (no resolution smuggled); anupāya named BY PERFORMANCE — the verse never says the word, it enacts it. Abhinavagupta frame: pratyabhijñā by refusal (recognition through what-is-not); the question (kiṃ suniścitam) is itself the method turning from hunt to hearing. Rows: 9 (no…no…no…no…no…no — sixfold denial anaphora IS the verse&#x27;s engine), 1 (‘abiding as you are’ end-weighted — yathāvasthita closes; staying is the last word because staying is the doctrine), 7 declined — no vocative; the command speaks to the hearer direct. Close: ‘abiding as you are’. Rupture: ‘So what stands well decided?’ (catalogue turns to question — the hunt replaced). Rejected: labeling anupāya — killed: named-by-performance, never by label; resolving opens — killed by UNC; softening neither-nor — killed: refusals ARE the method; ‘rest as you are’ — killed: ‘abide’ keeps sthā- (standing, decid). Read aloud: NO-cross-ing HERE by ME-thod — NO-con-tem-PLA-tion, NO-rea-soned-TALK … NEI-ther re-NOUN-cer NOR pos-SESS-or — en-JOY HAP-pi-ness, ALL of IT, a-BID-ing AS you ARE.</p>
+<div class="blk"><span class="bl">The logic</span><p>What is the method, if no method is enjoined? → No method is enjoined; staying is the method that is no method. Anupāya named by performance.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p01.DRAFT.json">L4-anu-p01.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p01</a></div>
+<div class="pnum">16 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 2</div>
+<h3>Saṃsāra is delusion</h3>
+<div class="dev" style="font-size:14.5pt">संसारः अस्ति न तत्त्वतस् तनुभृताम् बन्धस्य वार्ता एव का बन्धः यस्य न जातु तस्य वितथा । मुक्तस्य मुक्तिक्रिया एषः मिथ्यामोहकृत् रज्जुभुजगच्छायापिशाचभ्रमः मा किंचित् त्यज मा गृहाण विहर स्वस्थः यथावस्थितः</div>
+<div class="iast">saṃsāraḥ asti na tattvatas tanubhṛtām bandhasya vārtā eva kā bandhaḥ yasya na jātu tasya vitathā | muktasya muktikriyā eṣaḥ mithyāmohakṛt rajjubhujagacchāyāpiśācabhramaḥ mā kiṃcit tyaja mā gṛhāṇa vihara svasthaḥ yathāvasthitaḥ</div>
+<div class="hero" style="font-size:14pt;line-height:1.6"><span class="ln">For body-bearers, Saṃsāra in truth is not — of bondage, what news?</span><span class="ln">Bondage never truly is anyone’s — so the liberation-rite is false.</span><span class="ln">This error-maker: rope-snake-shadow-ghost delusion. Abandon nothing; grasp nothing —</span><span class="ln">live healthy, staying as you are.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Saṃsāra is not, in truth, for body-holders — of bondage, what news? Bondage never truly is for anyone — so for the free, liberation-rite is false. This error-maker is rope-snake-shadow-ghost-delusion. Abandon nothing; grasp nothing; live healthy, staying as you are.</p></div>
+<div class="pnum">17</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Saṃsāra is delusion</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as saṃsāra denied — tranquility of no-rite; vyabhicāri steadiness (denial that steadies). Sanskrit-first: nāsti tattvataḥ (is NOT, in truth — denial with the truth-word inside it); vitathā (FALSE — the rite-word itself falsified); yathāvasthitaḥ (staying AS-IT-IS — the whole anupāya doctrine in the last word). Rows: 9 (mā…mā double prohibition — abandon/grasp anaphora already in L3, kept), 2 (rope-snake-shadow-ghost heap kept whole — density IS the diagnosis), 1 (‘staying as you are’ end-weighted), 12 (śānta-fall: live-healthy-staying settles). Close: ‘staying as you are’. Rupture: ‘Abandon nothing; grasp nothing —’ (diagnosis turns to rule; the dash holds the turn). Rejected: ornamenting the heap — killed: adorning a verse that refuses method would contradict its doctrine (restraint IS the music); ‘be well’ for svasthaḥ — killed: healthy-steady, not wellness; ‘what talk of bondage’ smoothing — killed: vārtā (news/report) kept as asked-question. Read aloud: FOR-bo-dy-BEAR-ers, sam-SĀ-ra … is NOT — … a-BAN-don NO-thing; GRASP no-thing — LIVE-heal-thy, STAY-ing AS you ARE.</p>
+<div class="blk"><span class="bl">The logic</span><p>Is saṃsāra real, and what follows? → Saṃsāra is delusion; bondage is unreal; the liberation-rite is false; abandon nothing, grasp nothing, stay.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p02.DRAFT.json">L4-anu-p02.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p02</a></div>
+<div class="pnum">17 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 3</div>
+<h3>Worship-difference is Māyā</h3>
+<div class="dev" style="font-size:14.5pt">पूजपूजकपूज्य भेदसरणिः केयम् कथा अनुत्तरे संक्रामः किल कस्य केन विदधे को वा प्रवेशक्रमः मायेयम् । न चिदद्वयात् परतया भिन्ना अपि अहो वर्तते सर्वम् स्वानुभवस्वभावविमलं चिन्तां वृथा मा कृथाः</div>
+<div class="iast">pūjapūjakapūjya bhedasaraṇiḥ keyam kathā anuttare saṃkrāmaḥ kila kasya kena vidadhe ko vā praveśakramaḥ māyeyam | na cidadvayāt paratayā bhinnā api aho vartate sarvam svānubhavasvabhāvavimalaṃ cintāṃ vṛthā mā kṛthāḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">Worship, worshipper, worshipped — what talk of difference here, in the unsurpassed?</span><span class="ln">Transition indeed — of whom, by whom made, who walks the entry-course?</span><span class="ln">This Māyā — no different from consciousness-nonduality — stands as other, though different. Alas.</span><span class="ln">Everything is pure own-experience-nature. Vain thought — do not.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Worship, worshipper, worshipped — what a difference-course in the unsurpassed? Transition — of whom, by whom effected, and who is the entry-course? This Māyā, not different from consciousness-nonduality, in otherness, though different — alas, stands. All is pure own-experience-nature. Thought in vain — do not do.</p></div>
+<div class="pnum">18</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Worship-difference is Māyā</h3>
+<div class="body" style="font-size:9.5pt;line-height:1.45">
+<p>Sthāyin: śānta as worship-difference dissolved; bhakti as pratyabhijñā; vyabhicāri wonder at Māyā-standing-as-other. Sanskrit-first: kva bhedaḥ (WHAT difference — question, never answer); aho (ALAS-gasp = camatkāra break before the conclusion); mā smara (do NOT — prohibition closes blunt). Rows: triple-question cascade (what/of-whom/by-whom/who — rows pile questions, never answers), 1 (‘do not’ end-weighted — vain thought cut last), 10 (Māyā left standing as-other — no gloss on the standing). Close: ‘do not’ (the cut). Rupture: ‘Alas’ (questions turn to gasp — wonder breaks the interrogation, then the conclusion). Rejected: answering any question — killed: the verse asks four, answers none; ornament — killed: plainness is the song here, gilding would reintroduce the very difference dissolved; ‘foolish thought’ for vain thought — killed: mithyā is vain/false, moralizing smuggles. Read aloud: WOR-ship, WOR-ship-per, WOR-shipped — WHAT-talk of DIFF-er-ence … TRANS-i-tion in-DEED — of WHOM, by WHOM … THIS-mā-YĀ … stands AS-o-ther, THOUGH-diff-er-ent. A-LAS … VAIN-thought — DO-not.</p>
+<div class="blk"><span class="bl">The logic</span><p>What difference in the unsurpassed? → Worship-difference is Māyā: it stands as other without being different from consciousness-nonduality. All is pure own-experience-nature.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p03.DRAFT.json">L4-anu-p03.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p03</a></div>
+<div class="pnum">18 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 4</div>
+<h3>Bliss is the forgotten treasure</h3>
+<div class="dev" style="font-size:14.5pt">आनन्दः अत्र न वित्तमध्य मदवन् नैवाङ्गनासङ्गवत् दीपार्केन्दुकृत प्रभाप्रकरवन् नैव । प्रकाशोदयः हर्षः संभृतभेदमुक्तिसुखभूर् भारावतारोपमः सर्वाद्वैतपदस्य विस्मृतनिधेः प्राप्तिः प्रकाशोदयः</div>
+<div class="iast">ānandaḥ atra na vittamadhya madavan naivāṅganāsaṅgavat dīpārkendukṛta prabhāprakaravan naiva | prakāśodayaḥ harṣaḥ saṃbhṛtabhedamuktisukhabhūr bhārāvatāropamaḥ sarvādvaitapadasya vismṛtanidheḥ prāptiḥ prakāśodayaḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">Bliss here is not wealth-middle-intoxication, nor like enjoying women,</span><span class="ln">nor lamp-sun-moon-made splendour-multitudes — nor even the light-rise.</span><span class="ln">Joy — difference gathered, freed in bliss-ground, like the lowering of a burden —</span><span class="ln">is the forgotten treasure found of the all-nonduality state: the light-rise.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Bliss here is not wealth-middle-intoxication, nor like enjoying women, nor lamp-sun-moon-made splendour-multitude — and not the light-rise either. Joy with gathered-difference-liberation-bliss-ground, like burden-lowering, is the attainment of the forgotten treasure of the all-nonduality state — the light-rise.</p></div>
+<div class="pnum">19</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Bliss is the forgotten treasure</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: ānanda as forgotten-treasure-found; bhakti as prāpti (finding); vyabhicāri harṣa of burden-lowering. Sanskrit-first: na…na…na (triple refusal — wealth/women/splendour, then pictured-light refused too); bhāraharaṇam iva (LIKE burden-lowering — iva simile kept as simile); smṛti (FOUND-treasure — the forgotten remembered). Rows: 9 (refusal catalogue — each pleasure named then refused; naming IS the finding), 10 (burden image left standing, no gloss), 1 (light-rise AFFIRMED last — the refused word returns; ring closes whether same-or-different, held open). Close: ‘the light-rise’. Rupture: ‘Joy —’ (refusals turn to naming — the dash after Joy holds the turn). Rejected: gilding — killed: bluntness is the music; ‘treasure-trove’ — killed: domesticates the finding; deciding same-vs-different light — killed: held open (the ring&#x27;s ambiguity IS the verse). Read aloud: BLISS-here is NOT wealth-MIDD-le … NOR lamp-SUN-moon-MADE … JOY — DIFF-er-ence GA-thered, FREED in BLISS-ground, LIKE the LOW-er-ing OF a BUR-den — IS the for-GOTT-en TREA-sure FOUND.</p>
+<div class="blk"><span class="bl">The logic</span><p>What is bliss, and how is it found? → Bliss is neither pleasure nor splendour but joy like burden-lowering — the attainment of the forgotten treasure.</p></div>
+<div class="rasa">rasa — ānanda (bliss) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p04.DRAFT.json">L4-anu-p04.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p04</a></div>
+<div class="pnum">19 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 5</div>
+<h3>Things are consciousness-form</h3>
+<div class="dev" style="font-size:14.5pt">रागद्वेषसुखासुखोदयलयाहङ्कारदैन्यादयो ये भावाः प्रविभान्ति विश्ववपुषो भिन्नस्वभावा न ते । व्यक्तिं पश्यसि यस्य यस्य सहसा तत्तत्तदेकात्मतासंविद्रूपम् अवेक्ष्य किं न रमसे तद्भावनानिर्भरः</div>
+<div class="iast">rāgadveṣasukhāsukhodayalayāhaṅkāradainyādayo ye bhāvāḥ pravibhānti viśvavapuṣo bhinnasvabhāvā na te | vyaktiṃ paśyasi yasya yasya sahasā tattattadekātmatāsaṃvidrūpam avekṣya kiṃ na ramase tadbhāvanānirbharaḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">Passion, aversion, pleasure, pain, rise and fall, I-sense, misery and the rest — these states, shining forth, bodied of the universe, are of no separate nature.</span><span class="ln">Whatever form you suddenly see — see it as consciousness of one self-nature: why not delight, full of contemplating it?</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Passion, aversion, pleasure, displeasure, rise and fall, I-ness, misery and the rest — things shining forth, universe-bodied, are not different-natured. Whosever manifestation you suddenly see — having regarded it as one-self-natured consciousness-form — why do you not delight, full of contemplation?</p></div>
+<div class="pnum">20</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Things are consciousness-form</h3>
+<div class="body" style="font-size:9.5pt;line-height:1.45">
+<p>Sthāyin: ānanda as delight in variety; bhakti as rati; vyabhicāri joy (harṣa) of seeing variety as one-self. Sanskrit-first: ekātmatā-compound open kept (one-self-nature, unresolved per craft); ramase (WHY-NOT-DELIGHT — question-mood, not command: the verse asks, never orders, per UNC). Abhinavagupta frame: variety (vicitra) unthreatening — the catalogue of feelings IS the universe bodied, no separate nature to fear. Rows: 9 (passion/aversion/pleasure/pain/rise-fall/I-sense/misery — catalogue kept whole; trimming would shrink the variety the verse blesses), 1 (‘contemplating it’ — dhyāna-full delight closes; seeing ends in beholding), 10 (sudden-seeing left as sudden — sahasā kept). Close: ‘full of contemplating it’. Rupture: ‘why not delight’ (seeing turns to delight — the question IS the turn). Rejected: imperative-only delight — killed by UNC (question holds both moods); resolving ekātmatā — killed; trimming feelings — killed: catalogue is the variety. Read aloud: PASS-ion, a-VER-sion, PLEA-sure, PAIN … ARE of NO-sep-ar-ate NA-ture … WHAT-ev-er FORM you SUDD-en-ly SEE — SEE it AS-con-SCIOUS-ness … WHY-not de-LIGHT.</p>
+<div class="blk"><span class="bl">The logic</span><p>Why not delight in variety? → Variety is one nature; regard it as consciousness-form, and delight is the only consistent response.</p></div>
+<div class="rasa">rasa — ānanda (bliss) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p05.DRAFT.json">L4-anu-p05.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p05</a></div>
+<div class="pnum">20 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 6</div>
+<h3>Things lack truth; awaken</h3>
+<div class="dev" style="font-size:14.5pt">पूर्वाभावभवक्रिया हि सहसा भावाः सदा ऽस्मिन् भवे मध्याकारविकारसंकरवतां तेषां कुतः सत्यता । निःसत्ये चपले प्रपञ्चनिचये स्वप्नभ्रमे पेशले शङ्कातङ्ककलङ्कयुक्तिकलनातीतः प्रबुद्धो भव</div>
+<div class="iast">pūrvābhāvabhavakriyā hi sahasā bhāvāḥ sadā &#x27;smin bhave madhyākāravikārasaṃkaravatāṃ teṣāṃ kutaḥ satyatā | niḥsatye capale prapañcanicaye svapnabhrame peśale śaṅkātaṅkakalaṅkayuktikalanātītaḥ prabuddho bhava</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">Past non-being, being, doing — things, always, suddenly, in this becoming, half-formed and mixed in change: what truth could they have?</span><span class="ln">In the untrue, restless, teeming, clever dream-delusion — past doubting, fearing, staining, and reason’s scheming: awake — become.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Former non-being, being, action — things always, suddenly, in this existence: middle-formed, transformation-confused — whence their truth? In the non-true, unsteady, manifold, clever dream-delusion — transcending doubt, fear, stain, and reasoning&#x27;s contriving: awakened, become.</p></div>
+<div class="pnum">21</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>Things lack truth; awaken</h3>
+<div class="body" style="font-size:10.5pt;line-height:1.5">
+<p>Sthāyin: śānta as awakening (prabodha); vyabhicāri clarity (prasāda) of transcending. Sanskrit-first: peśala/bhava/madhyākāra opens kept (half-formed/mixed — obscurity marked, not smoothed); prabuddha bhava (AWAKE — BECOME: two imperatives, the verse&#x27;s only act). Abhinavagupta frame: dream-delusion (svapna) as the accurate ontology of things — clever (peśala) modifies the delusion, not the dreamer. Rows: 9 (past-doubting/fearing/staining/scheming — transcend-list kept whole), 1 (‘become’ end-weighted — the second imperative closes; awakening lands as becoming), 8 (vowel fall: clever-scheming chatter → awake-become stillness). Close: ‘awake — become’. Rupture: the colon before ‘awake’ (delusion inventoried, then the act). Rejected: ‘clever-vs-cunning’ resolved — killed by UNC; ‘planning’ for scheming — killed: scheming schemes (kalpanā contrives); ‘wake up’ — killed: colloquial, prabodha is awakening. Read aloud: PAST non-BE-ing, BE-ing, DO-ing … WHAT-truth COULD they HAVE … PAST-doubt-ing, FEAR-ing, STAIN-ing … a-WAKE — be-COME.</p>
+<div class="blk"><span class="bl">The logic</span><p>Whence the truth of things? → Things lack truth; the only response is awakening: transcend doubt, fear, stain, reasoning; awaken.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p06.DRAFT.json">L4-anu-p06.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p06</a></div>
+<div class="pnum">21 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 7</div>
+<h3>The universe-glory is will-born</h3>
+<div class="dev" style="font-size:14.5pt">भावानां न समुद्भवो ऽस्ति सहजस् त्वद्भाविता भान्त्य् अमी निःसत्या अपि सत्यताम् अनुभवभ्रान्त्या भजन्ति क्षणम् । त्वत्सङ्कल्पज एष विश्वमहिमा नास्त्य् अस्य जन्मान्यतः तस्मात् त्वं विभवेन भासि भुवनेष्व् एकोप्य् अनेकात्मकः</div>
+<div class="iast">bhāvānāṃ na samudbhavo &#x27;sti sahajas tvadbhāvitā bhānty amī niḥsatyā api satyatām anubhavabhrāntyā bhajanti kṣaṇam | tvatsaṅkalpaja eṣa viśvamahimā nāsty asya janmānyataḥ tasmāt tvaṃ vibhavena bhāsi bhuvaneṣv ekopy anekātmakaḥ</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">Things do not arise; by nature they shine through your beholding — even the untrue partakes of truth for a moment, through experience’s delusion.</span><span class="ln">This glory of worlds is will-born of You, with birth from nowhere else — so in splendor You shine through the worlds, one and yet many-selfed.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">Of things there is no arising; naturally, by your contemplation they shine; even the non-true partakes of truth for a moment, through experience&#x27;s delusion. This universe-glory is will-born from you, birth from elsewhere it has none; hence by splendor you shine in worlds — one, yet many-selfed.</p></div>
+<div class="pnum">22</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>The universe-glory is will-born</h3>
+<div class="body" style="font-size:9.5pt;line-height:1.45">
+<p>Sthāyin: śānta as will-born glory; bhakti as pratyabhijñā; vyabhicāri wonder (camatkāra) at one-yet-many. Sanskrit-first: sahaja/bhrānti opens kept (natural/delusion held per UNC); ekopy anekātmakam (ONE yet MANY-SELFed — non-cancelling kept, never resolved); You-capital kept (address IS the Lord). Abhinavagupta frame: ābhāsa shining-by-beholding (no arising needed — being-beheld suffices); will (icchā) as the sole birth. Rows: 9 (one/many pair — kept paired; resolving would cancel the verse), 7 (You addressed mid-verse — beholding MADE second-person), 1 (‘many-selfed’ closes — multiplicity last, uncancelled). Close: ‘one and yet many-selfed’. Rupture: ‘so in splendor’ (cosmogony turns to shining — birth-account becomes praise). Rejected: resolving one-yet-many — killed: non-cancelling IS the verse; lowercasing you — killed: address is the Lord; ‘through your gaze’ for beholding — killed: darśana-beholding kept plain. Read aloud: THINGS do NOT a-RISE … EVEN the un-TRUE par-TAKES of TRUTH … THIS-glo-ry OF-worlds is WILL-born OF-you … ONE and YET man-y-SELFED.</p>
+<div class="blk"><span class="bl">The logic</span><p>Do things arise, and whence the universe-glory? → No arising; things shine by contemplation; non-true borrows momentary truth; universe-glory is will-born; you shine one-yet-many.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p07.DRAFT.json">L4-anu-p07.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p07</a></div>
+<div class="pnum">22 · craft</div></section>
+</div><div class="spread">
+<section class="page poem">
+<div class="src">Anuttarāṣṭikā · verse 8</div>
+<h3>All shines in the consciousness-mirror; worship Lordhood</h3>
+<div class="dev" style="font-size:14.5pt">यत् सत्यं यद् असत्यम् अल्पबहुलं नित्यं न नित्यं च यत् यन् मायामलिनं यद् आत्मविमलं चिद्दर्पणे राजते । तत् सर्वं स्वविमर्शसंविदुदयाद् रूपप्रकाशात्मकं ज्ञात्वा स्वानुभवाधिरूढमहिमा विश्वेश्वरत्वं भज</div>
+<div class="iast">yat satyaṃ yad asatyam alpabahulaṃ nityaṃ na nityaṃ ca yat yan māyāmalinaṃ yad ātmavimalaṃ ciddarpaṇe rājate | tat sarvaṃ svavimarśasaṃvidudayād rūpaprakāśātmakaṃ jñātvā svānubhavādhirūḍhamahimā viśveśvaratvaṃ bhaja</div>
+<div class="hero" style="font-size:13pt;line-height:1.6"><span class="ln">What is true, what untrue, little or much, lasting or lasting-not, Māyā-stained or self-pure — all shines in the mirror of consciousness.</span><span class="ln">All that — risen from self-grasping consciousness, natured as form and light — know it: glory mounted on your own experience — worship lordship of all.</span></div>
+<div class="plain"><span class="lbl">Plain reading (L2)</span><p style="font-size:9.5pt">What true, what untrue, little-much, eternal, not eternal, what Māyā-stained, what self-pure — in the consciousness-mirror shines. That all, from own-grasping-consciousness-rise, form-light-natured, having known — own-experience-risen glory: Lordhood — worship.</p></div>
+<div class="pnum">23</div></section>
+<section class="page craft">
+<div class="label">The Craft</div>
+<h3>All shines in the consciousness-mirror; worship Lordhood</h3>
+<div class="body" style="font-size:9.5pt;line-height:1.45">
+<p>Sthāyin: śānta as Lordhood (viśveśvaratva); bhakti as worship; vyabhicāri wonder at all-opposites mirrored. Sanskrit-first: bhaja mood open per UNC (worship kept as act, mood unforced); compounds open kept (own-grasping-consciousness-rise carried whole — density IS the metaphysics). Abhinavagupta frame: mirror (darpaṇa) as the accurate instrument — opposites shine WITHOUT entering; knowing = glory = Lordhood (equation, not ascent). Rows: 9 (true/untrue, little/much, lasting/lasting-not, Māyā-stained/self-pure — all pairs kept; trimming would un-mirror the mirror), 1 (‘lordship of all’ closes — viśveśvaratva last, the equation&#x27;s answer), 12 (śānta-fall: ‘three-’ … ‘all’ — whole-work close, wide and still). Close: ‘worship lordship of all’. Rupture: ‘know it:’ (all-shown turns to all-known — colon stages the equation). Rejected: trimming pairs — killed: all-pairs IS the mirror; resolving bhaja — killed by UNC; ‘serve the Lord of all’ — killed: bhaja + aiśvarya is worship-lordship, service weakens. Read aloud: WHAT is TRUE, WHAT un-TRUE … ALL-shines IN the MIR-ror OF-con-SCIOUS-ness … KNOW-it: GLO-ry MOUNT-ed ON your OWN ex-PER-i-ence — WOR-ship LORD-ship OF-all.</p>
+<div class="blk"><span class="bl">The logic</span><p>What shines in the mirror, and what follows from knowing it? → All opposites shine in the consciousness-mirror; knowing that all is own-grasping-consciousness-rise = glory = Lordhood; worship.</p></div>
+<div class="rasa">rasa — śānta (tranquility) with adbhuta (wonder)</div>
+</div>
+<div class="foot"><span class="badge">machine-proposed</span> <span class="badge">preserved</span> <span class="badge">human-review</span><br>
+L4: <a href="sources/anuttarastika/L4-anu-p08.DRAFT.json">L4-anu-p08.DRAFT.json</a>
+ · L2: <a href="sources/anuttarastika-L2.md">anu-p08</a></div>
+<div class="pnum">23 · craft</div></section>
+</div><section class="page epi"><div class="lines"><span class="ln">ॐ शान्तिः शान्तिः शान्तिः</span></div>
+<div class="src">The Surrender</div></section><section class="page bib"><h2>Sources</h2><ul><li><b>Bhairavastava — L2 plain reading</b><br><a href="sources/bhairavastava-L2.md">sources/bhairavastava-L2.md</a></li><li><b>Pañcaślokī — L2 plain reading</b><br><a href="sources/pancashloki-L2.md">sources/pancashloki-L2.md</a></li><li><b>Anuttarāṣṭikā — L2 plain reading</b><br><a href="sources/anuttarastika-L2.md">sources/anuttarastika-L2.md</a></li><li><b>L4 craft files (in the corpus)</b><br><span style="color:#76736e">/home/box/repos/translation-work/bhairavastava/L4-*.json · pancashloki/ · anuttarastika/</span></li></ul></section></body></html>

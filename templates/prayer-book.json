@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "id": "prayer-book",
+  "name": "Prayer Book",
+  "description": "The genre: a pocket book of the highest-signal condensed practice — prayer, meditation, mantra, or a practice guide — where every entry faces its explanation (what it is, how to do it, how to know it's working). The whole book fits the 110-page creative boundary; when content overflows, the answer is a second volume, never a fatter one. Practical Prayers and Tantric Prayer are the two members; more books generate from this template.",
+  "constraints": {
+    "max_pages": 110,
+    "min_font_pt": 7,
+    "trim": "A5 148x210mm no-bleed"
+  },
+  "pipeline": ["content", "structure", "formatting", "build"],
+  "entry_anatomy": {
+    "required": {
+      "brief": ["brief"],
+      "what": ["what", "logic"],
+      "how": ["how", "howto"],
+      "sign": ["sign"]
+    },
+    "optional": {
+      "feel": ["feel"]
+    }
+  },
+  "products": {
+    "paperback": {"status": "per-book", "spec": "A5 no-bleed B&W matte; page count <= template ceiling 110; kdp_preflight + check.py green before any upload"},
+    "postcard": {"status": "per-book", "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"},
+    "social": {"status": "per-book", "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"},
+    "audiobook": {"status": "per-book", "spec": "Digital edition: per entry, English readout of verse + guide blocks in book order, derived from entries.json fields only"},
+    "chant": {"status": "per-book", "spec": "Digital edition pairs each entry with its exact chant: kashaudio aligned clips where the work exists, Swamiji archival where the voice is his, queued render otherwise; hash-pinned per-entry manifest"}
+  },
+  "style_default": "canonical",
+  "structure_defaults": {"entries_per_section": 4},
+  "series_pattern": "One book = one thesis within the ceiling. When the material outgrows 110 pages, split into numbered volumes (thesis.series: {name, volume}) — same template, same style, consecutive claims — never expand a single volume past the ceiling.",
+  "inclusion": [
+    "every entry faces its explanation: brief (C1 essence), what (sense), how (the text's own practice), sign (the text's own claimed effect) — feel optional",
+    "content is extract-and-place from named sources and layers; clarity-edits only after placing; no source = block stays off the page (fail closed)",
+    "whole book must preflight under the template page ceiling with the template style before the build stage opens"
+  ],
+  "exclusion": [
+    "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
+    "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
+    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first"
+  ]
+}

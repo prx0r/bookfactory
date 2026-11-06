@@ -1,0 +1,64 @@
+{
+ "craft_notes": "Sthāyin: victory cry (jaya doubled). Abhinavagupta frame: anubhāva outward — the cry IS the visible sign of rati-sthāyin; refrain staging (bank: Gitagovinda dhruvapada — the cry isolated as its own line, verbatim, never reworded). Rows: 1 (imperatives sphuratu/bhavatu/kuru each end-weight their clause), 3 (protector-chiasmus maheśanāthaṃ→sanāthaṃ kept as vise-grip), 6 (jaya jaya anchor), 7 (vocatives line-initial/final), 9 (Maheśa chiming thrice), 4 (sphuratu rucirā shimmer → ‘flash forth, faultless’ f-echo, costs nothing). Close: ‘protected, O Lord’ (sanāthaṃ kuru + vibho gathered). Rejected: single Victory — killed: doubling IS the cry; ‘glory to Maheśa’ — killed: jaya=victory, anchor verbatim; ‘make me safe’ — killed: breaks the chiasmus. śivadā bliss-reading per L3 note, Śiva-giving open. Read aloud: o ma-HE-śa — AT your DOOR … ‘VIC-to-ry, VIC-to-ry to ma-HE-śa’ — un-CEAS-ing.",
+ "form": "triplet",
+ "l4": {
+  "verse_id": "pan-p02",
+  "song": "pan-p02",
+  "verse": 2,
+  "lines": [
+   "O Maheśa — at Your door let my charming speech flash forth, faultless.",
+   "“Victory, victory to Maheśa” — unceasing.",
+   "Let this auspicious speech bring me bliss forever; O giver of refuge, make me — whose protector is Maheśa — protected, O Lord."
+  ],
+  "sanskrit_cite": "maheśa tvaddvāri sphuratu rucirā vāgatitarāṃ mamaiṣā nirdoṣaṃ jaya jaya maheśeti satatam | śivā saiṣā vāṇī bhavatu śivadā mahyamaniśaṃ maheśanāthaṃ māṃ śaraṇada sanāthaṃ kuru vibho",
+  "l0_ids": [
+   "pan-p02-p000",
+   "pan-p02-p001",
+   "pan-p02-p002",
+   "pan-p02-p003",
+   "pan-p02-p004",
+   "pan-p02-p005",
+   "pan-p02-p006",
+   "pan-p02-p007",
+   "pan-p02-p008",
+   "pan-p02-p009",
+   "pan-p02-p010",
+   "pan-p02-p011",
+   "pan-p02-p012",
+   "pan-p02-p013",
+   "pan-p02-p014",
+   "pan-p02-p015",
+   "pan-p02-p016",
+   "pan-p02-p017",
+   "pan-p02-p018",
+   "pan-p02-p019",
+   "pan-p02-p020",
+   "pan-p02-p021",
+   "pan-p02-p022",
+   "pan-p02-p023",
+   "pan-p02-p024",
+   "pan-p02-p025",
+   "pan-p02-p026",
+   "pan-p02-p027"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "triplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "śivadā as bliss-bringing; Śiva-giving reading open"
+  ]
+ },
+ "reads_against": {
+  "argmap": "Speech becomes the offering: the word crying victory at the threshold is itself to become bliss-giving; having Maheśa as protector is to become being protected. → Speech becomes bliss-giving; request to be made protected.",
+  "c1_essence": [
+   "Speech becomes the offering: the word crying victory at the threshold is itself to become bliss-giving; having Maheśa as protector is to become being protected."
+  ],
+  "c1_rasa": "bhakti (devotional praise)"
+ },
+ "status": "machine-proposed"
+}

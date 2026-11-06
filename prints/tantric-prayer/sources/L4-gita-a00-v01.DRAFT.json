@@ -1,0 +1,51 @@
+{
+ "craft_notes": "Sthāyin: the treasury invoked — FIRST verse: house voice (owner verdict required). Sanskrit-first: vitatasphuradvividhabhāva-cakra-ātmakaḥ kept compound; saṃbhura-śivāpaha kept with LIVE-fork note (mangala valence chosen); bodha-bhāsā-nidhi kept the store-name. Rows: 2 (long compound spilling), 7 (no vocative — praise without address, the work praises itself first), 1 ('treasury of the lights of knowing' closes — nidhi end-weight). Close: 'treasury of the lights of knowing.' Rejected: glossing śivāpaha — killed: LIVE fork holds (grounds in L0), song keeps the chosen reading only; 'flashing-diverse-wheel' reorder — kept the compound whole down two lines.",
+ "form": "septet",
+ "l4": {
+  "verse_id": "gita-a00-v01",
+  "song": "gita-a00",
+  "verse": 1,
+  "lines": [
+   "The wheel of diverse states, widely flashing,",
+   "made of its own mutual-difference —",
+   "comes to be the objects of experience:",
+   "whose one, given to contemplation,",
+   "is thus the bond of nondifference —",
+   "Śaṃbhura, woe-averting, triumphs:",
+   "treasury of the lights of knowing."
+  ],
+  "sanskrit_cite": "ya eṣa vitatasphuradvividhabhāvacakrātmakaḥ parasparavibhedavānviṣayatāmupāgacchati yadekamayabhāvanāvaśata etyabhedānvayaṃ sa śaṃbhuraśivāpaho jayati bodhabhāsāṃ nidhiḥ",
+  "l0_ids": [
+   "gita-a00-v01-p000",
+   "gita-a00-v01-p001",
+   "gita-a00-v01-p002",
+   "gita-a00-v01-p003",
+   "gita-a00-v01-p004",
+   "gita-a00-v01-p005",
+   "gita-a00-v01-p006",
+   "gita-a00-v01-p007",
+   "gita-a00-v01-p008",
+   "gita-a00-v01-p009",
+   "gita-a00-v01-p010"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "form": "septet",
+  "fidelity": "preserved",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "prathiḥ + bhāvanāvaśata + ety + śivāpaha: LIVE forks held (grounds in L0)"
+  ]
+ },
+ "reads_against": {
+  "argmap": "Who triumphs, and what is he the treasury of? → The mangala invokes the knowing-treasury: the bhāva-cakra's nondifference-bond names what the work stores — bodha-bhāsās.",
+  "c1_essence": [
+   "The bhāva-cakra's nondifference-bond names the work's treasury: lights of knowing, triumphed by woe-averting Śaṃbhura."
+  ],
+  "c1_rasa": "adbhuta-śānta of the treasury opened (wonder at the work's own store)"
+ },
+ "status": "machine-proposed"
+}

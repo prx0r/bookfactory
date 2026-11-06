@@ -1,0 +1,62 @@
+{
+ "craft_notes": "Sthāyin: śānta as saṃsāra denied — tranquility of no-rite; vyabhicāri steadiness (denial that steadies). Sanskrit-first: nāsti tattvataḥ (is NOT, in truth — denial with the truth-word inside it); vitathā (FALSE — the rite-word itself falsified); yathāvasthitaḥ (staying AS-IT-IS — the whole anupāya doctrine in the last word). Rows: 9 (mā…mā double prohibition — abandon/grasp anaphora already in L3, kept), 2 (rope-snake-shadow-ghost heap kept whole — density IS the diagnosis), 1 (‘staying as you are’ end-weighted), 12 (śānta-fall: live-healthy-staying settles). Close: ‘staying as you are’. Rupture: ‘Abandon nothing; grasp nothing —’ (diagnosis turns to rule; the dash holds the turn). Rejected: ornamenting the heap — killed: adorning a verse that refuses method would contradict its doctrine (restraint IS the music); ‘be well’ for svasthaḥ — killed: healthy-steady, not wellness; ‘what talk of bondage’ smoothing — killed: vārtā (news/report) kept as asked-question. Read aloud: FOR-bo-dy-BEAR-ers, sam-SĀ-ra … is NOT — … a-BAN-don NO-thing; GRASP no-thing — LIVE-heal-thy, STAY-ing AS you ARE.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "anu-p02",
+  "song": "anu-p02",
+  "verse": 2,
+  "lines": [
+   "For body-bearers, Saṃsāra in truth is not — of bondage, what news?",
+   "Bondage never truly is anyone’s — so the liberation-rite is false.",
+   "This error-maker: rope-snake-shadow-ghost delusion. Abandon nothing; grasp nothing —",
+   "live healthy, staying as you are."
+  ],
+  "sanskrit_cite": "saṃsāraḥ asti na tattvatas tanubhṛtām bandhasya vārtā eva kā bandhaḥ yasya na jātu tasya vitathā | muktasya muktikriyā eṣaḥ mithyāmohakṛt rajjubhujagacchāyāpiśācabhramaḥ mā kiṃcit tyaja mā gṛhāṇa vihara svasthaḥ yathāvasthitaḥ",
+  "l0_ids": [
+   "anu-p02-p000",
+   "anu-p02-p001",
+   "anu-p02-p002",
+   "anu-p02-p003",
+   "anu-p02-p004",
+   "anu-p02-p005",
+   "anu-p02-p006",
+   "anu-p02-p007",
+   "anu-p02-p008",
+   "anu-p02-p009",
+   "anu-p02-p010",
+   "anu-p02-p011",
+   "anu-p02-p012",
+   "anu-p02-p013",
+   "anu-p02-p014",
+   "anu-p02-p015",
+   "anu-p02-p016",
+   "anu-p02-p017",
+   "anu-p02-p018",
+   "anu-p02-p019",
+   "anu-p02-p020",
+   "anu-p02-p021",
+   "anu-p02-p022",
+   "anu-p02-p023"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "muktasya muktikriyA both readings live (BOUNDARY); vihara mood open (BOUNDARY)",
+   "2026-11-04 no-share fix mirrored from data merge"
+  ]
+ },
+ "reads_against": {
+  "argmap": "Is saṃsāra real, and what follows? → Saṃsāra is delusion; bondage is unreal; the liberation-rite is false; abandon nothing, grasp nothing, stay.",
+  "c1_essence": [
+   "Saṃsāra is unreal for the embodied; bondage never truly is for anyone, so the liberation-rite is false. The error is a fourfold delusion-heap — rope, snake, shadow, ghost. Abandon nothing, grasp nothing; live healthy, staying."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

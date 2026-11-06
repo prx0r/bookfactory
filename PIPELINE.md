@@ -3,8 +3,8 @@
 This document is the current implementation status for the publishing bridge.
 `FACTORY-SPEC.md` remains the owner's destination and design brief; statements
 in it describing shipping gates are goals until implemented and demonstrated.
-The companion implementation is in `prx0r/visuals` on the same
-`codex/publishing-handoff` branch. `translation-work` remains the source of
+The books and renderer now live IN this repo under `prints/` (migrated
+2026-11-06 — one repo for books). `translation-work` remains the source of
 translation layers; `tantrasara` remains the source of its video assets. No
 upstream text, video approvals, or published work is changed here.
 
@@ -17,7 +17,7 @@ upstream text, video approvals, or published work is changed here.
    not a byte-exact edition or a claim of philological correctness. A
    passage-level deterministic PASS is not a human review.
 2. `factory.py quote` builds **draft only** postcards and social previews
-   through the existing visuals renderer. They carry `DRAFT · NOT FOR SALE`.
+   through the in-repo renderer. They carry `DRAFT · NOT FOR SALE`.
    It supports an existing book entry or a translation layer record. It does
    not invent explanatory text when the layers have not supplied it. Each
    product has a namespaced filename, a preview index, and a JSON handoff
@@ -33,7 +33,7 @@ upstream text, video approvals, or published work is changed here.
    page. Rights or origin missing means draft-only and requires `--preview`.
    A rights statement is evidence supplied by the operator, not automatic
    legal clearance. The canonical video files are never modified.
-5. The visuals preflight checks the **actual PDF**, not only CSS: all page
+5. The preflight (`prints/kdp_preflight.py`) checks the **actual PDF**, not only CSS: all page
    sizes, page limits, embedded fonts, text sizes and safe margins, plus image
    resolution. It reports KDP-oriented mechanical failures. It cannot detect
    every case of text clipped *before* PDF generation, substitution, wrong
@@ -47,9 +47,10 @@ hash into a publishing approval.
 
 ## Setup and examples
 
-Check out `bookfactory`, `visuals` and `translation-work` as siblings, or set
-`BOOKFACTORY_VISUALS` and `BOOKFACTORY_TRANSLATIONS`. Install the dependencies
-in an isolated environment using `visuals/prints/requirements-publishing.txt`.
+Check out `bookfactory` and `translation-work` as siblings (books are
+in-repo under `prints/`), or set `BOOKFACTORY_PRINTS` and
+`BOOKFACTORY_TRANSLATIONS`. Install the dependencies in an isolated
+environment using `prints/requirements-publishing.txt`.
 Poppler's `pdfinfo`, `pdffonts`, `pdftotext` and `pdftoppm` and Chrome/Chromium
 are also needed. Rendering may take more than ten seconds: use the background
 job/log convention in `AGENTS.md`.
@@ -63,8 +64,8 @@ python3 factory.py quote --text practical-prayers --ref gita-424 \
   --output /tmp/quote-preview
 python3 factory.py verify --manifest /tmp/quote-preview/tantrasara-a01__tsa-a01-v01__manifest.json
 python3 check.py practical-prayers
-python3 ../visuals/prints/kdp_preflight.py --max-pages 110 \
-  ../visuals/prints/practical-prayers/practical-prayers-preview.pdf
+python3 prints/kdp_preflight.py --max-pages 110 \
+  prints/practical-prayers/practical-prayers-preview.pdf
 ```
 
 References for layer records are the actual immutable IDs, not guesses from
@@ -83,7 +84,7 @@ use. Then:
 
 ```sh
 python3 factory.py import-asset --manifest asset.json \
-  --asset-root ../tantrasara --book-dir ../visuals/prints/practical-prayers \
+  --asset-root ../tantrasara --book-dir prints/practical-prayers \
   --preview --set-opening
 ```
 
@@ -95,6 +96,50 @@ rights may be staged without `--preview`, but its use is still blocked by the
 publication gate pending independent review. Never treat a generated thumbnail,
 an old video approval or the existence of a licence field as permission to
 sell the same image in a book.
+
+## Thesis + decision log (every book's source of truth)
+
+> **BOOKS.md is the canonical full-system doc** (template genre → thesis →
+> decision log → pipeline stages → products → `new-book` generator). This
+> section is the summary.
+
+A book lane is not canonical without a **thesis** (`projects/<book>/thesis.json`:
+its `template` (genre — `templates/prayer-book.json`: 110pp ceiling, entry
+anatomy, pipeline), `style` pack, the claim (intro derives from it), the
+structure law — sections x entries x total —, inherited + book-specific
+inclusion/exclusion rules, and the full product stack: paperback, postcard,
+social, **audiobook**, **chant**). Nothing about shape is hand-maintained prose.
+
+Every construction change is a line in `projects/<book>/decisions.jsonl`:
+
+```sh
+python3 factory.py decide --book practical-prayers \
+  --action move-entry --target bahurupa-close \
+  --from tantric-prayer/sangha --to practical-prayers/anytime \
+  --thesis-ref inclusion/2 \
+  --justification "its own text says recited in every action — definitionally anytime"
+```
+
+- `--justification` fails below 40 characters (empty why = no decision).
+- `--thesis-ref` must resolve into the thesis (e.g. `exclusion/0`, `structure`)
+  or the command refuses to append.
+- `check.py` enforces all of it: thesis/template/style present, every decision
+  valid + resolvable, book sections/counts matching the thesis exactly,
+  remove/add decisions agreeing with the book's current state, entry anatomy,
+  and no entry shared between the two books (one prayer, one book).
+- **Pipeline stages** (`project.json stage`): `content → structure →
+  formatting → build` — the PDF is rendered **LAST**, after content/structure/
+  formatting gates pass. The gate attributes problems to stages: current-stage
+  problems print `[BLOCKED]`, later ones `[DUE-LATER ...]` (the worklist).
+  Advance verified with `factory.py stage --book B --to <stage>`; new books
+  scaffold with `factory.py new-book --template prayer-book ...`.
+
+Audio products live in the thesis too: per-prayer **chant** clips bind to
+`prx0r/kashaudio` aligned verses (769 across 28 works — both books' source texts
+are already rendered) or Swamiji archival (`aghora-swamiji.mp3`,
+`bahurupa-swamiji.m4a`); the **audiobook** readout derives from entries.json
+fields only. Both are declared `planned` with per-work coverage in
+`products.chant.coverage` — a clip manifest ships with the digital edition.
 
 ## Current blockers and next work
 
@@ -111,7 +156,7 @@ sell the same image in a book.
   records GRETIL/Bailly as CC BY-NC-SA. The age of a Sanskrit work does not by
   itself clear the specific edition, translation, transcription, illustrations
   or commentary for a commercial product. Resolve rights separately per source.
-- The legacy prayer entries are curated inside visuals, not a complete,
+- The legacy prayer entries are curated in `prints/`, not a complete,
   immutable L2/L3-to-entry mapping with decision and rights records. Build
   that mapping per verse without guessing, preserve the exact provenance and
   record owner adjudications against the exact revision. Implement full-book
@@ -128,7 +173,7 @@ sell the same image in a book.
   and KDP calculator when publishing. A full-wrap cover is a separate file;
   use the current KDP Cover Calculator and previewer for spine/bleed. KDP Select
   is an e-book exclusivity decision, not a paperback formatting setting.
-- The owner's edition ladder in the latest visuals `prints/EDITIONS.md` is
+- The owner's edition ladder in `prints/EDITIONS.md` is
   English (translation), Study (Sanskrit plus English), and Complete (Study
   plus essays, glossary and notes). These are planned products; the current
   factory does not yet construct those three editions. Apply a page ceiling

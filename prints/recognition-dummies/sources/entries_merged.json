@@ -1,0 +1,889 @@
+{
+ "entries": [
+  {
+   "q": "What actually changes when someone has a recognition?",
+   "a": "The content of experience stays identical. What changes is the observer's relation to its own dependence — a single status flip, not new information.",
+   "source": "FORMALIZATION-OF-RECOGNITION.md"
+  },
+  {
+   "q": "Is recognition the same as learning a new fact?",
+   "a": "No. It 'subtracts a false exemption rather than adding a new object' — you drop a wrong assumption, you don't gain information.",
+   "source": "FORMALIZATION-OF-RECOGNITION.md"
+  },
+  {
+   "q": "What are the three malas?",
+   "a": "Three named failure modes: treating yourself as self-grounding, treating the world as independently real, and locking into habits that keep those errors running.",
+   "source": "FORMALIZATION-OF-RECOGNITION.md"
+  },
+  {
+   "q": "Does recognition destroy your body and limits?",
+   "a": "No. It removes exclusive self-enclosure, not finite embodiment. Body, limits, and private field stay; only the claim that they're exhaustive goes.",
+   "source": "FORMALIZATION-OF-RECOGNITION.md"
+  },
+  {
+   "q": "Is recognition a felt experience?",
+   "a": "Yes — the thesis is that removing the false self-positioning is felt. The feeling registers the removal; it doesn't prove what the removal reveals.",
+   "source": "ESSAY-RECOGNITION-FELT-RE-COGNITION.md"
+  },
+  {
+   "q": "What survives the critique of Buddhism in this essay?",
+   "a": "Most Buddhist schools are refuted for assuming a substrate. Two survive — Ñāṇananda and Ñāṇavīra — who claim only dependence, never an underlying substance.",
+   "source": "ESSAY-RECOGNITION-FELT-RE-COGNITION.md"
+  },
+  {
+   "q": "What's the difference between a stream-enterer and an arahant?",
+   "a": "The stream-enterer sees the deception — the 'I am' conceit as wrong. The arahant has removed it. Seeing is not enacting.",
+   "source": "ESSAY-RECOGNITION-FELT-RE-COGNITION.md"
+  },
+  {
+   "q": "Does the essay say nibbāna and Śiva-recognition are identical?",
+   "a": "No. Both share the removal of false self-positioning, but they differ in what the removal reveals — ground or groundlessness. That choice stays open.",
+   "source": "ESSAY-RECOGNITION-FELT-RE-COGNITION.md"
+  },
+  {
+   "q": "What happens after recognition?",
+   "a": "Perception re-renders. Recognition is the threshold; the real work is the long restructuring of perception, memory, agency, and feeling that follows.",
+   "source": "POST-RECOGNITION.md"
+  },
+  {
+   "q": "Why call it 're-rendering'?",
+   "a": "Because perception is a construction — a controlled hallucination. Recognition updates the self's predictive model, so the experienced world gets rebuilt.",
+   "source": "POST-RECOGNITION.md"
+  },
+  {
+   "q": "Is this just mysticism?",
+   "a": "No. The document maps it onto neural annealing, plasticity, active inference, and psychedelics — a cognitive-science claim, not a supernatural one.",
+   "source": "POST-RECOGNITION.md"
+  },
+  {
+   "q": "What's this project's distinct angle?",
+   "a": "Others study the recognition event. This project studies the aftermath — what recognition does to perception over time, in the world.",
+   "source": "POST-RECOGNITION.md"
+  },
+  {
+   "q": "Why does this text need a plain-English bridge?",
+   "a": "The literal translations are word-faithful but unreadable. The bridge answers 'what is this actually saying?' in 1-3 clean sentences per verse.",
+   "source": "IPVV-PLAIN-ENGLISH-BRIDGE.md"
+  },
+  {
+   "q": "What does the example verse say consciousness is?",
+   "a": "Not merely aware — its nature is to relish its own appearing. The wonder (camatkāra) is what consciousness is when it knows itself, not a reaction to the world.",
+   "source": "IPVV-PLAIN-ENGLISH-BRIDGE.md"
+  },
+  {
+   "q": "What are the research-hook tags for?",
+   "a": "They flag each verse's point as touching recognition, felt quality, reflexivity, memory, freedom, or otherness, so the main paper can quote it.",
+   "source": "IPVV-PLAIN-ENGLISH-BRIDGE.md"
+  },
+  {
+   "q": "Who uses the bridge's output?",
+   "a": "The main paper quotes the plain-English renderings, the Patala workbooks use them as teaching text, and scholarship gets checked against them.",
+   "source": "IPVV-PLAIN-ENGLISH-BRIDGE.md"
+  },
+  {
+   "q": "Is this system presented as proven?",
+   "a": "No. It's a metaphysical hypothesis — coherent and textually grounded, but not provable within the system and not science.",
+   "source": "aperture/pratyabhijna-formal.md"
+  },
+  {
+   "q": "What are the five kañcukas?",
+   "a": "Five dimensions of finite constraint: limited agency, knowledge, desire, time, and place/cause. Five aspects of one contraction, not five separate things.",
+   "source": "aperture/pratyabhijna-formal.md"
+  },
+  {
+   "q": "Why does contracted consciousness feel trapped?",
+   "a": "Three malas: the contraction feels incomplete, the subject-object split makes things feel external, and past habits shape the present.",
+   "source": "aperture/pratyabhijna-formal.md"
+  },
+  {
+   "q": "What are the three powers of consciousness?",
+   "a": "Knowledge (making things appear), memory (retaining across time), and exclusion (defining this by ruling out alternatives).",
+   "source": "aperture/pratyabhijna-formal.md"
+  },
+  {
+   "q": "What's the main disagreement with the scientific framework?",
+   "a": "Science leaves the 'manifestness gap' open. Pratyabhijñā says there was never a gap — consciousness is self-luminous by nature.",
+   "source": "aperture/pratyabhijna-formal.md"
+  },
+  {
+   "q": "Is a finite mind a filtered piece of a universal one?",
+   "a": "No — the correction: subject, body, objects, and constraints are all self-determinations of one conscious power, not parts passed through an external filter.",
+   "source": "recognition formulation"
+  },
+  {
+   "q": "What's the difference between limitation and bondage?",
+   "a": "Limitation makes a perspective possible. Bondage is treating that perspective as an independent, complete self. You can be limited without being bound.",
+   "source": "recognition formulation"
+  },
+  {
+   "q": "Does recognition just change a belief?",
+   "a": "No — it changes the whole subject-world relation. Not 'I now believe I am universal consciousness,' but perception, body-use, action, and otherness all reorganize.",
+   "source": "recognition formulation"
+  },
+  {
+   "q": "Do the scholars think the final argument succeeds?",
+   "a": "Ratié reconstructs it precisely but doesn't endorse every step. The leap from 'all is known through consciousness' to 'all reality is one consciousness' stays contested.",
+   "source": "recognition formulation"
+  },
+  {
+   "q": "Can recognition happen instantly?",
+   "a": "Yes — it's a re-identification, like recognizing a stranger as someone you knew. Content barely changes; the identity relation flips.",
+   "source": "recognitionexpounded"
+  },
+  {
+   "q": "What exactly does recognition change?",
+   "a": "The self-boundary is reclassified from absolute to functional: from 'the edge of subjectivity itself' to 'the edge of my finite access, memory, and action.'",
+   "source": "recognitionexpounded"
+  },
+  {
+   "q": "What is vimarśa here?",
+   "a": "Reflexivity with four jobs: mirroring self, mirroring object, synthesizing both into one conscious event, and fitting it into time. Not just 'mind knows itself.'",
+   "source": "recognitionexpounded"
+  },
+  {
+   "q": "Is there a rival explanation of the same experience?",
+   "a": "Yes — a biological reading: the change is decentring of the organism's self-model. Both predict the same effects; only the Śaiva reading claims one universal consciousness.",
+   "source": "recognitionexpounded"
+  },
+  {
+   "q": "What separates a real recognition from a profound experience?",
+   "a": "Four conditions: transformation, reidentification, veridicality (it's true), and stabilization (it holds). Drop truth and it's conversion, not recognition.",
+   "source": "recognitionandsiva"
+  },
+  {
+   "q": "If I feel one with everything, is that Śiva-recognition?",
+   "a": "Only if five axioms hold — one common ground, that ground is one subject, all is internal to it, your field is its mode, it's free. Otherwise it's Śaiva-form self-transformation.",
+   "source": "recognitionandsiva"
+  },
+  {
+   "q": "How can there be one Śiva and many private minds?",
+   "a": "Identity of ground, not of mode or token. Same universal subject articulated differently — your phenomenal field is not mine.",
+   "source": "recognitionandsiva"
+  },
+  {
+   "q": "What does recognition remove?",
+   "a": "Exclusive identification, not embodiment. Body, limits, and private field remain; what goes is the claim that your standpoint is the whole of you.",
+   "source": "recognitionandsiva"
+  },
+  {
+   "q": "Is liberation gaining something new?",
+   "a": "No. It's recognizing an identity that already obtains — like remembering a face. Nothing is added; the Self's manifestation was never interrupted.",
+   "source": "recognition.md"
+  },
+  {
+   "q": "Why isn't recognition an inference?",
+   "a": "An inference builds a new belief. Recognition returns an identity you already have but weren't attending to — the arguments just redirect attention: 'See! See!'",
+   "source": "recognition.md"
+  },
+  {
+   "q": "What are the four components of valid recognition?",
+   "a": "Transformation, reidentification, veridicality (true about the same thing), and stabilization (it doesn't get cancelled by the next impression).",
+   "source": "recognition.md"
+  },
+  {
+   "q": "Can an argument force you to recognize?",
+   "a": "No. Consciousness is absolute freedom (svātantrya), so it can only be compelled if it agrees. Recognition can be shown, never coerced.",
+   "source": "recognition.md"
+  },
+  {
+   "q": "What is dṛḍhavimarśa?",
+   "a": "Firm, un-cancelled reflective awareness — the difference between a passing glimpse and the recognition that counts as liberation.",
+   "source": "recognition.md"
+  },
+  {
+   "q": "Who founded the Recognition school?",
+   "a": "Three thinkers in about a century: Somānanda (c. 900), Utpaladeva (c. 925–975), Abhinavagupta (c. 975–1025), all in Kashmir.",
+   "source": "school-pratyabhijna.md"
+  },
+  {
+   "q": "What is the founding text?",
+   "a": "Utpaladeva's Īśvarapratyabhijñākārikā ('Verses on the Recognition of the Lord') with his own commentary; Abhinavagupta later wrote the massive IPVV commentary.",
+   "source": "school-pratyabhijna.md"
+  },
+  {
+   "q": "Why is this school a 'control corpus'?",
+   "a": "It defines the key terms — prakāśa, vimarśa, svātantrya, recognition — precisely, and the other schools (Trika, Spanda, Krama) inherit those meanings.",
+   "source": "school-pratyabhijna.md"
+  },
+  {
+   "q": "Is it a separate sect?",
+   "a": "No — a philosophical current intersecting the Trika, with no separate ritual or initiation lineage. Its contribution is conceptual, not ritual.",
+   "source": "school-pratyabhijna.md"
+  },
+  {
+   "q": "What does this schema do?",
+   "a": "It maps one formalization vocabulary onto others — IIT, PyPhi, Dharmakīrti, global workspace theory, free energy — so claims built on them stay consistent.",
+   "source": "FORMALISATION_SCHEMA.md"
+  },
+  {
+   "q": "What counts as real here?",
+   "a": "Following Dharmakīrti: a thing is real exactly if it has causal efficacy. Only particulars with causal power exist; universals are conceptual.",
+   "source": "FORMALISATION_SCHEMA.md"
+  },
+  {
+   "q": "How is consciousness modeled here?",
+   "a": "As a map between two classes: physical systems and experience spaces. Each system-state maps to an experience with an intensity and distances.",
+   "source": "FORMALISATION_SCHEMA.md"
+  },
+  {
+   "q": "Does this prove recognition is true?",
+   "a": "No. It's a consistency schema for formal claims — it defines primitives and validation rules, not a proof of any doctrine.",
+   "source": "FORMALISATION_SCHEMA.md"
+  },
+  {
+   "q": "Who is the opening prayer addressed to, and what does he do?",
+   "a": "Śiva — giver of kaivalya (final solitary freedom), praised as a sun that burnt away the darkness on every road of becoming.",
+   "source": "svabodhasiddhi v.1"
+  },
+  {
+   "q": "What does pure awareness cut?",
+   "a": "Śuddhasaṃvid (pure awareness) is the only knife that cuts the heart's knot of 'mine' and 'I'. It swallowed both throbbing and its stillness.",
+   "source": "svabodhasiddhi v.6"
+  },
+  {
+   "q": "How can something that can't be named ever be known?",
+   "a": "It cannot be named. Anyone who reaches it at all does so by svasaṃvedana (honestly feeling oneself) — no other method.",
+   "source": "svabodhasiddhi v.7"
+  },
+  {
+   "q": "What is the actual practice for reaching the goal?",
+   "a": "Stay awake in your own svabodha (self-awakening). From such waking the sage stands whole and undivided — that is the whole way.",
+   "source": "svabodhasiddhi v.9"
+  },
+  {
+   "q": "What happens when you hold your own thoughts still?",
+   "a": "When your own thought is gripped still, śakti (the power) rests in the śaktimat (holder of power). Their oneness is what yogis are after.",
+   "source": "svabodhasiddhi v.12"
+  },
+  {
+   "q": "What has to happen for a person to be called free?",
+   "a": "Know your svarūpa (own form), drop the tattvakañcuka (veil of principles), and scatter the cause of striving. Then you are called free.",
+   "source": "svabodhasiddhi v.13"
+  },
+  {
+   "q": "Is liberation hard to win?",
+   "a": "Not for yogis grounded in themselves whose single mind sweeps aside the traces of grasping and the grasped. For them mokṣalakṣmī (fortune's release) is not hard to gain.",
+   "source": "svabodhasiddhi v.20"
+  },
+  {
+   "q": "What stops you from taking a body again?",
+   "a": "Nairvāsanya (wanting nothing), self-waking, dropping hope and pride, and cutting the road of real-and-unreal. From those, no taking of a body again.",
+   "source": "svabodhasiddhi v.29"
+  },
+  {
+   "q": "Who is praised before the argument even starts?",
+   "a": "The one God — Maheśvara (the great Lord). A single maker, praised in one line.",
+   "source": "isvarasiddhi v.1"
+  },
+  {
+   "q": "Why can't bare matter produce an ordered world?",
+   "a": "Bodies and worlds show a distinct array in arthakriyā (function-yoking). This arrangement, the verse says, never arises from mere matter.",
+   "source": "isvarasiddhi v.6"
+  },
+  {
+   "q": "What conclusion does the verse draw from all this variety?",
+   "a": "Conscious makers are proved, so the Lord's act is proved. To anyone who knows such variety, anīśitā (lordlessness) is impossible.",
+   "source": "isvarasiddhi v.7"
+  },
+  {
+   "q": "What is the objection being raised against the rival school?",
+   "a": "The rival's pradhāna (nature-principle) — three-natured, a torrent of change from the first — leaves the world godless. That is the Sāṅkhya view, called out here.",
+   "source": "isvarasiddhi v.26"
+  },
+  {
+   "q": "What everyday example does the verse use to prove a maker?",
+   "a": "A pot needs a potter. Without the potter, the verse says, not even a pot could come about.",
+   "source": "isvarasiddhi v.28"
+  },
+  {
+   "q": "Why do some people still not accept the proof?",
+   "a": "A thousand blazing reasons prove it, yet it does not succeed for deluded minds. Maheśvara sits on your palm and still runs from the fate-struck — like a true jewel.",
+   "source": "isvarasiddhi v.55"
+  },
+  {
+   "q": "Where does the work say the Lord actually is?",
+   "a": "Inside every breather — the maker and the knower of each. Pratyabhijñā (recognition) of the beyond is still to be effected; the proved Lord stands even in duality, like fire shining at midnight.",
+   "source": "isvarasiddhi v.56"
+  },
+  {
+   "q": "Is there really a difference between living and non-living things?",
+   "a": "The verse says no. Just as there is no difference between the real and the unreal in their own nature, so there is none between jaḍa (utterly inert) and the non-inert.",
+   "source": "ajadapramatrsiddhi v.1"
+  },
+  {
+   "q": "If everything is really undifferentiated, why do some things work and others don't?",
+   "a": "The existent performs arthakriyā (a real function) and the nonexistent does not. Yet in its own self the thing remains without distinction.",
+   "source": "ajadapramatrsiddhi v.6"
+  },
+  {
+   "q": "What does everything finally rest on?",
+   "a": "Function is not what is described in a thing whose existence is already established; the two stand exactly on par. So their grounding rests on saṃvid (consciousness itself).",
+   "source": "ajadapramatrsiddhi v.8"
+  },
+  {
+   "q": "What would go wrong if awareness never grasped anything?",
+   "a": "If consciousness were aparāmarśa (never grasping), it would itself be exactly equal to inert non-being — the same as before. Awareness has to grasp.",
+   "source": "ajadapramatrsiddhi v.9"
+  },
+  {
+   "q": "How does awareness establish other things and itself?",
+   "a": "By saying 'this' it grounds the showing of another thing; by saying 'I' it grounds itself. One awareness, two acts.",
+   "source": "ajadapramatrsiddhi v.11"
+  },
+  {
+   "q": "Is the self one thing or two?",
+   "a": "One self, twofold — measured and unmeasured. Held by breath and the rest it is an atom; as paramātman (supreme self) it is unbroken.",
+   "source": "ajadapramatrsiddhi v.16"
+  },
+  {
+   "q": "What is Māyā, in this text's own words?",
+   "a": "Māyā is his śakti (his own power) alone — nothing else is proved. The world-maker's lordship is made of akhyāti (simply non-showing).",
+   "source": "ajadapramatrsiddhi v.24"
+  },
+  {
+   "q": "What does recognition actually claim about the world?",
+   "a": "Even within bheda (real difference) the shining holds good. So pratyabhijñā (recognition) says: this world is made of that one nondual.",
+   "source": "ajadapramatrsiddhi v.27"
+  },
+  {
+   "q": "Who is praised, and what kind of relation is his?",
+   "a": "Śiva, praised by his own will. His saṃbandha (means of relation) to things is difference-and-non-difference at once, and by it all things are proved — his work is world-traffic.",
+   "source": "sambandhasiddhi v.1"
+  },
+  {
+   "q": "Why isn't mere continuity enough to count as a relation?",
+   "a": "Continuity misses relation entirely — if it counted, it would hold between two iron bars. So relation means fusion of the many's forms; that alone is aikātmya (one-selfhood).",
+   "source": "sambandhasiddhi v.5"
+  },
+  {
+   "q": "What exactly is an error, according to this verse?",
+   "a": "Not something that merely resembles a shining. It is following after a shining — ābhāsa (a shining astray) is exactly what error is.",
+   "source": "sambandhasiddhi v.8"
+  },
+  {
+   "q": "How do many separate things come to be seen as one?",
+   "a": "By resting in the reflection of that one, through the force of one-word superimposition. The many reach unity, the way 'pot' and 'cloth' are said together.",
+   "source": "sambandhasiddhi v.13"
+  },
+  {
+   "q": "How can two things be joined without either losing itself?",
+   "a": "The ṣaṣṭhī (genitive case) relation settles in the qualifier: reaching the qualified-oneness, it does not abandon its own form.",
+   "source": "sambandhasiddhi v.18"
+  },
+  {
+   "q": "What actually holds an ordinary person's world together?",
+   "a": "Even those called erring are, moment by moment, grounded in svasaṃvitti (endless self-awareness) — reflection that never runs out.",
+   "source": "sambandhasiddhi v.22"
+  },
+  {
+   "q": "What has this whole teaching been for?",
+   "a": "Self-awareness-proved: a saṃbandha (means of relation) unrefuted and useful — the full apparatus for pratyabhijñā (recognition).",
+   "source": "sambandhasiddhi v.23"
+  },
+  {
+   "q": "Who or what is the cause of the universe here?",
+   "a": "Citi (free consciousness) is the universe's cause, so called. The knower is freedom-formed, and she bestows powers too.",
+   "source": "bodhavilasa v.2"
+  },
+  {
+   "q": "Where does mind come from?",
+   "a": "From citi-saṅkoca (consciousness tightening). Mind is a knower too — even the great Lord — and the world-form sits there like a banyan seed.",
+   "source": "bodhavilasa v.5"
+  },
+  {
+   "q": "Is mind the same thing as pure knowing?",
+   "a": "Yes. Caitanya (pure knowing) is the self's form — stainless, utterly stainless. That same knowing, bound by niyama (rule), is called mind.",
+   "source": "bodhavilasa v.6"
+  },
+  {
+   "q": "Who is the great Lord described in this verse?",
+   "a": "One, everywhere, pure, sambodhātma (awareness-selfed) — Maheśvara. From mis-knowing that I-ness, mukti (freedom) sits in the palm.",
+   "source": "bodhavilasa v.10"
+  },
+  {
+   "q": "Are the stages of a real spiritual path fixed?",
+   "a": "They are kṛtrima (stages made up): as an actor assumes roles by his own will, so the bliss-will-spread self assumes vast views-and-powers.",
+   "source": "bodhavilasa v.12"
+  },
+  {
+   "q": "What makes the self a wanderer instead of a power-lord?",
+   "a": "Vikāsa (expansion) sings him as śaktīśa (power-Lord). Saṅkoca (contraction) makes him contracted — called saṃsārī (the wandering one), like the great god doing the five acts, deluded by power.",
+   "source": "bodhavilasa v.17"
+  },
+  {
+   "q": "What does constant practice of true reflection produce?",
+   "a": "Whoever always practices by sadvimarśa (true reflection) is freed from all bonds and becomes full of nityānanda (eternal bliss).",
+   "source": "bodhavilasa v.21"
+  },
+  {
+   "q": "What is this teaching called, and what does it do?",
+   "a": "Jñānāmṛta (nectar of knowledge), unsurpassed. Whoever drinks it is quenched — his fever of saṃsāra-poison subsides.",
+   "source": "bodhavilasa v.41"
+  },
+  {
+   "q": "Is God mere light, or does He actually know?",
+   "a": "Prakāśa (light) is vimarśa-svabhāva (awareness-natured). Creating, awareness wears the world's shape; sustaining, it shines the world forth; withdrawing, it takes all back — everywhere a full and complete I.",
+   "source": "parapravesika par-p02"
+  },
+  {
+   "q": "Why does one awareness get so many names in scripture?",
+   "a": "Each name is earned by its work: cit (consciousness) as the Self's chief form, svātantrya (freedom) binding and loosing the this, kartṛtva (doership) raising the world, hṛdaya (heart) where the world rests.",
+   "source": "parapravesika par-p03"
+  },
+  {
+   "q": "How can the world be 'made' by God if it isn't separate from Him?",
+   "a": "Made means shining-by-Him. The world is nothing apart from its maker — without His light it could not even be noticed. Māyā's own freedom puts difference on display while nothing differs.",
+   "source": "parapravesika par-p04"
+  },
+  {
+   "q": "Does the Lord need to be proved?",
+   "a": "No. Proofs cannot grip Him, proved before all proof. Svaprakāśatva (self-shining) is proved for everyone by feeling oneself — the questioner's own shape is the proof.",
+   "source": "parapravesika par-p05"
+  },
+  {
+   "q": "What are the thirty-six levels of reality?",
+   "a": "The whole display from Śiva down to the five gross elements — thirty-six tattva (levels of reality): Śiva, power, eternal Śiva, the Lord, pure knowledge, illusion, art, knowing, passion, time, necessity, person, nature, intellect, ego, mind, the senses, the elements.",
+   "source": "parapravesika par-p06"
+  },
+  {
+   "q": "How does the Lord become a bound, wandering person?",
+   "a": "By pārameśvarī śakti (the Lady's power of illusion) — only another name for freedom — He veils His own form and puts on the tight mask of knowerhood, then takes his deeds for chains.",
+   "source": "parapravesika par-p07"
+  },
+  {
+   "q": "What keeps an all-knowing being from knowing everything?",
+   "a": "Five coverings: kañcuka (the sheath) of art, knowing, passion, time and necessity — each makes him do or know only a little. They veil His own form.",
+   "source": "parapravesika par-p08"
+  },
+  {
+   "q": "Where is the whole world stored?",
+   "a": "Inside hṛdaya-bīja (the heart-seed), as the whole banyan stands in its seed. Whoever truly knows that heart-seed is initiated in truth, and is free while living.",
+   "source": "parapravesika par-p09"
+  },
+  {
+   "q": "Can recognition actually be proved, or is it just believed?",
+   "a": "Not by formal logic — that cannot force a universal consciousness. The IPVV gives a five-step argument from the structure of experience; the last step (all supports are one Lord) is argued but not forced, it's the tradition's commitment.",
+   "source": "ESSAY-ULTIMATE-PROOF-OF-RECOGNITION.md"
+  },
+  {
+   "q": "Why does the proof use a crystal as its example?",
+   "a": "A crystal reflects light but isn't aware of it, so it's inert. Conscious light differs because it feels itself while showing things. Without that felt self-presence, light would be just a mirror — so the felt part is required, not added.",
+   "source": "ESSAY-ULTIMATE-PROOF-OF-RECOGNITION.md"
+  },
+  {
+   "q": "How does memory prove there's only one knower?",
+   "a": "Memory doesn't bring anything new; it re-grasps what was already grasped. That needs the same knower continuing across time — so without one knower there's no memory, just two disconnected experiences.",
+   "source": "ESSAY-ULTIMATE-PROOF-OF-RECOGNITION.md"
+  },
+  {
+   "q": "What's the weak spot in the proof?",
+   "a": "Step 5. Steps 1–4 only prove each field needs its own order-less knower. That all those supports are numerically one Lord is argued, not forced — the essay names it plainly as the wager.",
+   "source": "ESSAY-ULTIMATE-PROOF-OF-RECOGNITION.md"
+  },
+  {
+   "q": "If recognition adds nothing, why does it feel like something?",
+   "a": "The content stays the same; your position in it flips from 'a thing among things' to 'the subject.' That re-positioning is felt as joy (camatkāra: a savouring). The feeling is the register of the flip, not new information.",
+   "source": "ESSAY-WHY-RECOGNITION-IS-FELT.md"
+  },
+  {
+   "q": "Why call it 're'-cognition if nothing is new?",
+   "a": "Because the self was never absent ('I was never not'). Nothing could be added to an eternal self, so recognition can only be a return — knowing again what was always there but mis-positioned.",
+   "source": "ESSAY-WHY-RECOGNITION-IS-FELT.md"
+  },
+  {
+   "q": "Does recognition change what you see?",
+   "a": "No. The field content is identical; only the self-positioning flips (from object to subject). The felt joy isn't extra content either — it's the same field with a different valence.",
+   "source": "ESSAY-WHY-RECOGNITION-IS-FELT.md"
+  },
+  {
+   "q": "What does the lover image explain?",
+   "a": "The lover was always near; unrecognized, he can't be enjoyed. Recognition doesn't bring him — it turns near-but-unrecognized into near-and-enjoyed, and that turn is exactly the felt part.",
+   "source": "ESSAY-WHY-RECOGNITION-IS-FELT.md"
+  },
+  {
+   "q": "Why do these essays say effort-based yoga is useless?",
+   "a": "Because bondage is a misreading, not a missing ingredient. You can't add the self (it was never absent) or erase a misreading by stacking effort — only recognition (pratyabhijñā: seeing what was always true) removes it.",
+   "source": "ESSAY-SOTERIOLOGY-OF-RECOGNITION.md"
+  },
+  {
+   "q": "What is a jīvanmukta?",
+   "a": "Someone liberated while still living in the body — still acting in the world, but the false identification is gone. Liberation is a removal of a misreading, not a new state, so it needs no destroyed body.",
+   "source": "ESSAY-SOTERIOLOGY-OF-RECOGNITION.md"
+  },
+  {
+   "q": "Why need a teacher if the truth is already there?",
+   "a": "The guru doesn't hand over new content; he points, and the pointing triggers the recognition. Book study without the living lineage is content without the pointing — and recognition is the turning, not the information.",
+   "source": "ESSAY-SOTERIOLOGY-OF-RECOGNITION.md"
+  },
+  {
+   "q": "What exactly binds a person?",
+   "a": "The bound one builds a private, per-moment world but doesn't know his own power — he forgets it's built with the Lord's materials. That ignorance, expressed as construction-action, is the bond.",
+   "source": "ESSAY-SOTERIOLOGY-OF-RECOGNITION.md"
+  },
+  {
+   "q": "What can formal logic actually prove about recognition?",
+   "a": "Two things: the σ-flip (recognition changes self-positioning, not content) and the exclusion (subject and world carved by one operation). It cannot prove one universal consciousness — that step needs premises beyond logic.",
+   "source": "ESSAY-RECOGNITION-AND-FORMAL-PROOFS.md"
+  },
+  {
+   "q": "Do the formal proofs contradict the IPVV?",
+   "a": "No, they're complementary. The formal work proves structure (the σ-flip, the exclusion) and marks the limit (logic can't reach the universal); the IPVV confirms that structure and adds the argument plus the felt register.",
+   "source": "ESSAY-RECOGNITION-AND-FORMAL-PROOFS.md"
+  },
+  {
+   "q": "So what is missing from the formal proofs?",
+   "a": "Three things: the argument for the order-less support, the proof that the 'I' isn't a construction, and the felt face of the σ-flip. Formal work says what's structurally true; the IPVV says why it holds.",
+   "source": "ESSAY-RECOGNITION-AND-FORMAL-PROOFS.md"
+  },
+  {
+   "q": "How is this different from Nisargadatta's 'You are that'?",
+   "a": "They agree on the core: the felt 'I am' is primary, nothing is added, the self was never absent, drop the false identification. They split on the ground — Nisargadatta only points; the IPVV posits and argues the one Lord.",
+   "source": "ESSAY-RECOGNITION-AND-NISARGADATTA.md"
+  },
+  {
+   "q": "Where exactly do the two disagree?",
+   "a": "Nisargadatta refuses to posit any ground behind the felt 'I am' ('not this, not that'). The IPVV argues for a specific ground: the order-less support, the Lord. Same starting felt, different stopping point.",
+   "source": "ESSAY-RECOGNITION-AND-NISARGADATTA.md"
+  },
+  {
+   "q": "Does Nisargadatta accept the 'one universal self' step?",
+   "a": "No. He agrees on the felt, the return, and the removal of false identification, then stops before the posited Lord — exactly where the rivals decline the universalization.",
+   "source": "ESSAY-RECOGNITION-AND-NISARGADATTA.md"
+  },
+  {
+   "q": "Why compare a 20th-century Bombay sage to a 10th-century text?",
+   "a": "Nisargadatta gives the felt side its clearest modern voice; the IPVV gives that felt side a systematic argument. One says 'see,' the other shows why the seeing is possible.",
+   "source": "ESSAY-RECOGNITION-AND-NISARGADATTA.md"
+  },
+  {
+   "q": "Does feeling prove there's one universal consciousness?",
+   "a": "Not by itself. The argument proves each ordered, memory-bearing experience needs an order-less knower. That all those knowers are numerically one is argued further but ultimately committed to, not forced.",
+   "source": "ESSAY-FELT-TO-GROUND.md"
+  },
+  {
+   "q": "Why does ordered experience need an 'order-less' support?",
+   "a": "Awareness flashes through the world's order but isn't itself ordered — you can't have sequences without something they appear in. That something must stand outside the order it shows.",
+   "source": "ESSAY-FELT-TO-GROUND.md"
+  },
+  {
+   "q": "Is this just an assertion of 'one light'?",
+   "a": "No. The essay says the support is derived: order is given, order requires an order-less support, and memory confirms that support is a knower. The gap to 'one support for all fields' is narrowed, not closed.",
+   "source": "ESSAY-FELT-TO-GROUND.md"
+  },
+  {
+   "q": "What does memory add to the argument?",
+   "a": "Memory re-grasps the prior experience with the same knower — 'that alone, not another.' So the support isn't merely order-less; it's the one self-conscious knower holding the field together across time.",
+   "source": "ESSAY-FELT-TO-GROUND.md"
+  },
+  {
+   "q": "Isn't the 'I' just a self-model your brain builds?",
+   "a": "The IPVV says no: construction only joins, multiplies, or splits things — and the 'I'-grasp does none of those. It's the self-presence every construction presupposes, not one more construction on top.",
+   "source": "ESSAY-NONCONSTRUCTED-I.md"
+  },
+  {
+   "q": "What are the three kinds of construction?",
+   "a": "Joining distinct things (molasses + curd + pepper), turning one into many, and splitting off a doubted other. All are this-and-that operations. The 'I'-grasp is none of them, so it can't be a construction.",
+   "source": "ESSAY-NONCONSTRUCTED-I.md"
+  },
+  {
+   "q": "Can a self-model explain the feeling of 'mine'?",
+   "a": "A model explains what you believe about yourself, not the awareness that the model is yours. Representation is construction; the 'I'-grasp is what isn't constructed — so the model can't be its root.",
+   "source": "ESSAY-NONCONSTRUCTED-I.md"
+  },
+  {
+   "q": "What does this prove for recognition?",
+   "a": "If the 'I' were built, recognition could only build a new one. Since it isn't built, recognition re-positions a self-grasp that was always there. It defeats the self-model but doesn't prove all 'I's are one — that's separate.",
+   "source": "ESSAY-NONCONSTRUCTED-I.md"
+  },
+  {
+   "q": "Why does the teaching about the world come last?",
+   "a": "Reason establishes the self and action but can't grasp the whole world. So the āgama (revealed teaching) follows, supplying the categories reason can't reach — sequential partners, not rivals.",
+   "source": "ESSAY-ONTOLOGY-SOTERIOLOGY.md"
+  },
+  {
+   "q": "What are the kañcukas?",
+   "a": "Five limiting 'armours' over the pure self: fixity, time, attachment, limited knowledge, limited agency. They're real — the world isn't an illusion — but they're coverings, not the self's essence.",
+   "source": "ESSAY-ONTOLOGY-SOTERIOLOGY.md"
+  },
+  {
+   "q": "What are the three stains (mala)?",
+   "a": "Finitude (the small 'I'), objectivity (seeing things as other than self), and action (binding by deeds). Bondage is the misreading — not knowing the self as the Lord — not the mere fact of being finite.",
+   "source": "ESSAY-ONTOLOGY-SOTERIOLOGY.md"
+  },
+  {
+   "q": "How does the bound person's world-building differ from the Lord's?",
+   "a": "The bound one's creation is private, per-moment, vanishing with him, and he doesn't know his own power. The Lord's is common, clear, never constructed, always whole.",
+   "source": "ESSAY-ONTOLOGY-SOTERIOLOGY.md"
+  },
+  {
+   "q": "Can something unconscious actually cause anything?",
+   "a": "The IPVV argues no: a dead seed can't give the sprout being — the sprout is either already there (nothing gained) or not there (no nature to gain existence). Real causation is the conscious knower's agency.",
+   "source": "ESSAY-EPISTEMOLOGY-OF-ACTION.md"
+  },
+  {
+   "q": "How can a timeless God make a sequenced world?",
+   "a": "Like a mirror: one undivided mirror shows countless reflections in order without being torn apart. The one is undivided, so it can host sequence without being affected by it.",
+   "source": "ESSAY-EPISTEMOLOGY-OF-ACTION.md"
+  },
+  {
+   "q": "What does 'the will is cause, agent, and action' mean?",
+   "a": "One will-to-do ('I will make this') binds agent and object together — not external contact. Cause, doer, and deed are all that single will, by which the Lord becomes the world.",
+   "source": "ESSAY-EPISTEMOLOGY-OF-ACTION.md"
+  },
+  {
+   "q": "How do we infer the same things if each mind is private?",
+   "a": "Because the Lord creates the appearances once for all knowers — the fire-appearance isn't split between separate streams. So smoke-implying-fire holds across people.",
+   "source": "ESSAY-EPISTEMOLOGY-OF-ACTION.md"
+  },
+  {
+   "q": "What is 'exclusion' and why is it one of the three powers?",
+   "a": "Exclusion (apohana: defining by what it is not) — to say 'this is a pot' is the same act as excluding 'not a pot.' It's the positive power that makes concepts and self-knowledge possible.",
+   "source": "ESSAY-EXCLUSION-INDIVIDUATION.md"
+  },
+  {
+   "q": "How do subject and world get created together?",
+   "a": "One exclusion operation carves both poles at once: your subject is a set of 'this and not that' boundaries, and the world's objects are determined by those same exclusions. Two poles, one act.",
+   "source": "ESSAY-EXCLUSION-INDIVIDUATION.md"
+  },
+  {
+   "q": "Is being finite the same as being trapped?",
+   "a": "No. The exclusions are the real, necessary architecture of any perspective. Bondage is identifying with them — believing your finite standpoint is all you are. A liberated person keeps the senses and loses that conviction.",
+   "source": "ESSAY-EXCLUSION-INDIVIDUATION.md"
+  },
+  {
+   "q": "If everything is one self, how are other people real?",
+   "a": "Two moves: the inference of other minds fails (behavior alone doesn't reveal whose intent it is), and the other is directly perceived by the yogin as one's own self-luminous awareness, not concluded from signs.",
+   "source": "ESSAY-OTHER-INTERSUBJECTIVITY.md"
+  },
+  {
+   "q": "Why can't you infer someone else's mind from their speech?",
+   "a": "The utterance doesn't label itself 'Maitra's intent' — you'd need a further distinction that isn't in the bare sound. Only the aimed action is a wish's effect, and a mere utterance shows no aim.",
+   "source": "ESSAY-OTHER-INTERSUBJECTIVITY.md"
+  },
+  {
+   "q": "What is yogipratyakṣa?",
+   "a": "The yogin's direct perception (not inference) of another's mind, reached by holding and meditating on non-difference. What shines there is the other's own self-luminous awareness, seen as one's own.",
+   "source": "ESSAY-OTHER-INTERSUBJECTIVITY.md"
+  },
+  {
+   "q": "What's the unsolved problem in this account?",
+   "a": "The decomposition problem: if all is one self, why are fields opaque — why can't I feel your pain without discipline? The IPVV names māyā as the cause but describes, not explains, the privacy.",
+   "source": "ESSAY-OTHER-INTERSUBJECTIVITY.md"
+  },
+  {
+   "q": "What's the difference between Advaita Vedanta and the recognition school?",
+   "a": "Both say reality is one consciousness. Advaita says the world is an illusion caused by an unexplainable ignorance; the recognition school says the world is real — the self's own reflection — and only our reading of it as separate is wrong.",
+   "source": "ESSAY-ADVAITA-IPVV.md"
+  },
+  {
+   "q": "Why does the IPVV say Advaita's 'unexplainable ignorance' is incoherent?",
+   "a": "Because nobody owns it. One Brahman can't have it — there's nothing else for it to be absent from — and the souls can't have it, since the ignorance is supposed to create them. 'Unexplainable' just refuses to answer.",
+   "source": "ESSAY-ADVAITA-IPVV.md"
+  },
+  {
+   "q": "What is bondage in the recognition school?",
+   "a": "Misreading. The differences between things are real: they're the self's own reflection. Bondage is wrongly reading those differences as external, independent objects. Liberation removes the misreading, not the world.",
+   "source": "ESSAY-ADVAITA-IPVV.md"
+  },
+  {
+   "q": "How do the two schools differ on what liberation is?",
+   "a": "Advaita liberates by knowledge that erases the illusion, leaving the world behind. The recognition school liberates by recognition: you stay in the world, free, seeing it as yourself — the jīvanmukta, one liberated while still living.",
+   "source": "ESSAY-ADVAITA-IPVV.md"
+  },
+  {
+   "q": "How do the Buddhist mind-only school and the recognition school differ?",
+   "a": "They start from the same place — only appearances are given to us. The Buddhist reads them as unreal, empty, and momentary; the Śaiva reads them as the real self-expression of consciousness. Same data, opposite verdict.",
+   "source": "ESSAY-BUDDHIST-IPVV.md"
+  },
+  {
+   "q": "How does the IPVV flip the Buddhist dream argument?",
+   "a": "It turns the example around. The Buddhist says dreams show the world is unreal. Abhinavagupta agrees dreams lack real causes, then says that proves consciousness creates whole object-worlds by will alone, with no material cause.",
+   "source": "ESSAY-BUDDHIST-IPVV.md"
+  },
+  {
+   "q": "Is the IPVV's 'co-opting' of Buddhist tools honest?",
+   "a": "Partly. It validly blocks the Buddhist's negative conclusion: dream, inference, and self-awareness don't prove unreality. But the leap to 'one universal creator' isn't entailed — the essay flags that as smuggled.",
+   "source": "ESSAY-BUDDHIST-IPVV.md"
+  },
+  {
+   "q": "What is the Krama school?",
+   "a": "A Kashmir Śaivism school built on sequence (krama): consciousness as the ordered flow of cognition. Its twelve Kālīs are the powers of sensing, thinking, and remembering dressed as goddesses — not separate deities.",
+   "source": "ESSAY-KRAMA-IPVV.md"
+  },
+  {
+   "q": "How can the source of time itself not be temporal?",
+   "a": "Both schools say the ground of sequence isn't inside the sequence — like one who knows an order without being trapped in it. You can't have ordered experience without an order-less supporter behind it.",
+   "source": "ESSAY-KRAMA-IPVV.md"
+  },
+  {
+   "q": "Why do both schools focus on the Present moment?",
+   "a": "The past has stopped, the future hasn't arrived — only the Present is actually real. Both make it the practice spot: the gap where the order-less ground meets time.",
+   "source": "ESSAY-KRAMA-IPVV.md"
+  },
+  {
+   "q": "Are the Kālīs separate goddesses?",
+   "a": "No. They're the powers of the cognition-process dressed as goddesses — senses, thoughts, moments of knowing. The IPVV calls the same things powers (knowing, remembering, excluding). Two vocabularies, one process.",
+   "source": "ESSAY-KRAMA-IPVV.md"
+  },
+  {
+   "q": "What does 'consciousness is the Self' mean?",
+   "a": "The Śivasūtra's first line: you're not a body that happens to be conscious — you are the awareness everything appears in. Not some distant cosmic self; the self-experiencing awareness you already are.",
+   "source": "ESSAY-SIVASUTRA-VB-IPVV.md"
+  },
+  {
+   "q": "What is the 'Fourth' (turya)?",
+   "a": "Not a fourth state after waking, dreaming, and deep sleep. It's the witness present through all three — what stays constant while the states change. The IPVV's order-less support is the argued version.",
+   "source": "ESSAY-SIVASUTRA-VB-IPVV.md"
+  },
+  {
+   "q": "What are the Vijñānabhairava's 112 ways?",
+   "a": "112 short meditation techniques — using breath, senses, or states — that turn attention from the thing noticed to the awareness noticing it. Each repositions attention; none adds new content.",
+   "source": "ESSAY-SIVASUTRA-VB-IPVV.md"
+  },
+  {
+   "q": "How do the Śivasūtra, Vijñānabhairava, and IPVV relate?",
+   "a": "One teaching at three levels: the Śivasūtra points ('consciousness is the Self'), the Vijñānabhairava gives 112 practices, the IPVV argues the case against rival schools. Statement, practice, proof.",
+   "source": "ESSAY-SIVASUTRA-VB-IPVV.md"
+  },
+  {
+   "q": "What does 'Spanda' mean?",
+   "a": "Vibration. The Spanda school holds consciousness isn't a still lamp but a pulse — an active throb that is its very being, and the source of both the world's appearing and its return.",
+   "source": "ESSAY-SPANDA-IPVV.md"
+  },
+  {
+   "q": "How are the Spanda school and the recognition school related?",
+   "a": "Two faces of one claim. Spanda is the dynamic face (consciousness as pulse); the recognition is the reflexive face (consciousness as self-grasp). The IPVV's 'throbbing' (sphurattā) is explicitly named as both.",
+   "source": "ESSAY-SPANDA-IPVV.md"
+  },
+  {
+   "q": "Why would consciousness be like a crystal without self-awareness?",
+   "a": "A crystal shows blue but doesn't know it's showing. Light that didn't know its own shining would be equally inert. Being present to itself in the act of showing is what makes it consciousness.",
+   "source": "ESSAY-SPANDA-IPVV.md"
+  },
+  {
+   "q": "What's the difference in practice between the two schools?",
+   "a": "Spanda asks you to cultivate the pulse and rest in the Present; the IPVV says recognition alone liberates, effort-yogas useless. The essay: the practice prepares the recognition.",
+   "source": "ESSAY-SPANDA-IPVV.md"
+  },
+  {
+   "q": "Abhinavagupta wrote two big books — how do they differ?",
+   "a": "The Tantrāloka states the whole system across 37 chapters — ritual, cosmology, aesthetics — often asserting key steps. The IPVV argues every step as objection-and-reply against rivals. One states; one proves.",
+   "source": "ESSAY-TWO-ABHINAVAGUPTAS-IPVV-TANTRALOKA.md"
+  },
+  {
+   "q": "Which of Abhinavagupta's books handles the six hard problems better?",
+   "a": "The IPVV, on four of six (universality, memory and identity, the levels of reality, what recognition changes), and it sharpens a fifth (karma vs. freedom). It's built to argue, so it supplies proofs the Tantrāloka only asserts.",
+   "source": "ESSAY-TWO-ABHINAVAGUPTAS-IPVV-TANTRALOKA.md"
+  },
+  {
+   "q": "Where do both of Abhinavagupta's texts hit a wall?",
+   "a": "The leap from 'my experience needs an order-less ground' to 'all grounds are one consciousness.' Neither book proves the 'all one' part — both just commit to it. The essay calls this the shared wall.",
+   "source": "ESSAY-TWO-ABHINAVAGUPTAS-IPVV-TANTRALOKA.md"
+  },
+  {
+   "q": "What do the two Abhinavagupta texts agree on?",
+   "a": "Five load-bearing claims: the felt is the essence of consciousness; the powers are the self unfolding; the three impurities are the bondage; recognition removes rather than gains; and the world's difference is real, not ignorance.",
+   "source": "ESSAY-TWO-ABHINAVAGUPTAS-IPVV-TANTRALOKA.md"
+  },
+  {
+   "q": "What did Abhinavagupta add that Utpaladeva didn't?",
+   "a": "Four big regions Utpaladeva's text leaves bare: a theory of action (causality = a conscious knower's agency), the 'throbbing' (sphurattā), language as the self-grasp (parā-vāk), and Lordship = self-awareness — plus the categories and the path.",
+   "source": "ESSAY-ABHINAVA-EXTENSIONS.md"
+  },
+  {
+   "q": "What does 'causality is the conscious knower's agency' mean?",
+   "a": "Cause-and-effect is really agent-and-object of action. An inert thing can't cause anything — a seed doesn't hand being to a sprout. What shapes the effect is a knowing will.",
+   "source": "ESSAY-ABHINAVA-EXTENSIONS.md"
+  },
+  {
+   "q": "How can a timeless Lord make a world full of sequences?",
+   "a": "Like a mirror: one face shows countless reflections without stopping being one. Being undivided is exactly what lets the timeless show sequences at all.",
+   "source": "ESSAY-ABHINAVA-EXTENSIONS.md"
+  },
+  {
+   "q": "What is the Lord, in the IPVV?",
+   "a": "Not a being who owns extra powers. Great-Lordship is the self-awareness itself — what knowing, remembering, and excluding reduce to. The Lord is the self-aware light those powers express.",
+   "source": "ESSAY-ABHINAVA-EXTENSIONS.md"
+  },
+  {
+   "q": "Who was the real innovator, Utpaladeva or Abhinavagupta?",
+   "a": "Utpaladeva. Modern scholarship shows he's the real innovator — even the felt 'wonder' (camatkāra) is his concept. Abhinavagupta's contribution was different: he systematized the seed into a system.",
+   "source": "ESSAY-ABHINAVA-VS-UTPALADEVA.md"
+  },
+  {
+   "q": "What exactly did Abhinavagupta add to Utpaladeva's text?",
+   "a": "Three identifications — self-awareness = the supreme Word, = the throbbing, = the Lordship — plus a full theory of action, the world's categories, and the liberation path. Utpaladeva states; Abhinava builds.",
+   "source": "ESSAY-ABHINAVA-VS-UTPALADEVA.md"
+  },
+  {
+   "q": "Why does identifying self-awareness with the Word matter?",
+   "a": "Language stops being a tool consciousness uses and becomes the shape of self-grasp itself. So the word-joined 'I' isn't an added construction — it's the self's own articulation.",
+   "source": "ESSAY-ABHINAVA-VS-UTPALADEVA.md"
+  },
+  {
+   "q": "Is the Lord someone who has powers?",
+   "a": "No. The powers are self-awareness in operation; Lordship is that self-awareness as such. The Lord isn't an owner of powers — he is the self-awareness they express.",
+   "source": "ESSAY-ABHINAVA-VS-UTPALADEVA.md"
+  },
+  {
+   "q": "What is a 'crux' in these comparison essays?",
+   "a": "A hard problem both of Abhinavagupta's books must face — like how 'appears to me' becomes 'the universal perceiver,' or whether memory proves an eternal self. Six of them organize the comparison.",
+   "source": "ESSAY-IPVV-VS-TANTRALOKA.md"
+  },
+  {
+   "q": "How does the IPVV answer the objection that memory needs no eternal self?",
+   "a": "Mechanical causes can explain a memory's content, but not the 'I' serving it: constructions join or split parts, and the plain 'I'-grasp does neither. It's the self-presence all building rests on.",
+   "source": "ESSAY-IPVV-VS-TANTRALOKA.md"
+  },
+  {
+   "q": "What are the IPVV's three levels of truth?",
+   "a": "Real (satya), conventionally-true (saṃvṛtisatya) — real but not substantial, like curds and milk from one cow — and untrue (asatya). The middle level replaces the Tantrāloka's cruder real/illusory split.",
+   "source": "ESSAY-IPVV-VS-TANTRALOKA.md"
+  },
+  {
+   "q": "Why does it matter that both texts fail at the same point?",
+   "a": "If only one book failed, that'd be a gap. Both hitting the identical wall — the leap to one universal consciousness — shows it's a chosen commitment, not a botched proof.",
+   "source": "ESSAY-IPVV-VS-TANTRALOKA.md"
+  },
+  {
+   "q": "How are aesthetics and the recognition philosophy connected?",
+   "a": "Same doctrine, two jobs. In the IPVV the felt (vimarśa) is consciousness's essence; in the Abhinavabhāratī the felt (rasa) is the substance of aesthetic delight. The essay: both are the same 'wonder' (camatkāra).",
+   "source": "ESSAY-RASA-IPVV-ABHINAVABHARATI.md"
+  },
+  {
+   "q": "What is rasa, in plain terms?",
+   "a": "The tasted flavor of a play. The spectator doesn't just feel the character's fear as his own — the emotion is universalized, and he savors fear-as-such. That tasting is delight.",
+   "source": "ESSAY-RASA-IPVV-ABHINAVABHARATI.md"
+  },
+  {
+   "q": "How is watching a drama like achieving recognition?",
+   "a": "Both reposition without changing content. Rasa shifts the emotion from 'mine' to 'universal'; recognition shifts the self from 'a thing among things' to 'the primary thing' — and both changes are felt as joy.",
+   "source": "ESSAY-RASA-IPVV-ABHINAVABHARATI.md"
+  },
+  {
+   "q": "Is rasa a dry run for liberation?",
+   "a": "The essay says yes: rasa is a temporary de-identification — tasting delight without grabbing the particular — and liberation is that same shift made permanent.",
+   "source": "ESSAY-RASA-IPVV-ABHINAVABHARATI.md"
+  },
+  {
+   "q": "What is recognition, according to the IPVV?",
+   "a": "The self, already there, recognizing itself as the Lord — the removal of a false self-positioning, nothing added. It changes where you stand, not what you know.",
+   "source": "ESSAY-C-RAZOR-IPVV-AUTHORITY.md"
+  },
+  {
+   "q": "Why does the essay say consciousness would be like a crystal without self-awareness?",
+   "a": "A crystal reflects blue without knowing it. Light that showed the world but didn't know its own showing would be equally dead. Knowing-itself-in-the-acting is the essence of consciousness.",
+   "source": "ESSAY-C-RAZOR-IPVV-AUTHORITY.md"
+  },
+  {
+   "q": "Is the felt 'I' just a mental construction?",
+   "a": "The IPVV argues no: constructions join distinct things, multiply a one, or split off a doubted other — and the plain 'I'-grasp does none of those. It's the self-presence constructions rest on.",
+   "source": "ESSAY-C-RAZOR-IPVV-AUTHORITY.md"
+  },
+  {
+   "q": "What does the essay admit the IPVV can't prove?",
+   "a": "That all order-less supports are ONE. The argument shows each ordered experience needs a ground — not that every field's ground is the same one. That final step is the tradition's wager.",
+   "source": "ESSAY-C-RAZOR-IPVV-AUTHORITY.md"
+  }
+ ]
+}

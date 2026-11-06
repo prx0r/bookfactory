@@ -1,0 +1,62 @@
+{
+ "craft_notes": "Sthāyin: the charge (five refusals). Abhinavagupta frame: karuṇa-sthāyin carried by anubhāva-catalogue (the refusals listed ARE the feeling showing); śruti-turn rendered straight — sincere-vs-ironic held open per UNC (tipping either way kills a reading; vighna rule: importing irony the Sanskrit only suggests would wall the sahṛdaya from one whole rasa). Rows: 1 (āha placed late — ‘declares’ carries the turn), 7 (uttamāṅga kept after first verb, mirroring brūṣe nottamāṅga), 9 (na-anaphora → ‘not’-anaphora; doctrine-catalogue answers with ‘without’-anaphora — complaint-music converted into doctrine-music, which IS the verse’s move), 10 (śruti left standing, no gloss). Close: ‘and the rest’ — the ādi-catalogue refusing to close IS the doctrine. Rejected: ironic tip — killed by UNC; trimming refusals — killed: five ARE the charge; closing on ‘You’ — killed: weak landing, Sanskrit lands on śrutiḥ/āha. Read aloud: YOU-speak-NOT … YOU-look-NOT … YOU-hear-NOT — yet SCRIP-ture TRU-ly de-CLARES.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "pan-p03",
+  "song": "pan-p03",
+  "verse": 3,
+  "lines": [
+   "You speak not, O Fair-limbed. You look not on wretched me.",
+   "You hear not my oft-made plea, nor come into my mind.",
+   "Fallen into the pit mid-ocean of becoming, mostly unsupported —",
+   "yet scripture truly declares You without speech, without sight, without hearing, without feet, and the rest."
+  ],
+  "sanskrit_cite": "brūṣe nottamāṅga paśyasi na māmetādṛśaṃ duḥkhitaṃ vijñaptiṃ bahudhā kṛtāṃ na śṛṇuṣe nāyāsi manmānase | saṃsārārṇavagartamadhyapatitaṃ prāyeṇa nālambase vākcakṣuḥśravaṇāṅghriṇādirahitaṃ tvāmāha satyaṃ śrutiḥ",
+  "l0_ids": [
+   "pan-p03-p000",
+   "pan-p03-p001",
+   "pan-p03-p002",
+   "pan-p03-p003",
+   "pan-p03-p004",
+   "pan-p03-p005",
+   "pan-p03-p006",
+   "pan-p03-p007",
+   "pan-p03-p008",
+   "pan-p03-p009",
+   "pan-p03-p010",
+   "pan-p03-p011",
+   "pan-p03-p012",
+   "pan-p03-p013",
+   "pan-p03-p014",
+   "pan-p03-p015",
+   "pan-p03-p016",
+   "pan-p03-p017",
+   "pan-p03-p018",
+   "pan-p03-p019",
+   "pan-p03-p020",
+   "pan-p03-p021",
+   "pan-p03-p022",
+   "pan-p03-p023",
+   "pan-p03-p024"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "śruti turn rendered straight; sincere-vs-ironic open — see argmap"
+  ]
+ },
+ "reads_against": {
+  "argmap": "Five refusals charged — speak, see, hear, come, support — and scripture converts the charge into doctrine: the Lord is sense-free. → Complaint becomes doctrine: denial becomes declaration.",
+  "c1_essence": [
+   "Five refusals charged — speak, see, hear, come, support — and scripture converts the charge into doctrine: the Lord is sense-free."
+  ],
+  "c1_rasa": "karuṇa (compassion-plea) shaded by adbhuta (wonder at doctrine)"
+ },
+ "status": "machine-proposed"
+}

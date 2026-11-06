@@ -1,0 +1,52 @@
+{
+ "craft_notes": "Sthāyin: śānta as no-fear-talk, suffering conceded (denial and concession in one breath). Sanskrit-first: vārtā (TALK/report — the verse denies the DISCOURSE of fear, not just the feeling); sati (STAND — suffering stands; fear does not). Rows: 9 (denial + concession held unreconciled — ‘no talk…Even while…’ never resolves, resolved WITHIN per C1), 1 (‘stand’ closes — sthā: what stands is named last), 7 (Lord-vocative L1 — pervasion stated TO him). Close: ‘karma-hosts stand’. Rupture: ‘Even while’ (denial turns to concession — the breath holds both). Rejected: ‘yet suffering remains’ — killed: duḥsaha (hard-to-BEAR) kept hard (Bar 6: never smooth); ‘no fear of rebirth’ — killed: saṃsāra-bhaya-vārtā is fear-talk; ‘hosts of karma’ reordering — killed: terror-causing kept fronted (bhayaṅkara modifies first). Read aloud: YOU, lord, per-VADE my OWN-self — SO there IS no TALK … EV-en WHILE hard-to-BEAR SUFF-er-ing … STAND.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p03",
+  "song": "bh-p03",
+  "verse": 3,
+  "lines": [
+   "You, Lord, pervade my own self — so there is no talk of transmigration-fear.",
+   "Even while hard-to-bear suffering, delusion, and terror-causing karma-hosts stand."
+  ],
+  "sanskrit_cite": "svātmani viśvagaye tvayi nāthe tena na saṃsṛtibhītikathāsti satsv api durdharaduḥkhavimohatrāsavidhāyiṣu karmagaṇeṣu",
+  "l0_ids": [
+   "bh-p03-p000",
+   "bh-p03-p001",
+   "bh-p03-p002",
+   "bh-p03-p003",
+   "bh-p03-p004",
+   "bh-p03-p005",
+   "bh-p03-p006",
+   "bh-p03-p007",
+   "bh-p03-p008",
+   "bh-p03-p009",
+   "bh-p03-p010",
+   "bh-p03-p011",
+   "bh-p03-p012",
+   "bh-p03-p013",
+   "bh-p03-p014"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "How can fear be denied while suffering is conceded? → Fear-talk denied while suffering conceded: denial and concession in one breath, resolved within the verse.",
+  "c1_essence": [
+   "Fear-talk is denied while suffering is conceded: with You as Lord pervading own self, no talk of transmigration-fear.",
+   "Even though hard-to-bear suffering, delusion, terror-causing karmas stand — no-fear and full-suffering together, resolved within it, not deferred.",
+   "The non-dual recognition does not deny affliction; it denies fear of it."
+  ],
+  "c1_rasa": "śānta (tranquility) with karuṇa (compassion)"
+ },
+ "status": "machine-proposed"
+}

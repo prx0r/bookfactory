@@ -1,16 +1,16 @@
 {
   "goal": "translation-work text -> print-ready paperbacks + quote cards + social cards, gates enforced",
-  "mode": "draft build + fail-closed publication gate; no upstream edits or uploads",
+  "mode": "staged pipeline (content->structure->formatting->build, PDF last) + fail-closed publication gate; no upstream edits or uploads",
   "upstream": "prx0r/translation-work: local checkout selected via BOOKFACTORY_TRANSLATIONS",
-  "renderer": "prx0r/visuals: prints/bookkit and prints/postcards (paired codex/publishing-handoff branch)",
+  "renderer": "in-repo: prints/bookkit + prints/postcards (migrated from prx0r/visuals 2026-11-06)",
   "lanes": {
     "practical-prayers": {
-      "stage": "parity-baseline; proof and entry approvals blocked",
+      "stage": "content (44->36 restructure per decisions.jsonl; PDF build last)",
       "entries": 44,
       "pages": 108
     },
     "tantric-prayer": {
-      "stage": "parity-baseline; proof and entry approvals blocked",
+      "stage": "content (43->36 restructure per decisions.jsonl; PDF build last)",
       "entries": 43,
       "pages": 108
     },
@@ -70,6 +70,18 @@
     {
       "id": "ship-external-book",
       "status": "todo"
+    },
+    {
+      "id": "thesis-template-system",
+      "status": "done"
+    },
+    {
+      "id": "staged-pipeline",
+      "status": "done"
+    },
+    {
+      "id": "pp-tp-restructure-36",
+      "status": "in-progress"
     }
   ]
 }

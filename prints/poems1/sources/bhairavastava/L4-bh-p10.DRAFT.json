@@ -1,0 +1,54 @@
+{
+ "craft_notes": "Sthāyin: śānta as pacification (praśama — the work's seal turned outward); vyabhicāri compassion (karuṇā) for the people's heat. Sanskrit-first: pauṣa/kṛṣṇadaśamī (dark-tenth kept — colophon dates kept honestly, L3-HANDCRAFT rule 5); śamayati (STILLS — same root as śānta: the last verb echoes the rasa); abhinavagupta-signed (signature kept — the hand named). Rows: 12 (śānta-fall for the WHOLE work: desert-heat → stills; the book ends cooling), 10 (Vasura/Pauṣa/dark-tenth left standing — date as image), 1 (‘becoming’ closes — bhava named at the very end: what the hymn pacifies, last). Close: ‘desert-heat of becoming’. Rupture: second dash (signature turns outward — heart to world per C1). Rejected: modernizing the date — killed: colophon honesty; ‘quenches’ — killed: śamayati stills/pacifies (rasa-echo kept); ‘the suffering world’ — killed: jana (people) kept plain. Read aloud: IN the va-SU-ra YEAR, in PAU-ṣa, ON the DARK-tenth — ab-hi-na-va-GUP-ta com-POSED this HYMN — BY-which … IN-a-FLASH STILLS the PEO-ple's DES-ert-HEAT of be-COM-ing.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p10",
+  "song": "bh-p10",
+  "verse": 10,
+  "lines": [
+   "In the Vasura year, in Pauṣa, on the dark tenth — Abhinavagupta composed this hymn —",
+   "by which the pervasive, compassionate Lord in a flash stills the people’s desert-heat of becoming."
+  ],
+  "sanskrit_cite": "vasurasapauṣe kṛṣṇadaśamyām abhinavaguptaḥ stavam imam akarot yena vibhuḥ bhavati janasya arusantāpaṃ śamayati jhaṭiti dayāluḥ",
+  "l0_ids": [
+   "bh-p10-p000",
+   "bh-p10-p001",
+   "bh-p10-p002",
+   "bh-p10-p003",
+   "bh-p10-p004",
+   "bh-p10-p005",
+   "bh-p10-p006",
+   "bh-p10-p007",
+   "bh-p10-p008",
+   "bh-p10-p009",
+   "bh-p10-p010",
+   "bh-p10-p011",
+   "bh-p10-p012",
+   "bh-p10-p013"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "follows bhavamaru (desert-heat of becoming) with L0/NOTE-terms against printed bhavati…arusantāpaṃ; SA untouched pending adjudication",
+   "vasurasa kept as year-name (cf. Dyczkowski Vasura-saṃvatsara)"
+  ]
+ },
+ "reads_against": {
+  "argmap": "What does the dated, signed hymn accomplish? → Dated and signed: the hymn turns outward, private recognition cools the world.",
+  "c1_essence": [
+   "Dated and signed, it turns outward: the compassionate Lord pacifies the world's heat instantly.",
+   "What began in the heart ends in the world: private recognition cools the world.",
+   "The colophon dates the composition (Pauṣa, Kṛṣṇa Daśamī) and signs it (Abhinavagupta), then turns to the world."
+  ],
+  "c1_rasa": "śānta (tranquility) with karuṇa (compassion)"
+ },
+ "status": "machine-proposed"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "s01v1",
+ "title": "Śivastotrāvalī s01 v1 (Lakshmanjoo witness — INTERNAL TRIAL)",
+ "source": "corpus devanagari + lakshmanjoo-sivastotravali witness (comparison use only)",
+ "license": "witness: short excerpts/comparison only — verify before commercial use",
+ "stanzas": [
+  {
+   "dev": [
+    "न ध्यायतो न जपतः",
+    "स्याद् यस्याविधिपूर्वकम्",
+    "एवम् एव शिवभासस्",
+    "तं नुमो भक्तिशालिनम्"
+   ],
+   "en": [
+    "i bow to that devotee who is glorified",
+    "with the devotion of lord śiva,",
+    "and to whom the appearance of lord śiva",
+    "takes place without conducting meditation",
+    "or recitation of any kind."
+   ]
+  }
+ ]
+}

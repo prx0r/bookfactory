@@ -1,0 +1,46 @@
+{
+ "craft_notes": "Sthāyin: śānta as fearlessness (abhayam); accomplished-fact → catalogue → seal. Sanskrit-first: vidhūta (DISPELLED — perfect participle: already done before the terrors are named); namas (SALUTATION — the only act offered to terrors); na bhayaṃ (NEVER fear — absolute, future). Rows: 9 (Death/Yama/Ender/karma-ghosts — four terrors named, each answered by ONE salutation), 1 (‘never shall I fear’ closes — the seal absolute), 6 (salutation as seal-word — namas anchors). Close: ‘never shall I fear’. Rupture: colon after ‘rays’ (fact stated, then terrors faced — awareness first, salutation finishes per C1). Rejected: ‘darkness’ singular softening — killed: mahāmoha + bhava-grasp both kept; ‘I salute, fearing nothing’ — killed: splits the seal pair (namas + never-fear belong together); ‘gloom’ — killed: moha is delusion-darkness, gloom moods. Read aloud: THUS — the GREAT-dark-ness … IS-dis-PELLED by a-WARE-ness's-RAYS … DEATH, YA-ma, the END-er, KAR-ma-ghosts — LORD, sal-u-TA-tion: NEV-er SHALL-i-FEAR.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "bh-p05",
+  "song": "bh-p05",
+  "verse": 5,
+  "lines": [
+   "Thus — the great darkness, taken on with becoming, is dispelled by awareness’s rays:",
+   "Death, Yama, the Ender, karma-ghosts — Lord, salutation: never shall I fear."
+  ],
+  "sanskrit_cite": "ittham upoḍhabhavanmayasaṃviddīdhitidāritabhūritamisraḥ mṛtyuyamāntakakarmapiśācaiḥ nātha ! namo'stu na jātu bibhemi",
+  "l0_ids": [
+   "bh-p05-p000",
+   "bh-p05-p001",
+   "bh-p05-p002",
+   "bh-p05-p003",
+   "bh-p05-p004",
+   "bh-p05-p005",
+   "bh-p05-p006"
+  ],
+  "essence_maps": [
+   0,
+   1,
+   2
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "upoḍha read ‘taken on’ (against L0 ‘torn-asunder’); tamisra is darkness (against L0 ‘mixed’)"
+  ]
+ },
+ "reads_against": {
+  "argmap": "How does fearlessness follow from awareness? → Awareness first, salutation finishes: absolute fearlessness. The dark that made terrors terrifying is already gone.",
+  "c1_essence": [
+   "Darkness already burned away by awareness; four terrors then met with salutation alone, yielding absolute fearlessness.",
+   "Awareness burned the dark before the terrors were named; salutation finishes what light began.",
+   "It moves from accomplished fact (darkness dispelled) to catalogue (terrors) to response (salutation) to result (no fear)."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

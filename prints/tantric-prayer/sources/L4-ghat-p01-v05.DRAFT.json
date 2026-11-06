@@ -1,0 +1,42 @@
+{
+ "craft_notes": "Sthāyin same; color: mood-answered (landscape answers her — NOTE EXPLANATION: rasa is in the world answering). Firing: passive kept (vinAdyate: the flock is played-upon by clouds — mood plays them); vocative kept (beloved addressed, row-7 seed); today anchors the season (adya, the clouds came today). L3 sings; L4 keeps. REJECTED OPTIONS (with killers): (a) active sounds for is-sounded -> killed: passive is the Sanskrit voice. (b) answering the question -> killed. (c) dropping today -> killed: adya dates the answering. Read aloud: BY-clouds THE-pea-cock-FLOCK is-SOUND-ed — WHAT de-LIGHT, be-LOV-ed, with-OUT-me to-DAY. Abhinavagupta frame: śṛṅgāra performed, not described — separated voice + landscape-answer are vibhāva; the cloud never told to carry a message is dhvani (suggestion doing the work); close in sustaining memory, not despair.",
+ "form": "couplet",
+ "l4": {
+  "verse_id": "ghat-p01-v05",
+  "song": "ghat-p01",
+  "verse": 5,
+  "lines": [
+   "By clouds the peacock-flock is sounded —",
+   "what delight, beloved, without me today?"
+  ],
+  "sanskrit_cite": "ambudaiḥ śikhigaṇo vinādyate kā ratiḥ priya mayā vinādya te",
+  "l0_ids": [
+   "ghat-p01-v05-p000",
+   "ghat-p01-v05-p001",
+   "ghat-p01-v05-p002",
+   "ghat-p01-v05-p003",
+   "ghat-p01-v05-p004",
+   "ghat-p01-v05-p005",
+   "ghat-p01-v05-p006",
+   "ghat-p01-v05-p007",
+   "ghat-p01-v05-p008"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "couplet",
+  "needs": [
+   "human-review"
+  ],
+  "notes": []
+ },
+ "reads_against": {
+  "argmap": "What answers mood? → Landscape answers mood.",
+  "c1_essence": [
+   "Śṛṅgāra is performed, not described: the separated beloved's voice, her appeal to the cloud, and the landscape's answering her are all determinants (vibhāva) of the rasa. The cloud is never told to carry a message — that is dhvani, and it is what makes it the genre's first instance. The voice closes not in despair but in sustaining memory: the sthāyibhāva (love) transforms the sorrow (vyabhicāri) into something relishable. Kāma arises in the heart to kill; the beloved who is absent arises with him; the cātaka, thirsty for rain alone, begs water; the peacock-flock sounds at the clouds; she is protected only by remembrance of his virtue."
+  ],
+  "c1_rasa": "śṛṅgāra (erotic love-in-separation)"
+ },
+ "status": "machine-proposed"
+}

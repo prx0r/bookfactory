@@ -1,0 +1,70 @@
+{
+ "craft_notes": "Sthāyin: confession (forgetting admitted). Abhinavagupta frame: karuṇa-sthāyin with śānta acceptance — the plea asks only absence-ended, not presence-described (deixis thinned exactly where Sanskrit thins: stheyaṃ na bhūyas = no-more-staying-away, no positive image imported). Rows: 1 (optative stheyam kept as plea — ‘let there be’ retained; close lands on ‘away’, absence itself ringing), 7 (tvayā instrumental force → ‘So by You:’ colon landing), 9 (kiṃ kiṃ + vāraṃ vāraṃ both kept doubled). Close: ‘no more staying away’ (absence-reading per L3 note; ‘presence’ close would flip the frozen reading). Rejected: undoubled ‘What has not been done’ — killed: kiṃ kiṃ doubles; softening ‘alas’ — killed: vata IS the admission-gasp; resolving prāsuvatkāyaḥ past L2 — killed: obscure kept neutral. Read aloud: MUCH-time WITH-you has PASSED — a-LAS … WHAT — WHAT has NOT been DONE … YET i for-GET you — NO-more STAY-ing a-WAY.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "pan-p05",
+  "song": "pan-p05",
+  "verse": 5,
+  "lines": [
+   "Much time with You has passed — alas, in this very moment!",
+   "What — what has not been done by You for me — for serving the excellent guru!",
+   "Again and again I — whose body has reached the peerless divine plane —",
+   "yet I forget You — so by You let there be no more staying away."
+  ],
+  "sanskrit_cite": "yātastvatsahavāsato bahutaraḥ kālo vatāsmin kṣaṇe kiṃ kiṃ vā na kṛtaṃ tvayā varagurūpāsānimittena me | vāraṃ vāramahaṃ punarnirupamāṃ divyaṃ bhuvaṃ prāsuvatkāyastvāṃ kila vismarāmi yadataḥ stheyaṃ na bhūyastvayā",
+  "l0_ids": [
+   "pan-p05-p000",
+   "pan-p05-p001",
+   "pan-p05-p002",
+   "pan-p05-p003",
+   "pan-p05-p004",
+   "pan-p05-p005",
+   "pan-p05-p006",
+   "pan-p05-p007",
+   "pan-p05-p008",
+   "pan-p05-p009",
+   "pan-p05-p010",
+   "pan-p05-p011",
+   "pan-p05-p012",
+   "pan-p05-p013",
+   "pan-p05-p014",
+   "pan-p05-p015",
+   "pan-p05-p016",
+   "pan-p05-p017",
+   "pan-p05-p018",
+   "pan-p05-p019",
+   "pan-p05-p020",
+   "pan-p05-p021",
+   "pan-p05-p022",
+   "pan-p05-p023",
+   "pan-p05-p024",
+   "pan-p05-p025",
+   "pan-p05-p026",
+   "pan-p05-p027",
+   "pan-p05-p028",
+   "pan-p05-p029",
+   "pan-p05-p030",
+   "pan-p05-p031"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "prāsuvatkāyaḥ obscure; follows L2’s neutral gloss",
+   "stheyam as ‘staying away’ (absence reading)"
+  ]
+ },
+ "reads_against": {
+  "argmap": "Long dwelling-with and total grace received, yet repeated forgetting; the only request is no more absence. → Confession and plea for presence.",
+  "c1_essence": [
+   "Long dwelling-with and total grace received, yet repeated forgetting; the only request is no more absence."
+  ],
+  "c1_rasa": "karuṇa (compassion-plea) with śānta (tranquility of acceptance)"
+ },
+ "status": "machine-proposed"
+}

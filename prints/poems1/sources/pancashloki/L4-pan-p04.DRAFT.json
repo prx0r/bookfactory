@@ -1,0 +1,55 @@
+{
+ "craft_notes": "Sthāyin: doubt dissolving (vilīne). Abhinavagupta frame: vyabhicāri-dissolution (śaṅkā melting) staged as the rupture — piled reasonings one breath, melted cloud the next; śānta-close enacted (row 12: falling cadence on ‘darkness’, long vowels, still image — the metaphysics of the ending, not decoration). Rows: 1 (spṛśatu late — ‘let me touch’ before the simile), 2 (yukti-pracaya-racana-unmārjana compound unpacked down the line-break; bank: Ingalls moon-drops unpacking), 8 (vowel arc melts→blazes), 12 (śānta-fall). Close: ‘the sun that conquers darkness’ — darkness last, conquered. Rejected: merging two sources — killed: UNC keeps guru-word and scripture two; cutting sun-simile — killed: vibhāva does the settling; ‘lifts’ for vilīne — killed: melts, not lifts. Read aloud: BY the GU-ru’s WORD … WHEN the DOUBT-cloud MELTS … LIKE the SUN that CON-quers DARK-ness.",
+ "form": "quatrain",
+ "l4": {
+  "verse_id": "pan-p04",
+  "song": "pan-p04",
+  "verse": 4,
+  "lines": [
+   "By the guru’s word — whose force wipes clean the heaped fabric of reasonings —",
+   "and by assurance, fittingly told, regarding scripture:",
+   "when the doubt-cloud melts, let me touch the feet of the Lord,",
+   "whose splendor blazes in the heart’s sky like the sun that conquers darkness."
+  ],
+  "sanskrit_cite": "gurorvākyādyukti-pracaya-racana-unmārjana-vaśātsamāśvāsācchāstraṃ prati samucitādapi kathitam | vilīne śaṅkābhre hṛdayagaganodbhāsimahasaḥ prabhoḥ sūryasyeva spṛśatu caraṇān dhvāntajayinaḥ",
+  "l0_ids": [
+   "pan-p04-p000",
+   "pan-p04-p001",
+   "pan-p04-p002",
+   "pan-p04-p003",
+   "pan-p04-p004",
+   "pan-p04-p005",
+   "pan-p04-p006",
+   "pan-p04-p007",
+   "pan-p04-p008",
+   "pan-p04-p009",
+   "pan-p04-p010",
+   "pan-p04-p011",
+   "pan-p04-p012",
+   "pan-p04-p013",
+   "pan-p04-p014",
+   "pan-p04-p015",
+   "pan-p04-p016",
+   "pan-p04-p017"
+  ],
+  "essence_maps": [
+   0
+  ],
+  "fidelity": "preserved",
+  "form": "quatrain",
+  "needs": [
+   "human-review"
+  ],
+  "notes": [
+   "guru’s word + assurance kept as two sources; one-twofold-source reading open"
+  ]
+ },
+ "reads_against": {
+  "argmap": "Against the silence stand two testimonies — the guru's word and fitting scriptural assurance — whose force wipes away piled-up reasonings; with doubt dissolved, the feet of the heart-sky Lord. → Two testimonies dissolve doubt; touch of feet follows.",
+  "c1_essence": [
+   "Against the silence stand two testimonies — the guru's word and fitting scriptural assurance — whose force wipes away piled-up reasonings; with doubt dissolved, the feet of the heart-sky Lord."
+  ],
+  "c1_rasa": "śānta (tranquility) with adbhuta (wonder)"
+ },
+ "status": "machine-proposed"
+}

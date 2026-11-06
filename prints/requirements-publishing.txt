@@ -1,0 +1,7 @@
+# Install in a local virtual environment; do not commit the environment.
+indic-transliteration>=2.3.68,<3
+PyMuPDF>=1.24,<2
+# Optional draft-only alternative when Chromium is unavailable:
+# WeasyPrint>=63,<64
+jsonschema>=4.20,<5
+Pillow>=10,<14

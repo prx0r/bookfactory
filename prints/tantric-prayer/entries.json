@@ -1,0 +1,783 @@
+[
+ {
+  "id": "srg-1",
+  "section": "srgara",
+  "title": "The Un-Drunk One's Thirst",
+  "corpus": [
+   1,
+   11
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 1.11",
+  "en": "may the higher knowledge come from tasting the nectar of your devotion —\nthat state, lord, turn toward me,\nkeen as the not-yet-drunk one's thirst for the first drink.",
+  "brief": "Desire as holy thirst — rati aimed at God instead of at the world.",
+  "logic": "The sthāyin rati is not to be removed but redirected. The verse names the exact texture: nāsavas-śuktatā, the eagerness of one who has NOT yet tasted — the pre-taste longing. Knowledge itself (bodha) comes by the sip; the prayer is therefore for the thirst to be aimed at him, and for the state to turn toward the speaker.",
+  "howto": "When longing is loud: say the verse and let the object of the longing become the taste of devotion rather than the thing you'd grab. Feeling-tip: keep the ache — it is the rasa before it arrives; the thirst IS the practice.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "1.11",
+  "how": "When longing is loud: say the verse and let the object of the longing become the taste of devotion rather than the thing you'd grab.",
+  "feel": "keep the ache — it is the rasa before it arrives; the thirst IS the practice.",
+  "sign": "the thirst stops being lack and starts being flavour: you want him the way the moon wants the ocean, and the wanting itself tastes full."
+ },
+ {
+  "id": "srg-2",
+  "section": "srgara",
+  "title": "The Wine of Non-Difference",
+  "corpus": [
+   4,
+   18
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 4.18",
+  "en": "let me not spend one moment here as anything\nother than your servant's vessel — one who reverently,\nunceasingly drinks the rasa-wine of your non-difference.",
+  "brief": "Devotion as intoxication: the wine is non-duality itself.",
+  "logic": "Abheda-rasāsava — the wine of non-difference. Śṛṅgāra's whole lexicon (wine, tasting, the beloved's feet) is applied to the doctrine: the beloved is not other, and the intoxication is the insight. The sthāyin rati becomes the taste of the one, and the servant becomes the vessel that holds it.",
+  "howto": "When you crave closeness to something: say it and re-cast — the wine is already poured (non-difference); you are the cup. Feeling-tip: warmth as if from a sip; the distance you wanted to close was the fiction.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "4.18",
+  "how": "When you crave closeness to something: say it and re-cast — the wine is already poured (non-difference); you are the cup.",
+  "feel": "warmth as if from a sip; the distance you wanted to close was the fiction.",
+  "sign": "the difference stops registering as distance mid-verse — the room reads as already mixed, two wines that cannot be un-poured."
+ },
+ {
+  "id": "srg-3",
+  "section": "srgara",
+  "title": "What Delight, Beloved",
+  "source": "Kṣemarāja, Ghatakarpara (pot-sherds) v.5",
+  "iast": "ambudaiḥ śikhigaṇo vinādyate kā ratiḥ priya mayā vinādya te",
+  "en": "by clouds the peacock-flock is sounded —\nwhat delight, beloved, without me today?",
+  "brief": "Love-in-separation given to the whole landscape — the peacock's cry.",
+  "logic": "Ghatakarpara, Kṣemarāja's night of the broken pot, frames longing as weather: the peacocks cry at cloud-arrival — and the cry is 'without me.' Vipralambha (longing-in-separation) is outsourced to the scene until the self-pity becomes a rainstorm that belongs to everyone. The ache is seasonal, not personal.",
+  "howto": "When longing for someone or something: say it as the peacock line — the cry is appropriate, beautiful, and will end with the rain. Feel the ache as weather: you are the bird, not the drowning.",
+  "source_path": "sources/L4-ghat-p01-v05.DRAFT.json",
+  "source_ref": "ghat-p01 v5",
+  "how": "When longing for someone or something: say it as the peacock line — the cry is appropriate, beautiful, and will end with the rain. Feel the ache as weather: you are the bird, not the drowning.",
+  "sign": "delight arrives with no cause you can name; you look for the trigger and find only him — the causelessness IS the answer."
+ },
+ {
+  "id": "srg-4",
+  "section": "srgara",
+  "title": "The Moon That Carries the Nectar",
+  "corpus": [
+   3,
+   5
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 3.5",
+  "en": "give me one glance of yours — light, cool, pure,\nlike the moon's crescent, carrying nectar —\no lord, for my desire itself.",
+  "brief": "The cool moon-glance that carries desire instead of burning it.",
+  "logic": "Kāma (desire) is not banned here but delivered amṛta: the verse asks for a dṛś, a gaze that is śītalā (cool) like the moon's crescent and amṛta-vāhinī (nectar-bearing). The erotic voltage of rati is converted into moonlight — desire needs cooling and nourishment, not cutting.",
+  "howto": "When desire runs hot: one breath in, offer the heat upward as the thing that needs the glance, and picture the crescent-cool gaze landing on it. The prayer cools by image, not by prohibition. Feeling-tip: the heat stays but stops being an emergency.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "3.5",
+  "how": "When desire runs hot: one breath in, offer the heat upward as the thing that needs the glance, and picture the crescent-cool gaze landing on it. The prayer cools by image, not by prohibition.",
+  "feel": "the heat stays but stops being an emergency.",
+  "sign": "cool nectar at the palate during recitation, and his absence reads as fullness rather than the other way round."
+ },
+ {
+  "id": "has-1",
+  "section": "hasa",
+  "title": "Laughing, Dancing, Eating It All",
+  "corpus": [
+   5,
+   18
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 5.18",
+  "en": "where he laughs and dances, where desire and hatred themselves are eaten,\nwhere the nectar-rasa of devotion is drunk —\nmay i attain that state.",
+  "brief": "The state where he laughs, dances, and eats the klesas for lunch.",
+  "logic": "Hāsa's sthāyin hāsa is made cosmic: the divine one laughs and dances, and — the key verb — rāga-dveṣe bhujyate, desire and hatred are CONSUMED as food. Mirth here is not humour; it is the sound of digestion. The negative emotions are not banished from the state; they are the meal.",
+  "howto": "Say it when something finally stops being infuriating — and notice the laugh that arrives is the verse working. Feeling-tip: the annoyance is suddenly chewable; that is bhujyate happening. Let the laugh be the proof.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "5.18",
+  "how": "Say it when something finally stops being infuriating — and notice the laugh that arrives is the verse working.",
+  "feel": "the annoyance is suddenly chewable; that is bhujyate happening. Let the laugh be the proof.",
+  "sign": "the day's trouble provokes a laugh BEFORE the argument does — you catch yourself chuckling at what used to enrage."
+ },
+ {
+  "id": "has-2",
+  "section": "hasa",
+  "title": "The Essence of Laughter",
+  "corpus": [
+   2,
+   18
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 2.18",
+  "en": "in this three-world joke whose essence is laughter —\nto you alone, the non-dual, the one seated in eternal joy:\nnamas.",
+  "brief": "Bowing to the Lord who sits on laughter itself.",
+  "logic": "The universe is upahāsa-ekasāra — the essence of the cosmic joke — and the Lord is nitya-sukha-āsina, seated in eternal joy. Laughter is not irreverence but the metaphysical register of the world-as-play seen from inside. You bow TO the seated laughter rather than laughing at him: reverence and joke in one breath.",
+  "howto": "When life turns absurd: say it, and read the absurdity as his seat. Feeling-tip: irreverence without disrespect — the sigh turns into a chuckle, and the chuckle lands on him.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "2.18",
+  "how": "When life turns absurd: say it, and read the absurdity as his seat.",
+  "feel": "irreverence without disrespect — the sigh turns into a chuckle, and the chuckle lands on him.",
+  "sign": "the laugh thins into a smile that outlasts the recitation — his laughter has no off-switch, so the residue is the proof."
+ },
+ {
+  "id": "has-3",
+  "section": "hasa",
+  "title": "His Laughing-Play",
+  "corpus": [
+   3,
+   15
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 3.15",
+  "en": "victorious are your servants, lord of the worlds —\nfor whom this ocean of saṃsāra\nis a laughing-play.",
+  "brief": "Same ocean as everyone else's; for his servants it's a playground.",
+  "logic": "Everyone else drowns in saṃsārārṇava — the ocean of becoming. For yeṣāṃ (for those servants) it is krīḍā-hāsara: a park of laughter and play. Hāsa changes the ownership of the ocean, not its water. The rasa-shift happens before the circumstance shifts — the ocean is the fact, the playground is the flavour.",
+  "howto": "In a hard moment, name it: ocean. Then say the verse, and the water becomes shallow. Feeling-tip: the shoulders drop and the mouth lifts before the situation changes at all.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "3.15",
+  "how": "In a hard moment, name it: ocean. Then say the verse, and the water becomes shallow.",
+  "feel": "the shoulders drop and the mouth lifts before the situation changes at all.",
+  "sign": "the play becomes visible: chore, traffic, inbox read as stage business mid-shift — you are amused because he is amused."
+ },
+ {
+  "id": "has-4",
+  "section": "hasa",
+  "title": "Angry, Then Laughing, Then Śiva",
+  "corpus": [
+   16,
+   7
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 16.7",
+  "en": "let me be drunk on devotion — and angry with the world,\nand pitying it — then laugh, and rise up, and shout:\nśiva! — enough.",
+  "brief": "The permission slip: devotion lets you rage, then laugh, then shout.",
+  "logic": "The verse gives the full emotional sequence and blesses every step: bhakti-kṣīva (drunk on devotion) → kupyeyam (let me be angry!) → haseyaṃ (then laugh) → udyām (rise) → raṭeyam śivety (shout Śiva). Anger is not the failure of the practice but its middle passage — it converts to laughter to shout. Hāsa is the hinge where the negative becomes praise.",
+  "howto": "When worked up: say it as an instruction manual — drunk first, then let it become laugh, rise, and shout. The last word must be Śiva, out loud if you dare. Feeling-tip: the anger doesn't get suppressed; it gets promoted.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "16.7",
+  "how": "When worked up: say it as an instruction manual — drunk first, then let it become laugh, rise, and shout. The last word must be Śiva, out loud if you dare.",
+  "feel": "the anger doesn't get suppressed; it gets promoted.",
+  "sign": "the anger expires mid-flare: heat turns to laughter in seconds, and Śiva is what is left of it."
+ },
+ {
+  "id": "kar-1",
+  "section": "karuna",
+  "title": "The Seed of Sorrow",
+  "corpus": [
+   1,
+   26
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 1.26",
+  "en": "strange, lord: this mind is by nature the seed of sorrow —\nyet watered with the rasa of your devotion\nit ripens into the highest fruit.",
+  "brief": "The sorrow-seed that ripens instead of rotting.",
+  "logic": "The verse concedes the grief outright: manaḥ is duḥkha-bīja by nature (nisargataḥ) — the mind was born a grief-seed. The surprise (citra!) is the alchemy: watered with bhakti-rasa it becomes niḥśreyasa-mahāphala, the highest fruit. Karuṇā is not healed by removal but by irrigation — the same seed, different harvest.",
+  "howto": "In grief: say it and water the seed instead of cursing the soil. Feeling-tip: the grief stays, but it is being used; even the tears count as irrigation.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "1.26",
+  "how": "In grief: say it and water the seed instead of cursing the soil.",
+  "feel": "the grief stays, but it is being used; even the tears count as irrigation.",
+  "sign": "the sorrow warms instead of hardening — tears come carrying the seed; grief tenderised, not numbed."
+ },
+ {
+  "id": "kar-2",
+  "section": "karuna",
+  "title": "The Flood Over Joy and Sorrow",
+  "corpus": [
+   3,
+   9
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 3.9",
+  "en": "the flood of nectar from meditating you overflows\njoy and sorrow alike — like waters filling\nall the low and lower lands.",
+  "brief": "One flood levels the hierarchy of gladness and grief.",
+  "logic": "A single amṛta-pūra (flood of nectar from dhyāna) covers harṣa AND śoka samam — equally, like water filling every lowland. Sorrow gets no special treatment and no special exclusion: both emotions are terrain, and the flood is the same. Karuṇā's transformation is levelling, not fixing.",
+  "howto": "Say it in either state — grief or glee — the verse works on the level of the field, not the feeling. Feeling-tip: a settling, as if water found its level; the ranking of emotions collapses.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "3.9",
+  "how": "Say it in either state — grief or glee — the verse works on the level of the field, not the feeling.",
+  "feel": "a settling, as if water found its level; the ranking of emotions collapses.",
+  "sign": "the same tide runs under joy and grief: a wave of tenderness crosses either one, indifferent to the day's weather."
+ },
+ {
+  "id": "kar-3",
+  "section": "karuna",
+  "title": "Sorrow Mixed with Ghee",
+  "corpus": [
+   10,
+   16
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 10.16",
+  "en": "lord, the countless sorrows even of the world-dweller —\nmixed with your own self they become ghee:\nthey come to be bearable.",
+  "brief": "Sorrow mixed with Śiva-self becomes ghee — and ghee is bearable.",
+  "logic": "The alchemical verse: duḥkha + bhavat-īya-ātman (your own self) = ghṛta (ghee). Ghee does not remove the ingredient — it transforms its texture: the sharp is suspended in the smooth. The grief survives as substance but not as edge. Karuṇā's medicine is texture change, not argument.",
+  "howto": "In pain: say the ghee line and literally imagine the sharp edge of the feeling being coated. Feeling-tip: the body responds to texture, not to reasons — the tightness loosens because the sharpness is now suspended.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "10.16",
+  "how": "In pain: say the ghee line and literally imagine the sharp edge of the feeling being coated.",
+  "feel": "the body responds to texture, not to reasons — the tightness loosens because the sharpness is now suspended.",
+  "sign": "ghee in the fire: the pain stays hot but stops burning — clarified, and the grief tastes somehow sweet."
+ },
+ {
+  "id": "kar-4",
+  "section": "karuna",
+  "title": "The Banner Against Suffering",
+  "corpus": [
+   11,
+   14
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 11.14",
+  "en": "o lord, the banner that destroys the suffering of the bowing —\ntreasure of good, dhūrjaṭa: for me whose only home is sorrow,\nafraid of birth and death — so act for me, that while yet living\ni may enjoy the sweet taste of the good sense-objects,\nunshakeable, the powers in service of your worship.",
+  "brief": "The emergency prayer: grief addressed to the Destroyer-of-pain by name.",
+  "logic": "The Lord is named by function: praṇatārti-nāśana-paṭa — the flag that annihilates the pain of the one who bows. The verse locates the speaker without self-pity: ālaya-eka — sorrow is the only house I know, and I fear birth and death. The grief is fully stated before the name is invoked — confession first, then the banner.",
+  "howto": "At 3am in the pit: say the whole confession first, then the name. Feeling-tip: the banner is real — a flag planted IN the grief, not flying over it. The fear of birth and death can be said out loud; that's the verse's permission.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "11.14",
+  "how": "At 3am in the pit: say the whole confession first, then the name.",
+  "feel": "the banner is real — a flag planted IN the grief, not flying over it. The fear of birth and death can be said out loud; that's the verse's permission.",
+  "sign": "the suffering, looked at with him, converts — the resistance drops and what remains is clean sorrow, which moves."
+ },
+ {
+  "id": "rau-1",
+  "section": "raudra",
+  "title": "The Axe of 'All Is His'",
+  "corpus": [
+   7,
+   2
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 7.2",
+  "en": "'this is mine, this is not yours' — the roots of attachment and aversion, hard-shackled;\no lord, let the axe of the one conviction 'all is your-become' fall on them in me.",
+  "brief": "The engine of rage is mine-ness; the axe is the conviction that all is his.",
+  "logic": "Anger's roots are rāga-dveṣa driven by mamaka (mine-ness) — 'etan mama, na tv idam' (this is mine, this is not yours). The remedy named is an instrument: paraśu, the axe of ekatva-pratyaya — the conviction that everything is bhavanmaya, his-become. The verse PRAYS FOR THE AXE TO FALL — an act, not a mood.",
+  "howto": "In rage: name the possession first — 'mine', 'not yours' — then say the verse at it. Feeling-tip: the fist unclenches not by relaxing but by losing the ownership record; the thing remains, the claiming ends.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "7.2",
+  "how": "In rage: name the possession first — 'mine', 'not yours' — then say the verse at it.",
+  "feel": "the fist unclenches not by relaxing but by losing the ownership record; the thing remains, the claiming ends.",
+  "sign": "the anger gets an address instead of a target: heat stays, aim dissolves — the fist unclenching mid-sentence."
+ },
+ {
+  "id": "rau-2",
+  "section": "raudra",
+  "title": "Let the Anger Ripen",
+  "corpus": [
+   16,
+   15
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 16.15",
+  "en": "the mind purified by the complete ripening of\nhonour and dishonour, rāga and the rest —\nsuch a devotee: how could he have ordinary-world conduct?",
+  "brief": "Pride, slight and rage treated as things that must fully ripen first.",
+  "logic": "Māna, avamāna (honour and dishonour), rāga — these must NIṢPĀKA, ripen completely, like poison cooked out or fruit brought to sweetness. The purified mind is the one where the indignation-mix has finished its fermentation. The verse reframes the anger-process itself: give it heat and time, and the result is clarity instead of explosion.",
+  "howto": "When slighted: say it and let the feeling ripen rather than react — the insult is being cooked, not served. Feeling-tip: the heat continues but stops being an instruction to act.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "16.15",
+  "how": "When slighted: say it and let the feeling ripen rather than react — the insult is being cooked, not served.",
+  "feel": "the heat continues but stops being an instruction to act.",
+  "sign": "the anger ripens without a victim — it swells, sweetens, and passes THROUGH you rather than at anyone."
+ },
+ {
+  "id": "rau-3",
+  "section": "raudra",
+  "title": "Devotion Conquers the Darkness",
+  "corpus": [
+   16,
+   16
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 16.16",
+  "en": "in whose case even the darkness of attachment and aversion\nhas been conquered by the brilliance of devotion —\nwhat to speak of the learned, among such exalted ones?",
+  "brief": "Rage is a lightless state; devotion is the light that ends it.",
+  "logic": "Rāga-dveṣa are andhakāra — darkness; bhakti-tviṣ, the brilliance of devotion, is the conqueror. The verse gives light-physics to anger: not fight the dark, but shine. And what remains after conquest is not the repressed but mahīyas — the exalted, lit-up ones. The learned don't even rate in comparison.",
+  "howto": "Say it as a light-switch claim: the anger is dark, and you are switching on devotion rather than wrestling the dark. Feeling-tip: warmth precedes relief — that order is the physics.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "16.16",
+  "how": "Say it as a light-switch claim: the anger is dark, and you are switching on devotion rather than wrestling the dark.",
+  "feel": "warmth precedes relief — that order is the physics.",
+  "sign": "the darkness shrinks when named with devotion: the rage feels borrowed and slightly comic, a costume someone else chose."
+ },
+ {
+  "id": "rau-4",
+  "section": "raudra",
+  "title": "Your Wrath Purifies",
+  "corpus": [
+   10,
+   20
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 10.20",
+  "en": "also worthy of praise, O supreme, are those\nmade pure by the touch of your wrath's fire\neven when you have destroyed them.",
+  "brief": "Even his wrath is a purifier — so the fire itself is praised.",
+  "logic": "Tvat-kopa-pāvaka — the fire of your wrath — is pāvaka, a purifier, by definition. Those touched (even annihilated) by it are pūtā, purified. Raudra's rasa seen from the other side: divine anger is cauterisation, not punishment. The devotee's praise of THAT is the final surrender of the complaint against anger itself.",
+  "howto": "When caught in a rage — yours or someone's's: say it, and re-classify the fire as purifying touch before responding. Feeling-tip: the flinch converts to a bow.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "10.20",
+  "how": "When caught in a rage — yours or someone's's: say it, and re-classify the fire as purifying touch before responding.",
+  "feel": "the flinch converts to a bow.",
+  "sign": "the purifying heat runs hot then cools clean — like lye burning off grime: emptied, not inflamed."
+ },
+ {
+  "id": "vir-1",
+  "section": "vira",
+  "title": "Victory — the World Depends on Him",
+  "corpus": [
+   2,
+   29
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 2.29",
+  "en": "victory, lord — namas, namas to you:\nthis entire universe depends on you;\nyou are the supreme lord of the worlds, the one —\nin you alone i take refuge.",
+  "brief": "The victory-cry that puts the whole world on his back.",
+  "logic": "Vīra's sthāyin utsāha begins with jaya — twice — then the cosmic dependency: sakalaṃ viśvam idaṃ tavāśritam, everything rests on YOU. The hero's strength is deliberately outsourced: your energy becomes his vehicle rather than your own inventory. Enthusiasm as alignment, not as ego.",
+  "howto": "Morning, before the task: say it once under the breath, fast. Feeling-tip: the chest widens; effort turns from strain into celebration because the weight is his, not yours.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "2.29",
+  "how": "Morning, before the task: say it once under the breath, fast.",
+  "feel": "the chest widens; effort turns from strain into celebration because the weight is his, not yours.",
+  "sign": "the world's weight becomes a load you carry FOR him — the shoulders read as strong because the load is his."
+ },
+ {
+  "id": "vir-2",
+  "section": "vira",
+  "title": "May I Become the Grass",
+  "corpus": [
+   5,
+   15
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 5.15",
+  "en": "when, eyes closed in the tasting of inner devotion-wonder,\ni worship 'namas to śiva' —\nmay i become even the grass [in that place].",
+  "brief": "So lost in devotion's wonder one would be the grass at the threshold.",
+  "logic": "The extreme of vīra-bhakti: antar-bhakti-catkāra (inner wonder) savoured until the eyes close (āmīlitekṣaṇa), and the self-offer is to become tṛṇa — grass, trodden, at his doorway. Heroism here is the heroism of disappearance INTO devotion; the glory is to be the least impressive thing present.",
+  "howto": "When enthusiasm needs depth rather than noise: say it and offer to be the least impressive thing in the room. Feeling-tip: the wanting-to-be-seen dissolves; the energy continues without the vanity.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "5.15",
+  "how": "When enthusiasm needs depth rather than noise: say it and offer to be the least impressive thing in the room.",
+  "feel": "the wanting-to-be-seen dissolves; the energy continues without the vanity.",
+  "sign": "self-importance flattens into willingness: you would be grass — usable, trodden without injury — and the humiliation-feel never arrives."
+ },
+ {
+  "id": "vir-3",
+  "section": "vira",
+  "title": "The Sound That Never Leaves the Mouth",
+  "corpus": [
+   4,
+   14
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 4.14",
+  "en": "victorious those on whose mouth's circle\nthe sound of śiva constantly roams —\never-streaming from the immortal reservoir,\nthe supreme nectar dripping sweet.",
+  "brief": "Victory to the constant chanter — japa become involuntary.",
+  "logic": "Niyataṃ śivadhvaniḥ — the Śiva-sound circulating the face without stop (the gloss: twenty-four hours). Vīra's utsāha here is constancy: practice that has become self-running — the ajapa that the Vijñāna Bhairava describes as breath itself. The verse is a toast to the one whose mantra no longer needs permission.",
+  "howto": "Say it when you catch the name rising on its own — mid-shower, mid-walk. The verse applauds the practice applauding itself. Feeling-tip: pride WITH devotion; the discipline patting itself on the back.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "4.14",
+  "how": "Say it when you catch the name rising on its own — mid-shower, mid-walk. The verse applauds the practice applauding itself.",
+  "feel": "pride WITH devotion; the discipline patting itself on the back.",
+  "sign": "the mantra becomes non-negotiable: audible in the chest at odd hours, unsummoned, running like a pulse."
+ },
+ {
+  "id": "vir-4",
+  "section": "vira",
+  "title": "Praised Because You Worship",
+  "corpus": [
+   4,
+   1
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 4.1",
+  "en": "o mind, though you are flickering, yet you are praised —\nbecause you worship:\nyou take refuge in the refuge of the refuges,\nthe teacher of the three worlds, the beloved of ambikā.",
+  "brief": "The distracted mind is praised for showing up anyway.",
+  "logic": "Capala (flickering, unstable) is normally the enemy of every practice — the verse reverses the verdict: slāghyase, you are PRAISED, yato bhajase, because you worship. Utsāha for the distracted: the measure is not steadiness but direction. Even a scattering mind in the direction of refuge earns the praise.",
+  "howto": "Address it TO your mind, in the second person, when it won't hold — praise it for showing up rather than scolding it for drifting. Feeling-tip: self-compassion as fuel; the scattered mind sits down when praised, not when punished.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "4.1",
+  "how": "Address it TO your mind, in the second person, when it won't hold — praise it for showing up rather than scolding it for drifting.",
+  "feel": "self-compassion as fuel; the scattered mind sits down when praised, not when punished.",
+  "sign": "being praised while you worship feels like being read out loud by him — and the need for more of it stops."
+ },
+ {
+  "id": "bha-1",
+  "section": "bhayanaka",
+  "title": "When Will I Suddenly Recognise You",
+  "corpus": [
+   9,
+   6
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 9.6",
+  "en": "the lord — fearless, generous, full, causeless,\nbeyond denial of self — when will i suddenly recognise him —\nand put the master's own folk to shame?",
+  "brief": "Addressed to the Lord whose very name is fearlessness.",
+  "logic": "Bhayānaka's sthāyin bhaya meets Īśvara who is abhaya — fearless — and the cure named is sahasābhijñā, sudden recognition, not calm. The verse's logic: fear is the pre-recognition static, and kadā — when — is a countdown to the flash. Recognising him puts the world (which produced the fear) to shame.",
+  "howto": "When fear is up: say it as a question, not a plea — kadā? when? Feeling-tip: fear becomes the sound before the recognition rather than the enemy of it. After the last word, expect nothing; the asking is the turning.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "9.6",
+  "how": "When fear is up: say it as a question, not a plea — kadā? when?.",
+  "feel": "fear becomes the sound before the recognition rather than the enemy of it. After the last word, expect nothing; the asking is the turning.",
+  "sign": "a small fright turns into the jump OF recognition — fear and ambush become the same doorway."
+ },
+ {
+  "id": "bha-2",
+  "section": "bhayanaka",
+  "title": "The Full Confession",
+  "corpus": [
+   11,
+   8
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 11.8",
+  "en": "i am dull, i am weighed with sorrow, i am afraid of old age's flaws,\ni am without power — i have taken refuge in you, o śambhu;\nso calculate what's left.",
+  "brief": "The full inventory — including the fear of decay — ending in refuge.",
+  "logic": "The verse itemises the negative self-image without flinching: mūḍha (dull), duḥkhakṛta (sorrow-woven), jarā-doṣa-bhīta (afraid of old age's flaws), śakti-hīna (powerless) — and then the pivot: tavāśritaḥ asmi, I have taken refuge. Named fears lose volume; the inventory ends in a single act of leaning.",
+  "howto": "List YOUR four in his cadence, then land the last line. Feeling-tip: the inventory leaves the body lighter; the refuge-line is the exhale. Especially for aging-anxiety and inadequacy-shame.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "11.8",
+  "how": "List YOUR four in his cadence, then land the last line.",
+  "feel": "the inventory leaves the body lighter; the refuge-line is the exhale. Especially for aging-anxiety and inadequacy-shame.",
+  "sign": "the worst you can say about yourself is out loud and addressed; the dread it carried does not follow it out."
+ },
+ {
+  "id": "bha-3",
+  "section": "bhayanaka",
+  "title": "Between His Feet",
+  "corpus": [
+   12,
+   8
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 12.8",
+  "en": "residing even between your feet and your devotees' —\ni am without fear; in those various planes of being\ni would worship the lord, unobstructed in action.",
+  "brief": "Fearlessness by geography: living in the gap between his feet.",
+  "logic": "Nivasann antara eva nirbhayaḥ — dwelling in the in-between (between his feet and his people), fearlessness arises not from courage but from LOCATION. The verse gives fear a map: there is a narrow country, foot-adjacent and community-adjacent, where bhaya simply has no border. Fear lives at other addresses.",
+  "howto": "When fear arrives: find the location instead of fighting the feeling. Imagine the small warm space between his feet; move in. Feeling-tip: the fear stays outside the border like weather reported from another city.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "12.8",
+  "how": "When fear arrives: find the location instead of fighting the feeling. Imagine the small warm space between his feet; move in.",
+  "feel": "the fear stays outside the border like weather reported from another city.",
+  "sign": "terror contracts to a point at the chest and stays there without spreading — fear held, not released."
+ },
+ {
+  "id": "bha-4",
+  "section": "bhayanaka",
+  "title": "The Scorching Dissolved",
+  "corpus": [
+   9,
+   18
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 9.18",
+  "en": "when will i come to dwell in the drinking-and-playing\nof your devotion-nectar — with the eight powers attained,\nand all fear of troubles dissolved?",
+  "brief": "Anticipatory dread melts in the rasa-cup.",
+  "logic": "Two claims: the eight siddhis may be attained (the vīra-bait), but the real payload is vigalita-upātāpa-santrāsa — the dread-of-burn having MELTED in the rāsa-drinking. Upātāpa is the scorching anxiety of what's coming; it isn't fought, it is dissolved in the cup. Fear as something you drink through.",
+  "howto": "Anxious about what's coming? Take the verse as a drink-description and sip your current state as rasa. Feeling-tip: the anticipatory heat cools; the future stops glowing red.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "9.18",
+  "how": "Anxious about what's coming? Take the verse as a drink-description and sip your current state as rasa.",
+  "feel": "the anticipatory heat cools; the future stops glowing red.",
+  "sign": "the scorch dissolves into warmth: the heat reverses mid-verse — what scorched now only warms."
+ },
+ {
+  "id": "bib-1",
+  "section": "bibhatsa",
+  "title": "The Smear That Is Forgetting",
+  "corpus": [
+   13,
+   2
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 13.2",
+  "en": "even within, the tiniest smear that is my non-contemplation of you —\nwiping that, o lord, from everywhere,\n[show] your own form.",
+  "brief": "The impurity isn't filth; it's the lapse of remembering.",
+  "logic": "The mala is tvad-apratana-kālikā — even the moment's failure to think of him. Bībhatsa's disgust, redirected: the thing that disgusts is not dirt but forgetting. And the wiping (parimṛjya) reveals svarūpa — the cleaner the frame, the more the face shows. Disgust at the stain becomes longing for what the stain hid.",
+  "howto": "In self-loathing: rename the stain — it is just the lapse of attention. Wipe = return, not scrub. Feeling-tip: the self-hatred loses its subject, and what's left is a fresh look at his form.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "13.2",
+  "how": "In self-loathing: rename the stain — it is just the lapse of attention. Wipe = return, not scrub.",
+  "feel": "the self-hatred loses its subject, and what's left is a fresh look at his form.",
+  "sign": "the smear reads as forgetting, not filth — self-disgust softens mid-name: it is the smudge, not the mirror."
+ },
+ {
+  "id": "bib-2",
+  "section": "bibhatsa",
+  "title": "The Impure Mind, Confessed",
+  "corpus": [
+   15,
+   14
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 15.14",
+  "en": "in my mind, absolutely impure, my own devotion-vine drowned —\nhard: it ripens not even its own,\nthe unearned blossoms of its fortune.",
+  "brief": "The raw confession — the devotion-vine drowned in muck.",
+  "logic": "Bībhatsa at its least polite: maline manasi, the mind is dirty, and the bhakti-latā (devotion-vine) is submerged under it — so even its own virtues don't ripen. Utpaladeva includes the complaint in the hymn-book itself: self-disgust, spoken, IS bhakti's material. The shame is not edited out; it is a verse.",
+  "howto": "Say it on the days you feel worst about yourself — the hymn says it for you, better. Feeling-tip: honesty displaces shame; the muck, spoken aloud, is at least seen.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "15.14",
+  "how": "Say it on the days you feel worst about yourself — the hymn says it for you, better.",
+  "feel": "honesty displaces shame; the muck, spoken aloud, is at least seen.",
+  "sign": "the inventory of impurity is spoken almost fondly — aversion drains when it is finally reported."
+ },
+ {
+  "id": "bib-3",
+  "section": "bibhatsa",
+  "title": "The Doubt-Enemy Shattered",
+  "corpus": [
+   18,
+   19
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 18.19",
+  "en": "the thought-stain in my mind, scoured by the deathless nectar's flood\npoured over the trough of refuse — with the invincible doubt-enemy crushed:\nlet beholding you be unceasing.",
+  "brief": "The stain's partner in crime is doubt — and seeing breaks both.",
+  "logic": "The verse names the double-bind: mala (the mind's stain) and the durjaya saṃśaya-vairin (the invincible doubt-enemy). Both are destroyed by ONE thing: tvad-avalokana-janita-phala — the fruit born of beholding him. Disgust's cure is not more scrubbing but darśana, the look. The enemy of clarity was never dirt; it was the un-looked-at.",
+  "howto": "When the mind feels stained AND doubting: stop scrubbing, start looking — one look inward at the form. Feeling-tip: doubt and disgust fall together because they were both standing in the dark.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "18.19",
+  "how": "When the mind feels stained AND doubting: stop scrubbing, start looking — one look inward at the form.",
+  "feel": "doubt and disgust fall together because they were both standing in the dark.",
+  "sign": "the doubt-enemy loses its repetition compulsion: the nagging question is heard once and does not come back."
+ },
+ {
+  "id": "bib-4",
+  "section": "bibhatsa",
+  "title": "Strike the Dividing-Piece",
+  "source": "Abhinavagupta, Kramastotra 19.19",
+  "iast": "vilīne śaṅkaughe sapadi paripūrṇe ca vibhave | saṃhārākhyā mama hṛdi bhidāṃśaṃ praharatu",
+  "en": "in the melted doubt-heap, at once in full glory —\no lord named dissolution, strike the split portion of my heart.",
+  "brief": "The hunger that keeps cutting — finished when doubt melts.",
+  "logic": "Kramastotra's verse from Abhinavagupta's own recitation-list: śaṅkaugha (the doubt-flood) is gone, pūrṇa (fullness) stands — and then ONE request: strike the hṛdi-bhidāṃśa, the fragment that divides the heart. The disgust behind bībhatsa was the partition-making: the inner cutter that keeps fullness in two halves. Saṃhāra (dissolution) finishes the surgery.",
+  "howto": "After weeks of inner division — this vs that, me vs it: say it as the surgeon's request, once. Feeling-tip: the split seals; the hunger to divide ends with the knife that isn't yours.",
+  "source_path": "sources/L4-kram-p19.DRAFT.json",
+  "source_ref": "kram-p19 v19",
+  "how": "After weeks of inner division — this vs that, me vs it: say it as the surgeon's request, once.",
+  "feel": "the split seals; the hunger to divide ends with the knife that isn't yours.",
+  "sign": "the dividing-piece is struck: what disgusted you now shares your substance — aversion flips to inclusion."
+ },
+ {
+  "id": "adb-1",
+  "section": "adbhuta",
+  "title": "The Wonder of the Word at Tongue-Tip",
+  "corpus": [
+   1,
+   20
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 1.20",
+  "en": "when the single word śiva stands ever at the tongue's tip —\nthe taste of all sense-objects exists in the devotee alone.\nwhat a wonder!",
+  "brief": "One word at tongue-tip transmutes every taste into rasa.",
+  "logic": "The verse compresses Vijñāna: the mantra at the organ of taste (jihvāgra) transmutes all viṣaya-āsvāda — every sense-object is tasted as devotion. The aho! is technical: it is vismaya at the mechanism itself — wonder as the experience of the doctrine working. Adbhuta is testable in one bite.",
+  "howto": "When anything tastes or sounds flat: place Śiva at the tongue's tip and re-taste the next sip or bite. Feeling-tip: the wonder is measurable — if the flavour deepens, the verse is real.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "1.20",
+  "how": "When anything tastes or sounds flat: place Śiva at the tongue's tip and re-taste the next sip or bite.",
+  "feel": "the wonder is measurable — if the flavour deepens, the verse is real.",
+  "sign": "the syllable you have said a hundred times reads as freshly minted — the word at tongue-tip works."
+ },
+ {
+  "id": "adb-2",
+  "section": "adbhuta",
+  "title": "The Wonderful Deceiver",
+  "corpus": [
+   2,
+   12
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 2.12",
+  "en": "namas to the deceptive, the pure, the secret,\nthe manifest-self, the subtle, the all-form —\nto the citra, to śambhu.",
+  "brief": "Bowing to the wonderful one whose wonder IS his trick.",
+  "logic": "Citra — variegated, marvellous, strange — is the epithet running through the verse, married to māyāvine (the deceiver), prakaṭātmane (the manifest secret). The universe's strangeness is his craft, not a malfunction. Adbhuta here is delight in the trick: the weirdness of the world is filed as artistry.",
+  "howto": "When the world turns surreal — say the verse and file the strangeness under citra. Feeling-tip: the uncanny flips from threat to artistry; the trick becomes someone's excellent work.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "2.12",
+  "how": "When the world turns surreal — say the verse and file the strangeness under citra.",
+  "feel": "the uncanny flips from threat to artistry; the trick becomes someone's excellent work.",
+  "sign": "the day's setup — the coincidence, the irony — shows as artistry: you are impressed instead of ambushed."
+ },
+ {
+  "id": "adb-3",
+  "section": "adbhuta",
+  "title": "The Wheel of Diverse States",
+  "source": "Abhinavagupta, Gītārthasaṅgraha v.1",
+  "iast": "ya eṣa vitatasphuradvividhabhāvacakrātmakaḥ parasparavibhedavānviṣayatāmupāgacchati yadekamayabhāvanāvaśata etyabhedānvayaṃ sa śaṃbhuraśivāpaho jayati bodhabhāsāṃ nidhiḥ",
+  "en": "he who, made of the widely flashing wheel of diverse states, comes to be the objects of experience — whose one, given to contemplation, is the bond of non-difference: he, śaṃbhu, averter of woe, triumphs — treasury of the lights of knowing.",
+  "brief": "Abhinavagupta's own opening: the wheel of states resolves into one — triumph.",
+  "logic": "The Gītārthasaṃgraha's first breath performs its thesis: the flash-wheel of manifold states (thoughts, emotions, the day's weather — the very stuff of experience) resolves into abheda, non-difference — and that resolution is jayati, triumph. Adbhuta as the wonder OF the doctrine: the many flashing states are not noise but the treasury-house (nidhi) of knowing-light.",
+  "howto": "Use it as the invocation before any prayer-session in this book: name the swirl of your current states as the wheel, then remember the wheel IS the treasury. Feeling-tip: the chaos of feelings gets reclassified as treasure on sight.",
+  "source_path": "sources/L4-gita-a00-v01.DRAFT.json",
+  "source_ref": "gita-a00 v1",
+  "how": "Use it as the invocation before any prayer-session in this book: name the swirl of your current states as the wheel, then remember the wheel IS the treasury.",
+  "feel": "the chaos of feelings gets reclassified as treasure on sight.",
+  "sign": "you SEE the states change as they change — the rotation itself becomes the marvel, not its contents."
+ },
+ {
+  "id": "adb-4",
+  "section": "adbhuta",
+  "title": "Worship Without Begging",
+  "corpus": [
+   17,
+   24
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 17.24",
+  "en": "wonder! o boon-giver: among the full-hearted in devotion toward you,\nis any mode of worship praised\nthat is not stained with begging?",
+  "brief": "The great wonder: worship with no shopping list attached.",
+  "logic": "Vismaya at the bhaktas whose pūjā carries no yācñā — no begging-stain. The worship without a price-tag is the marvel; the wonder is the devotee's purity of motive, not the display. Adbhuta turns inward: amazed at the possibility of asking for nothing.",
+  "howto": "Notice when you've prayed with a shopping list. Say this verse as the correction, then worship once with nothing attached. Feeling-tip: the ask drops and the song stays — that gap is the wonder.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "17.24",
+  "how": "Notice when you've prayed with a shopping list. Say this verse as the correction, then worship once with nothing attached.",
+  "feel": "the ask drops and the song stays — that gap is the wonder.",
+  "sign": "the petition-impulse is simply absent: you finish having wanted nothing, and that absence is the wonder."
+ },
+ {
+  "id": "san-1",
+  "section": "santa",
+  "title": "The Rasa Beyond the World",
+  "corpus": [
+   1,
+   21
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 1.21",
+  "en": "diving in the ocean of devotion's nectar — with peaceful waves,\ncool and white and sweet — tasting the alaukika rasa:\nwho among the steady even counts a name there?",
+  "brief": "Śānta's theory in one verse: the peaceful ocean, the non-worldly taste.",
+  "logic": "Everything the Abhinavabhāratī says about rasa is here: śānta-kallola — the peace-wave ocean; svādubhakti-sudhāmbudhi — the nectar-ocean of sweet devotion; and alaukika-rasa-āsvāda — the BEYOND-WORLDLY tasting. Peace is not absence but the most extreme flavour, so intense that the steady (susthā) stop counting even names.",
+  "howto": "For peace-practice: dive once, taste once, count nothing — not even the breath. Feeling-tip: the mental to-do list stops being readable; that illegibility is the alaukika flicker.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "1.21",
+  "how": "For peace-practice: dive once, taste once, count nothing — not even the breath.",
+  "feel": "the mental to-do list stops being readable; that illegibility is the alaukika flicker.",
+  "sign": "nothing is being felt loudly, and the quiet itself has flavour — emotion settled into background hum."
+ },
+ {
+  "id": "san-2",
+  "section": "santa",
+  "title": "All Time in the Worship-Union",
+  "corpus": [
+   17,
+   12
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 17.12",
+  "en": "may all my time — even the endless kind — pass\nin the happiness of union with your worship;\nthat alone is what i crave.",
+  "brief": "The peaceful life defined: every hour inside the worship-union.",
+  "logic": "Kāla (time) is the anxious substance — endless time is the dread of the future. The verse re-routes every hour into bhavat-pūjāmaya-saṅga-sukha, the happiness of joining-with-worship. Śānta as temporal peace: not a mood but a schedule filled with one activity. And the craving (īyadarthaye) is permitted — it is the only thirst worth keeping.",
+  "howto": "When the day stretches ahead daunting: pray the WHOLE day into the worship-frame, then do the next ordinary thing as its first item. Feeling-tip: the horizon softens; time becomes a room, not a corridor.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "17.12",
+  "how": "When the day stretches ahead daunting: pray the WHOLE day into the worship-frame, then do the next ordinary thing as its first item.",
+  "feel": "the horizon softens; time becomes a room, not a corridor.",
+  "sign": "recitation loses track of duration — you start at the kettle and end somewhere else: all-time-in-the-union."
+ },
+ {
+  "id": "san-3",
+  "section": "santa",
+  "title": "For Peace, Not for Pleasure",
+  "corpus": [
+   18,
+   15
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 18.15",
+  "en": "for peace, not for pleasure-seeking — those intoxicated\nwith the fullness of your devotion, o lord;\neven the fruit of searching for liberation they don't crave —\nbefore you, the heart-stealer.",
+  "brief": "The anti-materialist verse: peace sought as peace, not as payoff.",
+  "logic": "The devotee's intoxication aims at śāntaye — peace — na sukhalipsutā, explicitly NOT the pleasure-hunt; even mokṣa-phala (the fruit of liberation) is not craved. Śānta is the only desire that cancels desiring — and the verse says so without smugness: these ones don't even want the prize.",
+  "howto": "When peace turns into another acquisition-plan — this retreat, that technique, the next course — say it as the disarming. Feeling-tip: the goal releases you; the practice continues unburdened.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "18.15",
+  "how": "When peace turns into another acquisition-plan — this retreat, that technique, the next course — say it as the disarming.",
+  "feel": "the goal releases you; the practice continues unburdened.",
+  "sign": "you want nothing from the recitation and it keeps going anyway — the not-for-pleasure test passes."
+ },
+ {
+  "id": "san-4",
+  "section": "santa",
+  "title": "Cries Like Bamboo-Drops",
+  "corpus": [
+   11,
+   9
+  ],
+  "source": "Utpaladeva, Śivastotrāvalī 11.9",
+  "en": "laying my cries at your ear's place, my dearest —\nthey grow small: like rain inside a bamboo-joint,\nthey rise as pearls.",
+  "brief": "Even the cries get smaller when laid at his ear.",
+  "logic": "The simile IS the practice: ākranda (cries) laid at his ear-shore become tucchatarāṇi — tinier — like rain slipping down inside a hollow bamboo. Śānta as acoustics: devotion is the volume knob. No silencing, no denial — just the difference between shouting into the void and speaking into an ear.",
+  "howto": "When crying or complaining: say it and consciously LAY the noise at his ear — the listener inside. Feeling-tip: the sound gets smaller mid-sentence; the bamboo-joint is the quiet place behind your own listening.",
+  "source_path": "sources/sivastotravali_corpus.json",
+  "source_ref": "11.9",
+  "how": "When crying or complaining: say it and consciously LAY the noise at his ear — the listener inside.",
+  "feel": "the sound gets smaller mid-sentence; the bamboo-joint is the quiet place behind your own listening.",
+  "sign": "tears with no grief attached — bamboo-drops: empty, cool, relieving; crying with no object is how śānta cries."
+ },
+ {
+  "id": "aghora",
+  "section": "sangha",
+  "title": "The Aghora Mantra",
+  "source": "Yajurveda · chanted by Swami Lakshmanjoo at every Weekly Sangha",
+  "iast": "aghorebhyo 'tha ghorebhyo ghoraghoratarībhyaśca | sarvataḥ śarva sarvebhyo namaste rudrarūpebhyaḥ ||",
+  "en": "salutations to aghora, to ghora, to ghoraghora-tarī — to sarva in all directions, to all the rudra-forms: namas.",
+  "brief": "The Sangha's opening chant. Swamiji's directive after his 1989 vision: spread this message all over the world.",
+  "logic": "The verse salutes the three energies of Rudra as his forms. Per Swamiji's Tantrāloka 3.257-259 teaching: Aghorā carries you to God-consciousness at once, even without your wish (cit-śakti); Ghorā makes the desirer wait — 'don't hurry, just we will see the time' (icchā-śakti); Ghoratarī carries the careless downward (jñāna-śakti). The protection invoked is real but conditional: Svacchandanātha's eighteen arms are the eighteen tattvas, outgrowths of the five śaktis, made for the protection of the individual — but protection requires the yamas and niyamas, the supreme of which is īśvara-praṇidhāna: if you love Lord Śiva and are devoted to Him, it is not possible for Him to neglect you.",
+  "howto": "Chant it where Swamiji put it: at the opening of any practice — this is the beginning of the Weekly Sangha. Three to nine rounds, aloud. When to: first thing in the morning, or at any moment of fear — you are addressing the three energies directly. Effect, per the tradition he taught: protection through the eighteen arms and purification of the three channels, body, speech and mind. His own instruction for its spread: 'You should spread this message all over the world.'",
+  "source_path": "sources/efficacy-aghora.pdf",
+  "source_ref": "Secret Supreme ch.13 · letter 1989",
+  "how": "Chant it where Swamiji put it: at the opening of any practice — this is the beginning of the Weekly Sangha. Three to nine rounds, aloud. When to: first thing in the morning, or at any moment of fear — you are addressing the three energies directly. Effect, per the tradition he taught: protection through the eighteen arms and purification of the three channels, body, speech and mind. His own instruction for its spread: 'You should spread this message all over the world.'",
+  "sign": "the flinch arrives half a second late or not at all: what repulsed you now reads as his body in another mood."
+ },
+ {
+  "id": "bahurupa-core",
+  "section": "sangha",
+  "title": "The Secret Remedy",
+  "source": "Śrī Bahurūpa-Garbha Stotra, Bhairava's answer (vv.5-7)",
+  "iast": "śṛṇu devī! paraṁ guhyaṁ rahasyaṁ paramādbhutam | sarva-pāpa-praśamanaṁ sarva-duḥkha-nivāraṇam || prāyaścitteṣu sarveṣu tīvreṣv api vimocanam | sarva-cchidrāpa-haraṇaṁ sarvārti-vinivārakam || samayolaṅghane ghore japādeva vimocanam | bhoga-mokṣha-pradaṁ devī! sarva-siddhi-phalapradam ||",
+  "en": "listen, goddess: the supreme secret, most wonderful — it pacifies all sins, removes all sorrows; releases even from intense atonement, removes every gap, uproots all affliction; in the breaking of the vows the remedy is the recitation alone — it grants enjoyment and liberation, goddess, the fruits of all accomplishments.",
+  "brief": "The Devī asks for the easy remedy; Bhairava answers: the recitation itself.",
+  "logic": "The hymn's frame: Bhairavī approaches Svacchanda Bhairava on Kailāśa and asks for the upāya for those who have broken the rules, however sincerely they try to atone. Bhairava's answer is not a ritual but a text — japādeva vimocanam, liberation by the recitation itself. It purifies the three channels, closes the chidras (the flaws and gaps in conduct and rite), and grants both bhoga and mokṣa. The logic of a remedy-hymn: the mantra is the medicine, and the disease is as much guilt as transgression.",
+  "howto": "Recite it at the beginning and end of any ritual — the hymn's own instruction (yāgārambhe ca yāgānte). Also daily (nitya), on occasion (naimitika), when you want something (kāmya), for yourself or for someone else. Counting effects per the hymn: one hundred recitations purify even great sinners; fifty, inadvertent sins; twenty-five, minor sins — and a single recitation (of this hymn or of the Aghora japa) removes wrongs done by body, speech or mind, whether through inattention or knowingly. Feeling-tip: the ease is the point — sadupāyaṁ, the remedy without strain.",
+  "source_path": "sources/bahurupa-meaning.pdf",
+  "source_ref": "vv.5-7 · Academy recitation PDF",
+  "how": "Recite it at the beginning and end of any ritual — the hymn's own instruction (yāgārambhe ca yāgānte). Also daily (nitya), on occasion (naimitika), when you want something (kāmya), for yourself or for someone else. Counting effects per the hymn: one hundred recitations purify even great sinners; fifty, inadvertent sins; twenty-five, minor sins — and a single recitation (of this hymn or of the Aghora japa) removes wrongs done by body, speech or mind, whether through inattention or knowingly.",
+  "feel": "the ease is the point — sadupāyaṁ, the remedy without strain.",
+  "sign": "a stuck state — anxiety, craving, the low hum — is named as him and loses its stuckness; the secret shows as the shift."
+ },
+ {
+  "id": "bahurupa-close",
+  "section": "sangha",
+  "title": "No Mantra Greater",
+  "source": "Śrī Bahurūpa-Garbha Stotra, the close (vv.13-15)",
+  "iast": "vidhihīne pramāde ca japtavyaṁ sarva-karmasu | nātaḥ parataro mantro nātaḥ paratarā stutiḥ || nātaḥ paratarā kācit samyak-pratyaṅgirā priye | iyaṁ samaya-vidyānāṁ rāja-rājeśvarī-śvari || paramāpyāyanaṁ devi bhairavasya prakīrtitam | prīṇanaṁ sarva-devānāṁ sarva-saubhāgya-vardhanam ||",
+  "en": "when the rule is missing, when there is negligence — it should be recited in every action. no mantra is greater than this, no praise higher; no counter-formula better than this, o beloved — this queen of the knowledge of the precepts, o sovereign among isvaras! this, o goddess, is the supreme nourishment of bhairava's glorification — it satisfies all the gods and increases all good fortune.",
+  "brief": "The hymn's own claim: no mantra greater, no counter-formula better.",
+  "logic": "Three closing claims: (1) it covers every action, including mistakes of omission and negligence (pramāda); (2) it is samyak-pratyaṅgirā — the perfect counter-charm against ritual flaw — the queen of samaya-vidyā, the knowledge of the precepts; (3) its effect is āpyāyana, nourishment — of Bhairava's glorification, pleasing to all the gods, increasing saubhāgya, all good fortune. The hymn then gives its own viniyoga: Ṛṣi Vāmadeva, meter Anuṣṭupa, devatā Bahurūpabhaṭṭāraka, purpose — removal of sins of body, speech and mind, and attainment of the four goals: dharma, artha, kāma, mokṣa.",
+  "howto": "Full practice in the tradition: dhyāna of Svacchanda (crystal-white upward face, yellow east, blue south, pomegranate-red north, moon-white west — the twelve-verse meditation), then this hymn, then the Gāyatrī — oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi, tanno 'ghoraḥ pracodayāt, three times — then the mūla mantra. In this book's simpler use: one round of these three verses at the close of any difficult day; the line to remember is 'no mantra greater than this'.",
+  "source_path": "sources/bahurupa-recitation.pdf",
+  "source_ref": "vv.13-15 · viniyoga",
+  "how": "Full practice in the tradition: dhyāna of Svacchanda (crystal-white upward face, yellow east, blue south, pomegranate-red north, moon-white west — the twelve-verse meditation), then this hymn, then the Gāyatrī — oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi, tanno 'ghoraḥ pracodayāt, three times — then the mūla mantra. In this book's simpler use: one round of these three verses at the close of any difficult day; the line to remember is 'no mantra greater than this'.",
+  "sign": "the tongue stops wanting to stop: the mantra runs during ordinary tasks, unsummoned — addiction-to-the-name."
+ },
+ {
+  "id": "bah-dhy1",
+  "section": "sangha",
+  "title": "Svacchanda, Fifteen-Eyed",
+  "source": "Śrī Bahurūpa-Garbha Stotra — dhyāna v.1",
+  "iast": "tripañca-nayanaṁ devaṁ jaṭā-mukuṭa-maṇḍitam | candrakoṭi-pratīkāśhaṁ candrārdha-kṛita-śhekharam",
+  "en": "meditate the deva of fifteen eyes, crowned with matted hair —\nbright as a crore of moons,\nwith the crescent as his crest.",
+  "brief": "The dhyāna opens the hymn: eyes, hair, moonlight, crescent.",
+  "logic": "Every pūjā begins with dhyāna — the form fixed before the words. Fifteen eyes (three on each of five faces), the matted crown, a body bright as a crore of moons, the crescent as crest: the geometry of Svacchanda made visual so the hymn that follows has somewhere to land.",
+  "howto": "Hold the image for three breaths before the hymn. The count is itself a mandala: five faces × three eyes = the fifteen. Feeling-tip: the page you are about to read now has a face behind it.",
+  "source_path": "sources/bahurupa-recitation.pdf",
+  "source_ref": "dhyāna v.1",
+  "how": "Hold the image for three breaths before the hymn. The count is itself a mandala: five faces × three eyes = the fifteen.",
+  "feel": "the page you are about to read now has a face behind it.",
+  "sign": "the periphery reads as watching-with-kindness: directions, above and below feel occupied by him, not empty."
+ },
+ {
+  "id": "bah-dhy6",
+  "section": "sangha",
+  "title": "Eighteen Arms",
+  "source": "Śrī Bahurūpa-Garbha Stotra — dhyāna v.6",
+  "iast": "siṁha-carma-parīdhānaṁ gaja-carmottarī-yakam | aṣhṭā-daśha-bhujaṁ devaṁ nīlakaṇṭhaṁ sutejasam",
+  "en": "wearing lion-skin at the loins, elephant-hide above —\nthe eighteen-armed deva,\nblue-throated, radiant.",
+  "brief": "Eighteen arms = eighteen tattvas — Swamiji's own gloss.",
+  "logic": "In Swamiji's1989 letter the eighteen arms are counted exactly: five prāṇas, five acts, five inner acts (abhāsanā to vilāpanā), plus mind, intellect and ahaṃkāra — the whole cosmology as a body standing guard over the individual. Lion below, elephant above: wild and royal, both worn as armour. The protection is structured, not generic.",
+  "howto": "Name the three groups of five + the three as you hold the image: prāṇas, acts, inner acts — then mind, intellect, ego. The eighteen-armed form is the tattvas ACTUALLY standing around you. Feeling: guarded specificity, not vague light.",
+  "source_path": "sources/bahurupa-recitation.pdf",
+  "source_ref": "dhyāna v.6 · Swamiji letter 1989",
+  "how": "Name the three groups of five + the three as you hold the image: prāṇas, acts, inner acts — then mind, intellect, ego. The eighteen-armed form is the tattvas ACTUALLY standing around you. Feeling: guarded specificity, not vague light.",
+  "sign": "the day's open loops read as literally carried — the shoulder-tension drops because he has them."
+ },
+ {
+  "id": "bah-dhy10",
+  "section": "sangha",
+  "title": "The Supreme Aghorī Power",
+  "source": "Śrī Bahurūpa-Garbha Stotra — dhyāna v.10",
+  "iast": "dhyāyedvai yastu yuktātmā kṣhipraṁ siddhyati mānavaḥ | yā sā pūrvaṁ mayā khyātā aghorī śhaktir-uttamā",
+  "en": "let the yoked one meditate thus — the human attains swiftly:\nshe whom i have declared before,\nthe supreme aghorī power.",
+  "brief": "The dhyāna's promise: the yoked one attains fast.",
+  "logic": "The meditation closes by naming its engine: aghorī śakti uttamā — the supreme Aghorī power, the very śakti the Sangha's Aghora mantra invokes. Speed follows from yoking (yuktātman), not from duration — kṣipraṁ siddhyati, swiftly the human attains. The hinge between dhyāna and hymn.",
+  "howto": "Recite once as the transition: image stable, hymn ahead. The 'yoked one' is simply you with the picture held. The power invoked is the same one the Weekly Sangha chants — your book's appendix and the living practice now share one address.",
+  "source_path": "sources/bahurupa-recitation.pdf",
+  "source_ref": "dhyāna v.10",
+  "how": "Recite once as the transition: image stable, hymn ahead. The 'yoked one' is simply you with the picture held. The power invoked is the same one the Weekly Sangha chants — your book's appendix and the living practice now share one address.",
+  "sign": "the thing you most avoid gets looked at directly and stays lit instead of gruesome: no-aversion showing."
+ },
+ {
+  "id": "bah-gayatri",
+  "section": "sangha",
+  "title": "Bahurūpa Gāyatrī",
+  "source": "Śrī Bahurūpa-Garbha Stotra — the gāyatrī",
+  "iast": "oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi | tanno 'ghoraḥ pracodayāt",
+  "en": "we meditate on the manifold-formed,\non the one of a hundred thousand eyes —\nmay the aghora impel our thought.",
+  "brief": "The hymn's Gāyatrī — three tenses of prayer in three lines.",
+  "logic": "The classical Gāyatrī frame bent onto Bahurūpabhaṭṭāraka: vidmahe (we know), dhīmahi (we dwell), pracodayāt (may he impel) — knowing, dwelling, directing. Bahurūpa = manifold-formed: forms plural, power one. Koṭarākṣa, hundred-thousand-eyed, answers the dhyāna's fifteen eyes — the seeing multiplied.",
+  "howto": "The recitation order per the viniyoga: dhyāna → hymn → this gāyatrī three times → mūla mantra. Three rounds, seed-voice. 'Pracodayāt' is the only request in the entire sequence — everything before it was arrangement.",
+  "source_path": "sources/bahurupa-recitation.pdf",
+  "source_ref": "gāyatrī · viniyoga in recitation PDF",
+  "how": "The recitation order per the viniyoga: dhyāna → hymn → this gāyatrī three times → mūla mantra. Three rounds, seed-voice. 'Pracodayāt' is the only request in the entire sequence — everything before it was arrangement.",
+  "sign": "brow, chest and navel warm in sequence on the rounds — and the day bends toward him three times without effort."
+ }
+]
