@@ -1,0 +1,6 @@
+# Offline draft renderer. ffmpeg/ffprobe with libflite and libx264 are also required.
+WeasyPrint>=63,<64
+mistune>=3.1,<4
+Pillow>=10,<14
+fonttools>=4,<5
+jsonschema>=4.20,<5

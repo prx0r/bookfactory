@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/prx0r/bookfactory/schemas/scholar-media-1.0.json",
+  "title": "Private Scholar media draft",
+  "type": "object", "additionalProperties": false,
+  "required": ["format", "status", "origin", "snapshot", "snapshot_sha256", "text_sha256"],
+  "properties": {
+    "format": {"const": "scholar-media/1"}, "status": {"const": "private-draft"},
+    "snapshot_sha256": {"$ref": "#/$defs/hash"}, "text_sha256": {"$ref": "#/$defs/hash"},
+    "origin": {"oneOf": [{"$ref": "#/$defs/scholar"}, {"$ref": "#/$defs/git"}]},
+    "snapshot": {"type": "object", "additionalProperties": false,
+      "required": ["kind", "work", "target", "layer", "title", "content"],
+      "properties": {"kind": {"const": "essay"}, "work": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$"},
+        "target": {"type": "string", "pattern": "^$|^[A-Za-z0-9][A-Za-z0-9_.:-]{0,159}$"},
+        "layer": {"enum": ["", "t1", "l0", "argmap", "l2", "c1", "l3", "l4", "c2"]},
+        "title": {"type": "string", "maxLength": 300},
+        "content": {"type": "object", "additionalProperties": false, "required": ["text"],
+          "properties": {"text": {"type": "string", "minLength": 1, "maxLength": 60000},
+            "base_sha256": {"type": "string", "pattern": "^$|^[a-f0-9]{64}$"},
+            "parent": {"type": ["string", "null"], "maxLength": 160}, "assisted": {"type": "boolean"},
+            "model": {"type": "string", "maxLength": 120}, "agent_source": {"type": "string", "maxLength": 160},
+            "citations": {"type": "array", "maxItems": 10, "items": {"$ref": "#/$defs/citation"}}
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "scholar": {"type": "object", "additionalProperties": false, "required": ["type", "document_id", "revision", "author"],
+      "properties": {"type": {"const": "scholar"}, "document_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,159}$"}, "revision": {"type": "integer", "minimum": 1}, "author": {"type": "string", "maxLength": 300}}},
+    "git": {"type": "object", "additionalProperties": false, "required": ["type", "repository", "commit", "path", "author"],
+      "properties": {"type": {"const": "git"}, "repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"}, "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"}, "path": {"type": "string", "minLength": 1}, "author": {"type": "string", "maxLength": 300}}},
+    "citation": {"type": "object", "additionalProperties": false, "required": ["work", "target", "t1_sha256", "projection_sha256"],
+      "properties": {"work": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$"}, "target": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,159}$"}, "t1_sha256": {"$ref": "#/$defs/hash"}, "projection_sha256": {"$ref": "#/$defs/hash"}}}
+  }
+}
