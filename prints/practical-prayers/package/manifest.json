@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "book": "practical-prayers",
+  "title": "Practical Prayers",
+  "built": "2026-11-06",
+  "audio": {
+    "status": "pending-render",
+    "clips_present": 0,
+    "clips_planned": 72,
+    "voices": {
+      "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+      "granny": "614f8afd83f841048c040b2c6234d2c1"
+    }
+  },
+  "channels": {
+    "physical": "interior PDF -> KDP; QR in colophon -> hosted audio package (see BOOKS.md 7b)",
+    "kindle": "EPUB -> KDP ebook; colophon link -> hosted audio package",
+    "direct": "zip this package/ dir (EPUB + PDF + audio + manifest) as the one-link delivery"
+  },
+  "files": [
+    {
+      "path": "practical-prayers.epub",
+      "sha256": "15107c7590025b681a012970ae399c011d14016758403e9be62b8d7903267568",
+      "size": 683590
+    },
+    {
+      "path": "practical-prayers-preview.pdf",
+      "sha256": "87b6cd1d5e9c2ae4e22198ca860f6a523e94d0cb5e0684250289433ed227436b",
+      "size": 1705682
+    },
+    {
+      "path": "audio-plan.json",
+      "sha256": "d6373779c2d4385a31b2a874d01f25f66118390e865998b82167d38ae8f5974c",
+      "size": 29675
+    }
+  ],
+  "note": "Customer package staging. Physical ships via KDP (audio via QR/link once rendered); direct digital ships as this folder zipped. Clips absent until owner-go render."
+}

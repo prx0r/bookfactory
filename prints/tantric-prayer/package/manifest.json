@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "book": "tantric-prayer",
+  "title": "Tantric Prayer",
+  "built": "2026-11-06",
+  "audio": {
+    "status": "pending-render",
+    "clips_present": 0,
+    "clips_planned": 72,
+    "voices": {
+      "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+      "granny": "614f8afd83f841048c040b2c6234d2c1"
+    }
+  },
+  "channels": {
+    "physical": "interior PDF -> KDP; QR in colophon -> hosted audio package (see BOOKS.md 7b)",
+    "kindle": "EPUB -> KDP ebook; colophon link -> hosted audio package",
+    "direct": "zip this package/ dir (EPUB + PDF + audio + manifest) as the one-link delivery"
+  },
+  "files": [
+    {
+      "path": "tantric-prayer.epub",
+      "sha256": "630fc25e2b042af634946adf3e4535e0e32fbf6f402348436cbe2b29794191fd",
+      "size": 686919
+    },
+    {
+      "path": "tantric-prayer-preview.pdf",
+      "sha256": "0540505ddffe96f1126527e0b9e3e04e3b0de71fc7ff795b8de9b893de02cf17",
+      "size": 1884047
+    },
+    {
+      "path": "audio-plan.json",
+      "sha256": "e4a4511282cd43dbf5257732d9b8736b03b69d9ae6817370c25d86c79a3d85b4",
+      "size": 25886
+    }
+  ],
+  "note": "Customer package staging. Physical ships via KDP (audio via QR/link once rendered); direct digital ships as this folder zipped. Clips absent until owner-go render."
+}

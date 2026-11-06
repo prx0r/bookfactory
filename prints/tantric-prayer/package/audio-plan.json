@@ -1,0 +1,632 @@
+{
+  "version": "1.0",
+  "book": "tantric-prayer",
+  "engine": {
+    "tts": "fish-audio",
+    "pattern_source": "prx0r/videofactory render_chapter"
+  },
+  "voices": {
+    "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+    "granny": "614f8afd83f841048c040b2c6234d2c1"
+  },
+  "entries": [
+    {
+      "id": "srg-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "bhavadbhaktyamṛtāsvādād bodhasya syāt parāpi yā / daśā sā māṃ prati svāmin nāsavasyeva śuktatā",
+        "chars": 94,
+        "cache_key": "7453ddc2bf3453eb77c30794cdc7e675358f08db"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When longing is loud: say the verse and let the object of the longing become the taste of devotion rather than the thing you'd grab.",
+        "chars": 132,
+        "cache_key": "3407ddf4254ee8fdb2a73b7b537ff022353bce84"
+      }
+    },
+    {
+      "id": "srg-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "kṣaṇam apīha na tāvakadāsatāṃ prati bhaveyam ahaṃ kila bhājanam / bhavadabhedarasāsavam ādarād avirataṃ rasayeyam ahaṃ na cet",
+        "chars": 125,
+        "cache_key": "57022b14827627be7c19d4da353d1b1690556074"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When you crave closeness to something: say it and re-cast — the wine is already poured (non-difference); you are the cup.",
+        "chars": 121,
+        "cache_key": "e1e7a6e200f3f68d566ff0a6484d61a8dbe9f197"
+      }
+    },
+    {
+      "id": "srg-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "ambudaiḥ śikhigaṇo vinādyate kā ratiḥ priya mayā vinādya te",
+        "chars": 59,
+        "cache_key": "5b99d50c8372d6a0bdc9ad7293bb3394a3baeda7"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When longing for someone or something: say it as the peacock line — the cry is appropriate, beautiful, and will end with the rain. Feel the ache as weather: you are the bird, not the drowning.",
+        "chars": 192,
+        "cache_key": "734d9c091ec7e0694774883edbdb40ba71980203"
+      }
+    },
+    {
+      "id": "srg-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "prakāśāṃ śītalām ekāṃ śuddhāṃ śaśikalām iva / dṛśaṃ vitara me nātha kām apy amṛtavāhinīm",
+        "chars": 88,
+        "cache_key": "bc29dbee466ed61e84c627096bbac2d635698fbc"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When desire runs hot: one breath in, offer the heat upward as the thing that needs the glance, and picture the crescent-cool gaze landing on it. The prayer cools by image, not by prohibition.",
+        "chars": 191,
+        "cache_key": "5b1a5abae5f56bd354556be560e1c141c5c0e98a"
+      }
+    },
+    {
+      "id": "has-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "hasyate nṛtyate yatra rāgadveṣādi bhujyate / pīyate bhaktipīyūṣarasas tat prāpnuyāṃ padam",
+        "chars": 89,
+        "cache_key": "4f7c4353c8ca9bdfa55fb8b9a3645a4159813d13"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it when something finally stops being infuriating — and notice the laugh that arrives is the verse working.",
+        "chars": 111,
+        "cache_key": "88af3bf610496677b188faff8575ec579b3a8661"
+      }
+    },
+    {
+      "id": "has-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "upahāsaikasāre 'sminn etāvati jagattraye / tubhyam evādvitīyāya namo nityasukhāsine",
+        "chars": 83,
+        "cache_key": "db47d0f88edf6d3709b234dd47f28992deeebe08"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When life turns absurd: say it, and read the absurdity as his seat.",
+        "chars": 67,
+        "cache_key": "0ef30c0de204b19ed32509961c928753610b5c28"
+      }
+    },
+    {
+      "id": "has-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "jayanti te jagadvandyā dāsās te jagatāṃ vibho / saṃsārārṇava evaiṣa yeṣāṃ krīḍāmahāsaraḥ",
+        "chars": 88,
+        "cache_key": "30fe187191c38ee1715d361682474ff7e5e9fc54"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In a hard moment, name it: ocean. Then say the verse, and the water becomes shallow.",
+        "chars": 84,
+        "cache_key": "ffc73726811ef09609d03b11db44cc6b0829690c"
+      }
+    },
+    {
+      "id": "has-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "bhaktikṣīvo 'pi kupyeyaṃ bhavāyānuśayīya ca / tathā haseyaṃ udyāṃ ca raṭeyaṃ ca śivety alam",
+        "chars": 91,
+        "cache_key": "2148ec5d7ca54cc49c5c97c1763559987fdf806f"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When worked up: say it as an instruction manual — drunk first, then let it become laugh, rise, and shout. The last word must be Śiva, out loud if you dare.",
+        "chars": 155,
+        "cache_key": "14e057df1eb611166355d5874a936486840a4bf8"
+      }
+    },
+    {
+      "id": "kar-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "citraṃ nisargato nātha duḥkhabījam idaṃ manaḥ / tvadbhaktirasasaṃsiktam niḥśreyasamahāphalam",
+        "chars": 92,
+        "cache_key": "25f1d2e08bcc5dac23373bc57013e40185e0726c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In grief: say it and water the seed instead of cursing the soil.",
+        "chars": 64,
+        "cache_key": "6ba7f940d2a99397fc3bcca72c9c06fb54890b29"
+      }
+    },
+    {
+      "id": "kar-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "harṣāṇām atha śokānāṃ sarveṣāṃ plāvakaḥ samam / bhavaddhyānāmṛtāpūro nimnāṇimnabhuvām iva",
+        "chars": 89,
+        "cache_key": "9f1f0220a59f5a1aad3f70c5e2dc4100ea0c7df8"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it in either state — grief or glee — the verse works on the level of the field, not the feeling.",
+        "chars": 100,
+        "cache_key": "47fdfb5735240dce8f38daf32034641294576e43"
+      }
+    },
+    {
+      "id": "kar-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "deva duḥkhāny aśeṣāṇi yāni saṃsāriṇām api / ghṛtyākhyabhavadīyātmayutāny āyānti sahyatām",
+        "chars": 88,
+        "cache_key": "3799bbaea326f2cfc215a9450eb156d39e26a51c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In pain: say the ghee line and literally imagine the sharp edge of the feeling being coated.",
+        "chars": 92,
+        "cache_key": "d820bc659104af3721c8c24027093169ba12b7b6"
+      }
+    },
+    {
+      "id": "kar-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "he nātha praṇatārtināśanapaṭo śreyonidhe dhūrjaṭe duḥkhaikāyatanasya janmamaraṇatrastasya me sāmpratam / tac ceṣṭasva yathā manojñaviṣayāsvādapradā uttamā jīvann eva samaśnuve 'ham acalāḥ siddhīs tvadarcāparaḥ",
+        "chars": 209,
+        "cache_key": "7dfa4c7077ce13f63b982c4aeaf3d108051bfbf7"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At 3am in the pit: say the whole confession first, then the name.",
+        "chars": 65,
+        "cache_key": "756be10e3e672dd53ff44f38b197ddc35760976b"
+      }
+    },
+    {
+      "id": "rau-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "etan mama na tv idam iti rāgadveṣādinigaḍadṛḍhamūle / nātha bhavanmayataikyapratyayaparaśuḥ patatvantaḥ",
+        "chars": 103,
+        "cache_key": "d235f8d56eaddff48c4c7d441a29cf38da700d40"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In rage: name the possession first — 'mine', 'not yours' — then say the verse at it.",
+        "chars": 84,
+        "cache_key": "9d0d3832569e21556538686de2802a61b01b6381"
+      }
+    },
+    {
+      "id": "rau-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "mānāvamānarāgādiniṣpākavimalaṃ manaḥ / yasyāsau bhaktimāṃl lokatulyaśīlaḥ kathaṃ bhavet",
+        "chars": 87,
+        "cache_key": "18ba040990f2c11272e3721fe55545e34ef54e72"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When slighted: say it and let the feeling ripen rather than react — the insult is being cooked, not served.",
+        "chars": 107,
+        "cache_key": "468bf7ac08ef92ccf3a282500dba834188288661"
+      }
+    },
+    {
+      "id": "rau-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "rāgadveṣandhakāro 'pi yeṣāṃ bhaktitviṣā jitaḥ / teṣāṃ mahīyasām agre katame jñānaśālinaḥ",
+        "chars": 88,
+        "cache_key": "86fdba34af9175eccdcf7ec6a5ff0c5947b13900"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it as a light-switch claim: the anger is dark, and you are switching on devotion rather than wrestling the dark.",
+        "chars": 116,
+        "cache_key": "488d1151b1725a6fcc90127d3ee9608514546d82"
+      }
+    },
+    {
+      "id": "rau-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "vandyās te 'pi mahīyāṃsaḥ pralayopagatā api / tvatkopapāvakasparśapūtā ye parameśvara",
+        "chars": 85,
+        "cache_key": "2cbabe365e66af231cef90c7a6e45de7eb54b231"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When caught in a rage — yours or someone's's: say it, and re-classify the fire as purifying touch before responding.",
+        "chars": 116,
+        "cache_key": "0299ce69ce8648831b15d077f1ad4ed7c6ae4b0d"
+      }
+    },
+    {
+      "id": "vir-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "jaya deva namo namo 'stu te sakalaṃ viśvam idaṃ tavāśritam / jagatāṃ parameśvaro bhavān paramekaḥ śaraṇāgato 'smi te",
+        "chars": 116,
+        "cache_key": "dbe5de9dcb2b64ee8a8d068a684b53468e138c8c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Morning, before the task: say it once under the breath, fast.",
+        "chars": 61,
+        "cache_key": "0b98c37666d2938f112d1694d36997858ae3968d"
+      }
+    },
+    {
+      "id": "vir-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "antarbhakticamatkāracarvaṇāmīlitekṣaṇaḥ / namo mahyaṃ śivāyeti pūjayam syāṃ tṛṇāny api",
+        "chars": 86,
+        "cache_key": "4f29f3ed4b1c7a497e7adb3c6875b6dd989e5d6e"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When enthusiasm needs depth rather than noise: say it and offer to be the least impressive thing in the room.",
+        "chars": 109,
+        "cache_key": "3d64cfe33f0165a3002cb4580ffa15112c89721f"
+      }
+    },
+    {
+      "id": "vir-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "te jayanti mukhamaṇḍale bhraman asti yeṣu niyataṃ śivadhvaniḥ / yaḥ śāśīva prasṛto 'mṛtāśayāt svādu saṃsravati cāmṛtaṃ param",
+        "chars": 124,
+        "cache_key": "9ec0370fef89efbf9a9c2eb9d73f32b68361225a"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it when you catch the name rising on its own — mid-shower, mid-walk. The verse applauds the practice applauding itself.",
+        "chars": 123,
+        "cache_key": "1bdf42421cade26b6a8255d7665ae7bc8495491e"
+      }
+    },
+    {
+      "id": "vir-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "capalam asi yad api mānasa tatrāpi ślāghyase yato bhajase / śaraṇānām api śaraṇaṃ tribhuvanagurum ambikākāntam",
+        "chars": 110,
+        "cache_key": "868cdfb21798119b4d332c5be956aacf3ad8d431"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Address it TO your mind, in the second person, when it won't hold — praise it for showing up rather than scolding it for drifting.",
+        "chars": 130,
+        "cache_key": "1417dd333fc0baced8261e5f0a26f9279f94cb50"
+      }
+    },
+    {
+      "id": "bha-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "īśvaram abhayam udāraṃ pūrṇam akāraṇam apahnutātmānaṃ / sahasābhijñāya kadā svāmijanaṃ lajjayiṣyāmi",
+        "chars": 99,
+        "cache_key": "4e337b32485f276cf172852cd6c01a6eac22fd03"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When fear is up: say it as a question, not a plea — kadā? when?.",
+        "chars": 64,
+        "cache_key": "68043e8c800eda78a1d4bdc47a658cea0237c088"
+      }
+    },
+    {
+      "id": "bha-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "mūḍho 'smi duḥkhakalito 'smi jarādidoṣabhīto 'smi śaktirahito 'smi tavāśrito 'smi / śambho tathā kalaya śīghram upaimi yena sarvottamāṃ dhuram apojjhitaduḥkhamārgaḥ",
+        "chars": 164,
+        "cache_key": "58f5fe13863ad8a375477f81468d7e9b9587f3da"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "List YOUR four in his cadence, then land the last line.",
+        "chars": 55,
+        "cache_key": "3d80d771299b5e5abe70c12d12dd9159d71f73b5"
+      }
+    },
+    {
+      "id": "aghora",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "aghorebhyo 'tha ghorebhyo ghoraghoratarībhyaśca | sarvataḥ śarva sarvebhyo namaste rudrarūpebhyaḥ ||",
+        "chars": 100,
+        "cache_key": "d35e4b5bd55110587d8731d519d365774ac70a73"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Chant it where Swamiji put it: at the opening of any practice — this is the beginning of the Weekly Sangha. Three to nine rounds, aloud. When to: first thing in the morning, or at any moment of fear — you are addressing the three energies directly. Effect, per the tradition he taught: protection through the eighteen arms and purification of the three channels, body, speech and mind. His own instruction for its spread: 'You should spread this message all over the world.'",
+        "chars": 474,
+        "cache_key": "18fbcf64f2c1e9c6fde13185cde0001aa3b2a98b"
+      }
+    },
+    {
+      "id": "bha-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "labdhāṇimādisiddhir vigalitasakalopatāpasantrāsaḥ / tvadbhaktirasāyanapānakriḍhāniṣṭaḥ kadāsīya",
+        "chars": 95,
+        "cache_key": "f57c928088425fc55813141c46b1c55332ded412"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Anxious about what's coming? Take the verse as a drink-description and sip your current state as rasa.",
+        "chars": 102,
+        "cache_key": "9780ac31544d1bdbaed2b750369b08a5f196d64b"
+      }
+    },
+    {
+      "id": "bib-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "antar apy atitarām aṇīyasī yā tvadaprathanakālikāsti me / tām apīśa parimṛjya sarvataḥ svaṃ svarūpam amalaṃ prakāśaya",
+        "chars": 117,
+        "cache_key": "502bb9d8c81438031d5e2f793546e768b177e841"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In self-loathing: rename the stain — it is just the lapse of attention. Wipe = return, not scrub.",
+        "chars": 97,
+        "cache_key": "a27636bb702d9d14bebff990b2087f5c5831e97d"
+      }
+    },
+    {
+      "id": "bib-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "manasi maline madīyemagnā tvadbhaktimaṇilatā kaṣṭam / na nijān api tanute tānapauruṣeyān svasampadullāsān",
+        "chars": 105,
+        "cache_key": "dc700c48f02a64c0da36e5c8f7f8029ca7b3dba3"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it on the days you feel worst about yourself — the hymn says it for you, better.",
+        "chars": 84,
+        "cache_key": "e6a78738910a1304c25b5002bbff8e171d7b9ded"
+      }
+    },
+    {
+      "id": "bib-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "kharaniṣedhakhadāmṛtapūraṇocchalitadhautavikalpamalasya me / dalitadurjayasaṃśayavairiṇas tvadavalokanam astu nirantaram",
+        "chars": 120,
+        "cache_key": "2c11ab1932e56be0479e73537845a74abee9ce30"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When the mind feels stained AND doubting: stop scrubbing, start looking — one look inward at the form.",
+        "chars": 102,
+        "cache_key": "233a45b5c239b2d2cbfcc8ccaf644cc33a04d2f4"
+      }
+    },
+    {
+      "id": "bib-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "vilīne śaṅkaughe sapadi paripūrṇe ca vibhave | saṃhārākhyā mama hṛdi bhidāṃśaṃ praharatu",
+        "chars": 88,
+        "cache_key": "56938c8d744d0ef8607540e7e0fd836472ff8de7"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "After weeks of inner division — this vs that, me vs it: say it as the surgeon's request, once.",
+        "chars": 94,
+        "cache_key": "824fed1a6ac1a88a8c1d925088a8e7eec548c13c"
+      }
+    },
+    {
+      "id": "adb-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śiva ity ekaśabdasya jihvāgre tiṣṭhataḥ sadā / samastaviṣayāsvādo bhakteṣv evāsti ko 'py aho",
+        "chars": 92,
+        "cache_key": "53f103fe4ac7d1fc179c606994e4ee32b265594c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When anything tastes or sounds flat: place Śiva at the tongue's tip and re-taste the next sip or bite.",
+        "chars": 102,
+        "cache_key": "db9148781a47fb19fd9a01293b9affe938072685"
+      }
+    },
+    {
+      "id": "adb-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "māyāvine viśuddhāya guhyāya prakaṭātmane / sūkṣmāya viśvarūpāya namaś citrāya śambhave",
+        "chars": 86,
+        "cache_key": "a0cfca8869f3bed396248de748f8120fedc23176"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When the world turns surreal — say the verse and file the strangeness under citra.",
+        "chars": 82,
+        "cache_key": "d614e308392facedd6db0f007bc0c949df34974c"
+      }
+    },
+    {
+      "id": "adb-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "ya eṣa vitatasphuradvividhabhāvacakrātmakaḥ parasparavibhedavānviṣayatāmupāgacchati yadekamayabhāvanāvaśata etyabhedānvayaṃ sa śaṃbhuraśivāpaho jayati bodhabhāsāṃ nidhiḥ",
+        "chars": 169,
+        "cache_key": "960a7eaff3c2f93c68b7c9f5a9070eb6b39314ca"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it as the invocation before any prayer-session in this book: name the swirl of your current states as the wheel, then remember the wheel IS the treasury.",
+        "chars": 157,
+        "cache_key": "9d6b27c7361459f4db715d4c8e23757feaf0de48"
+      }
+    },
+    {
+      "id": "adb-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "aho bhaktibharodāracetasāṃ varada tvayi / slāghyaḥ pūjāvidhiḥ ko 'pi yo na yācñākalaṃkitaḥ",
+        "chars": 90,
+        "cache_key": "2bf0bf4d9b0d028990cb826dc7d2e3c6113e4f48"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Notice when you've prayed with a shopping list. Say this verse as the correction, then worship once with nothing attached.",
+        "chars": 122,
+        "cache_key": "733248c5aea734e8ca53fe82a31e322f757de5bc"
+      }
+    },
+    {
+      "id": "san-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śāntakallolaśītācchasvādubhaktisudhāmbudhau / alaukikarasāsvāde susthaiḥ ko 'nāma gaṇyate",
+        "chars": 89,
+        "cache_key": "cc628f239cb472d2184ee220a7986e0ba24fe896"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "For peace-practice: dive once, taste once, count nothing — not even the breath.",
+        "chars": 79,
+        "cache_key": "83421532184305d0eac139484629e60818761810"
+      }
+    },
+    {
+      "id": "san-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "bhavatpūjāmayāsaṅgasambhogasukhino mama / prayātu kālaḥ sakalo 'py ananto 'pīyadarthaye",
+        "chars": 87,
+        "cache_key": "99dcf5e1a3ccbc67548d69ae3e143f047d66c6c9"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When the day stretches ahead daunting: pray the WHOLE day into the worship-frame, then do the next ordinary thing as its first item.",
+        "chars": 132,
+        "cache_key": "340456dfe88d2f242249c5b3ee46a629ce76fa5a"
+      }
+    },
+    {
+      "id": "san-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śāntaye na sukhalipsutā manāg bhaktisambhṛtamadeṣu taiḥ prabhoḥ / mokṣamārgaṇaphalāpi nārthanā smaryate hṛdayahāriṇaḥ puraḥ",
+        "chars": 123,
+        "cache_key": "e76963e53db1c2d422ce3269410ce260b2da9a7c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When peace turns into another acquisition-plan — this retreat, that technique, the next course — say it as the disarming.",
+        "chars": 121,
+        "cache_key": "24d1f22b315e985c2a6f8fbc08c44a56f1a321df"
+      }
+    },
+    {
+      "id": "san-4",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "tvatkarṇadeśama dhiśayya mahārghabhāvam ākranditāni mama tucchatarāṇi yānti / vaṃśāntarālapatitāni jalaikadeśakhaṇḍāni mauktikamaṇitvam ivodvahanti",
+        "chars": 147,
+        "cache_key": "fd4b7a73147fa5252c16237323238b4ae1cdc9f0"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When crying or complaining: say it and consciously LAY the noise at his ear — the listener inside.",
+        "chars": 98,
+        "cache_key": "8a4d03ca9e0b31d365b55f5237cff89e81519815"
+      }
+    }
+  ],
+  "totals": {
+    "clips": 72,
+    "chars": 7950
+  },
+  "receipts": "prints/tantric-prayer/audio/receipts/calls.jsonl",
+  "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
+}

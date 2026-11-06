@@ -255,3 +255,43 @@ class AudioPlanTests(unittest.TestCase):
             self.assertEqual(check._validate(plan, 'audio-plan.schema.json'), [])
             self.assertEqual(plan['totals']['clips'], 4)
             self.assertEqual(plan['entries'][1]['verse']['text'], "so'haṁ")
+
+
+class EpubPackageTests(unittest.TestCase):
+    """EPUB3 + customer package: built, structurally valid, honest audio status."""
+
+    def test_both_books_epubs_valid(self):
+        sys_path_added = False
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT)); sys_path_added = True
+        try:
+            import epub as _epub
+        finally:
+            if sys_path_added:
+                sys.path.remove(str(ROOT))
+        for book in ('practical-prayers', 'tantric-prayer'):
+            path = PRINTS / book / f'{book}.epub'
+            if not path.is_file():
+                self.skipTest('epubs not built yet')
+            problems = _epub.validate(path)
+            self.assertEqual(problems, [], f'{book}: {problems}')
+
+    def test_packages_have_manifest_and_epub(self):
+        for book in ('practical-prayers', 'tantric-prayer'):
+            pkg = PRINTS / book / 'package'
+            if not (pkg / 'manifest.json').is_file():
+                self.skipTest('packages not built yet')
+            m = json.loads((pkg / 'manifest.json').read_text(encoding='utf-8'))
+            names = {f['path'] for f in m['files']}
+            self.assertIn(f'{book}.epub', names, book)
+            self.assertIn(f'{book}-preview.pdf', names, book)
+            # audio: plan exists -> clips not rendered -> honest pending
+            self.assertIn(m['audio']['status'], ('pending-render', 'included'), book)
+            self.assertEqual(m['audio']['clips_planned'], 72, book)
+            if m['audio']['status'] == 'pending-render':
+                self.assertEqual(m['audio']['clips_present'], 0, book)
+            # sha256 well-formed
+            import re as _re
+            for f in m['files']:
+                self.assertRegex(f['sha256'], r'^[a-f0-9]{64}$')

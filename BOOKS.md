@@ -184,6 +184,39 @@ Audio pipeline: `python3 factory.py audio --book <B>` writes `prints/<B>/audio-p
 sound. **Nothing renders until the owner says go.** kashaudio's 769 aligned clips remain
 the pronunciation cross-check (`products.chant.coverage.reference_note` in each thesis).
 
+## 7b. The customer package — what a buyer actually gets
+
+Three channels, one staged folder (`prints/<book>/package/`, built by
+`factory.py package`): EPUB + interior PDF + audio clips (when rendered) +
+`manifest.json` (sha256 per file, audio status, channel map).
+
+**SKU A — Physical paperback (KDP)**
+- Ships: A5 paperback interior (the build-green PDF) + cover (KDP Cover
+  Calculator, separate file).
+- Audio in the physical book: **QR code in the colophon/last page** → hosted
+  audio package (presigned R2 link page: verse + how-to player per prayer).
+  QR goes in once clips are rendered; the colophon slot is part of the build.
+
+**SKU B — Kindle ebook (KDP)**
+- Ships: the EPUB (`factory.py epub` — reflowable, Tiro+Cormorant embedded,
+  EPUB3 nav + NCX, validated). Set author/language at KDP upload.
+- Audio in Kindle: KDP cannot bundle audio files → colophon chapter carries the
+  same link to the hosted audio package.
+
+**SKU C — Digital direct (one-link)**
+- Ships: **zip of `package/`** — EPUB + PDF + `audio/<id>__verse.mp3` +
+  `<id>__howto.mp3` for every prayer + manifest + an `index.html` player page
+  (verse → how-to per entry, same voice order as the digital edition).
+- Delivery: one-link (owner preview via outputs server; customer via presigned
+  R2 URL — verify with `curl -r 0-99 -L` before sending, per DESKTOP rule).
+
+**Audio pipeline placement:** plan exists now (gate enforces it at build);
+render happens only on owner go + Fish key (144 clips/book, ~19k chars);
+after render, re-run `factory.py package` → manifest flips
+`audio: pending-render → included` → the channels above go live.
+Physical and digital buyers both end up with the same audio — one via QR
+(direct link), one inside the zip.
+
 ## 8. The two member books (current law)
 
 **Practical Prayers** — 9 sections x 4 = 36. Moments of the day + clockless
@@ -222,6 +255,8 @@ python3 factory.py decide --book B --action A --target T --thesis-ref R --justif
 python3 factory.py new-book --template prayer-book --slug S --claim "..." --section id:purpose
 python3 factory.py stage --book B --to structure|formatting|build|content
 python3 factory.py audio --book B                     # plan verse+granny clips (no API calls)
+python3 factory.py epub --book B                        # build+validate the Kindle/KDP EPUB3
+python3 factory.py package --book B                     # customer package + sha256 manifest
 
 # content-side (renderer is in-repo)
 cd prints/<book> && python3 compile.py    # needs patala venv

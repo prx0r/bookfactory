@@ -525,6 +525,109 @@ def audio(args):
     print('  render: NOT enabled — owner go + FISH key required (videofactory pattern)')
 
 
+def make_epub(args):
+    """Build the reflowable EPUB3 (Kindle/KDP) from the bookkit book."""
+    book_id = clean_work(args.book)
+    book = PRINTS / book_id
+    if not (book / 'entries.json').is_file():
+        raise ValueError(f'no book at {book}')
+    sys.path.insert(0, str(ROOT))
+    try:
+        import epub as _epub
+    finally:
+        sys.path.pop(0)
+    stats = _epub.build(book)
+    problems = _epub.validate(stats['epub'])
+    if problems:
+        for p in problems:
+            print(f'  x {p}', file=sys.stderr)
+        raise ValueError(f'EPUB invalid: {len(problems)} problem(s)')
+    print(f'EPUB {book_id}: {stats["chapters"]} chapters, {stats["entries"]} entries, '
+          f'{stats["bytes"] // 1024} KiB -> {stats["epub"]}')
+    print('  validated: mimetype-first/stored, XML well-formed, manifest+spine+fonts consistent')
+
+
+def package(args):
+    """Assemble the customer package: EPUB + interior PDF + audio (when rendered)
+    + sha256 manifest. Audio clips absent = status 'pending' (render after owner go)."""
+    book_id = clean_work(args.book)
+    book = PRINTS / book_id
+    if not (book / 'entries.json').is_file():
+        raise ValueError(f'no book at {book}')
+    out = PRINTS / book_id / 'package'
+    out.mkdir(exist_ok=True)
+    included, missing = [], []
+    # epub (build fresh if missing)
+    epub_path = book / f'{book_id}.epub'
+    if not epub_path.is_file():
+        sys.path.insert(0, str(ROOT))
+        try:
+            import epub as _epub
+            _epub.build(book)
+        finally:
+            sys.path.pop(0)
+    # interior pdf
+    pdf_path = book / f'{book_id}-preview.pdf'
+    # audio
+    audio_dir = book / 'audio'
+    plan = json.loads((book / 'audio-plan.json').read_text(encoding='utf-8')) \
+        if (book / 'audio-plan.json').is_file() else None
+    clips = []
+    if plan:
+        have = {p.stem for p in audio_dir.glob('*.mp3')} if audio_dir.is_dir() else set()
+        for pe in plan['entries']:
+            for kind in ('verse', 'howto'):
+                if f'{pe["id"]}__{kind}' in have:
+                    clips.append(f'{pe["id"]}__{kind}.mp3')
+                else:
+                    missing.append(f'{pe["id"]}__{kind}.mp3')
+    files = []
+    def add(path, dest_name=None):
+        if path.is_file():
+            dest_name = dest_name or path.name
+            data = path.read_bytes()
+            (out / dest_name).write_bytes(data)
+            files.append({'path': dest_name, 'sha256': hashlib.sha256(data).hexdigest(),
+                          'size': len(data)})
+            return True
+        return False
+    add(epub_path)
+    add(pdf_path)
+    if audio_dir.is_dir():
+        for mp3 in sorted(audio_dir.rglob('*.mp3')):
+            add(mp3, f'audio/{mp3.name}')
+    add(book / 'audio-plan.json')
+    planned = plan['totals']['clips'] if plan else 0
+    audio_status = ('no-plan' if not plan else
+                    'included' if len(clips) >= planned else 'pending-render')
+    manifest = {
+        'version': '1.0',
+        'book': book_id,
+        'title': json.loads((book / 'book.json').read_text(encoding='utf-8'))['meta']['title'],
+        'built': __import__('datetime').date.today().isoformat(),
+        'audio': {'status': audio_status, 'clips_present': len(clips),
+                  'clips_planned': plan['totals']['clips'] if plan else 0,
+                  'voices': plan['voices'] if plan else None},
+        'channels': {
+            'physical': 'interior PDF -> KDP; QR in colophon -> hosted audio package (see BOOKS.md 7b)',
+            'kindle': 'EPUB -> KDP ebook; colophon link -> hosted audio package',
+            'direct': 'zip this package/ dir (EPUB + PDF + audio + manifest) as the one-link delivery',
+        },
+        'files': files,
+        'note': ('Customer package staging. Physical ships via KDP (audio via QR/link once '
+                 'rendered); direct digital ships as this folder zipped. Clips absent until '
+                 'owner-go render.'),
+    }
+    (out / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n',
+                                       encoding='utf-8')
+    total = sum(f['size'] for f in files)
+    print(f'PACKAGE {book_id} -> {out}')
+    print(f'  {len(files)} files, {total // 1048576} MiB, audio={audio_status} '
+          f'({len(clips)}/{plan["totals"]["clips"] if plan else 0} clips)')
+    if missing and audio_status == 'pending-render':
+        print(f'  {len(missing)} clips pending — factory.py audio render after owner go')
+
+
 def set_stage(args):
     """Advance (or hold) a lane's pipeline stage after verifying stage gates.
 
@@ -615,6 +718,10 @@ def main():
     stg.add_argument('--to',required=True,choices=['content','structure','formatting','build'])
     aud=subs.add_parser('audio',help='plan per-entry clips (videofactory speakers: verse + granny); NO API calls')
     aud.add_argument('--book',required=True)
+    ep=subs.add_parser('epub',help='build the reflowable EPUB3 (Kindle/KDP) from the bookkit book')
+    ep.add_argument('--book',required=True)
+    pkg=subs.add_parser('package',help='assemble customer package: EPUB + PDF + audio + sha256 manifest')
+    pkg.add_argument('--book',required=True)
     args=p.parse_args()
     try:
         if args.command=='inspect': print(json.dumps(extract(args.translations,args.text,args.ref,args.layer,args.gate_id),ensure_ascii=False,indent=2))
@@ -624,6 +731,8 @@ def main():
         elif args.command=='new-book': new_book(args)
         elif args.command=='stage': set_stage(args)
         elif args.command=='audio': audio(args)
+        elif args.command=='epub': make_epub(args)
+        elif args.command=='package': package(args)
         else: verify_handoff(args)
     except (ValueError, OSError, json.JSONDecodeError, subprocess.CalledProcessError) as exc:
         print(f'ERROR: {exc}',file=sys.stderr)

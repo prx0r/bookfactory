@@ -1,0 +1,632 @@
+{
+  "version": "1.0",
+  "book": "practical-prayers",
+  "engine": {
+    "tts": "fish-audio",
+    "pattern_source": "prx0r/videofactory render_chapter"
+  },
+  "voices": {
+    "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+    "granny": "614f8afd83f841048c040b2c6234d2c1"
+  },
+  "entries": [
+    {
+      "id": "gita-424",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "brahmārpaṇaṁ brahma havir brahmāgnau brahmaṇā hutam | brahmaiva tena gantavyaṁ brahmakarmasamādhinā ||",
+        "chars": 102,
+        "cache_key": "01f0f547da6cde4611483edc6a86114a2c631da4"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Before the first bite: put a little water in the palm, look at the food, and say the verse once. Then eat as if the meal is being offered into a fire — slowly, without hurry. The feeling to find: gratitude with heat. Nothing extra; the verse does the whole work.",
+        "chars": 262,
+        "cache_key": "3a4187eb00d363c28ac64d2f00dfa64245ae4fea"
+      }
+    },
+    {
+      "id": "somananda",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "asmadrūpa samāviṣṭaḥ svātmanātma nivāraṇe | śivaḥ karotu nijayā namaḥ śaktyā tatātmane ||",
+        "chars": 89,
+        "cache_key": "3c008de4de390ff76785233e65f591b33e650faf"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it silently as the food arrives. The 'obstacle' can be anything — the craving, the guilt, the person you're eating with. Name it, then let the verse dissolve it.",
+        "chars": 165,
+        "cache_key": "1b682812dace179388ce4e0054e7273476780644"
+      }
+    },
+    {
+      "id": "deha-5",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "ātmīyaviṣayabhogairindriyadevyaḥ sadā hṛdambhoje | abhipūjayanti yaṃ taṃ cinmayamānandabhairavaṃ vande",
+        "chars": 102,
+        "cache_key": "518d2ac45fb00136fe57d9b56a4820a16bec8018"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At the first bite, feel the heart-lotus (just behind the centre of the chest) as the altar and the flavour as the flower landing on it. Three bites only — overdoing it kills the taste. The feeling: gratitude with heat. The sense is honoured as a goddess, not supervised as a thief.",
+        "chars": 281,
+        "cache_key": "7d5c88cae3fa40a5677210199e4f9df88c505226"
+      }
+    },
+    {
+      "id": "mpa-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "prapañcottīrṇarūpāya namaste viśvamūrtaye | sadādivyaprakāśāya svātmane'nantaśaktaye",
+        "chars": 84,
+        "cache_key": "ef103705ed54818e89d5cba405028deee9ba88aa"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "On waking: recite as its placement asks. The verse's own act is namaḥ — homage, phrase by phrase, one round.",
+        "chars": 108,
+        "cache_key": "436912e5c8b82fa65817769988e78c7c2e432062"
+      }
+    },
+    {
+      "id": "deha-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "deho devālayaḥ proktaḥ svātmā devaḥ sanātanaḥ | tyajedajñānanirmālyaṃ so'haṃ bhāvena pūjayet",
+        "chars": 92,
+        "cache_key": "97aaaef72aebebde15b665bf3fdb605fa37382b5"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "The verse's own method: cast off the sweepings of ignorance and hold so'ham as the worship — the bhāva is the practice, not a formula.",
+        "chars": 134,
+        "cache_key": "a7866c9a82e40efd43d3240cff245d0ae2b0ff5b"
+      }
+    },
+    {
+      "id": "mpa-10",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "jāgratasvapnasuṣuptyādyā dhārayaṃśca nijāḥ kalāḥ | svecchayā bhāsi naṭavan niṣkalo'si ca tattvataḥ",
+        "chars": 98,
+        "cache_key": "44f1c47a476c04f0144e0d1ec0a42c7fb356a1c0"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "On waking: say it once. The verse itself performs the recognition — the states named as his rays, nothing else to do.",
+        "chars": 117,
+        "cache_key": "efe54b89de9684bad710388e9bb9e91d6dce13e0"
+      }
+    },
+    {
+      "id": "mpa-11",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "tvatprabodhāt prabodho'sya tvannidrāto layo'sya yat | atastvadātmakaṃ sarvaṃ viśva sadasadātmakam",
+        "chars": 97,
+        "cache_key": "ccfcdd8e12be37a7a7ff27b4a3945af5b7f1f52a"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Last line of the day. Lie down and take one awake minute: you are about to do what he does at night. Don't stay awake doing this — fall asleep inside the thought.",
+        "chars": 162,
+        "cache_key": "59364256cd13342ad73a29187947cfae9307d187"
+      }
+    },
+    {
+      "id": "vbt-75",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "anāgatāyāṃ nidrāyām praṇaṣṭe bāhyagocare | sāvasthā manasā gamyā parā devī prakāśate",
+        "chars": 84,
+        "cache_key": "efad8002cde4bb89185842b9f21151f7d46c96e7"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At lights-out, on your back, one hand on the belly. Wait for the outer field to fade — sounds go dull, images slow. Then instead of following sleep passively, send the mind as an arrow to the heart-centre, once. Then release. The Goddess-feel is a hum or warmth behind the chest; if images swarm you have grasped — release and let the hum carry. Single-shot: no repetitions.",
+        "chars": 374,
+        "cache_key": "266af1dbd0f9e12eb59cea410011922c08424a7d"
+      }
+    },
+    {
+      "id": "sst-9-14",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "aśeṣaviṣayāśūnyaśrīsamāśleṣasusthitaḥ / śayīyam iva śītāṅghrikuśeśayayuge kadā",
+        "chars": 78,
+        "cache_key": "7815050ea384bf81f97c12a7cd17750f75a0e02b"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In bed. Say it once, then let the image of the two cool feet form under the mind's eye — no details needed, just the coolness. The feeling to find: the fever of the day dropping. If the mind races, return to the coolness, not the words.",
+        "chars": 236,
+        "cache_key": "959b2b264bb414168ee5ebd526838db2c7568995"
+      }
+    },
+    {
+      "id": "sst-16-8",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "viṣamastho 'pi svastho 'pi rudann api hasann api / gambhīro 'pi vicitto 'pi bhaveyaṃ bhaktitaḥ prabho",
+        "chars": 101,
+        "cache_key": "ce350880f78e0ab6f6600b103637eb31595b84e3"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it when waiting has turned into agitation — a queue, a delay, a message that won't come. Say it once inwardly. Don't wait for composure: the very mess is the place where devotion can be.",
+        "chars": 190,
+        "cache_key": "1a93e42904a856de0ea6226ba0a29bd378df1ccc"
+      }
+    },
+    {
+      "id": "sst-17-19",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "anubhūyāsamīśāna pratikarma kṣaṇāt kṣaṇam / bhavatpūjāmṛtāpānamadāsvādamahāmudam",
+        "chars": 80,
+        "cache_key": "779dbcce15d92e74082271d8d9dea50ef229b7bb"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At any transition or pause: say it once, then take one breath as if that breath were the nectar. Don't manufacture joy — notice the small lift that a pause already gives. Three pauses, three sips, and the waiting has changed colour.",
+        "chars": 232,
+        "cache_key": "17519f41b93142aafedda509e4c54805ebccc0b8"
+      }
+    },
+    {
+      "id": "bh-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "svātmani viśvagaye tvayi nāthe tena na saṃsṛtibhītikathāsti | satsv api durdharaduḥkhavimohatrāsavidhāyiṣu karmagaṇeṣu",
+        "chars": 118,
+        "cache_key": "0f4c45a27e65be7246918b8edf4eb46fbbe41117"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When negative, say it and let the concession stand: yes, this is hard; and the fear of it is separate from the pain itself. The verse splits them.",
+        "chars": 146,
+        "cache_key": "9506aa1e040dcfb2270250e2c47e646cee742fac"
+      }
+    },
+    {
+      "id": "mpa-20",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "evameva parā pūjā sarvāvasthāsu sarvadā | aikyabuddhayā tu sarveśe mano deve niyojayet",
+        "chars": 86,
+        "cache_key": "4b5ea45ee15851dfddec45cd2cd72e5dbd3f1454"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Before opening the laptop: one line, then begin. The test for aikyabuddhi: the boundary of your skin thins. If it sharpens, you're thinking oneness, not yoking it — drop to the breath and restart. Each task is one yoke; re-hitch as often as needed.",
+        "chars": 248,
+        "cache_key": "d7b7a2b05675f5541377061a0fbbd82a9dfe3afe"
+      }
+    },
+    {
+      "id": "sst-1-14",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śivo bhūtvā yajeteti bhakto bhūtveti kathyate / tvam eva hi vapuḥ sāraṃ bhaktair advayaśodhitam",
+        "chars": 95,
+        "cache_key": "09ed717601fd25751f17c2d9b542c3b86571d836"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At the desk, when work feels like a distraction from practice: say it and reclassify. The spreadsheet, the email, the conversation — that is the worship.",
+        "chars": 153,
+        "cache_key": "d414a9813cf393fe42b988738432464b33043cc5"
+      }
+    },
+    {
+      "id": "deha-8",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "kurute bhairavapūjāmanaladalasthā'bhimānakusumairyā | nityamahaṅkṛtirūpāṃ vande tāṃ śāmbhavīmambām",
+        "chars": 98,
+        "cache_key": "a6434c6b000bdcb4eb4f2ea8b8f678a5acd1e671"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When the ego flares mid-task — pride, irritation at the colleague, hunger for recognition: see it as a flower, pick it, place it at the heart's fire. Three flowers are enough.",
+        "chars": 175,
+        "cache_key": "1881271bcb0a17250ce6ebb8967ad55da4c93f0d"
+      }
+    },
+    {
+      "id": "mpa-9",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "tvatsvarūpe jṛmbhamāṇe tvaṃ cāhaṃ cākhilaṃ jagat | jāte tasya tirodhāne na tvaṃ nāhaṃ na vai jagat",
+        "chars": 98,
+        "cache_key": "03f690f3f3baa03f3d7f0cd6284592b545ca334f"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it at the overwhelm point — too much to do, the self tightening. Say it and feel the day as one exhale of a larger form. The overwhelm thins because the 'me' carrying it is part of the expansion, not its owner. Then return to the next small task.",
+        "chars": 250,
+        "cache_key": "89ed4e2297abc814f3556a3147dce44abd00ddb1"
+      }
+    },
+    {
+      "id": "bhair-7",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "svātmaprabhāṃ vidhāya vāgdevīṃ viṣayakusumakḷptārcaḥ | prathamonmeṣaṃ gurum atha vanditvā hṛdayam āviśya",
+        "chars": 104,
+        "cache_key": "a46b5e1ea30eccc435d29a3297be78aac2fd60f2"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Before a difficult conversation, a speech, a message you'll regret: one breath, hand on the throat. Make the speech a light — not a blade. Offering the sense-flowers means: don't weaponise what you've seen and heard. Then speak from the heart-entered place, not the throat.",
+        "chars": 273,
+        "cache_key": "0f2f3e24ba89422c76796986addd1cb439b07f7a"
+      }
+    },
+    {
+      "id": "anu-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śabdaḥ kaścana yo mukhādudayate mantraḥ sa lokottaraḥ saṃsthānaṃ sukhaduḥkhajanmavapuṣo yatkāpi mudraiva sā | prāṇasya svarasena yatpravahaṇaṃ yogaḥ sa evādbhutaḥ śāktaṃ dhāma paraṃ mamānubhavataḥ kinnāma na bhrājate",
+        "chars": 216,
+        "cache_key": "ccfabc85fae9bc5e4b58bfe43306b83a944b0172"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it after you've said something — ordinary, even stupid. That was mantra. The recognition flips the whole day: the meeting, the small talk, the complaint — all of it is mantra, mudrā, yoga, shining.",
+        "chars": 201,
+        "cache_key": "f7e33224442e25797a13048c0aee892e2bc8676b"
+      }
+    },
+    {
+      "id": "mpa-8",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt | sarvamekamidaṃ śāntamiti vaktuṃ ca lajjate",
+        "chars": 87,
+        "cache_key": "f8ac5f74eacdc0c7f9072ffc48c63ac757e2089c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it when an argument about views has you mid-sentence — or when you're about to explain your practice to someone who doesn't need it. Stop. The shyness is the right register.",
+        "chars": 177,
+        "cache_key": "d2b0b23c710271faf009d9caa281221f6f2b4a41"
+      }
+    },
+    {
+      "id": "mpa-14",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "nirmalasya kutaḥ snānaṃ vastraṃ viśvodarasya ca | nirlepasya kuto gandho ramyasyābharaṇaṃ kutaḥ",
+        "chars": 95,
+        "cache_key": "c16dc9caac6ae51ff4c1b43ebeb657881d490fef"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In the shower: name each item as you use it — water for the stainless, towel for the world-bellied, scent for the unanointed. The mismatch is the smile.",
+        "chars": 152,
+        "cache_key": "3a2111d48263bdb6abbba938bcd86234bf7ac230"
+      }
+    },
+    {
+      "id": "sst-17-26",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "antarullasadacchācchabhaktipīyūṣapoṣitam / bhavatpūjopayogāya śarīram idam astu me",
+        "chars": 82,
+        "cache_key": "c23aee47470db5e703fc23c99384b24631458833"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Dressed, before leaving the bathroom: say it once and feel the freshly washed body as anointed rather than merely clean. The day ahead is the pūjā; the body is the instrument.",
+        "chars": 175,
+        "cache_key": "c10cf71ebb25f26c26a887c64da9a388e268afbe"
+      }
+    },
+    {
+      "id": "deha-6",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "udayāvabhāsacarvaṇalīlāṃ viśvasya yā karotyaniśam | ānandabhairavīṃ tāṃ vimarśarūpāmahaṃ vande",
+        "chars": 94,
+        "cache_key": "944dd40891497673387a06c6392108cffc7c036b"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At dawn, as placed: the verse's own act is vande — praise of the ceaseless play she keeps performing.",
+        "chars": 101,
+        "cache_key": "3975b502992dd223ff6117f65e1d228d4a9e9757"
+      }
+    },
+    {
+      "id": "mpa-17b",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "svayaṃ prakāśamānasya kuto nīrājanaṃ vibhoḥ | vedavācāmavedyasya kutaḥ stotraṃ vidhīyate",
+        "chars": 88,
+        "cache_key": "7a332c4ef1abc5c8ced9934dd9e49f15bae853c0"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "At the bathroom mirror, hand raised with the light: you are the lamp-bearer, and the face that brightens is the audience. Hum, don't articulate — you have just honoured the Vedavācāmavedya.",
+        "chars": 189,
+        "cache_key": "61851f4425255a30843bb62c70790b750cc1275e"
+      }
+    },
+    {
+      "id": "mpa-19b",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "pūrṇasya dakṣiṇā kutra nityatṛptasya tarpaṇam | visarjanaṃ vyāpakasyā'pratyakṣasya kṣamāpaṇam",
+        "chars": 93,
+        "cache_key": "914b3701c4bde0159211b2e1bd95c6f257395e4f"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it at the end of the bath as the day's closing already: one bow, weight the last word — pardon. The feeling is the end of accounting: no tally of errors, no debt. Guilt arrives, is named as one of the litany's items, and dissolves with the god it expected to offend.",
+        "chars": 270,
+        "cache_key": "1fa11ed02ea6d73cf087bcca5de95111af433eb0"
+      }
+    },
+    {
+      "id": "pan-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "brūṣe nottamāṅga paśyasi na māmetādṛśaṃ duḥkhitaṃ vijñaptiṃ bahudhā kṛtāṃ na śṛṇuṣe nāyāsi manmānase | saṃsārārṇavagartamadhyapatitaṃ prāyeṇa nālambase vākcakṣuḥśravaṇāṅghriṇādirahitaṃ tvāmāha satyaṃ śrutiḥ",
+        "chars": 206,
+        "cache_key": "90dda37de9a5c8392f109889a31ce9fd632aeea4"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it when you've spoken and nobody heard — human or divine. Say the whole complaint with feeling; the scripture-clause at the end is the punchline that dissolves it.",
+        "chars": 167,
+        "cache_key": "b5759691b73e13f9b1df4e8905051cc3b7cf8f78"
+      }
+    },
+    {
+      "id": "sst-15-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "māyīyakālaniyatirāgādyāhāratarpitāḥ / caranti sukhino nātha bhaktimanto jagattaṭe",
+        "chars": 81,
+        "cache_key": "e927d020f70c2ee55a2da154bd65e344993d0758"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Before or after a meal, when desire is loudest: name it as the course — māyā, time, fate, desire — and eat it. The hunger is the menu.",
+        "chars": 134,
+        "cache_key": "e136abfa80cb6cf25b563b9d0198f9693475f1f7"
+      }
+    },
+    {
+      "id": "anu-2b",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "saṃsāro 'sti na tattvatas tanubhṛtāṃ bandhasya vārtaiva kā bandho yasya na jātu tasya vitathā muktasya muktikriyā | mithyāmohakṛd eṣa rajjubhujagacchāyāpiśācabhramo mā kiṃcit tyaja mā gṛhāṇa vihara svastho yathāvasthitaḥ",
+        "chars": 220,
+        "cache_key": "4c1451ebd0d5846df1897bcef7ced2e6ae58f8b9"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In the queue, the delay, the silence: say the last line — 'live healthy, staying as you are.' The restlessness wants to grab something or drop something; the verse forbids both.",
+        "chars": 177,
+        "cache_key": "799dd1f18ffc0149cd7d9aa5c7aab6e6cdcc7d03"
+      }
+    },
+    {
+      "id": "sst-16-1",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "na kiñcid eva lokānāṃ bhavadāvaraṇaṃ prati yat kiṃ cid eva bhūtānāṃ",
+        "chars": 67,
+        "cache_key": "d8a0729b22a446b9eb94b80c03e957032afe5b06"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Use it in any crowd — the queue, the train, the meeting. Run the census once: two classes. Then check which one is noticing the census.",
+        "chars": 135,
+        "cache_key": "ad193a068b6b594b8f13411b752a666bf36a28be"
+      }
+    },
+    {
+      "id": "anu-4b",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "ānando 'tra na vittamadhyamadavan naivāṅganāsaṅgavat dīpārkendukṛtaprabhāprakaravan naiva prakāśodayaḥ | harṣaḥ saṃbhṛtabhedamuktisukhabhūr bhārāvatāropamaḥ sarvādvaitapadasya vismṛtanidheḥ prāptiḥ prakāśodayaḥ",
+        "chars": 210,
+        "cache_key": "67ad69b6258a2afd71b85e7d0d29e4ee18ef3294"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "In bed, say it and feel the day's weight as the literal bhāra being lowered. Bliss here is not an event but an unloading.",
+        "chars": 121,
+        "cache_key": "2926b5b03b13f1de290b134321bc36fa1b76e85c"
+      }
+    },
+    {
+      "id": "pan-5",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "yātastvatsahavāsato bahutaraḥ kālo vatāsmin kṣaṇe kiṃ kiṃ vā na kṛtaṃ tvayā varagurūpāsānimittena me | vāraṃ vāramahaṃ punarnirupamāṃ divyaṃ bhuvaṃ prāsuvatkāyastvāṃ kila vismarāmi yadataḥ stheyaṃ na bhūyastvayā",
+        "chars": 211,
+        "cache_key": "aed41c754e9b2e8d09ca708c24fd15ad0fd3891e"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When ill and feeling forgotten: say the whole verse as the complaint it is — 'what has not been done by you for me?' — and let the last line be the request.",
+        "chars": 156,
+        "cache_key": "f3d9b1e1c1833fbdae2a763a2bedfd6ec530b00c"
+      }
+    },
+    {
+      "id": "sst-5-2",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "bhavatpādāmbujarajorājirañjitamūrdhajaḥ / apārarabhasārabdhanartanaḥ syām ahaṃ kadā",
+        "chars": 83,
+        "cache_key": "973724fb7141ab356f8dc3385785e9f1013967ea"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "From the sickbed, say it as a question — kadā, when — without demanding the answer today. Picture only the dust on the hair; the dance can wait.",
+        "chars": 144,
+        "cache_key": "249706c338c085ea4812bebc8744a9a7483088ad"
+      }
+    },
+    {
+      "id": "mpa-3",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "antardehe mayā nityaṃ tvamātmā ca gaveṣitaḥ | na dṛṣṭastvaṃ nacaivātmā yacca dṛṣṭaṃ tvameva tat",
+        "chars": 95,
+        "cache_key": "a9f2fd592a4ddda0ef18e4d83117341f5df34e99"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "When pain or weakness is present: look at it once — the ache as an object — and name it 'seen: you.' Not as denial of pain but as address change.",
+        "chars": 145,
+        "cache_key": "ef2cb7c17d9c825115489e14eb5cb303db2afc21"
+      }
+    },
+    {
+      "id": "bahurupa-core",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śṛṇu devī! paraṁ guhyaṁ rahasyaṁ paramādbhutam | sarva-pāpa-praśamanaṁ sarva-duḥkha-nivāraṇam || prāyaścitteṣu sarveṣu tīvreṣv api vimocanam | sarva-cchidrāpa-haraṇaṁ sarvārti-vinivārakam || samayolaṅghane ghore japādeva vimocanam | bhoga-mokṣha-pradaṁ devī! sarva-siddhi-phalapradam ||",
+        "chars": 286,
+        "cache_key": "fcfbb4f772dc9cb233aa7a8214aec48fb774dadd"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Recite it at the beginning and end of any ritual — the hymn's own instruction (yāgārambhe ca yāgānte). Also daily (nitya), on occasion (naimitika), when you want something (kāmya), for yourself or for someone else. Counting effects per the hymn: one hundred recitations purify even great sinners; fifty, inadvertent sins; twenty-five, minor sins — and a single recitation (of this hymn or of the Aghora japa) removes wrongs done by body, speech or mind, whether through inattention or knowingly.",
+        "chars": 495,
+        "cache_key": "da7286319602b29368040cced6a6bd45e0105391"
+      }
+    },
+    {
+      "id": "bahurupa-close",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "vidhihīne pramāde ca japtavyaṁ sarva-karmasu | nātaḥ parataro mantro nātaḥ paratarā stutiḥ || nātaḥ paratarā kācit samyak-pratyaṅgirā priye | iyaṁ samaya-vidyānāṁ rāja-rājeśvarī-śvari || paramāpyāyanaṁ devi bhairavasya prakīrtitam | prīṇanaṁ sarva-devānāṁ sarva-saubhāgya-vardhanam ||",
+        "chars": 284,
+        "cache_key": "9befdd324a39d51b09f3568c52251488800dea52"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Full practice in the tradition: dhyāna of Svacchanda (crystal-white upward face, yellow east, blue south, pomegranate-red north, moon-white west — the twelve-verse meditation), then this hymn, then the Gāyatrī — oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi, tanno 'ghoraḥ pracodayāt, three times — then the mūla mantra. In this book's simpler use: one round of these three verses at the close of any difficult day; the line to remember is 'no mantra greater than this'.",
+        "chars": 467,
+        "cache_key": "8d86e1add17da12310a3e7c7bbc143d7724ee6bf"
+      }
+    },
+    {
+      "id": "bah-gayatri",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi | tanno 'ghoraḥ pracodayāt",
+        "chars": 69,
+        "cache_key": "412eb11625ad68a9232b4b790f2f2fe15f235258"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "The recitation order per the viniyoga: dhyāna → hymn → this gāyatrī three times → mūla mantra. Three rounds, seed-voice. 'Pracodayāt' is the only request in the entire sequence — everything before it was arrangement.",
+        "chars": 216,
+        "cache_key": "a3decdf9adee41d6f860dda48e81b914c8d1b86d"
+      }
+    },
+    {
+      "id": "om-namah-shivaya",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "oṁ namaḥ śivāya",
+        "chars": 15,
+        "cache_key": "16f59188a0288f7996e9b1927728bb88a0a28d55"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Say it aloud or mentally: let naḥ open, maḥ hold, śi release, vā hide, ya return. The Name does the work — no count needed, pick it up any hour.",
+        "chars": 144,
+        "cache_key": "adf9c4c7e5f49f3e7546b5a6ffeeab6953c1699e"
+      }
+    }
+  ],
+  "totals": {
+    "clips": 72,
+    "chars": 11460
+  },
+  "receipts": "prints/practical-prayers/audio/receipts/calls.jsonl",
+  "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
+}
