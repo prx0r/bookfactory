@@ -11,6 +11,10 @@ loop AND the typography.
 - BOOKS.md — THE system doc (templates, theses, decision logs, pipeline stages, new-book)
 - FACTORY-SPEC.md — the law (position, products, layer stack, bars, migration)
 - PIPELINE.md — commands, setup, current blockers
+- AUTONOMY.md — how the factory runs without a human in the loop: queue, agent
+  contract, proof records, readiness matrix, the produce→gate→critic→proof loop,
+  and the six things that never automate (structure law, taste, rights, spend,
+  ship, gate weakening)
 - REGISTRY.json — live lanes + milestones (update on every state change)
 - check.py — the only gate; stage-aware (content→structure→formatting→build, PDF last); exit 0 = canonical
 - templates/<genre>.json — overall thesis of a KIND of book (prayer-book: 110pp ceiling, anatomy, products)
