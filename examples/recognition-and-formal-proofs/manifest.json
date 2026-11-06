@@ -1,0 +1,57 @@
+{
+  "format": "scholar-media-result/1",
+  "status": "private-draft",
+  "source_snapshot_sha256": "40411c56c30d01d09157d145b98f30805a98f1b5a99a7b3e742f79ee1f2a8f58",
+  "source_text_sha256": "b0d1c35e07f1c82104009b011426dd0f1b0729d21473f9bca91a3212630dcad5",
+  "narration": "offline Flite slt; pronunciation requires human review",
+  "renderer_sha256": {
+    "bookfactory/paper.py": "1ebe5ab79f21044c0abcfc4e6d620d3d5620cd15f0de1b63676c2eff353493c5",
+    "visuals/prints/bookkit/prose.py": "09bebd6cb4ce20e06eece26029674bcbeced6d66b2977615532fe448466d2235"
+  },
+  "narration_seconds": 610.951,
+  "segments": 57,
+  "files": [
+    {
+      "path": "book/fonts/CormorantGaramond[wght].ttf",
+      "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0"
+    },
+    {
+      "path": "book/fonts/TiroDevanagariSanskrit-Regular.ttf",
+      "sha256": "75ae873e5e3f9c30fb962a3d283b9f5e7bc5bca57822a2aa926753b297b150ca"
+    },
+    {
+      "path": "book/index.html",
+      "sha256": "09b196fd4aac79328929a23c248a1d7b280e6b37d30c1861dbe7ec83a5b3a0bc"
+    },
+    {
+      "path": "book-draft.pdf",
+      "sha256": "d6c2a2f8ce7d7ba667c2aab2bfad2481c42ad48c0a051e8f4fd6371f0e196d00"
+    },
+    {
+      "path": "captions.srt",
+      "sha256": "c62883c0239e06e7c797e7587ef8943726ac56248648332755b11c7999ea9152"
+    },
+    {
+      "path": "segments.json",
+      "sha256": "5695728b19c15440331f5f540c637a65e9eec89420f149d59fcaeced68eb6821"
+    },
+    {
+      "path": "source-packet.json",
+      "sha256": "e968c8800d1be13e7ca465420fcf8808075070e0dc3a5e0bd9f9b899ddce7071"
+    },
+    {
+      "path": "transcript.txt",
+      "sha256": "41cee04a4ce16d8961904e4ade0253c82cbb9474999c89c21084f9bcaafd497a"
+    },
+    {
+      "path": "video-draft.mp4",
+      "sha256": "49f3e78b92d765c88596ba910992fa353794cf6581ababa3bb68bf312e361a77"
+    }
+  ],
+  "notes": [
+    "No automatic publication or sign-off.",
+    "PDF is a draft proof, not KDP approved.",
+    "Common Markdown decoration is removed for speech; source offsets and hashes refer to the unchanged original.",
+    "Captions are segment-timed; review pronunciation and timing."
+  ]
+}

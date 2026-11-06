@@ -61,5 +61,10 @@ repository name that differs from the remote. The example is the complete
 1,486-word essay, not an invented or shortened text. Git provenance, not a
 Scholar account sign-off, is recorded for this example.
 
+The source-pinned packet, draft PDF, captions and segment index from a real run
+are also checked in under `examples/recognition-and-formal-proofs/`. That
+example uses an essay already committed in Git; do not commit private Scholar
+packets or outputs.
+
 Tests: `python3 -m unittest discover -s tests -p 'test_paper.py' -v` in this
 repository, and `node --test tests/scholar-media.test.cjs` in svread.
