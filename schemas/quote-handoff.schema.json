@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/prx0r/bookfactory/schemas/quote-handoff-1.0.json",
+  "title": "Draft quote product handoff",
+  "type": "object", "additionalProperties": false,
+  "required": ["version", "kind", "status", "work", "ref", "inputs", "human_review", "commercial_rights", "deterministic_gate", "git", "outputs", "renderer", "renderer_files", "factory_git", "factory_files", "render_backend", "runtime", "note"],
+  "properties": {
+    "version": {"const": "1.0"}, "kind": {"enum": ["translation-candidate", "book-entry"]}, "status": {"const": "draft"},
+    "work": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}, "ref": {"type": "string", "minLength": 1},
+    "verse_id": {"type": "string", "minLength": 1}, "layer": {"enum": ["l2", "l3"]},
+    "iast": {"type": "string", "minLength": 1}, "english_lines": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "source_match": {"enum": ["normalized-match", "unverified"]},
+    "deterministic_gate": {"type": "object", "additionalProperties": false, "required": ["id", "status"], "properties": {"id": {"type": ["string", "null"]}, "status": {"enum": ["unmapped", "PASS", "BLOCKED"]}}},
+    "human_review": {"const": "not-established"}, "commercial_rights": {"const": "not-established"},
+    "needs": {"type": "array", "items": {"type": "string"}},
+    "inputs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/file"}},
+    "outputs": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/file"}},
+    "git": {"$ref": "#/$defs/git"}, "renderer": {"$ref": "#/$defs/git"},
+    "renderer_files": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/file"}},
+    "factory_git": {"$ref": "#/$defs/git"}, "factory_files": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/file"}},
+    "render_backend": {"enum": ["chrome", "weasyprint"]},
+    "runtime": {"type": "object", "additionalProperties": false, "required": ["python", "indic_transliteration", "weasyprint"], "properties": {"python": {"type": "string"}, "indic_transliteration": {"type": ["string", "null"]}, "weasyprint": {"type": ["string", "null"]}}},
+    "note": {"type": "string", "minLength": 1}
+  },
+  "allOf": [{"if": {"properties": {"kind": {"const": "translation-candidate"}}}, "then": {"required": ["verse_id", "layer", "iast", "english_lines", "source_match", "needs"]}}],
+  "$defs": {
+    "file": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}},
+    "git": {"type": "object", "additionalProperties": false, "required": ["commit", "input_files_dirty"], "properties": {"commit": {"type": ["string", "null"]}, "input_files_dirty": {"type": ["boolean", "null"]}}}
+  }
+}
