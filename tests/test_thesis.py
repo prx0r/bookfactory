@@ -84,7 +84,7 @@ class DecisionFlowTests(unittest.TestCase):
                       'inclusion': ['entries must be sourced and justified clearly'],
                       'exclusion': ['nothing unsourced may ever appear in this book at all'],
                       'products': {k: {'status': 'planned', 'spec': 'spec text here'}
-                                   for k in ('paperback', 'postcard', 'social', 'audiobook', 'chant')}}
+                                   for k in ('paperback', 'postcard', 'social', 'audiobook', 'chant', 'digital')}}
             (tmp / 'projects' / 'demo' / 'thesis.json').write_text(json.dumps(thesis))
             old_root = factory.ROOT
             factory.ROOT = tmp

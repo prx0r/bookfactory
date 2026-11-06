@@ -197,3 +197,61 @@ class StageAdvanceTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class AudioPlanTests(unittest.TestCase):
+    """Videofactory speaker format: verse + granny clips planned for every entry."""
+
+    def test_both_books_have_valid_fresh_audio_plans(self):
+        for book in ('practical-prayers', 'tantric-prayer'):
+            plan_path = PRINTS / book / 'audio-plan.json'
+            if not plan_path.is_file():
+                self.skipTest('audio plans not generated yet')
+            plan = json.loads(plan_path.read_text(encoding='utf-8'))
+            self.assertEqual(check._validate(plan, 'audio-plan.schema.json'), [], book)
+            entries = json.loads((PRINTS / book / 'entries.json').read_text(encoding='utf-8'))
+            self.assertEqual(len(plan['entries']), len(entries), book)
+            self.assertEqual([p['id'] for p in plan['entries']], [e['id'] for e in entries], book)
+            # frozen videofactory voice IDs
+            self.assertEqual(plan['voices']['verse'], '4e873c37d4cb439e9bccc4dc1f633290')
+            self.assertEqual(plan['voices']['granny'], '614f8afd83f841048c040b2c6234d2c1')
+            # cache keys are sha1(voice|text) — videofactory render_chapter pattern
+            import hashlib
+            for pe in plan['entries']:
+                for k in ('verse', 'howto'):
+                    clip = pe[k]
+                    expect = hashlib.sha1(f"{clip['voice']}|{clip['text']}".encode('utf-8')).hexdigest()
+                    self.assertEqual(clip['cache_key'], expect, f'{book} {pe["id"]} {k}')
+
+    def test_audio_command_writes_valid_plan(self):
+        import argparse
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            (tmp / 'schemas').mkdir()
+            for f in list((ROOT / 'schemas').glob('*.json')):
+                (tmp / 'schemas' / f.name).write_bytes(f.read_bytes())
+            (tmp / 'prints' / 'demo-book').mkdir(parents=True)
+            (tmp / 'prints' / 'bookkit').mkdir(parents=True)
+            # minimal bookkit engine stub (load_entries passthrough)
+            (tmp / 'prints' / 'bookkit' / '__init__.py').write_text('')
+            (tmp / 'prints' / 'bookkit' / 'engine.py').write_text(
+                'def load_entries(d, entries):\n'
+                '    import copy\n'
+                '    out = copy.deepcopy(entries)\n'
+                '    for e in out:\n'
+                '        e["iast"] = e.get("iast") or "oṁ namaḥ śivāya"\n'
+                '    return out\n')
+            (tmp / 'prints' / 'demo-book' / 'entries.json').write_text(json.dumps([
+                {'id': 'm-1', 'iast': 'oṁ namaḥ śivāya', 'how': 'say it any hour'},
+                {'id': 'm-2', 'iast': 'so\'haṁ', 'how': 'ride the breath'},
+            ]))
+            old_root, old_prints = factory.ROOT, factory.PRINTS
+            factory.ROOT, factory.PRINTS = tmp, tmp / 'prints'
+            try:
+                factory.audio(argparse.Namespace(book='demo-book'))
+            finally:
+                factory.ROOT, factory.PRINTS = old_root, old_prints
+            plan = json.loads((tmp / 'prints' / 'demo-book' / 'audio-plan.json').read_text())
+            self.assertEqual(check._validate(plan, 'audio-plan.schema.json'), [])
+            self.assertEqual(plan['totals']['clips'], 4)
+            self.assertEqual(plan['entries'][1]['verse']['text'], "so'haṁ")

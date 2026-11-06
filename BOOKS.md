@@ -174,10 +174,15 @@ the bookkit compile loop), work the stages.
 | paperback | bookkit HTML -> Chrome PDF -> kdp_preflight | active (PP/TP rebuilding) |
 | postcard | `renders_postcards.py` (6x4in @300dpi) | active |
 | social | same engine, 1080² + 1080x1350 | active |
-| **audiobook** | per entry, English readout of verse + guide blocks **from entries.json fields only** (never agent-written), book order | declared, planned |
-| **chant** | per entry exact chant: **prx0r/kashaudio** aligned clips (769 verses / 28 works — PP & TP source works already rendered) → **Swamiji archival** (`aghora-swamiji.mp3`, `bahurupa-swamiji.m4a`) → render queue (Gītā meal verse, VBT, oṃ namaḥ śivāya). Hash-pinned per-entry manifest ships with the digital edition. | declared, planned |
+| **chant** (verse) | per entry the IAST line in the **videofactory speaker format**: Fish Audio TTS voice `verse` (frozen ID `4e873c…`), cache key `sha1(voice|text)`, receipts → `audio/receipts/calls.jsonl` — the exact `render_chapter` pattern from prx0r/videofactory | **planned & gated** (`prints/<book>/audio-plan.json` exists = build-stage check passes; render only after owner go + FISH key) |
+| **audiobook** (how-to) | per entry the how/howto block read by Fish voice **`granny`** (frozen ID `614f8afd…`), same cache/receipts pattern; digital edition plays verse → how-to per prayer | planned with chant — planned by the same `audio` plan |
+| **digital** | (a) reflowable **EPUB** from bookkit HTML → Kindle/KDP ebook, (b) DRM-free interior **PDF** for direct sale; built after `build`; cover/metadata separate | declared, not built |
 
-`products.chant.coverage` in each thesis names the exact works per bucket.
+Audio pipeline: `python3 factory.py audio --book <B>` writes `prints/<B>/audio-plan.json`
+(2 clips x every entry — PP 72 clips / 11,460 chars, TP 72 / 7,950 — trivial Fish volume).
+`check.py` at build stage verifies the plan exists, matches entries, and cache keys are
+sound. **Nothing renders until the owner says go.** kashaudio's 769 aligned clips remain
+the pronunciation cross-check (`products.chant.coverage.reference_note` in each thesis).
 
 ## 8. The two member books (current law)
 
@@ -216,6 +221,7 @@ python3 check.py practical-prayers --pdf path.pdf   # force build-stage check
 python3 factory.py decide --book B --action A --target T --thesis-ref R --justification "..."
 python3 factory.py new-book --template prayer-book --slug S --claim "..." --section id:purpose
 python3 factory.py stage --book B --to structure|formatting|build|content
+python3 factory.py audio --book B                     # plan verse+granny clips (no API calls)
 
 # content-side (renderer is in-repo)
 cd prints/<book> && python3 compile.py    # needs patala venv

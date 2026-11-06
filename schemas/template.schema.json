@@ -53,13 +53,14 @@
     "products": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["paperback", "postcard", "social", "audiobook", "chant"],
+      "required": ["paperback", "postcard", "social", "audiobook", "chant", "digital"],
       "properties": {
         "paperback": {"$ref": "#/$defs/product"},
         "postcard": {"$ref": "#/$defs/product"},
         "social": {"$ref": "#/$defs/product"},
         "audiobook": {"$ref": "#/$defs/product"},
-        "chant": {"$ref": "#/$defs/product"}
+        "chant": {"$ref": "#/$defs/product"},
+        "digital": {"$ref": "#/$defs/product"}
       }
     },
     "style_default": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},

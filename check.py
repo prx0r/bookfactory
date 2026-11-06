@@ -353,7 +353,7 @@ def check_formatting(name, spec, prints, template):
 
 
 def check_build(name, spec, prints, pdf_override=None):
-    """build stage: THE LAST STEP — PDF proof exists and passes actual preflight."""
+    """build stage: THE LAST STEP — audio plan, PDF proof, actual preflight."""
     problems = []
     book_id = spec.get('book_dir')
     if not book_id:
@@ -361,6 +361,38 @@ def check_build(name, spec, prints, pdf_override=None):
     book = (prints / book_id).resolve()
     if not book.is_dir():
         return problems
+    # audio plan: per-entry verse+granny clips (videofactory format) must be planned
+    plan_path = book / 'audio-plan.json'
+    if not plan_path.is_file():
+        problems.append(f'audio plan missing: run factory.py audio --book {book_id} (planned clips: verse voice reads IAST, granny reads how-to)')
+    else:
+        try:
+            plan = json.loads(plan_path.read_text(encoding='utf-8'))
+            problems.extend(f'audio-plan: {e}' for e in _validate(plan, 'audio-plan.schema.json'))
+            entries = json.loads((book / 'entries.json').read_text(encoding='utf-8'))
+            sys.path.insert(0, str(prints / 'bookkit'))
+            try:
+                from engine import load_entries
+                resolved = load_entries(book, entries)
+            finally:
+                sys.path.pop(0)
+            by_id = {e['id']: e for e in resolved}
+            plan_ids = [pe['id'] for pe in plan.get('entries', [])]
+            if plan_ids != [e['id'] for e in resolved]:
+                problems.append('audio plan entry list out of sync with entries.json — rerun factory.py audio')
+            else:
+                import hashlib as _hl
+                for pe in plan['entries']:
+                    src = by_id[pe['id']]
+                    if pe['verse']['text'] != (src.get('iast') or '').strip():
+                        problems.append(f"audio plan {pe['id']}: verse text stale vs IAST — rerun factory.py audio")
+                    for clip_key, voice in (('verse', 'verse'), ('howto', 'granny')):
+                        clip = pe[clip_key]
+                        expect = _hl.sha1(f"{clip['voice']}|{clip['text']}".encode('utf-8')).hexdigest()
+                        if clip['cache_key'] != expect:
+                            problems.append(f"audio plan {pe['id']}: {clip_key} cache_key corrupt")
+        except (OSError, json.JSONDecodeError, ValueError) as exc:
+            problems.append(f'audio plan unreadable: {exc}')
     pdf = Path(pdf_override) if pdf_override else book / f'{book_id}-preview.pdf'
     preflight = prints / 'kdp_preflight.py'
     project = ROOT / 'projects' / name / 'project.json'

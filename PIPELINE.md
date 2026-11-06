@@ -141,6 +141,33 @@ are already rendered) or Swamiji archival (`aghora-swamiji.mp3`,
 fields only. Both are declared `planned` with per-work coverage in
 `products.chant.coverage` — a clip manifest ships with the digital edition.
 
+## Rights: the GRETIL problem and the routes around it (researched 2026-11-06)
+
+The Śivastotrāvalī transcription feeding `translation-work/sivastotravali` is recorded
+CC BY-NC-SA 4.0 — confirmed at source: the GRETIL/TextGrid edition page carries
+`Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0`
+(https://betaportal.textgrid.d.sub.uni-goettingen.de/browse/49kq9.0), and GRETIL's own
+front page says files are "STRICTLY FOR SCHOLARLY REFERENCE... ANY COMMERCIAL USE IS
+EXPLICITLY EXCLUDED". The verses themselves are 10th-century (public domain everywhere);
+it is the *transcription/edition* that carries the NC clause. Routes to clear commercial
+print:
+
+1. **PD-scan re-transcription (recommended, cleanest).** Witness our IAST against an old
+   printed edition scan — e.g. archive.org `Sivastotravali.of.Utpaladeva.With.the.commentary.of.Ksemaraja`
+   (Rājānaka Lakṣmaṇa ed.) or any pre-1929 print (Nirṇāya Sāgar/Bombay series). Verify the
+   scan's publication date first; the Sanskrit text of a 10th-c. work is PD; our own
+   transcription from a PD scan carries no NC. Record the collation as a `decide` decision
+   citing the thesis rights clause.
+2. **Sanskrit Wikisource** — page texts under CC BY-SA 4.0: attribution + share-alike,
+   **commercial use allowed**; SA applies to derivatives of the Sanskrit text, not to our
+   English. Viable with a credit line; weaker than route 1 (still a share-alike obligation).
+3. **sanskritdocuments.org** — full Śivastotrāvalī in Devanagari (all 20 stotras); terms
+   are per-use — verify their current license statement before relying on it.
+4. **License request to GRETIL/inputter** — possible but slow; the per-text inputters
+   sometimes grant commercial terms on request (their headers say "contact to negotiate").
+
+Until one route lands: no commercial ship. Front-matter attributed quotations stay fine.
+
 ## Current blockers and next work
 
 **Status 2026-11-06 (restructure landed, build green):**

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/prx0r/bookfactory/schemas/audio-plan-1.0.json",
+  "title": "Book audio plan",
+  "description": "Per-entry clip plan in the videofactory speaker format (Fish Audio TTS, frozen voice IDs). A plan is NOT a render: no API call has been made. Render happens only after owner go.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "book", "engine", "voices", "entries", "totals", "receipts", "note"],
+  "properties": {
+    "version": {"const": "1.0"},
+    "book": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "engine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tts", "pattern_source"],
+      "properties": {
+        "tts": {"const": "fish-audio"},
+        "pattern_source": {"const": "prx0r/videofactory render_chapter"},
+        "cache_key": {"type": "string"}
+      }
+    },
+    "voices": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verse", "granny"],
+      "properties": {
+        "verse": {"type": "string", "pattern": "^[a-f0-9]{32}$"},
+        "granny": {"type": "string", "pattern": "^[a-f0-9]{32}$"}
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "verse", "howto"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"},
+          "verse": {"$ref": "#/$defs/clip"},
+          "howto": {"$ref": "#/$defs/clip"}
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clips", "chars"],
+      "properties": {"clips": {"type": "integer", "minimum": 2}, "chars": {"type": "integer", "minimum": 2}}
+    },
+    "receipts": {"type": "string", "minLength": 1},
+    "note": {"type": "string", "minLength": 10}
+  },
+  "$defs": {
+    "clip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["voice", "voice_id", "text", "chars", "cache_key"],
+      "properties": {
+        "voice": {"enum": ["verse", "granny"]},
+        "voice_id": {"type": "string", "pattern": "^[a-f0-9]{32}$"},
+        "text": {"type": "string", "minLength": 1},
+        "chars": {"type": "integer", "minimum": 1},
+        "cache_key": {"type": "string", "pattern": "^[a-f0-9]{40}$"}
+      }
+    }
+  }
+}

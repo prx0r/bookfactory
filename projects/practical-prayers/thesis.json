@@ -81,17 +81,22 @@
     },
     "audiobook": {
       "status": "planned",
-      "spec": "Digital edition: per prayer — English readout of the verse + its guide blocks, read in book order, section by section; derived from entries.json fields (en/brief/what/how/sign), never from agent-written text"
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
     },
     "chant": {
       "status": "planned",
-      "spec": "Digital edition pairs each prayer with its exact chant audio: aligned verse clips from prx0r/kashaudio (769 verses, 28 works — our source texts are already rendered and aligned) where the work exists; Swamiji archival recordings (sources/aghora-swamiji.mp3, sources/bahurupa-swamiji.m4a) for his hymns; missing works (Gītā meal verse, VBT) queue to kashaudio render. Per-entry audio manifest binds verse id -> clip hash.",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go.",
       "coverage": {
         "kashaudio": "source works: shivastotravali, mahopadeshavimshatika, dehastha, anuttarastika, bhairavastava, pancashloki, bhairavanukarana, anubhavanivedana",
         "swamiji_archival": "aghora, bahurupa (core/close/gayatri)",
         "needs_render": "mealtime-yajna (Gītā 4.24), vbt-p* (Vijñāna Bhairava), om-namah-shivaya",
-        "binding": "one clip per entry id; hash-pinned manifest ships with the digital edition"
+        "binding": "one clip per entry id; hash-pinned manifest ships with the digital edition",
+        "reference_note": "kashaudio clips (769 aligned verses) remain available as pronunciation cross-check; the shippable clip is the videofactory verse-voice render recorded in audio-plan.json"
       }
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered."
     }
   }
 }

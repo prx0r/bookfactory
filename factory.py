@@ -466,6 +466,65 @@ def new_book(args):
           f'then factory.py stage --book {args.slug} --to structure')
 
 
+def audio(args):
+    """Plan per-entry clips in the videofactory speaker format (NO API calls).
+
+    verse voice reads the IAST line, granny voice reads the how-to — one Fish
+    Audio clip each, cache key sha1(voice|text), receipts path reserved.
+    Writes prints/<book>/audio-plan.json (schema audio-plan.schema.json).
+    Rendering happens only after an explicit owner go + FISH key.
+    """
+    book_id = clean_work(args.book)
+    book = PRINTS / book_id
+    entries_file = book / 'entries.json'
+    if not entries_file.is_file():
+        raise ValueError(f'no book at {book}')
+    entries = json.loads(entries_file.read_text(encoding='utf-8'))
+    # resolve corpus IAST exactly like the bookkit build does
+    sys.path.insert(0, str(PRINTS / 'bookkit'))
+    try:
+        from engine import load_entries
+        entries = load_entries(book, entries)
+    finally:
+        sys.path.pop(0)
+    voices = {'verse': '4e873c37d4cb439e9bccc4dc1f633290',
+              'granny': '614f8afd83f841048c040b2c6234d2c1'}
+    plan_entries = []
+    for e in entries:
+        iast = (e.get('iast') or '').strip()
+        if not iast:
+            raise ValueError(f"{e.get('id')}: no IAST to speak")
+        howto = (e.get('how') or e.get('howto') or '').strip()
+        if not howto:
+            raise ValueError(f"{e.get('id')}: no how-to text to read")
+        def clip(voice, text):
+            return {'voice': voice, 'voice_id': voices[voice], 'text': text,
+                    'chars': len(text),
+                    'cache_key': hashlib.sha1(f'{voice}|{text}'.encode('utf-8')).hexdigest()}
+        plan_entries.append({'id': e['id'],
+                             'verse': clip('verse', iast),
+                             'howto': clip('granny', howto)})
+    plan = {
+        'version': '1.0',
+        'book': book_id,
+        'engine': {'tts': 'fish-audio',
+                   'pattern_source': 'prx0r/videofactory render_chapter'},
+        'voices': voices,
+        'entries': plan_entries,
+        'totals': {'clips': 2 * len(plan_entries),
+                   'chars': sum(c['chars'] for pe in plan_entries for c in (pe['verse'], pe['howto']))},
+        'receipts': f'prints/{book_id}/audio/receipts/calls.jsonl',
+        'note': ('Plan only — no API call made. Render after owner go with FISH key; '
+                 'append receipts to the path above; VOICE_DB -21dB normalization.'),
+    }
+    validate_schema(plan, 'audio-plan.schema.json')
+    out = book / 'audio-plan.json'
+    out.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print(f'AUDIO PLAN {book_id}: {plan["totals"]["clips"]} clips, '
+          f'{plan["totals"]["chars"]} chars -> {out}')
+    print('  render: NOT enabled — owner go + FISH key required (videofactory pattern)')
+
+
 def set_stage(args):
     """Advance (or hold) a lane's pipeline stage after verifying stage gates.
 
@@ -554,6 +613,8 @@ def main():
     stg=subs.add_parser('stage',help='advance a lane through content->structure->formatting->build (PDF last)')
     stg.add_argument('--book',required=True)
     stg.add_argument('--to',required=True,choices=['content','structure','formatting','build'])
+    aud=subs.add_parser('audio',help='plan per-entry clips (videofactory speakers: verse + granny); NO API calls')
+    aud.add_argument('--book',required=True)
     args=p.parse_args()
     try:
         if args.command=='inspect': print(json.dumps(extract(args.translations,args.text,args.ref,args.layer,args.gate_id),ensure_ascii=False,indent=2))
@@ -562,6 +623,7 @@ def main():
         elif args.command=='decide': decide(args)
         elif args.command=='new-book': new_book(args)
         elif args.command=='stage': set_stage(args)
+        elif args.command=='audio': audio(args)
         else: verify_handoff(args)
     except (ValueError, OSError, json.JSONDecodeError, subprocess.CalledProcessError) as exc:
         print(f'ERROR: {exc}',file=sys.stderr)
