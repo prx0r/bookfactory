@@ -194,8 +194,9 @@ Three channels, one staged folder (`prints/<book>/package/`, built by
 - Ships: **6×9 in** paperback interior (152.4 × 228.6 mm, no bleed, black ink
   on **cream** paper, exactly **108 pages** — `target_pages` in book.json,
   gate-enforced) + the full-wrap cover PDF from `prints/bookkit/cover.py`
-  (back + spine + front + 3.2 mm bleed; spine 6.86 mm at 108 pp cream, so KDP
-  spine text is legal at ≥79 pp; barcode zone kept clear).
+  (black ground, ivory type, back + spine + front + 3.2 mm bleed; spine
+  6.86 mm at 108 pp cream, so KDP spine text is legal at ≥79 pp; barcode zone
+  kept clear; Svatantrya logo centred on the back — the house constant, §7c).
 - Audio in the physical book: **QR code in the colophon/last page** → hosted
   audio package (presigned R2 link page: verse + how-to player per prayer).
   QR goes in once clips are rendered; the colophon slot is part of the build.
@@ -219,6 +220,39 @@ after render, re-run `factory.py package` → manifest flips
 `audio: pending-render → included` → the channels above go live.
 Physical and digital buyers both end up with the same audio — one via QR
 (direct link), one inside the zip.
+
+## 7c. The cover template — one geometry, one back, only the emblem swappable
+
+The paperback cover is its own style pack: **`styles/cover-canonical.json`**,
+rendered by **`prints/bookkit/cover.py`**. A new book gets the identical cover
+by changing nothing but its own `book.json`:
+
+| Input | Where | Notes |
+|---|---|---|
+| trim | `book.json` `trim` | `A5` / `6x9` / `5.5x8.5` from the style's `trim_sizes_mm` |
+| paper | `book.json` `paper` | `white` / `cream` / `groundwood` → spine width |
+| page count | `book.json` `target_pages` | spine = pages × per-page (108 cream = 6.86 mm) |
+| front emblem | `book.json` `meta.cover_image.path` | optional; auto-converted to white-ink on transparent |
+| back | *nothing* | black ground + **Svatantrya mantra-ring logo, small, centred** — always |
+
+Fixed by the style (do not edit per book): ground `#121110`, ink `#f3ede0`,
+muted `#b9b2a4`; front layout at 54/72/92/104 mm (om, title, subtitle, rule),
+emblem 31 mm wide starting at 140 mm; spine text 7.5 pt at 1.6 mm clearance;
+back logo 30 mm centred at `bookkit/assets/svatantra_white.png`.
+
+```bash
+python3 prints/bookkit/cover.py prints/<book>          # -> cover.html
+# serve prints/ at :8000, then:
+google-chrome-stable --headless=new --disable-gpu --no-sandbox \
+  --virtual-time-budget=20000 --no-pdf-header-footer \
+  --print-to-pdf=prints/<book>/cover.pdf http://127.0.0.1:8000/<book>/cover.html
+```
+
+Replication rule: **swap `meta.cover_image` only.** The back logo and the
+geometry live in the style pack, so every book in the series carries the same
+silent black back with the Svatantrya mark in the centre. If a future style
+genuinely needs a different back, that is a NEW style id — never a per-book
+override. Both member books are 108 pp cream 6×9 → wrap 318.01 × 234.95 mm.
 
 ## 8. The two member books (current law)
 

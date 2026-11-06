@@ -9,12 +9,23 @@
     "note": "Devanagari always transliterated from IAST at build; never hand bytes"
   },
   "geometry": {
-    "trim": "A5 148x210mm no-bleed",
+    "trim": "6x9 152.4x228.6mm interior no-bleed (was A5; superseded 2026-11-06)",
     "margins": "20mm top/bottom, 18mm sides (>= KDP 0.375in gutter / 0.25in outside)",
     "spread": "prayer page facing guide page"
   },
   "ground": "paper white (255,255,255); ink #17140f; grey #76736e; hairline #d9d5cc",
-  "guide_blocks": ["What is it", "How to perform it", "How to know it's working", "What to feel / visualise"],
+  "guide_blocks": [
+    "What is it",
+    "How to perform it",
+    "How to know it's working",
+    "What to feel / visualise"
+  ],
   "render": "chrome print-to-pdf of bookkit HTML (prints/bookkit/engine.py); gate prints/kdp_preflight.py",
-  "owner_can_save": true
+  "owner_can_save": true,
+  "cover": {
+    "style": "cover-canonical",
+    "note": "the paperback cover is its own house style pack: styles/cover-canonical.json — black ground, ivory type, fixed geometry, Svatantrya logo always centred small on the back",
+    "front_emblem": "per book (book.json meta.cover_image); auto-inverted to white-ink at build",
+    "back": "logo only, house-constant"
+  }
 }

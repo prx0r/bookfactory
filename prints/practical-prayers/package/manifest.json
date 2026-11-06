@@ -25,13 +25,13 @@
     },
     {
       "path": "practical-prayers-preview.pdf",
-      "sha256": "9610d5fb36731b39b2b13f342bbe4ff7409ddb5871530dc385b79cbd1f1c9dc8",
+      "sha256": "f0cfbf71a82d73d0469eeca0c2b299fa5da0c7af19f885c77632da6fa7f24508",
       "size": 1855949
     },
     {
       "path": "cover.pdf",
-      "sha256": "36f1cf638c494d64105dd40916ea0ecfe6e306b3481934d17d554ccbf4069279",
-      "size": 255528
+      "sha256": "41c55a122de5b4efb4443020cacdb72ef89be5abb6ae5b809ba6f5d6e7d78a78",
+      "size": 221902
     },
     {
       "path": "audio-plan.json",

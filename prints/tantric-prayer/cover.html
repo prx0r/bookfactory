@@ -5,50 +5,41 @@
 @font-face{font-family:'Cormorant';src:url('fonts/CormorantGaramond[wght].ttf');font-weight:400 700;}
 @page{size:318.008mm 234.95mm;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{width:318.008mm;height:234.95mm;background:#f6f1e6;color:#17140f;
+html,body{width:318.008mm;height:234.95mm;background:#121110;color:#f3ede0;
   font-family:'Cormorant',Georgia,serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .wrap{display:flex;width:100%;height:100%}
 .bleed{width:3.175mm}
 .back,.front{width:152.4mm;height:100%;position:relative}
-.spine{width:6.858mm;height:100%;position:relative;background:#efe8d8;
-  border-left:.2mm solid #ded5c2;border-right:.2mm solid #ded5c2}
-/* front */
-.front{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
-  padding:6.0mm}
-.front .om{font-family:'Tiro';font-size:44pt;line-height:1;margin-bottom:14mm}
-.front h1{font-size:38pt;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
-.front .sub{font-size:16pt;font-style:italic;color:#76736e;margin-top:4mm;max-width:110mm}
-.front .rule{width:44mm;height:.3mm;background:#17140f;margin:9mm 0}
-.front img{width:62mm;height:auto}
+.spine{width:6.858mm;height:100%;position:relative;
+  border-left:.2mm solid rgba(243,237,224,0.18);border-right:.2mm solid rgba(243,237,224,0.18)}
+/* front — fixed positions from the style pack */
+.front .om{position:absolute;left:0;right:0;top:54mm;text-align:center;
+  font-family:'Tiro';font-size:38pt;line-height:1}
+.front h1{position:absolute;left:0;right:0;top:72mm;text-align:center;
+  font-size:34pt;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.front .sub{position:absolute;left:0;right:0;top:92mm;text-align:center;
+  font-size:14pt;font-style:italic;color:#b9b2a4;padding:0 16mm}
+.front .rule{position:absolute;left:50%;top:104mm;transform:translateX(-50%);
+  width:40mm;height:.25mm;background:#f3ede0}
+.front .mark{position:absolute;left:50%;top:140mm;transform:translateX(-50%);
+  width:31mm;height:auto}
 /* spine */
 .spine .t{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  writing-mode:vertical-rl;font-size:8pt;font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;white-space:nowrap}
-/* back */
-.back{display:flex;flex-direction:column;padding:6.0mm 10.0mm}
-.back .head{font-size:19pt;font-weight:600;letter-spacing:.03em}
-.back .sub{font-size:10.5pt;font-style:italic;color:#76736e;margin-top:2mm;
-  padding-bottom:5mm;border-bottom:.2mm solid #d9d5cc}
-.back p{font-size:12pt;line-height:1.45;margin-top:6mm;max-width:112mm}
-.back .art{margin:auto 0 0;width:34mm;opacity:.7}
-.back .barcode{position:absolute;right:10.0mm;bottom:6.0mm;
-  width:50.8mm;height:30.5mm}
+  writing-mode:vertical-rl;font-size:7.5pt;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+/* back — house logo only, always centred */
+.back{display:flex;align-items:center;justify-content:center}
+.back img{width:30mm;height:auto;opacity:0.95}
 </style></head><body><div class="wrap">
 <div class="bleed"></div>
-<div class="back">
-  <div class="head">Tantric Prayer</div>
-  <div class="sub">Thirty-Six Prayers for the Inner Weather</div>
-  <p>Nine rasas, four prayers each — thirty-six verses for the weather inside you. An emotion is not an obstacle to practice: it is consciousness already tasting itself in that key. Each rasa gets its Sanskrit name, its literal sense and its verse, and every prayer faces its explanation — what it is, how to perform it, how to know it is working.</p>
-  
-  <div class="barcode"></div>
-</div>
+<div class="back"><img src="../bookkit/assets/svatantra_white.png" alt="Svatantrya"></div>
 <div class="spine"><div class="t">Tantric Prayer</div></div>
 <div class="front">
   <div class="om">ॐ</div>
   <h1>Tantric Prayer</h1>
   <div class="sub">Thirty-Six Prayers for the Inner Weather</div>
   <div class="rule"></div>
-  
+  <img class="mark" src="art/shavism_white.png" alt="">
 </div>
 <div class="bleed"></div>
 </div></body></html>

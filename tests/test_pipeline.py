@@ -318,3 +318,34 @@ class TrimAndCoverTests(unittest.TestCase):
             w, h = doc[0].rect.width / 72 * 25.4, doc[0].rect.height / 72 * 25.4
             self.assertAlmostEqual(w, 318.0, delta=2.0, msg=book)
             self.assertAlmostEqual(h, 235.0, delta=2.0, msg=book)
+
+    def test_cover_style_pack_is_house_constant(self):
+        style = json.loads((ROOT / 'styles' / 'cover-canonical.json').read_text(encoding='utf-8'))
+        self.assertEqual(style['id'], 'cover-canonical')
+        self.assertEqual(style['colors']['ground'], '#121110')
+        self.assertEqual(style['back']['mode'], 'logo-only')
+        # 108 pp cream -> 6.86 mm spine; wrap 318.01 x 234.95 mm
+        pages = 108
+        spine = pages * style['geometry']['spine_per_page_in']['cream'] * 25.4
+        self.assertAlmostEqual(spine, 6.86, delta=0.05)
+        tw, th = style['geometry']['trim_sizes_mm']['6x9']
+        bleed = style['geometry']['bleed_mm']
+        self.assertAlmostEqual(bleed + tw + spine + tw + bleed, 318.01, delta=0.05)
+        self.assertAlmostEqual(th + 2 * bleed, 234.95, delta=0.05)
+
+    def test_back_logo_asset_always_present(self):
+        from PIL import Image
+        logo = PRINTS / 'bookkit' / 'assets' / 'svatantra_white.png'
+        self.assertTrue(logo.is_file(), 'house back-cover logo must ship with the style')
+        im = Image.open(logo)
+        self.assertEqual(im.mode, 'RGBA')
+        self.assertEqual(im.getpixel((0, 0))[3], 0, 'ground must be transparent')
+
+    def test_each_cover_uses_house_back_and_black_ground(self):
+        for book in ('practical-prayers', 'tantric-prayer'):
+            html = (PRINTS / book / 'cover.html').read_text(encoding='utf-8')
+            self.assertIn('#121110', html, book)
+            self.assertIn('bookkit/assets/svatantra_white.png', html, book)
+            self.assertIn('class="back"', html, book)
+            self.assertNotIn('back_cover', html, book)  # blank back: logo only
+            self.assertEqual(html.count('<img'), 2, book)  # back logo + front emblem

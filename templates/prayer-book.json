@@ -6,7 +6,8 @@
   "constraints": {
     "max_pages": 110,
     "min_font_pt": 7,
-    "trim": "A5 148x210mm no-bleed"
+    "trim": "6x9 152.4x228.6mm; interior no-bleed; paperback cover full-wrap with 3.175mm bleed",
+    "target_pages": 108
   },
   "pipeline": [
     "content",
@@ -40,7 +41,7 @@
   "products": {
     "paperback": {
       "status": "per-book",
-      "spec": "A5 no-bleed B&W matte; page count <= template ceiling 110; kdp_preflight + check.py green before any upload"
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
     },
     "postcard": {
       "status": "per-book",
@@ -77,5 +78,19 @@
     "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
     "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
     "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first"
-  ]
+  ],
+  "cover": {
+    "style": "cover-canonical",
+    "style_file": "styles/cover-canonical.json",
+    "generator": "prints/bookkit/cover.py",
+    "per_book_inputs": [
+      "book.json trim",
+      "book.json paper",
+      "book.json target_pages",
+      "book.json meta.cover_image (optional front emblem)"
+    ],
+    "house_constant": "back cover = black ground + Svatantrya mantra-ring logo, small, centred; no back text, no second element",
+    "swap_rule": "replace meta.cover_image with the new book's emblem; leave styles/cover-canonical.json untouched so geometry and the back logo stay identical across the series",
+    "render": "chrome --headless --print-to-pdf=cover.pdf http://127.0.0.1:8000/<book>/cover.html"
+  }
 }

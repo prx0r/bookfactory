@@ -5,30 +5,83 @@
   "description": "The overall thesis of a KIND of book (e.g. the prayer book). Books instantiate a template; template rules are enforced on every member. 110 pages is the creative boundary of the prayer-book genre.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["version", "id", "name", "description", "constraints", "pipeline", "entry_anatomy", "products", "style_default", "structure_defaults", "inclusion", "exclusion"],
+  "required": [
+    "version",
+    "id",
+    "name",
+    "description",
+    "constraints",
+    "pipeline",
+    "entry_anatomy",
+    "products",
+    "style_default",
+    "structure_defaults",
+    "inclusion",
+    "exclusion"
+  ],
   "properties": {
-    "version": {"const": "1.0"},
-    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-    "name": {"type": "string", "minLength": 1},
-    "description": {"type": "string", "minLength": 40},
+    "version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 40
+    },
     "constraints": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["max_pages", "min_font_pt", "trim"],
+      "required": [
+        "max_pages",
+        "min_font_pt",
+        "trim"
+      ],
       "properties": {
-        "max_pages": {"type": "integer", "minimum": 24, "maximum": 828, "description": "Hard page ceiling — the creative boundary of the genre"},
-        "min_font_pt": {"type": "number", "minimum": 7},
-        "trim": {"type": "string", "minLength": 1}
+        "max_pages": {
+          "type": "integer",
+          "minimum": 24,
+          "maximum": 828,
+          "description": "Hard page ceiling — the creative boundary of the genre"
+        },
+        "min_font_pt": {
+          "type": "number",
+          "minimum": 7
+        },
+        "trim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_pages": {
+          "type": "integer",
+          "minimum": 24,
+          "maximum": 828,
+          "description": "The exact interior page count a member book ships (spine + gate use it)"
+        }
       }
     },
     "pipeline": {
       "type": "array",
       "minItems": 4,
       "prefixItems": [
-        {"const": "content"},
-        {"const": "structure"},
-        {"const": "formatting"},
-        {"const": "build"}
+        {
+          "const": "content"
+        },
+        {
+          "const": "structure"
+        },
+        {
+          "const": "formatting"
+        },
+        {
+          "const": "build"
+        }
       ],
       "items": false,
       "description": "Stage order. The PDF build is always LAST — content, structure, and formatting must be confirmed first."
@@ -36,52 +89,160 @@
     "entry_anatomy": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["required", "optional"],
+      "required": [
+        "required",
+        "optional"
+      ],
       "properties": {
         "required": {
           "type": "object",
           "minProperties": 1,
-          "additionalProperties": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
           "description": "canonical field name -> accepted keys (any one present)"
         },
         "optional": {
           "type": "object",
-          "additionalProperties": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
         }
       }
     },
     "products": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["paperback", "postcard", "social", "audiobook", "chant", "digital"],
+      "required": [
+        "paperback",
+        "postcard",
+        "social",
+        "audiobook",
+        "chant",
+        "digital"
+      ],
       "properties": {
-        "paperback": {"$ref": "#/$defs/product"},
-        "postcard": {"$ref": "#/$defs/product"},
-        "social": {"$ref": "#/$defs/product"},
-        "audiobook": {"$ref": "#/$defs/product"},
-        "chant": {"$ref": "#/$defs/product"},
-        "digital": {"$ref": "#/$defs/product"}
+        "paperback": {
+          "$ref": "#/$defs/product"
+        },
+        "postcard": {
+          "$ref": "#/$defs/product"
+        },
+        "social": {
+          "$ref": "#/$defs/product"
+        },
+        "audiobook": {
+          "$ref": "#/$defs/product"
+        },
+        "chant": {
+          "$ref": "#/$defs/product"
+        },
+        "digital": {
+          "$ref": "#/$defs/product"
+        }
       }
     },
-    "style_default": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "style_default": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
     "structure_defaults": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["entries_per_section"],
-      "properties": {"entries_per_section": {"type": "integer", "minimum": 1}}
+      "required": [
+        "entries_per_section"
+      ],
+      "properties": {
+        "entries_per_section": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
     },
-    "series_pattern": {"type": "string", "minLength": 10, "description": "How volumes work for this genre when one book overflows the ceiling"},
-    "inclusion": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 10}},
-    "exclusion": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 10}}
+    "series_pattern": {
+      "type": "string",
+      "minLength": 10,
+      "description": "How volumes work for this genre when one book overflows the ceiling"
+    },
+    "inclusion": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "exclusion": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "cover": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "style",
+        "generator"
+      ],
+      "properties": {
+        "style": {
+          "type": "string"
+        },
+        "style_file": {
+          "type": "string"
+        },
+        "generator": {
+          "type": "string"
+        },
+        "per_book_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "house_constant": {
+          "type": "string"
+        },
+        "swap_rule": {
+          "type": "string"
+        },
+        "render": {
+          "type": "string"
+        }
+      },
+      "description": "Cover style contract: geometry + back cover are house-constant; only the front emblem swaps per book"
+    }
   },
   "$defs": {
     "product": {
       "type": "object",
-      "required": ["status", "spec"],
+      "required": [
+        "status",
+        "spec"
+      ],
       "properties": {
-        "status": {"type": "string", "minLength": 1},
-        "spec": {"type": "string", "minLength": 10},
-        "coverage": {"type": "object"}
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "spec": {
+          "type": "string",
+          "minLength": 10
+        },
+        "coverage": {
+          "type": "object"
+        }
       },
       "additionalProperties": true
     }
