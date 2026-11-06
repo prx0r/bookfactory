@@ -20,13 +20,18 @@
   "files": [
     {
       "path": "practical-prayers.epub",
-      "sha256": "15107c7590025b681a012970ae399c011d14016758403e9be62b8d7903267568",
-      "size": 683590
+      "sha256": "20e055fb1abec63b9b50d0602b3ba91bcda29bc776b4f2556b42c84db6ac378c",
+      "size": 683863
     },
     {
       "path": "practical-prayers-preview.pdf",
-      "sha256": "87b6cd1d5e9c2ae4e22198ca860f6a523e94d0cb5e0684250289433ed227436b",
-      "size": 1705682
+      "sha256": "9610d5fb36731b39b2b13f342bbe4ff7409ddb5871530dc385b79cbd1f1c9dc8",
+      "size": 1855949
+    },
+    {
+      "path": "cover.pdf",
+      "sha256": "36f1cf638c494d64105dd40916ea0ecfe6e306b3481934d17d554ccbf4069279",
+      "size": 255528
     },
     {
       "path": "audio-plan.json",

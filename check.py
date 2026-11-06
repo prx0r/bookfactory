@@ -414,6 +414,12 @@ def check_build(name, spec, prints, pdf_override=None):
     command = [sys.executable, str(preflight)]
     if ceiling is not None:
         command += ['--max-pages', str(ceiling)]
+    try:
+        target = json.loads((book / 'book.json').read_text(encoding='utf-8')).get('target_pages')
+        if isinstance(target, int):
+            command += ['--expect-pages', str(target)]
+    except (OSError, json.JSONDecodeError):
+        pass
     result = subprocess.run(command + [str(pdf)], capture_output=True, text=True)
     if result.returncode:
         detail = '; '.join(x.strip() for x in result.stdout.splitlines() if x.strip().startswith('x '))

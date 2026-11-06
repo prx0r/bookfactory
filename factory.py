@@ -593,6 +593,7 @@ def package(args):
         return False
     add(epub_path)
     add(pdf_path)
+    add(book / 'cover.pdf')
     if audio_dir.is_dir():
         for mp3 in sorted(audio_dir.rglob('*.mp3')):
             add(mp3, f'audio/{mp3.name}')

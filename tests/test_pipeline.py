@@ -295,3 +295,26 @@ class EpubPackageTests(unittest.TestCase):
             import re as _re
             for f in m['files']:
                 self.assertRegex(f['sha256'], r'^[a-f0-9]{64}$')
+
+
+class TrimAndCoverTests(unittest.TestCase):
+    """Both books ship 6x9, exactly 108 interior pages, with a full-wrap cover."""
+
+    def test_books_declare_print_spec(self):
+        for book in ('practical-prayers', 'tantric-prayer'):
+            spec = json.loads((PRINTS / book / 'book.json').read_text(encoding='utf-8'))
+            self.assertEqual(spec.get('trim'), '6x9', book)
+            self.assertEqual(spec.get('target_pages'), 108, book)
+            self.assertEqual(spec.get('paper'), 'cream', book)
+
+    def test_cover_pdf_present_and_single_page(self):
+        import pymupdf
+        for book in ('practical-prayers', 'tantric-prayer'):
+            path = PRINTS / book / 'cover.pdf'
+            if not path.is_file():
+                self.skipTest('cover not rendered yet')
+            doc = pymupdf.open(path)
+            self.assertEqual(len(doc), 1, book)
+            w, h = doc[0].rect.width / 72 * 25.4, doc[0].rect.height / 72 * 25.4
+            self.assertAlmostEqual(w, 318.0, delta=2.0, msg=book)
+            self.assertAlmostEqual(h, 235.0, delta=2.0, msg=book)

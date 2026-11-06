@@ -191,8 +191,11 @@ Three channels, one staged folder (`prints/<book>/package/`, built by
 `manifest.json` (sha256 per file, audio status, channel map).
 
 **SKU A — Physical paperback (KDP)**
-- Ships: A5 paperback interior (the build-green PDF) + cover (KDP Cover
-  Calculator, separate file).
+- Ships: **6×9 in** paperback interior (152.4 × 228.6 mm, no bleed, black ink
+  on **cream** paper, exactly **108 pages** — `target_pages` in book.json,
+  gate-enforced) + the full-wrap cover PDF from `prints/bookkit/cover.py`
+  (back + spine + front + 3.2 mm bleed; spine 6.86 mm at 108 pp cream, so KDP
+  spine text is legal at ≥79 pp; barcode zone kept clear).
 - Audio in the physical book: **QR code in the colophon/last page** → hosted
   audio package (presigned R2 link page: verse + how-to player per prayer).
   QR goes in once clips are rendered; the colophon slot is part of the build.
@@ -257,6 +260,9 @@ python3 factory.py stage --book B --to structure|formatting|build|content
 python3 factory.py audio --book B                     # plan verse+granny clips (no API calls)
 python3 factory.py epub --book B                        # build+validate the Kindle/KDP EPUB3
 python3 factory.py package --book B                     # customer package + sha256 manifest
+python3 prints/bookkit/engine.py prints/B               # HTML -> interior.html + index.html (108 pp)
+python3 prints/bookkit/cover.py prints/B                # full-wrap cover.html (KDP geometry)
+# render both with headless Chrome against 127.0.0.1:8000, then kdp_preflight.py --expect-pages 108
 
 # content-side (renderer is in-repo)
 cd prints/<book> && python3 compile.py    # needs patala venv

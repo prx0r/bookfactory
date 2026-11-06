@@ -58,7 +58,8 @@ class ThesisRefTests(unittest.TestCase):
         t = real_thesis('practical-prayers')
         self.assertIn('mood-state sections', check.resolve_thesis_ref(t, 'exclusion/0'))
         self.assertIn('sections_plan', check.resolve_thesis_ref(t, 'structure'))
-        self.assertIn('A5', check.resolve_thesis_ref(t, 'products/paperback/spec'))
+        self.assertIn('6x9', check.resolve_thesis_ref(t, 'products/paperback/spec'))
+        self.assertIn('108', check.resolve_thesis_ref(t, 'products/paperback/spec'))
 
     def test_bad_refs_raise(self):
         t = real_thesis('practical-prayers')

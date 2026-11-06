@@ -11,6 +11,10 @@
     "total_entries": 36,
     "sections_plan": [
       {
+        "id": "anytime",
+        "purpose": "short portable mantras — no clock needed, carry them all day"
+      },
+      {
         "id": "wake",
         "purpose": "on rising — the first words before the feet touch the floor"
       },
@@ -41,10 +45,6 @@
       {
         "id": "sleep",
         "purpose": "wind down and lights out — the day's weight set down at the door"
-      },
-      {
-        "id": "anytime",
-        "purpose": "short portable mantras — no clock needed, carry them all day"
       }
     ]
   },
@@ -69,7 +69,7 @@
   "products": {
     "paperback": {
       "status": "in-progress",
-      "spec": "A5 no-bleed, B&W, matte cover; 36 prayers = structure law from this thesis; page ceiling 110 (KDP flat tier); gate prints/kdp_preflight.py + check.py must pass before any upload"
+      "spec": "6x9in (152.4x228.6mm) no-bleed, B&W black ink on cream paper, matte cover, EXACTLY 108 interior pages (project target_pages; even and under the 110 flat tier); trim + cream give a 6.86mm spine so KDP spine text is legal (>=79pp). Full-wrap cover built by prints/bookkit/cover.py (back+spine+front+bleed, barcode clear zone). Gates: check.py + kdp_preflight.py (--expect-pages from book.json) before upload."
     },
     "postcard": {
       "status": "planned",

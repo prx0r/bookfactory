@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inspect an A5, no-bleed KDP paperback interior PDF.
+"""Inspect a no-bleed KDP paperback interior PDF.
 
 Checks every page's dimensions, embedded fonts, rendered text size and margins,
 and image effective resolution. This is a mechanical gate, not a KDP approval,
@@ -8,12 +8,18 @@ creation. Requires PyMuPDF and Poppler's pdffonts. Use KDP's current calculator
 and previewer for the separate cover and final submission.
 """
 import argparse
+import json
 import math
+import pathlib
 import re
 import subprocess
 import sys
 
-A5 = (148 / 25.4 * 72, 210 / 25.4 * 72)
+TRIMS = {
+    "A5": (148.0, 210.0),
+    "6x9": (152.4, 228.6),
+    "5.5x8.5": (139.7, 215.9),
+}
 TOLERANCE_PT = .72  # .01in: account for the renderer's rounding
 
 
@@ -25,7 +31,19 @@ def gutter(pages):
     return .875 * 72
 
 
-def preflight(path, max_pages=None):
+def expected_trim(path):
+    """A book's trim is declared next to the PDF in book.json; default A5."""
+    try:
+        spec = json.loads((pathlib.Path(path).parent / "book.json").read_text(encoding="utf-8"))
+        name = spec.get("trim", "A5")
+        if name in TRIMS:
+            return name, (TRIMS[name][0] / 25.4 * 72, TRIMS[name][1] / 25.4 * 72)
+    except (OSError, ValueError):
+        pass
+    return "A5", (TRIMS["A5"][0] / 25.4 * 72, TRIMS["A5"][1] / 25.4 * 72)
+
+
+def preflight(path, max_pages=None, expect_pages=None):
     try:
         import fitz
     except ImportError:
@@ -39,10 +57,13 @@ def preflight(path, max_pages=None):
         if not doc.is_pdf or doc.needs_pass:
             return ["not an accessible PDF"], []
         pages = len(doc)
+        trim_name, trim_pt = expected_trim(path)
         if not 24 <= pages <= 828:
-            fails.append(f"{pages} pages: A5 black ink on white paper must be 24–828")
+            fails.append(f"{pages} pages: {trim_name} black ink on white paper must be 24–828")
         if max_pages is not None and pages > max_pages:
             fails.append(f"{pages} pages exceeds project ceiling {max_pages}")
+        if expect_pages is not None and pages != expect_pages:
+            fails.append(f"{pages} pages, expected exactly {expect_pages}")
         if pages % 2:
             warns.append(f"{pages} pages: KDP rounds to {pages + 1}")
         try:
@@ -62,8 +83,8 @@ def preflight(path, max_pages=None):
         text_spans = 0
         for i, page in enumerate(doc):
             width, height = page.rect.width, page.rect.height
-            if abs(width - A5[0]) > TOLERANCE_PT or abs(height - A5[1]) > TOLERANCE_PT:
-                fails.append(f"page {i+1}: {width:.2f}×{height:.2f}pt, expected A5")
+            if abs(width - trim_pt[0]) > TOLERANCE_PT or abs(height - trim_pt[1]) > TOLERANCE_PT:
+                fails.append(f"page {i+1}: {width:.2f}×{height:.2f}pt, expected {trim_name}")
             left = gutter(pages) if i % 2 == 0 else 18
             right = 18 if i % 2 == 0 else gutter(pages)
             for block in page.get_text("dict")["blocks"]:
@@ -101,10 +122,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("pdf", nargs="+")
     parser.add_argument("--max-pages", type=int, help="optional project-specific ceiling")
+    parser.add_argument("--expect-pages", type=int, help="require exactly this many pages")
     args = parser.parse_args()
     rc = 0
     for path in args.pdf:
-        fails, warns = preflight(path, args.max_pages)
+        fails, warns = preflight(path, args.max_pages, args.expect_pages)
         print(f"[{'FAIL' if fails else 'PASS'}] {path}")
         for message in fails: print(f"    x {message}")
         for message in warns: print(f"    ! {message}")

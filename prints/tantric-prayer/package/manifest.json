@@ -20,13 +20,18 @@
   "files": [
     {
       "path": "tantric-prayer.epub",
-      "sha256": "630fc25e2b042af634946adf3e4535e0e32fbf6f402348436cbe2b29794191fd",
-      "size": 686919
+      "sha256": "8fc30225607db2718bd3c8f73ade59ca50cedfedee85a8ac564815e8eddfbc3e",
+      "size": 687303
     },
     {
       "path": "tantric-prayer-preview.pdf",
-      "sha256": "0540505ddffe96f1126527e0b9e3e04e3b0de71fc7ff795b8de9b893de02cf17",
-      "size": 1884047
+      "sha256": "b1715076994968d402f7d34137fc746b782625b018453c56df47e1e931ede52e",
+      "size": 2011083
+    },
+    {
+      "path": "cover.pdf",
+      "sha256": "5f450c49a33c1a7ffb529b9adc69b4bb564d264d9ab505eeed9b5050d8caeee1",
+      "size": 160688
     },
     {
       "path": "audio-plan.json",

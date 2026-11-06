@@ -5,7 +5,8 @@
   "blurb": "the nine rasas · four prayers each · kashmir shaivism",
   "epi_iast": "api labdhabhavadbhāvaḥ svātmollāsamayaṃ jagat / paśyan bhaktirasābhogair bhaveyam aviyojitaḥ",
   "epi_en": "seeing the world as the delight of the self — may i never be parted from it, through the enjoyment of devotion's rasa.",
-  "epi_src": "Utpaladeva, Śivastotrāvalī 5.16"
+  "epi_src": "Utpaladeva, Śivastotrāvalī 5.16",
+  "back_cover": "Nine rasas, four prayers each — thirty-six verses for the weather inside you. An emotion is not an obstacle to practice: it is consciousness already tasting itself in that key. Each rasa gets its Sanskrit name, its literal sense and its verse, and every prayer faces its explanation — what it is, how to perform it, how to know it is working."
  },
  "sections": [
   {
@@ -81,5 +82,9 @@
    "doctrine": "sthāyin: śānti — the ninth rasa, Abhinavagupta's own addition: the ocean in which the other eight swim"
   }
  ],
- "glyph": "rasa"
+ "glyph": "rasa",
+ "trim": "6x9",
+ "paper": "cream",
+ "target_pages": 108,
+ "front_matter": true
 }

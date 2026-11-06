@@ -1,17 +1,27 @@
 {
  "meta": {
   "title": "Practical Prayers",
-  "subtitle": "Thirty-six prayers for the moments of the day — and anytime",
-  "blurb": "eight moments and anytime · four prayers each",
+  "subtitle": "Thirty-six prayers for the moments of the day",
+  "blurb": "four prayers each",
   "epi_iast": "brahmārpaṇaṁ brahma havir brahmāgnau brahmaṇā hutam",
   "epi_en": "the offering is brahman, the oblation is brahman, poured by brahman into the fire of brahman",
-  "epi_src": "Bhagavad Gītā 4.24 — the meal prayer"
+  "epi_src": "Bhagavad Gītā 4.24 — the meal prayer",
+  "cover_image": {
+   "path": "art/shavism.jpg",
+   "alt": "A Śaiva emblem — trident through lotus and sun within a stepped yantra border"
+  },
+  "back_cover": "Thirty-six prayers for the moments of the day — eight moments and a clockless pocket for anytime. Each verse faces its explanation: when to say it, how, and how to know it is working. Nothing here needs belief; the verses were built to be said — at the sink, at the desk, in the queue, in the dark."
  },
  "sections": [
   {
+   "id": "anytime",
+   "title": "Anytime",
+   "sub": "no clock · pocket mantras"
+  },
+  {
    "id": "wake",
    "numeral": "I",
-   "title": "Waking / Morning",
+   "title": "Waking",
    "sub": "on rising"
   },
   {
@@ -23,19 +33,19 @@
   {
    "id": "social",
    "numeral": "III",
-   "title": "Social",
+   "title": "Socialising",
    "sub": "out among people"
   },
   {
    "id": "work",
    "numeral": "IV",
-   "title": "At Work",
+   "title": "Working",
    "sub": "at the desk"
   },
   {
    "id": "food",
    "numeral": "V",
-   "title": "Food",
+   "title": "Eating",
    "sub": "before eating"
   },
   {
@@ -47,21 +57,19 @@
   {
    "id": "sick",
    "numeral": "VII",
-   "title": "When You Are Sick",
+   "title": "Healing",
    "sub": "illness · pain"
   },
   {
    "id": "sleep",
    "numeral": "VIII",
-   "title": "Evening / Sleep",
+   "title": "Sleeping",
    "sub": "wind down · lights out"
-  },
-  {
-   "numeral": "IX",
-   "id": "anytime",
-   "title": "Anytime",
-   "sub": "no clock · pocket mantras"
   }
  ],
- "glyph": "activity"
+ "glyph": "activity",
+ "trim": "6x9",
+ "paper": "cream",
+ "target_pages": 108,
+ "front_matter": true
 }
