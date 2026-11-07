@@ -1,0 +1,10 @@
+{
+  "engine": "fish-audio/s2.1-pro-free",
+  "voices": {
+    "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+    "granny": "614f8afd83f841048c040b2c6234d2c1"
+  },
+  "pattern": "prx0r/videofactory sha1(voice|text)",
+  "clips": {},
+  "karaoke": "kashaudio MMS when available; else speechSynthesis"
+}

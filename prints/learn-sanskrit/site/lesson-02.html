@@ -82,6 +82,10 @@ footer .fin{max-width:1400px;margin:0 auto;padding:1.2rem 1rem;font-family:var(-
 footer a{color:var(--gold-ink)}
 pre{background:#f6f3ee;padding:.55rem .75rem;overflow:auto;font-size:.88rem;font-family:var(--sans);margin:.4rem 0 .8rem}
 ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
+.playrow{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.6rem 0 1rem;font-family:var(--sans)}
+.vplay{font-family:var(--sans);font-size:.8rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:.35rem .85rem;cursor:pointer;color:var(--ink)}
+.vplay:hover{border-color:var(--gold);color:var(--gold-ink)}
+.vplay.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 @media(max-width:1100px){.shell{grid-template-columns:240px minmax(0,1fr)}.toc{display:none}}
 @media(max-width:800px){
   .shell{grid-template-columns:minmax(0,1fr)}
@@ -93,7 +97,7 @@ ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
   .dev{font-size:1.35rem}
 }
 </style>
-</head><body>
+</head><body data-lesson="l02-namaste">
 <div class="topbar"><div class="topbar-in">
 <button class="burger" id="burger" aria-label="menu">☰</button>
 <a class="brand" href="index.html"><span class="deva-brand">संस्कृत</span><small>learn · Abhinavagupta</small></a>
@@ -116,7 +120,13 @@ ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
 <div class="dev">प्रपञ्चोत्तीर्णरूपाय नमस्ते विश्वमूर्तये । सदादिव्यप्रकाशाय स्वात्मनेऽनन्तशक्तये ॥</div>
 <div class="iast">prapañcottīrṇarūpāya namaste viśvamūrtaye | sadādivyaprakāśāya svātmane&#x27;nantaśaktaye ||</div>
 <p class="en">Homage to the world-formed, past the world — to ever-shining divinity, to self of unending power.</p>
-<ul class='compact'><li><b>author:</b> Abhinavagupta</li><li><b>work:</b> Mahopadeśaviṃśatikā</li><li><b>verse:</b> 1</li><li><b>edition:</b> translation-work mahopadeshavimshatika (gold)</li><li><b>variants:</b> Companion drill from v.2: namo namaḥ before n- contexts. L2/L3 as placed.</li></ul>
+<p class="mut">Abhinavagupta, Mahopadeśaviṃśatikā vv.1–2; translation-work mahopadeshavimshatika · Mahopadeśa mpa-p01-v01 (+ v02 namo namaḥ)</p>
+<div class="playrow">
+<button type="button" class="vplay" data-play="verse">▶ recite</button>
+<button type="button" class="vplay" data-play="howto">▶ practice</button>
+<span class="mut" id="play-note">Fish verse voice · browser fallback</span>
+</div>
+<audio id="lesson-audio" preload="none"></audio>
 
 <h2 id="recite">2 · Recitation</h2>
 <pre>pra-pañ-cot-tīr-ṇa-rū-pā-ya | na-mas-te | viś-va-mūr-ta-ye | sa-dā-di-vya-pra-kā-śā-ya | svāt-ma-ne &#x27;n-an-ta-śak-ta-ye</pre>
@@ -201,4 +211,5 @@ document.querySelectorAll('.depth button[data-d]').forEach(btn=>{
   });
 });
 </script>
+<script src="player.js"></script>
 </body></html>

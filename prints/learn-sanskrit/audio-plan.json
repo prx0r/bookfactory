@@ -2,7 +2,7 @@
   "version": "1.0",
   "book": "learn-sanskrit",
   "engine": {
-    "tts": "fish-audio/s2.1-pro-free",
+    "tts": "fish-audio",
     "pattern_source": "prx0r/videofactory render_chapter + shiva-sutras/tts_line.py",
     "cache": "sha1(voice|text)[:12] in filename",
     "norm_db": -21.0,

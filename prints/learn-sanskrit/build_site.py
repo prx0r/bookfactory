@@ -97,6 +97,10 @@ footer .fin{max-width:1400px;margin:0 auto;padding:1.2rem 1rem;font-family:var(-
 footer a{color:var(--gold-ink)}
 pre{background:#f6f3ee;padding:.55rem .75rem;overflow:auto;font-size:.88rem;font-family:var(--sans);margin:.4rem 0 .8rem}
 ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
+.playrow{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.6rem 0 1rem;font-family:var(--sans)}
+.vplay{font-family:var(--sans);font-size:.8rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:.35rem .85rem;cursor:pointer;color:var(--ink)}
+.vplay:hover{border-color:var(--gold);color:var(--gold-ink)}
+.vplay.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 @media(max-width:1100px){.shell{grid-template-columns:240px minmax(0,1fr)}.toc{display:none}}
 @media(max-width:800px){
   .shell{grid-template-columns:minmax(0,1fr)}
@@ -153,7 +157,7 @@ def page(title: str, body: str, *, active: str = "index", crumb: str = "", toc: 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Noto+Serif+Devanagari:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>{CSS}</style>
-</head><body>
+</head><body data-lesson="{esc(active if active.startswith('l') else '')}">
 <div class="topbar"><div class="topbar-in">
 <button class="burger" id="burger" aria-label="menu">☰</button>
 <a class="brand" href="index.html"><span class="deva-brand">संस्कृत</span><small>learn · Abhinavagupta</small></a>
@@ -182,6 +186,7 @@ document.querySelectorAll('.depth button[data-d]').forEach(btn=>{{
   }});
 }});
 </script>
+<script src="player.js"></script>
 </body></html>
 """
 
@@ -335,7 +340,13 @@ def lesson_body(e, n):
 {deva and f'<div class="dev">{esc(deva)}</div>' or ''}
 <div class="iast">{esc(e.get('iast'))}</div>
 <p class="en">{esc(e.get('en'))}</p>
-{kv_list(w, ['author','work','verse','edition','variants'])}
+<p class="mut">{esc(e.get("source"))} · {esc(e.get("source_ref"))}</p>
+<div class="playrow">
+<button type="button" class="vplay" data-play="verse">▶ recite</button>
+<button type="button" class="vplay" data-play="howto">▶ practice</button>
+<span class="mut" id="play-note">Fish verse voice · browser fallback</span>
+</div>
+<audio id="lesson-audio" preload="none"></audio>
 
 <h2 id="recite">2 · Recitation</h2>
 <pre>{esc(rec.get('syllables',''))}</pre>
@@ -439,6 +450,10 @@ python3 ipvv/site/build.py   # if shell rebuilt from build.py</pre>
 
 
 def main():
+    import shutil
+    _pj = ROOT / "player.js"
+    if _pj.is_file():
+        (OUT / "player.js").write_text(_pj.read_text(encoding="utf-8"), encoding="utf-8")
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "index.html").write_text(index_body(), encoding="utf-8")
     for i, e in enumerate(ENTRIES, 1):
@@ -460,6 +475,32 @@ def main():
         },
     }
     (OUT / "index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    clips = {}
+    audio_dir = ROOT / "audio" / "clips"
+    if audio_dir.is_dir():
+        for wav in sorted(audio_dir.glob("*.wav")):
+            parts = wav.name.split("__")
+            if len(parts) >= 2:
+                key = parts[0] + "__" + parts[1].split("_")[0]
+                clips[key] = "audio/clips/" + wav.name
+    manifest = {
+        "engine": "fish-audio/s2.1-pro-free",
+        "voices": {
+            "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+            "granny": "614f8afd83f841048c040b2c6234d2c1",
+        },
+        "pattern": "prx0r/videofactory sha1(voice|text)",
+        "clips": clips,
+        "karaoke": "kashaudio MMS when available; else speechSynthesis",
+    }
+    (OUT / "audio-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if audio_dir.is_dir():
+        dest_dir = OUT / "audio" / "clips"
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        for wav in audio_dir.glob("*.wav"):
+            d = dest_dir / wav.name
+            if not d.exists() or d.stat().st_mtime < wav.stat().st_mtime:
+                d.write_bytes(wav.read_bytes())
     print(f"site → {OUT}")
     for f in sorted(OUT.glob("*.html")):
         print(" ", f.name, f.stat().st_size)

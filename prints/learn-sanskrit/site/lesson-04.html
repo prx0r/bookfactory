@@ -82,6 +82,10 @@ footer .fin{max-width:1400px;margin:0 auto;padding:1.2rem 1rem;font-family:var(-
 footer a{color:var(--gold-ink)}
 pre{background:#f6f3ee;padding:.55rem .75rem;overflow:auto;font-size:.88rem;font-family:var(--sans);margin:.4rem 0 .8rem}
 ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
+.playrow{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.6rem 0 1rem;font-family:var(--sans)}
+.vplay{font-family:var(--sans);font-size:.8rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:.35rem .85rem;cursor:pointer;color:var(--ink)}
+.vplay:hover{border-color:var(--gold);color:var(--gold-ink)}
+.vplay.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 @media(max-width:1100px){.shell{grid-template-columns:240px minmax(0,1fr)}.toc{display:none}}
 @media(max-width:800px){
   .shell{grid-template-columns:minmax(0,1fr)}
@@ -93,7 +97,7 @@ ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
   .dev{font-size:1.35rem}
 }
 </style>
-</head><body>
+</head><body data-lesson="l04-nryti">
 <div class="topbar"><div class="topbar-in">
 <button class="burger" id="burger" aria-label="menu">☰</button>
 <a class="brand" href="index.html"><span class="deva-brand">संस्कृत</span><small>learn · Abhinavagupta</small></a>
@@ -116,7 +120,13 @@ ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
 <div class="dev">नृत्यति गायति हृष्यति गाढम् संवित् इयम् मम …</div>
 <div class="iast">nṛtyati gāyati hṛṣyati gāḍham saṃvit iyam mama …</div>
 <p class="en">This consciousness of mine dances, sings, rejoices deeply — O Bhairava, Lord.</p>
-<ul class='compact'><li><b>author:</b> Abhinavagupta</li><li><b>work:</b> Bhairavastava</li><li><b>verse:</b> 9</li><li><b>edition:</b> translation-work/bhairavastava (gold)</li><li><b>variants:</b> Subject saṃvit iyam follows the three verbs in the full verse.</li></ul>
+<p class="mut">Abhinavagupta, Bhairavastava v.9; translation-work bhairavastava · Bhairavastava bh-p09</p>
+<div class="playrow">
+<button type="button" class="vplay" data-play="verse">▶ recite</button>
+<button type="button" class="vplay" data-play="howto">▶ practice</button>
+<span class="mut" id="play-note">Fish verse voice · browser fallback</span>
+</div>
+<audio id="lesson-audio" preload="none"></audio>
 
 <h2 id="recite">2 · Recitation</h2>
 <pre>ṇṛ-ya-ti | gā-ya-ti | hṛ-ṣya-ti | gā-ḍham | saṃ-vit | i-yam</pre>
@@ -201,4 +211,5 @@ document.querySelectorAll('.depth button[data-d]').forEach(btn=>{
   });
 });
 </script>
+<script src="player.js"></script>
 </body></html>
