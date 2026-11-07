@@ -70,14 +70,15 @@
   },
   "series_pattern": "One book = one thesis within the ceiling. When the material outgrows 110 pages, split into numbered volumes (thesis.series: {name, volume}) — same template, same style, consecutive claims — never expand a single volume past the ceiling.",
   "inclusion": [
-    "every entry faces its explanation: brief (C1 essence), what (sense), how (the text's own practice), sign (the text's own claimed effect) — feel optional",
+    "every entry faces its explanation per EXPLAINER.md: brief (one sentence / IN ONE SENTENCE), what/logic (the turn), how/howto (When/Act/Return), sign (ordinary return only) — feel optional; no somatic promises; cut pocket lines labelled EXTRACT",
     "content is extract-and-place from named sources and layers; clarity-edits only after placing; no source = block stays off the page (fail closed)",
     "whole book must preflight under the template page ceiling with the template style before the build stage opens"
   ],
   "exclusion": [
     "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
     "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
-    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first"
+    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first",
+    "no somatic success tests or promised sensations in guide copy (EXPLAINER.md); modern adaptations labelled as adaptations, never as ancient prescription"
   ],
   "cover": {
     "style": "cover-canonical",

@@ -53,9 +53,9 @@
     "each entry carries source_path + source_ref to a file in this book's sources/ and four explainer blocks (what/how/sign, feel optional)",
     "Anytime holds only short mantras recitable in seconds — pocket length is the admission test",
     "verses come from our own corpus (Śivastotrāvalī, Abhinavagupta/Kṣemarāja stotras, Gītā meal verse, Swamiji's recitation list); translations are ours",
-    "every entry faces its explanation: brief (C1 essence), what (sense), how (the text's own practice), sign (the text's own claimed effect) — feel optional",
     "content is extract-and-place from named sources and layers; clarity-edits only after placing; no source = block stays off the page (fail closed)",
-    "whole book must preflight under the template page ceiling with the template style before the build stage opens"
+    "whole book must preflight under the template page ceiling with the template style before the build stage opens",
+    "every entry faces its explanation per EXPLAINER.md: brief (one sentence / IN ONE SENTENCE), what/logic (the turn), how/howto (When/Act/Return), sign (ordinary return only) — feel optional; no somatic promises; cut pocket lines labelled EXTRACT"
   ],
   "exclusion": [
     "mood-state sections (positive, negative, alone, flatness, gratitude) — emotional states belong to Tantric Prayer's rasa ladder, not to a clock book",
@@ -64,7 +64,8 @@
     "Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation in front matter; all guide prose is extract-and-place from our layers",
     "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
     "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
-    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first"
+    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first",
+    "no somatic success tests or promised sensations in guide copy (EXPLAINER.md); modern adaptations labelled as adaptations, never as ancient prescription"
   ],
   "products": {
     "paperback": {

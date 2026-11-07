@@ -45,7 +45,7 @@ text's own claimed effects/essence, feel=optional micro-line; source_path +
 source_ref on every entry. **CONTENT SOURCING LAW: blocks are extract-and-place
 from the named layer — never agent-written; only clarity-edits (shorten, plain,
 flow) are allowed after placing; no layer source = block stays off the page
-(fail closed).** See prints/EDITIONS.md Part 6 for the block→layer map.) → BOOK (book.json sections/glyph/dividers +
+(fail closed).** See prints/EDITIONS.md Part 6 for the block→layer map.) **Guide prose shape = EXPLAINER.md** (When/Act/Return; no somatic promises; EXTRACT labels for cut pocket lines). → BOOK (book.json sections/glyph/dividers +
 front.html/back.html) → TEXT-GATE (every shipped verse id must carry
 deterministic_gate PASS in its text's GATE.json, or a recorded owner
 adjudication — BLOCKED fails closed) → PRINT-GATE (kdp_preflight + page

@@ -392,3 +392,11 @@ Everything else â€” the entire gap between a decision and a verified artifact â€
 is the autonomous machine's job. If the loop ever finds itself waiting on a
 human for something in that gap, that is a missing deterministic check, not a
 reason for a human to be in the loop.
+
+## Editorial copy (EXPLAINER.md)
+
+Guide-field English (`brief`/`logic`/`howto`/`sign`) follows **`EXPLAINER.md`**.
+Drafting a full 36-entry overlay is an **editorial proposal**: the producer may
+build a candidate via `prints/practical-prayers/editorial/apply_preview.py`
+(outside the repo) and **must stop for owner approval** before overwriting
+`entries.json`. Source-QA BLOCKs are independent of copy approval.

@@ -21,6 +21,28 @@ description: Navigate and operate the bookfactory publishing monorepo (thesis �
 
 If resuming a lane: `REGISTRY.json` + `projects/<book>/project.json` + latest `check.py <book>`.
 
+## Explainer formula (EXPLAINER.md) — 2026-11-07
+
+Facing pages follow **`EXPLAINER.md`** (PP editorial handoff → house law):
+
+| Field | Carries |
+|-------|---------|
+| `brief` | IN ONE SENTENCE (literal proposition) |
+| `logic` | THE TURN (recognitional insight) |
+| `howto` | **When:** … **Practice:** … **Return:** … |
+| `sign` | ordinary RETURN only — never a somatic test |
+
+**No** feeling-checks, chest-warms, “sign of success,” or promised removal of
+illness/anxiety. Pocket lines cut from longer verses = **EXTRACT** labels.
+Speech acts stay distinct (mantra vs prayer vs hymn vs practice verse).
+
+Source package: `prints/practical-prayers/editorial/` (overlay, QA CSV,
+gold pages, `apply_preview.py`). English overlay = **owner approval** before
+merge. Source QA BLOCKs forbid ship regardless of copy.
+
+Metrics that justified the change: somatic-promise entries 23→0; When/Return
+structure 0→36; guide length −38% (`editorial/WHY_BETTER.md`).
+
 ## MCP tools (when connected)
 
 | Tool | Use |

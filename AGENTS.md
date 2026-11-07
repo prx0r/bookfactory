@@ -82,3 +82,14 @@ python3 prints/postcards/render_postcards.py <book> [ids...]
 8. Pipeline order is law: content → structure → formatting → build. The PDF
    is rendered LAST (after gates pass); forward stage moves are verified by
    `factory.py stage`. See BOOKS.md §5.
+9. **Explainer formula = `EXPLAINER.md`** (2026-11-07): facing pages use
+   brief = one sentence · logic = the turn · howto = When/Act/Return ·
+   sign = ordinary return only. **No somatic promises, no feeling-checks,
+   no “sign of success.”** Pocket lines that are cut from a longer verse
+   are labelled EXTRACT. Source for the full contract:
+   `prints/practical-prayers/editorial/00_explainer_standard.md`.
+10. **Guide prose approval:** new English for guide fields is an *editorial
+    proposal* until the owner approves (handoff: `prints/practical-prayers/editorial/`).
+    Agent may draft via `apply_preview.py` (candidate outside the repo) —
+    never silent-overwrite `entries.json`. Witness/rights BLOCKs in
+    `05_source_qa.csv` still forbid ship regardless of copy quality.

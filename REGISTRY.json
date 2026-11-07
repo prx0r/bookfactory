@@ -7,7 +7,8 @@
     "practical-prayers": {
       "stage": "build (36 entries, 90pp, preflight PASS; per-entry handoff open)",
       "entries": 36,
-      "pages": 90
+      "pages": 90,
+      "editorial": "handoff in prints/practical-prayers/editorial/; overlay candidate only; owner approval + witness BLOCKs required before merge/ship"
     },
     "tantric-prayer": {
       "stage": "build (36 entries, 93pp, preflight PASS; per-entry handoff open)",
@@ -95,6 +96,10 @@
     {
       "id": "learn-sanskrit-vol1",
       "status": "content-scaffold-10-lessons"
+    },
+    {
+      "id": "pp-editorial-handoff",
+      "status": "unpacked-in-repo; formula=EXPLAINER.md; English UNAPPROVED; 12 source BLOCKs open"
     }
   ]
 }

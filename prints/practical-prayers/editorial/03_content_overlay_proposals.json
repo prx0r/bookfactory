@@ -1,0 +1,434 @@
+{
+  "om-namah-shivaya": {
+    "brief": "Oṃ; homage to Śiva. The mantra addresses and honours Śiva; Trika invites us also to discover that the one invoking is not ultimately separate from the invoked.",
+    "logic": "Treat this as offering the next moment, not requesting a special sensation.",
+    "howto": "When: At a threshold: standing up, leaving a room, or noticing that attention has become scattered. Practice: Say the entire mantra once, at a normal pace. A slight bow of the head is enough; no counting is required. Return: Do the next ordinary thing carefully.",
+    "sign": "Everyday integration: Do the next ordinary thing carefully.",
+    "_editorial": {
+      "pocket_iast_candidate": "oṃ namaḥ śivāya",
+      "recitation_decision": "FULL",
+      "needs_check": "Do not break namaḥ into naḥ·maḥ; the five-syllable count is na–ma–śi–vā–ya, preceded here by oṃ.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "bah-gayatri": {
+    "brief": "The Gāyatrī asks that Aghora direct or inspire understanding. The epithet koṭarākṣa needs a secure gloss from the textual tradition.",
+    "logic": "The act is asking for guidance, not proving that a deity has intervened.",
+    "howto": "When: When you deliberately want to begin a devotional recitation, not as an emergency shortcut. Practice: Recite it calmly once, or three times if following the supplied ritual sequence. Do not require breath holds or body sensations. Return: Return to the task with a more careful intention.",
+    "sign": "Everyday integration: Return to the task with a more careful intention.",
+    "_editorial": {
+      "pocket_iast_candidate": "oṃ bahurūpāya vidmahe koṭarākṣāya dhīmahi tan no ’ghoraḥ pracodayāt",
+      "recitation_decision": "FULL / COLLATION HOLD",
+      "needs_check": "CHECK source spelling bahurūpāya (long ū), and the meaning of koṭarākṣa; do not print the unsubstantiated “hundred-thousand-eyed” gloss.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "bahurupa-core": {
+    "brief": "These verses extol the capacity of sacred recitation to remove affliction and wrongdoing. Such benefits are claims of the tradition, not verifiable clinical effects.",
+    "logic": "Entrust the problem to Bhairava while remaining ready to act responsibly in the world.",
+    "howto": "When: For a deliberate period of prayer, rather than in a queue. Practice: Read the complete source-verified three-verse passage, without pressure to memorise all of it. If a brief line is chosen later, label it as an extract, not a mantra. Return: Address what can be addressed; seek practical help where needed.",
+    "sign": "Everyday integration: Address what can be addressed; seek practical help where needed.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "EXTENDED / HOLD",
+      "needs_check": "HOLD: supplied numbering/content do not match another available Bahurūpa-Garbha recension; collate Academy PDF before publication. Not genuinely pocket length.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "bahurupa-close": {
+    "brief": "This close praises the efficacy of the mantra and the importance of reciting even when ritual procedure has been imperfect. Its superlative claims are internal to the hymn.",
+    "logic": "Let the ritual finish without obsessively asking whether it was flawless.",
+    "howto": "When: At the end of a deliberate ritual or an evening recitation. Practice: Recite the verified complete passage. If using the short phrase, remember it is a context-dependent assertion about this hymn, not a universal standalone invocation. Return: Put away the materials, and continue the evening.",
+    "sign": "Everyday integration: Put away the materials, and continue the evening.",
+    "_editorial": {
+      "pocket_iast_candidate": "nātaḥ parataro mantro",
+      "recitation_decision": "EXTENDED / HOLD",
+      "needs_check": "HOLD: handout recension, verse numbers and compound segmentation must be confirmed; three full verses contradict the current Anytime-pockets thesis.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-1": {
+    "brief": "Homage to the One whose form is the universe, yet who is beyond its manifest forms.",
+    "logic": "The room need not become extraordinary; it is included in what is addressed.",
+    "howto": "When: On first opening the eyes, before touching the phone. Practice: Look once at whatever is actually there—ceiling, light, window. Recite the short invocation once, or the complete verse if learned. Return: Get up and attend to the day.",
+    "sign": "Everyday integration: Get up and attend to the day.",
+    "_editorial": {
+      "pocket_iast_candidate": "namaste viśvamūrtaye",
+      "recitation_decision": "POCKET + FULL",
+      "needs_check": "The four-word pocket line is an excerpt from a longer verse; make that visible.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "deha-1": {
+    "brief": "The body is called the deity’s temple, and one’s Self the enduring deity. This is a traditional maxim; its attribution as verse 1 of Abhinavagupta’s Dehasthadevatācakra is not supported by the checked witness.",
+    "logic": "Respect the body as a place of worship, including when tired, ordinary or uncomfortable.",
+    "howto": "When: While still in bed or just sitting up. Practice: Be aware of the whole body, without requiring it to feel calm or sacred. Say the half-verse slowly. Return: Stand, wash, and care for it.",
+    "sign": "Everyday integration: Stand, wash, and care for it.",
+    "_editorial": {
+      "pocket_iast_candidate": "deho devālayaḥ proktaḥ svātmā devaḥ sanātanaḥ",
+      "recitation_decision": "HALF-VERSE / ATTRIBUTION HOLD",
+      "needs_check": "Keep as unattributed/traditional only if a publication-quality witness and rights are secured; otherwise replace with a genuinely sourced Dehastha verse.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-10": {
+    "brief": "Waking, dreaming, and deep sleep are described as expressions of the Lord, who is nevertheless partless in reality.",
+    "logic": "Recognise a change of state without needing to locate an additional permanent mental object.",
+    "howto": "When: At the transition out of sleep. Practice: Name the state you have just left, then say the short clause “yet in truth you are without parts.” Return: Begin ordinary morning activity.",
+    "sign": "Everyday integration: Begin ordinary morning activity.",
+    "_editorial": {
+      "pocket_iast_candidate": "niṣkalo ’si ca tattvataḥ",
+      "recitation_decision": "POCKET + FULL",
+      "needs_check": "Do not teach the waking/dreaming metaphor as empirical proof of metaphysical identity.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "deha-6": {
+    "brief": "The hymn praises Ānandabhairavī, whose reflective awareness is linked with the world’s appearing, shining, and being relished.",
+    "logic": "What appears and the knowing of it can be contemplated together.",
+    "howto": "When: At dawn or the first visible change in daylight. Practice: Notice light arriving and recite the closing praise of the Goddess. No visualisation is necessary. Return: Open the curtains or leave the room.",
+    "sign": "Everyday integration: Open the curtains or leave the room.",
+    "_editorial": {
+      "pocket_iast_candidate": "ānandabhairavīṃ tāṃ vimarśarūpām ahaṃ vande",
+      "recitation_decision": "HALF-VERSE / RENUMBER",
+      "needs_check": "Independent witness numbers this verse 5 rather than 6; use its reading udāya...līlāṃ, and collate the Sanskrit.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-14": {
+    "brief": "The Lord is already stainless. Why would a bath purify the one who is beyond impurity?",
+    "logic": "The water cares for a body, while the verse challenges the idea that the absolute needs cleaning.",
+    "howto": "When: While washing hands or showering. Practice: Ask the rhetorical question once and wash normally. Return: Dry yourself and leave.",
+    "sign": "Everyday integration: Dry yourself and leave.",
+    "_editorial": {
+      "pocket_iast_candidate": "nirmalasya kutaḥ snānam",
+      "recitation_decision": "POCKET + FULL",
+      "needs_check": "Keep ritual paradox separate from ordinary hygiene; the passage is not advice to avoid washing.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-17-26": {
+    "brief": "May this body, nourished by devotion, become suitable for worship of You.",
+    "logic": "Devotion can be embodied as how the body is used in the next activity.",
+    "howto": "When: After bathing or getting dressed. Practice: Say the final petition while placing your hands at rest; no imposed gesture or pose. Return: Go do one useful thing.",
+    "sign": "Everyday integration: Go do one useful thing.",
+    "_editorial": {
+      "pocket_iast_candidate": "bhavatpūjopayogāya śarīram idam astu me",
+      "recitation_decision": "HALF-VERSE + FULL",
+      "needs_check": "This is a genuine grammatical petition; suitable as a short recitation from the full verse.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-17b": {
+    "brief": "What use is waving a lamp before the Lord who shines by himself? The verse questions the adequacy of outward ritual.",
+    "logic": "The gesture may train attention, rather than supply something missing to Śiva.",
+    "howto": "When: At the mirror, or when turning on a light. Practice: Say the question once. If using a lamp, do so safely; an imagined offering is optional. Return: Finish your washing or dressing.",
+    "sign": "Everyday integration: Finish your washing or dressing.",
+    "_editorial": {
+      "pocket_iast_candidate": "svayaṃ prakāśamānasya kuto nīrājanaṃ vibhoḥ",
+      "recitation_decision": "HALF-VERSE + FULL",
+      "needs_check": "Second half’s Sanskrit reading needs witness collation; no claims of “chest-first brightening.”",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-19b": {
+    "brief": "The litany asks what gift, libation, dismissal or request for pardon could be offered to the complete, ever-content, all-pervading Lord.",
+    "logic": "A closing bow is not a transaction with a distant deity.",
+    "howto": "When: When ending a small devotional act. Practice: Read the complete verse slowly. Let its questions complete the ritual without adding another elaborate ending. Return: Put the towel or ritual item away.",
+    "sign": "Everyday integration: Put the towel or ritual item away.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / NO SHORT FORM YET",
+      "needs_check": "Remove unusual avagraha in vyāpakasyāpratyakṣasya if the checked witness confirms; do not make up a mantra from a fragment.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "bhair-7": {
+    "brief": "The poet describes speech as a Goddess and sense-objects as flowers of worship, followed by bowing and entering the heart.",
+    "logic": "Treat words as something offered, and therefore worthy of care.",
+    "howto": "When: Before a difficult conversation. Practice: Pause for one natural breath and read or recall the verse. Listen to the other person before deciding what to say. Return: Speak plainly rather than trying to sound mystical.",
+    "sign": "Everyday integration: Speak plainly rather than trying to sound mystical.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / NOT A POCKET MANTRA",
+      "needs_check": "Author Kṣemarāja, not Abhinavagupta; local L2 source omitted viṣayakusumakḷptārcaḥ although full text includes it.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "anu-3": {
+    "brief": "The verse presents ordinary sound, bodily posture and breath in an expansive register: mantra, mudrā and yoga, when recognised in consciousness.",
+    "logic": "Notice that ordinary speaking is part of experience rather than outside spiritual life.",
+    "howto": "When: After saying something ordinary, not just before a formal chant. Practice: Recall the phrase once. Avoid turning it into permission for careless speech. Return: Return attention to the person present.",
+    "sign": "Everyday integration: Return attention to the person present.",
+    "_editorial": {
+      "pocket_iast_candidate": "mantraḥ sa lokottaraḥ",
+      "recitation_decision": "EXTRACT / CONTEXT REQUIRED",
+      "needs_check": "Do not assert “every harmful statement is sanctified.” Anchor is a fragment and must be marked so.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-8": {
+    "brief": "Enough of repeated discourse on distinctions. In the whole verse, the savour of devotion renders even the declaration “all is one” inadequate.",
+    "logic": "Nonduality is not another argument that must be won.",
+    "howto": "When: When a discussion becomes performative, especially a spiritual argument. Practice: Say the short phrase inwardly once. Listen and consider whether another explanation is useful. Return: Respond accurately if needed—or let the point rest.",
+    "sign": "Everyday integration: Respond accurately if needed—or let the point rest.",
+    "_editorial": {
+      "pocket_iast_candidate": "alaṃ bhedānukathayā",
+      "recitation_decision": "POCKET + FULL",
+      "needs_check": "Do not turn this into a ban on critical inquiry or difficult conversations.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "pan-3": {
+    "brief": "The devotee complains that the Lord does not speak, look, listen or intervene—then recalls the scriptural denial of such bodily faculties.",
+    "logic": "Devotional address may include protest without pretending that silence has ceased.",
+    "howto": "When: When prayer feels unanswered. Practice: Read the complaint as a lament; do not force a cheerful reversal. Return: Make whatever real-world request for help is needed.",
+    "sign": "Everyday integration: Make whatever real-world request for help is needed.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / CONTEMPLATIVE, NOT POCKET",
+      "needs_check": "Long metre; proofread all sandhi and translation from witness. Do not call the ending a compulsory joke.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-20": {
+    "brief": "The verse calls for an understanding of unity, directing the mind toward the Lord across all conditions.",
+    "logic": "Offering is not abandoning the task; careful work can embody devotion.",
+    "howto": "When: Before opening a work task. Practice: Say the opening clause once: “Just so is the highest worship.” Choose the next concrete action. Return: Start the task and complete one small unit.",
+    "sign": "Everyday integration: Start the task and complete one small unit.",
+    "_editorial": {
+      "pocket_iast_candidate": "evam eva parā pūjā",
+      "recitation_decision": "POCKET + FULL / ORTHOGRAPHY HOLD",
+      "needs_check": "The word aikyabuddhayā/aikyabuddhyā varies across transmissions and merits grammatical and source review; do not claim a sensory sign.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-1-14": {
+    "brief": "The verse invokes the teaching to worship Śiva having become Śiva, and examines devotion through nonduality.",
+    "logic": "The one who worships and the worshipped are contemplated as nonseparate.",
+    "howto": "When: When work seems incompatible with practice. Practice: Say the short injunction once before beginning. No need to pretend the work has changed substance. Return: Perform the ordinary task responsibly.",
+    "sign": "Everyday integration: Perform the ordinary task responsibly.",
+    "_editorial": {
+      "pocket_iast_candidate": "śivo bhūtvā yajet",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "Since the surface has yajeteti, note restored word boundaries: yajet + iti.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "deha-8": {
+    "brief": "The hymn represents ahaṃkṛti, I-making, as a goddess whose flowers of self-assertion worship Bhairava.",
+    "logic": "Even this mental movement is something to recognise and work with, not necessarily eradicate by force.",
+    "howto": "When: When pride, embarrassment or wanting credit becomes very conspicuous. Practice: Acknowledge that impulse without dramatizing it. Recite the praise of Śāmbhavī if learned. Return: Credit others fairly and continue.",
+    "sign": "Everyday integration: Credit others fairly and continue.",
+    "_editorial": {
+      "pocket_iast_candidate": "vande tāṃ śāmbhavīm ambām",
+      "recitation_decision": "EXTRACT + RENUMBER",
+      "needs_check": "Independent witness numbers the verse 7, not 8. Avoid claims of solar-plexus heat or a literal internal fire.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-9": {
+    "brief": "As the Lord’s own form expands, you, I, and the entire world appear; when it withdraws, these distinctions no longer appear.",
+    "logic": "Experience need not be carried as though its totality were the private burden of one small self.",
+    "howto": "When: When work becomes overwhelming. Practice: Say the short catalogue of “you, I, the whole world,” then name the next necessary task. Return: Do one thing at a time.",
+    "sign": "Everyday integration: Do one thing at a time.",
+    "_editorial": {
+      "pocket_iast_candidate": "tvaṃ cāhaṃ cākhilaṃ jagat",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "The selected short phrase is nominal and incomplete as an independent sentence. Label as remembered excerpt.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "gita-424": {
+    "brief": "Offering-instrument, oblation, sacrificial fire, offerer and goal are all said to be Brahman. Lakshmanjoo reads this through Śiva.",
+    "logic": "Eating becomes an occasion to notice giver, gift and recipient in one field of awareness.",
+    "howto": "When: Before the first bite. Practice: Set down utensils. If following the taught custom, place a little clean water in the palm, recite the full verse, then eat. The short line is an optional memory cue, not a replacement prescribed by the Gītā. Return: Eat normally, gratefully and attentively.",
+    "sign": "Everyday integration: Eat normally, gratefully and attentively.",
+    "_editorial": {
+      "pocket_iast_candidate": "brahmārpaṇaṃ brahma havir",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "Identify Gītā original vs Abhinavagupta’s Gītā commentary vs Lakshmanjoo’s teaching. Water-in-palm practice belongs to a particular teaching, not the bare verse.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "somananda": {
+    "brief": "The author asks Śiva, present as one’s own form and veiling himself through his own nature, to make an offering of homage to himself through his own power.",
+    "logic": "The actor, the impediment and the addressed Lord are contemplated within Śiva’s self-relation.",
+    "howto": "When: Before a meal, particularly if it follows Brahmārpaṇam. Practice: Read or say the complete verse. Do not turn it into a ritual to erase guilt on command. Return: Eat or return to the person sharing the meal.",
+    "sign": "Everyday integration: Eat or return to the person sharing the meal.",
+    "_editorial": {
+      "pocket_iast_candidate": "śivaḥ karotu nijayā namaḥ śaktyā tatātmane",
+      "recitation_decision": "HALF-VERSE + REF CORRECTION",
+      "needs_check": "Use 1.1, not 7.103; fix padaccheda according to checked edition; the pocket is the closing half, not a standalone attested mantra.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "deha-5": {
+    "brief": "The sense-goddesses constantly worship consciousness-filled Ānandabhairava with their enjoyment of their own objects, in the lotus of the heart.",
+    "logic": "A sense-experience can be understood as offering rather than as something outside spiritual practice.",
+    "howto": "When: At the first taste of food. Practice: Take one ordinary bite. Notice taste as taste, then recite the closing praise if desired. Return: Enjoy the meal without needing to intensify sensations.",
+    "sign": "Everyday integration: Enjoy the meal without needing to intensify sensations.",
+    "_editorial": {
+      "pocket_iast_candidate": "cinmayamānandabhairavaṃ vande",
+      "recitation_decision": "EXTRACT + RENUMBER",
+      "needs_check": "Independent witness assigns this Sanskrit to v.3, not v.5. No promise of warming chest or flavour enhancement.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-15-2": {
+    "brief": "The devotees are depicted as satisfied by consuming the very structures of limiting experience—māyā, time, necessity, attachment and the like.",
+    "logic": "What ordinarily binds can become material for recognition.",
+    "howto": "When: When desire or dissatisfaction accompanies a meal. Practice: Read the verse as a poetic vision; avoid turning ordinary eating into a literal ritual of consuming metaphysical categories. Return: Eat with care and attend to what is actually needed.",
+    "sign": "Everyday integration: Eat with care and attend to what is actually needed.",
+    "_editorial": {
+      "pocket_iast_candidate": "caranti sukhino nātha bhaktimanto jagattaṭe",
+      "recitation_decision": "HALF-VERSE + FULL",
+      "needs_check": "The “menu” is poetic and metaphysical, not a dietary instruction.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-16-8": {
+    "brief": "The speaker asks to remain in devotion whether troubled or at ease, weeping or laughing, solemn or unsettled.",
+    "logic": "Devotion need not depend on securing a pleasant state.",
+    "howto": "When: During travel, waiting or an unplanned interruption. Practice: Recite the whole verse in four short quarters if learned; first practise just the paired conditions. Return: Continue the wait without pretending to enjoy it.",
+    "sign": "Everyday integration: Continue the wait without pretending to enjoy it.",
+    "_editorial": {
+      "pocket_iast_candidate": "viṣamastho ’pi svastho ’pi",
+      "recitation_decision": "FULL VERSE ADVISED",
+      "needs_check": "Opening alone is not a full prayer; printing the whole 32-syllable stanza is preferable.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-17-19": {
+    "brief": "The speaker longs to taste the joy of worship in every act, moment after moment.",
+    "logic": "A transition can be remembered as worship without needing to produce ecstasy.",
+    "howto": "When: Between ordinary activities. Practice: Say the small temporal phrase, or the entire prayer when it is memorised. Pause for one ordinary breath. Return: Move to the next action.",
+    "sign": "Everyday integration: Move to the next action.",
+    "_editorial": {
+      "pocket_iast_candidate": "pratikarma kṣaṇāt kṣaṇam",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "Excerpt means “in every action, moment by moment,” but is not a complete prayer.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "anu-2b": {
+    "brief": "The verse challenges the assumed reality of bondage, ending with an invitation to stop grasping and rejecting.",
+    "logic": "Let experience appear without the immediate demand to keep or eliminate it.",
+    "howto": "When: In a queue, during uncertainty, or when scrolling compulsively. Practice: Say the two prohibitions once. Unclench a hand only if it helps; no ritual hand movement is required. Return: Choose the next sensible action.",
+    "sign": "Everyday integration: Choose the next sensible action.",
+    "_editorial": {
+      "pocket_iast_candidate": "mā kiṃcit tyaja mā gṛhāṇa",
+      "recitation_decision": "POCKET + FULL",
+      "needs_check": "Non-grasping is not advice to avoid necessary safety or ethical decisions.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-16-1": {
+    "brief": "The hymn opens an inquiry into concealment: what hides Śiva for ordinary consciousness and what does not hide him for the devotee?",
+    "logic": "Distinguish the apparent obscuring condition from the object itself.",
+    "howto": "When: When caught in a habitual interpretation that blocks a fresh look. Practice: Do not publish a recitation until the complete Sanskrit has been collated. For now use the English question as a study reflection. Return: Look again at the actual situation.",
+    "sign": "Everyday integration: Look again at the actual situation.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / TEXTUAL HOLD",
+      "needs_check": "CRITICAL: current corpus snippet is incomplete. Prior paraphrase “two classes of people” is not a literal rendering of the surviving text.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "bh-3": {
+    "brief": "When the Lord is recognised as the all-pervading Self, fear of repeated worldly existence is denied, even while difficult karma and suffering may remain.",
+    "logic": "The verse speaks to a metaphysical fear; it does not deny bodily pain or replace treatment.",
+    "howto": "When: When unwell or frightened by what might happen. Practice: Recite the short reassurance, or the full verse if it is familiar. Name the specific practical need separately. Return: Rest, seek care, or ask someone for help as needed.",
+    "sign": "Everyday integration: Rest, seek care, or ask someone for help as needed.",
+    "_editorial": {
+      "pocket_iast_candidate": "tena na saṃsṛtibhītikathāsti",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "Avoid promising that mantra removes illness or panic.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "pan-5": {
+    "brief": "The speaker acknowledges that, even after divine assistance, he keeps forgetting the Lord. The prayer becomes a candid plea rather than a display of attainment.",
+    "logic": "Forgetting need not prevent another act of devotion.",
+    "howto": "When: When exhausted, ill or spiritually discouraged. Practice: Read as much of the complete verse as is accessible. The short phrase “I indeed forget you” can be remembered as a confession, not as a separately transmitted mantra. Return: Take medicine, rest or reconnect with someone if needed.",
+    "sign": "Everyday integration: Take medicine, rest or reconnect with someone if needed.",
+    "_editorial": {
+      "pocket_iast_candidate": "tvāṃ kila vismarāmi",
+      "recitation_decision": "EXTRACT / WITNESS HOLD",
+      "needs_check": "Long Sanskrit contains suspicious forms in current transcription; collate before shipping.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-5-2": {
+    "brief": "Utpaladeva asks when the dust of the Lord’s lotus feet will adorn him and he will dance in overflowing joy.",
+    "logic": "Longing itself is part of devotion; inability to dance is not a failure.",
+    "howto": "When: When bodily limitations make joy feel far away. Practice: Read it as an open question rather than a demand for immediate transformation. Return: Make room for whatever care the body needs.",
+    "sign": "Everyday integration: Make room for whatever care the body needs.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / CONTEMPLATIVE",
+      "needs_check": "Keep the verse complete rather than invent a supposedly therapeutic short charm.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-3": {
+    "brief": "The seeker looks inward for the Self and does not find it as an object; what is seen is nevertheless affirmed as the Lord’s appearance.",
+    "logic": "The contemplative claim is about recognition, not proof that pain is imaginary.",
+    "howto": "When: When the body or circumstances feel alien. Practice: Look at one ordinary thing and recite the final clause if learned. Return: Attend to the condition or task directly.",
+    "sign": "Everyday integration: Attend to the condition or task directly.",
+    "_editorial": {
+      "pocket_iast_candidate": "yac ca dṛṣṭaṃ tvam eva tat",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "Restore and verify sandhi from the full text before printing a standalone excerpt.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "mpa-11": {
+    "brief": "The verse relates waking and dissolution to the Lord, and concludes that the entire world is of that nature.",
+    "logic": "The day can be released without demanding to control the night.",
+    "howto": "When: Just before sleep. Practice: Recall the short conclusion once. No breath manipulation or effort to remain aware through sleep is required. Return: Turn off the light and sleep.",
+    "sign": "Everyday integration: Turn off the light and sleep.",
+    "_editorial": {
+      "pocket_iast_candidate": "atas tvadātmakaṃ sarvaṃ",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "The selected form is a segmented padaccheda, not a claim of a standalone mantra.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "vbt-75": {
+    "brief": "When sleep is approaching and outward objects fade, the verse presents that transitional condition as a place where the supreme Goddess shines.",
+    "logic": "The movement toward sleep can be included in awareness.",
+    "howto": "When: As drowsiness naturally comes. Practice: Read the verse earlier if necessary; at bedtime simply notice the transition without fighting to keep it. Return: Allow sleep to arrive.",
+    "sign": "Everyday integration: Allow sleep to arrive.",
+    "_editorial": {
+      "pocket_iast_candidate": "parā devī prakāśate",
+      "recitation_decision": "EXTRACT + FULL",
+      "needs_check": "Do not urge practitioners to induce dissociation, sleep loss or unusual visual experiences.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "sst-9-14": {
+    "brief": "Utpaladeva longs to rest at the cool lotus feet of the Lord within a condition of fullness and intimacy.",
+    "logic": "Devotional rest can be imagined without treating the image as a literal bodily event.",
+    "howto": "When: When lying down to sleep. Practice: Read the full verse slowly; allow the imagery of cooling and rest to remain poetic. Return: Let attention turn away from the day.",
+    "sign": "Everyday integration: Let attention turn away from the day.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / TRANSLATION HOLD",
+      "needs_check": "Current compound aśeṣaviṣayāśūnya... does not support the summary “free from every object”; collate with full commentary.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  },
+  "anu-4b": {
+    "brief": "The verse distinguishes the joy of nondual recognition from possession, intoxication and sensory splendour, likening recognition to recovering a forgotten treasure and lowering a burden.",
+    "logic": "A teaching about intrinsic fullness can be contemplated alongside the fatigue that is actually present.",
+    "howto": "When: When looking back over an exhausting day. Practice: Read the passage as a comparison. Do not demand bliss before being permitted to sleep. Return: Rest.",
+    "sign": "Everyday integration: Rest.",
+    "_editorial": {
+      "pocket_iast_candidate": "",
+      "recitation_decision": "FULL / TEXTUAL HOLD",
+      "needs_check": "Resolve conflicting variants around vittamadhyamadavan/vittamadyamadavan, then fully retranslate; current English is broken.",
+      "status": "PROPOSAL — SOURCE/RIGHTS APPROVAL REQUIRED"
+    }
+  }
+}

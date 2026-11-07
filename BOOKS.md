@@ -45,7 +45,7 @@ Supporting packs:
 | `constraints.min_font_pt` | 7 (KDP floor) |
 | `constraints.trim` | A5 148x210mm no-bleed |
 | `pipeline` | `content → structure → formatting → build` (PDF always last) |
-| `entry_anatomy` | required: brief, what (`what`\|`logic`), how (`how`\|`howto`), sign; optional: feel |
+| `entry_anatomy` | required: brief (=one sentence), what/`logic` (=the turn), how/`howto` (=When/Act/Return), sign (=ordinary return only); optional: feel. **Full contract: `EXPLAINER.md`** — no somatic promises |
 | `products` | paperback, postcard, social, **audiobook**, **chant** |
 | `style_default` | `canonical` |
 | `structure_defaults.entries_per_section` | 4 |
@@ -119,7 +119,7 @@ not yet due).
 
 | Stage | Meaning | Gate owns |
 |---|---|---|
-| `content` | words exist and are sourced | thesis/template/style/decisions valid; every entry passes anatomy (brief/what/how/sign), has id/title/source/source_ref/source_path/en + IAST/corpus, source file inside the book; no dup ids; opening art rights |
+| `content` | words exist and are sourced | thesis/template/style/decisions valid; every entry passes anatomy (EXPLAINER.md: brief/turn/When-Act-Return/return), has id/title/source/source_ref/source_path/en + IAST/corpus, source file inside the book; no dup ids; opening art rights |
 | `structure` | the thesis's shape is realized | sections match `sections_plan` exactly (order too); counts = thesis law; live decisions agree with book state; cross-book id/IAST uniqueness (one prayer, one book) |
 | `formatting` | style pass, still no PDF | both book fonts present; `index.html` built; **no source font-size below the 7pt floor** |
 | `build` | **LAST** | render Chrome PDF -> `kdp_preflight.py` actual-PDF geometry (page size, embedded fonts, text >=7pt, margins, image ppi) + `max_pages` ceiling |
@@ -316,5 +316,6 @@ python3 factory.py verify --manifest M.json               # hash integrity
 6. Our English only; Lakshmanjoo/Dyczkowski prose never printed beyond brief
    attributed quotation.
 7. Audio binds to exact verse ids with hashes; a preview is never an approval.
+8. Guide copy follows EXPLAINER.md (When/Act/Return; no somatic promises; EXTRACT labels); new English needs owner approval.
 
 Deeper law: `FACTORY-SPEC.md`. Live blockers: `PIPELINE.md`.

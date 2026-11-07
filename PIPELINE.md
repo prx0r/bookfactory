@@ -168,6 +168,15 @@ print:
 
 Until one route lands: no commercial ship. Front-matter attributed quotations stay fine.
 
+## Editorial formula (2026-11-07)
+
+Facing-page guide copy follows **`EXPLAINER.md`** (from the PP editorial
+handoff). Full package: `prints/practical-prayers/editorial/` — overlay
+proposals, source QA (12 BLOCK / 4 CHECK / 20 REVIEW), gold pages,
+`apply_preview.py` (candidate JSON only; never overwrites the repo).
+English is **unapproved** until the owner says merge; witness BLOCKs still
+forbid ship.
+
 ## Current blockers and next work
 
 **Status 2026-11-06 (restructure landed, build green):**
