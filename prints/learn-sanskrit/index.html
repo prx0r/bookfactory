@@ -1,52 +1,54 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Learn Sanskrit with Abhinavagupta — Vol. I prototype</title>
+<title>Learn Sanskrit with Abhinavagupta — Vol. I — Ten Passages from Sound to Recognition</title>
 <style>
-body{font:16px/1.55 Georgia,serif;color:#17140f;background:#fff;margin:0;padding:2rem 1.2rem;max-width:52rem;margin-inline:auto}
-h1{font-size:1.75rem} h2{font-size:1.15rem;margin-top:1.8rem;border-bottom:1px solid #ddd;padding-bottom:.25rem}
-table{border-collapse:collapse;width:100%;font-size:.95rem}
-th,td{border:1px solid #e2ddd4;padding:.45rem .55rem;text-align:left}
-th{background:#f6f3ee;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:#555}
-.kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#6f6b63}
-.badge{display:inline-block;border:1px solid #17140f;padding:.15rem .5rem;font-size:.8rem;margin-right:.4rem}
-.muted{color:#6f6b63;font-size:.9rem}
-a{color:#17140f}
-</style></head><body>
-<p class="kicker">bookfactory · learn-sanskrit · prototype</p>
-<h1>Learn Sanskrit with Abhinavagupta — Vol. I</h1>
-<p>Ten passages from sound to recognition. Discovery before explanation. Witness + glosses from <code>translation-work</code> L0/L2/L3; Trika exegesis attributed; <strong>8 foundational rule boxes only</strong>. Target <strong>108 pages</strong>.</p>
+@font-face{font-family:'Tiro';src:url('fonts/TiroDevanagariSanskrit-Regular.ttf');}
+@font-face{font-family:'Cormorant';src:url('fonts/CormorantGaramond[wght].ttf');}
+:root{--ink:#17140f;--mut:#76736e;--line:#e7e3db;--gold:#a86f14}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Cormorant',Georgia,serif;font-size:12pt;line-height:1.55}
+.wrap{max-width:42rem;margin:0 auto;padding:2rem 1.2rem 4rem}
+h1{font-family:'Tiro',serif;font-weight:400;font-size:22pt;line-height:1.3;margin:.2rem 0 .4rem}
+h2{font-family:'Cormorant',Georgia,serif;font-weight:600;font-size:14pt;margin:1.6rem 0 .4rem;border-bottom:1px solid var(--line);padding-bottom:.2rem}
+.sub{color:var(--mut);font-size:11pt;margin-bottom:1rem}
+.lede{font-size:12pt;line-height:1.6;max-width:40rem}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.1rem .5rem;font-family:Georgia,serif;font-size:9pt;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-right:.35rem}
+.badge.ok{border-color:#1f7a6e;color:#1f7a6e}
+.badge.warn{border-color:var(--gold);color:var(--gold-ink,#7c5410)}
+ul.toc{list-style:none;margin:.3rem 0 1.2rem;padding:0}
+ul.toc li{display:flex;gap:.6rem;align-items:baseline;padding:.35rem 0;border-bottom:1px solid var(--line);font-size:11pt}
+ul.toc .n{font-variant-numeric:tabular-nums;color:var(--mut);font-size:9pt;min-width:1.4rem}
+ul.toc a{color:var(--ink);text-decoration:none}
+ul.toc a:hover{text-decoration:underline}
+ul.toc .src{margin-left:auto;color:var(--mut);font-size:9pt;font-style:italic}
+.stats{display:flex;gap:1.4rem;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.7rem 0;margin:1rem 0;font-family:Georgia,serif;font-size:10pt;color:var(--mut)}
+.stats b{color:var(--ink)}
+.prov{font-family:Georgia,serif;font-size:9pt;color:var(--mut);margin-top:2rem;border-top:1px solid var(--line);padding-top:.6rem}
+a{color:var(--ink)}
+</style>
+</head><body><div class="wrap">
+<p class="sub">bookfactory · learn-sanskrit · content→structure→formatting</p>
+<h1>Learn Sanskrit with Abhinavagupta</h1>
+<p class="sub">Vol. I — Ten Passages from Sound to Recognition</p>
+<p class="lede">Discovery before explanation. Ten lessons, five stages, eight foundational rule boxes. Glosses and morphology from translation-work; every rule reversible.</p>
 <p>
-<span class="badge">10 lessons</span>
-<span class="badge">5 stages</span>
-<span class="badge">108 pp</span>
-<span class="badge">8 rule boxes</span>
-<span class="badge">content stage</span>
+  <span class="badge ok">10 lessons</span>
+  <span class="badge ok">structure gate</span>
+  <span class="badge warn">print build last</span>
+  <span class="badge warn">rights open</span>
 </p>
-<p class="muted">Gold standard: <code>specs/learn-sanskrit.thesis.md</code> · Curriculum cut: <code>specs/learn-sanskrit-curriculum.md</code> · Machine thesis: <code>specs/learn-sanskrit.thesis.json</code></p>
-
-<h2>Lessons</h2>
-<table><thead><tr><th>#</th><th>Title</th><th>Source ref</th><th>Stage</th><th>Boxes</th></tr></thead>
-<tbody><tr><td>1</td><td><a href="lesson-01.html">mamātmā — My Self</a></td><td>Bhairavastava bh-p02</td><td>stage-1-sounds</td><td>2</td></tr><tr><td>2</td><td><a href="lesson-02.html">namaste viśvamūrtaye — Homage to You</a></td><td>Mahopadeśa mpa-p01-v01 (+ v02 namo namaḥ)</td><td>stage-1-sounds</td><td>0</td></tr><tr><td>3</td><td><a href="lesson-03.html">hṛdi vande — In the heart I bow</a></td><td>Bhairavastava bh-p01</td><td>stage-2-language</td><td>1</td></tr><tr><td>4</td><td><a href="lesson-04.html">nṛtyati gāyati hṛṣyati — dances, sings, rejoices</a></td><td>Bhairavastava bh-p09</td><td>stage-2-language</td><td>1</td></tr><tr><td>5</td><td><a href="lesson-05.html">mā kiṃcit tyaja — Abandon nothing</a></td><td>Anuttarāṣṭikā anu-p02</td><td>stage-3-instructions</td><td>1</td></tr><tr><td>6</td><td><a href="lesson-06.html">tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge</a></td><td>Paramārthasāra param-p01-v01</td><td>stage-3-instructions</td><td>0</td></tr><tr><td>7</td><td><a href="lesson-07.html">tādātmyam anayor … vahnidāhikayor iva — the dual</a></td><td>Bodhapañcadaśikā bod-p03-v03</td><td>stage-4-trika-grammar</td><td>1</td></tr><tr><td>8</td><td><a href="lesson-08.html">alaṃ bhedānukathayā — Enough of difference-talk (extract)</a></td><td>Mahopadeśa mpa-p01-v08</td><td>stage-4-trika-grammar</td><td>1</td></tr><tr><td>9</td><td><a href="lesson-09.html">Mahopadeśaviṃśatikā 8 — the complete verse</a></td><td>Mahopadeśa mpa-p01-v08</td><td>stage-5-original</td><td>0</td></tr><tr><td>10</td><td><a href="lesson-10.html">iha jñānaṃ mokṣakāraṇam — Tantrasāra prose</a></td><td>Tantrasāra tsa-a01 (L0 tsa-a01-v04 segment)</td><td>stage-5-original</td><td>1</td></tr></tbody></table>
-
-<h2>Rule boxes (the whole volume)</h2>
-<ol><li><strong>Rule box 1 — a + a / a + ā → ā</strong> — Adjacent short a (or a + ā) contract to one long ā. Pāṇini 6.1.101 akaḥ savarṇe dīrghaḥ. Reverse: split ā into a + a when the words demand it.</li><li><strong>Rule box 2 — a + e → ai</strong> — yaṇ sandhi: sadā + eva → sadaiva; brahma + eva → brahmaiva. Reverse: ai may hide a + e.</li><li><strong>Rule box 3 — where vs by-what</strong> — Locative answers “where?” (hṛdi). Instrumental answers “by/with what?” (cittatayā).</li><li><strong>Rule box 4 — 3sg present often ends -ti</strong> — nṛtyati · gāyati · hṛṣyati — same ending, three roots. Discover before the paradigm.</li><li><strong>Rule box 5 — mā + imperative = don’t</strong> — Prohibitive mā with imperatives: mā tyaja, mā gṛhāṇa. na negates statements.</li><li><strong>Rule box 6 — dual gen/loc = -yor</strong> — Exactly two: anayor, vahnidāhikayor. Not plural -ānām / -eṣu.</li><li><strong>Rule box 7 — alaṃ + instrumental = enough of</strong> — alaṃ governs the instrumental: alaṃ bhedānukathayā. Substitutes are labelled exercises.</li><li><strong>Rule box 8 — -tva + -āt = because of the fact that</strong> — Abstract -tva/-tā then ablative -āt builds causal “because”: virodhakatvāt.</li></ol>
-
-<h2>Grammar coverage audit</h2>
-<ul><li><strong>phonology:</strong> L1 vowel contraction, L2 anusvāra/visarga, L4 retroflex clusters</li><li><strong>script:</strong> front IAST↔Deva sheet, transition L1–L10 per curriculum</li><li><strong>sandhi:</strong> L1 a+a→ā, a+e→ai, L2 namo, L5 kiṃcit, L7 śaktiś ca, L8 compound ā</li><li><strong>cases:</strong> L2 dative, L3 loc+instr, L6 acc+abl, L7 dual+abl, L8 instr+abl, L10 gen+causal abl</li><li><strong>number_gender:</strong> L7 dual -yor, neuter L9–L10, fem instr L8</li><li><strong>pronouns:</strong> L1 tvaṃ/mama, L5 implied you, L6 tvām, L9 idam</li><li><strong>verbs:</strong> L3 1sg mid, L4 3sg -ti, L5 imperatives, L6 prapadye, L9 lajjate</li><li><strong>nonfinite:</strong> L9 infinitive, L5 participle-like svasthaḥ</li><li><strong>compounds:</strong> L1 mamātmā, L2 viśvamūrti, L6 epithets, L7 dual pair, L10 -tva</li><li><strong>syntax:</strong> L3 means/place, L9 agreement, L10 causal nominals</li><li><strong>metre:</strong> verse vs prose L9–L10</li></ul>
-<p class="muted">Three encounters where feasible; single-appearance features use labelled exercises, never quoted as Abhinavagupta.</p>
-
-<h2>Reference pages (fit in 108)</h2>
-<ol>
-<li>IAST ↔ Devanāgarī all-sounds</li>
-<li>Sandhi sheet (taught rules only)</li>
-<li>Grammar-pattern sheet (endings by function)</li>
-<li>Vocabulary of the 10 lessons</li>
-<li>Recitation sheet (Deva + IAST)</li>
-</ol>
-
-<h2>Rights</h2>
-<p class="muted">Commercial ship blocked until GRETIL/SanskritDocuments routes cleared — see <code>RIGHTS.md</code>. Our English only.</p>
-
-<p><a href="index.json">machine index</a> · <a href="rule-boxes.json">rule boxes JSON</a> · <a href="grammar-audit.json">audit</a> · <a href="RIGHTS.md">rights</a></p>
-</body></html>
+<div class="stats">
+  <span>Lessons <b>10</b></span>
+  <span>Sections <b>5</b></span>
+  <span>Target <b>108 pp</b></span>
+  <span>Rule boxes <b>8</b></span>
+</div>
+<h2 id="stage-1-sounds">I · The alphabet begins making sense</h2><ul class="toc"><li><span class="n">01</span> <a href="site/lesson-01.html">mamātmā — My Self</a> <span class="src">Bhairavastava bh-p02</span></li><li><span class="n">02</span> <a href="site/lesson-02.html">namaste viśvamūrtaye — Homage to You</a> <span class="src">Mahopadeśa mpa-p01-v01 (+ v02 namo namaḥ)</span></li></ul><h2 id="stage-2-language">II · Sanskrit behaves like a language</h2><ul class="toc"><li><span class="n">03</span> <a href="site/lesson-03.html">hṛdi vande — In the heart I bow</a> <span class="src">Bhairavastava bh-p01</span></li><li><span class="n">04</span> <a href="site/lesson-04.html">nṛtyati gāyati hṛṣyati — dances, sings, rejoices</a> <span class="src">Bhairavastava bh-p09</span></li></ul><h2 id="stage-3-instructions">III · Instructions you can use</h2><ul class="toc"><li><span class="n">05</span> <a href="site/lesson-05.html">mā kiṃcit tyaja — Abandon nothing</a> <span class="src">Anuttarāṣṭikā anu-p02</span></li><li><span class="n">06</span> <a href="site/lesson-06.html">tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge</a> <span class="src">Paramārthasāra param-p01-v01</span></li></ul><h2 id="stage-4-trika-grammar">IV · Grammar of nondual Śaivism</h2><ul class="toc"><li><span class="n">07</span> <a href="site/lesson-07.html">tādātmyam anayor … vahnidāhikayor iva — the dual</a> <span class="src">Bodhapañcadaśikā bod-p03-v03</span></li><li><span class="n">08</span> <a href="site/lesson-08.html">alaṃ bhedānukathayā — Enough of difference-talk (extract)</a> <span class="src">Mahopadeśa mpa-p01-v08</span></li></ul><h2 id="stage-5-original">V · Read Abhinavagupta</h2><ul class="toc"><li><span class="n">09</span> <a href="site/lesson-09.html">Mahopadeśaviṃśatikā 8 — the complete verse</a> <span class="src">Mahopadeśa mpa-p01-v08</span></li><li><span class="n">10</span> <a href="site/lesson-10.html">iha jñānaṃ mokṣakāraṇam — Tantrasāra prose</a> <span class="src">Tantrasāra tsa-a01 (L0 tsa-a01-v04 segment)</span></li></ul>
+<div class="prov">
+Witness + glosses from translation-work layers · Devanagari transliterated from IAST at build ·
+site preview: <a href="site/index.html">site/index.html</a> ·
+full MCP docs: <a href="../../bf_mcp/README.md">bf_mcp/README.md</a> ·
+rights: RIGHTS.md (commercial blocked until cleared)
+</div>
+</div></body></html>

@@ -1,4 +1,4 @@
-# Source — l06-śambhu-śaraṇa
+# Source — l06-sambhu-sarana
 
 tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge
 

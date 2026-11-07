@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "book": "learn-sanskrit",
+  "engine": {
+    "tts": "fish-audio",
+    "pattern_source": "prx0r/videofactory render_chapter"
+  },
+  "voices": {
+    "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+    "granny": "614f8afd83f841048c040b2c6234d2c1"
+  },
+  "entries": [
+    {
+      "id": "l01-mamatma",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "tvaṃ ca maheśa sadaiva mamātmā",
+        "chars": 30,
+        "cache_key": "db3b6f817a2b9db7db33889859dc373ed0ac55fa"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Extract for a+ā; full verse for grace as instrumental.",
+        "chars": 54,
+        "cache_key": "f97dad7603d28bdbf0d91c5afe22dfa06f87a316"
+      }
+    },
+    {
+      "id": "l02-namaste",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "prapañcottīrṇarūpāya namaste viśvamūrtaye | sadādivyaprakāśāya svātmane'nantaśaktaye ||",
+        "chars": 87,
+        "cache_key": "39d68a602b15aab697611cf0d09f3b9eb3088fb2"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Pair with v.2 namo namaḥ.",
+        "chars": 25,
+        "cache_key": "76db0211a9d5e60d057b1a88ae0c544ab7891a6a"
+      }
+    },
+    {
+      "id": "l03-hrdi-vande",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "… bhairavanātham anāthaśaraṇyaṃ tvanmayacittatayā hṛdi vande",
+        "chars": 60,
+        "cache_key": "111e2b394f808b8b6542631c63e1a3f3b0e65974"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Full verse when acc. chains are ready.",
+        "chars": 38,
+        "cache_key": "4e20a55078ac97287cf5fa698fb1c3ada05f0658"
+      }
+    },
+    {
+      "id": "l04-nryti",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "nṛtyati gāyati hṛṣyati gāḍham saṃvit iyam mama …",
+        "chars": 48,
+        "cache_key": "9fdddb98da558b08d4552a87192187e2520151bf"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Full verse for samaya-knower later.",
+        "chars": 35,
+        "cache_key": "3d3d35d7c3e17dd7b12940821cfceb315eb7088e"
+      }
+    },
+    {
+      "id": "l05-ma-kimcit",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "mā kiṃcit tyaja mā gṛhāṇa vihara svastho yathāvasthitaḥ",
+        "chars": 55,
+        "cache_key": "7e8c79fb69f909fe7b20bc5cf729d5b7b3a0d72d"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Full Anuttarāṣṭikā 2 when genitives ready.",
+        "chars": 42,
+        "cache_key": "9cb8d31093dcdb3a0e67657b0c0da0d2ab5deafc"
+      }
+    },
+    {
+      "id": "l06-sambhu-sarana",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "paraṃ parasthaṃ gahanād anādim | sarvālayaṃ sarvacarācarasthaṃ tvām eva śambhuṃ śaraṇaṃ prapadye ||",
+        "chars": 99,
+        "cache_key": "c86c47117e492c1a788ab9753e6c4630526f3a03"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Later verses for gen/loc drills (guhāsu loc.pl here).",
+        "chars": 53,
+        "cache_key": "5c6971dea4d59462ec2533cdc84d60812c25a105"
+      }
+    },
+    {
+      "id": "l07-dual-fire",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śaktiś ca śaktimadrūpād vyatirekaṃ na vāñchati | tādātmyam anayor nityaṃ vahnidāhikayor iva ||",
+        "chars": 94,
+        "cache_key": "13a465e7e9e1e547580a4e1dc8401dc6fd95c2b8"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Full Bodhapañcadaśikā 3 for -mat/abl reinforcement.",
+        "chars": 51,
+        "cache_key": "99620f7dcaa4d4f87069947ad47b313eb2e281d7"
+      }
+    },
+    {
+      "id": "l08-alam-extract",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt",
+        "chars": 42,
+        "cache_key": "cea8f9eb86d434ea9cd2aff232968a19f4b00196"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Lesson 9 completes the verse.",
+        "chars": 29,
+        "cache_key": "d492e2854ae503f1dfa719e7309fb0159d3fc84b"
+      }
+    },
+    {
+      "id": "l09-mpa8-full",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt | sarvamekamidaṃ śāntamiti vaktuṃ ca lajjate",
+        "chars": 87,
+        "cache_key": "f8ac5f74eacdc0c7f9072ffc48c63ac757e2089c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Final exam may contrast with unseen Bodhapañcadaśikā 14.",
+        "chars": 56,
+        "cache_key": "9ea88d37fdb09ab0627b5db9906a172773d18586"
+      }
+    },
+    {
+      "id": "l10-tantrasara-prose",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "iha jñānaṃ mokṣakāraṇaṃ bandhanimittasya ajñānasya virodhakatvāt",
+        "chars": 64,
+        "cache_key": "c1fa57269045367f0677880262b934abb44eac63"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Later Āhnikas; final exam may use Bodhapañcadaśikā 14 unseen.",
+        "chars": 61,
+        "cache_key": "919e02201722286a4ff3ab194c02a4167cee2be8"
+      }
+    }
+  ],
+  "totals": {
+    "clips": 20,
+    "chars": 1110
+  },
+  "receipts": "prints/learn-sanskrit/audio/receipts/calls.jsonl",
+  "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
+}

@@ -1,4 +1,4 @@
-# Source — l08-alaṃ-extract
+# Source — l08-alam-extract
 
 alaṃ bhedānukathayā — Enough of difference-talk (extract)
 

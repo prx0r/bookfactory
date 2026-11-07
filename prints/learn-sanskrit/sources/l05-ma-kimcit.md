@@ -1,4 +1,4 @@
-# Source — l05-ma-kiṃcit
+# Source — l05-ma-kimcit
 
 mā kiṃcit tyaja — Abandon nothing
 

@@ -36,7 +36,7 @@
     },
     {
       "n": 5,
-      "id": "l05-ma-kiṃcit",
+      "id": "l05-ma-kimcit",
       "title": "mā kiṃcit tyaja — Abandon nothing",
       "source_ref": "Anuttarāṣṭikā anu-p02",
       "section": "stage-3-instructions",
@@ -44,7 +44,7 @@
     },
     {
       "n": 6,
-      "id": "l06-śambhu-śaraṇa",
+      "id": "l06-sambhu-sarana",
       "title": "tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge",
       "source_ref": "Paramārthasāra param-p01-v01",
       "section": "stage-3-instructions",
@@ -60,7 +60,7 @@
     },
     {
       "n": 8,
-      "id": "l08-alaṃ-extract",
+      "id": "l08-alam-extract",
       "title": "alaṃ bhedānukathayā — Enough of difference-talk (extract)",
       "source_ref": "Mahopadeśa mpa-p01-v08",
       "section": "stage-4-trika-grammar",
@@ -114,7 +114,7 @@
     },
     {
       "id": "rb-5-ma-imperative",
-      "lesson": "l05-ma-kiṃcit",
+      "lesson": "l05-ma-kimcit",
       "title": "Rule box 5 — mā + imperative = don’t",
       "body": "Prohibitive mā with imperatives: mā tyaja, mā gṛhāṇa. na negates statements.",
       "foundational": true
@@ -128,7 +128,7 @@
     },
     {
       "id": "rb-7-alaṃ-inst",
-      "lesson": "l08-alaṃ-extract",
+      "lesson": "l08-alam-extract",
       "title": "Rule box 7 — alaṃ + instrumental = enough of",
       "body": "alaṃ governs the instrumental: alaṃ bhedānukathayā. Substitutes are labelled exercises.",
       "foundational": true

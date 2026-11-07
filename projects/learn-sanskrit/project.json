@@ -1,5 +1,5 @@
 {
-  "stage": "content",
+  "stage": "formatting",
   "outputs": [
     "lesson-preview",
     "paperback-preview"

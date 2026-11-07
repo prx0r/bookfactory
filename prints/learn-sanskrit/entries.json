@@ -1054,14 +1054,14 @@
     ]
   },
   {
-    "id": "l05-ma-kiṃcit",
+    "id": "l05-ma-kimcit",
     "section": "stage-3-instructions",
     "title": "mā kiṃcit tyaja — Abandon nothing",
     "source": "Abhinavagupta, Anuttarāṣṭikā v.2 (imperative extract); translation-work anuttarastika",
     "source_ref": "Anuttarāṣṭikā anu-p02",
     "iast": "mā kiṃcit tyaja mā gṛhāṇa vihara svastho yathāvasthitaḥ",
     "en": "Abandon nothing; grasp nothing; live at ease, just as you are.",
-    "source_path": "sources/l05-ma-kiṃcit.md",
+    "source_path": "sources/l05-ma-kimcit.md",
     "witness": {
       "deva_source": "transliterated from IAST at build (house rule)",
       "author": "Abhinavagupta",
@@ -1431,7 +1431,7 @@
     "rule_boxes": [
       {
         "id": "rb-5-ma-imperative",
-        "lesson": "l05-ma-kiṃcit",
+        "lesson": "l05-ma-kimcit",
         "title": "Rule box 5 — mā + imperative = don’t",
         "body": "Prohibitive mā with imperatives: mā tyaja, mā gṛhāṇa. na negates statements.",
         "foundational": true
@@ -1439,14 +1439,14 @@
     ]
   },
   {
-    "id": "l06-śambhu-śaraṇa",
+    "id": "l06-sambhu-sarana",
     "section": "stage-3-instructions",
     "title": "tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge",
     "source": "Abhinavagupta, Paramārthasāra v.1 (opening); translation-work paramarthasara",
     "source_ref": "Paramārthasāra param-p01-v01",
     "iast": "paraṃ parasthaṃ gahanād anādim | sarvālayaṃ sarvacarācarasthaṃ tvām eva śambhuṃ śaraṇaṃ prapadye ||",
     "en": "Supreme, abiding beyond, depthless, beginningless, one — lodged in many caves, home of all: Śambhu, to You I come for refuge.",
-    "source_path": "sources/l06-śambhu-śaraṇa.md",
+    "source_path": "sources/l06-sambhu-sarana.md",
     "witness": {
       "deva_source": "transliterated from IAST at build (house rule)",
       "author": "Abhinavagupta",
@@ -2008,14 +2008,14 @@
     ]
   },
   {
-    "id": "l08-alaṃ-extract",
+    "id": "l08-alam-extract",
     "section": "stage-4-trika-grammar",
     "title": "alaṃ bhedānukathayā — Enough of difference-talk (extract)",
     "source": "Abhinavagupta, Mahopadeśaviṃśatikā v.8 (first half); translation-work mahopadeshavimshatika",
     "source_ref": "Mahopadeśa mpa-p01-v08",
     "iast": "alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt",
     "en": "Enough of difference-talk — from chewing the sap of devotion to you.",
-    "source_path": "sources/l08-alaṃ-extract.md",
+    "source_path": "sources/l08-alam-extract.md",
     "witness": {
       "deva_source": "transliterated from IAST at build (house rule)",
       "author": "Abhinavagupta",
@@ -2218,7 +2218,7 @@
     "rule_boxes": [
       {
         "id": "rb-7-alaṃ-inst",
-        "lesson": "l08-alaṃ-extract",
+        "lesson": "l08-alam-extract",
         "title": "Rule box 7 — alaṃ + instrumental = enough of",
         "body": "alaṃ governs the instrumental: alaṃ bhedānukathayā. Substitutes are labelled exercises.",
         "foundational": true
