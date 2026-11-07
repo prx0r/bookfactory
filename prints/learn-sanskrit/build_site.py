@@ -97,6 +97,8 @@ footer .fin{max-width:1400px;margin:0 auto;padding:1.2rem 1rem;font-family:var(-
 footer a{color:var(--gold-ink)}
 pre{background:#f6f3ee;padding:.55rem .75rem;overflow:auto;font-size:.88rem;font-family:var(--sans);margin:.4rem 0 .8rem}
 ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
+#seat-row{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;margin:.3rem 0 .6rem;font-family:var(--sans)}
+#seat-row .vplay.seat{font-size:.72rem;padding:.25rem .6rem}
 .playrow{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.6rem 0 1rem;font-family:var(--sans)}
 .vplay{font-family:var(--sans);font-size:.8rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:.35rem .85rem;cursor:pointer;color:var(--ink)}
 .vplay:hover{border-color:var(--gold);color:var(--gold-ink)}
@@ -341,6 +343,7 @@ def lesson_body(e, n):
 <div class="iast">{esc(e.get('iast'))}</div>
 <p class="en">{esc(e.get('en'))}</p>
 <p class="mut">{esc(e.get("source"))} · {esc(e.get("source_ref"))}</p>
+<div id="seat-row" class="mut" style="font-family:var(--sans);font-size:.75rem">Sanskrit seat: </div>
 <div class="playrow">
 <button type="button" class="vplay" data-play="verse">▶ recite</button>
 <button type="button" class="vplay" data-play="howto">▶ practice</button>
@@ -475,23 +478,69 @@ def main():
         },
     }
     (OUT / "index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    SEAT_IDS = {
+        "sadhguru": "37a8fbc200e74961bee0597c3b4e4041",
+        "osho": "06134e9a49cb4a36997b75402c8a0621",
+        "gurudeep": "82926c3143bc4d259fa9834b96897fad",
+        "vf_verse": "4e873c37d4cb439e9bccc4dc1f633290",
+        "granny": "614f8afd83f841048c040b2c6234d2c1",
+    }
+    def _sha12(voice, text):
+        import hashlib
+        return hashlib.sha1(f"{voice}|{text}".encode()).hexdigest()[:12]
+    # index clips by lesson__kind and by lesson__kind__seat
     clips = {}
+    seats = {}
     audio_dir = ROOT / "audio" / "clips"
+    plan = json.loads((ROOT / "audio-plan.json").read_text()) if (ROOT / "audio-plan.json").is_file() else {}
+    entry_by_id = {e.get("id"): e for e in plan.get("entries", [])}
     if audio_dir.is_dir():
         for wav in sorted(audio_dir.glob("*.wav")):
-            parts = wav.name.split("__")
-            if len(parts) >= 2:
-                key = parts[0] + "__" + parts[1].split("_")[0]
-                clips[key] = "audio/clips/" + wav.name
+            # name: l01-mamatma__verse_<hash>.wav
+            stem = wav.stem
+            if "__" not in stem:
+                continue
+            lesson, rest = stem.split("__", 1)
+            kind = rest.split("_")[0]
+            h = rest.split("_")[-1] if "_" in rest else ""
+            rel = "audio/clips/" + wav.name
+            base = lesson + "__" + kind
+            # identify seat by matching sha12
+            seat = None
+            entry = entry_by_id.get(lesson) or {}
+            clip = entry.get(kind) or {}
+            text, plan_vid = clip.get("text"), clip.get("voice_id")
+            if text:
+                for sname, sid in SEAT_IDS.items():
+                    if h and _sha12(sid, text) == h:
+                        seat = sname
+                        break
+            if seat:
+                seats.setdefault(base, {})[seat] = rel
+            # default preference: sadhguru > osho > gurudeep > vf_verse > any
+            pref = ["sadhguru", "osho", "gurudeep", "vf_verse"]
+            if base not in clips:
+                clips[base] = rel
+            elif seat in pref:
+                # upgrade default if this seat ranks better
+                cur = seats.get(base, {})
+                # find current seat
+                cur_seat = None
+                for s, u in cur.items():
+                    if u == clips[base]:
+                        cur_seat = s
+                        break
+                if cur_seat is None or pref.index(seat) < pref.index(cur_seat):
+                    clips[base] = rel
     manifest = {
         "engine": "fish-audio/s2.1-pro-free",
-        "voices": {
-            "verse": "4e873c37d4cb439e9bccc4dc1f633290",
-            "granny": "614f8afd83f841048c040b2c6234d2c1",
-        },
-        "pattern": "prx0r/videofactory sha1(voice|text)",
+        "default_sanskrit_seat": "sadhguru",
+        "seats": SEAT_IDS,
         "clips": clips,
+        "clips_by_seat": seats,
+        "pattern": "prx0r/videofactory sha1(voice|text)",
         "karaoke": "kashaudio MMS when available; else speechSynthesis",
+        "shootout": "http://127.0.0.1:8600/voice_shootout/",
     }
     (OUT / "audio-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if audio_dir.is_dir():

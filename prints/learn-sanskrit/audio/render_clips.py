@@ -16,6 +16,14 @@ PLAN = ROOT / "audio-plan.json"
 OUT = ROOT / "audio" / "clips"
 RECEIPTS = ROOT / "audio" / "receipts" / "calls.jsonl"
 SSH_HOST = os.environ.get("BF_TTS_HOST", "vps")
+# Sanskrit seat override: sadhguru | osho | gurudeep | vf_verse (default)
+SEATS = {
+    "sadhguru": "37a8fbc200e74961bee0597c3b4e4041",
+    "osho": "06134e9a49cb4a36997b75402c8a0621",
+    "gurudeep": "82926c3143bc4d259fa9834b96897fad",
+    "vf_verse": "4e873c37d4cb439e9bccc4dc1f633290",
+}
+SEAT_SPEED = {"osho": 0.85, "sadhguru": 1.0, "gurudeep": 1.0, "vf_verse": 1.0}
 REMOTE_PY = os.environ.get("BF_TTS_PY", "/usr/bin/python3")
 REMOTE_DIR = os.environ.get("BF_TTS_DIR", "/tmp/learn-sanskrit-tts")
 VOICES = {
@@ -47,12 +55,13 @@ for p in ["/home/ubuntu/.config/opencode/.env", os.path.expanduser("~/.config/op
 assert key, "no FISH_API_KEY on remote"
 text = base64.b64decode(sys.argv[1]).decode()
 voice = sys.argv[2]
+speed = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0
 body = json.dumps({
     "model": "fish-audio/s2.1-pro-free",
     "input": text,
     "voice": voice,
     "response_format": "wav",
-    "speed": 1.0,
+    "speed": speed,
 }).encode()
 req = urllib.request.Request(
     "https://api.fish.audio/compat/v1/audio/speech",
@@ -88,7 +97,7 @@ def tts_remote(text, voice, dest, speed=1.0):
     if up.returncode != 0:
         return {"ok": False, "error": f"upload: {up.stderr[-300:]}"}
     run = ssh_cmd(
-        f"cd {shlex.quote(REMOTE_DIR)} && {REMOTE_PY} tts_one.py {shlex.quote(b64)} {shlex.quote(voice)}",
+        f"cd {shlex.quote(REMOTE_DIR)} && {REMOTE_PY} tts_one.py {shlex.quote(b64)} {shlex.quote(voice)} {speed}",
         timeout=180)
     if run.returncode != 0:
         return {"ok": False, "error": (run.stderr or run.stdout)[-400:]}
@@ -125,7 +134,15 @@ def main():
             for kind in ("verse", "howto"):
                 clip = e.get(kind) or {}
                 text, voice_id = clip.get("text"), clip.get("voice_id")
-                if not text or not voice_id:
+                if not text:
+                    continue
+                if kind == "verse":
+                    seat = os.environ.get("BF_SEAT_VERSE", "vf_verse")
+                    voice_id = SEATS.get(seat, voice_id)
+                    speed = SEAT_SPEED.get(seat, 1.0)
+                else:
+                    speed = 1.0
+                if not voice_id:
                     continue
                 h = sha12(voice_id, text)
                 dest = OUT / f"{e['id']}__{kind}_{h}.wav"
@@ -138,7 +155,7 @@ def main():
                     print("RENDER", dest.name, kind, len(text), "ch", h)
                     continue
                 print("render", dest.name, kind, "...", flush=True)
-                rec = tts_remote(text, voice_id, dest)
+                rec = tts_remote(text, voice_id, dest, speed=speed)
                 rec.update({"entry": e["id"], "kind": kind, "cache_key": h})
                 if log:
                     log.write(json.dumps(rec, ensure_ascii=False) + "\n")
