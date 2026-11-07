@@ -2,8 +2,13 @@
   "version": "1.0",
   "book": "learn-sanskrit",
   "engine": {
-    "tts": "fish-audio",
-    "pattern_source": "prx0r/videofactory render_chapter"
+    "tts": "fish-audio/s2.1-pro-free",
+    "pattern_source": "prx0r/videofactory render_chapter + shiva-sutras/tts_line.py",
+    "cache": "sha1(voice|text)[:12] in filename",
+    "norm_db": -21.0,
+    "render_host": "opencode3 (ssh vps) — hub has zero ffmpeg (Rule 8)",
+    "renderer": "prints/learn-sanskrit/audio/render_clips.py",
+    "karaoke": "kashaudio MMS timings when available; play button falls back to speechSynthesis"
   },
   "voices": {
     "verse": "4e873c37d4cb439e9bccc4dc1f633290",
@@ -186,5 +191,5 @@
     "chars": 1110
   },
   "receipts": "prints/learn-sanskrit/audio/receipts/calls.jsonl",
-  "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
+  "note": "Plan + renderer ready. Render after owner go: python3 prints/learn-sanskrit/audio/render_clips.py (--dry-run first). Clips → audio/clips/, site audio-manifest.json, play buttons on lessons."
 }
