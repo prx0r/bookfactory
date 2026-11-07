@@ -128,9 +128,7 @@ def main():
                 if not text or not voice_id:
                     continue
                 h = sha12(voice_id, text)
-                dest = OUT / f"{e[chr(39)+chr(39)] if False else e[\"id\"]}__{kind}_{h}.wav"
-                # fix f-string - use e["id"] properly below
-                dest = OUT / (e["id"] + "__" + kind + "_" + h + ".wav")
+                dest = OUT / f"{e['id']}__{kind}_{h}.wav"
                 if dest.is_file() and dest.stat().st_size > 1000 and not args.force:
                     n_cached += 1
                     print("cached", dest.name)
