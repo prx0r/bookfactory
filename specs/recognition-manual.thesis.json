@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "book": "recognition-manual",
+  "title": "Recognition: A Manual",
+  "template": "prayer-book",
+  "style": "canonical",
+  "claim": "Recognition is not an experience to be produced but a fact to be noticed: this manual gives the shortest rigorous path from the ordinary sense of being a separate person to the recognition of oneself as the whole, with the texts’ own practices and tests.",
+  "purpose": {
+    "kind": "primer",
+    "impact": "A single sitting that moves the reader from ‘I am a separate person’ to ‘I am the whole’, with nothing to believe and nothing to join.",
+    "reader": "The sceptical, intelligent reader who will not join anything but cannot stop asking whether experience proves what it seems to.",
+    "realisation": "Recognition is not a state to be acquired later; it is the fact already the case, and the reader can test it on the page before finishing the book.",
+    "non_goals": [
+      "no devotional tone and no promises of special states",
+      "no invented practice — every method is the text’s own",
+      "no agent-written connective prose"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "36 entries as spreads (72pp) + front 10 + glossary 8 + index 6 + end 4 = 100, padded to 108."
+  },
+  "structure": {
+    "sections": 9,
+    "total_entries": 36,
+    "sections_plan": [
+      {
+        "id": "knot",
+        "purpose": "why the ordinary self feels incomplete; what misidentification costs",
+        "count": 4
+      },
+      {
+        "id": "given",
+        "purpose": "what is always already present in experience",
+        "count": 4
+      },
+      {
+        "id": "subject",
+        "purpose": "you are not the body, the mind, or the thought",
+        "count": 4
+      },
+      {
+        "id": "object",
+        "purpose": "the world is not outside awareness, without solipsism",
+        "count": 4
+      },
+      {
+        "id": "other",
+        "purpose": "recognition is relational, not private",
+        "count": 4
+      },
+      {
+        "id": "energies",
+        "purpose": "desire, knowing, action — icchā, jñāna, kriyā",
+        "count": 4
+      },
+      {
+        "id": "methods",
+        "purpose": "the actual practices, placed from the texts",
+        "count": 4
+      },
+      {
+        "id": "signs",
+        "purpose": "how you know it is working",
+        "count": 4
+      },
+      {
+        "id": "ordinary",
+        "purpose": "post-recognition life: nothing special, everything changed",
+        "count": 4
+      }
+    ]
+  },
+  "inclusion": [
+    "every entry faces its explanation: brief (C1 essence), what (sense), how (the text's own practice), sign (the text's own claimed effect) — feel optional",
+    "content is extract-and-place from named sources and layers; clarity-edits only after placing; no source = block stays off the page (fail closed)",
+    "whole book must preflight under the template page ceiling with the template style before the build stage opens",
+    "each entry carries four placed blocks: Cost, Recognition, Practice, Sign",
+    "sources are Spanda, Tantrasāra and the VBT verses not consumed by the exhaustive references"
+  ],
+  "exclusion": [
+    "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
+    "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
+    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first",
+    "no verse already assigned to a reference volume in this series",
+    "no invented practice and no agent-written prose"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "per-book",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"
+    },
+    "social": {
+      "status": "per-book",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "per-book",
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
+    },
+    "chant": {
+      "status": "per-book",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go."
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered. Customer package = package/ folder (EPUB + PDF + audio + manifest); see BOOKS.md 7b for the physical/Kindle/direct channel map."
+    }
+  }
+}

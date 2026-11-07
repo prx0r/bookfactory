@@ -1,0 +1,163 @@
+{
+  "version": "1.0",
+  "id": "lesson-book",
+  "name": "Lesson book (Sanskrit curriculum)",
+  "description": "A progressive Sanskrit-through-Trika lesson: every passage reconstructed from its smallest linguistic components before philosophical interpretation. Ten stacked layers per lesson (witness → recitation → padaccheda → morphology → compounds → sandhi proof → syntax → translation → Trika exegesis → practice), three depths in one chapter (Learn it / Decode it / Recognise it). Witness and glosses come from translation-work layers; derivation and pedagogy are owner-reviewed and attributed; commentary never merges teachers.",
+  "constraints": {
+    "max_pages": 400,
+    "target_pages": 108,
+    "min_font_pt": 8,
+    "trim": "6x9 152.4x228.6mm; interior no-bleed; full-wrap cover via styles/cover-canonical.json; study edition may use thesis.pages.fallback 400"
+  },
+  "pipeline": [
+    "content",
+    "structure",
+    "formatting",
+    "build"
+  ],
+  "layout": "lesson",
+  "provenance": "tutorial",
+  "entry_anatomy": {
+    "required": {
+      "witness": [
+        "witness",
+        "sanskrit",
+        "iast"
+      ],
+      "padaccheda": [
+        "padaccheda"
+      ],
+      "morphology": [
+        "morphology"
+      ],
+      "sandhi": [
+        "sandhi"
+      ],
+      "syntax": [
+        "syntax"
+      ],
+      "translation": [
+        "translation",
+        "en"
+      ],
+      "trika": [
+        "trika"
+      ],
+      "practice": [
+        "practice"
+      ]
+    },
+    "optional": {
+      "recitation": [
+        "recitation"
+      ],
+      "compounds": [
+        "compounds"
+      ],
+      "alternatives": [
+        "alternatives"
+      ],
+      "exercises": [
+        "exercises"
+      ],
+      "levels": [
+        "levels"
+      ]
+    }
+  },
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte; study-edition ceiling 400pp (thesis.pages); interior no-bleed; full-wrap cover from styles/cover-canonical.json; kdp_preflight + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "planned",
+      "spec": "Quote cards from a single lesson line (IAST + ref); never a substitute for the lesson"
+    },
+    "social": {
+      "status": "planned",
+      "spec": "1080x1080 + 1080x1350 from one sandhi proof or one line; white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "planned",
+      "spec": "Recitation layer audio per lesson (Fish 'verse' voice on IAST) after owner go"
+    },
+    "chant": {
+      "status": "planned",
+      "spec": "Lesson recitation clips only where the source work already has aligned audio; no invented chant"
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Reflowable EPUB + DRM-free study PDF after build stage; exercises may ship as separate workbook later"
+    }
+  },
+  "style_default": "canonical",
+  "structure_defaults": {
+    "entries_per_section": 1,
+    "variable_counts": true
+  },
+  "guide_labels": {
+    "witness": [
+      "Original witness"
+    ],
+    "recitation": [
+      "Recitation"
+    ],
+    "padaccheda": [
+      "Padaccheda — reverse the sandhi"
+    ],
+    "morphology": [
+      "Morphology"
+    ],
+    "compounds": [
+      "Compounds"
+    ],
+    "sandhi": [
+      "Sandhi proof"
+    ],
+    "syntax": [
+      "Syntax"
+    ],
+    "translation": [
+      "Translation from the syntax"
+    ],
+    "trika": [
+      "Trika exegesis"
+    ],
+    "practice": [
+      "Practice and mastery"
+    ]
+  },
+  "series_pattern": "Learn Sanskrit with Abhinavagupta: numbered volumes (v1 Everyday Recognition pocket prayers → later volumes by grammar stage); overflow = next volume, never a fatter book beyond thesis.pages.",
+  "inclusion": [
+    "every lesson carries the ten layers in order, each building on the previous — not independent encyclopedia entries",
+    "witness (Devanagari, IAST, author, work, verse, edition) is extract-and-place from translation-work; no invented Sanskrit",
+    "morphology, sandhi proofs and syntax are reversible: input → rule → output, with alternatives recorded when commentators differ",
+    "translation is demonstrably derived from the grammar before any metaphysics is introduced",
+    "Trika exegesis attributes verse, Abhinavagupta, Kṣemarāja, Yogarāja, Lakshmanjoo and our synthesis separately",
+    "reading mode keeps irreverent everyday clarity; learning mode never skips morphology or fakes pronunciation",
+    "grammar knowledge accumulates: a form mastered in an earlier lesson is reinforced, not re-taught from zero"
+  ],
+  "exclusion": [
+    "never invent Sanskrit, etymologies, or Pāṇini rule ids that have not been verified",
+    "never silently resolve a parse ambiguity or merge distinct teachers into one voice",
+    "never present a modern practice adaptation as an ancient prescription",
+    "never print Lakshmanjoo/Dyczkowski prose at length — brief attributed quotation only (house copyright law)",
+    "never claim the textbook is the verse's home when a reference volume owns the full text — quotation with attribution only",
+    "no PDF build before content, structure and formatting pass — build is last"
+  ],
+  "cover": {
+    "style": "cover-canonical",
+    "style_file": "styles/cover-canonical.json",
+    "generator": "prints/bookkit/cover.py",
+    "per_book_inputs": [
+      "book.json trim",
+      "book.json paper",
+      "book.json target_pages",
+      "book.json meta.cover_image (optional front emblem)"
+    ],
+    "house_constant": "back cover = black ground + Svatantrya mantra-ring logo, small, centred; no back text, no second element",
+    "swap_rule": "replace meta.cover_image only; geometry and back logo stay house-constant",
+    "render": "chrome --headless --print-to-pdf=cover.pdf http://127.0.0.1:8000/<book>/cover.html"
+  }
+}

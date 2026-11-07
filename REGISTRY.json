@@ -31,6 +31,11 @@
         "vbt",
         "bhairavastava"
       ]
+    },
+    "learn-sanskrit": {
+      "stage": "content (10 lessons scaffolded from specs thesis; prototype HTML ready; preflight/build later)",
+      "entries": 10,
+      "pages": 108
     }
   },
   "products": {
@@ -86,6 +91,10 @@
     {
       "id": "pp-tp-36-build-green",
       "status": "done"
+    },
+    {
+      "id": "learn-sanskrit-vol1",
+      "status": "content-scaffold-10-lessons"
     }
   ]
 }

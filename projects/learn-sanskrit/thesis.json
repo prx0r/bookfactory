@@ -1,0 +1,124 @@
+{
+  "version": "1.0",
+  "book": "learn-sanskrit",
+  "title": "Learn Sanskrit with Abhinavagupta — Vol. I: Ten Passages from Sound to Recognition",
+  "template": "lesson-book",
+  "style": "canonical",
+  "claim": "Sanskrit is learned by reconstructing each passage from its smallest meaningful components — root, inflection, compound, sandhi, syntax — before any Trika reading is allowed; discovery precedes explanation, rule boxes stay few and foundational, and the reader finishes able to analyse an unseen Abhinavagupta sentence, not merely recite a memorised one.",
+  "series": {
+    "name": "Learn Sanskrit with Abhinavagupta",
+    "volume": 1
+  },
+  "purpose": {
+    "kind": "primer",
+    "impact": "In one sitting the reader watches mama + ātmā fuse into mamātmā, then follows the same reversible method until Tantrasāra prose stops being a wall.",
+    "reader": "The spiritual reader who wants the original Sanskrit without a conventional textbook's random examples, and the serious beginner who will not accept fudged morphology.",
+    "realisation": "By lesson ten the student can take an unseen authentic Abhinavagupta sentence, reverse its sandhi, name its cases, break its compounds, produce a translation the grammar warrants, and say which part is the text and which part is interpretation.",
+    "non_goals": [
+      "no conventional grammar drill book with invented Sanskrit sentences",
+      "no prayer book that skips derivation because the English already sounds good",
+      "no merged teacher voice — verse, Abhinavagupta, Kṣemarāja, Yogarāja, Lakshmanjoo and our synthesis stay distinct",
+      "no wall of rule boxes — a handful of foundational rules only, then short reminders",
+      "no silent fix of witness disagreements"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "Owner 2026-11-07: aim for 108 like normal. Ten lessons + front alphabet sheets + back reference pages. Study 400 is reserved for a later expanded edition, not vol. I."
+  },
+  "structure": {
+    "sections": 5,
+    "total_entries": 10,
+    "sections_plan": [
+      {
+        "id": "stage-1-sounds",
+        "purpose": "first sounds, first sandhi, first sentences — alphabet begins making sense",
+        "count": 2
+      },
+      {
+        "id": "stage-2-language",
+        "purpose": "agreement, verbs, location — Sanskrit behaves like a language",
+        "count": 2
+      },
+      {
+        "id": "stage-3-instructions",
+        "purpose": "commands, refuge, cases — instructions you can actually use",
+        "count": 2
+      },
+      {
+        "id": "stage-4-trika-grammar",
+        "purpose": "dual number, instrumental, abstract nouns — grammar of nondual Śaivism",
+        "count": 2
+      },
+      {
+        "id": "stage-5-original",
+        "purpose": "complete verse and philosophical prose — read Abhinavagupta in the original",
+        "count": 2
+      }
+    ]
+  },
+  "inclusion": [
+    "every lesson carries the ten layers in order (witness, recitation, padaccheda, morphology, compounds, sandhi proof, syntax, translation, Trika exegesis, practice), each building on the previous",
+    "witness is extract-and-place from translation-work (passages/L0/L2/L3/C1); Devanagari transliterated from IAST at build; no invented Sanskrit",
+    "morphology and sandhi are reversible proofs: surface → underlying words → rule → output; alternatives recorded when parses differ",
+    "translation is reconstructed from the syntax before Trika interpretation is introduced",
+    "Trika exegesis attributes verse, Abhinavagupta, Kṣemarāja, Yogarāja, Lakshmanjoo and our synthesis as distinct sources",
+    "discovery before explanation: the learner predicts the pattern, then sees the formal proof",
+    "rule boxes are few and foundational (e.g. a+a→ā); never a wall of rules — reminders shorten once a rule is mastered",
+    "grammar accumulates across the volume — instrumental learned once is reinforced, not re-explained from zero",
+    "script transition: IAST-first lessons early, Devanagari-first by lesson seven, IAST never forbidden",
+    "ten lessons only, five stages × two; excerpts stay connected to their original verse",
+    "any newly constructed drill sentence is labelled exercise, never quoted as Abhinavagupta",
+    "every lesson carries the ten layers in order, each building on the previous — not independent encyclopedia entries",
+    "witness (Devanagari, IAST, author, work, verse, edition) is extract-and-place from translation-work; no invented Sanskrit",
+    "morphology, sandhi proofs and syntax are reversible: input → rule → output, with alternatives recorded when commentators differ",
+    "translation is demonstrably derived from the grammar before any metaphysics is introduced",
+    "Trika exegesis attributes verse, Abhinavagupta, Kṣemarāja, Yogarāja, Lakshmanjoo and our synthesis separately",
+    "reading mode keeps irreverent everyday clarity; learning mode never skips morphology or fakes pronunciation",
+    "grammar knowledge accumulates: a form mastered in an earlier lesson is reinforced, not re-taught from zero"
+  ],
+  "exclusion": [
+    "never invent Sanskrit, etymologies, or unverified Pāṇini rule identifiers",
+    "never silently resolve an ambiguous parse or attribute another teacher's words to Abhinavagupta",
+    "never present a modern practice suggestion as an ancient textual prescription",
+    "never print extended Lakshmanjoo/Dyczkowski prose — brief attributed quotation only",
+    "never claim a verse as this textbook's home when a reference volume owns its full text — quotation with attribution only",
+    "no agent-written connective prose in witness fields; pedagogy blocks are owner-reviewed and source-attributed",
+    "no overwhelming rule-box density — a handful per volume",
+    "no PDF build before content, structure and formatting pass — build is the last stage",
+    "never invent Sanskrit, etymologies, or Pāṇini rule ids that have not been verified",
+    "never silently resolve a parse ambiguity or merge distinct teachers into one voice",
+    "never present a modern practice adaptation as an ancient prescription",
+    "never print Lakshmanjoo/Dyczkowski prose at length — brief attributed quotation only (house copyright law)",
+    "never claim the textbook is the verse's home when a reference volume owns the full text — quotation with attribution only",
+    "no PDF build before content, structure and formatting pass — build is last"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte; study-edition ceiling 400pp (thesis.pages); interior no-bleed; full-wrap cover from styles/cover-canonical.json; kdp_preflight + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "planned",
+      "spec": "Quote cards from a single lesson line (IAST + ref); never a substitute for the lesson"
+    },
+    "social": {
+      "status": "planned",
+      "spec": "1080x1080 + 1080x1350 from one sandhi proof or one line; white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "planned",
+      "spec": "Recitation layer audio per lesson (Fish 'verse' voice on IAST) after owner go"
+    },
+    "chant": {
+      "status": "planned",
+      "spec": "Lesson recitation clips only where the source work already has aligned audio; no invented chant"
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Reflowable EPUB + DRM-free study PDF after build stage; exercises may ship as separate workbook later"
+    }
+  }
+}

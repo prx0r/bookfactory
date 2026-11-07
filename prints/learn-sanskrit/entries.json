@@ -1,0 +1,2898 @@
+[
+  {
+    "id": "l01-mamatma",
+    "section": "stage-1-sounds",
+    "title": "mamātmā — My Self",
+    "source": "Abhinavagupta, Bhairavastava v.2 (extract); translation-work bhairavastava",
+    "source_ref": "Bhairavastava bh-p02",
+    "iast": "tvaṃ ca maheśa sadaiva mamātmā",
+    "en": "You, Maheśa, are ever my own self.",
+    "source_path": "sources/l01-mamatma.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Bhairavastava",
+      "verse": "2",
+      "edition": "translation-work/bhairavastava (gold; GRETIL/Muktabodha M00505)",
+      "variants": "Focus extract: tvaṃ ca maheśa sadaiva mamātmā. Full verse continues svātmamayaṃ mama tena samastam."
+    },
+    "recitation": {
+      "syllables": "tvaṃ ca | ma-he-śa | sa-da-i-va | ma-mā-tmā",
+      "vowel_lengths": "ā in mamātmā from a+a→ā; long e in maheśa; ai in sadaiva from a+e→ai",
+      "articulation": "retroflex ṣ in maheśa; ṁ anusvāra in tvaṃ",
+      "metre": "Bhairavastava verse; free philosophical cadence",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "tvaṃ ca",
+        "underlying": "tvad + ca",
+        "gloss": "You",
+        "rule": "—",
+        "morph": "nom.sg+indecl (tvaṃ ca)",
+        "citation": "tvaṃ ca"
+      },
+      {
+        "surface": "maheśa !",
+        "underlying": "maheśa",
+        "gloss": "Maheśa",
+        "rule": "vocative — direct address",
+        "morph": "voc.sg (maheśa)",
+        "citation": "maheśa !"
+      },
+      {
+        "surface": "sadaiva",
+        "underlying": "sadā + eva",
+        "gloss": "always",
+        "rule": "yaṇ sandhi: ā + e → ai",
+        "morph": "adv (sadaiva)",
+        "citation": "sadaiva"
+      },
+      {
+        "surface": "mamā'tmā",
+        "underlying": "mama + ātmā",
+        "gloss": "my",
+        "rule": "savarṇadīrgha: a + ā → ā (Pāṇini 6.1.101)",
+        "morph": "nom.sg (mamātmā)",
+        "citation": "mamā'tmā"
+      },
+      {
+        "surface": "tvadanugrahaśaktyā",
+        "underlying": "tvad + anugraha + śakti + instr.f",
+        "gloss": "by-power-of-Your-grace",
+        "rule": "instr. -ā",
+        "morph": "instr.sg.f (tvadanugrahaśakti)",
+        "citation": "tvadanugrahaśaktyā"
+      },
+      {
+        "surface": "bhāti",
+        "underlying": "√bhā + 3sg",
+        "gloss": "appears",
+        "rule": "present -ti",
+        "morph": "3sg.pres. (bhāti)",
+        "citation": "bhāti"
+      },
+      {
+        "surface": "tvanmayam",
+        "underlying": "tvanmayam",
+        "gloss": "become-of-You",
+        "rule": "—",
+        "morph": "acc.sg.n (tvanmaya)",
+        "citation": "tvanmayam"
+      },
+      {
+        "surface": "etad",
+        "underlying": "etad",
+        "gloss": "this",
+        "rule": "—",
+        "morph": "acc.sg.n (etad)",
+        "citation": "etad"
+      },
+      {
+        "surface": "aśeṣam",
+        "underlying": "aśeṣam",
+        "gloss": "without-remainder",
+        "rule": "—",
+        "morph": "acc.sg.n (aśeṣa)",
+        "citation": "aśeṣam"
+      },
+      {
+        "surface": "idānīm",
+        "underlying": "idānīm",
+        "gloss": "now",
+        "rule": "—",
+        "morph": "adv (idānīm)",
+        "citation": "idānīm"
+      },
+      {
+        "surface": "mama",
+        "underlying": "mama",
+        "gloss": "to-me",
+        "rule": "—",
+        "morph": "gen.sg (mama)",
+        "citation": "mama"
+      },
+      {
+        "surface": "svātmamayam",
+        "underlying": "svātmamayam",
+        "gloss": "self",
+        "rule": "—",
+        "morph": "acc.sg.n (svātmamaya)",
+        "citation": "svātmamayam"
+      },
+      {
+        "surface": "mama",
+        "underlying": "mama",
+        "gloss": "my",
+        "rule": "—",
+        "morph": "gen.sg (mama)",
+        "citation": "mama"
+      },
+      {
+        "surface": "tena samastam",
+        "underlying": "tena samastam",
+        "gloss": "all",
+        "rule": "—",
+        "morph": "instr+acc (tena samastam)",
+        "citation": "tena samastam"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "bhāti",
+        "lemma": "bhāti",
+        "analysis": "3sg.pres. (bhāti)",
+        "formation": "appears"
+      },
+      {
+        "surface": "tvadanugrahaśaktyā",
+        "lemma": "tvadanugrahaśaktyā",
+        "analysis": "instr.sg.f (tvadanugrahaśakti)",
+        "formation": "by-power-of-Your-grace"
+      },
+      {
+        "surface": "tvaṃ ca",
+        "lemma": "tvaṃ ca",
+        "analysis": "nom.sg+indecl (tvaṃ ca)",
+        "formation": "You"
+      },
+      {
+        "surface": "maheśa !",
+        "lemma": "maheśa !",
+        "analysis": "voc.sg (maheśa)",
+        "formation": "Maheśa"
+      },
+      {
+        "surface": "sadaiva",
+        "lemma": "sadaiva",
+        "analysis": "adv (sadaiva)",
+        "formation": "always"
+      },
+      {
+        "surface": "mamā'tmā",
+        "lemma": "mamā'tmā",
+        "analysis": "nom.sg (mamātmā)",
+        "formation": "my"
+      }
+    ],
+    "compounds": {
+      "tree": "mama + ātmā → mamātmā (surface fusion); tvad + anugraha + śakti → tvadanugrahaśakti",
+      "members": [
+        {
+          "compound": "mamātmā",
+          "members": [
+            "mama",
+            "ātmā"
+          ],
+          "relation": "possessive read as “my Self”",
+          "reading": "L3 “my own self”"
+        },
+        {
+          "compound": "tvadanugrahaśaktyā",
+          "members": [
+            "tvad",
+            "anugraha",
+            "śakti"
+          ],
+          "relation": "tatpuruṣa stack",
+          "reading": "by the power of Your grace"
+        }
+      ],
+      "note": "Focus: fusion mama + ātmā."
+    },
+    "sandhi": [
+      {
+        "inputs": "mama + ātmā",
+        "rule": "a + ā → ā (savarṇadīrgha, Pāṇini 6.1.101)",
+        "output": "mamātmā",
+        "reversible": true
+      },
+      {
+        "inputs": "sadā + eva",
+        "rule": "ā + e → ai (yaṇ sandhi)",
+        "output": "sadaiva",
+        "reversible": true
+      },
+      {
+        "inputs": "tvad + anugraha…",
+        "rule": "consonant adjustments inside compound",
+        "output": "tvadanugrahaśaktyā",
+        "reversible": true
+      },
+      {
+        "exercise": "Reverse mamātmā → mama + ātmā + rule name. Then reverse sadaiva."
+      }
+    ],
+    "syntax": {
+      "case_roles": "tvaṃ (nom); maheśa (voc); mamātmā (nom predicate); tvadanugrahaśaktyā (instr means)",
+      "agreement": "mamātmā nom.sg.m agrees with tvaṃ",
+      "finite_verbs": "bhāti (3sg) in full verse; extract is predicate clause",
+      "implied": "copula implied in “You … are … my Self”"
+    },
+    "translation": {
+      "interlinear": "You · and · Maheśa(O) · always-alone · my-Self",
+      "literal": "You, Maheśa, are always my own Self.",
+      "readable": "You, Maheśa, are ever my own self — made of You, all is mine through You. (full L2 continues)"
+    },
+    "trika": {
+      "abhinavagupta": "Bhairavastava is a hymn of grace; the extract isolates Maheśa as one’s own Self.",
+      "mapping": [
+        {
+          "role": "Maheśa (voc)",
+          "trika": "address to Śiva as great lord"
+        },
+        {
+          "role": "mamātmā (nom)",
+          "trika": "Self as “mine” — possession into identity"
+        },
+        {
+          "role": "anugraha-śakti (instr)",
+          "trika": "grace as means of the seeing"
+        }
+      ],
+      "bridge": "Nominal predication mirrors identity claim — identity is hymn theology, not dictionary ātman.",
+      "lakshmanjoo": "Not primary for this line; house mealtime lore is Gītā 4.24.",
+      "our_synthesis": "Pedagogical framing only; L2/L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Recite the extract three times; feel a+ā fuse.",
+      "write": "Write mama and ātmā separately, then fused with the rule.",
+      "memorise": "Hold sadā+eva→sadaiva as rule box 2.",
+      "when": "Opening prayer of the volume.",
+      "exercises": [
+        "Reverse mamātmā → two words + rule.",
+        "Why does ātmā keep long ā?",
+        "Find another a+ā fusion later."
+      ]
+    },
+    "levels": {
+      "learn": "Hear the line; natural translation; you know “my Self.”",
+      "decode": "One sandhi proof, vocative, nom predicate, first rule box.",
+      "recognise": "Grace-power as instrumental in Trika reading."
+    },
+    "alternatives": "No competing parse of mamātmā; other sites stay open when they arise.",
+    "brief": "First fusion: mama + ātmā → mamātmā, “my Self.”",
+    "logic": "Two words, one surface, one reversible rule; identity waits for the proof.",
+    "how": "Extract for a+ā; full verse for grace as instrumental.",
+    "howto": "Point at mamātmā; ask what two words hide inside; only then 6.1.101.",
+    "sign": "Learner reverses the form without the English hint.",
+    "rule_boxes": [
+      {
+        "id": "rb-1-savarna",
+        "lesson": "l01-mamatma",
+        "title": "Rule box 1 — a + a / a + ā → ā",
+        "body": "Adjacent short a (or a + ā) contract to one long ā. Pāṇini 6.1.101 akaḥ savarṇe dīrghaḥ. Reverse: split ā into a + a when the words demand it.",
+        "foundational": true
+      },
+      {
+        "id": "rb-2-yana",
+        "lesson": "l01-mamatma",
+        "title": "Rule box 2 — a + e → ai",
+        "body": "yaṇ sandhi: sadā + eva → sadaiva; brahma + eva → brahmaiva. Reverse: ai may hide a + e.",
+        "foundational": true
+      }
+    ]
+  },
+  {
+    "id": "l02-namaste",
+    "section": "stage-1-sounds",
+    "title": "namaste viśvamūrtaye — Homage to You",
+    "source": "Abhinavagupta, Mahopadeśaviṃśatikā vv.1–2; translation-work mahopadeshavimshatika",
+    "source_ref": "Mahopadeśa mpa-p01-v01 (+ v02 namo namaḥ)",
+    "iast": "prapañcottīrṇarūpāya namaste viśvamūrtaye | sadādivyaprakāśāya svātmane'nantaśaktaye ||",
+    "en": "Homage to the world-formed, past the world — to ever-shining divinity, to self of unending power.",
+    "source_path": "sources/l02-namaste.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Mahopadeśaviṃśatikā",
+      "verse": "1",
+      "edition": "translation-work mahopadeshavimshatika (gold)",
+      "variants": "Companion drill from v.2: namo namaḥ before n- contexts. L2/L3 as placed."
+    },
+    "recitation": {
+      "syllables": "pra-pañ-cot-tīr-ṇa-rū-pā-ya | na-mas-te | viś-va-mūr-ta-ye | sa-dā-di-vya-pra-kā-śā-ya | svāt-ma-ne 'n-an-ta-śak-ta-ye",
+      "vowel_lengths": "ā in viśvamūrtaye, prakāśāya",
+      "articulation": "ñ in prapañca; avagraha in svātmane'nantaśaktaye",
+      "metre": "Mahopadeśa homage verse",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "namaste",
+        "underlying": "namas + te",
+        "gloss": "homage-to-you",
+        "rule": "namas + te = “homage to you” (dative te)",
+        "morph": "indecl + dat (namas+te)",
+        "citation": "namas"
+      },
+      {
+        "surface": "viśvamūrtaye",
+        "underlying": "viśva + mūrti + dat.f",
+        "gloss": "to-world-formed",
+        "rule": "dative -ye/-āya",
+        "morph": "f.dat.sg",
+        "citation": "viśva+mūrti"
+      },
+      {
+        "surface": "prapañcottīrṇarūpāya",
+        "underlying": "prapañca + uttīrṇa + rūpa + dat.",
+        "gloss": "beyond-world-formed-to",
+        "rule": "tatpuruṣa; dat. -āya",
+        "morph": "m./n.dat.sg (prapañca+uttīrṇa+ppp+rūpa)",
+        "citation": "prapañca+uttīrṇa+rūpa"
+      },
+      {
+        "surface": "svātmane'nantaśaktaye",
+        "underlying": "sva + ātman + ananta + śakti + dat.",
+        "gloss": "to-self-with-unending-power",
+        "rule": "avagraha keeps elision visible",
+        "morph": "m.dat.sg (sva+ātman+ananta+śakti; avagraha-kept)",
+        "citation": "sva+ātman+ananta+śakti"
+      },
+      {
+        "surface": "sadādivyaprakāśāya",
+        "underlying": "sadā+divya+prakāśa",
+        "gloss": "to-ever-divine-shining",
+        "rule": "—",
+        "morph": "m.dat.sg",
+        "citation": "sadā+divya+prakāśa"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "prapañcottīrṇarūpāya",
+        "lemma": "prapañca+uttīrṇa+rūpa",
+        "analysis": "m./n.dat.sg (prapañca+uttīrṇa+ppp+rūpa)",
+        "formation": "beyond-world-formed-to"
+      },
+      {
+        "surface": "namaste",
+        "lemma": "namas",
+        "analysis": "indecl + dat (namas+te)",
+        "formation": "homage-to-you"
+      },
+      {
+        "surface": "viśvamūrtaye",
+        "lemma": "viśva+mūrti",
+        "analysis": "f.dat.sg",
+        "formation": "to-world-formed"
+      },
+      {
+        "surface": "sadādivyaprakāśāya",
+        "lemma": "sadā+divya+prakāśa",
+        "analysis": "m.dat.sg",
+        "formation": "to-ever-divine-shining"
+      },
+      {
+        "surface": "svātmane'nantaśaktaye",
+        "lemma": "sva+ātman+ananta+śakti",
+        "analysis": "m.dat.sg (sva+ātman+ananta+śakti; avagraha-kept)",
+        "formation": "to-self-with-unending-power"
+      }
+    ],
+    "compounds": {
+      "tree": "namas + te → namaste; viśva + mūrti; sva + ātman + ananta + śakti",
+      "members": [
+        {
+          "compound": "viśvamūrti",
+          "members": [
+            "viśva",
+            "mūrti"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "world-formed"
+        },
+        {
+          "compound": "svātmane'nantaśakti",
+          "members": [
+            "sva",
+            "ātman",
+            "ananta",
+            "śakti"
+          ],
+          "relation": "tatpuruṣa stack",
+          "reading": "self of unending power"
+        }
+      ],
+      "note": "v.2 drill: namas → namo before n (namo namaḥ)."
+    },
+    "sandhi": [
+      {
+        "inputs": "namas + te",
+        "rule": "surface namaste",
+        "output": "namaste",
+        "reversible": true
+      },
+      {
+        "inputs": "namas (before n)",
+        "rule": "final s → o before n- (v.2 pattern)",
+        "output": "namo namaḥ",
+        "reversible": true
+      },
+      {
+        "inputs": "sva + ātman + ananta",
+        "rule": "a+a contractions + avagraha",
+        "output": "svātmane'nantaśaktaye",
+        "reversible": true
+      },
+      {
+        "exercise": "Rewrite namo namaḥ as namas + namas; explain the -o."
+      }
+    ],
+    "syntax": {
+      "case_roles": "datives -āya/-ye “to X”; namas indeclinable; te dative",
+      "agreement": "dat.sg.f -ye; dat.sg.m/n -āya",
+      "finite_verbs": "none — homage frame",
+      "implied": "“(I offer) homage to you”"
+    },
+    "translation": {
+      "interlinear": "beyond-world-formed-to · homage-to-you · world-formed-to · ever-divine-shining-to · self-unending-power-to",
+      "literal": "Homage to the one whose form is beyond the world; to the world-formed, to the ever-divine-shining, to the self of unending power.",
+      "readable": "Homage to the world-formed, past the world — to ever-shining divinity, to self of unending power."
+    },
+    "trika": {
+      "abhinavagupta": "Mahopadeśa opens addressing the one beyond prapañca yet world-formed — homage without a separate devotee object.",
+      "mapping": [
+        {
+          "role": "namaste (dat. te)",
+          "trika": "homage whose target is not second"
+        },
+        {
+          "role": "viśvamūrti",
+          "trika": "world as form of the one addressed"
+        },
+        {
+          "role": "ananta-śakti",
+          "trika": "unending power as self-description"
+        }
+      ],
+      "bridge": "Dative can mark addressee while Trika reads addressee as not-other than homage’s subject.",
+      "lakshmanjoo": "Not primary here.",
+      "our_synthesis": "Pedagogical framing only; L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Recite four datives, one per breath.",
+      "write": "Column namas / namaste / namo namaḥ; mark joints.",
+      "memorise": "Memorise dative -āya/-ye as “to …” first.",
+      "when": "Opening homage before study.",
+      "exercises": [
+        "Reverse namaste.",
+        "Why namo before namaḥ?",
+        "Point out one dat.f and one dat.m."
+      ]
+    },
+    "levels": {
+      "learn": "Usable salutation line.",
+      "decode": "Dative discovery; namas sandhi; first compound.",
+      "recognise": "Homage without a second — after the grammar."
+    },
+    "alternatives": "namas+te standard; stick to layer citation.",
+    "brief": "Four datives and one indeclinable: “homage to you.”",
+    "logic": "Learn “to …” on real salutations before charts.",
+    "how": "Pair with v.2 namo namaḥ.",
+    "howto": "Cover IAST; guess; check.",
+    "sign": "Learner tags every -āya/-ye as dative without being told twice.",
+    "rule_boxes": []
+  },
+  {
+    "id": "l03-hrdi-vande",
+    "section": "stage-2-language",
+    "title": "hṛdi vande — In the heart I bow",
+    "source": "Abhinavagupta, Bhairavastava v.1; translation-work bhairavastava",
+    "source_ref": "Bhairavastava bh-p01",
+    "iast": "… bhairavanātham anāthaśaraṇyaṃ tvanmayacittatayā hṛdi vande",
+    "en": "Bhairava, Lord, refuge of the helpless — with a mind become Yours, in my heart, I bow.",
+    "source_path": "sources/l03-hrdi-vande.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Bhairavastava",
+      "verse": "1",
+      "edition": "translation-work/bhairavastava (gold)",
+      "variants": "Extract closes the verse; opening is an acc. object chain."
+    },
+    "recitation": {
+      "syllables": "tvad-ma-ya-cit-ta-ta-yā | hṛ-di | van-de",
+      "vowel_lengths": "ṛ vocalic in hṛdi; e in vande",
+      "articulation": "vande = 1sg middle -e; hṛdi locative -i",
+      "metre": "Bhairavastava opening cadence",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "hṛdi",
+        "underlying": "hṛd + loc.n",
+        "gloss": "in-heart",
+        "rule": "locative -i “in the heart”",
+        "morph": "loc.sg.n (hṛd)",
+        "citation": "hṛdi"
+      },
+      {
+        "surface": "vande",
+        "underlying": "√vand + 1sg.pres.mid",
+        "gloss": "I-venerate",
+        "rule": "middle -e",
+        "morph": "1sg.pres.mid (vande)",
+        "citation": "vande"
+      },
+      {
+        "surface": "tvanmayacittatayā",
+        "underlying": "tvad + maya + cittatā + instr.f",
+        "gloss": "by-mind-become-Yours",
+        "rule": "instr. -ayā",
+        "morph": "instr.sg.f (tvanmayacittatā)",
+        "citation": "tvanmayacittatayā"
+      },
+      {
+        "surface": "bhairavanātham",
+        "underlying": "bhairava + nātha + acc.m",
+        "gloss": "Bhairava-Lord",
+        "rule": "object of vande",
+        "morph": "acc.sg.m (bhairavanātha)",
+        "citation": "bhairavanātham"
+      },
+      {
+        "surface": "anāthaśaraṇyaṃ",
+        "underlying": "anātha + śaraṇya + acc.m",
+        "gloss": "of-helpless",
+        "rule": "refuge of the helpless",
+        "morph": "acc.sg.m (anāthaśaraṇya)",
+        "citation": "anāthaśaraṇyaṃ"
+      },
+      {
+        "surface": "vyāptacarācarabhāvaviśeṣam",
+        "underlying": "vyāptacarācarabhāvaviśeṣam",
+        "gloss": "pervading-the-particular-states-of-moving-and-unmoving",
+        "rule": "—",
+        "morph": "acc.sg.m comp (vyāpta+carācara+bhāva+viśeṣa)",
+        "citation": "vyāptacarācarabhāvaviśeṣam"
+      },
+      {
+        "surface": "cinmayam",
+        "underlying": "cinmayam",
+        "gloss": "consisting-of-consciousness",
+        "rule": "—",
+        "morph": "acc.sg.m adj (cinmaya)",
+        "citation": "cinmayam"
+      },
+      {
+        "surface": "ekam",
+        "underlying": "ekam",
+        "gloss": "one",
+        "rule": "—",
+        "morph": "acc.sg.m (eka)",
+        "citation": "ekam"
+      },
+      {
+        "surface": "anantam",
+        "underlying": "anantam",
+        "gloss": "endless",
+        "rule": "—",
+        "morph": "acc.sg.m (ananta)",
+        "citation": "anantam"
+      },
+      {
+        "surface": "anādim",
+        "underlying": "anādim",
+        "gloss": "beginningless",
+        "rule": "—",
+        "morph": "acc.sg.m (anādi)",
+        "citation": "anādim"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "cinmayam",
+        "lemma": "cinmayam",
+        "analysis": "acc.sg.m adj (cinmaya)",
+        "formation": "consisting-of-consciousness"
+      },
+      {
+        "surface": "ekam",
+        "lemma": "ekam",
+        "analysis": "acc.sg.m (eka)",
+        "formation": "one"
+      },
+      {
+        "surface": "bhairavanātham",
+        "lemma": "bhairavanātham",
+        "analysis": "acc.sg.m (bhairavanātha)",
+        "formation": "Bhairava-Lord"
+      },
+      {
+        "surface": "anāthaśaraṇyaṃ",
+        "lemma": "anāthaśaraṇyaṃ",
+        "analysis": "acc.sg.m (anāthaśaraṇya)",
+        "formation": "of-helpless"
+      },
+      {
+        "surface": "tvanmayacittatayā",
+        "lemma": "tvanmayacittatayā",
+        "analysis": "instr.sg.f (tvanmayacittatā)",
+        "formation": "by-mind-become-Yours"
+      },
+      {
+        "surface": "hṛdi",
+        "lemma": "hṛdi",
+        "analysis": "loc.sg.n (hṛd)",
+        "formation": "in-heart"
+      },
+      {
+        "surface": "vande",
+        "lemma": "vande",
+        "analysis": "1sg.pres.mid (vande)",
+        "formation": "I-venerate"
+      }
+    ],
+    "compounds": {
+      "tree": "bhairava + nātha; anātha + śaraṇya; tvad + maya + cittatā",
+      "members": [
+        {
+          "compound": "bhairavanātha",
+          "members": [
+            "bhairava",
+            "nātha"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "Lord who is Bhairava"
+        },
+        {
+          "compound": "anāthaśaraṇya",
+          "members": [
+            "anātha",
+            "śaraṇya"
+          ],
+          "relation": "bahuvrīhi-ish",
+          "reading": "refuge for the helpless"
+        }
+      ],
+      "note": "Locative hṛdi is the spine."
+    },
+    "sandhi": [
+      {
+        "inputs": "tvad + maya + cittatā",
+        "rule": "cluster adjustments",
+        "output": "tvanmayacittatayā",
+        "reversible": true
+      },
+      {
+        "inputs": "hṛd + -i",
+        "rule": "locative -i",
+        "output": "hṛdi",
+        "reversible": true
+      },
+      {
+        "inputs": "√vand + -e",
+        "rule": "1sg present middle",
+        "output": "vande",
+        "reversible": true
+      },
+      {
+        "exercise": "Reverse hṛdi → stem + case (“where?”)."
+      }
+    ],
+    "syntax": {
+      "case_roles": "hṛdi loc place; vande acc object chain; tvanmayacittatayā instr means",
+      "agreement": "acc.m -am; instr.f -ayā",
+      "finite_verbs": "vande — 1sg present middle",
+      "implied": "subject “I” in the ending"
+    },
+    "translation": {
+      "interlinear": "by-mind-become-Yours(INSTR) · in-heart(LOC) · I-venerate",
+      "literal": "With mind become Yours, in the heart, I venerate [Bhairava-Lord, refuge of the helpless].",
+      "readable": "Bhairava, Lord, refuge of the helpless — with a mind become Yours, in my heart, I bow."
+    },
+    "trika": {
+      "abhinavagupta": "Interior veneration: instrument is a mind already “become Yours,” not a separate ego.",
+      "mapping": [
+        {
+          "role": "hṛdi (loc)",
+          "trika": "heart as locus of practice"
+        },
+        {
+          "role": "tvanmayacittatā (instr)",
+          "trika": "mind made of You — non-dual instrument"
+        },
+        {
+          "role": "vande (1sg mid)",
+          "trika": "bowing as self-involved act"
+        }
+      ],
+      "bridge": "Locative says where; Trika reads heart as site where recognition already operates.",
+      "lakshmanjoo": "Not primary here.",
+      "our_synthesis": "Pedagogical framing only."
+    },
+    "practice": {
+      "recite": "Hand on heart once.",
+      "write": "hṛdi under “where?”; vande under “what verb?”",
+      "memorise": "Memorise 1sg middle -e from vande.",
+      "when": "Morning or before study.",
+      "exercises": [
+        "Reverse hṛdi.",
+        "Object of vande and its case?",
+        "Name the instrumental."
+      ]
+    },
+    "levels": {
+      "learn": "Short bow prayer.",
+      "decode": "Locative + 1sg middle + instrumental means.",
+      "recognise": "Mind-become-Yours after cases proven."
+    },
+    "alternatives": "Locative hṛdi unambiguous in L0.",
+    "brief": "Locative place + one finite middle verb.",
+    "logic": "Where? and I do — two-word core first.",
+    "how": "Full verse when acc. chains are ready.",
+    "howto": "Discover -i as locative; test on guhāsu later.",
+    "sign": "Learner tags loc vs instr without a chart.",
+    "rule_boxes": [
+      {
+        "id": "rb-3-loc-instr",
+        "lesson": "l03-hrdi-vande",
+        "title": "Rule box 3 — where vs by-what",
+        "body": "Locative answers “where?” (hṛdi). Instrumental answers “by/with what?” (cittatayā).",
+        "foundational": true
+      }
+    ]
+  },
+  {
+    "id": "l04-nryti",
+    "section": "stage-2-language",
+    "title": "nṛtyati gāyati hṛṣyati — dances, sings, rejoices",
+    "source": "Abhinavagupta, Bhairavastava v.9; translation-work bhairavastava",
+    "source_ref": "Bhairavastava bh-p09",
+    "iast": "nṛtyati gāyati hṛṣyati gāḍham saṃvit iyam mama …",
+    "en": "This consciousness of mine dances, sings, rejoices deeply — O Bhairava, Lord.",
+    "source_path": "sources/l04-nryti.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Bhairavastava",
+      "verse": "9",
+      "edition": "translation-work/bhairavastava (gold)",
+      "variants": "Subject saṃvit iyam follows the three verbs in the full verse."
+    },
+    "recitation": {
+      "syllables": "ṇṛ-ya-ti | gā-ya-ti | hṛ-ṣya-ti | gā-ḍham | saṃ-vit | i-yam",
+      "vowel_lengths": "ā in gāyati, gāḍham; ṛ in nṛtyati",
+      "articulation": "retroflex ṇ; ṣ in hṛṣyati; ḍh in gāḍham",
+      "metre": "tricolon then subject",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "nṛtyati",
+        "underlying": "√nṛt + 3sg.pres",
+        "gloss": "dances",
+        "rule": "thematic -ati",
+        "morph": "3sg.pres (nṛtyati)",
+        "citation": "nṛtyati"
+      },
+      {
+        "surface": "gāyati",
+        "underlying": "√gā + 3sg.pres",
+        "gloss": "sings",
+        "rule": "thematic -ati",
+        "morph": "3sg.pres (gāyati)",
+        "citation": "gāyati"
+      },
+      {
+        "surface": "hṛṣyati",
+        "underlying": "√hṛṣ + 3sg.pres",
+        "gloss": "rejoices",
+        "rule": "thematic -ati",
+        "morph": "3sg.pres (hṛṣyati)",
+        "citation": "hṛṣyati"
+      },
+      {
+        "surface": "gāḍham",
+        "underlying": "gāḍha + adv",
+        "gloss": "deeply",
+        "rule": "“deeply”",
+        "morph": "adv (gāḍham)",
+        "citation": "gāḍham"
+      },
+      {
+        "surface": "saṃvit",
+        "underlying": "saṃvit + nom.sg",
+        "gloss": "consciousness",
+        "rule": "“consciousness”",
+        "morph": "nom.sg (saṃvit)",
+        "citation": "saṃvit"
+      },
+      {
+        "surface": "iyam",
+        "underlying": "idam + f.nom.sg",
+        "gloss": "this",
+        "rule": "“this”",
+        "morph": "indecl (iyam)",
+        "citation": "iyam"
+      },
+      {
+        "surface": "mama",
+        "underlying": "mad + gen.sg",
+        "gloss": "my",
+        "rule": "“of mine”",
+        "morph": "gen.sg (mama)",
+        "citation": "mama"
+      },
+      {
+        "surface": "bhairavanātha",
+        "underlying": "bhairavanātha",
+        "gloss": "O-Bhairava-Lord",
+        "rule": "—",
+        "morph": "voc (bhairavanātha)",
+        "citation": "bhairavanātha"
+      },
+      {
+        "surface": "tvāṃ",
+        "underlying": "tvāṃ",
+        "gloss": "You",
+        "rule": "—",
+        "morph": "acc.sg (tvāṃ)",
+        "citation": "tvāṃ"
+      },
+      {
+        "surface": "priyam",
+        "underlying": "priyam",
+        "gloss": "dear",
+        "rule": "—",
+        "morph": "adj (priyam)",
+        "citation": "priyam"
+      },
+      {
+        "surface": "āpya",
+        "underlying": "āpya",
+        "gloss": "having-obtained",
+        "rule": "—",
+        "morph": "part (āpya)",
+        "citation": "āpya"
+      },
+      {
+        "surface": "sudarśanamekam",
+        "underlying": "sudarśanamekam",
+        "gloss": "beautiful-vision-alone",
+        "rule": "—",
+        "morph": "comp (sudarśanamekam)",
+        "citation": "sudarśanamekam"
+      },
+      {
+        "surface": "durlabhamanyajanaiḥ",
+        "underlying": "durlabhamanyajanaiḥ",
+        "gloss": "hard-to-get-by-others",
+        "rule": "—",
+        "morph": "adj (durlabhamanyajanaiḥ)",
+        "citation": "durlabhamanyajanaiḥ"
+      },
+      {
+        "surface": "samayajñam",
+        "underlying": "samayajñam",
+        "gloss": "samaya-knower",
+        "rule": "—",
+        "morph": "comp (samayajña)",
+        "citation": "samayajñam"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "nṛtyati",
+        "lemma": "nṛtyati",
+        "analysis": "3sg.pres (nṛtyati)",
+        "formation": "dances"
+      },
+      {
+        "surface": "gāyati",
+        "lemma": "gāyati",
+        "analysis": "3sg.pres (gāyati)",
+        "formation": "sings"
+      },
+      {
+        "surface": "hṛṣyati",
+        "lemma": "hṛṣyati",
+        "analysis": "3sg.pres (hṛṣyati)",
+        "formation": "rejoices"
+      },
+      {
+        "surface": "saṃvit",
+        "lemma": "saṃvit",
+        "analysis": "nom.sg (saṃvit)",
+        "formation": "consciousness"
+      },
+      {
+        "surface": "iyam",
+        "lemma": "iyam",
+        "analysis": "indecl (iyam)",
+        "formation": "this"
+      },
+      {
+        "surface": "mama",
+        "lemma": "mama",
+        "analysis": "gen.sg (mama)",
+        "formation": "my"
+      },
+      {
+        "surface": "bhairavanātha",
+        "lemma": "bhairavanātha",
+        "analysis": "voc (bhairavanātha)",
+        "formation": "O-Bhairava-Lord"
+      },
+      {
+        "surface": "tvāṃ",
+        "lemma": "tvāṃ",
+        "analysis": "acc.sg (tvāṃ)",
+        "formation": "You"
+      }
+    ],
+    "compounds": {
+      "tree": "three present verbs; sudarśana+eka; durlabha+anya-janaiḥ",
+      "members": [
+        {
+          "compound": "sudarśanamekam",
+          "members": [
+            "sudarśana",
+            "eka"
+          ],
+          "relation": "karmadhāraya",
+          "reading": "a single beautiful vision"
+        },
+        {
+          "compound": "durlabhamanyajanaiḥ",
+          "members": [
+            "durlabha",
+            "anya-janaiḥ"
+          ],
+          "relation": "bahuvrīhi-ish",
+          "reading": "hard for others"
+        }
+      ],
+      "note": "Lead is the -ti tricolon."
+    },
+    "sandhi": [
+      {
+        "inputs": "√nṛt + -ati",
+        "rule": "present thematic ending",
+        "output": "nṛtyati",
+        "reversible": true
+      },
+      {
+        "inputs": "√gā + -ati",
+        "rule": "same -ati",
+        "output": "gāyati",
+        "reversible": true
+      },
+      {
+        "inputs": "√hṛṣ + -ati",
+        "rule": "same -ati",
+        "output": "hṛṣyati",
+        "reversible": true
+      },
+      {
+        "exercise": "Underline every -ti; say what all three share before the key."
+      }
+    ],
+    "syntax": {
+      "case_roles": "three verbs same person/number; saṃvit nom subject; iyam nom f; mama gen",
+      "agreement": "saṃvit f.nom.sg with iyam",
+      "finite_verbs": "nṛtyati, gāyati, hṛṣyati — 3sg present active",
+      "implied": "asyndeton between verbs"
+    },
+    "translation": {
+      "interlinear": "dances · sings · rejoices · deeply · consciousness · this · mine",
+      "literal": "Dances, sings, rejoices deeply — this consciousness of mine.",
+      "readable": "This consciousness of mine dances, sings, rejoices deeply — O Bhairava, Lord: having won You, my dear…"
+    },
+    "trika": {
+      "abhinavagupta": "saṃvit is the grammatical subject of dance/song/joy — not the ego alone.",
+      "mapping": [
+        {
+          "role": "saṃvit (nom)",
+          "trika": "consciousness as the one who dances"
+        },
+        {
+          "role": "nṛtyati/gāyati/hṛṣyati",
+          "trika": "manifestation as play"
+        },
+        {
+          "role": "gāḍham",
+          "trika": "depth of relish (rasa-adjacent)"
+        }
+      ],
+      "bridge": "Three -ti endings first; subject consciousness second; philosophy follows grammar.",
+      "lakshmanjoo": "Not primary here.",
+      "our_synthesis": "Pedagogical framing; L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Clap once per -ti.",
+      "write": "Three verbs in a column; circle -ti.",
+      "memorise": "Rule box: 3sg present often -ti (foundational).",
+      "when": "Any time you need energy.",
+      "exercises": [
+        "What do the three share?",
+        "Who/what is the subject?",
+        "Label an exercise 1sg middle swap."
+      ]
+    },
+    "levels": {
+      "learn": "Consciousness dancing — memorisable.",
+      "decode": "Discover -ti; subject; genitive; acc later.",
+      "recognise": "Consciousness as subject — exact by the nominative."
+    },
+    "alternatives": "iyam as f.nom with saṃvit; layer “indecl.” flag is artifact.",
+    "brief": "Three verbs, one ending, one philosophical subject.",
+    "logic": "Inductive: pattern first, paradigm second.",
+    "how": "Full verse for samaya-knower later.",
+    "howto": "Hide English; ask “what is dancing?” after -ti.",
+    "sign": "Learner predicts -ti on unseen present 3sg.",
+    "rule_boxes": [
+      {
+        "id": "rb-4-present-ti",
+        "lesson": "l04-nryti",
+        "title": "Rule box 4 — 3sg present often ends -ti",
+        "body": "nṛtyati · gāyati · hṛṣyati — same ending, three roots. Discover before the paradigm.",
+        "foundational": true
+      }
+    ]
+  },
+  {
+    "id": "l05-ma-kiṃcit",
+    "section": "stage-3-instructions",
+    "title": "mā kiṃcit tyaja — Abandon nothing",
+    "source": "Abhinavagupta, Anuttarāṣṭikā v.2 (imperative extract); translation-work anuttarastika",
+    "source_ref": "Anuttarāṣṭikā anu-p02",
+    "iast": "mā kiṃcit tyaja mā gṛhāṇa vihara svastho yathāvasthitaḥ",
+    "en": "Abandon nothing; grasp nothing; live at ease, just as you are.",
+    "source_path": "sources/l05-ma-kiṃcit.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Anuttarāṣṭikā",
+      "verse": "2",
+      "edition": "translation-work/anuttarastika (gold; AgAna_2)",
+      "variants": "Extract from rope-snake verse closing. Full verse: mithyāmohakṛt …"
+    },
+    "recitation": {
+      "syllables": "mā | kiṃ-ci-tya-ja | mā | gṛ-hā-ṇa | vi-ha-ra | sva-sthaḥ | yathā-va-sthi-taḥ",
+      "vowel_lengths": "ā in mā; short u in gṛhāṇa",
+      "articulation": "ñ in kiṃcit; ṇ in gṛhāṇa; ṣṭh in yathāvasthitaḥ",
+      "metre": "instructional cadence",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "mā",
+        "underlying": "mā + imperative",
+        "gloss": "Do-not",
+        "rule": "prohibitive + 2sg imperative",
+        "morph": "indecl (kiṃcit)",
+        "citation": "mā"
+      },
+      {
+        "surface": "kiṃcit",
+        "underlying": "kim + cit",
+        "gloss": "anything",
+        "rule": "indefinite “anything”",
+        "morph": "2sg.imper (tyaja)",
+        "citation": "kiṃcit"
+      },
+      {
+        "surface": "tyaja",
+        "underlying": "√tyaj + 2sg.imp",
+        "gloss": "abandon",
+        "rule": "“abandon!”",
+        "morph": "neg (mā)",
+        "citation": "tyaja"
+      },
+      {
+        "surface": "gṛhāṇa",
+        "underlying": "√grah + 2sg.imp",
+        "gloss": "grasp",
+        "rule": "middle imperative",
+        "morph": "2sg.imper (vihara)",
+        "citation": "gṛhāṇa"
+      },
+      {
+        "surface": "vihara",
+        "underlying": "√hṛ + vi + 2sg.imp",
+        "gloss": "live",
+        "rule": "preverb vi-",
+        "morph": "adj (svastha)",
+        "citation": "vihara"
+      },
+      {
+        "surface": "svasthaḥ",
+        "underlying": "su + stha + nom.m",
+        "gloss": "healthy",
+        "rule": "“at ease”",
+        "morph": "nom.sg (yathāvasthita)",
+        "citation": "svasthaḥ"
+      },
+      {
+        "surface": "yathāvasthitaḥ",
+        "underlying": "yathā + avasthita + nom.m",
+        "gloss": "as-staying",
+        "rule": "“as situated”",
+        "morph": "nom.sg (yathāvasthita)",
+        "citation": "yathāvasthitaḥ"
+      },
+      {
+        "surface": "saṃsāraḥ",
+        "underlying": "saṃsāraḥ",
+        "gloss": "Saṃsāra",
+        "rule": "—",
+        "morph": "nom.sg (saṃsāra)",
+        "citation": "saṃsāraḥ"
+      },
+      {
+        "surface": "asti na",
+        "underlying": "asti na",
+        "gloss": "not",
+        "rule": "—",
+        "morph": "neg+3sg.pres (asti na)",
+        "citation": "asti na"
+      },
+      {
+        "surface": "tattvatas",
+        "underlying": "tattvatas",
+        "gloss": "in-truth",
+        "rule": "—",
+        "morph": "adv (tattvatas)",
+        "citation": "tattvatas"
+      },
+      {
+        "surface": "tanubhṛtām",
+        "underlying": "tanubhṛtām",
+        "gloss": "of-embodied-beings",
+        "rule": "—",
+        "morph": "m.gen.pl (tanubhṛt)",
+        "citation": "tanubhṛtām"
+      },
+      {
+        "surface": "bandhasya",
+        "underlying": "bandhasya",
+        "gloss": "of-bondage",
+        "rule": "—",
+        "morph": "gen.sg (bandha)",
+        "citation": "bandhasya"
+      },
+      {
+        "surface": "vārtā",
+        "underlying": "vārtā",
+        "gloss": "news",
+        "rule": "—",
+        "morph": "nom.sg (vārtā)",
+        "citation": "vārtā"
+      },
+      {
+        "surface": "eva kā",
+        "underlying": "eva kā",
+        "gloss": "what",
+        "rule": "—",
+        "morph": "interrog (eva kā)",
+        "citation": "eva kā"
+      },
+      {
+        "surface": "bandhaḥ",
+        "underlying": "bandhaḥ",
+        "gloss": "Bondage",
+        "rule": "—",
+        "morph": "nom.sg (bandha)",
+        "citation": "bandhaḥ"
+      },
+      {
+        "surface": "yasya",
+        "underlying": "yasya",
+        "gloss": "of-whom",
+        "rule": "—",
+        "morph": "gen.sg (yasya)",
+        "citation": "yasya"
+      },
+      {
+        "surface": "na jātu",
+        "underlying": "na jātu",
+        "gloss": "never",
+        "rule": "—",
+        "morph": "neg (na jātu)",
+        "citation": "na jātu"
+      },
+      {
+        "surface": "tasya",
+        "underlying": "tasya",
+        "gloss": "of-him",
+        "rule": "—",
+        "morph": "gen.sg (tasya)",
+        "citation": "tasya"
+      },
+      {
+        "surface": "vitathā",
+        "underlying": "vitathā",
+        "gloss": "false",
+        "rule": "—",
+        "morph": "adj (vitathā)",
+        "citation": "vitathā"
+      },
+      {
+        "surface": "muktasya muktikriyā",
+        "underlying": "muktasya muktikriyā",
+        "gloss": "liberation-action",
+        "rule": "—",
+        "morph": "comp (muktasya muktikriyā)",
+        "citation": "muktasya muktikriyā"
+      },
+      {
+        "surface": "eṣaḥ",
+        "underlying": "eṣaḥ",
+        "gloss": "This",
+        "rule": "—",
+        "morph": "indecl (eṣaḥ)",
+        "citation": "eṣaḥ"
+      },
+      {
+        "surface": "mithyāmohakṛt",
+        "underlying": "mithyāmohakṛt",
+        "gloss": "error-making",
+        "rule": "—",
+        "morph": "neg (mā)",
+        "citation": "mithyāmohakṛt"
+      },
+      {
+        "surface": "rajjubhujagacchāyāpiśācabhramaḥ",
+        "underlying": "rajjubhujagacchāyāpiśācabhramaḥ",
+        "gloss": "rope-snake-shadow-ghost-delusion",
+        "rule": "—",
+        "morph": "m.nom.sg (long comp.)",
+        "citation": "rajjubhujagacchāyāpiśācabhramaḥ"
+      },
+      {
+        "surface": "mā",
+        "underlying": "mā",
+        "gloss": "do-not",
+        "rule": "—",
+        "morph": "2sg.imper (gṛhāṇa)",
+        "citation": "mā"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "mithyāmohakṛt",
+        "lemma": "mithyāmohakṛt",
+        "analysis": "neg (mā)",
+        "formation": "error-making"
+      },
+      {
+        "surface": "mā",
+        "lemma": "mā",
+        "analysis": "indecl (kiṃcit)",
+        "formation": "Do-not"
+      },
+      {
+        "surface": "kiṃcit",
+        "lemma": "kiṃcit",
+        "analysis": "2sg.imper (tyaja)",
+        "formation": "anything"
+      },
+      {
+        "surface": "tyaja",
+        "lemma": "tyaja",
+        "analysis": "neg (mā)",
+        "formation": "abandon"
+      },
+      {
+        "surface": "mā",
+        "lemma": "mā",
+        "analysis": "2sg.imper (gṛhāṇa)",
+        "formation": "do-not"
+      },
+      {
+        "surface": "gṛhāṇa",
+        "lemma": "gṛhāṇa",
+        "analysis": "2sg.imper (vihara)",
+        "formation": "grasp"
+      },
+      {
+        "surface": "vihara",
+        "lemma": "vihara",
+        "analysis": "adj (svastha)",
+        "formation": "live"
+      },
+      {
+        "surface": "svasthaḥ",
+        "lemma": "svasthaḥ",
+        "analysis": "nom.sg (yathāvasthita)",
+        "formation": "healthy"
+      },
+      {
+        "surface": "yathāvasthitaḥ",
+        "lemma": "yathāvasthitaḥ",
+        "analysis": "nom.sg (yathāvasthita)",
+        "formation": "as-staying"
+      }
+    ],
+    "compounds": {
+      "tree": "mithyāmohakṛt; yathā + avasthita; su + stha",
+      "members": [
+        {
+          "compound": "mithyāmohakṛt",
+          "members": [
+            "mithyā",
+            "moha",
+            "kṛt"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "error-maker"
+        },
+        {
+          "compound": "yathāvasthita",
+          "members": [
+            "yathā",
+            "avasthita"
+          ],
+          "relation": "avyayībhāva-ish",
+          "reading": "as you already stand"
+        }
+      ],
+      "note": "mā + imperative is the core."
+    },
+    "sandhi": [
+      {
+        "inputs": "mā + tyaja",
+        "rule": "particle + imperative distinct",
+        "output": "mā kiṃcit tyaja",
+        "reversible": true
+      },
+      {
+        "inputs": "kim + cit",
+        "rule": "final m before c → anusvāra",
+        "output": "kiṃcit",
+        "reversible": true
+      },
+      {
+        "inputs": "su + stha + ḥ",
+        "rule": "nom.m -aḥ",
+        "output": "svasthaḥ",
+        "reversible": true
+      },
+      {
+        "exercise": "Why mā tyaja and not na tyaja?"
+      }
+    ],
+    "syntax": {
+      "case_roles": "2sg imperatives; kiṃcit acc object; svasthaḥ/yathāvasthitaḥ nom describing you",
+      "agreement": "m.nom -aḥ",
+      "finite_verbs": "tyaja, gṛhāṇa, vihara — 2sg imperatives",
+      "implied": "subject “you” in endings"
+    },
+    "translation": {
+      "interlinear": "do-not · anything · abandon · do-not · grasp · live · healthy · as-standing",
+      "literal": "Do not abandon anything; do not grasp anything; live at ease, as you stand.",
+      "readable": "Abandon nothing; grasp nothing; live healthy, staying as you are."
+    },
+    "trika": {
+      "abhinavagupta": "After rope-snake diagnosis: if bondage is not real tattvatas, neither grasping nor rejecting is the fix.",
+      "mapping": [
+        {
+          "role": "mā + 2sg imp",
+          "trika": "non-grasping as imperative"
+        },
+        {
+          "role": "yathāvasthita",
+          "trika": "what is already the case"
+        },
+        {
+          "role": "mithyāmohakṛt",
+          "trika": "saṃsāra as error-maker"
+        }
+      ],
+      "bridge": "mā+imp is grammar; “live as you are” is the verse’s own practice.",
+      "lakshmanjoo": "Not primary here.",
+      "our_synthesis": "Pedagogical framing; L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Two mā-prohibitions as a pair, then vihara.",
+      "write": "na vs mā column; label any invented example “exercise”.",
+      "memorise": "Hear 2sg imperative patterns in tyaja/gṛhāṇa/vihara.",
+      "when": "When grasping spikes.",
+      "exercises": [
+        "Reverse gṛhāṇa.",
+        "When mā vs na?",
+        "Translate yathāvasthitaḥ from parts."
+      ]
+    },
+    "levels": {
+      "learn": "Three usable imperatives.",
+      "decode": "mā vs na; 2sg imperatives; kiṃcit.",
+      "recognise": "Non-grasping as the verse’s instruction."
+    },
+    "alternatives": "L0 morph on long compound noisy — teach imperative core first.",
+    "brief": "Prohibitions and a command to abide.",
+    "logic": "Commands are learnable speech acts.",
+    "how": "Full Anuttarāṣṭikā 2 when genitives ready.",
+    "howto": "English commands first, then Sanskrit.",
+    "sign": "Learner chooses mā over na in a new drill.",
+    "rule_boxes": [
+      {
+        "id": "rb-5-ma-imperative",
+        "lesson": "l05-ma-kiṃcit",
+        "title": "Rule box 5 — mā + imperative = don’t",
+        "body": "Prohibitive mā with imperatives: mā tyaja, mā gṛhāṇa. na negates statements.",
+        "foundational": true
+      }
+    ]
+  },
+  {
+    "id": "l06-śambhu-śaraṇa",
+    "section": "stage-3-instructions",
+    "title": "tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge",
+    "source": "Abhinavagupta, Paramārthasāra v.1 (opening); translation-work paramarthasara",
+    "source_ref": "Paramārthasāra param-p01-v01",
+    "iast": "paraṃ parasthaṃ gahanād anādim | sarvālayaṃ sarvacarācarasthaṃ tvām eva śambhuṃ śaraṇaṃ prapadye ||",
+    "en": "Supreme, abiding beyond, depthless, beginningless, one — lodged in many caves, home of all: Śambhu, to You I come for refuge.",
+    "source_path": "sources/l06-śambhu-śaraṇa.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Paramārthasāra",
+      "verse": "1 (param-p01-v01)",
+      "edition": "translation-work/paramarthasara (gold)",
+      "variants": "Refuge is second half; epithet chain first. v.3 names Abhinavagupta. passages header range note kept."
+    },
+    "recitation": {
+      "syllables": "tvām | e-va | śam-bhum | śa-ra-ṇam | pra-pa-dye",
+      "vowel_lengths": "ā in tvām, śaraṇam",
+      "articulation": "ṃ in tvām; middle -e on prapadye",
+      "metre": "Paramārthasāra opening refuge",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "tvām",
+        "underlying": "tvad + acc.sg",
+        "gloss": "to-you",
+        "rule": "accusative “you”",
+        "morph": "acc.sg (tvam)",
+        "citation": "tvām"
+      },
+      {
+        "surface": "eva",
+        "underlying": "eva",
+        "gloss": "indeed",
+        "rule": "emphatic",
+        "morph": "indecl.",
+        "citation": "eva"
+      },
+      {
+        "surface": "śambhum",
+        "underlying": "śambhu + acc.m",
+        "gloss": "to-Śambhu",
+        "rule": "acc of refuge-object",
+        "morph": "m.acc.sg (śambhu)",
+        "citation": "śambhum"
+      },
+      {
+        "surface": "śaraṇam",
+        "underlying": "śaraṇa + acc.n",
+        "gloss": "to-refuge",
+        "rule": "acc “refuge”",
+        "morph": "n.acc.sg (śaraṇa)",
+        "citation": "śaraṇam"
+      },
+      {
+        "surface": "prapadye",
+        "underlying": "√pad + pra + 1sg.pres.mid",
+        "gloss": "I-resort",
+        "rule": "middle “I resort”",
+        "morph": "1sg.pres.mid √pad+pra",
+        "citation": "prapadye"
+      },
+      {
+        "surface": "guhāsu",
+        "underlying": "guhā + loc.pl.f",
+        "gloss": "in-caves",
+        "rule": "loc.pl “in caves”",
+        "morph": "f.loc.pl (guhā)",
+        "citation": "guhāsu"
+      },
+      {
+        "surface": "sarvālayam",
+        "underlying": "sarva + ālaya + acc.n",
+        "gloss": "all-abode",
+        "rule": "“abode of all”",
+        "morph": "n.acc.sg (comp.)",
+        "citation": "sarvālayam"
+      },
+      {
+        "surface": "param",
+        "underlying": "param",
+        "gloss": "supreme",
+        "rule": "—",
+        "morph": "n.nom.sg (para)",
+        "citation": "param"
+      },
+      {
+        "surface": "parastham",
+        "underlying": "parastham",
+        "gloss": "abiding-beyond",
+        "rule": "—",
+        "morph": "n.acc.sg (comp.)",
+        "citation": "parastham"
+      },
+      {
+        "surface": "gahanād",
+        "underlying": "gahanād",
+        "gloss": "from-depth",
+        "rule": "—",
+        "morph": "n.abl.sg (gahana)",
+        "citation": "gahanād"
+      },
+      {
+        "surface": "anādim",
+        "underlying": "anādim",
+        "gloss": "beginningless",
+        "rule": "—",
+        "morph": "n.acc.sg (comp.)",
+        "citation": "anādim"
+      },
+      {
+        "surface": "ekam",
+        "underlying": "ekam",
+        "gloss": "one",
+        "rule": "—",
+        "morph": "n.acc.sg (eka)",
+        "citation": "ekam"
+      },
+      {
+        "surface": "niviṣṭam",
+        "underlying": "niviṣṭam",
+        "gloss": "entered",
+        "rule": "—",
+        "morph": "n.acc.sg ppp √viś+ni",
+        "citation": "niviṣṭam"
+      },
+      {
+        "surface": "bahudhā",
+        "underlying": "bahudhā",
+        "gloss": "manifoldly",
+        "rule": "—",
+        "morph": "indecl.",
+        "citation": "bahudhā"
+      },
+      {
+        "surface": "sarvacarācarastham",
+        "underlying": "sarvacarācarastham",
+        "gloss": "all-moving-unmoving-abiding",
+        "rule": "—",
+        "morph": "n.acc.sg (long comp.)",
+        "citation": "sarvacarācarastham"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "param",
+        "lemma": "param",
+        "analysis": "n.nom.sg (para)",
+        "formation": "supreme"
+      },
+      {
+        "surface": "anādim",
+        "lemma": "anādim",
+        "analysis": "n.acc.sg (comp.)",
+        "formation": "beginningless"
+      },
+      {
+        "surface": "ekam",
+        "lemma": "ekam",
+        "analysis": "n.acc.sg (eka)",
+        "formation": "one"
+      },
+      {
+        "surface": "guhāsu",
+        "lemma": "guhāsu",
+        "analysis": "f.loc.pl (guhā)",
+        "formation": "in-caves"
+      },
+      {
+        "surface": "tvām",
+        "lemma": "tvām",
+        "analysis": "acc.sg (tvam)",
+        "formation": "to-you"
+      },
+      {
+        "surface": "eva",
+        "lemma": "eva",
+        "analysis": "indecl.",
+        "formation": "indeed"
+      },
+      {
+        "surface": "śambhum",
+        "lemma": "śambhum",
+        "analysis": "m.acc.sg (śambhu)",
+        "formation": "to-Śambhu"
+      },
+      {
+        "surface": "śaraṇam",
+        "lemma": "śaraṇam",
+        "analysis": "n.acc.sg (śaraṇa)",
+        "formation": "to-refuge"
+      },
+      {
+        "surface": "prapadye",
+        "lemma": "prapadye",
+        "analysis": "1sg.pres.mid √pad+pra",
+        "formation": "I-resort"
+      }
+    ],
+    "compounds": {
+      "tree": "sarva+ālaya; sarva+carācara+stha; param+parastha",
+      "members": [
+        {
+          "compound": "sarvacarācarastha",
+          "members": [
+            "sarva",
+            "carācara",
+            "stha"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "abiding in all moving and unmoving"
+        },
+        {
+          "compound": "sarvālaya",
+          "members": [
+            "sarva",
+            "ālaya"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "abode of all"
+        }
+      ],
+      "note": "Core: acc. chain + 1sg middle refuge verb."
+    },
+    "sandhi": [
+      {
+        "inputs": "tvad + -ām",
+        "rule": "pronominal acc. sg.",
+        "output": "tvām",
+        "reversible": true
+      },
+      {
+        "inputs": "pra + √pad + -e",
+        "rule": "preverb + root + 1sg middle",
+        "output": "prapadye",
+        "reversible": true
+      },
+      {
+        "inputs": "gahana + -āt",
+        "rule": "ablative -āt",
+        "output": "gahanād",
+        "reversible": true
+      },
+      {
+        "exercise": "Reverse prapadye → preverb, root, ending."
+      }
+    ],
+    "syntax": {
+      "case_roles": "epithet chain facing tvām; śaraṇam acc; prapadye 1sg mid; gahanād abl",
+      "agreement": "acc masc/n; śambhum masc acc",
+      "finite_verbs": "prapadye only",
+      "implied": "refuge frame “I take refuge in You alone”"
+    },
+    "translation": {
+      "interlinear": "supreme · beyond-abiding · from-depth · beginningless · one · all-abode · all-moving-unmoving-abiding · you-acc · indeed · Śambhu-acc · refuge-acc · I-resort",
+      "literal": "Supreme, abiding beyond, from the depth, beginningless, one, entered manifoldly in caves, abode of all, abiding in all moving and unmoving: You alone, Śambhu, refuge — I resort.",
+      "readable": "Supreme, abiding beyond, depthless, beginningless, one, lodged in many caves, home of all: Śambhu, to You I come for refuge."
+    },
+    "trika": {
+      "abhinavagupta": "First act is refuge in Śambhu after absolute epithets; v.3 names author-view.",
+      "mapping": [
+        {
+          "role": "śaraṇam (acc)",
+          "trika": "refuge as what is entered"
+        },
+        {
+          "role": "prapadye (1sg mid)",
+          "trika": "self-involved resorting"
+        },
+        {
+          "role": "epithet chain",
+          "trika": "qualities of the one in whom refuge is taken"
+        }
+      ],
+      "bridge": "Acc marks what is taken; non-dual claim comes later in the work, not into the case table.",
+      "lakshmanjoo": "Lakshmanjoo mealtime is a different text (Gītā 4.24).",
+      "our_synthesis": "Pedagogical framing; L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Refuge half alone, then two epithets.",
+      "write": "Mark every acc. in second pāda.",
+      "memorise": "1sg middle -e with prapadye as a set.",
+      "when": "Formal refuge line.",
+      "exercises": [
+        "Reverse prapadye.",
+        "Which words accusative? Why tvām?",
+        "Find ablative “from …”."
+      ]
+    },
+    "levels": {
+      "learn": "Complete refuge line.",
+      "decode": "Acc + mid1sg + abl -āt; epithet compounds.",
+      "recognise": "Refuge grammar before non-dual claims."
+    },
+    "alternatives": "passages header vs v01 locator noted — no silent renumbering.",
+    "brief": "Accusative objects of refuge; one middle verb.",
+    "logic": "Cases on a prayer you want to say.",
+    "how": "Later verses for gen/loc drills (guhāsu loc.pl here).",
+    "howto": "Guess case from endings first.",
+    "sign": "Learner finds acc and mid in an unseen half-line.",
+    "rule_boxes": []
+  },
+  {
+    "id": "l07-dual-fire",
+    "section": "stage-4-trika-grammar",
+    "title": "tādātmyam anayor … vahnidāhikayor iva — the dual",
+    "source": "Abhinavagupta, Bodhapañcadaśikā v.3; translation-work bodhapancadasika",
+    "source_ref": "Bodhapañcadaśikā bod-p03-v03",
+    "iast": "śaktiś ca śaktimadrūpād vyatirekaṃ na vāñchati | tādātmyam anayor nityaṃ vahnidāhikayor iva ||",
+    "en": "Power wants no parting from her bearer — never, ever; the two are eternally one — as fire is one with burning.",
+    "source_path": "sources/l07-dual-fire.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Bodhapañcadaśikā",
+      "verse": "3",
+      "edition": "translation-work/bodhapancadasika (gold)",
+      "variants": "Duals: anayor, vahnidāhikayor (gen/loc dual)."
+    },
+    "recitation": {
+      "syllables": "śak-tiś ca | śak-ti-mad-rū-pāt | vy-a-ti-re-kaṃ | na vāñ-cha-ti | tā-dāt-myam | a-na-yor | ni-tyaṃ | i-va | va-hni-dā-hi-ka-yor",
+      "vowel_lengths": "ā in tādātmyam, dāhi",
+      "articulation": "ñ in vāñchati; ṣ in śakti; ḍ in tādātmyam",
+      "metre": "aphoristic pair",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "śaktiś ca",
+        "underlying": "śaktiḥ + ca",
+        "gloss": "Power",
+        "rule": "visarga → ś before c",
+        "morph": "f.nom.sg + ca (śaktiḥ)",
+        "citation": "śaktiś"
+      },
+      {
+        "surface": "śaktimadrūpāt",
+        "underlying": "śaktimat + rūpa + abl.",
+        "gloss": "from-power-possessor-form",
+        "rule": "abl -āt",
+        "morph": "n.abl.sg (comp.)",
+        "citation": "śaktimadrūpāt"
+      },
+      {
+        "surface": "vyatirekam",
+        "underlying": "vyatireka + acc.m",
+        "gloss": "difference",
+        "rule": "difference/parting",
+        "morph": "m.acc.sg",
+        "citation": "vyatirekam"
+      },
+      {
+        "surface": "na vāñchati",
+        "underlying": "na + √vāñch + 3sg",
+        "gloss": "does-not-desire",
+        "rule": "neg + present",
+        "morph": "na + 3sg.pres.act √vāñch joints",
+        "citation": "na"
+      },
+      {
+        "surface": "tādātmyam",
+        "underlying": "tādātmya + nom.n",
+        "gloss": "identity",
+        "rule": "abstract identity",
+        "morph": "n.nom.sg",
+        "citation": "tādātmyam"
+      },
+      {
+        "surface": "anayor",
+        "underlying": "dual gen/loc",
+        "gloss": "of-these-two",
+        "rule": "-yor “of these two”",
+        "morph": "m./n.gen./loc.du (idas)",
+        "citation": "na"
+      },
+      {
+        "surface": "vahnidāhikayor",
+        "underlying": "vahni + dāhika + dual",
+        "gloss": "fire-burning",
+        "rule": "compound dual -yor",
+        "morph": "m./n.gen./loc.du (comp.)",
+        "citation": "vahnidāhikayor"
+      },
+      {
+        "surface": "iva",
+        "underlying": "iva",
+        "gloss": "as",
+        "rule": "comparative “as”",
+        "morph": "indecl.",
+        "citation": "iva"
+      },
+      {
+        "surface": "nityaṃ",
+        "underlying": "nityaṃ",
+        "gloss": "eternal",
+        "rule": "—",
+        "morph": "adv. (nitya)",
+        "citation": "nityaṃ"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "śaktiś ca",
+        "lemma": "śaktiś",
+        "analysis": "f.nom.sg + ca (śaktiḥ)",
+        "formation": "Power"
+      },
+      {
+        "surface": "śaktimadrūpāt",
+        "lemma": "śaktimadrūpāt",
+        "analysis": "n.abl.sg (comp.)",
+        "formation": "from-power-possessor-form"
+      },
+      {
+        "surface": "vyatirekam",
+        "lemma": "vyatirekam",
+        "analysis": "m.acc.sg",
+        "formation": "difference"
+      },
+      {
+        "surface": "na vāñchati",
+        "lemma": "na",
+        "analysis": "na + 3sg.pres.act √vāñch joints",
+        "formation": "does-not-desire"
+      },
+      {
+        "surface": "tādātmyam",
+        "lemma": "tādātmyam",
+        "analysis": "n.nom.sg",
+        "formation": "identity"
+      },
+      {
+        "surface": "anayor",
+        "lemma": "na",
+        "analysis": "m./n.gen./loc.du (idas)",
+        "formation": "of-these-two"
+      },
+      {
+        "surface": "nityaṃ",
+        "lemma": "nityaṃ",
+        "analysis": "adv. (nitya)",
+        "formation": "eternal"
+      },
+      {
+        "surface": "iva",
+        "lemma": "iva",
+        "analysis": "indecl.",
+        "formation": "as"
+      },
+      {
+        "surface": "vahnidāhikayor",
+        "lemma": "vahnidāhikayor",
+        "analysis": "m./n.gen./loc.du (comp.)",
+        "formation": "fire-burning"
+      }
+    ],
+    "compounds": {
+      "tree": "śaktimat+rūpa; vahni+dāhika dual",
+      "members": [
+        {
+          "compound": "vahnidāhika",
+          "members": [
+            "vahni",
+            "dāhika"
+          ],
+          "relation": "pair fire–burning for dual",
+          "reading": "fire and its burning"
+        },
+        {
+          "compound": "śaktimadrūpa",
+          "members": [
+            "śaktimat",
+            "rūpa"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "form of the power-holder"
+        }
+      ],
+      "note": "Both -yor forms are the lesson."
+    },
+    "sandhi": [
+      {
+        "inputs": "śaktiḥ + ca",
+        "rule": "visarga → ś before c",
+        "output": "śaktiś ca",
+        "reversible": true
+      },
+      {
+        "inputs": "dual + -yor",
+        "rule": "gen./loc. dual -yor (not plural)",
+        "output": "anayor / vahnidāhikayor",
+        "reversible": true
+      },
+      {
+        "inputs": "tādātmya + iva",
+        "rule": "no fusion",
+        "output": "tādātmyam … iva",
+        "reversible": true
+      },
+      {
+        "exercise": "Circle every -yor; say “dual, of these two.”"
+      }
+    ],
+    "syntax": {
+      "case_roles": "śaktiḥ nom; vyatirekam acc; śaktimadrūpāt abl; tādātmyam nom pred; dual gen/loc -yor",
+      "agreement": "tādātmyam n.nom.sg; duals limit the pair",
+      "finite_verbs": "vāñchati 3sg negated",
+      "implied": "iva pulls fire–burning standard"
+    },
+    "translation": {
+      "interlinear": "Power-and-ca · from-power-possessor-form(ABL) · difference(ACC) · not-desires · identity · of-these-two · eternal · as · of-fire-burning-two",
+      "literal": "Power also does not desire separation from the form of the power-holder. Identity of the two is eternal, as of fire and burning.",
+      "readable": "Power wants no parting from her bearer — never, ever; the two are eternally one — as fire is one with burning."
+    },
+    "trika": {
+      "abhinavagupta": "Śiva–Śakti identity through fire–burning — dual does the work of “exactly two that are not two.”",
+      "mapping": [
+        {
+          "role": "śakti / śaktimat",
+          "trika": "power and bearer of power"
+        },
+        {
+          "role": "anayor (dual)",
+          "trika": "the pair that is identity"
+        },
+        {
+          "role": "vahnidāhikayor (dual)",
+          "trika": "fire and burning as irreparable pair"
+        }
+      ],
+      "bridge": "Dual introduced on Trika’s central analogy; -yor makes metaphysics more exact.",
+      "lakshmanjoo": "Not primary here.",
+      "our_synthesis": "Pedagogical framing; L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Land on each -yor.",
+      "write": "Singular/dual/plural columns; place anayor.",
+      "memorise": "Dual gen/loc -yor as foundational rule box.",
+      "when": "Teaching Śiva–Śakti identity.",
+      "exercises": [
+        "Reverse vahnidāhikayor.",
+        "Why dual not plural?",
+        "Find another -yor later."
+      ]
+    },
+    "levels": {
+      "learn": "Fire–burning identity line.",
+      "decode": "Dual -yor; abl -āt; śaktiś ca; abstract tādātmya.",
+      "recognise": "Grammar of “two that are one.”"
+    },
+    "alternatives": "anayor dual; referents from context (śakti & bearer) in syntax.",
+    "brief": "Dual number through Śiva–Śakti as fire and burning.",
+    "logic": "New number on a philosophical analogy you already feel.",
+    "how": "Full Bodhapañcadaśikā 3 for -mat/abl reinforcement.",
+    "howto": "Predict the ending for “of exactly two”.",
+    "sign": "Learner tags -yor as dual without a prompt.",
+    "rule_boxes": [
+      {
+        "id": "rb-6-dual-yor",
+        "lesson": "l07-dual-fire",
+        "title": "Rule box 6 — dual gen/loc = -yor",
+        "body": "Exactly two: anayor, vahnidāhikayor. Not plural -ānām / -eṣu.",
+        "foundational": true
+      }
+    ]
+  },
+  {
+    "id": "l08-alaṃ-extract",
+    "section": "stage-4-trika-grammar",
+    "title": "alaṃ bhedānukathayā — Enough of difference-talk (extract)",
+    "source": "Abhinavagupta, Mahopadeśaviṃśatikā v.8 (first half); translation-work mahopadeshavimshatika",
+    "source_ref": "Mahopadeśa mpa-p01-v08",
+    "iast": "alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt",
+    "en": "Enough of difference-talk — from chewing the sap of devotion to you.",
+    "source_path": "sources/l08-alaṃ-extract.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Mahopadeśaviṃśatikā",
+      "verse": "8 (extract)",
+      "edition": "translation-work mahopadeshavimshatika (gold; L3 song human-review flag)",
+      "variants": "Extract = first half; full verse in Lesson 9."
+    },
+    "recitation": {
+      "syllables": "a-laṃ | bhe-dā-nu-ka-tha-yā | tvad-bhak-ti-ra-sa-car-va-ṇāt",
+      "vowel_lengths": "ā in bhedānukathayā (a+a→ā)",
+      "articulation": "ṃ in alaṃ; -kth- in anukathā; ṇ in carvaṇāt",
+      "metre": "philosophical line",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "alaṃ",
+        "underlying": "alam + construction",
+        "gloss": "enough",
+        "rule": "alaṃ + instrumental = “enough of …”",
+        "morph": "interjection + inst",
+        "citation": "alam"
+      },
+      {
+        "surface": "bhedānukathayā",
+        "underlying": "bheda + anukathā + instr.f",
+        "gloss": "with-difference-talk",
+        "rule": "compound then ā-stem -ayā",
+        "morph": "f.inst.sg",
+        "citation": "bheda+anukathā"
+      },
+      {
+        "surface": "tvadbhaktirasacarvaṇāt",
+        "underlying": "tvad + bhakti + rasa + carvaṇa + abl.",
+        "gloss": "from-chewing-sap-of-devotion-to-you",
+        "rule": "abl -āt",
+        "morph": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
+        "citation": "tvad+bhakti+rasa+carvaṇa"
+      },
+      {
+        "surface": "sarvamekamidaṃ",
+        "underlying": "sarva+eka+idam",
+        "gloss": "all-this-one",
+        "rule": "—",
+        "morph": "nom.sg fused (sarva+eka+idam)",
+        "citation": "sarva+eka+idam"
+      },
+      {
+        "surface": "śāntamiti",
+        "underlying": "śānta+iti",
+        "gloss": "at-peace-thus",
+        "rule": "—",
+        "morph": "adj + iti fused",
+        "citation": "śānta+iti"
+      },
+      {
+        "surface": "vaktuṃ",
+        "underlying": "√vac",
+        "gloss": "to-say",
+        "rule": "—",
+        "morph": "inf (vaktum)",
+        "citation": "√vac"
+      },
+      {
+        "surface": "ca",
+        "underlying": "ca",
+        "gloss": "even",
+        "rule": "—",
+        "morph": "conjunctive",
+        "citation": "ca"
+      },
+      {
+        "surface": "lajjate",
+        "underlying": "√lajj",
+        "gloss": "is-shy",
+        "rule": "—",
+        "morph": "3sg atm (lajjate)",
+        "citation": "√lajj"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "alaṃ",
+        "lemma": "alam",
+        "analysis": "interjection + inst",
+        "formation": "enough"
+      },
+      {
+        "surface": "bhedānukathayā",
+        "lemma": "bheda+anukathā",
+        "analysis": "f.inst.sg",
+        "formation": "with-difference-talk"
+      },
+      {
+        "surface": "tvadbhaktirasacarvaṇāt",
+        "lemma": "tvad+bhakti+rasa+carvaṇa",
+        "analysis": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
+        "formation": "from-chewing-sap-of-devotion-to-you"
+      }
+    ],
+    "compounds": {
+      "tree": "bheda+anukathā; tvad+bhakti+rasa+carvaṇa",
+      "members": [
+        {
+          "compound": "bhedānukathā",
+          "members": [
+            "bheda",
+            "anukathā"
+          ],
+          "relation": "difference + following-talk",
+          "reading": "difference-talk"
+        },
+        {
+          "compound": "tvadbhaktirasacarvaṇa",
+          "members": [
+            "tvad",
+            "bhakti",
+            "rasa",
+            "carvaṇa"
+          ],
+          "relation": "tatpuruṣa chain",
+          "reading": "chewing sap of devotion to you"
+        }
+      ],
+      "note": "anu vs aṇu sound drill."
+    },
+    "sandhi": [
+      {
+        "inputs": "bheda + anukathā",
+        "rule": "a + a → ā",
+        "output": "bhedānukathā",
+        "reversible": true
+      },
+      {
+        "inputs": "bhedānukathā + -yā",
+        "rule": "ā-stem instr -ayā (inflection)",
+        "output": "bhedānukathayā",
+        "reversible": true
+      },
+      {
+        "inputs": "tvad + bhakti…",
+        "rule": "abl -āt on carvaṇa",
+        "output": "tvadbhaktirasacarvaṇāt",
+        "reversible": true
+      },
+      {
+        "exercise": "Reverse bhedānukathayā → bheda + anukathā + case."
+      }
+    ],
+    "syntax": {
+      "case_roles": "alaṃ+instr frame; bhedānukathayā instr; tvadbhaktirasacarvaṇāt abl cause",
+      "agreement": "instr.f -ayā; abl -āt",
+      "finite_verbs": "none in extract",
+      "implied": "“Enough of X” — no finite verb"
+    },
+    "translation": {
+      "interlinear": "enough · difference-talk(INSTR) · your-devotion-sap-chewing(ABL)",
+      "literal": "Enough with difference-talk; from chewing the sap of devotion to you.",
+      "readable": "Enough of difference-talk. From chewing devotion's sap for you —"
+    },
+    "trika": {
+      "abhinavagupta": "Names bheda as discourse to stop; devotion-rasa is the cause clause.",
+      "mapping": [
+        {
+          "role": "bheda",
+          "trika": "habit of keeping subject/object apart"
+        },
+        {
+          "role": "bhakti-rasa (abl)",
+          "trika": "affect as means of recognition"
+        }
+      ],
+      "bridge": "Instr and abl do the work; metaphysics waits for Lesson 9.",
+      "lakshmanjoo": "Not primary here.",
+      "our_synthesis": "Pedagogical framing; L3 from translation-work."
+    },
+    "practice": {
+      "recite": "Hear a+a→ā in bhedā-.",
+      "write": "Boxes: bheda | anukathā | -ayā.",
+      "memorise": "alaṃ + instr as reusable frame (exercise substitutes).",
+      "when": "When difference-talk loops.",
+      "exercises": [
+        "Reverse bhedānukathayā.",
+        "anu vs aṇu.",
+        "Which case does alaṃ govern?"
+      ]
+    },
+    "levels": {
+      "learn": "“Enough of X” — usable phrase.",
+      "decode": "Compound a+a→ā; instr -ayā; abl -āt; anu/aṇu.",
+      "recognise": "Stopping difference-talk — after the cases."
+    },
+    "alternatives": "bheda+anukathā standard in L0 citation.",
+    "brief": "Instrumental after alaṃ; compound formation.",
+    "logic": "Your favourite verse, one mechanism at a time.",
+    "how": "Lesson 9 completes the verse.",
+    "howto": "Predict case before -ayā.",
+    "sign": "Learner infers -ayā as instr ā-stem on a new noun.",
+    "rule_boxes": [
+      {
+        "id": "rb-7-alaṃ-inst",
+        "lesson": "l08-alaṃ-extract",
+        "title": "Rule box 7 — alaṃ + instrumental = enough of",
+        "body": "alaṃ governs the instrumental: alaṃ bhedānukathayā. Substitutes are labelled exercises.",
+        "foundational": true
+      }
+    ]
+  },
+  {
+    "id": "l09-mpa8-full",
+    "section": "stage-5-original",
+    "title": "Mahopadeśaviṃśatikā 8 — the complete verse",
+    "source": "Abhinavagupta, Mahopadeśaviṃśatikā v.8 full; translation-work mahopadeshavimshatika",
+    "source_ref": "Mahopadeśa mpa-p01-v08",
+    "iast": "alaṃ bhedānukathayā tvadbhaktirasacarvaṇāt | sarvamekamidaṃ śāntamiti vaktuṃ ca lajjate",
+    "en": "No more of difference-talk. From chewing devotion's sap for you — all this one, at peace, though saying so is shy.",
+    "source_path": "sources/l09-mpa8-full.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Mahopadeśaviṃśatikā",
+      "verse": "8 full",
+      "edition": "translation-work mahopadeshavimshatika L2+L3 (gold; song human-review flag)",
+      "variants": "Full verse after Lesson 8. C1 essence 7: devotion chewed to sap leaves all as one, at peace."
+    },
+    "recitation": {
+      "syllables": "a-laṃ | bhe-dā-nu-ka-tha-yā | tvad-bhak-ti-ra-sa-car-va-ṇāt | sar-va-me-ka-mi-daṃ | śā-nta-mi-ti | vak-tuṃ | ca | laj-ja-te",
+      "vowel_lengths": "ā in bhedā-, śānta",
+      "articulation": "middle -te on lajjate; ṁ anusvāra",
+      "metre": "complete philosophical pair",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "sarvamekamidaṃ",
+        "underlying": "sarva + eka + idam",
+        "gloss": "all-this-one",
+        "rule": "fused; nom.sg.n chain",
+        "morph": "nom.sg fused (sarva+eka+idam)",
+        "citation": "sarva+eka+idam"
+      },
+      {
+        "surface": "śāntamiti",
+        "underlying": "śānta + iti",
+        "gloss": "at-peace-thus",
+        "rule": "adj + quotative",
+        "morph": "adj + iti fused",
+        "citation": "śānta+iti"
+      },
+      {
+        "surface": "vaktuṃ",
+        "underlying": "√vac + inf.",
+        "gloss": "to-say",
+        "rule": "infinitive -tum",
+        "morph": "inf (vaktum)",
+        "citation": "√vac"
+      },
+      {
+        "surface": "tvadbhaktirasacarvaṇāt",
+        "underlying": "ca",
+        "gloss": "from-chewing-sap-of-devotion-to-you",
+        "rule": "“even”",
+        "morph": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
+        "citation": "tvad+bhakti+rasa+carvaṇa"
+      },
+      {
+        "surface": "lajjate",
+        "underlying": "√lajj + 3sg.mid",
+        "gloss": "is-shy",
+        "rule": "middle “is shy”",
+        "morph": "3sg atm (lajjate)",
+        "citation": "√lajj"
+      },
+      {
+        "surface": "alaṃ",
+        "underlying": "alam",
+        "gloss": "enough",
+        "rule": "enough + instr",
+        "morph": "interjection + inst",
+        "citation": "alam"
+      },
+      {
+        "surface": "bhedānukathayā",
+        "underlying": "bheda+anukathā",
+        "gloss": "with-difference-talk",
+        "rule": "instr -ayā",
+        "morph": "f.inst.sg",
+        "citation": "bheda+anukathā"
+      },
+      {
+        "surface": "tvadbhaktirasacarvaṇāt",
+        "underlying": "stack + abl",
+        "gloss": "from-chewing-sap-of-devotion-to-you",
+        "rule": "-āt",
+        "morph": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
+        "citation": "tvad+bhakti+rasa+carvaṇa"
+      },
+      {
+        "surface": "ca",
+        "underlying": "ca",
+        "gloss": "even",
+        "rule": "—",
+        "morph": "conjunctive",
+        "citation": "ca"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "alaṃ",
+        "lemma": "alam",
+        "analysis": "interjection + inst",
+        "formation": "enough"
+      },
+      {
+        "surface": "bhedānukathayā",
+        "lemma": "bheda+anukathā",
+        "analysis": "f.inst.sg",
+        "formation": "with-difference-talk"
+      },
+      {
+        "surface": "tvadbhaktirasacarvaṇāt",
+        "lemma": "tvad+bhakti+rasa+carvaṇa",
+        "analysis": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
+        "formation": "from-chewing-sap-of-devotion-to-you"
+      },
+      {
+        "surface": "sarvamekamidaṃ",
+        "lemma": "sarva+eka+idam",
+        "analysis": "nom.sg fused (sarva+eka+idam)",
+        "formation": "all-this-one"
+      },
+      {
+        "surface": "śāntamiti",
+        "lemma": "śānta+iti",
+        "analysis": "adj + iti fused",
+        "formation": "at-peace-thus"
+      },
+      {
+        "surface": "vaktuṃ",
+        "lemma": "√vac",
+        "analysis": "inf (vaktum)",
+        "formation": "to-say"
+      },
+      {
+        "surface": "ca",
+        "lemma": "ca",
+        "analysis": "conjunctive",
+        "formation": "even"
+      },
+      {
+        "surface": "lajjate",
+        "lemma": "√lajj",
+        "analysis": "3sg atm (lajjate)",
+        "formation": "is-shy"
+      }
+    ],
+    "compounds": {
+      "tree": "bheda+anukathā; sarva+eka+idam; tvad+bhakti+rasa+carvaṇa",
+      "members": [
+        {
+          "compound": "sarvamekam idaṃ",
+          "members": [
+            "sarva",
+            "eka",
+            "idam"
+          ],
+          "relation": "predicative fusion",
+          "reading": "all this [is] one"
+        },
+        {
+          "compound": "tvadbhaktirasacarvaṇa",
+          "members": [
+            "tvad",
+            "bhakti",
+            "rasa",
+            "carvaṇa"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "devotion-sap chewing"
+        }
+      ],
+      "note": "Full syntax grid; compounds from L8."
+    },
+    "sandhi": [
+      {
+        "inputs": "bheda + anukathā",
+        "rule": "a + a → ā",
+        "output": "bhedānukathā",
+        "reversible": true
+      },
+      {
+        "inputs": "sarva + eka + idam",
+        "rule": "fusion; citable separately",
+        "output": "sarvamekam idaṃ",
+        "reversible": true
+      },
+      {
+        "inputs": "śānta + iti",
+        "rule": "surface fusion",
+        "output": "śāntamiti",
+        "reversible": true
+      },
+      {
+        "inputs": "√vac + -tum",
+        "rule": "infinitive",
+        "output": "vaktuṃ",
+        "reversible": true
+      },
+      {
+        "exercise": "Recover all four quarters’ boundaries; mark finite vs non-finite."
+      }
+    ],
+    "syntax": {
+      "case_roles": "alaṃ+instr; abl cause; nom.n chain; inf purpose of lajjate",
+      "agreement": "sarvam/idam/śāntam neuter chain",
+      "finite_verbs": "lajjate only — 3sg middle",
+      "implied": "copula in “all this [is] one”"
+    },
+    "translation": {
+      "interlinear": "enough · difference-talk(INSTR) · devotion-sap-chewing(ABL) · all-one-this · peace-thus · to-say · even · is-shy",
+      "literal": "Enough with difference-talk; from chewing the sap of devotion to you, all this is one, at peace — though even to say so is shy.",
+      "readable": "No more of difference-talk. From chewing devotion's sap for you — all this one, at peace, though even to say so is shy."
+    },
+    "trika": {
+      "abhinavagupta": "Difference-discourse stops because bhakti-rasa saturated thought; non-dual claim arrives shyly (C1 essence 7).",
+      "mapping": [
+        {
+          "role": "bheda-nukathā",
+          "trika": "discourse of separation"
+        },
+        {
+          "role": "sarvam ekam idam",
+          "trika": "recognition as neuter predicate"
+        },
+        {
+          "role": "lajjate",
+          "trika": "ineffability as affective sign"
+        }
+      ],
+      "bridge": "Shyness to say “all is one” is language’s limit — after every case is proven.",
+      "lakshmanjoo": "Not primary for this verse.",
+      "our_synthesis": "Pedagogical framing; L2/L3/C1 from layers (human-review flag respected)."
+    },
+    "practice": {
+      "recite": "Full recitation; pause per quarter.",
+      "write": "Only lajjate finite — write that.",
+      "memorise": "No new rule box — reuse L8.",
+      "when": "When dualism debates start.",
+      "exercises": [
+        "Explain tvadbhaktirasacarvaṇāt.",
+        "Why middle lajjate?",
+        "Unseen half-verse drill (labelled exercise)."
+      ]
+    },
+    "levels": {
+      "learn": "The complete line you love.",
+      "decode": "L8 + infinitive + one finite middle + agreement.",
+      "recognise": "Non-dual claim after proof; C1 as reward."
+    },
+    "alternatives": "L3 song human-review — faithful placement, no silent retranslation.",
+    "brief": "Full verse: instr, abl, nom chain, infinitive, one finite verb.",
+    "logic": "Return to the same Sanskrit with greater understanding.",
+    "how": "Final exam may contrast with unseen Bodhapañcadaśikā 14.",
+    "howto": "Deva first; decode; then IAST + analysis.",
+    "sign": "Grammar-warranted translation before opening English.",
+    "rule_boxes": []
+  },
+  {
+    "id": "l10-tantrasara-prose",
+    "section": "stage-5-original",
+    "title": "iha jñānaṃ mokṣakāraṇam — Tantrasāra prose",
+    "source": "Abhinavagupta, Tantrasāra Āhnika 1 (prose); translation-work tantrasara-a01",
+    "source_ref": "Tantrasāra tsa-a01 (L0 tsa-a01-v04 segment)",
+    "iast": "iha jñānaṃ mokṣakāraṇaṃ bandhanimittasya ajñānasya virodhakatvāt",
+    "en": "Here knowledge is the cause of liberation because it opposes ignorance, the cause of bondage.",
+    "source_path": "sources/l10-tantrasara-prose.md",
+    "witness": {
+      "deva_source": "transliterated from IAST at build (house rule)",
+      "author": "Abhinavagupta",
+      "work": "Tantrasāra",
+      "verse": "Āhnika 1 prose (tsa-a01-v04 segment)",
+      "edition": "translation-work/tantrasara-a01 (gold machine-proposed; passages tsa01-p01)",
+      "variants": "Syllabus focus sentence; continues dvividhaṃ ca ajñānaṃ… GRETIL NC open — RIGHTS.md."
+    },
+    "recitation": {
+      "syllables": "i-ha | jñā-naṃ | mo-kṣa-kā-ra-ṇaṃ | ban-dha-ni-mit-ta-sya | a-jñā-na-sya | vi-ro-dha-ka-tvāt",
+      "vowel_lengths": "ā in jñāna, kāraṇa",
+      "articulation": "ñ in jñāna; ṣ in mokṣa; dense clusters",
+      "metre": "prose — argument rhythm",
+      "audio": "planned"
+    },
+    "padaccheda": [
+      {
+        "surface": "iha",
+        "underlying": "iha",
+        "gloss": "Here",
+        "rule": "indeclinable “here”",
+        "morph": "indecl. (adv.)",
+        "citation": "iha"
+      },
+      {
+        "surface": "jñānaṃ",
+        "underlying": "jñāna + nom.n",
+        "gloss": "knowledge",
+        "rule": "knowledge",
+        "morph": "n.nom.sg (jñāna)",
+        "citation": "jñānaṃ"
+      },
+      {
+        "surface": "mokṣakāraṇaṃ",
+        "underlying": "mokṣa + kāraṇa + nom.n",
+        "gloss": "liberation's-cause",
+        "rule": "cause of liberation",
+        "morph": "n.nom.sg (comp., predicate)",
+        "citation": "mokṣakāraṇaṃ"
+      },
+      {
+        "surface": "bandhanimittasya",
+        "underlying": "bandha + nimitta + gen.n",
+        "gloss": "the-cause-of-bondage",
+        "rule": "of bondage-cause",
+        "morph": "n.gen.sg (comp.)",
+        "citation": "bandhanimittasya"
+      },
+      {
+        "surface": "ajñānasya",
+        "underlying": "ajñāna + gen.n",
+        "gloss": "of-ignorance",
+        "rule": "of ignorance",
+        "morph": "n.gen.sg (ajñāna)",
+        "citation": "ajñānasya"
+      },
+      {
+        "surface": "virodhakatvāt",
+        "underlying": "virodhaka + tvāt + abl.n",
+        "gloss": "through-being-the-opponent",
+        "rule": "abstract -tva + abl -āt",
+        "morph": "n.abl.sg (comp., through being-opponent)",
+        "citation": "virodhakatvāt"
+      },
+      {
+        "surface": "dvividhaṃ",
+        "underlying": "dvividhaṃ",
+        "gloss": "Twofold",
+        "rule": "—",
+        "morph": "n.nom.sg (comp., predicate adj.)",
+        "citation": "dvividhaṃ"
+      },
+      {
+        "surface": "ca",
+        "underlying": "ca",
+        "gloss": "and",
+        "rule": "—",
+        "morph": "indecl. (conj.)",
+        "citation": "ca"
+      },
+      {
+        "surface": "ajñānaṃ",
+        "underlying": "ajñānaṃ",
+        "gloss": "ignorance",
+        "rule": "—",
+        "morph": "n.nom.sg (ajñāna)",
+        "citation": "ajñānaṃ"
+      },
+      {
+        "surface": "buddhigataṃ",
+        "underlying": "buddhigataṃ",
+        "gloss": "intellect-located",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.)",
+        "citation": "buddhigataṃ"
+      },
+      {
+        "surface": "pauruṣaṃ ca",
+        "underlying": "pauruṣaṃ ca",
+        "gloss": "personal",
+        "rule": "—",
+        "morph": "n.nom.sg + indecl. (ca)",
+        "citation": "pauruṣaṃ ca"
+      },
+      {
+        "surface": "tatra",
+        "underlying": "tatra",
+        "gloss": "Therein",
+        "rule": "—",
+        "morph": "indecl. (adv.)",
+        "citation": "tatra"
+      },
+      {
+        "surface": "buddhigataṃ",
+        "underlying": "buddhigataṃ",
+        "gloss": "the-intellect-located",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.)",
+        "citation": "buddhigataṃ"
+      },
+      {
+        "surface": "aniścayasvabhāvaṃ",
+        "underlying": "aniścayasvabhāvaṃ",
+        "gloss": "doubt-natured",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.)",
+        "citation": "aniścayasvabhāvaṃ"
+      },
+      {
+        "surface": "viparītaniścayātmakaṃ ca",
+        "underlying": "viparītaniścayātmakaṃ ca",
+        "gloss": "wrong-conviction-natured",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.) + indecl. (ca)",
+        "citation": "viparītaniścayātmakaṃ ca"
+      },
+      {
+        "surface": "pauruṣaṃ tu",
+        "underlying": "pauruṣaṃ tu",
+        "gloss": "The-personal",
+        "rule": "—",
+        "morph": "n.nom.sg + indecl. (tu)",
+        "citation": "pauruṣaṃ tu"
+      },
+      {
+        "surface": "vikalpasvabhāvaṃ",
+        "underlying": "vikalpasvabhāvaṃ",
+        "gloss": "thought-natured",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.)",
+        "citation": "vikalpasvabhāvaṃ"
+      },
+      {
+        "surface": "saṃkucitaprathātmakaṃ",
+        "underlying": "saṃkucitaprathātmakaṃ",
+        "gloss": "contracted-manifestation-natured",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.)",
+        "citation": "saṃkucitaprathātmakaṃ"
+      },
+      {
+        "surface": "tad eva ca",
+        "underlying": "tad eva ca",
+        "gloss": "that-itself",
+        "rule": "—",
+        "morph": "n.nom.sg (tad) + indecl. (eva) + indecl. (ca)",
+        "citation": "tad eva ca"
+      },
+      {
+        "surface": "mūlakāraṇaṃ",
+        "underlying": "mūlakāraṇaṃ",
+        "gloss": "the-root-cause",
+        "rule": "—",
+        "morph": "n.nom.sg (comp.)",
+        "citation": "mūlakāraṇaṃ"
+      },
+      {
+        "surface": "saṃsārasya",
+        "underlying": "saṃsārasya",
+        "gloss": "of-saṃsāra",
+        "rule": "—",
+        "morph": "m.gen.sg (saṃsāra)",
+        "citation": "saṃsārasya"
+      },
+      {
+        "surface": "iti",
+        "underlying": "iti",
+        "gloss": "as",
+        "rule": "—",
+        "morph": "indecl. (quotative)",
+        "citation": "iti"
+      },
+      {
+        "surface": "vakṣyāmaḥ",
+        "underlying": "vakṣyāmaḥ",
+        "gloss": "we-shall-teach",
+        "rule": "—",
+        "morph": "1pl.fut.act √vac (we-shall-teach)",
+        "citation": "vakṣyāmaḥ"
+      },
+      {
+        "surface": "malanirṇaye",
+        "underlying": "malanirṇaye",
+        "gloss": "under-stain-determination",
+        "rule": "—",
+        "morph": "m.loc.sg (comp., under stain-determination)",
+        "citation": "malanirṇaye"
+      }
+    ],
+    "morphology": [
+      {
+        "surface": "iha",
+        "lemma": "iha",
+        "analysis": "indecl. (adv.)",
+        "formation": "Here"
+      },
+      {
+        "surface": "jñānaṃ",
+        "lemma": "jñānaṃ",
+        "analysis": "n.nom.sg (jñāna)",
+        "formation": "knowledge"
+      },
+      {
+        "surface": "mokṣakāraṇaṃ",
+        "lemma": "mokṣakāraṇaṃ",
+        "analysis": "n.nom.sg (comp., predicate)",
+        "formation": "liberation's-cause"
+      },
+      {
+        "surface": "bandhanimittasya",
+        "lemma": "bandhanimittasya",
+        "analysis": "n.gen.sg (comp.)",
+        "formation": "the-cause-of-bondage"
+      },
+      {
+        "surface": "ajñānasya",
+        "lemma": "ajñānasya",
+        "analysis": "n.gen.sg (ajñāna)",
+        "formation": "of-ignorance"
+      },
+      {
+        "surface": "virodhakatvāt",
+        "lemma": "virodhakatvāt",
+        "analysis": "n.abl.sg (comp., through being-opponent)",
+        "formation": "through-being-the-opponent"
+      },
+      {
+        "surface": "dvividhaṃ",
+        "lemma": "dvividhaṃ",
+        "analysis": "n.nom.sg (comp., predicate adj.)",
+        "formation": "Twofold"
+      },
+      {
+        "surface": "ca",
+        "lemma": "ca",
+        "analysis": "indecl. (conj.)",
+        "formation": "and"
+      },
+      {
+        "surface": "ajñānaṃ",
+        "lemma": "ajñānaṃ",
+        "analysis": "n.nom.sg (ajñāna)",
+        "formation": "ignorance"
+      },
+      {
+        "surface": "buddhigataṃ",
+        "lemma": "buddhigataṃ",
+        "analysis": "n.nom.sg (comp.)",
+        "formation": "intellect-located"
+      },
+      {
+        "surface": "pauruṣaṃ ca",
+        "lemma": "pauruṣaṃ ca",
+        "analysis": "n.nom.sg + indecl. (ca)",
+        "formation": "personal"
+      },
+      {
+        "surface": "tatra",
+        "lemma": "tatra",
+        "analysis": "indecl. (adv.)",
+        "formation": "Therein"
+      }
+    ],
+    "compounds": {
+      "tree": "mokṣa+kāraṇa; bandha+nimitta; virodhaka+tva",
+      "members": [
+        {
+          "compound": "mokṣakāraṇa",
+          "members": [
+            "mokṣa",
+            "kāraṇa"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "cause of liberation"
+        },
+        {
+          "compound": "bandhanimitta",
+          "members": [
+            "bandha",
+            "nimitta"
+          ],
+          "relation": "tatpuruṣa",
+          "reading": "cause of bondage"
+        },
+        {
+          "compound": "virodhakatva",
+          "members": [
+            "virodhaka",
+            "tva"
+          ],
+          "relation": "abstract",
+          "reading": "fact of opposing"
+        }
+      ],
+      "note": "Prose stacks genitives; no metrical rescue."
+    },
+    "sandhi": [
+      {
+        "inputs": "bandha + nimitta + -sya",
+        "rule": "gen.sg -sya",
+        "output": "bandhanimittasya",
+        "reversible": true
+      },
+      {
+        "inputs": "virodhaka + -tva + -āt",
+        "rule": "abstract then abl",
+        "output": "virodhakatvāt",
+        "reversible": true
+      },
+      {
+        "inputs": "jñāna + -ṃ",
+        "rule": "neuter nom/acc anusvāra",
+        "output": "jñānaṃ",
+        "reversible": true
+      },
+      {
+        "exercise": "Mark every genitive and the causal ablative."
+      }
+    ],
+    "syntax": {
+      "case_roles": "jñānaṃ nom; mokṣakāraṇam nom pred; gen chain; virodhakatvāt abl of cause",
+      "agreement": "neuters in causal spine",
+      "finite_verbs": "none in focus sentence — nominal predication",
+      "implied": "“is” implied; because-logic in -āt"
+    },
+    "translation": {
+      "interlinear": "here · knowledge(NOM) · liberation-cause(NOM) · bondage-cause(GEN) · ignorance(GEN) · opposing-ness(ABL)",
+      "literal": "Here knowledge is the cause of liberation, [because] of being opposed to ignorance, the cause of bondage.",
+      "readable": "Here knowledge is the cause of liberation because it opposes ignorance, the cause of bondage."
+    },
+    "trika": {
+      "abhinavagupta": "Opening causal argument: knowledge opposes ignorance — recognition theme in philosophical prose.",
+      "mapping": [
+        {
+          "role": "jñāna (nom)",
+          "trika": "knowledge as liberating cause"
+        },
+        {
+          "role": "ajñāna (gen)",
+          "trika": "ignorance as bondage-cause"
+        },
+        {
+          "role": "virodhakatva (abl)",
+          "trika": "opposition as causal hinge"
+        }
+      ],
+      "bridge": "Ablative of cause builds “because”; Trika content is the jñāna/ajñāna opposition the grammar encodes.",
+      "lakshmanjoo": "Not primary for this sentence.",
+      "our_synthesis": "Pedagogical framing; L2/L3 from tantrasara-a01. GRETIL NC — commercial blocked."
+    },
+    "practice": {
+      "recite": "Read aloud twice — flow before compounds.",
+      "write": "Bracket genitives; box ablative.",
+      "memorise": "-tva/-tā + -āt as foundational prose rule box.",
+      "when": "Before Tantrasāra study.",
+      "exercises": [
+        "Why ablative virodhakatvāt?",
+        "What does each genitive attach to?",
+        "Build English because-clause in Sanskrit order."
+      ]
+    },
+    "levels": {
+      "learn": "One causal sentence in Sanskrit and English.",
+      "decode": "Genitives, abstract -tva, causal abl, no finite verb.",
+      "recognise": "Knowledge vs ignorance — grammar first."
+    },
+    "alternatives": "Machine-proposed gold; focus sentence from syllabus; no invented completion.",
+    "brief": "Prose: nominal sentence + causal ablative.",
+    "logic": "From mamātmā to actual philosophical prose.",
+    "how": "Later Āhnikas; final exam may use Bodhapañcadaśikā 14 unseen.",
+    "howto": "Parse without IAST; verify; then English.",
+    "sign": "Learner explains virodhakatvāt from morphology alone.",
+    "rule_boxes": [
+      {
+        "id": "rb-8-causal-abl",
+        "lesson": "l10-tantrasara-prose",
+        "title": "Rule box 8 — -tva + -āt = because of the fact that",
+        "body": "Abstract -tva/-tā then ablative -āt builds causal “because”: virodhakatvāt.",
+        "foundational": true
+      }
+    ]
+  }
+]

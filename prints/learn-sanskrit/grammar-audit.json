@@ -1,0 +1,70 @@
+{
+  "volume": "learn-sanskrit vol1",
+  "lessons": 10,
+  "target_pages": 108,
+  "rule_boxes": 8,
+  "coverage": {
+    "phonology": [
+      "L1 vowel contraction",
+      "L2 anusvāra/visarga",
+      "L4 retroflex clusters"
+    ],
+    "script": [
+      "front IAST↔Deva sheet",
+      "transition L1–L10 per curriculum"
+    ],
+    "sandhi": [
+      "L1 a+a→ā, a+e→ai",
+      "L2 namo",
+      "L5 kiṃcit",
+      "L7 śaktiś ca",
+      "L8 compound ā"
+    ],
+    "cases": [
+      "L2 dative",
+      "L3 loc+instr",
+      "L6 acc+abl",
+      "L7 dual+abl",
+      "L8 instr+abl",
+      "L10 gen+causal abl"
+    ],
+    "number_gender": [
+      "L7 dual -yor",
+      "neuter L9–L10",
+      "fem instr L8"
+    ],
+    "pronouns": [
+      "L1 tvaṃ/mama",
+      "L5 implied you",
+      "L6 tvām",
+      "L9 idam"
+    ],
+    "verbs": [
+      "L3 1sg mid",
+      "L4 3sg -ti",
+      "L5 imperatives",
+      "L6 prapadye",
+      "L9 lajjate"
+    ],
+    "nonfinite": [
+      "L9 infinitive",
+      "L5 participle-like svasthaḥ"
+    ],
+    "compounds": [
+      "L1 mamātmā",
+      "L2 viśvamūrti",
+      "L6 epithets",
+      "L7 dual pair",
+      "L10 -tva"
+    ],
+    "syntax": [
+      "L3 means/place",
+      "L9 agreement",
+      "L10 causal nominals"
+    ],
+    "metre": [
+      "verse vs prose L9–L10"
+    ]
+  },
+  "three_encounters_note": "Single-appearance features get labelled exercises, never quoted as Abhinavagupta."
+}

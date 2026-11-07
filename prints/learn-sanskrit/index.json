@@ -1,0 +1,216 @@
+{
+  "book": "learn-sanskrit",
+  "title": "Learn Sanskrit with Abhinavagupta",
+  "subtitle": "Vol. I — Ten Passages from Sound to Recognition",
+  "target_pages": 108,
+  "lessons": [
+    {
+      "n": 1,
+      "id": "l01-mamatma",
+      "title": "mamātmā — My Self",
+      "source_ref": "Bhairavastava bh-p02",
+      "section": "stage-1-sounds",
+      "html": "lesson-01.html"
+    },
+    {
+      "n": 2,
+      "id": "l02-namaste",
+      "title": "namaste viśvamūrtaye — Homage to You",
+      "source_ref": "Mahopadeśa mpa-p01-v01 (+ v02 namo namaḥ)",
+      "section": "stage-1-sounds",
+      "html": "lesson-02.html"
+    },
+    {
+      "n": 3,
+      "id": "l03-hrdi-vande",
+      "title": "hṛdi vande — In the heart I bow",
+      "source_ref": "Bhairavastava bh-p01",
+      "section": "stage-2-language",
+      "html": "lesson-03.html"
+    },
+    {
+      "n": 4,
+      "id": "l04-nryti",
+      "title": "nṛtyati gāyati hṛṣyati — dances, sings, rejoices",
+      "source_ref": "Bhairavastava bh-p09",
+      "section": "stage-2-language",
+      "html": "lesson-04.html"
+    },
+    {
+      "n": 5,
+      "id": "l05-ma-kiṃcit",
+      "title": "mā kiṃcit tyaja — Abandon nothing",
+      "source_ref": "Anuttarāṣṭikā anu-p02",
+      "section": "stage-3-instructions",
+      "html": "lesson-05.html"
+    },
+    {
+      "n": 6,
+      "id": "l06-śambhu-śaraṇa",
+      "title": "tvām eva śambhuṃ śaraṇaṃ prapadye — I take refuge",
+      "source_ref": "Paramārthasāra param-p01-v01",
+      "section": "stage-3-instructions",
+      "html": "lesson-06.html"
+    },
+    {
+      "n": 7,
+      "id": "l07-dual-fire",
+      "title": "tādātmyam anayor … vahnidāhikayor iva — the dual",
+      "source_ref": "Bodhapañcadaśikā bod-p03-v03",
+      "section": "stage-4-trika-grammar",
+      "html": "lesson-07.html"
+    },
+    {
+      "n": 8,
+      "id": "l08-alaṃ-extract",
+      "title": "alaṃ bhedānukathayā — Enough of difference-talk (extract)",
+      "source_ref": "Mahopadeśa mpa-p01-v08",
+      "section": "stage-4-trika-grammar",
+      "html": "lesson-08.html"
+    },
+    {
+      "n": 9,
+      "id": "l09-mpa8-full",
+      "title": "Mahopadeśaviṃśatikā 8 — the complete verse",
+      "source_ref": "Mahopadeśa mpa-p01-v08",
+      "section": "stage-5-original",
+      "html": "lesson-09.html"
+    },
+    {
+      "n": 10,
+      "id": "l10-tantrasara-prose",
+      "title": "iha jñānaṃ mokṣakāraṇam — Tantrasāra prose",
+      "source_ref": "Tantrasāra tsa-a01 (L0 tsa-a01-v04 segment)",
+      "section": "stage-5-original",
+      "html": "lesson-10.html"
+    }
+  ],
+  "rule_boxes": [
+    {
+      "id": "rb-1-savarna",
+      "lesson": "l01-mamatma",
+      "title": "Rule box 1 — a + a / a + ā → ā",
+      "body": "Adjacent short a (or a + ā) contract to one long ā. Pāṇini 6.1.101 akaḥ savarṇe dīrghaḥ. Reverse: split ā into a + a when the words demand it.",
+      "foundational": true
+    },
+    {
+      "id": "rb-2-yana",
+      "lesson": "l01-mamatma",
+      "title": "Rule box 2 — a + e → ai",
+      "body": "yaṇ sandhi: sadā + eva → sadaiva; brahma + eva → brahmaiva. Reverse: ai may hide a + e.",
+      "foundational": true
+    },
+    {
+      "id": "rb-3-loc-instr",
+      "lesson": "l03-hrdi-vande",
+      "title": "Rule box 3 — where vs by-what",
+      "body": "Locative answers “where?” (hṛdi). Instrumental answers “by/with what?” (cittatayā).",
+      "foundational": true
+    },
+    {
+      "id": "rb-4-present-ti",
+      "lesson": "l04-nryti",
+      "title": "Rule box 4 — 3sg present often ends -ti",
+      "body": "nṛtyati · gāyati · hṛṣyati — same ending, three roots. Discover before the paradigm.",
+      "foundational": true
+    },
+    {
+      "id": "rb-5-ma-imperative",
+      "lesson": "l05-ma-kiṃcit",
+      "title": "Rule box 5 — mā + imperative = don’t",
+      "body": "Prohibitive mā with imperatives: mā tyaja, mā gṛhāṇa. na negates statements.",
+      "foundational": true
+    },
+    {
+      "id": "rb-6-dual-yor",
+      "lesson": "l07-dual-fire",
+      "title": "Rule box 6 — dual gen/loc = -yor",
+      "body": "Exactly two: anayor, vahnidāhikayor. Not plural -ānām / -eṣu.",
+      "foundational": true
+    },
+    {
+      "id": "rb-7-alaṃ-inst",
+      "lesson": "l08-alaṃ-extract",
+      "title": "Rule box 7 — alaṃ + instrumental = enough of",
+      "body": "alaṃ governs the instrumental: alaṃ bhedānukathayā. Substitutes are labelled exercises.",
+      "foundational": true
+    },
+    {
+      "id": "rb-8-causal-abl",
+      "lesson": "l10-tantrasara-prose",
+      "title": "Rule box 8 — -tva + -āt = because of the fact that",
+      "body": "Abstract -tva/-tā then ablative -āt builds causal “because”: virodhakatvāt.",
+      "foundational": true
+    }
+  ],
+  "audit": {
+    "volume": "learn-sanskrit vol1",
+    "lessons": 10,
+    "target_pages": 108,
+    "rule_boxes": 8,
+    "coverage": {
+      "phonology": [
+        "L1 vowel contraction",
+        "L2 anusvāra/visarga",
+        "L4 retroflex clusters"
+      ],
+      "script": [
+        "front IAST↔Deva sheet",
+        "transition L1–L10 per curriculum"
+      ],
+      "sandhi": [
+        "L1 a+a→ā, a+e→ai",
+        "L2 namo",
+        "L5 kiṃcit",
+        "L7 śaktiś ca",
+        "L8 compound ā"
+      ],
+      "cases": [
+        "L2 dative",
+        "L3 loc+instr",
+        "L6 acc+abl",
+        "L7 dual+abl",
+        "L8 instr+abl",
+        "L10 gen+causal abl"
+      ],
+      "number_gender": [
+        "L7 dual -yor",
+        "neuter L9–L10",
+        "fem instr L8"
+      ],
+      "pronouns": [
+        "L1 tvaṃ/mama",
+        "L5 implied you",
+        "L6 tvām",
+        "L9 idam"
+      ],
+      "verbs": [
+        "L3 1sg mid",
+        "L4 3sg -ti",
+        "L5 imperatives",
+        "L6 prapadye",
+        "L9 lajjate"
+      ],
+      "nonfinite": [
+        "L9 infinitive",
+        "L5 participle-like svasthaḥ"
+      ],
+      "compounds": [
+        "L1 mamātmā",
+        "L2 viśvamūrti",
+        "L6 epithets",
+        "L7 dual pair",
+        "L10 -tva"
+      ],
+      "syntax": [
+        "L3 means/place",
+        "L9 agreement",
+        "L10 causal nominals"
+      ],
+      "metre": [
+        "verse vs prose L9–L10"
+      ]
+    },
+    "three_encounters_note": "Single-appearance features get labelled exercises, never quoted as Abhinavagupta."
+  }
+}

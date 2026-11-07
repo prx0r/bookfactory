@@ -364,11 +364,91 @@ def _resolve_thesis_ref(thesis, ref):
 def new_book(args):
     """Instantiate a genre template into a fresh book lane (content stage).
 
-    Creates thesis.json (claim + sections plan + inherited template rules),
-    decisions.jsonl (the declare-structure ruling), lane.py, project.json —
-    then the book is built in prints/<slug>/ by the normal compile
-    loop. PDF stays out of reach until content/structure/formatting pass.
+    With --thesis PATH: load a full thesis object (e.g. specs/<id>.thesis.json),
+    validate it, and scaffold the lane from that object — claim, structure
+    (variable counts), purpose, products all come from the file.
+
+    Without --thesis: build a thesis from --claim/--section flags as before.
+    Creates thesis.json, decisions.jsonl (declare-structure), lane.py,
+    project.json — then the book is built in prints/<slug>/ by the normal
+    compile loop. PDF stays out of reach until content/structure/formatting pass.
     """
+    if getattr(args, 'thesis', None):
+        thesis_path = Path(args.thesis)
+        if not thesis_path.is_file():
+            raise ValueError(f'thesis file missing: {thesis_path}')
+        thesis = json.loads(thesis_path.read_text(encoding='utf-8'))
+        errs = validate_schema(thesis, 'thesis.schema.json')
+        if errs:
+            raise ValueError(f'thesis invalid: {errs}')
+        if not SAFE.fullmatch(args.slug):
+            raise ValueError(f'unsafe book slug: {args.slug}')
+        if thesis.get('book') != args.slug:
+            raise ValueError(f'thesis book field {thesis.get("book")!r} != --slug {args.slug!r}')
+        tpl_path = ROOT / 'templates' / f"{thesis['template']}.json"
+        if not tpl_path.is_file():
+            raise ValueError(f'template missing: {tpl_path}')
+        tpl = json.loads(tpl_path.read_text(encoding='utf-8'))
+        errs = validate_schema(tpl, 'template.schema.json')
+        if errs:
+            raise ValueError(f'template invalid: {errs}')
+        proj = ROOT / 'projects' / args.slug
+        if proj.exists():
+            raise ValueError(f'lane already exists: {proj}')
+        plan = thesis['structure']['sections_plan']
+        total = thesis['structure']['total_entries']
+        st = thesis['structure']
+        if 'entries_per_section' in st:
+            per = st['entries_per_section']
+        else:
+            per = 'variable'
+        max_pages = tpl['constraints']['max_pages']
+        if thesis.get('pages', {}).get('target') == 400 or thesis.get('pages', {}).get('fallback') == 400:
+            # study-edition theses may declare up to the fallback ceiling
+            max_pages = max(max_pages, thesis['pages'].get('fallback', max_pages))
+        style = thesis.get('style') or tpl['style_default']
+        if not (ROOT / 'styles' / f'{style}.json').is_file():
+            raise ValueError(f'style pack missing: styles/{style}.json')
+        proj.mkdir(parents=True)
+        (proj / 'thesis.json').write_text(json.dumps(thesis, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        decision = {
+            'ts': __import__('datetime').date.today().isoformat(),
+            'action': 'declare-structure',
+            'target': args.slug,
+            'justification': (f'Book scaffolded from thesis {thesis_path}: '
+                              f'{len(plan)} sections, {total} entries, template {thesis["template"]}, '
+                              f'ceiling {max_pages}pp. Structure and claim supplied by the owner thesis file; this ruling fixes the structure law.'),
+            'thesis_ref': 'structure',
+            'status': 'live',
+            'decided_by': 'owner',
+        }
+        validate_schema(decision, 'decision.schema.json')
+        (proj / 'decisions.jsonl').write_text(json.dumps(decision, ensure_ascii=False) + '\n', encoding='utf-8')
+        (proj / 'lane.py').write_text(
+            'LANE = {\n'
+            f'    "text": "{args.slug}",\n'
+            f'    "source_paths": {{"book": "{args.slug}/entries.json"}},\n'
+            '    "id_map": None,\n'
+            '    "entries_from": "hand-curated (scaffold from thesis)",\n'
+            '    "gate_file": None,\n'
+            f'    "sections": {[p["id"] for p in plan]!r},\n'
+            f'    "products": {sorted(tpl["products"])!r},\n'
+            f'    "book_dir": "{args.slug}",\n'
+            '}\n', encoding='utf-8')
+        (proj / 'project.json').write_text(json.dumps({
+            'stage': 'content',
+            'outputs': ['lesson-preview', 'paperback-preview'],
+            'gate_note': 'Scaffolded from thesis file: content first, PDF build is the last stage — see BOOKS.md.',
+            'max_pages': max_pages,
+            'adjudications': [],
+            'thesis_source': str(thesis_path),
+        }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(f'NEW BOOK {args.slug} from {thesis_path}: {len(plan)} sections, {total} entries, '
+              f'template {thesis["template"]}, style {style}, stage content')
+        print(f'  next: create prints/{args.slug}/ (book.json sections + entries.json), '
+              f'then factory.py stage --book {args.slug} --to structure')
+        return
+
     tpl_path = ROOT / 'templates' / f'{args.template}.json'
     if not tpl_path.is_file():
         raise ValueError(f'template missing: {tpl_path}')
@@ -377,7 +457,7 @@ def new_book(args):
     if errs:
         raise ValueError(f'template invalid: {errs}')
     if not SAFE.fullmatch(args.slug):
-        raise ValueError(f'unsafe book slug: {args.slug!r}')
+        raise ValueError(f'unsafe book slug: {args.slug}')
     proj = ROOT / 'projects' / args.slug
     if proj.exists():
         raise ValueError(f'lane already exists: {proj}')
@@ -703,12 +783,13 @@ def main():
     decide_p.add_argument('--decided-by',default='owner')
     decide_p.add_argument('--date',default=None,help='YYYY-MM-DD (default: today)')
     nb=subs.add_parser('new-book',help='instantiate a genre template into a fresh book lane (content stage)')
-    nb.add_argument('--template',required=True,help='genre template id (templates/<id>.json, e.g. prayer-book)')
+    nb.add_argument('--thesis',default=None,help='path to a full thesis JSON (e.g. specs/<id>.thesis.json); overrides --claim/--section/--template')
+    nb.add_argument('--template',default=None,help='genre template id (templates/<id>.json, e.g. prayer-book); required unless --thesis')
     nb.add_argument('--slug',required=True,help='book id / lane name (lowercase, hyphens)')
     nb.add_argument('--title',default=None,help='display title (default: titleized slug)')
-    nb.add_argument('--claim',required=True,help='the thesis claim, >=80 chars — the intro derives from this')
-    nb.add_argument('--section',action='append',required=True,metavar='ID:PURPOSE',
-                    help='one section per flag: --section wake:"on rising" (repeat)')
+    nb.add_argument('--claim',default=None,help='the thesis claim, >=80 chars — required unless --thesis')
+    nb.add_argument('--section',action='append',default=None,metavar='ID:PURPOSE',
+                    help='one section per flag: --section wake:"on rising" (repeat); required unless --thesis')
     nb.add_argument('--entries-per-section',type=int,default=None,help='default from template (prayer-book: 4)')
     nb.add_argument('--max-pages',type=int,default=None,help='default from template ceiling (prayer-book: 110)')
     nb.add_argument('--style',default=None,help='style pack id (default: template style_default)')

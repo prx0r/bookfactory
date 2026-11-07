@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Postcard style pack",
+  "description": "A postcard style is a data pack: the same verse content flows through it. Adding a style means adding a JSON file, never changing the renderer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "id", "name", "geometry", "colors", "fonts", "front", "back"],
+  "properties": {
+    "version": {"type": "string"},
+    "id": {"type": "string", "pattern": "^postcard-[a-z0-9-]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trim_mm", "bleed_mm", "safe_mm"],
+      "properties": {
+        "trim_mm": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "bleed_mm": {"type": "number", "minimum": 0},
+        "safe_mm": {"type": "number", "minimum": 0}
+      }
+    },
+    "colors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ground", "ink", "muted", "accent"],
+      "properties": {
+        "ground": {"type": "string"},
+        "ink": {"type": "string"},
+        "muted": {"type": "string"},
+        "accent": {"type": "string"}
+      }
+    },
+    "fonts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["display_file", "text_file", "display_family", "text_family"],
+      "properties": {
+        "display_file": {"type": "string"},
+        "text_file": {"type": "string"},
+        "display_family": {"type": "string"},
+        "text_family": {"type": "string"}
+      }
+    },
+    "front": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["align", "justify", "padding_mm", "gap_mm", "blocks"],
+      "properties": {
+        "align": {"enum": ["flex-start", "center", "flex-end"]},
+        "justify": {"enum": ["flex-start", "center", "flex-end"]},
+        "padding_mm": {"type": "array", "items": {"type": "number"}, "minItems": 4, "maxItems": 4},
+        "gap_mm": {"type": "number", "minimum": 0},
+        "frame": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["inset_mm", "width_mm", "color"],
+          "properties": {
+            "inset_mm": {"type": "number"},
+            "width_mm": {"type": "number"},
+            "color": {"type": "string"}
+          }
+        },
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind"],
+            "properties": {
+              "kind": {"enum": ["ornament", "sanskrit", "iast", "english", "title", "source", "rule", "spacer"]},
+              "glyph": {"type": "string"},
+              "mm": {"type": "number"},
+              "width_mm": {"type": "number"},
+              "thickness_mm": {"type": "number"},
+              "size_pt": {"type": "number"},
+              "line_height": {"type": "number"},
+              "color": {"type": "string"},
+              "italic": {"type": "boolean"},
+              "uppercase": {"type": "boolean"},
+              "weight": {"type": "number"},
+              "tracking": {"type": "string"},
+              "space_after_mm": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "back": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["padding_mm", "divider_x_pct", "logo_mm", "logo_mode", "wordmark", "address_lines", "stamp_box", "caption"],
+      "properties": {
+        "padding_mm": {"type": "array", "items": {"type": "number"}, "minItems": 4, "maxItems": 4},
+        "divider_x_pct": {"type": "number", "minimum": 40, "maximum": 80},
+        "logo_mm": {"type": "number"},
+        "logo_mode": {"enum": ["auto", "white", "ink"]},
+        "wordmark": {"type": "string"},
+        "address_lines": {"type": "integer", "minimum": 0, "maximum": 5},
+        "stamp_box": {"type": "boolean"},
+        "caption": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title_pt", "source_pt", "brief_pt", "series_pt"],
+          "properties": {
+            "title_pt": {"type": "number"},
+            "source_pt": {"type": "number"},
+            "brief_pt": {"type": "number"},
+            "series_pt": {"type": "number"}
+          }
+        }
+      }
+    },
+    "render": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"preview_dpi": {"type": "integer", "minimum": 72, "maximum": 300}}
+    }
+  }
+}

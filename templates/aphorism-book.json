@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "id": "aphorism-book",
+  "name": "Aphorism book",
+  "description": "A complete scripture made of single sentences: one aphorism per page, verse above, one-sentence orientation below. The page is the object — no facing spread. Counts are text-native (the source fixes them), not a house multiple.",
+  "constraints": {
+    "max_pages": 110,
+    "target_pages": 108,
+    "min_font_pt": 8,
+    "trim": "6x9 152.4x228.6mm; interior no-bleed; full-wrap cover via styles/cover-canonical.json"
+  },
+  "pipeline": [
+    "content",
+    "structure",
+    "formatting",
+    "build"
+  ],
+  "layout": "aphorism",
+  "provenance": "verse",
+  "entry_anatomy": {
+    "required": {
+      "line": [
+        "line",
+        "en"
+      ],
+      "gloss": [
+        "gloss",
+        "essence"
+      ]
+    },
+    "optional": {
+      "iast": [
+        "iast"
+      ],
+      "deva": [
+        "deva"
+      ],
+      "note": [
+        "note"
+      ]
+    }
+  },
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "per-book",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"
+    },
+    "social": {
+      "status": "per-book",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "per-book",
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
+    },
+    "chant": {
+      "status": "per-book",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go."
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered. Customer package = package/ folder (EPUB + PDF + audio + manifest); see BOOKS.md 7b for the physical/Kindle/direct channel map."
+    }
+  },
+  "style_default": "canonical",
+  "structure_defaults": {
+    "entries_per_section": 1,
+    "variable_counts": true
+  },
+  "guide_labels": {
+    "gloss": [
+      "The reading"
+    ]
+  },
+  "series_pattern": "One text, one volume. If a text cannot fit the ceiling at one aphorism per page, split at a chapter boundary into numbered volumes — never shrink the page.",
+  "inclusion": [
+    "every aphorism of the source, in the source's own order — no selection, no reordering",
+    "each page carries the verse (Deva + IAST + English) and one gloss sentence placed from C1",
+    "section boundaries follow the text's own chapters; counts are read from the corpus, never assumed"
+  ],
+  "exclusion": [
+    "no aphorism from this text may appear in another book (one verse, one book)",
+    "no commentary beyond the single gloss sentence — this is not a critical edition",
+    "no facing page, no padding prose, no invented reading"
+  ],
+  "cover": {
+    "style": "cover-canonical",
+    "style_file": "styles/cover-canonical.json",
+    "generator": "prints/bookkit/cover.py",
+    "per_book_inputs": [
+      "book.json trim",
+      "book.json paper",
+      "book.json target_pages",
+      "book.json meta.cover_image (optional front emblem)"
+    ],
+    "house_constant": "back cover = black ground + Svatantrya mantra-ring logo, small, centred; no back text, no second element",
+    "swap_rule": "replace meta.cover_image with the new book's emblem; leave styles/cover-canonical.json untouched so geometry and the back logo stay identical across the series",
+    "render": "chrome --headless --print-to-pdf=cover.pdf http://127.0.0.1:8000/<book>/cover.html"
+  }
+}

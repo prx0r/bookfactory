@@ -1,0 +1,11 @@
+{
+  "stage": "content",
+  "outputs": [
+    "lesson-preview",
+    "paperback-preview"
+  ],
+  "gate_note": "Scaffolded from thesis file: content first, PDF build is the last stage — see BOOKS.md.",
+  "max_pages": 108,
+  "adjudications": [],
+  "thesis_source": "specs/learn-sanskrit.thesis.json"
+}

@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "book": "paratrimshika-goddess",
+  "title": "The Goddess’s Thirty-Six",
+  "template": "prayer-book",
+  "style": "canonical",
+  "claim": "The Goddess asks one question and the answer is the whole path: thirty-six verses of the Parātrīśikā, one page-turn at a time, with the recognition each verse performs.",
+  "purpose": {
+    "kind": "reference",
+    "impact": "A complete scripture in thirty-six page-turns: the Goddess asks, the Lord answers, and the reader is the third party in the room.",
+    "reader": "The reader who wants a whole revelation in one hand, and the practitioner of the goddess path.",
+    "realisation": "The answer to the Goddess’s question is not information but the reader’s own recognition — the text performs what it says.",
+    "non_goals": [
+      "no reordering of the verses",
+      "no commentary beyond the facing reading",
+      "no verse reuse"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "36 verses as spreads (72pp) + front 10 + glossary 8 + index 6 + end 4 = 100, padded to 108."
+  },
+  "structure": {
+    "sections": 9,
+    "total_entries": 36,
+    "sections_plan": [
+      {
+        "id": "question",
+        "purpose": "the Goddess’s question and the Lord’s answer begin",
+        "count": 4
+      },
+      {
+        "id": "energies",
+        "purpose": "the three energies of the supreme",
+        "count": 4
+      },
+      {
+        "id": "wheel",
+        "purpose": "the wheel of powers and the letters",
+        "count": 4
+      },
+      {
+        "id": "letters",
+        "purpose": "the alphabet as the body of the goddess",
+        "count": 4
+      },
+      {
+        "id": "worlds",
+        "purpose": "the worlds and their arising",
+        "count": 4
+      },
+      {
+        "id": "self",
+        "purpose": "the self and its recognition",
+        "count": 4
+      },
+      {
+        "id": "recognition",
+        "purpose": "the recognition that is the answer",
+        "count": 4
+      },
+      {
+        "id": "goddess-body",
+        "purpose": "the goddess’s body and the practitioner’s",
+        "count": 4
+      },
+      {
+        "id": "secret",
+        "purpose": "the final secret and the closing blessing",
+        "count": 4
+      }
+    ]
+  },
+  "inclusion": [
+    "every entry faces its explanation: brief (C1 essence), what (sense), how (the text's own practice), sign (the text's own claimed effect) — feel optional",
+    "content is extract-and-place from named sources and layers; clarity-edits only after placing; no source = block stays off the page (fail closed)",
+    "whole book must preflight under the template page ceiling with the template style before the build stage opens",
+    "all thirty-six verses, in the text’s own order, four per section",
+    "each entry: verse, the recognition it performs, and its sign"
+  ],
+  "exclusion": [
+    "no entry may appear in another book — one prayer, one book (cross-book id and IAST uniqueness is gate-enforced)",
+    "no agent-written prose anywhere in the entry fields; translations are ours, Lakshmanjoo/Dyczkowski prose is never printed beyond brief attributed quotation",
+    "no PDF build before content, structure, and formatting are confirmed — the build stage is the LAST stage of the pipeline, never the first",
+    "no verse is reordered to fit the sections — the sections follow the text",
+    "no verse from this text may appear in another book"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "per-book",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"
+    },
+    "social": {
+      "status": "per-book",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "per-book",
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
+    },
+    "chant": {
+      "status": "per-book",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go."
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered. Customer package = package/ folder (EPUB + PDF + audio + manifest); see BOOKS.md 7b for the physical/Kindle/direct channel map."
+    }
+  }
+}

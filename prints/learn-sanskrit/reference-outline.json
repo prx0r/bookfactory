@@ -1,0 +1,18 @@
+{
+  "target_pages": 108,
+  "budget": {
+    "front_alphabet_sheets": 6,
+    "lessons_1_to_10": 72,
+    "rule_boxes_inline": 4,
+    "exercises_inline": 8,
+    "back_references": 14,
+    "pad_to_108": 4
+  },
+  "pages": [
+    "1. IAST ↔ Devanāgarī all-sounds by articulation",
+    "2. Sandhi sheet: taught rules only",
+    "3. Grammar-pattern sheet: endings by function",
+    "4. Vocabulary of the 10 lessons",
+    "5. Recitation sheet: 10 passages Deva + IAST"
+  ]
+}

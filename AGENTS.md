@@ -25,6 +25,37 @@ loop AND the typography.
 - schemas/ — thesis, decision, template, style, asset, quote-handoff (all fail-closed)
 - projects/_template/ — copy to start a non-book lane
 
+
+## MCP server (agents) — OpenCode only
+
+Full reference: **[`bf_mcp/README.md`](bf_mcp/README.md)** (wire protocol,
+every tool, agent loops, fail-closed rules, troubleshooting).
+
+**What it is:** stdio JSON-RPC MCP (`bf_mcp/server.py` + `bf_mcp/tools.py`)
+so an agent drives the factory with the same laws as the CLI — thesis,
+append-only decisions, staged gate, PDF last. **22 tools.**
+
+**Register:** OpenCode `~/.config/opencode/mcp.json` + `opencode.jsonc` →
+`mcp.bookfactory`. **Not Hermes** (owner ruling). Skill map:
+`~/.config/opencode/skills/bookfactory/SKILL.md`.
+
+**Start every session:**
+1. `factory_overview` — goal, lanes, milestones, doc map, laws  
+2. `list_lanes` / `next_actions` — where work actually is  
+3. `read_thesis` · `read_entries` · `read_decisions` · `read_docs`  
+4. `check_lane` — the only gate  
+5. Act only via `decide` / `new_book` / `stage` / `audio_plan` / `epub` / `package` / `quote_preview` (draft)
+
+**Smoke:**
+```bash
+echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' \
+  | /home/box/Documents/patala/.venv/bin/python3 bf_mcp/server.py
+```
+
+Mutations shell out to `factory.py` (venv python) so MCP and CLI cannot drift.
+Reads are in-process. Paths are relative and jail to the repo. See README for
+the full tool table and canonical loops.
+
 ## Commands
 ```bash
 python3 check.py                        # whole registry (DUE-LATER = upcoming stages)

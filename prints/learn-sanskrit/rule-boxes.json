@@ -1,0 +1,58 @@
+[
+  {
+    "id": "rb-1-savarna",
+    "lesson": "l01-mamatma",
+    "title": "Rule box 1 — a + a / a + ā → ā",
+    "body": "Adjacent short a (or a + ā) contract to one long ā. Pāṇini 6.1.101 akaḥ savarṇe dīrghaḥ. Reverse: split ā into a + a when the words demand it.",
+    "foundational": true
+  },
+  {
+    "id": "rb-2-yana",
+    "lesson": "l01-mamatma",
+    "title": "Rule box 2 — a + e → ai",
+    "body": "yaṇ sandhi: sadā + eva → sadaiva; brahma + eva → brahmaiva. Reverse: ai may hide a + e.",
+    "foundational": true
+  },
+  {
+    "id": "rb-3-loc-instr",
+    "lesson": "l03-hrdi-vande",
+    "title": "Rule box 3 — where vs by-what",
+    "body": "Locative answers “where?” (hṛdi). Instrumental answers “by/with what?” (cittatayā).",
+    "foundational": true
+  },
+  {
+    "id": "rb-4-present-ti",
+    "lesson": "l04-nryti",
+    "title": "Rule box 4 — 3sg present often ends -ti",
+    "body": "nṛtyati · gāyati · hṛṣyati — same ending, three roots. Discover before the paradigm.",
+    "foundational": true
+  },
+  {
+    "id": "rb-5-ma-imperative",
+    "lesson": "l05-ma-kiṃcit",
+    "title": "Rule box 5 — mā + imperative = don’t",
+    "body": "Prohibitive mā with imperatives: mā tyaja, mā gṛhāṇa. na negates statements.",
+    "foundational": true
+  },
+  {
+    "id": "rb-6-dual-yor",
+    "lesson": "l07-dual-fire",
+    "title": "Rule box 6 — dual gen/loc = -yor",
+    "body": "Exactly two: anayor, vahnidāhikayor. Not plural -ānām / -eṣu.",
+    "foundational": true
+  },
+  {
+    "id": "rb-7-alaṃ-inst",
+    "lesson": "l08-alaṃ-extract",
+    "title": "Rule box 7 — alaṃ + instrumental = enough of",
+    "body": "alaṃ governs the instrumental: alaṃ bhedānukathayā. Substitutes are labelled exercises.",
+    "foundational": true
+  },
+  {
+    "id": "rb-8-causal-abl",
+    "lesson": "l10-tantrasara-prose",
+    "title": "Rule box 8 — -tva + -āt = because of the fact that",
+    "body": "Abstract -tva/-tā then ablative -āt builds causal “because”: virodhakatvāt.",
+    "foundational": true
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "book": "vijnanabhairava-reference",
+  "title": "The Vijñānabhairava: A Reference",
+  "template": "treatise-book",
+  "style": "canonical",
+  "claim": "The whole Vijñānabhairava, 162 doors, decoded and translated line by line — a cheap exact reference to the text itself, with no one telling the reader what to do.",
+  "purpose": {
+    "kind": "reference",
+    "impact": "The whole Vijñānabhairava in one sitting: 162 doors decoded, translated and left alone, so the reader meets the text rather than a teacher.",
+    "reader": "The practitioner or scholar who wants the text itself, not a programme; the reader who suspects the instructions are already the recognition.",
+    "realisation": "The techniques are not instructions to follow but recognitions to notice — the text is already looking back at the reader.",
+    "non_goals": [
+      "no practice programme and no our-instruction layer",
+      "no selection of the 36 easiest doors",
+      "no commentary replacing the verse"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "162 doors at 3/pp (54pp) + 9 block openers + front 10 + glossary 8 + index 6 + end 4 = 91, padded to 108. 400pp study edition only if full apparatus is added later."
+  },
+  "structure": {
+    "sections": 9,
+    "total_entries": 162,
+    "sections_plan": [
+      {
+        "id": "doors-01-18",
+        "purpose": "doors 1–18, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-19-36",
+        "purpose": "doors 19–36, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-37-54",
+        "purpose": "doors 37–54, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-55-72",
+        "purpose": "doors 55–72, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-73-90",
+        "purpose": "doors 73–90, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-91-108",
+        "purpose": "doors 91–108, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-109-126",
+        "purpose": "doors 109–126, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-127-144",
+        "purpose": "doors 127–144, in the text’s own order",
+        "count": 18
+      },
+      {
+        "id": "doors-145-162",
+        "purpose": "doors 145–162, in the text’s own order",
+        "count": 18
+      }
+    ]
+  },
+  "inclusion": [
+    "all verses of the source, in order, set continuously at two to three per page",
+    "each chapter opens with a short argument placed from ARGMAP + C1, never newly written",
+    "glossary terms and definitions are placed from C1 key terms; index is generated",
+    "all 162 verses, in the text’s own order, with decoded Sanskrit and a sharp translation",
+    "one short interpretation note per verse at most; no practice programme"
+  ],
+  "exclusion": [
+    "no verse may be selected away to make room — the argument requires the whole set",
+    "no verse from this source may appear in another book",
+    "no facing-page commentary in the reference edition; that is the expanded edition's job",
+    "no selection — every door is printed",
+    "no our-instruction layer and no exercises",
+    "no verse reused in another book"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "per-book",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"
+    },
+    "social": {
+      "status": "per-book",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "per-book",
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
+    },
+    "chant": {
+      "status": "per-book",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go."
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered. Customer package = package/ folder (EPUB + PDF + audio + manifest); see BOOKS.md 7b for the physical/Kindle/direct channel map."
+    }
+  }
+}

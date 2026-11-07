@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "book": "poetry-of-abhinavagupta",
+  "title": "The Poetry of Abhinavagupta",
+  "template": "treatise-book",
+  "style": "canonical",
+  "claim": "Abhinavagupta’s nine hymns, printed whole and decoded verse by verse: not a selection of famous lines but the complete poetry, sharp enough to read in one sitting and exact enough to trust.",
+  "purpose": {
+    "kind": "reference",
+    "impact": "One sitting with the whole of Abhinavagupta’s poetry, decoded verse by verse, until the philosopher disappears and only the voice remains.",
+    "reader": "Readers who know the name and have never heard him sing; practitioners tired of commentary; anyone who wants the poems themselves.",
+    "realisation": "The doctrine is not argued here — it is addressed. The reader catches themselves being addressed, and the address is the recognition.",
+    "non_goals": [
+      "no critical apparatus or variant readings",
+      "no paraphrase in place of translation",
+      "no selection of greatest hits — the hymns are printed whole"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "172 verses at ~3/pp (58pp) + 9 hymn openers + front 10 + glossary 8 + index 6 + end 4 = 95, padded to 108. Study edition (400pp) is a later annotated printing, not a new volume."
+  },
+  "structure": {
+    "sections": 9,
+    "total_entries": 172,
+    "sections_plan": [
+      {
+        "id": "bhairavastava",
+        "purpose": "the terrifying Lord praised — awe as the first door",
+        "count": 10
+      },
+      {
+        "id": "dehastha",
+        "purpose": "the deity in the body — the body as mandala",
+        "count": 16
+      },
+      {
+        "id": "kramastotra",
+        "purpose": "the goddess of time — sequence, memory, the wheel",
+        "count": 30
+      },
+      {
+        "id": "anuttarastika",
+        "purpose": "eight verses on the unsurpassed",
+        "count": 8
+      },
+      {
+        "id": "paramarthadvadasika",
+        "purpose": "twelve verses on the highest truth",
+        "count": 13
+      },
+      {
+        "id": "mahopadeshavimshatika",
+        "purpose": "twenty verses of great instruction",
+        "count": 20
+      },
+      {
+        "id": "paryantapancasika",
+        "purpose": "fifty verses at the end of the path",
+        "count": 52
+      },
+      {
+        "id": "bodhapancadasika",
+        "purpose": "fifteen verses of awakening",
+        "count": 15
+      },
+      {
+        "id": "paramarthacarca",
+        "purpose": "the examination of the highest truth — the poet’s own voice",
+        "count": 8
+      }
+    ]
+  },
+  "inclusion": [
+    "all verses of the source, in order, set continuously at two to three per page",
+    "each chapter opens with a short argument placed from ARGMAP + C1, never newly written",
+    "glossary terms and definitions are placed from C1 key terms; index is generated",
+    "all 172 verses of the nine hymns, in the hymns’ own order, decoded and translated",
+    "each hymn opens with a one-page orientation placed from C1; no other editorial prose"
+  ],
+  "exclusion": [
+    "no verse may be selected away to make room — the argument requires the whole set",
+    "no verse from this source may appear in another book",
+    "no facing-page commentary in the reference edition; that is the expanded edition's job",
+    "no verse is selected away and none is reserved for a later volume — this is the complete reference",
+    "no commentary between verses; the poem is the object"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "per-book",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"
+    },
+    "social": {
+      "status": "per-book",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "per-book",
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
+    },
+    "chant": {
+      "status": "per-book",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go."
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered. Customer package = package/ folder (EPUB + PDF + audio + manifest); see BOOKS.md 7b for the physical/Kindle/direct channel map."
+    }
+  }
+}

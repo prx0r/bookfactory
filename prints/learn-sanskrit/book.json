@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Learn Sanskrit with Abhinavagupta",
+    "subtitle": "Vol. I — Ten Passages from Sound to Recognition",
+    "blurb": "Discovery before explanation. Ten lessons, five stages, eight foundational rule boxes. Glosses and morphology from translation-work; every rule reversible.",
+    "epi_iast": "mamātmā",
+    "epi_en": "My Self — the first fusion.",
+    "epi_src": "Bhairavastava 2 (Abhinavagupta)",
+    "back_cover": "From mamātmā to Tantrasāra prose in ten lessons. Witness and glosses from the audited translation-work stack; derivations reversible; Trika exegesis attributed. Rule boxes stay few. 108 pages."
+  },
+  "trim": "6x9",
+  "paper": "cream",
+  "target_pages": 108,
+  "glyph": "ॐ",
+  "front_matter": [],
+  "sections": [
+    {
+      "id": "stage-1-sounds",
+      "title": "I · The alphabet begins making sense",
+      "purpose": "first sounds, first sandhi, first sentences"
+    },
+    {
+      "id": "stage-2-language",
+      "title": "II · Sanskrit behaves like a language",
+      "purpose": "agreement, verbs, location"
+    },
+    {
+      "id": "stage-3-instructions",
+      "title": "III · Instructions you can use",
+      "purpose": "commands, refuge, cases"
+    },
+    {
+      "id": "stage-4-trika-grammar",
+      "title": "IV · Grammar of nondual Śaivism",
+      "purpose": "dual, instrumental, abstract nouns"
+    },
+    {
+      "id": "stage-5-original",
+      "title": "V · Read Abhinavagupta",
+      "purpose": "complete verse and philosophical prose"
+    }
+  ]
+}

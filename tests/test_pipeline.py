@@ -349,3 +349,29 @@ class TrimAndCoverTests(unittest.TestCase):
             self.assertIn('class="back"', html, book)
             self.assertNotIn('back_cover', html, book)  # blank back: logo only
             self.assertEqual(html.count('<img'), 2, book)  # back logo + front emblem
+
+class SpecThesesTests(unittest.TestCase):
+    """specs/*.thesis.json are pre-lane thesis objects and must stay valid."""
+
+    def test_spec_theses_validate_and_add_up(self):
+        from jsonschema import Draft202012Validator
+        schema = json.loads((ROOT / 'schemas' / 'thesis.schema.json').read_text(encoding='utf-8'))
+        specs = sorted((ROOT / 'specs').glob('*.thesis.json'))
+        self.assertGreaterEqual(len(specs), 8)
+        for path in specs:
+            thesis = json.loads(path.read_text(encoding='utf-8'))
+            errs = [e.message for e in Draft202012Validator(schema).iter_errors(thesis)]
+            self.assertEqual(errs, [], path.name)
+            st = thesis['structure']
+            self.assertEqual(st['sections'], len(st['sections_plan']), path.name)
+            if 'entries_per_section' in st:
+                total = st['sections'] * st['entries_per_section']
+            else:
+                total = sum(p['count'] for p in st['sections_plan'])
+            self.assertEqual(total, st['total_entries'], path.name)
+            self.assertIn('purpose', thesis, f'{path.name}: purpose is mandatory')
+            self.assertIn(thesis['purpose']['kind'], ('reference','primer','parable'), path.name)
+            self.assertEqual(thesis['pages']['target'], 108, path.name)
+            self.assertEqual(thesis['pages']['fallback'], 400, path.name)
+            self.assertEqual(thesis['pages']['fallback_edition'], 'study', path.name)
+            self.assertTrue((ROOT / 'templates' / f"{thesis['template']}.json").is_file(), path.name)

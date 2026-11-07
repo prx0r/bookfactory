@@ -252,6 +252,13 @@ def check_content(name, spec, prints, template):
     return problems
 
 
+def section_counts(st):
+    """Thesis section -> exact count. Uniform entries_per_section, or per-section count."""
+    if 'entries_per_section' in st:
+        return {p['id']: st['entries_per_section'] for p in st['sections_plan']}
+    return {p['id']: p['count'] for p in st['sections_plan']}
+
+
 def check_structure_against_thesis(thesis, entries, book_data):
     """structure stage: the thesis derives sections, counts, total."""
     problems = []
@@ -261,13 +268,14 @@ def check_structure_against_thesis(thesis, entries, book_data):
     if book_sections != plan_ids:
         problems.append(f'section mismatch: book={book_sections} thesis={plan_ids}')
     counts = Counter(e.get('section') for e in entries)
-    if st['sections'] * st['entries_per_section'] != st['total_entries']:
-        problems.append(f'thesis internal math: {st["sections"]}x{st["entries_per_section"]} != {st["total_entries"]}')
+    fixed = section_counts(st)
+    if sum(fixed.values()) != st['total_entries']:
+        problems.append(f'thesis internal math: section counts sum {sum(fixed.values())} != {st["total_entries"]}')
     if len(entries) != st['total_entries']:
         problems.append(f'total_entries: book has {len(entries)}, thesis fixes {st["total_entries"]}')
     for sid in plan_ids:
-        if counts.get(sid, 0) != st['entries_per_section']:
-            problems.append(f'section {sid}: {counts.get(sid, 0)} entries, thesis fixes {st["entries_per_section"]}')
+        if counts.get(sid, 0) != fixed.get(sid):
+            problems.append(f'section {sid}: {counts.get(sid, 0)} entries, thesis fixes {fixed.get(sid)}')
     for sid in counts:
         if sid not in plan_ids:
             problems.append(f'section {sid} exists in book but not in thesis')

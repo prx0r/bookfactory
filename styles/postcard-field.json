@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "geometry": {
+    "trim_mm": [
+      101.6,
+      152.4
+    ],
+    "bleed_mm": 3.0,
+    "safe_mm": 5.0
+  },
+  "fonts": {
+    "display_file": "TiroDevanagariSanskrit-Regular.ttf",
+    "text_file": "CormorantGaramond[wght].ttf",
+    "display_family": "Tiro",
+    "text_family": "Cormorant"
+  },
+  "back": {
+    "padding_mm": [
+      14,
+      12,
+      14,
+      12
+    ],
+    "divider_x_pct": 60,
+    "logo_mm": 11,
+    "logo_mode": "auto",
+    "wordmark": "SVATANTRYA",
+    "address_lines": 3,
+    "stamp_box": true,
+    "caption": {
+      "title_pt": 13,
+      "source_pt": 7.5,
+      "brief_pt": 9.5,
+      "series_pt": 6.5
+    }
+  },
+  "render": {
+    "preview_dpi": 150
+  },
+  "id": "postcard-field",
+  "name": "Field",
+  "description": "Off-white and green, the verse low on the card with a double rule.",
+  "colors": {
+    "ground": "#f4f1e8",
+    "ink": "#2f3b33",
+    "muted": "#6b7f5e",
+    "accent": "#6b7f5e"
+  },
+  "front": {
+    "align": "center",
+    "justify": "flex-end",
+    "padding_mm": [
+      22,
+      14,
+      24,
+      14
+    ],
+    "gap_mm": 3,
+    "frame": null,
+    "blocks": [
+      {
+        "kind": "sanskrit",
+        "size_pt": 19,
+        "line_height": 1.55,
+        "color": "ink",
+        "space_after_mm": 3
+      },
+      {
+        "kind": "iast",
+        "size_pt": 8.5,
+        "line_height": 1.5,
+        "color": "muted",
+        "italic": true,
+        "space_after_mm": 5
+      },
+      {
+        "kind": "rule",
+        "width_mm": 12,
+        "thickness_mm": 0.5,
+        "color": "accent",
+        "space_after_mm": 1
+      },
+      {
+        "kind": "rule",
+        "width_mm": 12,
+        "thickness_mm": 0.2,
+        "color": "accent",
+        "space_after_mm": 6
+      },
+      {
+        "kind": "english",
+        "size_pt": 10.5,
+        "line_height": 1.45,
+        "color": "ink",
+        "space_after_mm": 6
+      },
+      {
+        "kind": "source",
+        "size_pt": 7,
+        "color": "muted",
+        "uppercase": true,
+        "tracking": "0.1em"
+      }
+    ]
+  }
+}

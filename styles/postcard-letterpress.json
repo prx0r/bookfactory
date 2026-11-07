@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "geometry": {
+    "trim_mm": [
+      101.6,
+      152.4
+    ],
+    "bleed_mm": 3.0,
+    "safe_mm": 5.0
+  },
+  "fonts": {
+    "display_file": "TiroDevanagariSanskrit-Regular.ttf",
+    "text_file": "CormorantGaramond[wght].ttf",
+    "display_family": "Tiro",
+    "text_family": "Cormorant"
+  },
+  "back": {
+    "padding_mm": [
+      14,
+      12,
+      14,
+      12
+    ],
+    "divider_x_pct": 60,
+    "logo_mm": 11,
+    "logo_mode": "auto",
+    "wordmark": "SVATANTRYA",
+    "address_lines": 3,
+    "stamp_box": true,
+    "caption": {
+      "title_pt": 13,
+      "source_pt": 7.5,
+      "brief_pt": 9.5,
+      "series_pt": 6.5
+    }
+  },
+  "render": {
+    "preview_dpi": 150
+  },
+  "id": "postcard-letterpress",
+  "name": "Letterpress",
+  "description": "Cream stock, oxblood ink, a broadside set from the top left.",
+  "colors": {
+    "ground": "#efe7d6",
+    "ink": "#2b1d16",
+    "muted": "#6b5a4c",
+    "accent": "#7c2d22"
+  },
+  "front": {
+    "align": "flex-start",
+    "justify": "flex-start",
+    "padding_mm": [
+      22,
+      14,
+      20,
+      14
+    ],
+    "gap_mm": 4,
+    "frame": null,
+    "blocks": [
+      {
+        "kind": "title",
+        "size_pt": 10,
+        "weight": 600,
+        "color": "accent",
+        "uppercase": true,
+        "tracking": "0.16em",
+        "space_after_mm": 1
+      },
+      {
+        "kind": "sanskrit",
+        "size_pt": 17,
+        "line_height": 1.5,
+        "color": "ink",
+        "space_after_mm": 3
+      },
+      {
+        "kind": "iast",
+        "size_pt": 8.5,
+        "line_height": 1.5,
+        "color": "muted",
+        "italic": true,
+        "space_after_mm": 5
+      },
+      {
+        "kind": "rule",
+        "width_mm": 20,
+        "thickness_mm": 0.4,
+        "color": "accent",
+        "space_after_mm": 5
+      },
+      {
+        "kind": "english",
+        "size_pt": 11,
+        "line_height": 1.45,
+        "color": "ink",
+        "space_after_mm": 7
+      },
+      {
+        "kind": "source",
+        "size_pt": 7.5,
+        "color": "muted",
+        "uppercase": true,
+        "tracking": "0.1em"
+      }
+    ]
+  }
+}

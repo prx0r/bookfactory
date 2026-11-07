@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "book": "proofs-of-the-self",
+  "title": "Proofs of the Self",
+  "template": "treatise-book",
+  "style": "canonical",
+  "claim": "Recognition is not a belief to be adopted but a conclusion to be earned: three treatises prove the subject is not inert, the agent is universal, and the relation between the two is real — in one terse reference volume.",
+  "purpose": {
+    "kind": "reference",
+    "impact": "The rational case for recognition, compressed until the reader cannot dismiss it as mysticism.",
+    "reader": "The philosopher, the sceptic, and the practitioner who needs a reason before a practice.",
+    "realisation": "If the subject is not inert, the agent is universal, and the relation is real, then recognition is a conclusion — not a belief and not an experience.",
+    "non_goals": [
+      "no devotional framing",
+      "no expanded commentary in this volume",
+      "no omitted verses"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "106 verses at 2–3/pp (36–53pp) + 9 essays + front 10 + glossary 8 + index 6 + end 4 = 73–90, padded to 108."
+  },
+  "structure": {
+    "sections": 9,
+    "total_entries": 106,
+    "sections_plan": [
+      {
+        "id": "ajad-not-inert",
+        "purpose": "the perceiver cannot be inert matter",
+        "count": 9
+      },
+      {
+        "id": "ajad-self-luminous",
+        "purpose": "the subject is conscious and self-luminous",
+        "count": 9
+      },
+      {
+        "id": "ajad-free",
+        "purpose": "the subject is free agency, not an object",
+        "count": 9
+      },
+      {
+        "id": "isvara-needs-knower",
+        "purpose": "the world requires a knower",
+        "count": 19
+      },
+      {
+        "id": "isvara-knower-one",
+        "purpose": "the knower is one",
+        "count": 19
+      },
+      {
+        "id": "isvara-lord",
+        "purpose": "the one is the Lord",
+        "count": 18
+      },
+      {
+        "id": "sambandha-not-illusion",
+        "purpose": "relation is not an illusion",
+        "count": 8
+      },
+      {
+        "id": "sambandha-universal-individual",
+        "purpose": "the universal and the individual",
+        "count": 8
+      },
+      {
+        "id": "sambandha-recognition",
+        "purpose": "recognition is the relation",
+        "count": 7
+      }
+    ]
+  },
+  "inclusion": [
+    "all verses of the source, in order, set continuously at two to three per page",
+    "each chapter opens with a short argument placed from ARGMAP + C1, never newly written",
+    "glossary terms and definitions are placed from C1 key terms; index is generated",
+    "all 106 verses of the three siddhis, set continuously at two to three per page",
+    "nine chapter essays placed from ARGMAP + C1; glossary and index generated"
+  ],
+  "exclusion": [
+    "no verse may be selected away to make room — the argument requires the whole set",
+    "no verse from this source may appear in another book",
+    "no facing-page commentary in the reference edition; that is the expanded edition's job",
+    "no verse is selected away; the argument needs the whole set",
+    "this volume is the terse reference — the expanded critical edition is a later edition, not a second volume"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte, 108pp target (KDP regular trim class); interior no-bleed; full-wrap cover from styles/cover-canonical.json (black ground, ivory type, Svatantrya logo centred on the back); kdp_preflight --expect-pages + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "per-book",
+      "spec": "GLOBAL-POST-GLOS-6X4 6x4in @300dpi, front = line + ref, back = explainer designed once"
+    },
+    "social": {
+      "status": "per-book",
+      "spec": "1080x1080 + 1080x1350 from exact entry, white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "per-book",
+      "spec": "Per-entry English how-to clip, videofactory speaker format: Fish Audio TTS voice 'granny' (frozen ID 614f8afd83f841048c040b2c6234d2c1) reads the entry's how/howto block (the practice instruction). Same cache/receipts pattern as the verse clip. Digital edition plays verse -> how-to per prayer. Planned by factory.py audio; render after owner go."
+    },
+    "chant": {
+      "status": "per-book",
+      "spec": "Per-entry Sanskrit clip in the videofactory speaker format: Fish Audio TTS voice 'verse' (frozen ID 4e873c37d4cb439e9bccc4dc1f633290) reads the entry's IAST line. Render pattern copied from prx0r/videofactory render_chapter: one call per cached group, cache key sha1(voice|text), receipts appended to audio/receipts/calls.jsonl, VOICE_DB -21dB normalization. Planned by factory.py audio; API render only after owner go."
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Digital edition for every book: (a) reflowable EPUB from bookkit HTML for Kindle/KDP ebook upload, (b) DRM-free PDF of the build-green interior for direct sale (one-link). Built after the build stage; cover, description and KDP ebook metadata are separate deliverables. Audio clips (verse + how-to) ship alongside when rendered. Customer package = package/ folder (EPUB + PDF + audio + manifest); see BOOKS.md 7b for the physical/Kindle/direct channel map."
+    }
+  }
+}
