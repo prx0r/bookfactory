@@ -97,15 +97,6 @@ footer .fin{max-width:1400px;margin:0 auto;padding:1.2rem 1rem;font-family:var(-
 footer a{color:var(--gold-ink)}
 pre{background:#f6f3ee;padding:.55rem .75rem;overflow:auto;font-size:.88rem;font-family:var(--sans);margin:.4rem 0 .8rem}
 ul.compact{margin:.35rem 0 .9rem;padding-left:1.2rem;font-size:.95rem}
-
-.playrow{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.6rem 0 1rem;font-family:var(--sans)}
-.vplay{font-family:var(--sans);font-size:.8rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.35rem .85rem;cursor:pointer;color:var(--ink)}
-.vplay:hover{border-color:var(--gold);color:var(--gold-ink)}
-.vplay.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.kw{transition:color .18s ease;color:#cfc9be;padding:0 .02em}
-.kw.on{color:var(--ink)}
-.kword .kw{padding:0}
-
 @media(max-width:1100px){.shell{grid-template-columns:240px minmax(0,1fr)}.toc{display:none}}
 @media(max-width:800px){
   .shell{grid-template-columns:minmax(0,1fr)}
@@ -162,7 +153,7 @@ def page(title: str, body: str, *, active: str = "index", crumb: str = "", toc: 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Noto+Serif+Devanagari:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>{CSS}</style>
-</head><body data-lesson="{esc(active if active.startswith("l") else "")}">
+</head><body>
 <div class="topbar"><div class="topbar-in">
 <button class="burger" id="burger" aria-label="menu">☰</button>
 <a class="brand" href="index.html"><span class="deva-brand">संस्कृत</span><small>learn · Abhinavagupta</small></a>
@@ -190,62 +181,6 @@ document.querySelectorAll('.depth button[data-d]').forEach(btn=>{{
     document.querySelectorAll('.depth-panel').forEach(p=>p.classList.toggle('on',p.getAttribute('data-d')===d));
   }});
 }});
-
-// — lesson player (videofactory Fish voice + karaoke when audio-manifest has timings) —
-(function(){
-  var AUDIO_MANIFEST = null;
-  fetch('audio-manifest.json').then(function(r){ return r.ok ? r.json() : null; })
-    .then(function(m){ AUDIO_MANIFEST = m; })
-    .catch(function(){ AUDIO_MANIFEST = null; });
-  var au = document.getElementById('lesson-audio');
-  if(!au) return;
-  var lessonId = (document.body.getAttribute('data-lesson') || location.pathname.split('/').pop().replace('.html',''));
-  function urlFor(kind){
-    if(!AUDIO_MANIFEST || !AUDIO_MANIFEST.clips) return null;
-    var c = AUDIO_MANIFEST.clips[lessonId + '__' + kind];
-    return c || null;
-  }
-  document.querySelectorAll('.vplay[data-play]').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var kind = btn.getAttribute('data-play');
-      var src = urlFor(kind);
-      document.querySelectorAll('.vplay').forEach(function(b){ b.classList.remove('on'); });
-      if(src){
-        au.src = src;
-        au.play().then(function(){ btn.classList.add('on'); }).catch(function(){
-          document.getElementById('play-note').textContent = 'audio failed — using browser voice';
-          speak(kind);
-        });
-      } else {
-        speak(kind);
-      }
-    });
-  });
-  function speak(kind){
-    try{
-      speechSynthesis.cancel();
-      var host = document.getElementById('src-line');
-      var iast = document.querySelector('.iast');
-      var text = (kind === 'verse' && iast) ? iast.textContent
-               : (kind === 'howto' ? (document.querySelector('#practice') ? document.querySelector('#practice').textContent : iast.textContent)
-               : iast.textContent);
-      var u = new SpeechSynthesisUtterance(String(text).slice(0, 1200));
-      u.rate = 0.95;
-      u.onend = function(){ document.querySelectorAll('.vplay').forEach(function(b){ b.classList.remove('on'); }); };
-      speechSynthesis.speak(u);
-      document.getElementById('play-note').textContent = 'browser voice (Fish clip not rendered yet)';
-      btnMark(kind);
-    }catch(e){}
-  }
-  function btnMark(kind){
-    document.querySelectorAll('.vplay').forEach(function(b){ b.classList.remove('on'); });
-    var b = document.querySelector('.vplay[data-play="'+kind+'"]');
-    if(b) b.classList.add('on');
-  }
-  au.addEventListener('ended', function(){
-    document.querySelectorAll('.vplay').forEach(function(b){ b.classList.remove('on'); });
-  });
-})();
 </script>
 </body></html>
 """
@@ -396,17 +331,11 @@ def lesson_body(e, n):
   <span class="badge">{esc(e.get('id'))}</span>
 </p>
 
-<h2 id="witness">1 · The passage</h2>
+<h2 id="witness">1 · Original witness</h2>
 {deva and f'<div class="dev">{esc(deva)}</div>' or ''}
 <div class="iast">{esc(e.get('iast'))}</div>
 <p class="en">{esc(e.get('en'))}</p>
-<p class="mut" id="src-line">{esc(e.get('source'))} · {esc(e.get('source_ref'))}</p>
-<div class="playrow" id="playrow">
-  <button type="button" class="vplay" data-play="verse" id="btn-verse">▶ recite Sanskrit</button>
-  <button type="button" class="vplay" data-play="howto" id="btn-howto">▶ practice note</button>
-  <span class="mut" id="play-note">Fish verse voice · karaoke when timings exist</span>
-</div>
-<audio id="lesson-audio" preload="none"></audio>
+{kv_list(w, ['author','work','verse','edition','variants'])}
 
 <h2 id="recite">2 · Recitation</h2>
 <pre>{esc(rec.get('syllables',''))}</pre>
@@ -531,33 +460,6 @@ def main():
         },
     }
     (OUT / "index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    # audio manifest: map lessonId__kind -> relative wav url (videofactory cache names)
-    clips = {}
-    audio_dir = ROOT / "audio" / "clips"
-    if audio_dir.is_dir():
-        for wav in sorted(audio_dir.glob("*.wav")):
-            # name: l01-mamatma__verse_<hash>.wav
-            parts = wav.name.split("__")
-            if len(parts) >= 2:
-                lesson = parts[0]
-                kind = parts[1].split("_")[0]
-                clips[f"{lesson}__{kind}"] = f"audio/clips/{wav.name}"
-    manifest = {
-        "engine": "fish-audio/s2.1-pro-free",
-        "voices": VOICES_SRC,
-        "pattern": "prx0r/videofactory render_chapter sha1(voice|text) cache",
-        "clips": clips,
-        "karaoke": "timings via kashaudio MMS when available — play falls back to browser voice",
-    }
-    (OUT / "audio-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    # copy clips into site for one-link
-    site_audio = OUT / "audio" / "clips"
-    if audio_dir.is_dir():
-        site_audio.mkdir(parents=True, exist_ok=True)
-        for wav in audio_dir.glob("*.wav"):
-            dest = site_audio / wav.name
-            if not dest.exists() or dest.stat().st_mtime < wav.stat().st_mtime:
-                dest.write_bytes(wav.read_bytes())
     print(f"site → {OUT}")
     for f in sorted(OUT.glob("*.html")):
         print(" ", f.name, f.stat().st_size)
