@@ -98,7 +98,7 @@ def tts_remote(text, voice, dest, speed=1.0):
         return {"ok": False, "error": f"bad remote: {run.stdout[-300:]}"}
     dest.parent.mkdir(parents=True, exist_ok=True)
     scp = subprocess.run(
-        ["scp", "-o", "BatchMode=yes", f"{SSH_HOST}:{REMOTE_DIR}/fish_norm.wav", str(dest)],
+        ["scp", "-o", "BatchMode=yes", f"{SSH_HOST}:/tmp/fish_norm.wav", str(dest)],
         capture_output=True, text=True, timeout=60)
     if scp.returncode != 0:
         return {"ok": False, "error": f"scp: {scp.stderr[-300:]}"}
