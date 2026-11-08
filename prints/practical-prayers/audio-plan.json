@@ -334,20 +334,20 @@
       }
     },
     {
-      "id": "mpa-14",
+      "id": "tsa-12-snana",
       "verse": {
         "voice": "verse",
         "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
-        "text": "nirmalasya kutaḥ snānaṃ vastraṃ viśvodarasya ca | nirlepasya kuto gandho ramyasyābharaṇaṃ kutaḥ",
-        "chars": 95,
-        "cache_key": "c16dc9caac6ae51ff4c1b43ebeb657881d490fef"
+        "text": "snānaṃ ca śuddhatā ucyate śuddhatā ca parameśvarasvarūpasamāveśaḥ",
+        "chars": 65,
+        "cache_key": "c60c86e7dff8a91fac15dbe3a38b3a1664af9938"
       },
       "howto": {
         "voice": "granny",
         "voice_id": "614f8afd83f841048c040b2c6234d2c1",
-        "text": "In the shower: name each item as you use it — water for the stainless, towel for the world-bellied, scent for the unanointed. The mismatch is the smile.",
-        "chars": 152,
-        "cache_key": "3a2111d48263bdb6abbba938bcd86234bf7ac230"
+        "text": "When: the moment the cold water takes your breath. Practice: say the full line once, then stand under it. Return: dry off and dress — no required sign of being “cleared.” Source: Tantrasāra 12.2 (gold layer tsa-a12); not an invented mantra.",
+        "chars": 240,
+        "cache_key": "20a3b1de7dd82c54bbec8ccca59166c3fdcc15b7"
       }
     },
     {
@@ -625,7 +625,7 @@
   ],
   "totals": {
     "clips": 72,
-    "chars": 10422
+    "chars": 10480
   },
   "receipts": "prints/practical-prayers/audio/receipts/calls.jsonl",
   "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
