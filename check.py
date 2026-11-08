@@ -234,11 +234,51 @@ def check_content(name, spec, prints, template):
                 problems.append(('content', f'{entry_id}: source path missing or outside book'))
     if len(ids) != len(set(ids)):
         problems.append(('content', 'duplicate entry ids'))
-    # Legacy books do not yet bind each entry's exact text to a specific
-    # upstream passage, recorded decision, rights evidence and reviewed revision.
-    # That is a SHIP concern (per-entry handoff) — it blocks the build stage,
-    # not authoring of content/structure/formatting.
-    problems.append(('build', f'{len(entries)} entries lack a verified per-entry source, gate, rights and review handoff'))
+    # Per-entry handoff (build stage): prints/<book>/handoff.jsonl must bind
+    # every entry to its source bytes + gate + rights + review state.
+    # Ship still requires owner-approved review + cleared rights (FACTORY-SPEC).
+    hp = book / 'handoff.jsonl'
+    if not hp.is_file():
+        problems.append(('build', f'{len(entries)} entries lack a verified per-entry source, gate, rights and review handoff — run factory.py handoff --book {name}'))
+    else:
+        recs = {}
+        for line in hp.read_text(encoding='utf-8').splitlines():
+            if not line.strip():
+                continue
+            try:
+                d = json.loads(line)
+            except json.JSONDecodeError as exc:
+                problems.append(('build', f'handoff.jsonl bad JSON: {exc}'))
+                continue
+            errs = _validate(d, 'handoff.schema.json')
+            problems.extend(('build', f'handoff: {e}') for e in errs)
+            if d.get('entry_id'):
+                recs[d['entry_id']] = d
+        for e in entries:
+            eid = e.get('id')
+            if not eid:
+                continue
+            r = recs.get(eid)
+            if not r:
+                problems.append(('build', f'handoff missing for entry {eid} — factory.py handoff --book {name}'))
+                continue
+            sp = e.get('source_path') or ''
+            if r.get('source_path') != sp:
+                problems.append(('build', f'handoff {eid}: source_path mismatch'))
+                continue
+            fpath = book / sp if sp else None
+            if sp and (not fpath.is_file()):
+                problems.append(('build', f'handoff {eid}: source file missing {sp}'))
+                continue
+            if sp and fpath and fpath.is_file():
+                import hashlib as _h
+                sha = _h.sha256(fpath.read_bytes()).hexdigest()
+                if r.get('source_sha256') != sha:
+                    problems.append(('build', f'handoff {eid}: source_sha256 stale (source file changed — refresh handoff)'))
+            if r.get('source_ref') != (e.get('source_ref') or ''):
+                problems.append(('build', f'handoff {eid}: source_ref mismatch'))
+            if r.get('gate') not in ('pass', 'review', 'blocked'):
+                problems.append(('build', f'handoff {eid}: invalid gate'))
     art = book_data.get('opening_image')
     if art:
         if not isinstance(art, dict):

@@ -44,6 +44,7 @@ selects is a different book.
 | Tantrasāra: The Essence | prayer | reference | 36 condensed | spread | 108 |
 | The Vijñānabhairava: A Reference | treatise | reference | **162** (complete) | 3/pp | 108 |
 | The Goddess’s Thirty-Six | prayer | reference | **36** (complete) | spread | 108 |
+| **Thirty-Six Windows on Consciousness** | **lesson** | **primer** | **36** (5 stages × 6) | lesson-book | **108** |
 | **Learn Sanskrit with Abhinavagupta Vol. I** | **lesson** | **primer** | **10** (5 stages × 2) | 10-layer lesson | **108** |
 
 Complete editions changed on 2026-11-06:

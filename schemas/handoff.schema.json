@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Per-entry ship handoff",
+  "description": "One record per book entry binding source bytes, gate decision, rights status, and review state. Build requires a record for every entry; ship still needs owner signoff + cleared rights (FACTORY-SPEC).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["entry_id", "source_path", "source_ref", "source_sha256", "gate", "rights", "review", "ts"],
+  "properties": {
+    "entry_id": {"type": "string", "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"},
+    "source_path": {"type": "string", "minLength": 1},
+    "source_ref": {"type": "string", "minLength": 1},
+    "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "gate": {"enum": ["pass", "review", "blocked"]},
+    "rights": {"type": "string", "minLength": 1},
+    "review": {"enum": ["mechanical", "owner-pending", "owner-approved"]},
+    "note": {"type": "string"},
+    "ts": {"type": "string", "minLength": 4}
+  }
+}

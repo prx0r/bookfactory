@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Thirty-Six Windows on Consciousness",
+    "subtitle": "Learning Sanskrit by Taking the Words Apart",
+    "blurb": "Thirty-six Trika statements dismantled until every letter, case ending, compound, verb and sandhi makes sense — then you can decide what the ancient authors mean without asking a translation to do the thinking.",
+    "epi_iast": "caitanyam ātmā",
+    "epi_en": "Consciousness is the Self.",
+    "epi_src": "Śivasūtra 1.1",
+    "back_cover": "No invented Sanskrit. No mystical etymologies passed off as grammar. No need to believe the translation before understanding the language. Thirty-six short statements from the Śiva Sūtras, Abhinavagupta, Utpaladeva and the Spanda tradition — taken apart, proved, and left in your hands."
+  },
+  "trim": "6x9",
+  "paper": "cream",
+  "target_pages": 108,
+  "glyph": "ॐ",
+  "front_matter": [],
+  "sections": [
+    {
+      "id": "stage-1",
+      "title": "Stage 1 · The sentence before the belief",
+      "purpose": "The sentence before the belief"
+    },
+    {
+      "id": "stage-2",
+      "title": "Stage 2 · From naming to doing",
+      "purpose": "From naming to doing"
+    },
+    {
+      "id": "stage-3",
+      "title": "Stage 3 · What does Śakti actually do?",
+      "purpose": "What does Śakti actually do?"
+    },
+    {
+      "id": "stage-4",
+      "title": "Stage 4 · The world in the sentence",
+      "purpose": "The world in the sentence"
+    },
+    {
+      "id": "stage-5",
+      "title": "Stage 5 · Devotion without falsifying the grammar",
+      "purpose": "Devotion without falsifying the grammar"
+    },
+    {
+      "id": "stage-6",
+      "title": "Stage 6 · What persists?",
+      "purpose": "What persists?"
+    }
+  ]
+}

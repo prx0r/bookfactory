@@ -40,3 +40,10 @@ Or ask the agent: “rebuild practical-prayers PDF after my entries.json push.�
 - One prayer, one book — don’t move entries across lanes without `factory.py decide`
 - Devanāgarī comes from IAST at build — don’t hand-type Deva in JSON
 - KDP: upload **cover.pdf** + **practical-prayers-preview.pdf**; use KDP Previewer before submit
+
+## Cover style (house template — locked 2026-11-08)
+
+Practical Prayers cover **is** the template: black ground `#121110`, ivory type,
+**Svatantrya mantra-ring logo centred on the blank back** (30 mm, opacity 0.95).
+All books use `styles/cover-canonical.json` + `prints/bookkit/cover.py`.
+Only the front emblem swaps (`book.json` `meta.cover_image`). See BOOKS.md §7c.

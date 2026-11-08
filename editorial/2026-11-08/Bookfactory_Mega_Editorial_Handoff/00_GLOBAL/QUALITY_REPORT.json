@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-08",
+  "status": "EDITORIAL_CANDIDATES_NOT_COMMERCIALLY_CLEARED",
+  "checks": {
+    "tantric_guide_entries": {
+      "actual": 36,
+      "expected": 36,
+      "pass": true
+    },
+    "recognition_spreads": {
+      "actual": 36,
+      "expected": 36,
+      "pass": true
+    },
+    "tantrasara_selection_slots": {
+      "actual": 36,
+      "expected": 36,
+      "pass": true
+    },
+    "original_parables": {
+      "actual": 36,
+      "expected": 36,
+      "pass": true
+    },
+    "parable_story_word_count": {
+      "minimum": 165,
+      "maximum": 193,
+      "mean": 178.2,
+      "all_between_150_and_400": true
+    },
+    "sanskrit_lessons": {
+      "actual": 10,
+      "expected": 10,
+      "pass": true
+    },
+    "06_Siva_Sutras": {
+      "actual": 77,
+      "expected": 77,
+      "pass": true,
+      "proof_statuses": [
+        "UNREVIEWED"
+      ],
+      "sanskrit_filled": 0,
+      "english_filled": 0
+    },
+    "07_Vijnanabhairava": {
+      "actual": 163,
+      "expected": 163,
+      "pass": true,
+      "proof_statuses": [
+        "UNREVIEWED"
+      ],
+      "sanskrit_filled": 0,
+      "english_filled": 0
+    },
+    "08_Paratrisika": {
+      "actual": 37,
+      "expected": 37,
+      "pass": true,
+      "proof_statuses": [
+        "UNREVIEWED"
+      ],
+      "sanskrit_filled": 0,
+      "english_filled": 0
+    },
+    "09_Poetry_Abhinavagupta": {
+      "actual": 172,
+      "expected": 172,
+      "pass": true,
+      "proof_statuses": [
+        "UNREVIEWED"
+      ],
+      "sanskrit_filled": 0,
+      "english_filled": 0
+    },
+    "10_Proofs_of_the_Self": {
+      "actual": 106,
+      "expected": 106,
+      "pass": true,
+      "proof_statuses": [
+        "UNREVIEWED"
+      ],
+      "sanskrit_filled": 0,
+      "english_filled": 0
+    },
+    "total_reference_slots": {
+      "actual": 555,
+      "expected": 555,
+      "pass": true
+    },
+    "practical_prior_handoff": {
+      "exists": true
+    },
+    "global_docs_present": {
+      "required": [
+        "README.md",
+        "00_GLOBAL/EDITORIAL_LAW.md",
+        "00_GLOBAL/CRITICAL_FINDINGS.md",
+        "00_GLOBAL/UPSTREAM_SOURCE_HANDOFF.md",
+        "00_GLOBAL/FIVE_WORKSTREAM_AGENT_BRIEF.md"
+      ],
+      "all_present": true
+    }
+  },
+  "warnings": [
+    "Reference worklists are intentionally UNREVIEWED: NOT five finished translations.",
+    "No rights, source-witness or human approval is implied by a passing package QA.",
+    "No PDFs were generated or tested in this handoff."
+  ],
+  "failures": []
+}

@@ -546,6 +546,75 @@ def new_book(args):
           f'then factory.py stage --book {args.slug} --to structure')
 
 
+
+def handoff(args):
+    """Write/refresh prints/<book>/handoff.jsonl — one record per entry.
+
+    Binds entry -> source file sha256 + gate + rights + review state.
+    --gate-pp uses editorial/05_source_qa.csv gates when present (PP).
+    Default gate=review, rights=see-source-qa, review=mechanical.
+    Does NOT equal ship approval (owner-approved + cleared rights still required).
+    """
+    import hashlib
+    from datetime import date
+    book_dir = PRINTS / args.book
+    entries_path = book_dir / 'entries.json'
+    if not entries_path.is_file():
+        raise ValueError(f'entries.json missing: {entries_path}')
+    entries = json.loads(entries_path.read_text(encoding='utf-8'))
+    qa = {}
+    qa_path = book_dir / 'editorial' / '05_source_qa.csv'
+    if qa_path.is_file() and args.qa:
+        import csv as _csv
+        with qa_path.open(encoding='utf-8') as fh:
+            for row in _csv.DictReader(fh):
+                qa[row.get('id') or row.get('entry_id')] = row
+    rights_default = args.rights or 'see-source-qa'
+    lines = []
+    n = 0
+    for e in entries:
+        eid = e.get('id')
+        if not eid:
+            raise ValueError('entry missing id')
+        sp = e.get('source_path') or ''
+        fpath = book_dir / sp
+        if not fpath.is_file():
+            raise ValueError(f'{eid}: source file missing {sp}')
+        sha = hashlib.sha256(fpath.read_bytes()).hexdigest()
+        gate = args.gate or 'review'
+        rights = rights_default
+        note = ''
+        if eid in qa:
+            g = (qa[eid].get('gate') or '').strip().lower()
+            if g in ('pass', 'review', 'blocked', 'check'):
+                gate = 'pass' if g == 'pass' else ('blocked' if g == 'blocked' else 'review')
+            rights = rights_default if args.rights else 'source-qa:' + (qa[eid].get('gate') or 'REVIEW')
+            note = (qa[eid].get('issue') or '')[:400]
+        rec = {
+            'entry_id': eid,
+            'source_path': sp,
+            'source_ref': e.get('source_ref') or '',
+            'source_sha256': sha,
+            'gate': gate,
+            'rights': rights,
+            'review': args.review,
+            'ts': date.today().isoformat(),
+        }
+        if note:
+            rec['note'] = note
+        from jsonschema import Draft202012Validator
+        schema = json.loads((ROOT / 'schemas' / 'handoff.schema.json').read_text())
+        errs = list(Draft202012Validator(schema).iter_errors(rec))
+        if errs:
+            raise ValueError(f'{eid}: handoff invalid: {errs[0].message}')
+        lines.append(json.dumps(rec, ensure_ascii=False))
+        n += 1
+    out = book_dir / 'handoff.jsonl'
+    if not args.dry_run:
+        out.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    print(f'HANDOFF {args.book}: {n} records -> {out}' + (' (dry-run)' if args.dry_run else ''))
+
+
 def audio(args):
     """Plan per-entry clips in the videofactory speaker format (NO API calls).
 
@@ -798,6 +867,13 @@ def main():
     stg=subs.add_parser('stage',help='advance a lane through content->structure->formatting->build (PDF last)')
     stg.add_argument('--book',required=True)
     stg.add_argument('--to',required=True,choices=['content','structure','formatting','build'])
+    hp=subs.add_parser('handoff',help='per-entry source/gate/rights/review binding for build')
+    hp.add_argument('--book',required=True)
+    hp.add_argument('--gate',choices=['pass','review','blocked'],default=None)
+    hp.add_argument('--rights',default=None)
+    hp.add_argument('--review',choices=['mechanical','owner-pending','owner-approved'],default='mechanical')
+    hp.add_argument('--qa',action='store_true',help='fold editorial/05_source_qa.csv gates when present')
+    hp.add_argument('--dry-run',action='store_true')
     aud=subs.add_parser('audio',help='plan per-entry clips (videofactory speakers: verse + granny); NO API calls')
     aud.add_argument('--book',required=True)
     ep=subs.add_parser('epub',help='build the reflowable EPUB3 (Kindle/KDP) from the bookkit book')
@@ -812,6 +888,7 @@ def main():
         elif args.command=='decide': decide(args)
         elif args.command=='new-book': new_book(args)
         elif args.command=='stage': set_stage(args)
+        elif args.command=='handoff': handoff(args)
         elif args.command=='audio': audio(args)
         elif args.command=='epub': make_epub(args)
         elif args.command=='package': package(args)

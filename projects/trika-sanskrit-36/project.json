@@ -1,0 +1,11 @@
+{
+  "stage": "formatting",
+  "outputs": [
+    "lesson-preview",
+    "paperback-preview"
+  ],
+  "gate_note": "Scaffolded from thesis file: content first, PDF build is the last stage — see BOOKS.md.",
+  "max_pages": 400,
+  "adjudications": [],
+  "thesis_source": "/home/box/repos/bookfactory/specs/trika-sanskrit-36.thesis.json"
+}

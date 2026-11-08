@@ -1,0 +1,2217 @@
+[
+  {
+    "n": 1,
+    "source": "SS",
+    "ref": "1.1",
+    "title": "Consciousness is the Self",
+    "quote": "caitanyam ātmā",
+    "full": "caitanyam ātmā",
+    "words": [
+      [
+        "caitanyam",
+        "caitanya",
+        "neuter nominative singular abstract noun, -ya derivative of cetana",
+        "consciousness / conscious nature"
+      ],
+      [
+        "ātmā",
+        "ātman",
+        "masculine nominative singular; stem ātman → nominative ātmā",
+        "self, not automatically the ego"
+      ]
+    ],
+    "proof": [
+      "caitanya + -am → caitanyam (nominative sg)",
+      "ātman → ātmā (masculine nominative sg)",
+      "no overt verb: Sanskrit permits a nominal equation with understood asti"
+    ],
+    "literal": "Consciousness is the self.",
+    "alternatives": "The self is conscious nature; awareness constitutes what is meant by Self.",
+    "judgement": "The Sanskrit establishes an identification, not a Cartesian proof that any individual stream of experience owns the universe. Distinguish caitanya (consciousness) from mere citta (mental contents).",
+    "recognition": "Begin with whatever is perceived; ask what knowing itself means. The sūtra points to the subject as consciousness, not to a new object to discover.",
+    "exercise": "Which word is masculine, and which neuter? Does the equation require both to have the same gender?",
+    "answer": "ātmā is masculine; caitanyam neuter. A Sanskrit predicate noun need not share gender with its subject.",
+    "script_focus": "चै = c + ai; त = ta; न्य = n + ya; म् = final m. आत्मा begins with independent आ and uses the conjunct त्म.",
+    "why": "The first line lets the student hear what Sanskrit actually identifies, rather than memorize an English metaphysical slogan.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "चैतन्यम् आत्मा",
+    "context_devanagari": "चैतन्यम् आत्मा",
+    "extract": false,
+    "stage": 1
+  },
+  {
+    "n": 2,
+    "source": "SS",
+    "ref": "1.2",
+    "title": "Knowledge can bind",
+    "quote": "jñānaṃ bandhaḥ",
+    "full": "jñānaṃ bandhaḥ",
+    "words": [
+      [
+        "jñānaṃ",
+        "jñāna (√jñā + nominal -ana)",
+        "neuter nominative singular",
+        "knowledge / cognition"
+      ],
+      [
+        "bandhaḥ",
+        "bandha (√bandh)",
+        "masculine nominative singular",
+        "bondage, binding"
+      ]
+    ],
+    "proof": [
+      "jñāna → jñānaṃ (nom.sg neuter)",
+      "bandha → bandhaḥ (nom.sg masculine)",
+      "nominal equation [asti] is understood, not written"
+    ],
+    "literal": "Knowledge is bondage.",
+    "alternatives": "Knowing binds; a particular form of knowledge is a fetter.",
+    "judgement": "Do not turn jñāna into “ignorance” to smooth the apparent contradiction. Context and commentary distinguish contracted, differentiated knowing from supreme recognition.",
+    "recognition": "After 1.1 identifies consciousness with the Self, 1.2 warns that the way cognition divides the world into finite knower and object may function as bondage. Grammar shows a paradox, commentary interprets it.",
+    "exercise": "Find the common nominative case in jñānam and bandhaḥ. Which English word has been added?",
+    "answer": "Both are nominatives; “is” is supplied in translation as an understood copula.",
+    "script_focus": "ज्ञा = ज् + ञ + ा; ं at the end of ज्ञानं is anusvāra. The भ of बन्धः is aspirated, and धः ends with visarga.",
+    "why": "An apparently shocking claim becomes a lesson in gender and the interpretive danger of translating jñāna as only “wisdom.”",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "ज्ञानं बन्धः",
+    "context_devanagari": "ज्ञानं बन्धः",
+    "extract": false,
+    "stage": 1
+  },
+  {
+    "n": 3,
+    "source": "SS",
+    "ref": "1.5",
+    "title": "The sudden upsurge",
+    "quote": "udyamo bhairavaḥ",
+    "full": "udyamo bhairavaḥ",
+    "words": [
+      [
+        "udyamo",
+        "udyama [from udyamaḥ]",
+        "masculine nominative singular before sandhi",
+        "arising, exertion, upsurge"
+      ],
+      [
+        "bhairavaḥ",
+        "bhairava",
+        "masculine nominative singular",
+        "Bhairava, the formidable Lord"
+      ]
+    ],
+    "proof": [
+      "udyamaḥ + bhairavaḥ → udyamo bhairavaḥ: -aḥ before voiced bh becomes -o",
+      "compare dehaḥ + devaḥ → deho devaḥ"
+    ],
+    "literal": "The upsurge is Bhairava.",
+    "alternatives": "The sudden rising of awareness is Bhairava; energetic emergence itself is Bhairava.",
+    "judgement": "Udyama also means effort or enterprise in ordinary Sanskrit. The supreme “upsurge” reading is interpretive and must be grounded in Śaiva commentary, not declared the dictionary meaning.",
+    "recognition": "Look at the instant of emergence before it is described. The sutra’s compressed claim treats this powerful uprising as the divine; it does not promise an induced energetic event.",
+    "exercise": "Undo the visible -o: which word ending produced it, and why here?",
+    "answer": "udyamo reflects udyamaḥ before the voiced b(h) of bhairavaḥ.",
+    "script_focus": "उ = independent u; द्य is द् + य; भै = भ + ai sign; र = ra; वः = vaḥ.",
+    "why": "First precise visarga-sandhi rule; profound meaning kept separate from a dictionary gloss.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "उद्यमो भैरवः",
+    "context_devanagari": "उद्यमो भैरवः",
+    "extract": false,
+    "stage": 1
+  },
+  {
+    "n": 4,
+    "source": "SS",
+    "ref": "2.1",
+    "title": "Mind, as mantra",
+    "quote": "cittaṃ mantraḥ",
+    "full": "cittaṃ mantraḥ",
+    "words": [
+      [
+        "cittaṃ",
+        "citta (from √cit)",
+        "neuter nominative singular",
+        "mind, the cognizing field, mental content"
+      ],
+      [
+        "mantraḥ",
+        "mantra",
+        "masculine nominative singular",
+        "mantra, effective sacred utterance"
+      ]
+    ],
+    "proof": [
+      "cit + ta → citta is a traditional participial/derived stem (do not present this as an exhaustive Pāṇinian proof)",
+      "citta + am → cittaṃ",
+      "mantra + ḥ → mantraḥ"
+    ],
+    "literal": "Mind is mantra.",
+    "alternatives": "The mind is a mantra; consciousness configured as mind has mantric potential.",
+    "judgement": "This does not mean every distracting thought is a traditionally authorized mantra. Such an expansion would require commentary or explicit modern adaptation.",
+    "recognition": "Listen to the way an utterance is known before it is spoken. This is a meditation on the inseparability of sound and cognition, not permission to invent new bīja-mantras.",
+    "exercise": "Why is cittaṃ not spelled चित्तम् in this edition? Can both spellings represent a final nasal?",
+    "answer": "चित्तं uses anusvāra, while चित्तम् writes explicit m with virāma; they can be equivalent in this phonological position but should not be conflated graphically.",
+    "script_focus": "चित्तं: चि = ca + i sign; त्त = त् + त; ं anusvāra. मन्त्रः uses the न्त्र consonant cluster.",
+    "why": "Introduces conjunct recognition and a productive warning about technical terms.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "चित्तं मन्त्रः",
+    "context_devanagari": "चित्तं मन्त्रः",
+    "extract": false,
+    "stage": 1
+  },
+  {
+    "n": 5,
+    "source": "SS",
+    "ref": "2.6",
+    "title": "The teacher is a means",
+    "quote": "gurur upāyaḥ",
+    "full": "gurur upāyaḥ",
+    "words": [
+      [
+        "gurur",
+        "guru [from guruḥ]",
+        "masculine nominative singular",
+        "teacher, one who dispels darkness in traditional interpretation"
+      ],
+      [
+        "upāyaḥ",
+        "upāya",
+        "masculine nominative singular",
+        "method, means, approach"
+      ]
+    ],
+    "proof": [
+      "guruḥ + upāyaḥ → gurur upāyaḥ: final -uḥ becomes -ur before vowel",
+      "compare bhaktiḥ + asti → bhaktir asti"
+    ],
+    "literal": "The teacher is the means.",
+    "alternatives": "The guru is an approach; the teacher functions as a means of entry.",
+    "judgement": "Do not translate guru as an infallible individual. The sūtra names a spiritual function; safeguards against abuse are separate ethical necessities.",
+    "recognition": "The person who helps awareness recognize its own nature is called upāya here. A grammar book can show the equivalence; lived discernment determines how to approach teachers.",
+    "exercise": "Which hidden word ending appears as r in gurur?",
+    "answer": "guruḥ, nominative singular, changes to gurur before upāyaḥ.",
+    "script_focus": "गु (gu) and रु (ru) have different vowel signs; उपायः opens with independent उ, while या carries long ā.",
+    "why": "A compact first example of the uḥ → ur pattern, with an ethical distinction.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "गुरुर् उपायः",
+    "context_devanagari": "गुरुर् उपायः",
+    "extract": false,
+    "stage": 1
+  },
+  {
+    "n": 6,
+    "source": "SS",
+    "ref": "2.8",
+    "title": "The body as offering",
+    "quote": "śarīraṃ haviḥ",
+    "full": "śarīraṃ haviḥ",
+    "words": [
+      [
+        "śarīraṃ",
+        "śarīra",
+        "neuter nominative singular",
+        "body, embodied frame"
+      ],
+      [
+        "haviḥ",
+        "havis",
+        "neuter nominative singular",
+        "sacrificial offering / oblation"
+      ]
+    ],
+    "proof": [
+      "śarīra → śarīraṃ (nom.sg neuter)",
+      "havis → haviḥ (nom.sg neuter)",
+      "note the dictionary stem ends in -s, but the nominative surface has -ḥ"
+    ],
+    "literal": "The body is the sacrificial oblation.",
+    "alternatives": "The body is an offering; embodied experience is offered in the sacrificial act.",
+    "judgement": "It does not instruct the reader to injure the body. Śaiva ritual symbolism here is a different claim from literal destruction.",
+    "recognition": "Imagine that a sensory experience is not a stain on spirituality but material that can be offered into awareness. The body is part of worship, not an enemy.",
+    "exercise": "The lemma of haviḥ is havis, not “haviḥ” as an unchanging root. What gender are both nouns?",
+    "answer": "The stem is havis; both śarīram and haviḥ are neuter nominative singulars.",
+    "script_focus": "शरीरं contains long ī sign ी; हविः uses short i ि and visarga ः.",
+    "why": "Ties the earlier mealtime prayer to body symbolism without repeating that prayer.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "शरीरं हविः",
+    "context_devanagari": "शरीरं हविः",
+    "extract": false,
+    "stage": 1
+  },
+  {
+    "n": 7,
+    "source": "SS",
+    "ref": "3.27",
+    "title": "Conversation as recitation",
+    "quote": "kathā japaḥ",
+    "full": "kathā japaḥ",
+    "words": [
+      [
+        "kathā",
+        "kathā",
+        "feminine nominative singular ā-stem",
+        "discourse, conversation, speech, story"
+      ],
+      [
+        "japaḥ",
+        "japa",
+        "masculine nominative singular",
+        "recitation, repetition, murmured prayer"
+      ]
+    ],
+    "proof": [
+      "kathā remains nominative singular with long -ā",
+      "japa + ḥ → japaḥ masculine nominative singular",
+      "a nominal equation is inferred"
+    ],
+    "literal": "Conversation is recitation.",
+    "alternatives": "Speech is japa; ordinary conversation can function as recitation.",
+    "judgement": "Neither kathā nor japa grammatically says “all utterances are automatically sacred.” Interpret that proposition through context and awareness, not as a license to ignore the ethics of speech.",
+    "recognition": "Let one ordinary sentence be spoken deliberately. This contemporary contemplative application uses the identification as a reminder that speaking need not be outside practice.",
+    "exercise": "How can a feminine noun be equated with a masculine one?",
+    "answer": "Predicate nouns can differ in gender; kathā is feminine and japaḥ masculine.",
+    "script_focus": "कथा contains long आ as a vowel sign (था), not independent आ. जपः ends in visarga.",
+    "why": "An extraordinarily memorable line that makes grammar immediately useful in daily life.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "कथा जपः",
+    "context_devanagari": "कथा जपः",
+    "extract": false,
+    "stage": 2
+  },
+  {
+    "n": 8,
+    "source": "SS",
+    "ref": "3.25",
+    "title": "Becoming comparable to Śiva",
+    "quote": "śivatulyo jāyate",
+    "full": "śivatulyo jāyate",
+    "words": [
+      [
+        "śivatulyo",
+        "śiva-tulya [from śivatulyaḥ]",
+        "masculine nominative singular adjective",
+        "comparable to Śiva, like Śiva"
+      ],
+      [
+        "jāyate",
+        "√jan",
+        "present middle 3rd singular",
+        "comes to be, becomes, is born"
+      ]
+    ],
+    "proof": [
+      "śiva + tulya → śivatulya (compound)",
+      "śivatulyaḥ + jāyate → śivatulyo jāyate (aḥ → o before voiced j)",
+      "√jan → jāyate is a present middle form"
+    ],
+    "literal": "He becomes comparable to Śiva.",
+    "alternatives": "One becomes Śiva-like; one comes to be equal in nature to Śiva.",
+    "judgement": "Tulya states comparison/equality; it does not automatically mean a historically limited person acquires unlimited physical capacities.",
+    "recognition": "The verbal form matters: this is not just a timeless equation but a predication of becoming. Let it sharpen the question: what kind of recognition does the tradition call Śiva-like?",
+    "exercise": "Why is there an -o at the end of śivatulyo? Name the verb ending in jāyate.",
+    "answer": "Underlying śivatulyaḥ produces -o; jāyate is 3rd singular present middle.",
+    "script_focus": "शिव = śiva; तुल्य includes ल् + य; जा uses long ā; यते is ya-te.",
+    "why": "Introduces finite verbs after a series of nominal aphorisms.",
+    "author": "Vasugupta (traditionally attributed)",
+    "work": "Śivasūtra",
+    "url": "https://indike.org/pramana/in.sampradaya.saiva.trika.darsana.spanda.sivasutra",
+    "source_note": "77-sūtra recension 22+10+45; source has been independently checked; differs from repo 75-count transcript.",
+    "selected_devanagari": "शिवतुल्यो जायते",
+    "context_devanagari": "शिवतुल्यो जायते",
+    "extract": false,
+    "stage": 2
+  },
+  {
+    "n": 9,
+    "source": "SV",
+    "ref": "1.4",
+    "title": "What place is not sacred?",
+    "quote": "kiṃ na bhaktimatāṃ kṣetram",
+    "full": "sākṣādbhavanmaye nātha sarvasmin bhuvanāntare | kiṃ na bhaktimatāṃ kṣetram mantraḥ kvaiṣāṃ na siddhyati",
+    "words": [
+      [
+        "kiṃ",
+        "kim / kiṃ",
+        "neuter interrogative nominative singular, adverbially “what?” in this question",
+        "what?"
+      ],
+      [
+        "na",
+        "na",
+        "indeclinable negation",
+        "not"
+      ],
+      [
+        "bhaktimatāṃ",
+        "bhaktimat",
+        "genitive plural of -mat possessive adjective used as noun",
+        "of those possessing devotion"
+      ],
+      [
+        "kṣetram",
+        "kṣetra",
+        "neuter nominative singular",
+        "field, sacred place, ground"
+      ]
+    ],
+    "proof": [
+      "bhakti + mat → bhaktimat (possessing devotion), genitive plural bhaktimatām → bhaktimatāṃ (anusvāra spelling)",
+      "kṣetra + m → kṣetram",
+      "the rhetorical question relies on context, not a change of noun cases"
+    ],
+    "literal": "What is not a sacred field for devotees?",
+    "alternatives": "For people of devotion, what could fail to be a sacred place?",
+    "judgement": "Kṣetra means field, domain or sacred location depending on context; the English “everywhere is a temple” is an interpretation, not the word-by-word reading.",
+    "recognition": "The full verse speaks of a universe filled directly by the Lord. The rhetorical question changes how ordinary places are understood without requiring special scenery.",
+    "exercise": "What does the -mat suffix contribute to bhaktimat, and why is -ām plural?",
+    "answer": "It means possessing bhakti; bhaktimatāṃ is genitive plural, “of devotees.”",
+    "script_focus": "भक्तिमतां: भ + क् + ति + म + तां. क्षेत्रम्: क्ष = क् + ष; त्र = त् + र; final म् explicit.",
+    "why": "Moves beyond equations into a sentence whose answer depends on grammatical negation and rhetoric.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "किं न भक्तिमतां क्षेत्रम्",
+    "context_devanagari": "साक्षाद्भवन्मये नाथ सर्वस्मिन् भुवनान्तरे । किं न भक्तिमतां क्षेत्रम् मन्त्रः क्वैषां न सिद्ध्यति ॥",
+    "extract": true,
+    "stage": 2
+  },
+  {
+    "n": 10,
+    "source": "SV",
+    "ref": "1.7",
+    "title": "You alone are the Self",
+    "quote": "tvam evātmeśa sarvasya",
+    "full": "tvam evātmeśa sarvasya sarvaś cātmani rāgavān | iti svabhāvasiddhāṃs tvadbhaktiṃ jānañ jayej janaḥ",
+    "words": [
+      [
+        "tvam",
+        "tvam (tvad)",
+        "second-person pronoun nominative singular",
+        "you"
+      ],
+      [
+        "eva",
+        "eva",
+        "emphatic indeclinable",
+        "indeed, alone"
+      ],
+      [
+        "ātmā",
+        "ātman",
+        "masculine nominative singular",
+        "Self"
+      ],
+      [
+        "īśa",
+        "īśa",
+        "masculine vocative singular",
+        "O Lord"
+      ],
+      [
+        "sarvasya",
+        "sarva",
+        "genitive singular",
+        "of everyone / everything"
+      ]
+    ],
+    "proof": [
+      "tvam + eva → tvam eva (m before vowel retained in this segmentation)",
+      "eva + ātmā → evātmā (a + ā → ā)",
+      "ātmā + īśa → ātmeśa (ā + ī → e, guṇa)",
+      "the input phrase tvam evātmeśa encodes two successive boundaries"
+    ],
+    "literal": "You alone are the Self of all, O Lord.",
+    "alternatives": "You yourself, Lord, are the self belonging to everything.",
+    "judgement": "Here īśa is a vocative, not part of a new lexical compound “ātmeśa” meaning only “lord of the self.” The adjacent Sanskrit of the whole verse controls how the fusion is understood.",
+    "recognition": "The poet addresses someone as “you” and identifies that addressee with the Self of all. His devotion uses second-person language to express a nondual claim, rather than cancelling relationship.",
+    "exercise": "Undo evātmeśa into its elements and identify the two vowel meetings.",
+    "answer": "eva + ātmā + īśa; a+ā→ā and ā+ī→e.",
+    "script_focus": "त्वम् has a final consonant; एव has independent ए; आत्मा opens with आ; ईश contains independent ई; सर्वस्य has the स्य conjunct.",
+    "why": "First multiple-step sandhi chain: the point is that syntax must come before a seductive compound gloss.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "त्वम् एवात्मेश सर्वस्य",
+    "context_devanagari": "त्वम् एवात्मेश सर्वस्य सर्वश् चात्मनि रागवान् । इति स्वभावसिद्धांस् त्वद्भक्तिं जानञ् जयेज् जनः ॥",
+    "extract": true,
+    "stage": 2
+  },
+  {
+    "n": 11,
+    "source": "BP",
+    "ref": "6a",
+    "title": "Śiva at play with Śakti",
+    "quote": "eṣa devo 'nayā devyā nityaṃ krīḍārasotsukaḥ",
+    "full": "eṣa devo 'nayā devyā nityaṃ krīḍārasotsukaḥ | vicitrān sṛṣṭisaṃhārān vidhatte yugapad vibhuḥ",
+    "words": [
+      [
+        "eṣa",
+        "eṣa [from eṣaḥ]",
+        "masculine nominative singular demonstrative",
+        "this one / he"
+      ],
+      [
+        "devo",
+        "deva [from devaḥ]",
+        "masculine nominative singular",
+        "god"
+      ],
+      [
+        "anayā",
+        "idam",
+        "feminine instrumental singular",
+        "by / with this [one]"
+      ],
+      [
+        "devyā",
+        "devī",
+        "feminine instrumental singular",
+        "by / with the goddess"
+      ],
+      [
+        "nityam",
+        "nitya",
+        "adverbial accusative",
+        "always"
+      ],
+      [
+        "krīḍārasotsukaḥ",
+        "krīḍā + rasa + utsuka",
+        "masculine nominative singular compound adjective",
+        "eager for the flavour of play"
+      ]
+    ],
+    "proof": [
+      "eṣaḥ + devaḥ → eṣa devo (visarga before voiced d gives o)",
+      "devaḥ + anayā → devo ’nayā (-aḥ + a gives -o with elided a)",
+      "devī → devyā (instrumental sg, feminine ī-stem)",
+      "krīḍā-rasa-utsuka → krīḍārasotsuka (a+u→o)"
+    ],
+    "literal": "This god, with this goddess, is always eager for the relish of play.",
+    "alternatives": "The Lord, together with Śakti, perpetually delights in the taste of play.",
+    "judgement": "Krīḍā is play, rasa is flavour/savour, utsuka is eager or desirous. “Cosmic consciousness must be perpetually blissful in a clinical sense” does not follow from these lexical meanings.",
+    "recognition": "The line is a description, not an instruction to feel exhilarated. It invites the reader to consider whether manifestation can be conceived as an expression of freedom rather than an external task imposed on God.",
+    "exercise": "Why does devī appear as devyā, and which word tells you this refers to “this goddess”?",
+    "answer": "devyā is feminine instrumental singular; anayā is the matching feminine demonstrative instrumental.",
+    "script_focus": "देव्या has द + े, व् + य + ा; क्रीडा has conjunct क्र; रसोत्सुक has अ + उ → ओ in compound sandhi.",
+    "why": "Introduces instrumental agreement in a theologically vivid sentence.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "एष देवोऽनया देव्या नित्यं क्रीडारसोत्सुकः",
+    "context_devanagari": "एष देवोऽनया देव्या नित्यं क्रीडारसोत्सुकः । विचित्रान् सृष्टिसंहारान् विधत्ते युगपद् विभुः ॥",
+    "extract": true,
+    "stage": 2
+  },
+  {
+    "n": 12,
+    "source": "BP",
+    "ref": "6b",
+    "title": "He makes creation and withdrawal",
+    "quote": "vicitrān sṛṣṭisaṃhārān vidhatte yugapad vibhuḥ",
+    "full": "eṣa devo 'nayā devyā nityaṃ krīḍārasotsukaḥ | vicitrān sṛṣṭisaṃhārān vidhatte yugapad vibhuḥ",
+    "words": [
+      [
+        "vicitrān",
+        "vicitra",
+        "masculine accusative plural",
+        "varied, manifold"
+      ],
+      [
+        "sṛṣṭisaṃhārān",
+        "sṛṣṭi + saṃhāra",
+        "masculine accusative plural compound",
+        "creations and dissolutions / manifestations and reabsorptions"
+      ],
+      [
+        "vidhatte",
+        "vi-√dhā",
+        "present middle third singular",
+        "brings about, performs, arranges"
+      ],
+      [
+        "yugapad",
+        "yugapat",
+        "indeclinable",
+        "simultaneously, at once"
+      ],
+      [
+        "vibhuḥ",
+        "vibhu",
+        "masculine nominative singular",
+        "all-pervading lord"
+      ]
+    ],
+    "proof": [
+      "vicitra + -ān → vicitrān",
+      "sṛṣṭi + saṃhāra → sṛṣṭisaṃhāra, accusative plural -ān",
+      "vi + √dhā gives vidhatte in middle voice (do not derive by mere external sandhi)",
+      "yugapat → yugapad before voiced v"
+    ],
+    "literal": "The all-pervading one simultaneously brings about varied creations and reabsorptions.",
+    "alternatives": "The omnipresent Lord fashions manifold unfoldings and withdrawals all at once.",
+    "judgement": "Sṛṣṭi/saṃhāra are paired cosmological actions; a literal reading does not require an astronomical claim that historical universes physically appear simultaneously.",
+    "recognition": "After 11’s “play” this line gives its verbs and objects. The grammar makes clear what he does (accusative plural), how (yugapad), and who does it (vibhuḥ).",
+    "exercise": "Identify the agent, direct object and adverb. What distinguishes vicitrān from vibhuḥ?",
+    "answer": "vibhuḥ is nom.sg agent; sṛṣṭisaṃhārān with vicitrān is acc.pl object; yugapad is indeclinable.",
+    "script_focus": "सृष्टि has vocalic ṛ sign ृ and conjunct ष्ट; संहार uses anusvāra; वि-ध-त्ते contains त्त.",
+    "why": "First nontrivial full verbal sentence: agreement and object marking become unmistakable.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "विचित्रान् सृष्टिसंहारान् विधत्ते युगपद् विभुः",
+    "context_devanagari": "एष देवोऽनया देव्या नित्यं क्रीडारसोत्सुकः । विचित्रान् सृष्टिसंहारान् विधत्ते युगपद् विभुः ॥",
+    "extract": true,
+    "stage": 2
+  },
+  {
+    "n": 13,
+    "source": "BP",
+    "ref": "5a",
+    "title": "The goddess longs to recognise herself",
+    "quote": "tasyaivaiṣā parā devī svarūpāmarśanotsukā",
+    "full": "tasyaivaiṣā parā devī svarūpāmarśanotsukā | pūrṇatvaṃ sarvabhaveṣu yasyā nālpaṃ na cādhikam",
+    "words": [
+      [
+        "tasyaiva",
+        "tasya + eva",
+        "genitive masculine/neuter singular demonstrative + emphatic particle",
+        "of that very one"
+      ],
+      [
+        "eṣā",
+        "eṣā",
+        "feminine nominative singular demonstrative",
+        "this [female]"
+      ],
+      [
+        "parā",
+        "para",
+        "feminine nominative singular",
+        "supreme, highest"
+      ],
+      [
+        "devī",
+        "devī",
+        "feminine nominative singular",
+        "goddess"
+      ],
+      [
+        "svarūpāmarśanotsukā",
+        "sva + rūpa + āmarśana + utsuka",
+        "feminine nominative singular compound",
+        "eager to apprehend/reflect upon her own nature"
+      ]
+    ],
+    "proof": [
+      "tasya + eva → tasyaiva (a + e → ai)",
+      "tasyaiva + eṣā → tasyaivaiṣā (a + e → ai across next boundary)",
+      "sva + rūpa → svarūpa",
+      "āmarśana + utsuka → āmarśanotsuka (a + u → o)",
+      "utsuka + feminine -ā → utsukā"
+    ],
+    "literal": "This is the supreme goddess of that very one, eager to apprehend her own nature.",
+    "alternatives": "His supreme power is this goddess, intent upon her own self-awareness.",
+    "judgement": "Āmarśana means reflective apprehension, contact or deliberation; rendering it as “self-reflexive consciousness” is legitimate philosophical explanation but not a one-word dictionary translation.",
+    "recognition": "Trika often pairs prakāśa (illumination) and vimarśa (self-apprehension). The feminine nominatives show that the goddess is the grammatical subject, not a passive instrument.",
+    "exercise": "Find three feminine nominative endings. How many vowel contractions hide in tasyaivaiṣā?",
+    "answer": "eṣā, parā, devī and the compound ending -utsukā are feminine nominatives; tasya+eva and tasyaiva+eṣā have two contractions.",
+    "script_focus": "तस्यै = त + स्य + ै; एषा begins with ए; आमर्शन is an ā-initial word embedded in a compound; त्सु is त् + सु.",
+    "why": "A grammatical doorway into the heart of Śiva–Śakti metaphysics without collapsing translation into doctrine.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "तस्यैवैषा परा देवी स्वरूपामर्शनोत्सुका",
+    "context_devanagari": "तस्यैवैषा परा देवी स्वरूपामर्शनोत्सुका । पूर्णत्वं सर्वभवेषु यस्या नाल्पं न चाधिकम् ॥",
+    "extract": true,
+    "stage": 3
+  },
+  {
+    "n": 14,
+    "source": "BP",
+    "ref": "5b",
+    "title": "Nothing too small or too great",
+    "quote": "pūrṇatvaṃ sarvabhaveṣu yasyā nālpaṃ na cādhikam",
+    "full": "tasyaivaiṣā parā devī svarūpāmarśanotsukā | pūrṇatvaṃ sarvabhaveṣu yasyā nālpaṃ na cādhikam",
+    "words": [
+      [
+        "pūrṇatvam",
+        "pūrṇa + -tva",
+        "neuter nominative/accusative singular abstract noun",
+        "completeness, fullness"
+      ],
+      [
+        "sarvabhaveṣu",
+        "sarva + bhava",
+        "masculine locative plural",
+        "in all modes of becoming"
+      ],
+      [
+        "yasyā",
+        "yasyā [from yasyāḥ]",
+        "feminine genitive singular relative pronoun",
+        "of whom / whose"
+      ],
+      [
+        "na",
+        "na",
+        "negation",
+        "not"
+      ],
+      [
+        "alpam",
+        "alpa",
+        "neuter adjective/substantive singular",
+        "little, scant"
+      ],
+      [
+        "ca",
+        "ca",
+        "coordinating particle",
+        "and"
+      ],
+      [
+        "adhikam",
+        "adhika",
+        "neuter singular",
+        "excessive, more"
+      ]
+    ],
+    "proof": [
+      "pūrṇa + -tva → pūrṇatva",
+      "bhava + locative plural -eṣu → bhaveṣu",
+      "yasyāḥ + na → yasyā na (visarga before voiced nasal disappears)",
+      "na + alpam → nālpam (a + a → ā)",
+      "ca + adhikam → cādhikam (a + a → ā)"
+    ],
+    "literal": "Her fullness in all forms of becoming is neither deficient nor excessive.",
+    "alternatives": "In everything that comes into being, her fullness admits neither too little nor too much.",
+    "judgement": "Bhava has short a in the printed reading sarvabhaveṣu. Do not silently change it to bhāveṣu, even if English “states” is attractive. The line is dependent on the preceding reference to devī.",
+    "recognition": "One can contemplate fullness without treating it as proof that individual suffering, scarcity or injustice are unreal. The text describes an ultimate power; it does not erase empirical differences.",
+    "exercise": "Underline the two examples of a+a→ā and identify yasyā as what case.",
+    "answer": "nālpam and cādhikam; yasyā is feminine genitive singular yasyāḥ before na.",
+    "script_focus": "पूर्ण uses ṇ (retroflex), not dental न. भावे versus भवे matters: long ा changes lexical identity.",
+    "why": "A lesson in how tiny vowels change meanings and in the ethical limits of metaphysical language.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "पूर्णत्वं सर्वभवेषु यस्या नाल्पं न चाधिकम्",
+    "context_devanagari": "तस्यैवैषा परा देवी स्वरूपामर्शनोत्सुका । पूर्णत्वं सर्वभवेषु यस्या नाल्पं न चाधिकम् ॥",
+    "extract": true,
+    "stage": 3
+  },
+  {
+    "n": 15,
+    "source": "BP",
+    "ref": "8a",
+    "title": "A definition of inertness",
+    "quote": "paricchinnaprakāśatvaṃ jaḍasya kila lakṣaṇam",
+    "full": "paricchinnaprakāśatvaṃ jaḍasya kila lakṣaṇam | jaḍād vilakṣaṇo bodho yato na parimīyate",
+    "words": [
+      [
+        "paricchinnaprakāśatvam",
+        "pari-√chid + prakāśa + -tva",
+        "neuter nominative singular abstract compound",
+        "having delimited manifestation / limited luminosity"
+      ],
+      [
+        "jaḍasya",
+        "jaḍa",
+        "masculine or neuter genitive singular",
+        "of what is inert"
+      ],
+      [
+        "kila",
+        "kila",
+        "indeclinable emphasis",
+        "indeed, so it is said"
+      ],
+      [
+        "lakṣaṇam",
+        "lakṣaṇa",
+        "neuter nominative singular",
+        "defining characteristic, distinguishing mark"
+      ]
+    ],
+    "proof": [
+      "pari-√chid (“cut around”) yields paricchinna, a past participial adjective “delimited”",
+      "prakāśa “shining/manifestation”",
+      "compound paricchinna-prakāśa + -tva creates abstract “limited-manifestness”",
+      "jaḍa + -sya yields genitive"
+    ],
+    "literal": "Limited manifestation is, indeed, the characteristic of what is inert.",
+    "alternatives": "The mark of inertness, he says, is circumscribed disclosure.",
+    "judgement": "Prakāśa can be physical light, appearance or self-disclosure. Translating every instance as “consciousness” before the argument develops would beg the question.",
+    "recognition": "Abhinavagupta sets up a contrast, not an empirical test of neural correlates. Read the next lesson before concluding what he intends by the word jaḍa.",
+    "exercise": "What grammatical ending makes “limited manifestation” an abstract property rather than a finite verb?",
+    "answer": "-tva, in paricchinnaprakāśatvam. The genitive jaḍasya supplies “of the inert.”",
+    "script_focus": "परिच्छिन्न includes च्छ and न्न conjuncts. प्रकाश has प्र = प् + र; जड uses ड, not द.",
+    "why": "Theory enters as an explicit definition; learners see why technical nouns cannot be translated lazily.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "परिच्छिन्नप्रकाशत्वं जडस्य किल लक्षणम्",
+    "context_devanagari": "परिच्छिन्नप्रकाशत्वं जडस्य किल लक्षणम् । जडाद् विलक्षणो बोधो यतो न परिमीयते ॥",
+    "extract": true,
+    "stage": 3
+  },
+  {
+    "n": 16,
+    "source": "BP",
+    "ref": "8b",
+    "title": "Why awareness differs",
+    "quote": "jaḍād vilakṣaṇo bodho yato na parimīyate",
+    "full": "paricchinnaprakāśatvaṃ jaḍasya kila lakṣaṇam | jaḍād vilakṣaṇo bodho yato na parimīyate",
+    "words": [
+      [
+        "jaḍād",
+        "jaḍa",
+        "ablative singular before voiced v",
+        "from / unlike the inert"
+      ],
+      [
+        "vilakṣaṇo",
+        "vilakṣaṇa",
+        "masculine nominative singular",
+        "different in characteristic"
+      ],
+      [
+        "bodho",
+        "bodha",
+        "masculine nominative singular",
+        "awareness, cognition"
+      ],
+      [
+        "yato",
+        "yato [from yataḥ]",
+        "indeclinable causal relative/ablative-form",
+        "because, since"
+      ],
+      [
+        "na",
+        "na",
+        "negation",
+        "not"
+      ],
+      [
+        "parimīyate",
+        "pari-√mā",
+        "present passive 3rd singular",
+        "is measured, circumscribed"
+      ]
+    ],
+    "proof": [
+      "jaḍāt + vilakṣaṇaḥ → jaḍād vilakṣaṇaḥ (t→d before voiced v)",
+      "vilakṣaṇaḥ + bodhaḥ → vilakṣaṇo bodhaḥ (-aḥ→-o)",
+      "bodhaḥ + yataḥ → bodho yataḥ",
+      "yataḥ + na → yato na",
+      "pari-√mā passive “is measured” → parimīyate"
+    ],
+    "literal": "Awareness differs from the inert, because it is not measurable or bounded.",
+    "alternatives": "Conscious apprehension is distinguished from inert things precisely in not being circumscribable.",
+    "judgement": "Na parimīyate is not a scientific theorem that awareness can never be quantified by any operational metric. The verse asserts a philosophical distinction concerning self-disclosure.",
+    "recognition": "The paired 8a/8b becomes a miniature argument: first a proposed distinguishing mark, then the contrast. The ablative jaḍāt is crucial to its structure.",
+    "exercise": "Which two nominatives agree? Why does jaḍād end in d even though the underlying case ending is -āt?",
+    "answer": "bodhaḥ with vilakṣaṇaḥ; final t voices to d before the voiced v.",
+    "script_focus": "जडात् is ablative; जडाद् is its voiced sandhi outcome. मीय in परिमीयते writes long ī.",
+    "why": "Our first explicit premise-and-contrast argument, with three exact consonant/visarga transformations.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "जडाद् विलक्षणो बोधो यतो न परिमीयते",
+    "context_devanagari": "परिच्छिन्नप्रकाशत्वं जडस्य किल लक्षणम् । जडाद् विलक्षणो बोधो यतो न परिमीयते ॥",
+    "extract": true,
+    "stage": 3
+  },
+  {
+    "n": 17,
+    "source": "BP",
+    "ref": "11a",
+    "title": "Even not-knowing is named",
+    "quote": "yad etasyāparijñānaṃ tatsvātantryaṃ hi varṇitam",
+    "full": "yad etasyāparijñānaṃ tatsvātantryaṃ hi varṇitam | sa eva khalu saṃsāro mūḍānāṃ yo vibhīṣakaḥ",
+    "words": [
+      [
+        "yat",
+        "yad",
+        "neuter relative nominative singular",
+        "that which"
+      ],
+      [
+        "etasya",
+        "idam/etad",
+        "genitive masculine/neuter singular",
+        "of this one"
+      ],
+      [
+        "aparijñānam",
+        "a- + pari-√jñā + -ana",
+        "neuter nominative singular",
+        "non-recognition, lack of full understanding"
+      ],
+      [
+        "tat",
+        "tad",
+        "neuter correlative nominative singular",
+        "that"
+      ],
+      [
+        "svātantryam",
+        "svatantra + -ya",
+        "neuter nominative singular",
+        "independence / freedom"
+      ],
+      [
+        "hi",
+        "hi",
+        "indeclinable",
+        "indeed / for"
+      ],
+      [
+        "varṇitam",
+        "√varṇ + -ta",
+        "neuter nominative singular past passive participle",
+        "described, stated"
+      ]
+    ],
+    "proof": [
+      "etasya + aparijñānam → etasyāparijñānam (a+a→ā)",
+      "tat + svātantryam → tatsvātantryam (t+s remains ts sequence)",
+      "svatantra → svātantrya is a lexical derivative with vowel gradation, not ordinary external sandhi",
+      "varṇita + m → varṇitam"
+    ],
+    "literal": "What is non-recognition of this one has indeed been described as that very freedom.",
+    "alternatives": "Even the failure to recognise him is spoken of as an exercise of his sovereignty.",
+    "judgement": "This is one of the most easily mishandled statements: the metaphysical inclusion of ignorance under divine freedom is not the practical claim that ignorance is desirable or harmless.",
+    "recognition": "The relative–correlative yad ... tat is a Sanskrit argumentative structure. It says something startling, but only after you parse what “that” refers to.",
+    "exercise": "Identify the two halves of the relative/correlative construction. What does the prefix a- negate?",
+    "answer": "yat ... tat; a- negates parijñāna, making “non-recognition.”",
+    "script_focus": "अपरिज्ञान has an initial privative अ; स्वतन्त्र्य contains त्र्य = त् + र् + य; वर्णितम् contains retroflex ण.",
+    "why": "Introduces relative pronouns and avoids the mystic shorthand “ignorance is freedom” without qualifiers.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "यद् एतस्यापरिज्ञानं तत्स्वातन्त्र्यं हि वर्णितम्",
+    "context_devanagari": "यद् एतस्यापरिज्ञानं तत्स्वातन्त्र्यं हि वर्णितम् । स एव खलु संसारो मूडानां यो विभीषकः ॥",
+    "extract": true,
+    "stage": 3
+  },
+  {
+    "n": 18,
+    "source": "BP",
+    "ref": "13a",
+    "title": "The grammar of liberation",
+    "quote": "yat tattvasya parijñānaṃ sa mokṣaḥ parameśataḥ",
+    "full": "yat tattvasya parijñānaṃ sa mokṣaḥ parameśataḥ | tat pūrṇatvaṃ prabuddhānāṃ jīvanmuktiś ca sā smṛtā",
+    "words": [
+      [
+        "yat",
+        "yad",
+        "neuter nominative relative pronoun",
+        "that which"
+      ],
+      [
+        "tattvasya",
+        "tattva",
+        "neuter genitive singular",
+        "of reality / truth"
+      ],
+      [
+        "parijñānam",
+        "pari-√jñā + -ana",
+        "neuter nominative singular",
+        "complete knowing or recognition"
+      ],
+      [
+        "sa",
+        "sa [from saḥ]",
+        "masculine nominative demonstrative",
+        "that"
+      ],
+      [
+        "mokṣaḥ",
+        "mokṣa (√muc family)",
+        "masculine nominative singular",
+        "liberation"
+      ],
+      [
+        "parameśataḥ",
+        "parameśa + -tas",
+        "ablatival adverbial formation",
+        "from / on account of the Supreme Lord"
+      ]
+    ],
+    "proof": [
+      "pari + jñāna yields parijñāna (lexical formation)",
+      "tattva + -sya → tattvasya",
+      "saḥ + mokṣaḥ → sa mokṣaḥ (before nasal m)",
+      "parameśa + -tas → parameśataḥ, source or standpoint depending on construal"
+    ],
+    "literal": "Complete understanding of reality—this is liberation, through the Supreme Lord.",
+    "alternatives": "What is recognition of the real is precisely what the text calls liberation.",
+    "judgement": "Note the change of gender: yat/parijñānam are neuter; saḥ/mokṣaḥ masculine. The anaphor can agree with its predicate noun while referring back to a neuter event. Do not invent a separate “he” who is liberated.",
+    "recognition": "This supplies the natural answer to lesson 17: ignorance and recognition are not simply feelings to arrange; the text gives a definition of liberation in terms of knowing.",
+    "exercise": "Why are yat and sa not the same grammatical gender? What form means “of truth”?",
+    "answer": "yat relates to neuter parijñānam; saḥ is masculine with mokṣaḥ; tattvasya is genitive singular.",
+    "script_focus": "तत्त्व is त + त्त्व; मोक्ष includes क्ष = क् + ष; परिज्ञान has ज्ञ.",
+    "why": "A line that lets the student deduce “liberation” from Sanskrit syntax without relying on an English subtitle.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "यत् तत्त्वस्य परिज्ञानं स मोक्षः परमेशतः",
+    "context_devanagari": "यत् तत्त्वस्य परिज्ञानं स मोक्षः परमेशतः । तत् पूर्णत्वं प्रबुद्धानां जीवन्मुक्तिश् च सा स्मृता ॥",
+    "extract": true,
+    "stage": 3
+  },
+  {
+    "n": 19,
+    "source": "PS",
+    "ref": "5",
+    "title": "The bound experiencer is Śiva",
+    "quote": "bhoktā ca tatra dehī śiva eva gṛhītapaśubhāvaḥ",
+    "full": "tatrāntar viśvam idaṃ vicitratanukaraṇabhuvanasaṃtānam | bhoktā ca tatra dehī śiva eva gṛhītapaśubhāvaḥ",
+    "words": [
+      [
+        "bhoktā",
+        "bhoktṛ (√bhuj + agent suffix -tṛ)",
+        "masculine nominative singular",
+        "experiencer, enjoyer, one who undergoes"
+      ],
+      [
+        "ca",
+        "ca",
+        "conjunctive indeclinable",
+        "and"
+      ],
+      [
+        "tatra",
+        "tatra",
+        "locative adverb",
+        "there"
+      ],
+      [
+        "dehī",
+        "dehin (deha + -in)",
+        "masculine nominative singular",
+        "embodied being"
+      ],
+      [
+        "śiva",
+        "śiva [from śivaḥ]",
+        "masculine nominative singular",
+        "Śiva"
+      ],
+      [
+        "eva",
+        "eva",
+        "emphatic particle",
+        "indeed, himself"
+      ],
+      [
+        "gṛhītapaśubhāvaḥ",
+        "gṛhīta + paśu + bhāva",
+        "masculine nominative singular possessive compound",
+        "having assumed the condition of a bound being"
+      ]
+    ],
+    "proof": [
+      "bhoktṛ → bhoktā (masculine -tṛ nominative sg)",
+      "dehin → dehī (masculine -in nominative sg)",
+      "śivaḥ + eva → śiva eva (aḥ + vowel e",
+      "visarga is dropped in this environment)",
+      "gṛhīta (from √grah) + paśu + bhāva creates a compound ending -aḥ"
+    ],
+    "literal": "And the embodied experiencer there is Śiva himself, having taken on the state of a bound subject.",
+    "alternatives": "The one who experiences the world in a body is none other than Śiva appearing in the condition of a limited being.",
+    "judgement": "Paśu in this Śaiva technical context means the bound individual; translating it as simply “animal” misses the doctrinal contrast to pati (Lord). The compound describes an adopted condition, not proof of an independently existing second entity.",
+    "recognition": "The accusative and nominative machinery of the previous lessons now culminates in an identification: an embodied agent is grammatically re-described as Śiva. This is an ontological interpretation, not a denial that individual choices have consequences.",
+    "exercise": "What dictionary stems produce bhoktā and dehī? Why are these not feminine long-ā/-ī words?",
+    "answer": "bhoktṛ and dehin; both are masculine nominative singular with stem-specific endings.",
+    "script_focus": "भोक्ता has long ā at the end but masculine nominative; देही has long ī and is likewise masculine. Script shape alone does not assign gender.",
+    "why": "The deep claim of Śaiva nonduality can now be reconstructed from morphology rather than a convenient English translation.",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "भोक्ता च तत्र देही शिव एव गृहीतपशुभावः",
+    "context_devanagari": "तत्रान्तर् विश्वम् इदं विचित्रतनुकरणभुवनसंतानम् । भोक्ता च तत्र देही शिव एव गृहीतपशुभावः ॥",
+    "extract": true,
+    "stage": 4
+  },
+  {
+    "n": 20,
+    "source": "PS",
+    "ref": "6",
+    "title": "The spotless crystal takes colours",
+    "quote": "nānāvidhavarṇānāṃ rūpaṃ dhatte yathāmalaḥ sphaṭikaḥ",
+    "full": "nānāvidhavarṇānāṃ rūpaṃ dhatte yathāmalaḥ sphaṭikaḥ | suramānuṣapaśupādaparūpatvaṃ tadvad īśo ’pi",
+    "words": [
+      [
+        "nānāvidhavarṇānām",
+        "nānā + vidha + varṇa",
+        "masculine genitive plural compound",
+        "of many kinds of colours / appearances"
+      ],
+      [
+        "rūpam",
+        "rūpa",
+        "neuter accusative singular",
+        "form, appearance"
+      ],
+      [
+        "dhatte",
+        "√dhā",
+        "present middle third singular",
+        "takes on, assumes, holds"
+      ],
+      [
+        "yathā",
+        "yathā",
+        "comparative particle",
+        "just as"
+      ],
+      [
+        "amalaḥ",
+        "a-mala",
+        "masculine nominative singular",
+        "unstained, spotless"
+      ],
+      [
+        "sphaṭikaḥ",
+        "sphaṭika",
+        "masculine nominative singular",
+        "crystal"
+      ]
+    ],
+    "proof": [
+      "nānā + vidha + varṇa → nānāvidhavarṇa, genitive plural -ānām",
+      "yathā + amalaḥ → yathāmalaḥ (ā + a → ā)",
+      "a- + mala forms amala “without stain”",
+      "dhatte is a conjugated verb (√dhā), not a sandhi of “dhat” with “te”"
+    ],
+    "literal": "A spotless crystal takes on the appearance of various colours.",
+    "alternatives": "Just as a clear crystal presents the forms of many colours without itself becoming their pigments.",
+    "judgement": "A literal translation says the crystal “assumes form,” not that light physics has proved a metaphysical doctrine. The next pāda applies the comparison to the Lord taking divine, human and other forms.",
+    "recognition": "This image is a controlled analogy: the variety of appearances does not establish a permanent plurality of separate essences. But the analogy should not flatten the real experience of difference.",
+    "exercise": "Identify the object of dhatte and the noun that is its subject.",
+    "answer": "rūpam is acc.sg object; sphaṭikaḥ is nom.sg subject; amalaḥ agrees with sphaṭikaḥ.",
+    "script_focus": "स्फ = स् + फ; टि uses a short i sign that appears visually to the left; यथामलः contains contraction of final ā + initial a.",
+    "why": "A visual analogy trains the reader to infer grammatical roles before importing philosophical theory.",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "नानाविधवर्णानां रूपं धत्ते यथामलः स्फटिकः",
+    "context_devanagari": "नानाविधवर्णानां रूपं धत्ते यथामलः स्फटिकः । सुरमानुषपशुपादपरूपत्वं तद्वद् ईशोऽपि ॥",
+    "extract": true,
+    "stage": 4
+  },
+  {
+    "n": 21,
+    "source": "PS",
+    "ref": "8",
+    "title": "The mirror of the intellect",
+    "quote": "sarvagato 'py ayam ātmā viṣayāśrayaṇena dhīmukure",
+    "full": "rāhur adṛśyo 'pi yathā śaśibimbasthaḥ prakāśate tadvat | sarvagato 'py ayam ātmā viṣayāśrayaṇena dhīmukure",
+    "words": [
+      [
+        "sarvagato",
+        "sarva + gata (√gam past participle)",
+        "masculine nominative singular",
+        "gone everywhere, omnipresent"
+      ],
+      [
+        "’py",
+        "api",
+        "indeclinable concessive",
+        "even though"
+      ],
+      [
+        "ayam",
+        "idam",
+        "masculine nominative singular demonstrative",
+        "this"
+      ],
+      [
+        "ātmā",
+        "ātman",
+        "masculine nominative singular",
+        "Self"
+      ],
+      [
+        "viṣayāśrayaṇena",
+        "viṣaya + āśrayaṇa",
+        "neuter instrumental singular compound",
+        "by relying on objects"
+      ],
+      [
+        "dhīmukure",
+        "dhī + mukura",
+        "masculine locative singular compound",
+        "in the mirror of the intellect"
+      ]
+    ],
+    "proof": [
+      "sarvagataḥ + api + ayam → sarvagato ’py ayam (aḥ+a → o plus avagraha",
+      "i+a → y+a)",
+      "viṣaya + āśrayaṇa → viṣayāśrayaṇa (a+ā→ā)",
+      "āśrayaṇa + ena → āśrayaṇena instrumental sg",
+      "dhī + mukura → dhīmukura, locative -e"
+    ],
+    "literal": "This Self, although present everywhere, [appears] in the mirror of intellect through dependence on objects.",
+    "alternatives": "The all-pervading Self becomes manifest in the intellect’s mirror as it takes objects for support.",
+    "judgement": "The word “appears” is **supplied from prakāśate in the first half of the complete verse**; it is not a finite verb written in this excerpt. A translation must openly mark such elliptical syntax.",
+    "recognition": "An image of Rāhu appearing when connected with the moon precedes this line. The point concerns manifestness, not a literal claim about an invisible astronomical body inhabiting consciousness.",
+    "exercise": "Where does the English verb “appears” come from, and what case is dhīmukure?",
+    "answer": "From prakāśate in the first half of the verse; dhīmukure is locative singular.",
+    "script_focus": "सर्वगतोऽप्ययम्: अवग्रह ऽ indicates an elided vowel; धी has long ī; मुकुरे locative e.",
+    "why": "An expert skill: recover a verb from its earlier comparative clause rather than hallucinating one into the selected phrase.",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "सर्वगतोऽप्य् अयम् आत्मा विषयाश्रयणेन धीमुकुरे",
+    "context_devanagari": "राहुर् अदृश्योऽपि यथा शशिबिम्बस्थः प्रकाशते तद्वत् । सर्वगतोऽप्य् अयम् आत्मा विषयाश्रयणेन धीमुकुरे ॥",
+    "extract": true,
+    "stage": 4
+  },
+  {
+    "n": 22,
+    "source": "PS",
+    "ref": "9",
+    "title": "When intelligence becomes clear",
+    "quote": "śivaśaktipātavimale dhītattve bhāti bhārūpaḥ",
+    "full": "ādarśe malarahite yadvad vadanaṃ vibhāti tadvad ayam | śivaśaktipātavimale dhītattve bhāti bhārūpaḥ",
+    "words": [
+      [
+        "śivaśaktipātavimale",
+        "śiva + śakti + pāta + vimala",
+        "neuter locative singular compound adjective",
+        "made clear by the descent of Śiva’s power"
+      ],
+      [
+        "dhītattve",
+        "dhī + tattva",
+        "neuter locative singular compound",
+        "in the principle of intellect"
+      ],
+      [
+        "bhāti",
+        "√bhā",
+        "present active third singular",
+        "shines, appears"
+      ],
+      [
+        "bhārūpaḥ",
+        "bhā + rūpa",
+        "masculine nominative singular adjective",
+        "light-formed, of the nature of luminosity"
+      ]
+    ],
+    "proof": [
+      "śiva + śaktipāta makes “Śiva’s grace/descent of power”",
+      "vimala + locative -e → vimale",
+      "dhī + tattva + locative -e → dhītattve",
+      "√bhā + present -ti → bhāti",
+      "bhā + rūpa → bhārūpaḥ"
+    ],
+    "literal": "In the principle of intellect purified by the descent of Śiva’s power, the luminous one shines.",
+    "alternatives": "Where the intellect is clear through Śiva’s śaktipāta, the Self appears as light itself.",
+    "judgement": "The masculine subject “the luminous one” is linked to ayam ātmā in the surrounding passage. “Light” is a metaphor for self-disclosure, not a prediction of visible photic phenomena.",
+    "recognition": "The two locatives describe the place or cognitive condition of appearance. The poem does not assert that one should strain to produce a light vision.",
+    "exercise": "Which two words are locative singular? What tense is bhāti?",
+    "answer": "śivaśaktipātavimale and dhītattve; bhāti is third-person singular present active.",
+    "script_focus": "शक्तिपात has क्ति conjunct and long ā in पात; धी long ī; भाति has long ā.",
+    "why": "Explains how context supplies a subject across verses and resists experiential sensationalism.",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "शिवशक्तिपातविमले धीतत्त्वे भाति भारूपः",
+    "context_devanagari": "आदर्शे मलरहिते यद्वद् वदनं विभाति तद्वद् अयम् । शिवशक्तिपातविमले धीतत्त्वे भाति भारूपः ॥",
+    "extract": true,
+    "stage": 4
+  },
+  {
+    "n": 23,
+    "source": "PS",
+    "ref": "11",
+    "title": "The thirty-sixfold world appears",
+    "quote": "yat paratattvaṃ tasmin vibhāti ṣaṭtriṃśadātma jagat",
+    "full": "sarvavikalpavihīnaṃ śuddhaṃ śāntaṃ layodayavihīnam | yat paratattvaṃ tasmin vibhāti ṣaṭtriṃśadātma jagat",
+    "words": [
+      [
+        "yat",
+        "yad",
+        "neuter relative pronoun nominative singular",
+        "which"
+      ],
+      [
+        "paratattvam",
+        "para + tattva",
+        "neuter nominative singular",
+        "supreme reality"
+      ],
+      [
+        "tasmin",
+        "tad",
+        "neuter locative singular",
+        "in that"
+      ],
+      [
+        "vibhāti",
+        "vi-√bhā",
+        "present active third singular",
+        "shines, appears distinctly"
+      ],
+      [
+        "ṣaṭtriṃśadātma",
+        "ṣaṭ + triṃśat + ātman",
+        "neuter nominative singular compound adjective",
+        "having thirty-six as its nature"
+      ],
+      [
+        "jagat",
+        "jagat",
+        "neuter nominative singular",
+        "world, moving universe"
+      ]
+    ],
+    "proof": [
+      "para + tattva → paratattva",
+      "tad → tasmin (neuter loc.sg)",
+      "vi + bhāti → vibhāti (preverb + verb)",
+      "ṣaṭ + triṃśat = thirty-six, then + ātman as compound-final",
+      "“ṣaṭtriṃśadātma” is an inflected compound form, not a free-standing word for “tattvas”"
+    ],
+    "literal": "The world, whose nature is thirty-sixfold, shines in that supreme reality.",
+    "alternatives": "Within the supreme principle, the universe appears as a thirty-sixfold articulation.",
+    "judgement": "The whole verse first describes that reality as free from alternatives and arising/ceasing. “Thirty-six tattvas” is a very plausible Trika contextual gloss, but the phrase literally means “thirty-six-natured.”",
+    "recognition": "Syntax gives a containment claim: the thirty-sixfold world appears *in that* (tasmin), not as an independent realm outside it. This is one of the most powerful reversals of the sense of separation.",
+    "exercise": "Identify the nominative subject of vibhāti and the locative in which it occurs.",
+    "answer": "jagat is neuter nominative singular subject; tasmin is locative singular; ṣaṭtriṃśadātma qualifies jagat.",
+    "script_focus": "षट् = ṣaṭ with final dental? ट retroflex; त्रिंशत् = triṃśat; the visible त्म cluster in आत्मा recurs inside षट्त्रिंशदात्म.",
+    "why": "Case grammar here *is* metaphysical structure: in what does the world appear?",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "यत् परतत्त्वं तस्मिन् विभाति षट्त्रिंशदात्म जगत्",
+    "context_devanagari": "सर्वविकल्पविहीनं शुद्धं शान्तं लयोदयविहीनम् । यत् परतत्त्वं तस्मिन् विभाति षट्त्रिंशदात्म जगत् ॥",
+    "extract": true,
+    "stage": 4
+  },
+  {
+    "n": 24,
+    "source": "PS",
+    "ref": "14",
+    "title": "The impossible made possible",
+    "quote": "paramaṃ yat svātantryaṃ durghaṭasaṃpādanaṃ maheśasya",
+    "full": "paramaṃ yat svātantryaṃ durghaṭasaṃpādanaṃ maheśasya | devī māyāśaktiḥ svātmāvaraṇaṃ śivasya",
+    "words": [
+      [
+        "paramam",
+        "parama",
+        "neuter nominative singular",
+        "supreme"
+      ],
+      [
+        "yat",
+        "yad",
+        "neuter relative nominative singular",
+        "which"
+      ],
+      [
+        "svātantryam",
+        "svatantra + abstract -ya",
+        "neuter nominative singular",
+        "absolute autonomy, freedom"
+      ],
+      [
+        "durghaṭasaṃpādanam",
+        "dur-ghaṭa + saṃpādana",
+        "neuter nominative singular compound",
+        "bringing about what is hard/impossible to bring about"
+      ],
+      [
+        "maheśasya",
+        "mahā + īśa → maheśa",
+        "masculine genitive singular",
+        "of the Great Lord"
+      ]
+    ],
+    "proof": [
+      "dur- + ghaṭa yields durghaṭa (hard to effect)",
+      "saṃ-√pad + -ana yields saṃpādana (accomplishment)",
+      "mahat/mahā + īśa produces maheśa as a standard compound",
+      "maheśa + -sya → maheśasya"
+    ],
+    "literal": "Which supreme freedom of the Great Lord accomplishes what is difficult to accomplish…",
+    "alternatives": "The Lord’s sovereignty, capable of bringing the apparently impossible into manifestation, is the subject of this definition.",
+    "judgement": "This selected first half is not a complete assertion: the following half identifies the goddess Māyā-śakti and the Self’s self-veiling. The punctuation must preserve that dependency.",
+    "recognition": "Abhinavagupta is not promising miracles on demand. The point is that ultimate freedom can manifest limitation without becoming a second, independent principle.",
+    "exercise": "What is the genitive here? Does the selected half contain a finite verb?",
+    "answer": "maheśasya is genitive singular. The half-verse lacks a finite verb; its sentence continues.",
+    "script_focus": "दुर्घट has र्घ conjunct; सम्पादन uses म्प; स्वतन्त्र्य and महेशस्य have multiple conjunct patterns.",
+    "why": "An advanced lesson in respecting an unfinished Sanskrit clause even when it would make a wonderful standalone slogan.",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "परमं यत् स्वातन्त्र्यं दुर्घटसंपादनं महेशस्य",
+    "context_devanagari": "परमं यत् स्वातन्त्र्यं दुर्घटसंपादनं महेशस्य । देवी मायाशक्तिः स्वात्मावरणं शिवस्य ॥",
+    "extract": true,
+    "stage": 4
+  },
+  {
+    "n": 25,
+    "source": "SV",
+    "ref": "1.5",
+    "title": "Without a second, yet with You",
+    "quote": "advitīyā api sadā tvaddvitīyā api prabho",
+    "full": "jayanti bhaktipīyūṣarasāsavavaronmadāḥ | advitīyā api sadā tvaddvitīyā api prabho",
+    "words": [
+      [
+        "advitīyā",
+        "a- + dvitīya",
+        "masculine nominative plural before vowel",
+        "without a second, nondual"
+      ],
+      [
+        "api",
+        "api",
+        "indeclinable concessive",
+        "even though"
+      ],
+      [
+        "sadā",
+        "sadā",
+        "indeclinable adverb",
+        "always"
+      ],
+      [
+        "tvaddvitīyā",
+        "tvad + dvitīya",
+        "masculine nominative plural",
+        "having You as their second"
+      ],
+      [
+        "prabho",
+        "prabhu",
+        "masculine vocative singular",
+        "O Lord"
+      ]
+    ],
+    "proof": [
+      "a- + dvitīya → advitīya (not possessing a second)",
+      "advitīyāḥ + api → advitīyā api (visarga of masculine āḥ is lost before initial a)",
+      "tvad + dvitīya makes tvaddvitīya with assimilated consonant cluster",
+      "prabhu vocative singular is prabho"
+    ],
+    "literal": "Though without a second, they always have You as their second, O Lord.",
+    "alternatives": "Even in nonduality, devotees remain in relationship to You.",
+    "judgement": "The apparent contradiction is deliberately poetic. Advitīya is not simply “lonely”; tvaddvitīya is a relational compound, not a literal assertion that reality has become numerically two.",
+    "recognition": "Utpaladeva keeps both the address to the Lord and the recognition of nonduality. In a living devotional idiom, relation need not mean separation: the second person survives as a form of intimacy.",
+    "exercise": "Which endings are masculine nominative plural, and what does the prefix a- negate?",
+    "answer": "advitīyāḥ and tvaddvitīyāḥ, with visarga dropped in the surface; a- negates the idea of a “second.”",
+    "script_focus": "द्वि includes द् + व; ती has long ī; तीयाः masculine plural becomes तिया before api under sandhi; प्रभो has long o.",
+    "why": "An unforgettable compound paradox whose grammar prevents a superficial “nonduality means no love” conclusion.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "अद्वितीया अपि सदा त्वद्द्वितीया अपि प्रभो",
+    "context_devanagari": "जयन्ति भक्तिपीयूषरसासववरोन्मदाः । अद्वितीया अपि सदा त्वद्द्वितीया अपि प्रभो ॥",
+    "extract": true,
+    "stage": 5
+  },
+  {
+    "n": 26,
+    "source": "SV",
+    "ref": "1.6",
+    "title": "Two identical sounds, two different pronouns",
+    "quote": "anantānandasindhos te nātha tattvaṃ vidanti te",
+    "full": "anantānandasindhos te nātha tattvaṃ vidanti te | tādṛśa eva ye sāndrabhaktyānandarasāplutāḥ",
+    "words": [
+      [
+        "anantānandasindhos",
+        "ananta + ānanda + sindhu [from anantānandasindhoḥ]",
+        "masculine genitive singular compound",
+        "of the ocean of endless bliss"
+      ],
+      [
+        "te¹",
+        "tvad",
+        "genitive singular enclitic",
+        "your"
+      ],
+      [
+        "nātha",
+        "nātha",
+        "masculine vocative singular",
+        "O Lord"
+      ],
+      [
+        "tattvam",
+        "tattva",
+        "neuter accusative singular",
+        "reality, essential truth"
+      ],
+      [
+        "vidanti",
+        "√vid",
+        "present active third plural",
+        "know"
+      ],
+      [
+        "te²",
+        "tad",
+        "masculine nominative plural",
+        "they, those"
+      ]
+    ],
+    "proof": [
+      "ananta + ānanda → anantānanda (a+ā→ā)",
+      "sindhu + gen.sg -oḥ → sindhoḥ",
+      "sindhoḥ + te → sindhos te (visarga before dental t becomes s)",
+      "vid + 3pl present → vidanti (not vi + danti)",
+      "te¹ and te² share spelling but come from different pronouns"
+    ],
+    "literal": "They know your reality, O Lord, of you who are an ocean of infinite bliss.",
+    "alternatives": "Those immersed in the bliss of devotion know what You truly are, O Lord.",
+    "judgement": "The two te forms **do not** mean the same thing. First “your,” second “they.” The following relative ye... identifies who “they” are. A sentence translation without that context is structurally incomplete.",
+    "recognition": "This is the exact point of the book: the student sees identical phonetic strings, discovers distinct morphological functions and stops trusting an English line alone.",
+    "exercise": "Label te¹ and te². Which one is “your”? What is the finite verb?",
+    "answer": "te¹ is gen.sg of the second person; te² nominative plural demonstrative; vidanti is 3pl present.",
+    "script_focus": "अनन्तानन्द contains two long ā vowels; सिन्धोः ends with visarga; वेद? Here the actual verb is विदन्ति with short i.",
+    "why": "The best demonstration in the entire volume of why case, not intuition, determines meaning.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "अनन्तानन्दसिन्धोस्ते नाथ तत्त्वं विदन्ति ते",
+    "context_devanagari": "अनन्तानन्दसिन्धोस्ते नाथ तत्त्वं विदन्ति ते । तादृश एव ये सान्द्रभक्त्यानन्दरसाप्लुताः ॥",
+    "extract": true,
+    "stage": 5
+  },
+  {
+    "n": 27,
+    "source": "SV",
+    "ref": "1.8",
+    "title": "Visible amid the turmoil of knowing",
+    "quote": "vedyavedakasaṃkṣobhe 'py asi bhaktaiḥ sudarśanaḥ",
+    "full": "nātha vedyakṣaye kena na dṛśyo 'sy ekakaḥ sthitaḥ | vedyavedakasaṃkṣobhe 'py asi bhaktaiḥ sudarśanaḥ",
+    "words": [
+      [
+        "vedyavedakasaṃkṣobhe",
+        "vedya + vedaka + saṃkṣobha",
+        "masculine locative singular compound",
+        "amid the agitation of known and knower"
+      ],
+      [
+        "’py",
+        "api",
+        "concessive indeclinable",
+        "even"
+      ],
+      [
+        "asi",
+        "√as",
+        "present active second singular",
+        "you are"
+      ],
+      [
+        "bhaktaiḥ",
+        "bhakta",
+        "masculine instrumental plural",
+        "by devotees"
+      ],
+      [
+        "sudarśanaḥ",
+        "su + darśana",
+        "masculine nominative singular adjective",
+        "readily visible, easy to behold"
+      ]
+    ],
+    "proof": [
+      "vedya (what is to be known) + vedaka (knower) + saṃkṣobha → compound with -e locative",
+      "saṃkṣobhe + api + asi → saṃkṣobhe ’py asi (a of api elided after e, i becomes y before a)",
+      "bhakta + -aiḥ → bhaktaiḥ instrumental plural",
+      "su + darśana → sudarśanaḥ"
+    ],
+    "literal": "Even amid the turbulence of known and knower, you are readily seen by devotees.",
+    "alternatives": "To devotees, You remain visible even where knowing and its object seem locked in agitation.",
+    "judgement": "Sudārśana should not be printed: the source gives sudarśana (short a). The “devotee sees” assertion is theological; it does not mandate ocular visions.",
+    "recognition": "The perceiver–perceived distinction is not erased by refusing to notice objects. The devotional gaze understands the play of cognition as the arena of disclosure.",
+    "exercise": "Why is bhaktaiḥ instrumental plural rather than nominative? How is the apostrophe formed?",
+    "answer": "-aiḥ marks instrumental plural, “by devotees.” The avagraha marks a lost a from api after -e, while i changes to y before asi.",
+    "script_focus": "वे द्य has द् + य; संक्षोभे contains क्ष; भक्तैः has diphthong ai and visarga.",
+    "why": "An advanced but rewarding demonstration of multiple sandhis and agentive instrumentals.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "वेद्यवेदकसंक्षोभेऽप्यसि भक्तैः सुदर्शनः",
+    "context_devanagari": "नाथ वेद्यक्षये केन न दृश्योऽस्य् एककः स्थितः । वेद्यवेदकसंक्षोभेऽप्यसि भक्तैः सुदर्शनः ॥",
+    "extract": true,
+    "stage": 5
+  },
+  {
+    "n": 28,
+    "source": "SV",
+    "ref": "1.9",
+    "title": "May devotion never be separated",
+    "quote": "aviyuktāsti te tadvad ekā tvadbhaktir astu me",
+    "full": "anantānandasarasī devī priyatamā yathā | aviyuktāsti te tadvad ekā tvadbhaktir astu me",
+    "words": [
+      [
+        "aviyuktā",
+        "a- + vi-√yuj + -ta",
+        "feminine nominative singular",
+        "not separated"
+      ],
+      [
+        "asti",
+        "√as",
+        "present third singular",
+        "is"
+      ],
+      [
+        "te",
+        "tvad",
+        "genitive/dative singular enclitic",
+        "yours / to you"
+      ],
+      [
+        "tadvat",
+        "tadvat",
+        "indeclinable",
+        "in the same way"
+      ],
+      [
+        "ekā",
+        "eka",
+        "feminine nominative singular",
+        "one, single"
+      ],
+      [
+        "tvadbhaktir",
+        "tvad + bhakti",
+        "feminine nominative singular",
+        "devotion to you"
+      ],
+      [
+        "astu",
+        "√as",
+        "imperative third singular",
+        "let there be"
+      ],
+      [
+        "me",
+        "mad",
+        "genitive/dative singular enclitic",
+        "mine / for me"
+      ]
+    ],
+    "proof": [
+      "a- + viyuktā → aviyuktā",
+      "aviyuktā + asti → aviyuktāsti (ā + a → ā)",
+      "bhaktiḥ + astu → bhaktir astu (iḥ before vowel becomes ir)",
+      "√as present asti versus imperative astu differ in final vowel"
+    ],
+    "literal": "Just so, may my single devotion to You exist, as [Your goddess] is inseparable from You.",
+    "alternatives": "May devotion to You be as inseparable from me as Your beloved goddess is from You.",
+    "judgement": "The first half of the verse gives the Goddess as the simile; without it, aviyuktā appears without an overtly stated feminine subject. Keep the full stanza visible.",
+    "recognition": "An explicit prayer enters late in the curriculum. The reader can distinguish statement asti (“is”) from wish astu (“let it be”). The devotional request is not a logical denial of separation; it is a lived petition.",
+    "exercise": "Find two forms of √as. Which is a fact claim and which a wish?",
+    "answer": "asti is present indicative 3rd singular; astu is imperative 3rd singular.",
+    "script_focus": "अस्ति and अस्तु differ by one vowel sign; भक्तिरस्तु writes r from भक्ति: + अस्तु sandhi.",
+    "why": "A finely shaped lesson in verbal mood, complete-verse context and the meaning of a devotional wish.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "अवियुक्तास्ति ते तद्वद् एका त्वद्भक्तिर् अस्तु मे",
+    "context_devanagari": "अनन्तानन्दसरसी देवी प्रियतमा यथा । अवियुक्तास्ति ते तद्वद् एका त्वद्भक्तिर् अस्तु मे ॥",
+    "extract": true,
+    "stage": 5
+  },
+  {
+    "n": 29,
+    "source": "SV",
+    "ref": "1.10",
+    "title": "Three flavours of the path",
+    "quote": "saṃvinmārgo 'yam āhlādaduḥkhamohais tridhā sthitaḥ",
+    "full": "sarva eva bhavallābhahetur bhaktimatāṃ vibho | saṃvinmārgo ’yam āhlādaduḥkhamohais tridhā sthitaḥ",
+    "words": [
+      [
+        "saṃvinmārgo",
+        "saṃvid/saṃvit + mārga [from saṃvinmārgaḥ]",
+        "masculine nominative singular compound",
+        "path of awareness"
+      ],
+      [
+        "ayam",
+        "idam",
+        "masculine nominative singular demonstrative",
+        "this"
+      ],
+      [
+        "āhlādaduḥkhamohaiḥ",
+        "āhlāda + duḥkha + moha",
+        "masculine instrumental plural compound",
+        "by delight, sorrow and confusion"
+      ],
+      [
+        "tridhā",
+        "tri + -dhā",
+        "indeclinable adverb",
+        "in three ways"
+      ],
+      [
+        "sthitaḥ",
+        "√sthā + -ta",
+        "masculine nominative singular participle",
+        "established, situated"
+      ]
+    ],
+    "proof": [
+      "mārga + ḥ before ayam → mārgo ’yam (aḥ+a yields o and avagraha)",
+      "āhlāda + duḥkha + moha produces a coordinated compound, instrumental plural -aiḥ",
+      "tri + -dhā → tridhā (threefold)",
+      "the internal -n- in saṃvinmārga must be checked against the chosen witness rather than “proven” by a made-up sandhi rule"
+    ],
+    "literal": "This path of awareness is established threefold through delight, suffering and delusion.",
+    "alternatives": "For devotees, the path of consciousness is lived in three registers: joy, distress and bewilderment.",
+    "judgement": "Tridhā means “threefold”; the Sanskrit does not say that all three emotional modes are equivalently pleasant, or that pain must be rebranded as bliss.",
+    "recognition": "Utpaladeva places ordinary emotional life within the path rather than requiring its replacement. The grammatical instrumental plural makes the three modes part of the manner or conditions of the path.",
+    "exercise": "Which form expresses the three manners, and why is tridhā not a feminine singular noun?",
+    "answer": "āhlādaduḥkhamohaiḥ is instrumental plural; tridhā is an indeclinable adverb.",
+    "script_focus": "संविन् + मार्ग is an internal compound; the अवग्रह in मार्गोऽयम् marks the following initial a.",
+    "why": "Bridges the emotional prayer book with philological care about emotion and religious meaning.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "संविन्मार्गोऽयम् आह्लाददुःखमोहैस् त्रिधा स्थितः",
+    "context_devanagari": "सर्व एव भवल्लाभहेतुर् भक्तिमतां विभो । संविन्मार्गोऽयम् आह्लाददुःखमोहैस् त्रिधा स्थितः ॥",
+    "extract": true,
+    "stage": 5
+  },
+  {
+    "n": 30,
+    "source": "SV",
+    "ref": "1.12",
+    "title": "Devotion becomes a science",
+    "quote": "bhavadbhaktimahāvidyā yeṣām abhyāsam āgatā",
+    "full": "bhavadbhaktimahāvidyā yeṣām abhyāsam āgatā | vidyāvidyobhayasyāpi tā ete tattvavedinaḥ",
+    "words": [
+      [
+        "bhavadbhaktimahāvidyā",
+        "bhavat + bhakti + mahā + vidyā",
+        "feminine nominative singular compound",
+        "great knowledge / wisdom of devotion to you"
+      ],
+      [
+        "yeṣām",
+        "yad",
+        "genitive masculine/neuter plural relative",
+        "of whom, whose"
+      ],
+      [
+        "abhyāsam",
+        "abhyāsa",
+        "masculine accusative singular",
+        "exercise, repeated cultivation, practice"
+      ],
+      [
+        "āgatā",
+        "ā-√gam + -ta",
+        "feminine nominative singular past participle",
+        "has come, entered, arrived"
+      ]
+    ],
+    "proof": [
+      "bhavat + bhakti yields bhavad-bhakti through voicing of final t before voiced bh",
+      "mahā + vidyā → mahāvidyā",
+      "abhi + √as yields abhyāsa as lexical noun (do not pretend this is ordinary a+a sandhi)",
+      "āgatā feminine nominative agrees with vidyā"
+    ],
+    "literal": "Those into whose practice the great science of devotion to You has come…",
+    "alternatives": "People whose ongoing discipline has been entered by the great knowledge of devotion to You…",
+    "judgement": "A complete translation requires the next half-verse: these are knowers of the reality of both knowledge and ignorance. The first half is an unfinished relative clause.",
+    "recognition": "Here the book teaches restraint. We can love a resonant half-line while admitting that the syntax needs its continuation. Devotion is treated as a vidyā, a disciplined knowing, not mere intensity of feeling.",
+    "exercise": "What word does āgatā agree with? Why does yeṣām not mean “who” as a nominative?",
+    "answer": "It agrees with feminine mahāvidyā; yeṣām is genitive plural “of whom.”",
+    "script_focus": "विद्या includes द् + य; अभ्यास has भ्य; आगता begins with independent long आ.",
+    "why": "Makes the reader more faithful to poetry by refusing to stop a Sanskrit relative clause prematurely.",
+    "author": "Utpaladeva",
+    "work": "Śivastotrāvalī",
+    "url": "https://mahanaya.org/en/scriptures/sivastotravali/",
+    "source_note": "Mahānaya + GRETIL Bailly text; individual readings require final comparison with Kṣemarāja commentary.",
+    "selected_devanagari": "भवद्भक्तिमहाविद्या येषाम् अभ्यासम् आगता",
+    "context_devanagari": "भवद्भक्तिमहाविद्या येषाम् अभ्यासम् आगता । विद्याविद्योभयस्यापि ता एते तत्त्ववेदिनः ॥",
+    "extract": true,
+    "stage": 5
+  },
+  {
+    "n": 31,
+    "source": "SP",
+    "ref": "1.4",
+    "title": "The “I” that feels happy and sad",
+    "quote": "ahaṃ sukhī ca duḥkhī ca raktaś cetyādisaṃvidaḥ",
+    "full": "ahaṃ sukhī ca duḥkhī ca raktaś cetyādisaṃvidaḥ | sukhādyavasthānusyūte vartante ’nyatra tāḥ sphuṭam",
+    "words": [
+      [
+        "ahaṃ",
+        "asmad",
+        "first-person nominative singular",
+        "I"
+      ],
+      [
+        "sukhī",
+        "sukhin",
+        "masculine nominative singular",
+        "happy, possessed of pleasure"
+      ],
+      [
+        "ca",
+        "ca",
+        "conjunction",
+        "and"
+      ],
+      [
+        "duḥkhī",
+        "duḥkhin",
+        "masculine nominative singular",
+        "suffering"
+      ],
+      [
+        "raktaś",
+        "√rañj + -ta",
+        "masculine nominative singular",
+        "coloured, attached, impassioned"
+      ],
+      [
+        "cetyādisaṃvidaḥ",
+        "iti + ādi + saṃvid",
+        "feminine nominative plural compound",
+        "cognitions such as “thus [I am]…”"
+      ]
+    ],
+    "proof": [
+      "raktaḥ + ca → raktaś ca (visarga becomes ś before palatal c)",
+      "ca + iti → ceti (a+i→e)",
+      "ceti + ādi → cetyādi (i+ā→yā)",
+      "saṃvid feminine nominative plural is saṃvidaḥ, not a masculine singular ending",
+      "sukhin → sukhī, duḥkhin → duḥkhī"
+    ],
+    "literal": "Experiences such as “I am happy, I am sad, I am attached”…",
+    "alternatives": "The cognitions “I am happy,” “I am distressed,” “I am in love,” and the like…",
+    "judgement": "This is a plural **subject phrase**, not a standalone assertion about what the “I” essentially is. The next half says these cognitions appear in another principle through the succession of states.",
+    "recognition": "Notice that happiness and sadness are first introduced as predications (“I am ...”), then reclassified as cognitions. The syntax begins the inquiry into what persists across changing mental states.",
+    "exercise": "What is feminine plural here, and which two long-ī forms are masculine nominatives?",
+    "answer": "saṃvidaḥ is feminine nom.pl; sukhī and duḥkhī are masculine nom.sg of -in stems.",
+    "script_focus": "रक्तश्चे: रक् + त, then च्; चेत्य writes त्य. सुखी and दुःखी both long ी.",
+    "why": "A practical demonstration of the difference between the content of a self-description and the knowing of that content.",
+    "author": "Kallaṭa / Vasugupta tradition; exact authorship debated",
+    "work": "Spandakārikā",
+    "url": "https://mahanaya.org/en/scriptures/spandakarikah/",
+    "source_note": "GRETIL + Mahānaya; do not assert sole authorship with certainty.",
+    "selected_devanagari": "अहं सुखी च दुःखी च रक्तश्चेत्यादिसंविदः",
+    "context_devanagari": "अहं सुखी च दुःखी च रक्तश्चेत्यादिसंविदः । सुखाद्यवस्थानुस्यूते वर्तन्तेऽन्यत्र ताः स्फुटम् ॥",
+    "extract": true,
+    "stage": 6
+  },
+  {
+    "n": 32,
+    "source": "SP",
+    "ref": "1.5",
+    "title": "Beyond the polarity of pleasure and pain",
+    "quote": "na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca",
+    "full": "na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca | na cāsti mūḍhabhāvo ’pi tad asti paramārthataḥ",
+    "words": [
+      [
+        "na",
+        "na",
+        "indeclinable negative, repeated",
+        "not, neither"
+      ],
+      [
+        "duḥkham",
+        "duḥkha",
+        "neuter nominative singular",
+        "pain, suffering"
+      ],
+      [
+        "sukham",
+        "sukha",
+        "neuter nominative singular",
+        "pleasure, ease"
+      ],
+      [
+        "yatra",
+        "yatra",
+        "relative indeclinable",
+        "where"
+      ],
+      [
+        "grāhyam",
+        "grāhya (√grah gerundive)",
+        "neuter nominative singular",
+        "what is grasped/known, object"
+      ],
+      [
+        "grāhakam",
+        "grāhaka",
+        "neuter nominative singular in this contrast",
+        "grasper/knower, subject-role"
+      ],
+      [
+        "ca",
+        "ca",
+        "coordinating particle",
+        "and"
+      ]
+    ],
+    "proof": [
+      "√grah + -ya → grāhya (to-be-grasped, passive potential adjective)",
+      "grāhaka from √grah with agent-forming suffix -aka",
+      "contrast grāhya versus grāhaka",
+      "the second half supplies asti (“exists”), absent in the selected first half"
+    ],
+    "literal": "Where there is neither pain nor pleasure, neither object nor subject…",
+    "alternatives": "Where pleasure and pain, what is grasped and what grasps, no longer divide the field…",
+    "judgement": "The negations concern ultimate analysis and do not entail bodily anaesthesia or an inability to distinguish ordinary subjects and objects. The first half is grammatically completed by the second.",
+    "recognition": "The paired participial forms grāhya and grāhaka allow the reader to feel a philosophical contrast in suffixes: to-be-known versus knower. The theological reading must be downstream of that morphology.",
+    "exercise": "Why are grāhya and grāhaka not the same word? Which verb is supplied in the second half?",
+    "answer": "-ya produces the potential/passive sense and -aka an agentive sense; asti appears in the second half.",
+    "script_focus": "ग्राह्यम्: ह्य = ह् + य; ग्राहकं uses क instead. दुःखं contains visarga-like sign inside word and anusvāra at end.",
+    "why": "The argument deepens: ultimate nonduality is not the suppression of experience but questioning its presumed segmentation.",
+    "author": "Kallaṭa / Vasugupta tradition; exact authorship debated",
+    "work": "Spandakārikā",
+    "url": "https://mahanaya.org/en/scriptures/spandakarikah/",
+    "source_note": "GRETIL + Mahānaya; do not assert sole authorship with certainty.",
+    "selected_devanagari": "न दुःखं न सुखं यत्र न ग्राह्यं ग्राहकं न च",
+    "context_devanagari": "न दुःखं न सुखं यत्र न ग्राह्यं ग्राहकं न च । न चास्ति मूढभावोऽपि तद् अस्ति परमार्थतः ॥",
+    "extract": true,
+    "stage": 6
+  },
+  {
+    "n": 33,
+    "source": "SP",
+    "ref": "1.14",
+    "title": "Actions perish; agency does not",
+    "quote": "kāryatā kṣayiṇī tatra kartṛtvaṃ punar akṣayam",
+    "full": "avasthāyugalaṃ cātra kāryakartṛtvaśabditam | kāryatā kṣayiṇī tatra kartṛtvaṃ punar akṣayam",
+    "words": [
+      [
+        "kāryatā",
+        "kārya (√kṛ, gerundive) + -tā",
+        "feminine nominative singular abstract noun",
+        "condition of being effected / of being a product"
+      ],
+      [
+        "kṣayiṇī",
+        "kṣayin",
+        "feminine nominative singular",
+        "perishable, subject to waning"
+      ],
+      [
+        "tatra",
+        "tatra",
+        "adverb",
+        "there, in that pair"
+      ],
+      [
+        "kartṛtvam",
+        "kartṛ (agent of √kṛ) + -tva",
+        "neuter nominative singular",
+        "agency, capacity of being an agent"
+      ],
+      [
+        "punar",
+        "punar",
+        "adversative indeclinable",
+        "but, however"
+      ],
+      [
+        "akṣayam",
+        "a- + kṣaya",
+        "neuter nominative singular",
+        "imperishable, not subject to loss"
+      ]
+    ],
+    "proof": [
+      "kārya + -tā → kāryatā (abstract feminine)",
+      "kṣayin + feminine -ī → kṣayiṇī",
+      "kartṛ + -tva → kartṛtva",
+      "a- + kṣaya → akṣaya, neuter sg akṣayam",
+      "kāryatā with kṣayiṇī is feminine agreement"
+    ],
+    "literal": "The condition of being an effect is perishable; agency, however, is imperishable.",
+    "alternatives": "Products cease; the fundamental capacity for agency is not exhausted by any particular deed.",
+    "judgement": "The verse’s “agency” is a technical philosophical capacity, not a claim that an individual body can perform without limits or never die. Keep the antecedent “two conditions” from the first half in view.",
+    "recognition": "Compare what comes and goes with the capacity from which actions issue. There is a deliberate shift from feminine kāryatā to neuter kartṛtvam; the agreement marks two distinct propositions.",
+    "exercise": "Which adjective agrees with kāryatā, and which agrees with kartṛtvam?",
+    "answer": "kṣayiṇī (f.nom.sg) qualifies kāryatā; akṣayam (n.nom.sg) qualifies kartṛtvam.",
+    "script_focus": "कार्य contains र् + य, कर्तृत्व contains त् + ऋ and त् + व (different vowel/conjunct mechanisms).",
+    "why": "The sharp distinction between a product and an agent is actually legible in Sanskrit morphology.",
+    "author": "Kallaṭa / Vasugupta tradition; exact authorship debated",
+    "work": "Spandakārikā",
+    "url": "https://mahanaya.org/en/scriptures/spandakarikah/",
+    "source_note": "GRETIL + Mahānaya; do not assert sole authorship with certainty.",
+    "selected_devanagari": "कार्यता क्षयिणी तत्र कर्तृत्वं पुनर् अक्षयम्",
+    "context_devanagari": "अवस्थायुगलं चात्र कार्यकर्तृत्वशब्दितम् । कार्यता क्षयिणी तत्र कर्तृत्वं पुनर् अक्षयम् ॥",
+    "extract": true,
+    "stage": 6
+  },
+  {
+    "n": 34,
+    "source": "SP",
+    "ref": "1.18",
+    "title": "Power that is knowing and known",
+    "quote": "jñānajñeyasvarūpiṇyā śaktyā paramayā yutaḥ",
+    "full": "jñānajñeyasvarūpiṇyā śaktyā paramayā yutaḥ | padadvaye vibhur bhāti tadanyatra tu cinmayaḥ",
+    "words": [
+      [
+        "jñānajñeyasvarūpiṇyā",
+        "jñāna + jñeya + svarūpin",
+        "feminine instrumental singular long compound",
+        "having the forms of knowing and what is known"
+      ],
+      [
+        "śaktyā",
+        "śakti",
+        "feminine instrumental singular",
+        "by / with power"
+      ],
+      [
+        "paramayā",
+        "parama",
+        "feminine instrumental singular",
+        "supreme"
+      ],
+      [
+        "yutaḥ",
+        "√yuj + -ta",
+        "masculine nominative singular past passive participle",
+        "joined, furnished, endowed"
+      ]
+    ],
+    "proof": [
+      "jñāna + jñeya (√jñā + gerundive -ya) + svarūpin → jñānajñeyasvarūpin, feminine form svarūpiṇī",
+      "instrumental feminine → svarūpiṇyā",
+      "śakti + instr.sg -yā → śaktyā",
+      "parama + feminine instr -ayā → paramayā"
+    ],
+    "literal": "Endowed with the supreme power whose forms are knowledge and the knowable…",
+    "alternatives": "The Lord, joined with the highest Śakti that presents both cognition and its object…",
+    "judgement": "This is **not a sentence by itself**: vibhur bhāti in the next half provides the subject and finite verb. Nor does instrumental śaktyā imply there are two absolutely independent realities.",
+    "recognition": "The grammatical agreement among three feminine instrumentals shows a single descriptive complex. Philosophically, knowing and known appear as two aspects of one power.",
+    "exercise": "Why do svarūpiṇyā, śaktyā and paramayā share case but have different internal endings?",
+    "answer": "All are feminine instrumental singular. They follow different stem classes: -inī, -i, and -ā.",
+    "script_focus": "ज्ञा = ज्+ञा; ज्ञेय has े; शक्ति uses क्त; स्वरूपिण्या combines ण्य + ा.",
+    "why": "A precise capstone on feminine declensions, instrumental functions and the limits of extracting a single half-verse.",
+    "author": "Kallaṭa / Vasugupta tradition; exact authorship debated",
+    "work": "Spandakārikā",
+    "url": "https://mahanaya.org/en/scriptures/spandakarikah/",
+    "source_note": "GRETIL + Mahānaya; do not assert sole authorship with certainty.",
+    "selected_devanagari": "ज्ञानज्ञेयस्वरूपिण्या शक्त्या परमया युतः",
+    "context_devanagari": "ज्ञानज्ञेयस्वरूपिण्या शक्त्या परमया युतः । पदद्वये विभुर् भाति तदन्यत्र तु चिन्मयः ॥",
+    "extract": true,
+    "stage": 6
+  },
+  {
+    "n": 35,
+    "source": "PS",
+    "ref": "16",
+    "title": "How the infinite becomes the finite",
+    "quote": "māyāparigrahavaśād bodho malinaḥ pumān paśur bhavati",
+    "full": "māyāparigrahavaśād bodho malinaḥ pumān paśur bhavati | kālakalāniyatibalād rāgāvidyāvaśena saṃbaddhaḥ",
+    "words": [
+      [
+        "māyāparigrahavaśād",
+        "māyā + parigraha + vaśa [from māyāparigrahavaśāt]",
+        "masculine ablative singular compound",
+        "because of coming under the sway of adopting Māyā"
+      ],
+      [
+        "bodho",
+        "bodha",
+        "masculine nominative singular",
+        "awareness/cognition"
+      ],
+      [
+        "malinaḥ",
+        "malina",
+        "masculine nominative singular adjective",
+        "soiled, obscured"
+      ],
+      [
+        "pumān",
+        "puṃs",
+        "masculine nominative singular",
+        "person, individual"
+      ],
+      [
+        "paśur",
+        "paśu",
+        "masculine nominative singular",
+        "bound subject (technical Śaiva sense)"
+      ],
+      [
+        "bhavati",
+        "√bhū",
+        "present active third singular",
+        "becomes, comes to be"
+      ]
+    ],
+    "proof": [
+      "māyā-parigraha-vaśa → ablative -āt",
+      "final -t before voiced b becomes -d",
+      "bodhaḥ + malinaḥ → bodho malinaḥ (aḥ before m→o)",
+      "paśuḥ + bhavati → paśur bhavati (-uḥ→ur before voiced b)",
+      "√bhū present third singular gives bhavati, a present stem formation"
+    ],
+    "literal": "Through the sway of adopting Māyā, awareness, obscured, becomes the limited person, a bound subject.",
+    "alternatives": "In taking on Māyā, knowing appears contracted as a finite experiencer—a paśu.",
+    "judgement": "The subject chain is compressed and warrants discussion: bodhaḥ, pumān and paśuḥ are all nominatives, while malinaḥ qualifies the state of the subject. Avoid inventing three separate substances merely because English wants separate subjects.",
+    "recognition": "We can now reconstruct the contraction argument without mythology. A causal ablative gives a condition; a finite verb names becoming; nominal forms identify what has become bound. Recognition will reverse mistaken identification without pretending individual embodiment was merely linguistic.",
+    "exercise": "Explain the two ending changes vaśāt→vaśād and paśuḥ→paśur. What verb says “becomes”?",
+    "answer": "Voicing of t before b; uḥ→ur before bh; bhavati is 3sg present active of √bhū.",
+    "script_focus": "मायापरिग्रह has ग्रह conjunct; मलिनः ends in visarga; पुमान् a long-ā nominative; पशुर् has explicit r in sandhi.",
+    "why": "All earlier morphology returns in a single powerful statement about limitation.",
+    "author": "Abhinavagupta",
+    "work": "Paramārthasāra",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_abhinavagupta-paramArthasAra.htm",
+    "source_note": "GRETIL transliteration checked against SanskritDocuments where appropriate; commercial reuse of GRETIL transcription not cleared.",
+    "selected_devanagari": "मायापरिग्रहवशाद् बोधो मलिनः पुमान् पशुर् भवति",
+    "context_devanagari": "मायापरिग्रहवशाद् बोधो मलिनः पुमान् पशुर् भवति । कालकलानियतिबलाद् रागाविद्यावशेन संबद्धः ॥",
+    "extract": true,
+    "stage": 6
+  },
+  {
+    "n": 36,
+    "source": "BP",
+    "ref": "14",
+    "title": "Bondage and freedom, read exactly",
+    "quote": "etau bandhavimokṣau ca parameśasvarūpataḥ | na bhidyete na bhedo hi tattvataḥ parameśvare",
+    "full": "etau bandhavimokṣau ca parameśasvarūpataḥ | na bhidyete na bhedo hi tattvataḥ parameśvare",
+    "words": [
+      [
+        "etau",
+        "etad",
+        "masculine nominative dual demonstrative",
+        "these two"
+      ],
+      [
+        "bandhavimokṣau",
+        "bandha + vimokṣa",
+        "masculine nominative dual dvandva compound",
+        "bondage and release"
+      ],
+      [
+        "ca",
+        "ca",
+        "coordinating particle",
+        "and"
+      ],
+      [
+        "parameśasvarūpataḥ",
+        "parameśa + svarūpa + -tas",
+        "adverbial ablatival compound",
+        "from the standpoint of the Supreme Lord’s own nature"
+      ],
+      [
+        "na",
+        "na",
+        "negation",
+        "not"
+      ],
+      [
+        "bhidyete",
+        "√bhid",
+        "present passive third dual",
+        "are differentiated, divided"
+      ],
+      [
+        "bhedo",
+        "bheda",
+        "masculine nominative singular",
+        "difference"
+      ],
+      [
+        "hi",
+        "hi",
+        "particle",
+        "indeed"
+      ],
+      [
+        "tattvataḥ",
+        "tattva + -tas",
+        "adverbial ablatival",
+        "in reality, from the standpoint of truth"
+      ],
+      [
+        "parameśvare",
+        "parameśvara",
+        "masculine locative singular",
+        "in the supreme Lord"
+      ]
+    ],
+    "proof": [
+      "etad → etau (masculine nominative dual)",
+      "bandha + vimokṣa → bandhavimokṣa, dual -au",
+      "√bhid passive present third dual → bhidyete (not 3rd plural bhidyante)",
+      "bhedaḥ + hi → bhedo hi (aḥ→o before h)",
+      "parameśvara + -e → parameśvare locative"
+    ],
+    "literal": "These two—bondage and liberation—are not differentiated from the standpoint of the Supreme Lord’s own nature; for in ultimate reality there is no difference in the Lord.",
+    "alternatives": "Viewed through the Lord’s essential being, bondage and release are not ultimately two separate realities.",
+    "judgement": "**The standpoint is essential.** The verse is not asserting that a suffering bound subject experiences the same condition as one who has recognized freedom. Parameśasvarūpataḥ and tattvataḥ restrict the claim to the ultimate perspective.",
+    "recognition": "Everything learned returns: dual number (etau, -au, bhidyete), nominal predicates (bhedaḥ), locative (parameśvare), two ablatival adverbs (-taḥ) and sandhi. Once the derivation is clear, the reader may decide how far the nondual claim reaches.",
+    "exercise": "Determine whether bhidyete refers to one, two or many; explain why etau and bandhavimokṣau have matching -au endings.",
+    "answer": "Third-person dual passive; etau and bandhavimokṣau are both masculine nominative dual. The two are bondage and liberation.",
+    "script_focus": "एतौ and मोक्षौ share the औ sign; भिद्येते has द् + य and long e; तत्त्वतः uses त्त्व and final visarga.",
+    "why": "The final lesson is a full verse, and the resolution comes from grammatical reconstruction, not faith in an English aphorism.",
+    "author": "Abhinavagupta",
+    "work": "Bodhapañcadaśikā",
+    "url": "https://mahanaya.org/en/scriptures/bodhapancadasika/",
+    "source_note": "Mahānaya + GRETIL transcription; punctuation, compounds and variant vowels still require printed-witness rights check.",
+    "selected_devanagari": "एतौ बन्धविमोक्षौ च परमेशस्वरूपतः । न भिद्येते न भेदो हि तत्त्वतः परमेश्वरे ॥",
+    "context_devanagari": "एतौ बन्धविमोक्षौ च परमेशस्वरूपतः । न भिद्येते न भेदो हि तत्त्वतः परमेश्वरे ॥",
+    "extract": false,
+    "stage": 6
+  }
+]

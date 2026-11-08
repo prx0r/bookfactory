@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "book": "trika-sanskrit-36",
+  "title": "Thirty-Six Windows on Consciousness: Learning Sanskrit by Taking the Words Apart",
+  "template": "lesson-book",
+  "style": "canonical",
+  "claim": "Thirty-six short Trika statements from the Śiva Sūtras, Abhinavagupta, Utpaladeva and the Spanda tradition, dismantled until every letter, case ending, compound, verb and sandhi makes sense, so the reader can decide what the ancient authors mean without asking a translation to do the thinking.",
+  "series": {
+    "name": "Learn Sanskrit with Abhinavagupta",
+    "volume": 2
+  },
+  "purpose": {
+    "kind": "primer",
+    "impact": "In one sitting the reader watches 'caitanyam ātmā' come apart into two grammatical forms and realizes they can do the same to thirty-five more sentences.",
+    "reader": "The Sanskrit-curious reader who wants short authentic statements with reversible proofs, not a full grammar textbook and not a quotation collection.",
+    "realisation": "By lesson thirty-six the reader can take an unseen short Trika sentence, reverse sandhi, name cases, and produce a literal translation the grammar warrants.",
+    "non_goals": [
+      "no full critical edition of any of the five works",
+      "no invented Sanskrit and no uncollated e-text sold as witness",
+      "no promised somatic signs from reading a statement",
+      "no padding to a fake page quota"
+    ]
+  },
+  "pages": {
+    "target": 108,
+    "fallback": 400,
+    "fallback_edition": "study",
+    "note": "Six stages x six short statements; ~2-3pp per reading. Do not pad; final count follows typeset content."
+  },
+  "structure": {
+    "sections": 6,
+    "total_entries": 36,
+    "sections_plan": [
+      {
+        "id": "stage-1",
+        "purpose": "The sentence before the belief",
+        "count": 6
+      },
+      {
+        "id": "stage-2",
+        "purpose": "From naming to doing",
+        "count": 6
+      },
+      {
+        "id": "stage-3",
+        "purpose": "What does Śakti actually do?",
+        "count": 6
+      },
+      {
+        "id": "stage-4",
+        "purpose": "The world in the sentence",
+        "count": 6
+      },
+      {
+        "id": "stage-5",
+        "purpose": "Devotion without falsifying the grammar",
+        "count": 6
+      },
+      {
+        "id": "stage-6",
+        "purpose": "What persists?",
+        "count": 6
+      }
+    ]
+  },
+  "inclusion": [
+    "every lesson carries the lesson-book anatomy from a witnessed short statement; EXTRACT labelled where cut from a longer verse",
+    "word-by-word morphology, reversible sandhi proofs, literal translation before Trika reading, and a transfer exercise per statement",
+    "five source works only: Śivasūtra, Śivastotrāvalī, Bodhapañcadaśikā, Paramārthasāra, Spandakārikā — with author attribution kept distinct",
+    "devanagari transliterated from IAST at build; IAST copied from editorial/2026-11-08/Trika_Sanskrit_36_Volume_II until print collation",
+    "complete parent verse shown beside any EXTRACT so the reader can test whether the excerpt is a whole proposition",
+    "overlaps with complete reference books are credited teaching quotation, not a competing claim to own a verse",
+    "every lesson carries the ten layers in order, each building on the previous — not independent encyclopedia entries",
+    "witness (Devanagari, IAST, author, work, verse, edition) is extract-and-place from translation-work; no invented Sanskrit",
+    "morphology, sandhi proofs and syntax are reversible: input → rule → output, with alternatives recorded when commentators differ",
+    "translation is demonstrably derived from the grammar before any metaphysics is introduced",
+    "Trika exegesis attributes verse, Abhinavagupta, Kṣemarāja, Yogarāja, Lakshmanjoo and our synthesis separately",
+    "reading mode keeps irreverent everyday clarity; learning mode never skips morphology or fakes pronunciation",
+    "grammar knowledge accumulates: a form mastered in an earlier lesson is reinforced, not re-taught from zero"
+  ],
+  "exclusion": [
+    "no full Sanskrit edition claimed — this is a teaching selection of 36 statements",
+    "no invented Pāṇini numbers and no unverified e-text sold as a critical witness",
+    "no sensation-success tests in practice blocks",
+    "Spanda authorship stays traditionally attributed; Śivasūtra uses a declared recension (77-slot caution documented in editorial findings)",
+    "never invent Sanskrit, etymologies, or Pāṇini rule ids that have not been verified",
+    "never silently resolve a parse ambiguity or merge distinct teachers into one voice",
+    "never present a modern practice adaptation as an ancient prescription",
+    "never print Lakshmanjoo/Dyczkowski prose at length — brief attributed quotation only (house copyright law)",
+    "never claim the textbook is the verse's home when a reference volume owns the full text — quotation with attribution only",
+    "no PDF build before content, structure and formatting pass — build is last"
+  ],
+  "products": {
+    "paperback": {
+      "status": "per-book",
+      "spec": "6x9 cream B&W matte; study-edition ceiling 400pp (thesis.pages); interior no-bleed; full-wrap cover from styles/cover-canonical.json; kdp_preflight + check.py green before any upload"
+    },
+    "postcard": {
+      "status": "planned",
+      "spec": "Quote cards from a single lesson line (IAST + ref); never a substitute for the lesson"
+    },
+    "social": {
+      "status": "planned",
+      "spec": "1080x1080 + 1080x1350 from one sandhi proof or one line; white ground, ink black, ref at foot"
+    },
+    "audiobook": {
+      "status": "planned",
+      "spec": "Recitation layer audio per lesson (Fish 'verse' voice on IAST) after owner go"
+    },
+    "chant": {
+      "status": "planned",
+      "spec": "Lesson recitation clips only where the source work already has aligned audio; no invented chant"
+    },
+    "digital": {
+      "status": "planned",
+      "spec": "Reflowable EPUB + DRM-free study PDF after build stage; exercises may ship as separate workbook later"
+    }
+  }
+}

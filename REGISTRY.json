@@ -13,7 +13,8 @@
     "tantric-prayer": {
       "stage": "build (36 entries, 93pp, preflight PASS; per-entry handoff open)",
       "entries": 36,
-      "pages": 93
+      "pages": 93,
+      "editorial": "mega handoff applied 2026-11-08: candidate_guiderows English merged; source holds remain"
     },
     "ipvv": {
       "stage": "queued",
@@ -37,6 +38,14 @@
       "stage": "content (10 lessons scaffolded from specs thesis; prototype HTML ready; preflight/build later)",
       "entries": 10,
       "pages": 108
+    },
+    "trika-sanskrit-36": {
+      "stage": "content (36 statements from editorial zip; lesson-book; PP-style cover-canonical)",
+      "entries": 36,
+      "pages": 108,
+      "title": "Thirty-Six Windows on Consciousness",
+      "epi": "caitanyam ātmā",
+      "source": "editorial/2026-11-08/Trika_Sanskrit_36_Volume_II"
     }
   },
   "products": {
@@ -100,6 +109,14 @@
     {
       "id": "pp-editorial-handoff",
       "status": "unpacked-in-repo; formula=EXPLAINER.md; English UNAPPROVED; 12 source BLOCKs open"
+    },
+    {
+      "id": "trika-sanskrit-36",
+      "status": "content-scaffold-36-from-zip"
+    },
+    {
+      "id": "mega-editorial-20261108",
+      "status": "zips imported; TP English merged; trika-sanskrit-36 created; PP cover template locked"
     }
   ]
 }

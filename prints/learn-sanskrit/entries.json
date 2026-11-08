@@ -1930,7 +1930,7 @@
       },
       {
         "inputs": "dual + -yor",
-        "rule": "gen./loc. dual -yor (not plural)",
+        "rule": "INFLECTION: dual ending -yor (gen/loc) — not external sandhi",
         "output": "anayor / vahnidāhikayor",
         "reversible": true
       },
@@ -2022,7 +2022,7 @@
       "work": "Mahopadeśaviṃśatikā",
       "verse": "8 (extract)",
       "edition": "translation-work mahopadeshavimshatika (gold; L3 song human-review flag)",
-      "variants": "Extract = first half; full verse in Lesson 9."
+      "variants": "Extract = first half; full verse in Lesson 9. | padaccheda scope fixed 2026-11-08: first half only (CRITICAL_FINDINGS #6)"
     },
     "recitation": {
       "syllables": "a-laṃ | bhe-dā-nu-ka-tha-yā | tvad-bhak-ti-ra-sa-car-va-ṇāt",
@@ -2055,46 +2055,6 @@
         "rule": "abl -āt",
         "morph": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
         "citation": "tvad+bhakti+rasa+carvaṇa"
-      },
-      {
-        "surface": "sarvamekamidaṃ",
-        "underlying": "sarva+eka+idam",
-        "gloss": "all-this-one",
-        "rule": "—",
-        "morph": "nom.sg fused (sarva+eka+idam)",
-        "citation": "sarva+eka+idam"
-      },
-      {
-        "surface": "śāntamiti",
-        "underlying": "śānta+iti",
-        "gloss": "at-peace-thus",
-        "rule": "—",
-        "morph": "adj + iti fused",
-        "citation": "śānta+iti"
-      },
-      {
-        "surface": "vaktuṃ",
-        "underlying": "√vac",
-        "gloss": "to-say",
-        "rule": "—",
-        "morph": "inf (vaktum)",
-        "citation": "√vac"
-      },
-      {
-        "surface": "ca",
-        "underlying": "ca",
-        "gloss": "even",
-        "rule": "—",
-        "morph": "conjunctive",
-        "citation": "ca"
-      },
-      {
-        "surface": "lajjate",
-        "underlying": "√lajj",
-        "gloss": "is-shy",
-        "rule": "—",
-        "morph": "3sg atm (lajjate)",
-        "citation": "√lajj"
       }
     ],
     "morphology": [
@@ -2260,9 +2220,9 @@
       },
       {
         "surface": "śāntamiti",
-        "underlying": "śānta + iti",
+        "underlying": "śāntam + iti",
         "gloss": "at-peace-thus",
-        "rule": "adj + quotative",
+        "rule": "neuter śāntam + quotative iti",
         "morph": "adj + iti fused",
         "citation": "śānta+iti"
       },
@@ -2276,7 +2236,7 @@
       },
       {
         "surface": "tvadbhaktirasacarvaṇāt",
-        "underlying": "ca",
+        "underlying": "tvad+bhakti+rasa+carvaṇa",
         "gloss": "from-chewing-sap-of-devotion-to-you",
         "rule": "“even”",
         "morph": "n.abl.sg (tvad+bhakti+rasa+carvaṇa+āt)",
@@ -2414,8 +2374,8 @@
         "reversible": true
       },
       {
-        "inputs": "śānta + iti",
-        "rule": "surface fusion",
+        "inputs": "śāntam + iti",
+        "rule": "neuter nom/acc śāntam + quotative iti (not śānta + iti)",
         "output": "śāntamiti",
         "reversible": true
       },

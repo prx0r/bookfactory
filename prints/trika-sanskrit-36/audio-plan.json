@@ -1,0 +1,632 @@
+{
+  "version": "1.0",
+  "book": "trika-sanskrit-36",
+  "engine": {
+    "tts": "fish-audio",
+    "pattern_source": "prx0r/videofactory render_chapter"
+  },
+  "voices": {
+    "verse": "4e873c37d4cb439e9bccc4dc1f633290",
+    "granny": "614f8afd83f841048c040b2c6234d2c1"
+  },
+  "entries": [
+    {
+      "id": "trika-01",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "caitanyam ātmā",
+        "chars": 14,
+        "cache_key": "8dc65a16b7f55c27b2da0e9a3ce5a23c81fc4604"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which word is masculine, and which neuter? Does the equation require both to have the same gender?",
+        "chars": 98,
+        "cache_key": "68b64861f7cd149a4e88632cfd3d557acb5523f9"
+      }
+    },
+    {
+      "id": "trika-02",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "jñānaṃ bandhaḥ",
+        "chars": 14,
+        "cache_key": "7e0a98ffdfa94b7e6e05df22c1feb26edb9e7cea"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Find the common nominative case in jñānam and bandhaḥ. Which English word has been added?",
+        "chars": 89,
+        "cache_key": "314ba37f3a8451c348b57c674cfd6a711234cd8d"
+      }
+    },
+    {
+      "id": "trika-03",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "udyamo bhairavaḥ",
+        "chars": 16,
+        "cache_key": "880f9a1be15673c62a8419211e4f6d45f738cdac"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Undo the visible -o: which word ending produced it, and why here?",
+        "chars": 65,
+        "cache_key": "336ebb0e1584efb00fd4b2a348777562fe29cafc"
+      }
+    },
+    {
+      "id": "trika-04",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "cittaṃ mantraḥ",
+        "chars": 14,
+        "cache_key": "a21502619807bf08725309290cf4fd844bbb475d"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why is cittaṃ not spelled चित्तम् in this edition? Can both spellings represent a final nasal?",
+        "chars": 94,
+        "cache_key": "052e3a1add604e2039c9e42469ae4be5fbf2446d"
+      }
+    },
+    {
+      "id": "trika-05",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "gurur upāyaḥ",
+        "chars": 12,
+        "cache_key": "793feead8a427b7125fb8a00f447fad6a35f1826"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which hidden word ending appears as r in gurur?",
+        "chars": 47,
+        "cache_key": "9d0d53b5b99948aca1cea3b8f1882508c1994142"
+      }
+    },
+    {
+      "id": "trika-06",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śarīraṃ haviḥ",
+        "chars": 13,
+        "cache_key": "dbbd2299a79abe01ee84e9e243efac17ca5d5882"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "The lemma of haviḥ is havis, not “haviḥ” as an unchanging root. What gender are both nouns?",
+        "chars": 91,
+        "cache_key": "1a9c7e80b385282ea1500669f1f56f7d2d8ce91f"
+      }
+    },
+    {
+      "id": "trika-07",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "kathā japaḥ",
+        "chars": 11,
+        "cache_key": "10a38e0df766c789a5f3b472a15911d731df4ea0"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "How can a feminine noun be equated with a masculine one?",
+        "chars": 56,
+        "cache_key": "8ce26b3bf14433571d208152b63810abf81fb730"
+      }
+    },
+    {
+      "id": "trika-08",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śivatulyo jāyate",
+        "chars": 16,
+        "cache_key": "f869f6ef9910de68128d97fbad92387b8457e073"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why is there an -o at the end of śivatulyo? Name the verb ending in jāyate.",
+        "chars": 75,
+        "cache_key": "489badc183590cb95a3cb7482f7ee71c48142ae0"
+      }
+    },
+    {
+      "id": "trika-09",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "kiṃ na bhaktimatāṃ kṣetram",
+        "chars": 26,
+        "cache_key": "598eb5c75de518c304568f7823dea86c04cdb680"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "What does the -mat suffix contribute to bhaktimat, and why is -ām plural?",
+        "chars": 73,
+        "cache_key": "c66a123c422193bbe4772df20f27725f363bb051"
+      }
+    },
+    {
+      "id": "trika-10",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "tvam evātmeśa sarvasya",
+        "chars": 22,
+        "cache_key": "084ca7cac7a55a36668ed72664987714dda7559f"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Undo evātmeśa into its elements and identify the two vowel meetings.",
+        "chars": 68,
+        "cache_key": "dba5a0aab8ec5cd378b91ceb13d065372dcbed3f"
+      }
+    },
+    {
+      "id": "trika-11",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "eṣa devo 'nayā devyā nityaṃ krīḍārasotsukaḥ",
+        "chars": 43,
+        "cache_key": "0016772a07aa64ae892da86ae5c26c57b402b773"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why does devī appear as devyā, and which word tells you this refers to “this goddess”?",
+        "chars": 86,
+        "cache_key": "2a47a15029c0178b7f80e0916eabb99aac130cfa"
+      }
+    },
+    {
+      "id": "trika-12",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "vicitrān sṛṣṭisaṃhārān vidhatte yugapad vibhuḥ",
+        "chars": 46,
+        "cache_key": "a73f7c117d71cffcc16057b6ea52ef71d25ddb03"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Identify the agent, direct object and adverb. What distinguishes vicitrān from vibhuḥ?",
+        "chars": 86,
+        "cache_key": "63627879eca997d462359fc6326333a55b20bdbd"
+      }
+    },
+    {
+      "id": "trika-13",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "tasyaivaiṣā parā devī svarūpāmarśanotsukā",
+        "chars": 41,
+        "cache_key": "01f6d3108de6996b2bbfb587bfc636900d8748de"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Find three feminine nominative endings. How many vowel contractions hide in tasyaivaiṣā?",
+        "chars": 88,
+        "cache_key": "2b14d26e8950b0f1979c3dab7a7923c4058daba7"
+      }
+    },
+    {
+      "id": "trika-14",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "pūrṇatvaṃ sarvabhaveṣu yasyā nālpaṃ na cādhikam",
+        "chars": 47,
+        "cache_key": "c4d8738f24f7f823acc3577a30398a11ff3f2262"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Underline the two examples of a+a→ā and identify yasyā as what case.",
+        "chars": 68,
+        "cache_key": "741e4f16d9410fd0ff563732524c8b7a49d1371b"
+      }
+    },
+    {
+      "id": "trika-15",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "paricchinnaprakāśatvaṃ jaḍasya kila lakṣaṇam",
+        "chars": 44,
+        "cache_key": "9054bacc46028b44ac991e0ab6e18333573d331d"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "What grammatical ending makes “limited manifestation” an abstract property rather than a finite verb?",
+        "chars": 101,
+        "cache_key": "c7ea59e51e765d8a6916b3c7bc501d800da43ef0"
+      }
+    },
+    {
+      "id": "trika-16",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "jaḍād vilakṣaṇo bodho yato na parimīyate",
+        "chars": 40,
+        "cache_key": "f9cdc95748441128421c74d74f2c5e75157cfcc7"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which two nominatives agree? Why does jaḍād end in d even though the underlying case ending is -āt?",
+        "chars": 99,
+        "cache_key": "dff064fefd3ad2661057cbb87dc69254a721f6e2"
+      }
+    },
+    {
+      "id": "trika-17",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "yad etasyāparijñānaṃ tatsvātantryaṃ hi varṇitam",
+        "chars": 47,
+        "cache_key": "c2974f3476d27e0121a9066499542a7d3cc9f708"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Identify the two halves of the relative/correlative construction. What does the prefix a- negate?",
+        "chars": 97,
+        "cache_key": "1f2e102ce79d52322246c0bf7dfa5d38ef2993ad"
+      }
+    },
+    {
+      "id": "trika-18",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "yat tattvasya parijñānaṃ sa mokṣaḥ parameśataḥ",
+        "chars": 46,
+        "cache_key": "c3d56469a2faecea63c785df94d1d940fb2a0716"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why are yat and sa not the same grammatical gender? What form means “of truth”?",
+        "chars": 79,
+        "cache_key": "a301173cdec5647e209934287fb683f1739577fc"
+      }
+    },
+    {
+      "id": "trika-19",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "bhoktā ca tatra dehī śiva eva gṛhītapaśubhāvaḥ",
+        "chars": 46,
+        "cache_key": "8773d31429f0c2823538cc03e8e00d0a77dcde86"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "What dictionary stems produce bhoktā and dehī? Why are these not feminine long-ā/-ī words?",
+        "chars": 90,
+        "cache_key": "708b377f5eec17577a489f61ca4396905e641db7"
+      }
+    },
+    {
+      "id": "trika-20",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "nānāvidhavarṇānāṃ rūpaṃ dhatte yathāmalaḥ sphaṭikaḥ",
+        "chars": 51,
+        "cache_key": "a6acbd1b5a6d5d37a14f5a3d1afa716a2e0ade95"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Identify the object of dhatte and the noun that is its subject.",
+        "chars": 63,
+        "cache_key": "0682d917464aaccbf7582789016b7c2394596f59"
+      }
+    },
+    {
+      "id": "trika-21",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "sarvagato 'py ayam ātmā viṣayāśrayaṇena dhīmukure",
+        "chars": 49,
+        "cache_key": "98e3e1cc98916f8ab2823235f44ffb30aad81918"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Where does the English verb “appears” come from, and what case is dhīmukure?",
+        "chars": 76,
+        "cache_key": "7aa0969b16c213e0cb35408a6e77cd6af55ff193"
+      }
+    },
+    {
+      "id": "trika-22",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "śivaśaktipātavimale dhītattve bhāti bhārūpaḥ",
+        "chars": 44,
+        "cache_key": "5967e47c0dbfac8d5fe18f8af704082db17793d0"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which two words are locative singular? What tense is bhāti?",
+        "chars": 59,
+        "cache_key": "0961d0f5d75224d1d02897e9250dc71f6044ba73"
+      }
+    },
+    {
+      "id": "trika-23",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "yat paratattvaṃ tasmin vibhāti ṣaṭtriṃśadātma jagat",
+        "chars": 51,
+        "cache_key": "d8a0fd6549a148022d31764e1444c9565e57e72f"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Identify the nominative subject of vibhāti and the locative in which it occurs.",
+        "chars": 79,
+        "cache_key": "bb6a6cfaa0b91ad1bf8cdf980eedd5b80491176c"
+      }
+    },
+    {
+      "id": "trika-24",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "paramaṃ yat svātantryaṃ durghaṭasaṃpādanaṃ maheśasya",
+        "chars": 52,
+        "cache_key": "e621d3eceb832d6bf583961ca39d392126dfc428"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "What is the genitive here? Does the selected half contain a finite verb?",
+        "chars": 72,
+        "cache_key": "1b4a97728be7beedca74f3e5fc778bf246ad2f61"
+      }
+    },
+    {
+      "id": "trika-25",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "advitīyā api sadā tvaddvitīyā api prabho",
+        "chars": 40,
+        "cache_key": "8aa4d431405351949e2278143fc509ba6839688e"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which endings are masculine nominative plural, and what does the prefix a- negate?",
+        "chars": 82,
+        "cache_key": "9a7129896adc5efe4da84299be4d596e8d3508bf"
+      }
+    },
+    {
+      "id": "trika-26",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "anantānandasindhos te nātha tattvaṃ vidanti te",
+        "chars": 46,
+        "cache_key": "362e9c6d86f38b979860162ed4c7010c34472e1c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Label te¹ and te². Which one is “your”? What is the finite verb?",
+        "chars": 64,
+        "cache_key": "0752db64d7c2febcc9da3d38726f8b6ba949dbbf"
+      }
+    },
+    {
+      "id": "trika-27",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "vedyavedakasaṃkṣobhe 'py asi bhaktaiḥ sudarśanaḥ",
+        "chars": 48,
+        "cache_key": "adf443f8429a3e567edd640cdc6cad2efdf57e62"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why is bhaktaiḥ instrumental plural rather than nominative? How is the apostrophe formed?",
+        "chars": 89,
+        "cache_key": "11b9a6395aded7cb8a6e81bc039a388093926093"
+      }
+    },
+    {
+      "id": "trika-28",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "aviyuktāsti te tadvad ekā tvadbhaktir astu me",
+        "chars": 45,
+        "cache_key": "12446bf8547b8851b7d0caf6167f4166f3c6b0fe"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Find two forms of √as. Which is a fact claim and which a wish?",
+        "chars": 62,
+        "cache_key": "7af6ea1c562125cc999ad3706c40655d67b8b318"
+      }
+    },
+    {
+      "id": "trika-29",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "saṃvinmārgo 'yam āhlādaduḥkhamohais tridhā sthitaḥ",
+        "chars": 50,
+        "cache_key": "e7dba2a8c3d6c464f4634a9187b32156c5176100"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which form expresses the three manners, and why is tridhā not a feminine singular noun?",
+        "chars": 87,
+        "cache_key": "e9a8da7145268466cc2d5fcf6b35942e205a0a8b"
+      }
+    },
+    {
+      "id": "trika-30",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "bhavadbhaktimahāvidyā yeṣām abhyāsam āgatā",
+        "chars": 42,
+        "cache_key": "074ea4c0303a4e463bedbc6efa8f80fb8d5c46aa"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "What word does āgatā agree with? Why does yeṣām not mean “who” as a nominative?",
+        "chars": 79,
+        "cache_key": "b13ab54f171611143c17cb26b9cab9b8f6937b7c"
+      }
+    },
+    {
+      "id": "trika-31",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "ahaṃ sukhī ca duḥkhī ca raktaś cetyādisaṃvidaḥ",
+        "chars": 46,
+        "cache_key": "a553e0c34caaee9b33817c37fba0f80f0de002da"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "What is feminine plural here, and which two long-ī forms are masculine nominatives?",
+        "chars": 83,
+        "cache_key": "950e1190c40b2e40b7d5a65d0c17990c60105e73"
+      }
+    },
+    {
+      "id": "trika-32",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca",
+        "chars": 52,
+        "cache_key": "dcec80dc9fc6135a7e538dc210d5cef82ebe723c"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why are grāhya and grāhaka not the same word? Which verb is supplied in the second half?",
+        "chars": 88,
+        "cache_key": "5703e8e176eaad97d7b1c2052c3971e5079977d7"
+      }
+    },
+    {
+      "id": "trika-33",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "kāryatā kṣayiṇī tatra kartṛtvaṃ punar akṣayam",
+        "chars": 45,
+        "cache_key": "b1abb353d6982ea0321cf9ba6fcfcc28c1d679c1"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Which adjective agrees with kāryatā, and which agrees with kartṛtvam?",
+        "chars": 69,
+        "cache_key": "2f9389cf083358b1910bb57de37576836545b0df"
+      }
+    },
+    {
+      "id": "trika-34",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "jñānajñeyasvarūpiṇyā śaktyā paramayā yutaḥ",
+        "chars": 42,
+        "cache_key": "28178d6a5991e2d43889f75bfbe92e36710617d3"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Why do svarūpiṇyā, śaktyā and paramayā share case but have different internal endings?",
+        "chars": 86,
+        "cache_key": "d2d5dc621fd9c885a6e33d2074c1d97d3b98802b"
+      }
+    },
+    {
+      "id": "trika-35",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "māyāparigrahavaśād bodho malinaḥ pumān paśur bhavati",
+        "chars": 52,
+        "cache_key": "aaf7bc3b2b69cb14aa5060749abd9867f170f1d7"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Explain the two ending changes vaśāt→vaśād and paśuḥ→paśur. What verb says “becomes”?",
+        "chars": 85,
+        "cache_key": "180aa6263b82c9f0377b085aed1dc8241f94f14c"
+      }
+    },
+    {
+      "id": "trika-36",
+      "verse": {
+        "voice": "verse",
+        "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
+        "text": "etau bandhavimokṣau ca parameśasvarūpataḥ | na bhidyete na bhedo hi tattvataḥ parameśvare",
+        "chars": 89,
+        "cache_key": "9990dd1dc57886c60ffd2f4fde6a391ea68c2350"
+      },
+      "howto": {
+        "voice": "granny",
+        "voice_id": "614f8afd83f841048c040b2c6234d2c1",
+        "text": "Determine whether bhidyete refers to one, two or many; explain why etau and bandhavimokṣau have matching -au endings.",
+        "chars": 117,
+        "cache_key": "09d40208e92e0b242b42862b99dee687ccae51e5"
+      }
+    }
+  ],
+  "totals": {
+    "clips": 72,
+    "chars": 4292
+  },
+  "receipts": "prints/trika-sanskrit-36/audio/receipts/calls.jsonl",
+  "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
+}
