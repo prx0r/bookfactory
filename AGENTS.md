@@ -8,6 +8,7 @@ book dir). This repo owns lanes, gates, theses, decision logs, the quote
 loop AND the typography.
 
 ## Layout
+- media/youtube/ — shared downloaded media for agents (README inside)
 - BOOKS.md — THE system doc (templates, theses, decision logs, pipeline stages, new-book)
 - FACTORY-SPEC.md — the law (position, products, layer stack, bars, migration)
 - PIPELINE.md — commands, setup, current blockers
