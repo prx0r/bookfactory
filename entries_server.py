@@ -214,8 +214,9 @@ function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",
 </script>
 </body></html>
 """
-UI = UI_TMPL.replace("const BKS = [];", "const BKS = " + json.dumps(BOOKS) + ";")
-UI = UI_TMPL.replace("for(const b of ${json.dumps(BOOKS)}){", "for(const b of BKS){")
+UI = (UI_TMPL
+      .replace("const BKS = [];", "const BKS = " + json.dumps(BOOKS) + ";")
+      .replace("for(const b of ${json.dumps(BOOKS)}){", "for(const b of BKS){"))
 
 class H(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
