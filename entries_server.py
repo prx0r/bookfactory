@@ -132,6 +132,7 @@ pre.raw{background:#f6f3ee;padding:.6rem;overflow:auto;font-size:.75rem;max-heig
 <nav id="list"></nav>
 <main id="main"><p class="mut">Loading…</p></main>
 <script>
+const BKS = [];
 let BOOK=null, ENTRIES=[], IDX=0, DIRTY=false;
 const $=s=>document.querySelector(s);
 const FIELDS=["title","source","source_ref","source_path","iast","en","brief","logic","howto","sign","how","feel","alternatives"];
