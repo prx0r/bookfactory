@@ -100,16 +100,17 @@ h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08
 .sec-div .doc{font-size:11pt;line-height:1.5;color:#241f19;max-width:108mm;margin:7mm auto 0;font-style:italic;}
 .src{font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
 .prayer{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
-  padding-top:18mm !important;padding-bottom:16mm !important;}
+  padding-top:14mm !important;padding-bottom:12mm !important;}
 .prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:15pt;margin:1mm 0 2mm;text-align:center;}
 .prayer .src{order:-1;text-align:center;margin:0 0 10mm;color:var(--grey);font-size:8.5pt;letter-spacing:.18em;text-transform:uppercase;}
 .prayer h3{font-size:17pt;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:0 0 1mm;}
 .prayer .prule{width:18mm;height:1px;background:var(--hair);margin:0 auto 7mm;}
 .prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:0 0 4mm;
   font-size:1.45em;line-height:2;color:var(--ink);}
-.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.5;margin:0 0 8mm;max-width:110mm;}
-.prayer .en{margin:0 auto;text-align:center;line-height:1.45;color:#241f19;max-width:108mm;
-  font-size:12pt;line-height:1.55;}
+.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:12pt;line-height:1.55;margin:0 0 7mm;max-width:118mm;}
+.prayer .en{margin:0 auto;text-align:center;line-height:1.5;color:#241f19;max-width:114mm;
+  font-size:13pt;line-height:1.6;}
+.prayer .dev{max-width:124mm;}
 .prayer .en .ln{display:block;}
 .prayer .pnum{bottom:8mm;}
 .guide .label{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);margin-bottom:3mm;}
@@ -277,24 +278,26 @@ def _dev_units(s):
 
 
 def dev_size(e):
-    """Largest tier whose estimated wrapped block fits the prayer-sheet
-    Devanagari budget (~250pt) — raw char counts lie (matras, line breaks)."""
+    """Largest tier whose wrapped block fills the prayer sheet (owner house style:
+    full page, centralised, Devanagari maximised — budget ~380pt on 6x9)."""
     import math
     dev = e.get("devanagari", "")
     segs = [seg for seg in dev.split("\n") if seg.strip()] or [dev]
-    for size, lh in ((40, 1.55), (32, 1.5), (25, 1.45), (20, 1.4), (16, 1.35)):
-        cpl = max(6, int(317 / (0.65 * size)))   # 112mm text column, ~.65em/akshara
+    # higher tiers + bigger budget: art-page fill, not a polite caption
+    for size, lh in ((54, 1.5), (46, 1.45), (40, 1.4), (34, 1.4), (28, 1.38),
+                     (24, 1.35), (20, 1.35), (16, 1.3)):
+        cpl = max(6, int(340 / (0.65 * size)))   # ~120mm column
         lines = sum(max(1, math.ceil(_dev_units(seg) / cpl)) for seg in segs)
-        if lines * size * lh <= 250:
+        if lines * size * lh <= 380:
             return f"{size}pt", str(lh)
-    return "16pt", "1.35"
+    return "16pt", "1.3"
 
 
 def en_size(e):
     L = sum(len(x) for x in e["en"].split("\n"))
-    if L <= 140: return "13pt"
-    if L <= 240: return "12pt"
-    return "11pt"
+    if L <= 140: return "14pt"
+    if L <= 240: return "12.5pt"
+    return "11.5pt"
 
 
 def build(d):

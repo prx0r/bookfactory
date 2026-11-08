@@ -102,6 +102,7 @@ def factory_overview(args: dict) -> dict:
         "docs": docs,
         "layout": {
             "FACTORY-SPEC.md": "the law (position, products, bars)",
+            "STYLE.md": "owner translation voice + prayer page-as-art (centre, max Devanagari)",
             "BOOKS.md": "canonical system: template→thesis→decisions→stages→products",
             "PIPELINE.md": "commands, setup, blockers",
             "AUTONOMY.md": "unsupervised operation contract",

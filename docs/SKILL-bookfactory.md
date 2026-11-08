@@ -21,6 +21,18 @@ description: Navigate and operate the bookfactory publishing monorepo (thesis �
 
 If resuming a lane: `REGISTRY.json` + `projects/<book>/project.json` + latest `check.py <book>`.
 
+## House style (STYLE.md) — 2026-11-08
+
+**Translation voice:** owner English is sharp/logical/exact, Trika-aware (model: Gītā 4.24
+`prints/prayers/brahmarpanam.json` — *whatever i take is offered to śiva…*). Never invent
+Sanskrit; English may be rewritten only in owner voice. No somatic success tests.
+
+**Prayer page = full-page art:** centred, **Devanagari maximised** (`dev_size` 54→16pt,
+budget 380pt), source label + rule + IAST + English stacked centre. Black KDP wrap =
+`cover-canonical` (Svatantrya centre back).
+
+Live tune: `:8610/layout?book=…` → `layout.json`. Full law: repo `STYLE.md`.
+
 ## Explainer formula (EXPLAINER.md) — 2026-11-07
 
 Facing pages follow **`EXPLAINER.md`** (PP editorial handoff → house law):

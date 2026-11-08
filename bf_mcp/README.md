@@ -25,6 +25,12 @@ arguments, fail-closed errors, same semantics as the CLI.
 
 ---
 
+## House style (read before editing English or layout)
+
+See **[`../STYLE.md`](../STYLE.md)** — owner translation voice (sharp Trika English,
+Gītā 4.24 model) + **prayer page as full-page art** (centred, Devanagari maximised).
+Also `EXPLAINER.md` for facing-page guide fields.
+
 ## Register (OpenCode only)
 
 Already wired on this box:
