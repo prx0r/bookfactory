@@ -96,7 +96,9 @@ python3 prints/postcards/render_postcards.py <book> [ids...]
    no “sign of success.”** Pocket lines that are cut from a longer verse
    are labelled EXTRACT. Source for the full contract:
    `prints/practical-prayers/editorial/00_explainer_standard.md`.
-10. **Guide prose approval:** new English for guide fields is an *editorial
+10. **House cover = `cover-canonical`** (black `#121110`, Svatantrya ring centred on back).
+   Prayer pages are **full-page centred art** (engine `.prayer`); never left-ragged display type.
+11. **Guide prose approval:** new English for guide fields is an *editorial
     proposal* until the owner approves (handoff: `prints/practical-prayers/editorial/`).
     Agent may draft via `apply_preview.py` (candidate outside the repo) —
     never silent-overwrite `entries.json`. Witness/rights BLOCKs in

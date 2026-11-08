@@ -99,11 +99,19 @@ h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08
 .sec-div .rule{width:30mm;height:1px;background:var(--ink);margin:7mm auto 0;}
 .sec-div .doc{font-size:11pt;line-height:1.5;color:#241f19;max-width:108mm;margin:7mm auto 0;font-style:italic;}
 .src{font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);}
+.prayer{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  padding-top:18mm !important;padding-bottom:16mm !important;}
 .prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:15pt;margin:1mm 0 2mm;text-align:center;}
-.prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:3mm 0 0;}
-.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.35;margin-top:1.5mm;}
-.prayer .en{margin:4mm 0 0;text-align:center;line-height:1.3;color:#241f19;}
+.prayer .src{order:-1;text-align:center;margin:0 0 10mm;color:var(--grey);font-size:8.5pt;letter-spacing:.18em;text-transform:uppercase;}
+.prayer h3{font-size:17pt;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:0 0 1mm;}
+.prayer .prule{width:18mm;height:1px;background:var(--hair);margin:0 auto 7mm;}
+.prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:0 0 4mm;
+  font-size:1.45em;line-height:2;color:var(--ink);}
+.prayer .iast{font-style:italic;color:var(--grey);text-align:center;font-size:11pt;line-height:1.5;margin:0 0 8mm;max-width:110mm;}
+.prayer .en{margin:0 auto;text-align:center;line-height:1.45;color:#241f19;max-width:108mm;
+  font-size:12pt;line-height:1.55;}
 .prayer .en .ln{display:block;}
+.prayer .pnum{bottom:8mm;}
 .guide .label{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--grey);margin-bottom:3mm;}
 .guide h3{text-align:left;font-size:19pt;margin:0 0 3mm;}
 .guide .src{text-align:left;margin-bottom:4mm;}
@@ -399,6 +407,7 @@ def build(d):
 <section class="page prayer">
 <div class="src">{esc(e['source'])}</div>
 <h3>{esc(e['title'])}</h3>
+<div class="prule"></div>
 <div class="dev" style="font-size:{ds};line-height:{dlh}">{esc(e['devanagari'])}</div>
 <div class="iast">{esc(e['iast'])}</div>
 <div class="en" style="font-size:{es}">{en_lines}</div>
