@@ -102,7 +102,8 @@ h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08
 .prayer{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
   padding-top:14mm !important;padding-bottom:12mm !important;}
 .prayer h3,.guide h3{font-family:'Cormorant';font-weight:600;font-size:15pt;margin:1mm 0 2mm;text-align:center;}
-.prayer .src{order:-1;text-align:center;margin:0 0 10mm;color:var(--grey);font-size:8.5pt;letter-spacing:.18em;text-transform:uppercase;}
+.prayer .seclabel{order:-2;text-align:center;margin:0 0 3mm;color:var(--grey);font-size:8.5pt;letter-spacing:.22em;text-transform:uppercase;}
+.prayer .src{display:none;} /* owner: no grey source strip on prayer art page — source lives on the guide */
 .prayer h3{font-size:17pt;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:0 0 1mm;}
 .prayer .prule{width:18mm;height:1px;background:var(--hair);margin:0 auto 7mm;}
 .prayer .dev{font-family:'Tiro';text-align:center;white-space:pre-line;margin:0 0 4mm;
@@ -334,17 +335,28 @@ def build(d):
 {('<div class="yantra" style="margin-top:10mm">' + rasa_rosette(0, 24) + '</div>') if glyph == 'rasa' else ''}
 </section>"""
 
+    flow = book.get("flow", "classic")
     if book.get("front_matter"):
-        pages.append(f'<section class="page half"><div class="t">{esc(meta["title"])}</div></section>')
-        pages.append('<section class="page blank"></section>')
-        pages.append(f"""<section class="page titlepage">
+        if flow == "minimal":
+            # owner: title page → contents → straight in (no half/blank/copy/epi parade)
+            pages.append(f"""<section class="page titlepage">
 <div class="om">ॐ</div>
 <h1>{esc(meta['title'])}</h1>
 <div class="sub">{esc(meta['subtitle'])}</div>
 <div class="rule"></div>
 {('<img src="' + html.escape(cover_rel, quote=True) + '" alt="">') if cover_rel else ''}
 </section>""")
-        pages.append(f"""<section class="page copy">
+        else:
+            pages.append(f'<section class="page half"><div class="t">{esc(meta["title"])}</div></section>')
+            pages.append('<section class="page blank"></section>')
+            pages.append(f"""<section class="page titlepage">
+<div class="om">ॐ</div>
+<h1>{esc(meta['title'])}</h1>
+<div class="sub">{esc(meta['subtitle'])}</div>
+<div class="rule"></div>
+{('<img src="' + html.escape(cover_rel, quote=True) + '" alt="">') if cover_rel else ''}
+</section>""")
+            pages.append(f"""<section class="page copy">
 <div><b>{esc(meta['title'])}</b> — {esc(meta['subtitle'])}.</div>
 <div>First edition.</div>
 <div style="margin-top:3mm">Texts drawn from the Śaiva corpus, with translations for this edition.</div>
@@ -352,7 +364,8 @@ def build(d):
 <div class="qr">Audio companion<br>scan to listen to every prayer</div>
 </section>""")
 
-    pages.append(f"""<section class="page epi center"><div class="lines">{esc(deva(meta['epi_iast']))}</div>
+    if flow != "minimal":
+        pages.append(f"""<section class="page epi center"><div class="lines">{esc(deva(meta['epi_iast']))}</div>
 <div class="src">{esc(meta['epi_src'])}</div></section>""")
     # Optional, explicitly chosen artwork. Existing books without this field    # Optional, explicitly chosen artwork. Existing books without this field
     # are unchanged. File access is constrained to the book directory.
@@ -369,7 +382,7 @@ def build(d):
         mark = '<span class="draft-mark">DRAFT · NOT FOR SALE</span>' if art.get('draft_only', True) else ''
         pages.append(f'<section class="page opening-image">{mark}<img src="{html.escape(relative.as_posix(), quote=True)}" alt="{html.escape(art["alt"], quote=True)}"></section>')
 
-    if front:
+    if front and flow != "minimal":
         pages.append(front)
 
     toc = ['<section class="page toc"><h2>Contents</h2><div class="head-rule"></div><ol>']
@@ -386,30 +399,34 @@ def build(d):
         return sum(len(re.findall(r'<section class="page', p)) for p in pages)
 
     for si, s in enumerate(sections, 1):
-        # A section opens on a recto (odd page number); add an ornament verso if needed.
-        if pagecount() % 2:
-            pages.append(f'<section class="page orn"><img src="{html.escape(cover_rel, quote=True)}" alt=""></section>'
-                         if cover_rel else '<section class="page blank"></section>')
-        g = ""
-        if glyph == "rasa":
-            g = rasa_rosette(si, 22)
-        elif glyph == "activity":
-            g = activity_glyph(s["id"], 18)
-        div = f'<div class="glyph">{g}</div>' if g else ""
-        doc = f'<div class="doc">{esc(s["doctrine"])}</div>' if s.get("doctrine") else ""
-        gls = f'<div class="gloss">{esc(s["gloss"])}</div>' if s.get("gloss") else ""
-        num = f'<div class="num">{esc(s["numeral"])}</div>' if s.get("numeral") else ""
-        pages.append(f"""<section class="page sec-div">{div}{num}
+        if flow != "minimal":
+            # classic: recto ornament verso + full section divider page
+            if pagecount() % 2:
+                pages.append(f'<section class="page orn"><img src="{html.escape(cover_rel, quote=True)}" alt=""></section>'
+                             if cover_rel else '<section class="page blank"></section>')
+            g = ""
+            if glyph == "rasa":
+                g = rasa_rosette(si, 22)
+            elif glyph == "activity":
+                g = activity_glyph(s["id"], 18)
+            div = f'<div class="glyph">{g}</div>' if g else ""
+            doc = f'<div class="doc">{esc(s["doctrine"])}</div>' if s.get("doctrine") else ""
+            gls = f'<div class="gloss">{esc(s["gloss"])}</div>' if s.get("gloss") else ""
+            num = f'<div class="num">{esc(s["numeral"])}</div>' if s.get("numeral") else ""
+            pages.append(f"""<section class="page sec-div">{div}{num}
 <h2>{esc(s['title'])}</h2><div class="sub">{esc(s.get('sub',''))}</div>{gls}<div class="rule"></div>{doc}</section>""")
+        # minimal: section name rides on the first prayer (seclabel), no divider page
         for e in [x for x in entries if x["section"] == s["id"]]:
             n += 1
             ds, dlh = dev_size(e)
             es = en_size(e)
             en_lines = "".join(f'<span class="ln">{esc(l)}</span>' for l in e["en"].split("\n"))
+            _sec_ids = [x["id"] for x in entries if x["section"] == s["id"]]
+            first_in_section = bool(_sec_ids) and e["id"] == _sec_ids[0]
+            seclabel = f'<div class="seclabel">{esc(s["title"])}</div>' if first_in_section else ''
             pages.append(f"""<div class="spread">
 <section class="page prayer">
-<div class="src">{esc(e['source'])}</div>
-<h3>{esc(e['title'])}</h3>
+{seclabel}<h3>{esc(e['title'])}</h3>
 <div class="prule"></div>
 <div class="dev" style="font-size:{ds};line-height:{dlh}">{esc(e['devanagari'])}</div>
 <div class="iast">{esc(e['iast'])}</div>
