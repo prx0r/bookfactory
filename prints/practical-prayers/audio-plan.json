@@ -22,9 +22,9 @@
       "howto": {
         "voice": "granny",
         "voice_id": "614f8afd83f841048c040b2c6234d2c1",
-        "text": "Before the first bite: put a little water in the palm, look at the food, and say the verse once. Then eat as if the meal is being offered into a fire — slowly, without hurry. The feeling to find: gratitude with heat. Nothing extra; the verse does the whole work.",
-        "chars": 262,
-        "cache_key": "3a4187eb00d363c28ac64d2f00dfa64245ae4fea"
+        "text": "When: before the first bite. Practice: water in the palm, say the full verse once (or these six lines if learning), then eat slowly as if the offering is going into Śiva's fire. Return: eat normally and attentively — no required warmth, only the next honest bite. Source: Lakshmanjoo mealtime teaching (source_path); verse is Gītā 4.24, not composed by Abhinavagupta.",
+        "chars": 367,
+        "cache_key": "022f80b979f7977559c3644bb11a6491eb56b1ef"
       }
     },
     {
@@ -559,16 +559,16 @@
       "verse": {
         "voice": "verse",
         "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
-        "text": "śṛṇu devī! paraṁ guhyaṁ rahasyaṁ paramādbhutam | sarva-pāpa-praśamanaṁ sarva-duḥkha-nivāraṇam || prāyaścitteṣu sarveṣu tīvreṣv api vimocanam | sarva-cchidrāpa-haraṇaṁ sarvārti-vinivārakam || samayolaṅghane ghore japādeva vimocanam | bhoga-mokṣha-pradaṁ devī! sarva-siddhi-phalapradam ||",
-        "chars": 286,
-        "cache_key": "fcfbb4f772dc9cb233aa7a8214aec48fb774dadd"
+        "text": "sarva-pāpa-praśamanaṁ sarva-duḥkha-nivāraṇam",
+        "chars": 44,
+        "cache_key": "9a76a79a4f58f7e3e9c3eab754bafffb038c5c35"
       },
       "howto": {
         "voice": "granny",
         "voice_id": "614f8afd83f841048c040b2c6234d2c1",
-        "text": "Recite it at the beginning and end of any ritual — the hymn's own instruction (yāgārambhe ca yāgānte). Also daily (nitya), on occasion (naimitika), when you want something (kāmya), for yourself or for someone else. Counting effects per the hymn: one hundred recitations purify even great sinners; fifty, inadvertent sins; twenty-five, minor sins — and a single recitation (of this hymn or of the Aghora japa) removes wrongs done by body, speech or mind, whether through inattention or knowingly.",
-        "chars": 495,
-        "cache_key": "da7286319602b29368040cced6a6bd45e0105391"
+        "text": "When: any moment, no clock. Practice: say the line once, quietly. Return: do the next ordinary thing. Full verse: sources/bahurupa*.pdf — not required for the pocket use.",
+        "chars": 170,
+        "cache_key": "d8b83c45bff87ef8ed2b4634b665db6cde32f8bc"
       }
     },
     {
@@ -576,16 +576,16 @@
       "verse": {
         "voice": "verse",
         "voice_id": "4e873c37d4cb439e9bccc4dc1f633290",
-        "text": "vidhihīne pramāde ca japtavyaṁ sarva-karmasu | nātaḥ parataro mantro nātaḥ paratarā stutiḥ || nātaḥ paratarā kācit samyak-pratyaṅgirā priye | iyaṁ samaya-vidyānāṁ rāja-rājeśvarī-śvari || paramāpyāyanaṁ devi bhairavasya prakīrtitam | prīṇanaṁ sarva-devānāṁ sarva-saubhāgya-vardhanam ||",
-        "chars": 284,
-        "cache_key": "9befdd324a39d51b09f3568c52251488800dea52"
+        "text": "nātaḥ parataro mantro",
+        "chars": 21,
+        "cache_key": "b731a57a2f858e5f783c7b85cd534f61088f6b0c"
       },
       "howto": {
         "voice": "granny",
         "voice_id": "614f8afd83f841048c040b2c6234d2c1",
-        "text": "Full practice in the tradition: dhyāna of Svacchanda (crystal-white upward face, yellow east, blue south, pomegranate-red north, moon-white west — the twelve-verse meditation), then this hymn, then the Gāyatrī — oṁ bahurupāya vidmahe, koṭarākṣāya dhīmahi, tanno 'ghoraḥ pracodayāt, three times — then the mūla mantra. In this book's simpler use: one round of these three verses at the close of any difficult day; the line to remember is 'no mantra greater than this'.",
-        "chars": 467,
-        "cache_key": "8d86e1add17da12310a3e7c7bbc143d7724ee6bf"
+        "text": "When: after any japa, or instead of a longer session you skip. Practice: one recitation of this line, then stop. Return: live the action the day asks for.",
+        "chars": 154,
+        "cache_key": "d676371e95be2f7b2e65b4bd25cc263a7966f3bc"
       }
     },
     {
@@ -625,7 +625,7 @@
   ],
   "totals": {
     "clips": 72,
-    "chars": 11460
+    "chars": 10422
   },
   "receipts": "prints/practical-prayers/audio/receipts/calls.jsonl",
   "note": "Plan only — no API call made. Render after owner go with FISH key; append receipts to the path above; VOICE_DB -21dB normalization."
