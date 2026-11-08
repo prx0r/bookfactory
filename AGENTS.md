@@ -56,6 +56,14 @@ Mutations shell out to `factory.py` (venv python) so MCP and CLI cannot drift.
 Reads are in-process. Paths are relative and jail to the repo. See README for
 the full tool table and canonical loops.
 
+## Web editor (entries)
+
+```bash
+python3 entries_server.py 8610   # → http://127.0.0.1:8610/
+```
+Browser UI over `prints/<book>/entries.json`: edit fields → **Save + commit**
+(git-commits; `.edit-bak` kept). Source of truth stays JSON — no PDF edits.
+
 ## Commands
 ```bash
 python3 check.py                        # whole registry (DUE-LATER = upcoming stages)
