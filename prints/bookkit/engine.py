@@ -123,10 +123,79 @@ h2.blk{font-family:'Cormorant';font-weight:600;font-size:15pt;letter-spacing:.08
 TRIMS = {"A5": (148.0, 210.0), "6x9": (152.4, 228.6), "5.5x8.5": (139.7, 215.9)}
 
 
-def css_for(trim):
+def css_for(trim, layout=None):
+    """Trim CSS + optional per-book layout.json overrides (visual editor)."""
     pw, ph = TRIMS[trim]
     out = CSS.replace("width:148mm;min-height:210mm", f"width:{pw}mm;min-height:{ph}mm")
-    return out.replace("size:TRIM", f"size:{pw}mm {ph}mm")
+    out = out.replace("size:TRIM", f"size:{pw}mm {ph}mm")
+    if not layout:
+        # try loads from book dir if provided via thread-local? caller passes layout
+        pass
+    if layout:
+        out += "\n/* layout.json (visual editor) */\n" + _layout_css(layout)
+    return out
+
+
+def load_layout(book_dir):
+    lp = pathlib.Path(book_dir) / "layout.json"
+    if lp.is_file():
+        try:
+            return json.loads(lp.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return None
+    return None
+
+
+def _layout_css(L):
+    """Map layout tokens -> CSS. Unknown keys ignored. All values strings already in CSS units."""
+    def g(k, default=""):
+        return str(L.get(k, default))
+    rules = []
+    # body type
+    if "body_font" in L or "body_pt" in L:
+        fam = g("body_font", "Cormorant,Georgia,serif")
+        pt = g("body_pt", "15")
+        lh = g("line_height", "1.5")
+        rules.append(f"body{{font-family:'{fam.split(',')[0].strip().strip(chr(39))}',Georgia,serif;font-size:{pt}pt;line-height:{lh};}}")
+    elif "line_height" in L:
+        rules.append(f"body{{line-height:{g('line_height','1.5')};}}")
+    # page box
+    pad_y = g("page_pad_y", "")
+    pad_x = g("page_pad_x", "")
+    if pad_y or pad_x:
+        rules.append(f".page{{padding:{pad_y or '12mm'} {pad_x or '18mm'};}}")
+    if "page_margin_bottom" in L:
+        rules.append(f".page{{margin-bottom:{g('page_margin_bottom','10mm')};}}")
+    # type scale
+    pairs = [
+        ("h1_pt", ".titlepage h1{font-size:%spt;}"),
+        ("sub_pt", ".titlepage .sub{font-size:%spt;}"),
+        ("sec_h2_pt", ".sec-div h2{font-size:%spt;}"),
+        ("prayer_h3_pt", ".prayer h3,.guide h3{font-size:%spt;}"),
+        ("dev_pt", ".prayer .dev{font-size:%spt;}"),
+        ("iast_pt", ".prayer .iast{font-size:%spt;}"),
+        ("en_pt", ".prayer .en{font-size:%spt;}"),
+        ("guide_h3_pt", ".guide h3{font-size:%spt;}"),
+        ("guide_brief_pt", ".guide .brief{font-size:%spt;}"),
+        ("guide_body_pt", ".guide .body{font-size:%spt;}"),
+        ("pnum_pt", ".pnum{font-size:%spt;}"),
+        ("toc_pt", ".toc li{font-size:%spt;}"),
+    ]
+    for key, tmpl in pairs:
+        if key in L:
+            rules.append(tmpl % g(key))
+    # guide block spacing / positioning
+    if "guide_gap_mm" in L:
+        rules.append(f".guide .blk{{margin-bottom:{g('guide_gap_mm','1.5')}mm;}}")
+    if "guide_h3_margin_mm" in L:
+        rules.append(f".guide h3{{margin-bottom:{g('guide_h3_margin_mm','3')}mm;}}")
+    if "prayer_dev_margin_mm" in L:
+        rules.append(f".prayer .dev{{margin-top:{g('prayer_dev_margin_mm','3')}mm;}}")
+    if "guide_align" in L and L["guide_align"] in ("left", "center", "right"):
+        rules.append(f".guide h3,.guide .body,.guide .brief{{text-align:{L['guide_align']};}}")
+    if "prayer_align" in L and L["prayer_align"] in ("left", "center", "right"):
+        rules.append(f".prayer h3,.prayer .dev,.prayer .iast,.prayer .en{{text-align:{L['prayer_align']};}}")
+    return "\n".join(rules) + "\n"
 
 
 def esc(s):
@@ -386,7 +455,7 @@ def build(d):
             pad += '<section class="page notes"><h2>Notes</h2><div class="ruled"></div></section>'
             count += 1
         interior += pad
-    css = css_for(trim)
+    css = css_for(trim, load_layout(d))
     head = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">\n'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             f'<title>{esc(meta["title"])} — {esc(meta["subtitle"])}</title>\n'
