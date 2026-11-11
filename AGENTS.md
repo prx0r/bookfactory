@@ -27,14 +27,23 @@ loop AND the typography.
 - projects/_template/ — copy to start a non-book lane
 
 
-## MCP server (agents) — OpenCode only
+## MCP server (agents)
 
 Full reference: **[`bf_mcp/README.md`](bf_mcp/README.md)** (wire protocol,
 every tool, agent loops, fail-closed rules, troubleshooting).
 
-**What it is:** stdio JSON-RPC MCP (`bf_mcp/server.py` + `bf_mcp/tools.py`)
-so an agent drives the factory with the same laws as the CLI — thesis,
-append-only decisions, staged gate, PDF last. **22 tools.**
+**What it is:** JSON-RPC MCP (`bf_mcp/server.py` + `bf_mcp/tools.py`) so an
+agent drives the factory with the same laws as the CLI — thesis, append-only
+decisions, staged gate, PDF last. **22 tools.** Two front-ends, one surface:
+**stdio** (local) and **Streamable HTTP** (remote).
+
+**Remote (ChatGPT / Claude):** `--serve-http` + `deploy/` systemd units + tunnel.
+Connect steps, the whole chain, autonomy bounds and ops: **[`CHATGPT-PLUGIN.md`](CHATGPT-PLUGIN.md)**.
+Architecture + 10 todos: **[`docs/REMOTE-MCP-PLAN.md`](docs/REMOTE-MCP-PLAN.md)**.
+
+**Local register:** OpenCode `~/.config/opencode/mcp.json` + `opencode.jsonc` →
+`mcp.bookfactory`. **Not Hermes** (owner ruling). Skill map:
+`~/.config/opencode/skills/bookfactory/SKILL.md`.
 
 **Register:** OpenCode `~/.config/opencode/mcp.json` + `opencode.jsonc` →
 `mcp.bookfactory`. **Not Hermes** (owner ruling). Skill map:
