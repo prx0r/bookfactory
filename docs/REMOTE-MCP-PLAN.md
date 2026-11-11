@@ -28,7 +28,7 @@ plus a tunnel — exactly the pattern used for the other MCPs on this box.
 | stdio front-end | `bf_mcp/server.py` (default) |
 | Streamable HTTP front-end | `bf_mcp/server.py --serve-http --host 127.0.0.1 --port 8932` |
 | systemd | `bookfactory-mcp.service` (`Restart=always`, enabled) |
-| Public edge | `bookfactory-mcp-tunnel.service` (cloudflared quick tunnel) |
+| Public edge | `bookfactory-mcp-tunnel.service` (named tunnel → `bookfactory.sanskrit.help`) |
 | State guarded | git repo `/home/box/repos/bookfactory` |
 
 Why not bundle the Python SDK: the existing server is a dependency-free JSON-RPC
@@ -110,7 +110,7 @@ grep -o 'https://[a-z0-9-]*\.trycloudflare\.com' /var/log/bookfactory-tunnel.log
 - [x] `check_lane practical-prayers` returns `canonical: true`, `exit: 0`.
 - [x] Public URL reachable; bare `GET` → `405` (server up).
 - [x] systemd units active **and enabled at boot**; tunnel auto-restarts.
-- [ ] Named tunnel (stable hostname) instead of quick tunnel.
+- [x] Named tunnel `bookfactory` → stable `bookfactory.sanskrit.help`.
 - [ ] Cloudflare Access / OAuth in front of the public URL for wider sharing.
 
 ## 10 todos
@@ -124,4 +124,17 @@ grep -o 'https://[a-z0-9-]*\.trycloudflare\.com' /var/log/bookfactory-tunnel.log
 7. Update `bf_mcp/README.md` + `AGENTS.md` with the HTTP mode (done).
 8. Smoke: 22 tools + `factory_overview` + `check_lane` through the public URL (done).
 9. Commit `feat/remote-mcp`, push, open PR (done).
-10. Named tunnel + Cloudflare Access/OAuth before sharing widely (pending).
+10. Named tunnel done (`bookfactory.sanskrit.help`); Access/OAuth before
+    sharing widely (pending).
+
+## Permanence
+
+- **Stable URL:** named Cloudflare Tunnel (done). Survives restarts/reboots.
+- **Always-on host:** the MCP is a local-filesystem + subprocess service, so it
+  runs on a machine with the repo. The hub is a desktop; a 24/7 VPS (debz,
+  8 GB/80 GB) can run the same two units for true uptime — clone the repo,
+  install the venv deps, copy `mcp.env`/`tunnel.env`, enable the units, and
+  point a tunnel at it. Edits then land on that VPS and reach `master` as PRs.
+- **R2 is storage, not compute.** It cannot run Python or `factory.py`; it is
+  the right place for backups, built packages and rendered artefacts (and can
+  serve static files via a custom domain). Keep R2 for artefacts, not the MCP.

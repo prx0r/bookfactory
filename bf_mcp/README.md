@@ -77,8 +77,9 @@ BOOKFACTORY_MCP_TOKEN=<secret> \
   `BOOKFACTORY_MCP_TOKEN` is set; open if unset (localhost default).
 - `initialize` echoes the client's `protocolVersion` (2024-11-05 / 2025-06-18).
 
-Deployment units and an installer live in `deploy/`. Connect steps, the full
-chain, autonomy bounds and ops are in **[`../CHATGPT-PLUGIN.md`](../CHATGPT-PLUGIN.md)**;
+Stable public hostname: `https://bookfactory.sanskrit.help/mcp` (named
+Cloudflare Tunnel; see `deploy/`). Connect steps, the full chain, autonomy
+bounds and ops are in **[`../CHATGPT-PLUGIN.md`](../CHATGPT-PLUGIN.md)**;
 architecture and the 10 todos are in
 **[`../docs/REMOTE-MCP-PLAN.md`](../docs/REMOTE-MCP-PLAN.md)**.
 

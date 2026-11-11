@@ -1,12 +1,13 @@
 [Unit]
-Description=Cloudflare quick tunnel for bookfactory MCP
+Description=Cloudflare named tunnel for bookfactory MCP (bookfactory.sanskrit.help)
 After=bookfactory-mcp.service network-online.target
 Wants=bookfactory-mcp.service network-online.target
 
 [Service]
 Type=simple
 User=root
-ExecStart=/usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8932 --no-autoupdate
+EnvironmentFile=/root/.config/bookfactory/tunnel.env
+ExecStart=/usr/local/bin/cloudflared tunnel run --token $TUNNEL_TOKEN
 Restart=always
 RestartSec=5
 StandardOutput=append:/var/log/bookfactory-tunnel.log

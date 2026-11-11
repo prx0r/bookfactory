@@ -12,11 +12,15 @@ stands).
 
 ## 1. Connect it
 
-Live endpoint (Streamable HTTP, stateless):
+Live endpoint (Streamable HTTP, stateless) — **stable named Cloudflare Tunnel**:
 
 ```
-https://interactions-trace-dave-pcs.trycloudflare.com/mcp?token=<BOOKFACTORY_MCP_TOKEN>
+https://bookfactory.sanskrit.help/mcp?token=<BOOKFACTORY_MCP_TOKEN>
 ```
+
+The hostname is permanent (named tunnel `bookfactory`, id
+`a18b49d9-03ba-411f-a2fe-1c9727270c82`); it does not change when the service or
+cloudflared restarts.
 
 The shared secret lives in `/root/.config/bookfactory/mcp.env`
 (`BOOKFACTORY_MCP_TOKEN`). Ask the owner for the value; it is deliberately **not**
@@ -39,7 +43,7 @@ ChatGPT validates the server by POSTing `initialize` and `tools/list`. Bare
 
 ```bash
 claude mcp add --transport http bookfactory \
-  "https://interactions-trace-dave-pcs.trycloudflare.com/mcp?token=<TOKEN>"
+  "https://bookfactory.sanskrit.help/mcp?token=<TOKEN>"
 ```
 
 ### Local (no tunnel)
@@ -164,16 +168,18 @@ systemctl restart bookfactory-mcp
 - **Token rotation:** edit `BOOKFACTORY_MCP_TOKEN` in
   `/root/.config/bookfactory/mcp.env`, then `systemctl restart bookfactory-mcp`.
   Update the connector URL.
-- **Tunnel URL changes** on every cloudflared restart (quick tunnel). Read the
-  current one from `/var/log/bookfactory-tunnel.log`.
+- **Stable hostname:** `bookfactory.sanskrit.help` (named tunnel). It does not
+  change on restart. Tunnel token: `/root/.config/bookfactory/tunnel.env`.
 - `Restart=always` + `enabled` → both services come back after reboot.
+- The tunnel connector runs on the hub, so the endpoint is up whenever the hub
+  is powered on. For independence from the hub, run the same two units on a
+  always-on VPS (see `docs/REMOTE-MCP-PLAN.md` § Permanence).
 
-### Recommended next step: named tunnel + Access
+### Next step: Cloudflare Access
 
-A quick tunnel's hostname is ephemeral. For a stable connector URL, create a
-named Cloudflare tunnel and put **Cloudflare Access** (or the MCP OAuth flow) in
-front. Until then, the shared secret in the URL is the only gate — treat the URL
-as a password.
+The named tunnel gives a stable URL. Put **Cloudflare Access** (or MCP OAuth) in
+front before wider sharing; until then the shared secret in the URL is the only
+gate — treat the URL as a password.
 
 ### Monitoring schedule (if run by a cron/agent)
 
