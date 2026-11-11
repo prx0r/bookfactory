@@ -1,10 +1,12 @@
 # bookfactory MCP — agent interface to the publishing factory
 
-**What it is:** a stdio JSON-RPC Model Context Protocol server that lets an
-agent (OpenCode, any MCP client) *read* and *act on* the bookfactory without
-shell-guessing paths. Same wire format as `neuro_mix/mcp/server.py`.
+**What it is:** a JSON-RPC Model Context Protocol server that lets an agent
+(OpenCode, ChatGPT, Claude, any MCP client) *read* and *act on* the bookfactory
+without shell-guessing paths. Two front-ends share one tool surface: **stdio**
+(local) and **Streamable HTTP** (remote/connectors). Same wire format as
+`neuro_mix/mcp/server.py` for stdio.
 
-**Root:** `/home/box/repos/bookfactory`  
+**Root:** `/home/box/repos/bookfactory` (override with `BOOKFACTORY_ROOT`)  
 **Entry:** `bf_mcp/server.py` · tools in `bf_mcp/tools.py`  
 **Python:** `/home/box/Documents/patala/.venv/bin/python3` (jsonschema, etc.)
 
@@ -57,6 +59,31 @@ Restart OpenCode (new session) after config changes so tools load.
 
 ---
 
+## Remote / HTTP mode
+
+The same tools are served over stateless **Streamable HTTP** for remote agents
+(ChatGPT connectors, Claude, etc.):
+
+```bash
+BOOKFACTORY_MCP_TOKEN=<secret> \
+  /home/box/Documents/patala/.venv/bin/python3 bf_mcp/server.py \
+  --serve-http --host 127.0.0.1 --port 8932
+```
+
+- `POST /mcp` — one JSON-RPC message or batch → JSON (notifications → `202`).
+- `GET /mcp` — `405` (no server-initiated SSE; clients POST).
+- `OPTIONS` — `204` + CORS.
+- Auth: `Authorization: Bearer <token>` or `?token=<token>` when
+  `BOOKFACTORY_MCP_TOKEN` is set; open if unset (localhost default).
+- `initialize` echoes the client's `protocolVersion` (2024-11-05 / 2025-06-18).
+
+Deployment units and an installer live in `deploy/`. Connect steps, the full
+chain, autonomy bounds and ops are in **[`../CHATGPT-PLUGIN.md`](../CHATGPT-PLUGIN.md)**;
+architecture and the 10 todos are in
+**[`../docs/REMOTE-MCP-PLAN.md`](../docs/REMOTE-MCP-PLAN.md)**.
+
+---
+
 ## Smoke tests
 
 ```bash
@@ -88,7 +115,8 @@ On handler exceptions: `{"ok": false, "error", "tool", "traceback"}`.
 | `tools/call` | dispatch to `bf_mcp.tools.handle(name, arguments)` |
 | anything else | `{"unsupported": method}` inside a text content block |
 
-Stdio: one JSON object per line, newline-delimited. No HTTP. No auth (local only).
+Stdio: one JSON object per line, newline-delimited. HTTP: stateless POST of the
+same messages (optional bearer/`?token=` auth). Both share `dispatch()`.
 
 ---
 
@@ -199,8 +227,10 @@ Commercial ship still blocked on rights (GRETIL NC etc.) — see `PIPELINE.md`.
 
 | Env | Default | Meaning |
 |-----|---------|---------|
+| `BOOKFACTORY_ROOT` | `/home/box/repos/bookfactory` | Factory root (paths + subprocess cwd) |
 | `BOOKFACTORY_PY` | `/home/box/Documents/patala/.venv/bin/python3` | Python for `factory.py` / `check.py` subprocesses |
 | `BOOKFACTORY_TRANSLATIONS` | `/home/box/repos/translation-work` | Upstream layers root |
+| `BOOKFACTORY_MCP_TOKEN` | *(unset = open)* | Shared secret for `--serve-http` |
 
 ---
 
@@ -210,7 +240,7 @@ Commercial ship still blocked on rights (GRETIL NC etc.) — see `PIPELINE.md`.
 bf_mcp/
   README.md     ← this document
   __init__.py
-  server.py     ← stdio JSON-RPC loop (initialize / tools/*)
+  server.py     ← stdio + Streamable HTTP front-ends (shared dispatch)
   tools.py      ← 22 handlers + JSON schemas (TOOLS / HANDLERS / handle)
 ```
 
@@ -237,6 +267,7 @@ Docs that stay authoritative for *policy*: `FACTORY-SPEC.md`, `BOOKS.md`,
 ## Version
 
 - Server name: `bookfactory` · version `0.1.0`  
-- Protocol: MCP `2024-11-05` stdio  
-- Tool count: **22** (as of 2026-11-07)  
+- Protocol: MCP `2024-11-05` (stdio) · Streamable HTTP stateless  
+- Tool count: **22** (as of 2026-11-11)
+- Remote: enabled (`--serve-http`)  
 - Repo: https://github.com/prx0r/bookfactory

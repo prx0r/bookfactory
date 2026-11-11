@@ -1,0 +1,18 @@
+[Unit]
+Description=bookfactory MCP (Streamable HTTP)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/box/repos/bookfactory
+EnvironmentFile=/root/.config/bookfactory/mcp.env
+ExecStart=/home/box/Documents/patala/.venv/bin/python3 bf_mcp/server.py --serve-http --host 127.0.0.1 --port 8932
+Restart=always
+RestartSec=3
+StandardOutput=append:/var/log/bookfactory-mcp.log
+StandardError=append:/var/log/bookfactory-mcp.log
+
+[Install]
+WantedBy=multi-user.target

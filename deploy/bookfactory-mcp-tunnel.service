@@ -1,0 +1,16 @@
+[Unit]
+Description=Cloudflare quick tunnel for bookfactory MCP
+After=bookfactory-mcp.service network-online.target
+Wants=bookfactory-mcp.service network-online.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/cloudflared tunnel --url http://127.0.0.1:8932 --no-autoupdate
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/bookfactory-tunnel.log
+StandardError=append:/var/log/bookfactory-tunnel.log
+
+[Install]
+WantedBy=multi-user.target
