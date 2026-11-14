@@ -75,6 +75,58 @@ Every `tools/call` returns MCP content `[{type:"text", text: <json>}]` where
 the JSON is the tool result: `{"ok": true|false, ...}` plus tool-specific keys.
 On handler exceptions: `{"ok": false, "error", "tool", "traceback"}`.
 
+## Authenticated Streamable HTTP adapter
+
+`bf_mcp/http_server.py` wraps the same canonical `bf_mcp.tools.HANDLERS` and
+`TOOLS`; it does not replace or alter the local stdio server. It serves the MCP
+endpoint at `/mcp` on loopback port 8950 by default. Install FastMCP and Uvicorn
+in the service environment to run the HTTP adapter:
+
+```bash
+python3 -m pip install 'fastmcp>=2,<5' 'uvicorn>=0.30,<1'
+```
+
+Set two distinct random bearer secrets outside the repository:
+
+```bash
+python3 -c 'import secrets; print(secrets.token_urlsafe(48))'
+```
+
+Store one generated value as `BOOKFACTORY_MCP_READ_TOKEN` and a different one
+as `BOOKFACTORY_MCP_WRITE_TOKEN` in a root-owned service environment file with
+mode `0600`. Both values must be at least 32 characters. The server refuses
+to start if either is missing, too short, or identical.
+
+The read token can call only the explicitly classified read-only tools. The
+write token can call those reads and the seven file- or record-changing tools:
+`decide`, `new_book`, `stage`, `audio_plan`, `epub`, `package`, and
+`quote_preview`. Unknown or malformed tool calls fail closed. These tokens
+authenticate the MCP transport; factory thesis, stage, rights, and owner-signoff
+gates still apply. Authentication is not an owner sign-off and must not be used
+to automate publication or shipping.
+
+Example service launch (adapt the interpreter and repository paths locally):
+
+```ini
+[Service]
+EnvironmentFile=/etc/bookfactory/mcp.env
+ExecStart=/home/box/Documents/patala/.venv/bin/python3 /home/box/repos/bookfactory/bf_mcp/http_server.py
+Restart=always
+```
+
+Keep the app bound to `127.0.0.1`; terminate HTTPS at the existing reverse
+proxy/tunnel and forward the `Authorization` header unchanged. Do not expose
+port 8950 directly to the public network. A public ChatGPT deployment still
+needs a properly managed secret per connector and a review of which agents are
+allowed to hold the write token.
+
+Focused authorization tests, which need only Python's standard library, run
+with:
+
+```bash
+python3 -m unittest tests.test_mcp_http_auth -v
+```
+
 ---
 
 ## Wire protocol (what the server speaks)

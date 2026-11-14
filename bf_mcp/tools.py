@@ -14,8 +14,9 @@ import traceback
 from pathlib import Path
 from typing import Any, Callable
 
-ROOT = Path("/home/box/repos/bookfactory")
-TRANSLATIONS = Path(os.environ.get("BOOKFACTORY_TRANSLATIONS", "/home/box/repos/translation-work"))
+ROOT = Path(os.environ.get("BOOKFACTORY_ROOT", "/home/box/repos/bookfactory"))
+TRANSLATIONS = Path(os.environ.get("BOOKFACTORY_TRANSLATIONS",
+                                   str(ROOT.parent / "translation-work")))
 VENV_PY = Path(os.environ.get("BOOKFACTORY_PY", "/home/box/Documents/patala/.venv/bin/python3"))
 if not VENV_PY.is_file():
     VENV_PY = Path(sys.executable)
